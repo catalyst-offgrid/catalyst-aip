@@ -1,6 +1,6 @@
-# Testing
+# Testing guide
 
-#### Unit testing
+## Unit testing
 
 [jest](https://jestjs.io/) is set up and ready to write and run unit tests. The test suit can be run with `yarn test`. In order to run the tests in watch mode for test driven development, run `yarn tdd`.
 
@@ -11,7 +11,7 @@ yarn test
 yarn tdd
 ```
 
-#### Integration testing
+## Integration testing
 
 > The more your tests resemble the way your software is used, the more confidence they can give you. https://twitter.com/kentcdodds/status/977018512689455106
 
@@ -20,7 +20,7 @@ You want your tests to avoid including implementation details so refactors of yo
 
 Read more here: https://kentcdodds.com/blog/write-tests or https://testingjavascript.com/
 
-#### End-to-end testing
+## End-to-end testing
 
 End-to-end (e2e) tests are functional tests for automated click-testing of critical paths. It is better to automate this rather than relying on the users to do the testing.
 This project is using [Cypress](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell) as end-to-end testing framework. [cypress-axe](https://github.com/avanslaars/cypress-axe) is used to uncover accessibility issues.
