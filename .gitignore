@@ -72,5 +72,5 @@ yarn-error.log
 
 # Cypress
 cypress/integration/examples/
-cypress/videos
-cypress/screenshots
+*/cypress/videos
+*/cypress/screenshots

@@ -4,5 +4,7 @@
   "pluginsFile": "test/cypress/plugins/index.js",
   "supportFile": "test/cypress/support/index.js",
   "fixturesFolder": "test/fixtures",
+  "screenshotsFolder": "test/cypress/fixtures",
+  "videosFolder": "test/cypress/videos",
   "experimentalFetchPolyfill": true
 }
