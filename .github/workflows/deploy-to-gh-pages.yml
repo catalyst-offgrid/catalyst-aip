@@ -26,7 +26,7 @@ jobs:
       - name: Test
         uses: cypress-io/github-action@v2
         with:
-          start: yarn develop
+          start: yarn serve
           wait-on: 'http://localhost:8000'
 
       - name: Deploy 🚀
