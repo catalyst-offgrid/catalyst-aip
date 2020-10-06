@@ -7,7 +7,7 @@
     "clean": "rm -rf dist .cache",
     "develop": "parcel -p 8000 src/index.html --open",
     "build": "NODE_ENV=production parcel build src/index.html",
-    "build:ci": "NODE_ENV=production parcel build src/index.html --public-url /catalyst-aip/",
+    "build:ci": "NODE_ENV=production parcel build --public-url './' src/index.html",
     "serve": "npx http-server -p 8000 dist",
     "deploy": "gh-pages -d dist",
     "lint": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\"",
