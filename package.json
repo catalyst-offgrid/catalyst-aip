@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf dist .cache",
     "develop": "parcel -p 8000 src/index.html --open",
-    "build": "NODE_ENV=production parcel build src/index.html --public-url './'",
+    "build": "NODE_ENV=production parcel build src/index.html --public-url ./",
     "deploy": "gh-pages -d dist",
     "lint": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\"",
     "lint:fix": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\" --fix",
