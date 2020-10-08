@@ -1,12 +1,9 @@
-name: Build and Deploy
+name: Lint and Test
 
-on:
-  push:
-    branches:
-      - develop
+on: pull_request
 
 jobs:
-  build-and-deploy:
+  lint-and-test:
     runs-on: ubuntu-latest
 
     env:
@@ -26,21 +23,20 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install and Build
-        run: |
-          yarn install
-          yarn build:ci
+      - name: Install
+        run: yarn install
+
+      - name: Lint
+        run: yarn lint
 
       - name: Test
+        run: yarn test
+
+      - name: Build
+        run: yarn build:ci
+
+      - name: Test End-to-end
         uses: cypress-io/github-action@v2
         with:
           start: yarn serve
           wait-on: 'http://localhost:8000'
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.6.2
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: dist # The folder the action should deploy.
-          CLEAN: true # Automatically remove deleted files from the deploy branch
