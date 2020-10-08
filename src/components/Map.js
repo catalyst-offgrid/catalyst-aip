@@ -1,4 +1,5 @@
-import React, { useLayoutEffect, useState } from 'react'
+import React, { useLayoutEffect, useState, useRef } from 'react'
+import PropTypes from 'prop-types'
 import mapbox from 'mapbox-gl'
 import styled from 'styled-components'
 
@@ -6,8 +7,8 @@ const MapContainer = styled.div`
   height: 100%;
 `
 
-export default function Map() {
-  const ref = React.createRef()
+export default function Map({ children }) {
+  const ref = useRef()
   const [map, setMap] = useState(null)
 
   useLayoutEffect(() => {
@@ -18,7 +19,14 @@ export default function Map() {
       center: [37.85335, 0.44014],
     })
 
-    setMap(m)
+    m.on('load', () => {
+      setMap(m)
+
+      if (process.env.NODE_ENV === 'development') {
+        // makes map accessible in console for debugging
+        window.map = m
+      }
+    })
 
     return () => {
       if (map) {
@@ -27,5 +35,19 @@ export default function Map() {
     }
   }, [])
 
-  return <MapContainer id='map' ref={ref} />
+  return (
+    <MapContainer id='map' ref={ref}>
+      {map &&
+        children &&
+        React.Children.map(children, (child) =>
+          React.cloneElement(child, {
+            map,
+          })
+        )}
+    </MapContainer>
+  )
+}
+
+Map.propTypes = {
+  children: PropTypes.node,
 }
