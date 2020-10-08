@@ -2,9 +2,9 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import mapbox from 'mapbox-gl'
 
-import Map from '../../src/components/map'
-import Source from '../../src/components/source'
-import Layer from '../../src/components/layer'
+import Map from '../../src/components/Map'
+import Source from '../../src/components/Source'
+import Layer from '../../src/components/Layer'
 
 let container
 let mapWrapper, sourceWrapper, layerWrapper
