@@ -29,7 +29,7 @@
   "author": "Alice Rühl <alice@developmentseed.org>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "axe-core": "^4.0.2",
     "babel-eslint": "^10.1.0",
@@ -55,6 +55,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
+    "react-test-renderer": "^16.13.1",
     "styled-components": "^5.2.0"
   },
   "browserslist": {
