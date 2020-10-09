@@ -20,6 +20,9 @@ const layer = {
   source: 'test-source',
   'source-layer': 'test-source',
   type: 'vector',
+  layout: {
+    visibility: 'visible',
+  },
 }
 
 describe('Map', () => {
@@ -78,6 +81,7 @@ describe('Layer', () => {
       layerWrapper = renderer.create(
         <Layer
           id={layer.id}
+          isVisible={'why?'} // TODO: why does this test pass, when this is _not_ a bool?
           spec={layer}
           sourceId={source.id}
           map={mapbox.Map()}
@@ -85,12 +89,50 @@ describe('Layer', () => {
       )
     })
   })
+
   it('adds a map layer', () => {
     expect(layerWrapper.toTree().props.map.addLayer).toHaveBeenCalledWith({
       id: layer.id,
       source: source.id,
       'source-layer': source.layer,
       type: 'vector',
+      layout: {
+        visibility: 'visible',
+      },
     })
+  })
+
+  it('sets the visible map layer to be visible', () => {
+    renderer.act(() => {
+      layerWrapper.update(
+        <Layer
+          id={layer.id}
+          isVisible={true}
+          spec={layer}
+          sourceId={source.id}
+          map={mapbox.Map()}
+        />
+      )
+    })
+    expect(
+      layerWrapper.toTree().props.map.setLayoutProperty
+    ).toHaveBeenCalledWith(layer.id, 'visibility', 'visible')
+  })
+
+  it('sets the hidden map layer to not be visible', () => {
+    renderer.act(() => {
+      layerWrapper.update(
+        <Layer
+          id={layer.id}
+          isVisible={false}
+          spec={layer}
+          sourceId={source.id}
+          map={mapbox.Map()}
+        />
+      )
+    })
+    expect(
+      layerWrapper.toTree().props.map.setLayoutProperty
+    ).toHaveBeenCalledWith(layer.id, 'visibility', 'none')
   })
 })
