@@ -12,8 +12,7 @@ const HeaderContainer = styled.header`
   }
 `
 
-const LayerContainer = styled.ul`
-  list-style: none;
+const LayerContainer = styled.div`
   padding: 1rem;
 `
 
@@ -41,7 +40,7 @@ export default function Header({
         </p>
         <LayerContainer>
           {Object.keys(layerVisibility).map((layer) => (
-            <li
+            <label
               key={layer}
               value={layer}
               style={{
@@ -56,7 +55,7 @@ export default function Header({
                 onClick={toggleLayer}
                 {...(layerVisibility[layer] ? { checked: true } : null)}
               ></wired-toggle>
-            </li>
+            </label>
           ))}
         </LayerContainer>
       </wired-card>
