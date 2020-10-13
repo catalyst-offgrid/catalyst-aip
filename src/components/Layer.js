@@ -3,9 +3,10 @@ import PropTypes from 'prop-types'
 
 export default function Layer({ id, isVisible, spec, map }) {
   const [layer, setLayer] = useState(null)
+  const visibility = isVisible ? 'visible' : 'none'
 
   useEffect(() => {
-    const l = map.addLayer(spec)
+    const l = map.addLayer({ ...spec, layout: { ...spec.layout, visibility } })
     setLayer(l)
 
     return () => {
@@ -15,7 +16,6 @@ export default function Layer({ id, isVisible, spec, map }) {
 
   useEffect(() => {
     if (layer) {
-      const visibility = isVisible ? 'visible' : 'none'
       map.setLayoutProperty(id, 'visibility', visibility)
     }
   }, [isVisible])

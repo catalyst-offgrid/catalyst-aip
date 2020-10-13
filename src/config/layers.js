@@ -17,9 +17,6 @@ export default [
     source: 'population',
     'source-layer': 'Kenya_Population_Density_ARC_-90y1wi',
     type: 'raster',
-    layout: {
-      visibility: 'none',
-    },
     paint: {
       'raster-opacity': 0.5,
     },
@@ -29,9 +26,6 @@ export default [
     source: 'education',
     'source-layer': 'Education_Facilities-6v7pmw',
     type: 'circle',
-    layout: {
-      visibility: 'visible',
-    },
     paint: {
       'circle-color': '#79ceb8',
       'circle-opacity': [
@@ -52,7 +46,6 @@ export default [
     type: 'symbol',
     layout: {
       'icon-image': 'hospital-11',
-      visibility: 'visible',
     },
     paint: {
       'icon-color': '#e53238',
@@ -72,9 +65,6 @@ export default [
     source: 'sacco',
     'source-layer': 'SACCOs-btv3i8',
     type: 'circle',
-    layout: {
-      visibility: 'visible',
-    },
     paint: {
       'circle-color': '#e8f6fb',
       'circle-opacity': [
@@ -93,9 +83,6 @@ export default [
     source: 'mfi',
     'source-layer': 'MFIs-00ivvm',
     type: 'circle',
-    layout: {
-      visibility: 'visible',
-    },
     paint: {
       'circle-color': '#5cc3e8',
       'circle-opacity': [
@@ -114,9 +101,6 @@ export default [
     source: 'banks',
     'source-layer': 'Banks_OSM-dn9mc8',
     type: 'circle',
-    layout: {
-      visibility: 'visible',
-    },
     paint: {
       'circle-color': '#314855',
       'circle-opacity': [
@@ -135,9 +119,6 @@ export default [
     source: 'sub-counties',
     'source-layer': 'Sub-Counties_290-0f84my',
     type: 'line',
-    layout: {
-      visibility: 'visible',
-    },
     paint: {
       'line-color': '#8F3A84',
       'line-dasharray': [5, 3],
@@ -158,9 +139,6 @@ export default [
     source: 'wards',
     'source-layer': 'Wards_1450-60annj',
     type: 'line',
-    layout: {
-      visibility: 'none',
-    },
     paint: {
       'line-color': '#8F3A84',
       'line-dasharray': [5, 3],
@@ -181,9 +159,6 @@ export default [
     source: 'gridfinder',
     'source-layer': 'gridfinder_kenya_sample-avd4fk',
     type: 'line',
-    layout: {
-      visibility: 'visible',
-    },
     paint: {
       'line-color': 'orange',
     },
@@ -193,9 +168,6 @@ export default [
     source: 'counties',
     'source-layer': 'Counties_47_-_Coded-1htj4o',
     type: 'line',
-    layout: {
-      visibility: 'visible',
-    },
     paint: {
       'line-color': '#8F3A84',
       'line-opacity': 0.3,

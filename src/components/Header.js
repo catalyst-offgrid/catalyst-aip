@@ -3,6 +3,8 @@ import React from 'react'
 import styled from 'styled-components'
 import 'wired-elements'
 
+import groups from '../config/groups'
+
 const HeaderContainer = styled.header`
   max-width: 20rem;
   height: 100%;
@@ -21,10 +23,9 @@ export default function Header({
   layerVisibility,
   setLayerVisibility,
 }) {
-  const toggleLayer = (event) => {
-    setLayerVisibility({
-      ...layerVisibility,
-      [event.currentTarget.id]: !layerVisibility[event.currentTarget.id],
+  const toggleLayer = (subId) => {
+    setLayerVisibility((layerVisibility) => {
+      return { ...layerVisibility, [subId]: !layerVisibility[subId] }
     })
   }
 
@@ -39,23 +40,30 @@ export default function Header({
           aliquip ex ea commodo consequat.
         </p>
         <LayerContainer>
-          {Object.keys(layerVisibility).map((layer) => (
-            <label
-              key={layer}
-              value={layer}
-              style={{
-                display: `flex`,
-                justifyContent: `space-between`,
-                alignItems: `center`,
-              }}
-            >
-              {`${layer}`}
-              <wired-toggle
-                id={layer}
-                onClick={toggleLayer}
-                {...(layerVisibility[layer] ? { checked: true } : null)}
-              ></wired-toggle>
-            </label>
+          {groups.map((group) => (
+            <div key={group.id}>
+              <label>
+                <b>{group.label}</b>
+              </label>
+              {Object.entries(group.sub).map(([subId, sub]) => (
+                <label
+                  key={subId}
+                  htmlFor={subId}
+                  style={{
+                    display: `flex`,
+                    justifyContent: `space-between`,
+                    alignItems: `center`,
+                  }}
+                >
+                  {sub.label}
+                  <wired-toggle
+                    id={subId}
+                    onClick={() => toggleLayer(subId)}
+                    {...(layerVisibility[subId] ? { checked: true } : null)}
+                  ></wired-toggle>
+                </label>
+              ))}
+            </div>
           ))}
         </LayerContainer>
       </wired-card>
