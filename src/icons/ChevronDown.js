@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Tick = ({ color = 'none' }) => (
+const ChevronDown = ({ color = 'none' }) => (
   <svg
     version='1.1'
     xmlns='http://www.w3.org/2000/svg'
@@ -10,15 +10,15 @@ const Tick = ({ color = 'none' }) => (
     viewBox='0 0 16 16'
   >
     <rect width='16' height='16' fill='none' />
-    <path
+    <polygon
       fill={color}
-      d='M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z'
+      points='14.586,3.586 8,10.172 1.414,3.586 0,5 8,13 16,5'
     />
   </svg>
 )
 
-export default Tick
+export default ChevronDown
 
-Tick.propTypes = {
+ChevronDown.propTypes = {
   color: PropTypes.string,
 }

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-import Header from '../components/Header'
+import Drawer from '../components/Drawer'
 import Map from '../components/Map'
 import Source from '../components/Source'
 import Layer from '../components/Layer'
@@ -59,12 +59,19 @@ export default function Home({ config }) {
     () => getDefaultVisibility() // lazy initialization of default state
   )
 
+  const toggleLayer = (subId) => {
+    setLayerVisibility((layerVisibility) => {
+      return { ...layerVisibility, [subId]: !layerVisibility[subId] }
+    })
+  }
+
   return (
     <PageContainer>
-      <Header
+      <Drawer
         siteName={config.siteName}
+        headline={config.country}
         layerVisibility={layerVisibility}
-        setLayerVisibility={setLayerVisibility}
+        toggleLayer={toggleLayer}
       />
       <Map>
         {Object.entries(sources).map(([type, list]) =>
@@ -97,5 +104,6 @@ export default function Home({ config }) {
 Home.propTypes = {
   config: PropTypes.shape({
     siteName: PropTypes.string.isRequired,
+    country: PropTypes.string.isRequired,
   }),
 }

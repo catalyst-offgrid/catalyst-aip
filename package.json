@@ -50,6 +50,7 @@
     "prettier": "^2.1.2"
   },
   "dependencies": {
+    "@reach/accordion": "^0.11.2",
     "mapbox-gl": "^1.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
