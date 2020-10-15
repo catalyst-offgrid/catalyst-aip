@@ -2,8 +2,10 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 
+import theme from '../config/theme'
+
 const HeaderContainer = styled.header`
-  padding: 16px;
+  padding: ${theme.space[3]}px;
 `
 
 export default function Header({ siteName, headline }) {

@@ -13,4 +13,5 @@ export default {
     body: 'Open Sans, sans-serif',
     heading: 'Open Sans, sans-serif',
   },
+  space: [0, 4, 8, 16, 32, 347],
 }

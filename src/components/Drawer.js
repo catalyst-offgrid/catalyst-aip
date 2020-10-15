@@ -4,9 +4,10 @@ import styled from 'styled-components'
 
 import Header from './Header'
 import LayerControl from './LayerControl'
+import theme from '../config/theme'
 
 const Container = styled.section`
-  max-width: 347px;
+  max-width: ${theme.space[5]}px;
   height: 100%;
 `
 
