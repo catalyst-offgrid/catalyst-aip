@@ -62,7 +62,7 @@ const ControlItem = styled.label`
 `
 
 export default function LayerControl({ toggleLayer, layerVisibility }) {
-  const [indices, setIndices] = useState([0, 2])
+  const [indices, setIndices] = useState([0, 1])
   function toggleItem(toggledIndex) {
     if (indices.includes(toggledIndex)) {
       setIndices(

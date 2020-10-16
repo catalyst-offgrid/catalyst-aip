@@ -28,6 +28,11 @@ export default [
         defaultVisibility: true,
         layerIds: ['gridfinder'],
       },
+      census: {
+        label: 'Census',
+        defaultVisibility: true,
+        layerIds: ['csv-layer'],
+      },
     },
   },
   {

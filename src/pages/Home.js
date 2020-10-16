@@ -6,6 +6,7 @@ import Drawer from '../components/Drawer'
 import Map from '../components/Map'
 import Source from '../components/Source'
 import Layer from '../components/Layer'
+import CsvExperiment from '../components/CsvExperiment'
 import Basemap from '../components/Basemap'
 
 import groups from '../config/groups'
@@ -95,6 +96,7 @@ export default function Home({ config }) {
             </Source>
           ))
         )}
+        <CsvExperiment id='csv' isVisible={layerVisibility['census']} />
         <Basemap id='road' isVisible={layerVisibility['road']} />
       </Map>
     </PageContainer>
