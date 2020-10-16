@@ -33,15 +33,19 @@ const HiddenCheckbox = styled.input.attrs({ type: 'checkbox' })`
 `
 
 const StyledCheckbox = styled.div`
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background: ${(props) => (props.checked ? colors.aqua : colors.mediumGrey)};
-  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: ${colors.white};
+  border: 1px solid
+    ${(props) => (props.checked ? colors.yellow : colors.mediumGrey)};
+  border-radius: 4px;
   transition: all 150ms;
 
   ${HiddenCheckbox}:focus + & {
-    box-shadow: 0 0 0 3px ${colors.aqua};
+    box-shadow: 0 0 0 3px ${colors.yellow};
   }
 
   ${IconContainer} {
@@ -55,7 +59,7 @@ export default function Checkbox({ className, checked, ...props }) {
       <HiddenCheckbox checked={checked} {...props} />
       <StyledCheckbox checked={checked}>
         <IconContainer>
-          <Tick color={colors.lightGrey} />
+          <Tick color={colors.yellow} />
         </IconContainer>
       </StyledCheckbox>
     </CheckboxContainer>
