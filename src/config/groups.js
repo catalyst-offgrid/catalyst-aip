@@ -60,16 +60,16 @@ export default [
         defaultVisibility: false,
         layerIds: ['population-density'],
       },
-      'fb-population': {
-        label: 'Facebook Population',
-        defaultVisibility: true,
-        layerIds: ['fb-population'],
-      },
-      nightlights: {
-        label: 'Night Lights',
-        defaultVisibility: true,
-        layerIds: ['night-lights'],
-      },
+      // 'fb-population': {
+      //   label: 'Facebook Population',
+      //   defaultVisibility: true,
+      //   layerIds: ['fb-population'],
+      // },
+      // nightlights: {
+      //   label: 'Night Lights',
+      //   defaultVisibility: true,
+      //   layerIds: ['night-lights'],
+      // },
     },
   },
   {
@@ -97,11 +97,11 @@ export default [
         defaultVisibility: true,
         layerIds: transportBasemapLayers,
       },
-      rail: {
-        label: 'Railway',
-        defaultVisibility: false,
-        layerIds: ['rail'],
-      },
+      // rail: {
+      //   label: 'Railway',
+      //   defaultVisibility: false,
+      //   layerIds: ['rail'],
+      // },
     },
   },
 ]
