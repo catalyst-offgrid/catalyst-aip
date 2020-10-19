@@ -17,7 +17,7 @@ const Heading = styled.h1`
 `
 
 const Tagline = styled.label`
-  color: ${theme.colors.yellow};
+  color: ${theme.colors.blue};
   font-family: ${theme.fonts.body};
   font-size: ${theme.fontSizes[0]}pt;
   font-weight: ${theme.fontWeights.bold};
