@@ -33,6 +33,14 @@ const AccordionHeading = styled.h2`
   margin: 0;
 `
 
+const AccordionSubHeading = styled.h3`
+  color: ${theme.colors.blue};
+  font-family: ${theme.fonts.heading};
+  font-size: ${theme.fontSizes[2]}pt;
+  font-weight: ${theme.fontWeights.heading};
+  margin: 0;
+`
+
 const AccordionButton = styled(ReachAccordionButton)`
   appearance: none;
   background: 0;
@@ -100,16 +108,36 @@ export default function LayerControl({ toggleLayer, layerVisibility }) {
             </AccordionButton>
           </AccordionHeader>
           <AccordionPanel>
-            {Object.entries(group.sub).map(([subId, sub]) => (
-              <ControlItem key={subId} htmlFor={subId}>
-                <Checkbox
-                  id={subId}
-                  onChange={() => toggleLayer(subId)}
-                  checked={layerVisibility[subId]}
-                />
-                {sub.label}
-              </ControlItem>
-            ))}
+            {Object.entries(group.sub).map(([subId, sub]) => {
+              if (sub.sub) {
+                return (
+                  <React.Fragment key={subId}>
+                    <AccordionSubHeading>{sub.label}</AccordionSubHeading>
+                    {Object.entries(sub.sub).map(([subsubId, subsub]) => (
+                      <ControlItem key={subsubId} htmlFor={subsubId}>
+                        <Checkbox
+                          id={subsubId}
+                          onChange={() => toggleLayer(subsubId)}
+                          checked={layerVisibility[subsubId]}
+                        />
+                        {subsub.label}
+                      </ControlItem>
+                    ))}
+                  </React.Fragment>
+                )
+              }
+
+              return (
+                <ControlItem key={subId} htmlFor={subId}>
+                  <Checkbox
+                    id={subId}
+                    onChange={() => toggleLayer(subId)}
+                    checked={layerVisibility[subId]}
+                  />
+                  {sub.label}
+                </ControlItem>
+              )
+            })}
           </AccordionPanel>
         </AccordionItem>
       ))}

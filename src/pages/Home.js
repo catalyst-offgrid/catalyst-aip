@@ -23,9 +23,14 @@ const PageContainer = styled.main`
 function getDefaultVisibility() {
   return groups.reduce((obj, cur) => {
     return (
-      Object.entries(cur.sub).map(
-        ([subId, sub]) => (obj[subId] = sub.defaultVisibility)
-      ),
+      Object.entries(cur.sub).map(([subId, sub]) => {
+        if (sub.sub) {
+          return Object.entries(sub.sub).map(
+            ([subsubId, subsub]) => (obj[subsubId] = subsub.defaultVisibility)
+          )
+        }
+        return (obj[subId] = sub.defaultVisibility)
+      }),
       obj
     )
   }, {})
@@ -34,8 +39,13 @@ function getDefaultVisibility() {
 function getSubIdForLayer(layerId) {
   let subId
   groups.find((group) => {
-    const entry = Object.entries(group.sub).find(([, sub]) =>
-      sub.layerIds.includes(layerId)
+    const entry = Object.entries(group.sub).find(
+      ([, sub]) =>
+        (sub.layerIds && sub.layerIds.includes(layerId)) ||
+        (sub.sub &&
+          Object.entries(sub.sub).find(([, subsub]) =>
+            subsub.layerIds.includes(layerId)
+          ))
     )
     if (entry) subId = entry[0]
     return entry
@@ -50,7 +60,7 @@ function isLayerVisible(layerId, layerVisibility) {
     /**
      * Layer "${layerId}" is not assigned to any group. Will always be visible by default.
      */
-    return true
+    return false
   }
   return layerVisibility[subId]
 }
@@ -96,7 +106,7 @@ export default function Home({ config }) {
             </Source>
           ))
         )}
-        <CsvExperiment id='csv' isVisible={layerVisibility['census']} />
+        <CsvExperiment id='csv' layerVisibility={layerVisibility} />
         <Basemap id='road' isVisible={layerVisibility['road']} />
       </Map>
     </PageContainer>

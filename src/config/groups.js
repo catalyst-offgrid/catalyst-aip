@@ -30,8 +30,138 @@ export default [
       },
       census: {
         label: 'Census',
-        defaultVisibility: true,
-        layerIds: ['csv-layer'],
+        sub: {
+          ['Conventional Households']: {
+            label: 'Conventional Households',
+            defaultVisibility: false,
+            layerIds: ['Conventional Households'],
+          },
+          ['Mains Electricity']: {
+            label: 'Mains Electricity',
+            defaultVisibility: true,
+            layerIds: ['Mains Electricity'],
+          },
+          ['Low-Quality Stopgap Total']: {
+            label: 'Low-Quality Stopgap Total',
+            defaultVisibility: false,
+            layerIds: ['Low-Quality Stopgap Total'],
+          },
+          ['Kerosene (Total)']: {
+            label: 'Kerosene (Total)',
+            defaultVisibility: false,
+            layerIds: ['Kerosene (Total)'],
+          },
+          ['Paraffin Pressure Lamp']: {
+            label: 'Paraffin Pressure Lamp',
+            defaultVisibility: false,
+            layerIds: ['Paraffin Pressure Lamp'],
+          },
+          ['Paraffin Lantern']: {
+            label: 'Paraffin Lantern',
+            defaultVisibility: false,
+            layerIds: ['Paraffin Lantern'],
+          },
+          ['Paraffin Tin Lamp']: {
+            label: 'Paraffin Tin Lamp',
+            defaultVisibility: false,
+            layerIds: ['Paraffin Tin Lamp'],
+          },
+          ['Gas Lamp']: {
+            label: 'Gas Lamp',
+            defaultVisibility: false,
+            layerIds: ['Gas Lamp'],
+          },
+          ['Wood']: {
+            label: 'Wood',
+            defaultVisibility: false,
+            layerIds: ['Wood'],
+          },
+          ['Solar (Total)']: {
+            label: 'Solar (Total)',
+            defaultVisibility: false,
+            layerIds: ['Solar (Total)'],
+          },
+          ['Solar']: {
+            label: 'Solar',
+            defaultVisibility: false,
+            layerIds: ['Solar'],
+          },
+          ['Torch / Spotlight (Solar-Charged)']: {
+            label: 'Torch / Spotlight (Solar-Charged)',
+            defaultVisibility: false,
+            layerIds: ['Torch / Spotlight (Solar-Charged)'],
+          },
+          ['Torch / Spotlight (Dry Cells))']: {
+            label: 'Torch / Spotlight (Dry Cells))',
+            defaultVisibility: false,
+            layerIds: ['Torch / Spotlight (Dry Cells))'],
+          },
+          ['Candle']: {
+            label: 'Candle',
+            defaultVisibility: false,
+            layerIds: ['Candle'],
+          },
+          ['Battery (Car-Charged)']: {
+            label: 'Battery (Car-Charged)',
+            defaultVisibility: false,
+            layerIds: ['Battery (Car-Charged)'],
+          },
+          ['Generator (Diesel / Petrol)']: {
+            label: 'Generator (Diesel / Petrol)',
+            defaultVisibility: false,
+            layerIds: ['Generator (Diesel / Petrol)'],
+          },
+          ['Biogas']: {
+            label: 'Biogas',
+            defaultVisibility: false,
+            layerIds: ['Biogas'],
+          },
+          ['Not Stated']: {
+            label: 'Not Stated',
+            defaultVisibility: false,
+            layerIds: ['Not Stated'],
+          },
+          ['Cooking - Electricity']: {
+            label: 'Cooking - Electricity',
+            defaultVisibility: false,
+            layerIds: ['Cooking - Electricity'],
+          },
+          ['Cooking - Paraffin']: {
+            label: 'Cooking - Paraffin',
+            defaultVisibility: false,
+            layerIds: ['Cooking - Paraffin'],
+          },
+          ['Cooking - Gas (LPG)']: {
+            label: 'Cooking - Gas (LPG)',
+            defaultVisibility: false,
+            layerIds: ['Cooking - Gas (LPG)'],
+          },
+          ['Cooking - Biogas']: {
+            label: 'Cooking - Biogas',
+            defaultVisibility: false,
+            layerIds: ['Cooking - Biogas'],
+          },
+          ['Cooking - Firewood']: {
+            label: 'Cooking - Firewood',
+            defaultVisibility: false,
+            layerIds: ['Cooking - Firewood'],
+          },
+          ['Cooking - Charcoal']: {
+            label: 'Cooking - Charcoal',
+            defaultVisibility: false,
+            layerIds: ['Cooking - Charcoal'],
+          },
+          ['Cooking - Solar']: {
+            label: 'Cooking - Solar',
+            defaultVisibility: false,
+            layerIds: ['Cooking - Solar'],
+          },
+          ['Cooking - Not Stated']: {
+            label: 'Cooking - Not Stated',
+            defaultVisibility: false,
+            layerIds: ['Cooking - Not Stated'],
+          },
+        },
       },
     },
   },
