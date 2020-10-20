@@ -1382,6 +1382,15 @@
     "@reach/utils" "0.11.2"
     tslib "^2.0.0"
 
+"@reach/disclosure@^0.11.2":
+  version "0.11.2"
+  resolved "https://registry.yarnpkg.com/@reach/disclosure/-/disclosure-0.11.2.tgz#d572dfe22166646044a5e66d6b495f8eb081ed82"
+  integrity sha512-wCNBiWOVPbhyfUEQo0ixP5nTsXhQKhtfSpNCo/eZXQ+34R4tRqVfnTqf1qVHPdz0rpwW9Td5wgXyqLrpn8SGhw==
+  dependencies:
+    "@reach/auto-id" "0.11.2"
+    "@reach/utils" "0.11.2"
+    tslib "^2.0.0"
+
 "@reach/utils@0.11.2":
   version "0.11.2"
   resolved "https://registry.yarnpkg.com/@reach/utils/-/utils-0.11.2.tgz#be1f03650db56fd67a16d3fc70e5262cdb139cec"

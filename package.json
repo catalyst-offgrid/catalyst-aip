@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "@reach/accordion": "^0.11.2",
+    "@reach/disclosure": "^0.11.2",
     "d3-fetch": "^2.0.0",
     "mapbox-gl": "^1.12.0",
     "prop-types": "^15.7.2",
