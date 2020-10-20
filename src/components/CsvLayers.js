@@ -15,46 +15,47 @@ export default function CsvLayers({ layerVisibility, map }) {
   useEffect(() => {
     d3.csv(csv).then((data) => {
       setData(data)
-
       const l = []
-      data.columns.forEach((column) => {
-        l.push({
-          id: `${column}`,
-          source: 'census',
-          'source-layer': 'Counties_47_-_Coded-1htj4o',
-          type: 'fill',
-          paint: {
-            'fill-color': [
-              'case',
-              ['!=', ['feature-state', column], null],
-              [
-                'interpolate',
-                ['linear'],
-                ['to-number', ['feature-state', column]],
-                0,
-                theme.colors.white,
-                50,
-                theme.colors.blue,
+      data.columns
+        .filter((c) => Object.keys(layerVisibility).includes(c))
+        .forEach((column) => {
+          l.push({
+            id: `${column}`,
+            source: 'census',
+            'source-layer': 'Counties_47_-_Coded-1htj4o',
+            type: 'fill',
+            paint: {
+              'fill-color': [
+                'case',
+                ['!=', ['feature-state', column], null],
+                [
+                  'interpolate',
+                  ['linear'],
+                  ['to-number', ['feature-state', column]],
+                  0,
+                  theme.colors.white,
+                  50,
+                  theme.colors.blue,
+                ],
+                theme.colors.grey,
               ],
-              theme.colors.grey,
-            ],
-            'fill-opacity': [
-              'case',
-              ['!=', ['feature-state', column], null],
-              [
-                'interpolate',
-                ['linear'],
-                ['to-number', ['feature-state', column]],
-                0,
-                0.2,
-                50,
-                1,
+              'fill-opacity': [
+                'case',
+                ['!=', ['feature-state', column], null],
+                [
+                  'interpolate',
+                  ['linear'],
+                  ['to-number', ['feature-state', column]],
+                  0,
+                  0.2,
+                  50,
+                  1,
+                ],
+                0.5,
               ],
-              0.5,
-            ],
-          },
+            },
+          })
         })
-      })
 
       setLayer(l)
     })
