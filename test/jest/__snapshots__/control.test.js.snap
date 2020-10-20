@@ -61,6 +61,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
+      className="sc-fujyUd jbNtYB"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
@@ -256,6 +257,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
+      className="sc-fujyUd jbNtYB"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
@@ -307,7 +309,7 @@ exports[`LayerControl matches the snapshot 1`] = `
         Gridfinder
       </label>
       <div
-        className="sc-gKAblj sc-fujyUd keXyJJ glxTEz"
+        className="sc-gKAblj sc-pNWxx keXyJJ iCgPCz"
       >
         <button
           aria-controls="panel--1"
@@ -318,7 +320,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           onClick={[Function]}
         >
           <h3
-            className="sc-pNWxx hCTKGk"
+            className="sc-jrsJCI gBMxHe"
           >
             Census
           </h3>
@@ -353,6 +355,7 @@ exports[`LayerControl matches the snapshot 1`] = `
         </button>
       </div>
       <div
+        className="sc-fujyUd jbNtYB"
         data-reach-disclosure-panel=""
         data-state="open"
         hidden={false}
@@ -1537,6 +1540,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
+      className="sc-fujyUd jbNtYB"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
@@ -1732,6 +1736,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
+      className="sc-fujyUd jbNtYB"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
@@ -1841,6 +1846,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
+      className="sc-fujyUd jbNtYB"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
@@ -1993,6 +1999,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
+      className="sc-fujyUd jbNtYB"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}

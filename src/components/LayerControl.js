@@ -142,6 +142,12 @@ const FirstLevelHeading = styled.div`
   }
 `
 
+const Panel = styled.div`
+  &:focus {
+    outline: none;
+  }
+`
+
 const hasSelectedLayers = (controls, layerVisibility) => {
   const selectedLayerIds = Object.keys(layerVisibility).filter(
     (key) => layerVisibility[key]
@@ -198,7 +204,7 @@ function FirstLevelPanel({
           )}
         </ToggleButton>
       </FirstLevelHeader>
-      <AccordionPanel>
+      <Panel as={AccordionPanel}>
         {Object.entries(controls).map(([controlId, control]) => {
           if (control.subcontrols) {
             return (
@@ -222,7 +228,7 @@ function FirstLevelPanel({
             />
           )
         })}
-      </AccordionPanel>
+      </Panel>
     </AccordionItem>
   )
 }
@@ -280,7 +286,7 @@ function SecondLevelPanel({ label, controls, toggleLayer, layerVisibility }) {
           )}
         </ToggleButton>
       </SecondLevelHeader>
-      <DisclosurePanel>
+      <Panel as={DisclosurePanel}>
         {Object.entries(controls).map(([controlId, control]) => (
           <ControlItem
             key={controlId}
@@ -290,7 +296,7 @@ function SecondLevelPanel({ label, controls, toggleLayer, layerVisibility }) {
             layerVisibility={layerVisibility}
           />
         ))}
-      </DisclosurePanel>
+      </Panel>
     </Disclosure>
   )
 }
