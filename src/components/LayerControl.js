@@ -92,17 +92,17 @@ export default function LayerControl({ toggleLayer, layerVisibility }) {
                 <span
                   style={{ marginLeft: theme.space[3] }}
                   role='img'
-                  aria-label='chevron up'
+                  aria-label='chevron down'
                 >
-                  <ChevronUp color={theme.colors.blue} />
+                  <ChevronDown color={theme.colors.blue} />
                 </span>
               ) : (
                 <span
                   style={{ marginLeft: theme.space[3] }}
                   role='img'
-                  aria-label='chevron down'
+                  aria-label='chevron up'
                 >
-                  <ChevronDown color={theme.colors.blue} />
+                  <ChevronUp color={theme.colors.blue} />
                 </span>
               )}
             </AccordionButton>
