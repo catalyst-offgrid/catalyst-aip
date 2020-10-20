@@ -27,6 +27,7 @@ module.exports = {
     removeSource: jest.fn(),
     resize: jest.fn(),
     scrollZoom: { disable: jest.fn() },
+    setFeatureState: jest.fn(),
     setFilter: jest.fn(),
     setLayoutProperty: jest.fn(),
     setPaintProperty: jest.fn(),

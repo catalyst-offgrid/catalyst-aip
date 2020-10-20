@@ -1,0 +1,2019 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LayerControl matches the snapshot 1`] = `
+<div
+  data-reach-accordion=""
+>
+  <div
+    data-reach-accordion-item=""
+    data-state="collapsed"
+  >
+    <div
+      className="sc-gKAblj givKzb"
+    >
+      <button
+        aria-controls="panel--2---1"
+        aria-expanded={false}
+        className="sc-jSFkmK dtuRbP"
+        data-reach-accordion-button=""
+        id="button--2---1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        <h2
+          className="sc-iCoHVE ixITtm"
+        >
+          Administrative Boundaries
+        </h2>
+        <span
+          aria-label="chevron down"
+          role="img"
+          style={
+            Object {
+              "marginLeft": 16,
+            }
+          }
+        >
+          <svg
+            height="16"
+            version="1.1"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="16"
+              width="16"
+            />
+            <polygon
+              fill="#304CA2"
+              points="14.586,3.586 8,10.172 1.414,3.586 0,5 8,13 16,5"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+    <div
+      aria-labelledby="button--2---1"
+      data-reach-accordion-panel=""
+      data-state="collapsed"
+      hidden={true}
+      id="panel--2---1"
+      role="region"
+      tabIndex={-1}
+    >
+      <label
+        className="sc-eCApGN deBRhj"
+        htmlFor="counties"
+      >
+        <div
+          className="sc-gtssRu XsuIH"
+        >
+          <input
+            checked={false}
+            className="sc-dlnjPT bVNyMh"
+            id="counties"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <div
+            checked={false}
+            className="sc-hKFyIo ciqTSW"
+          >
+            <div
+              className="sc-bdnylx ilSLBO"
+            >
+              <svg
+                height="16"
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="16"
+                  width="16"
+                />
+                <path
+                  d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                  fill="#F98E08"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        Counties
+      </label>
+      <label
+        className="sc-eCApGN deBRhj"
+        htmlFor="sub-counties"
+      >
+        <div
+          className="sc-gtssRu XsuIH"
+        >
+          <input
+            checked={false}
+            className="sc-dlnjPT bVNyMh"
+            id="sub-counties"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <div
+            checked={false}
+            className="sc-hKFyIo ciqTSW"
+          >
+            <div
+              className="sc-bdnylx ilSLBO"
+            >
+              <svg
+                height="16"
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="16"
+                  width="16"
+                />
+                <path
+                  d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                  fill="#F98E08"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        Sub-Counties
+      </label>
+      <label
+        className="sc-eCApGN deBRhj"
+        htmlFor="wards"
+      >
+        <div
+          className="sc-gtssRu XsuIH"
+        >
+          <input
+            checked={false}
+            className="sc-dlnjPT bVNyMh"
+            id="wards"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <div
+            checked={false}
+            className="sc-hKFyIo ciqTSW"
+          >
+            <div
+              className="sc-bdnylx ilSLBO"
+            >
+              <svg
+                height="16"
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="16"
+                  width="16"
+                />
+                <path
+                  d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                  fill="#F98E08"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        Wards
+      </label>
+    </div>
+  </div>
+  <div
+    data-reach-accordion-item=""
+    data-state="collapsed"
+  >
+    <div
+      className="sc-gKAblj givKzb"
+    >
+      <button
+        aria-controls="panel--2---1"
+        aria-expanded={false}
+        className="sc-jSFkmK dtuRbP"
+        data-reach-accordion-button=""
+        id="button--2---1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        <h2
+          className="sc-iCoHVE ixITtm"
+        >
+          Energy
+        </h2>
+        <span
+          aria-label="chevron down"
+          role="img"
+          style={
+            Object {
+              "marginLeft": 16,
+            }
+          }
+        >
+          <svg
+            height="16"
+            version="1.1"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="16"
+              width="16"
+            />
+            <polygon
+              fill="#304CA2"
+              points="14.586,3.586 8,10.172 1.414,3.586 0,5 8,13 16,5"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+    <div
+      aria-labelledby="button--2---1"
+      data-reach-accordion-panel=""
+      data-state="collapsed"
+      hidden={true}
+      id="panel--2---1"
+      role="region"
+      tabIndex={-1}
+    >
+      <label
+        className="sc-eCApGN deBRhj"
+        htmlFor="gridfinder"
+      >
+        <div
+          className="sc-gtssRu XsuIH"
+        >
+          <input
+            checked={true}
+            className="sc-dlnjPT bVNyMh"
+            id="gridfinder"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <div
+            checked={true}
+            className="sc-hKFyIo eJviNo"
+          >
+            <div
+              className="sc-bdnylx ilSLBO"
+            >
+              <svg
+                height="16"
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="16"
+                  width="16"
+                />
+                <path
+                  d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                  fill="#F98E08"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        Gridfinder
+      </label>
+      <div
+        className="sc-gKAblj sc-fujyUd givKzb glxTEz"
+      >
+        <button
+          aria-controls="panel--1"
+          aria-expanded={true}
+          className="sc-jSFkmK dtuRbP"
+          data-reach-disclosure-button=""
+          data-state="open"
+          onClick={[Function]}
+        >
+          <h3
+            className="sc-pNWxx hCTKGk"
+          >
+            Census
+          </h3>
+          <span
+            aria-label="minus"
+            role="img"
+            style={
+              Object {
+                "marginLeft": 16,
+              }
+            }
+          >
+            <svg
+              height="16"
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="none"
+                height="16"
+                id="icon-bound"
+                width="16"
+              />
+              <polygon
+                fill="#304CA2"
+                points="14,7 2,7 2,9 14,9"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+      <div
+        data-reach-disclosure-panel=""
+        data-state="open"
+        hidden={false}
+        id="panel--1"
+        tabIndex={-1}
+      >
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Conventional Households"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Conventional Households"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Conventional Households
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Mains Electricity"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Mains Electricity"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Mains Electricity
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Low-Quality Stopgap Total"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Low-Quality Stopgap Total"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Low-Quality Stopgap Total
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Kerosene (Total)"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Kerosene (Total)"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Kerosene (Total)
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Paraffin Pressure Lamp"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Paraffin Pressure Lamp"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Paraffin Pressure Lamp
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Paraffin Lantern"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Paraffin Lantern"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Paraffin Lantern
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Paraffin Tin Lamp"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Paraffin Tin Lamp"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Paraffin Tin Lamp
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Gas Lamp"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Gas Lamp"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Gas Lamp
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Wood"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Wood"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Wood
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Solar (Total)"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Solar (Total)"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Solar (Total)
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Solar"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Solar"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Solar
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Torch / Spotlight (Solar-Charged)"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Torch / Spotlight (Solar-Charged)"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Torch / Spotlight (Solar-Charged)
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Torch / Spotlight (Dry Cells))"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Torch / Spotlight (Dry Cells))"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Torch / Spotlight (Dry Cells))
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Candle"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Candle"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Candle
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Battery (Car-Charged)"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Battery (Car-Charged)"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Battery (Car-Charged)
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Generator (Diesel / Petrol)"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Generator (Diesel / Petrol)"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Generator (Diesel / Petrol)
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Biogas"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Biogas"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Biogas
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Not Stated"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Not Stated"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Not Stated
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Cooking - Electricity"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Cooking - Electricity"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Cooking - Electricity
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Cooking - Paraffin"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Cooking - Paraffin"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Cooking - Paraffin
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Cooking - Gas (LPG)"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Cooking - Gas (LPG)"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Cooking - Gas (LPG)
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Cooking - Biogas"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Cooking - Biogas"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Cooking - Biogas
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Cooking - Firewood"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Cooking - Firewood"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Cooking - Firewood
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Cooking - Charcoal"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Cooking - Charcoal"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Cooking - Charcoal
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Cooking - Solar"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Cooking - Solar"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Cooking - Solar
+        </label>
+        <label
+          className="sc-eCApGN deBRhj"
+          htmlFor="Cooking - Not Stated"
+        >
+          <div
+            className="sc-gtssRu XsuIH"
+          >
+            <input
+              checked={false}
+              className="sc-dlnjPT bVNyMh"
+              id="Cooking - Not Stated"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <div
+              checked={false}
+              className="sc-hKFyIo ciqTSW"
+            >
+              <div
+                className="sc-bdnylx ilSLBO"
+              >
+                <svg
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="16"
+                    width="16"
+                  />
+                  <path
+                    d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                    fill="#F98E08"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          Cooking - Not Stated
+        </label>
+      </div>
+    </div>
+  </div>
+  <div
+    data-reach-accordion-item=""
+    data-state="collapsed"
+  >
+    <div
+      className="sc-gKAblj deYZNQ"
+    >
+      <button
+        aria-controls="panel--2---1"
+        aria-expanded={false}
+        className="sc-jSFkmK dtuRbP"
+        data-reach-accordion-button=""
+        id="button--2---1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        <h2
+          className="sc-iCoHVE ixITtm"
+        >
+          Financial Services
+        </h2>
+        <span
+          aria-label="chevron up"
+          role="img"
+          style={
+            Object {
+              "marginLeft": 16,
+            }
+          }
+        >
+          <svg
+            height="16"
+            version="1.1"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="16"
+              width="16"
+            />
+            <polygon
+              fill="#304CA2"
+              points="1.414,12.414 8,5.828 14.586,12.414 16,11 8,3 0,11"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+    <div
+      aria-labelledby="button--2---1"
+      data-reach-accordion-panel=""
+      data-state="collapsed"
+      hidden={true}
+      id="panel--2---1"
+      role="region"
+      tabIndex={-1}
+    >
+      <label
+        className="sc-eCApGN deBRhj"
+        htmlFor="banks"
+      >
+        <div
+          className="sc-gtssRu XsuIH"
+        >
+          <input
+            checked={false}
+            className="sc-dlnjPT bVNyMh"
+            id="banks"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <div
+            checked={false}
+            className="sc-hKFyIo ciqTSW"
+          >
+            <div
+              className="sc-bdnylx ilSLBO"
+            >
+              <svg
+                height="16"
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="16"
+                  width="16"
+                />
+                <path
+                  d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                  fill="#F98E08"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        Banks
+      </label>
+      <label
+        className="sc-eCApGN deBRhj"
+        htmlFor="mfi"
+      >
+        <div
+          className="sc-gtssRu XsuIH"
+        >
+          <input
+            checked={false}
+            className="sc-dlnjPT bVNyMh"
+            id="mfi"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <div
+            checked={false}
+            className="sc-hKFyIo ciqTSW"
+          >
+            <div
+              className="sc-bdnylx ilSLBO"
+            >
+              <svg
+                height="16"
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="16"
+                  width="16"
+                />
+                <path
+                  d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                  fill="#F98E08"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        MFIs
+      </label>
+      <label
+        className="sc-eCApGN deBRhj"
+        htmlFor="sacco"
+      >
+        <div
+          className="sc-gtssRu XsuIH"
+        >
+          <input
+            checked={false}
+            className="sc-dlnjPT bVNyMh"
+            id="sacco"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <div
+            checked={false}
+            className="sc-hKFyIo ciqTSW"
+          >
+            <div
+              className="sc-bdnylx ilSLBO"
+            >
+              <svg
+                height="16"
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="16"
+                  width="16"
+                />
+                <path
+                  d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                  fill="#F98E08"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        SACCOs
+      </label>
+    </div>
+  </div>
+  <div
+    data-reach-accordion-item=""
+    data-state="collapsed"
+  >
+    <div
+      className="sc-gKAblj deYZNQ"
+    >
+      <button
+        aria-controls="panel--2---1"
+        aria-expanded={false}
+        className="sc-jSFkmK dtuRbP"
+        data-reach-accordion-button=""
+        id="button--2---1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        <h2
+          className="sc-iCoHVE ixITtm"
+        >
+          Population
+        </h2>
+        <span
+          aria-label="chevron up"
+          role="img"
+          style={
+            Object {
+              "marginLeft": 16,
+            }
+          }
+        >
+          <svg
+            height="16"
+            version="1.1"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="16"
+              width="16"
+            />
+            <polygon
+              fill="#304CA2"
+              points="1.414,12.414 8,5.828 14.586,12.414 16,11 8,3 0,11"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+    <div
+      aria-labelledby="button--2---1"
+      data-reach-accordion-panel=""
+      data-state="collapsed"
+      hidden={true}
+      id="panel--2---1"
+      role="region"
+      tabIndex={-1}
+    >
+      <label
+        className="sc-eCApGN deBRhj"
+        htmlFor="arc"
+      >
+        <div
+          className="sc-gtssRu XsuIH"
+        >
+          <input
+            checked={false}
+            className="sc-dlnjPT bVNyMh"
+            id="arc"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <div
+            checked={false}
+            className="sc-hKFyIo ciqTSW"
+          >
+            <div
+              className="sc-bdnylx ilSLBO"
+            >
+              <svg
+                height="16"
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="16"
+                  width="16"
+                />
+                <path
+                  d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                  fill="#F98E08"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        Population Density (ARC 2016)
+      </label>
+    </div>
+  </div>
+  <div
+    data-reach-accordion-item=""
+    data-state="collapsed"
+  >
+    <div
+      className="sc-gKAblj deYZNQ"
+    >
+      <button
+        aria-controls="panel--2---1"
+        aria-expanded={false}
+        className="sc-jSFkmK dtuRbP"
+        data-reach-accordion-button=""
+        id="button--2---1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        <h2
+          className="sc-iCoHVE ixITtm"
+        >
+          Public facilities
+        </h2>
+        <span
+          aria-label="chevron up"
+          role="img"
+          style={
+            Object {
+              "marginLeft": 16,
+            }
+          }
+        >
+          <svg
+            height="16"
+            version="1.1"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="16"
+              width="16"
+            />
+            <polygon
+              fill="#304CA2"
+              points="1.414,12.414 8,5.828 14.586,12.414 16,11 8,3 0,11"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+    <div
+      aria-labelledby="button--2---1"
+      data-reach-accordion-panel=""
+      data-state="collapsed"
+      hidden={true}
+      id="panel--2---1"
+      role="region"
+      tabIndex={-1}
+    >
+      <label
+        className="sc-eCApGN deBRhj"
+        htmlFor="health"
+      >
+        <div
+          className="sc-gtssRu XsuIH"
+        >
+          <input
+            checked={false}
+            className="sc-dlnjPT bVNyMh"
+            id="health"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <div
+            checked={false}
+            className="sc-hKFyIo ciqTSW"
+          >
+            <div
+              className="sc-bdnylx ilSLBO"
+            >
+              <svg
+                height="16"
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="16"
+                  width="16"
+                />
+                <path
+                  d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                  fill="#F98E08"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        Health Facilities
+      </label>
+      <label
+        className="sc-eCApGN deBRhj"
+        htmlFor="education"
+      >
+        <div
+          className="sc-gtssRu XsuIH"
+        >
+          <input
+            checked={true}
+            className="sc-dlnjPT bVNyMh"
+            id="education"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <div
+            checked={true}
+            className="sc-hKFyIo eJviNo"
+          >
+            <div
+              className="sc-bdnylx ilSLBO"
+            >
+              <svg
+                height="16"
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="16"
+                  width="16"
+                />
+                <path
+                  d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                  fill="#F98E08"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        Education Facilities
+      </label>
+    </div>
+  </div>
+  <div
+    data-reach-accordion-item=""
+    data-state="collapsed"
+  >
+    <div
+      className="sc-gKAblj deYZNQ"
+    >
+      <button
+        aria-controls="panel--2---1"
+        aria-expanded={false}
+        className="sc-jSFkmK dtuRbP"
+        data-reach-accordion-button=""
+        id="button--2---1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        <h2
+          className="sc-iCoHVE ixITtm"
+        >
+          Transport
+        </h2>
+        <span
+          aria-label="chevron up"
+          role="img"
+          style={
+            Object {
+              "marginLeft": 16,
+            }
+          }
+        >
+          <svg
+            height="16"
+            version="1.1"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="16"
+              width="16"
+            />
+            <polygon
+              fill="#304CA2"
+              points="1.414,12.414 8,5.828 14.586,12.414 16,11 8,3 0,11"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+    <div
+      aria-labelledby="button--2---1"
+      data-reach-accordion-panel=""
+      data-state="collapsed"
+      hidden={true}
+      id="panel--2---1"
+      role="region"
+      tabIndex={-1}
+    >
+      <label
+        className="sc-eCApGN deBRhj"
+        htmlFor="road"
+      >
+        <div
+          className="sc-gtssRu XsuIH"
+        >
+          <input
+            checked={false}
+            className="sc-dlnjPT bVNyMh"
+            id="road"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <div
+            checked={false}
+            className="sc-hKFyIo ciqTSW"
+          >
+            <div
+              className="sc-bdnylx ilSLBO"
+            >
+              <svg
+                height="16"
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="16"
+                  width="16"
+                />
+                <path
+                  d="M2,9.014L3.414,7.6L6.004,10.189L12.593,3.6L14.007,5.014L6.003,13.017L2,9.014Z"
+                  fill="#F98E08"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        Roads
+      </label>
+    </div>
+  </div>
+</div>
+`;

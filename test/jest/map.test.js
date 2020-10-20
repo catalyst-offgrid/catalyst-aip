@@ -91,15 +91,18 @@ describe('Layer', () => {
   })
 
   it('adds a map layer', () => {
-    expect(layerWrapper.toTree().props.map.addLayer).toHaveBeenCalledWith({
-      id: layer.id,
-      source: source.id,
-      'source-layer': source.layer,
-      type: 'vector',
-      layout: {
-        visibility: 'visible',
+    expect(layerWrapper.toTree().props.map.addLayer).toHaveBeenCalledWith(
+      {
+        id: layer.id,
+        source: source.id,
+        'source-layer': source.layer,
+        type: 'vector',
+        layout: {
+          visibility: 'visible',
+        },
       },
-    })
+      undefined
+    )
   })
 
   it('sets the visible map layer to be visible', () => {
@@ -134,5 +137,81 @@ describe('Layer', () => {
     expect(
       layerWrapper.toTree().props.map.setLayoutProperty
     ).toHaveBeenCalledWith(layer.id, 'visibility', 'none')
+  })
+
+  it('moves the layer before the one specified', () => {
+    renderer.act(() => {
+      layerWrapper = renderer.create(
+        <Layer
+          id={layer.id}
+          isVisible={true}
+          spec={layer}
+          sourceId={source.id}
+          map={mapbox.Map()}
+          before='water'
+        />
+      )
+    })
+
+    expect(layerWrapper.toTree().props.map.addLayer).toHaveBeenCalledWith(
+      {
+        id: layer.id,
+        source: source.id,
+        'source-layer': source.layer,
+        type: 'vector',
+        layout: {
+          visibility: 'visible',
+        },
+      },
+      'water'
+    )
+  })
+
+  it('sets the provided data to the feature state', () => {
+    renderer.act(() => {
+      layerWrapper = renderer.create(
+        <Layer
+          id={layer.id}
+          isVisible={true}
+          spec={layer}
+          sourceId={source.id}
+          map={mapbox.Map()}
+          data={[
+            { Id: 0, kerosine: 5, solar: 23 },
+            { Id: 1, kerosine: 7, solar: 15 },
+          ]}
+        />
+      )
+    })
+
+    expect(
+      layerWrapper.toTree().props.map.setFeatureState
+    ).toHaveBeenCalledWith(
+      {
+        source: source.id,
+        sourceLayer: source.layer,
+        id: 0,
+      },
+      {
+        Id: 0,
+        kerosine: 5,
+        solar: 23,
+      }
+    )
+
+    expect(
+      layerWrapper.toTree().props.map.setFeatureState
+    ).toHaveBeenCalledWith(
+      {
+        source: source.id,
+        sourceLayer: source.layer,
+        id: 1,
+      },
+      {
+        Id: 1,
+        kerosine: 7,
+        solar: 15,
+      }
+    )
   })
 })
