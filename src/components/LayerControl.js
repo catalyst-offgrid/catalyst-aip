@@ -109,6 +109,10 @@ const FirstLevelHeader = styled.div`
   align-items: center;
   padding: ${space[3]}px ${space[2]}px;
   display: flex;
+  border-left: ${(props) =>
+    props.hasSelectedLayers
+      ? `5px solid ${theme.colors.yellow}`
+      : `5px solid ${theme.colors.white}`};
   border-top: 1px solid ${theme.colors.mediumGrey};
   border-bottom: ${(props) =>
     props.isOpen ? `1px solid ${theme.colors.mediumGrey}` : 0};
@@ -138,6 +142,22 @@ const FirstLevelHeading = styled.div`
   }
 `
 
+const hasSelectedLayers = (controls, layerVisibility) => {
+  const selectedLayerIds = Object.keys(layerVisibility).filter(
+    (key) => layerVisibility[key]
+  )
+
+  const hasFirstLevelSelection = (group) =>
+    Object.keys(group).some((key) => selectedLayerIds.includes(key))
+
+  const hasSecondLevelSelection = (group) =>
+    Object.values(group)
+      .filter((control) => !!control.subcontrols)
+      .some((control) => hasFirstLevelSelection(control.subcontrols))
+
+  return hasFirstLevelSelection(controls) || hasSecondLevelSelection(controls)
+}
+
 function FirstLevelPanel({
   label,
   description,
@@ -149,7 +169,10 @@ function FirstLevelPanel({
 }) {
   return (
     <AccordionItem>
-      <FirstLevelHeader isOpen={indices.includes(index)}>
+      <FirstLevelHeader
+        isOpen={indices.includes(index)}
+        hasSelectedLayers={hasSelectedLayers(controls, layerVisibility)}
+      >
         <ToggleButton as={AccordionButton}>
           <FirstLevelHeading>
             <h2>{label}</h2>

@@ -9,12 +9,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-gKAblj givKzb"
+      className="sc-gKAblj keXyJJ"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-jSFkmK kmcKgU"
+        className="sc-jSFkmK bNxcpZ"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
@@ -204,12 +204,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-gKAblj givKzb"
+      className="sc-gKAblj hzEHVz"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-jSFkmK kmcKgU"
+        className="sc-jSFkmK bNxcpZ"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
@@ -307,12 +307,12 @@ exports[`LayerControl matches the snapshot 1`] = `
         Gridfinder
       </label>
       <div
-        className="sc-gKAblj sc-fujyUd givKzb glxTEz"
+        className="sc-gKAblj sc-fujyUd keXyJJ glxTEz"
       >
         <button
           aria-controls="panel--1"
           aria-expanded={true}
-          className="sc-jSFkmK kmcKgU"
+          className="sc-jSFkmK bNxcpZ"
           data-reach-disclosure-button=""
           data-state="open"
           onClick={[Function]}
@@ -1485,12 +1485,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-gKAblj deYZNQ"
+      className="sc-gKAblj gkspEe"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-jSFkmK kmcKgU"
+        className="sc-jSFkmK bNxcpZ"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
@@ -1680,12 +1680,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-gKAblj deYZNQ"
+      className="sc-gKAblj gkspEe"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-jSFkmK kmcKgU"
+        className="sc-jSFkmK bNxcpZ"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
@@ -1789,12 +1789,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-gKAblj deYZNQ"
+      className="sc-gKAblj kTsHVQ"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-jSFkmK kmcKgU"
+        className="sc-jSFkmK bNxcpZ"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
@@ -1941,12 +1941,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-gKAblj deYZNQ"
+      className="sc-gKAblj gkspEe"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-jSFkmK kmcKgU"
+        className="sc-jSFkmK bNxcpZ"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
