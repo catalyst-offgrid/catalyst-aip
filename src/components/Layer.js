@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
-export default function Layer({ id, isVisible, spec, data, map }) {
+export default function Layer({ id, isVisible, spec, data, before, map }) {
   const [layer, setLayer] = useState(null)
   const visibility = isVisible ? 'visible' : 'none'
 
   useEffect(() => {
-    const l = map.addLayer({ ...spec, layout: { ...spec.layout, visibility } })
+    const l = map.addLayer(
+      { ...spec, layout: { ...spec.layout, visibility } },
+      before
+    )
     setLayer(l)
 
     if (data) {

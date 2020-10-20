@@ -15,7 +15,7 @@ export default function CsvExperiment({ layerVisibility, map }) {
   useEffect(() => {
     d3.csv(csv).then((data) => {
       setData(data)
-      console.log(data.columns)
+
       const l = []
       data.columns.forEach((column) => {
         l.push({
@@ -55,6 +55,7 @@ export default function CsvExperiment({ layerVisibility, map }) {
           },
         })
       })
+
       setLayer(l)
     })
   }, [])
@@ -76,6 +77,7 @@ export default function CsvExperiment({ layerVisibility, map }) {
               isVisible={layerVisibility[layer.id]}
               spec={layer}
               data={data}
+              before='land-structure-line' // This is a layer id from the basemap. It might not exist in other basemaps styles!
             />
           ))}
       </Source>
