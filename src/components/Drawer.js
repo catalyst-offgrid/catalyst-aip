@@ -7,7 +7,7 @@ import LayerControl from './LayerControl'
 import theme from '../config/theme'
 
 const Container = styled.section`
-  max-width: ${theme.space[5]}px;
+  width: ${theme.space[5]}px;
   height: 100%;
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.24);
   z-index: 1;

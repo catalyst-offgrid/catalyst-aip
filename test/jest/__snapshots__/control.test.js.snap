@@ -14,17 +14,22 @@ exports[`LayerControl matches the snapshot 1`] = `
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-jSFkmK dtuRbP"
+        className="sc-jSFkmK kmcKgU"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
-        <h2
-          className="sc-iCoHVE ixITtm"
+        <div
+          className="sc-iCoHVE bRAucA"
         >
-          Administrative Boundaries
-        </h2>
+          <h2>
+            Administrative Boundaries
+          </h2>
+          <p>
+            Detailed dataset of country administrative both large and small scale.
+          </p>
+        </div>
         <span
           aria-label="chevron down"
           role="img"
@@ -204,17 +209,22 @@ exports[`LayerControl matches the snapshot 1`] = `
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-jSFkmK dtuRbP"
+        className="sc-jSFkmK kmcKgU"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
-        <h2
-          className="sc-iCoHVE ixITtm"
+        <div
+          className="sc-iCoHVE bRAucA"
         >
-          Energy
-        </h2>
+          <h2>
+            Energy
+          </h2>
+          <p>
+            Location of mini-grids, transmission lines, fuels & technologies used.
+          </p>
+        </div>
         <span
           aria-label="chevron down"
           role="img"
@@ -302,7 +312,7 @@ exports[`LayerControl matches the snapshot 1`] = `
         <button
           aria-controls="panel--1"
           aria-expanded={true}
-          className="sc-jSFkmK dtuRbP"
+          className="sc-jSFkmK kmcKgU"
           data-reach-disclosure-button=""
           data-state="open"
           onClick={[Function]}
@@ -1480,17 +1490,22 @@ exports[`LayerControl matches the snapshot 1`] = `
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-jSFkmK dtuRbP"
+        className="sc-jSFkmK kmcKgU"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
-        <h2
-          className="sc-iCoHVE ixITtm"
+        <div
+          className="sc-iCoHVE bRAucA"
         >
-          Financial Services
-        </h2>
+          <h2>
+            Financial Services
+          </h2>
+          <p>
+            Locations of Banks, Micro-finances and SACCOs.
+          </p>
+        </div>
         <span
           aria-label="chevron up"
           role="img"
@@ -1670,17 +1685,22 @@ exports[`LayerControl matches the snapshot 1`] = `
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-jSFkmK dtuRbP"
+        className="sc-jSFkmK kmcKgU"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
-        <h2
-          className="sc-iCoHVE ixITtm"
+        <div
+          className="sc-iCoHVE bRAucA"
         >
-          Population
-        </h2>
+          <h2>
+            Population
+          </h2>
+          <p>
+            Population density, Night Lights and Mobile Phone Coverage.
+          </p>
+        </div>
         <span
           aria-label="chevron up"
           role="img"
@@ -1774,17 +1794,22 @@ exports[`LayerControl matches the snapshot 1`] = `
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-jSFkmK dtuRbP"
+        className="sc-jSFkmK kmcKgU"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
-        <h2
-          className="sc-iCoHVE ixITtm"
+        <div
+          className="sc-iCoHVE bRAucA"
         >
-          Public facilities
-        </h2>
+          <h2>
+            Public facilities
+          </h2>
+          <p>
+            Locations of Schools, Doctors, Hospitals and other Health Institutions.
+          </p>
+        </div>
         <span
           aria-label="chevron up"
           role="img"
@@ -1921,17 +1946,22 @@ exports[`LayerControl matches the snapshot 1`] = `
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-jSFkmK dtuRbP"
+        className="sc-jSFkmK kmcKgU"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
-        <h2
-          className="sc-iCoHVE ixITtm"
+        <div
+          className="sc-iCoHVE bRAucA"
         >
-          Transport
-        </h2>
+          <h2>
+            Transport
+          </h2>
+          <p>
+            Transport networks, roads and routes.
+          </p>
+        </div>
         <span
           aria-label="chevron up"
           role="img"

@@ -39,6 +39,7 @@ export default function LayerControl({ toggleLayer, layerVisibility }) {
         <FirstLevelPanel
           key={group.id}
           label={group.label}
+          description={group.description}
           sub={group.sub}
           indices={indices}
           index={index}
@@ -101,6 +102,7 @@ const ToggleButton = styled.button`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: fit-content;
 `
 
 const FirstLevelHeader = styled.div`
@@ -112,16 +114,33 @@ const FirstLevelHeader = styled.div`
     props.isOpen ? `1px solid ${theme.colors.mediumGrey}` : 0};
 `
 
-const FirstLevelHeading = styled.h2`
-  color: ${theme.colors.blue};
-  font-family: ${theme.fonts.heading};
-  font-size: ${theme.fontSizes[3]}pt;
-  font-weight: ${theme.fontWeights.heading};
-  margin: 0;
+const FirstLevelHeading = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  h2 {
+    margin: 0;
+    color: ${theme.colors.blue};
+    font-family: ${theme.fonts.heading};
+    font-size: ${theme.fontSizes[3]}pt;
+    font-weight: ${theme.fontWeights.heading};
+    text-align: start;
+  }
+
+  p {
+    margin: 0;
+    color: ${theme.colors.grey};
+    font-family: ${theme.fonts.body};
+    font-size: ${theme.fontSizes[0]}pt;
+    font-weight: ${theme.fontWeights.body};
+    text-align: start;
+  }
 `
 
 function FirstLevelPanel({
   label,
+  description,
   sub,
   indices,
   index,
@@ -132,7 +151,11 @@ function FirstLevelPanel({
     <AccordionItem>
       <FirstLevelHeader isOpen={indices.includes(index)}>
         <ToggleButton as={AccordionButton}>
-          <FirstLevelHeading>{label}</FirstLevelHeading>
+          <FirstLevelHeading>
+            <h2>{label}</h2>
+            <p>{description}</p>
+          </FirstLevelHeading>
+
           {indices.includes(index) ? (
             <span
               style={{ marginLeft: theme.space[3] }}
@@ -183,6 +206,7 @@ function FirstLevelPanel({
 
 FirstLevelPanel.propTypes = {
   label: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
   sub: PropTypes.object.isRequired,
   indices: PropTypes.arrayOf(PropTypes.number.isRequired).isRequired,
   index: PropTypes.number.isRequired,

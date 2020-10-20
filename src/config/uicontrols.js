@@ -4,6 +4,9 @@ export default [
   {
     id: 'admin',
     label: 'Administrative Boundaries',
+    icon: '',
+    description:
+      'Detailed dataset of country administrative both large and small scale.',
     sub: {
       counties: {
         label: 'Counties',
@@ -17,11 +20,13 @@ export default [
       },
       wards: { label: 'Wards', defaultVisibility: false, layerIds: ['wards'] },
     },
-    // icon: ''
   },
   {
     id: 'energy',
     label: 'Energy',
+    icon: '',
+    description:
+      'Location of mini-grids, transmission lines, fuels & technologies used.',
     sub: {
       gridfinder: {
         label: 'Gridfinder',
@@ -168,6 +173,8 @@ export default [
   {
     id: 'finance',
     label: 'Financial Services',
+    icon: '',
+    description: 'Locations of Banks, Micro-finances and SACCOs.',
     sub: {
       banks: {
         label: 'Banks',
@@ -189,6 +196,8 @@ export default [
   {
     id: 'population',
     label: 'Population',
+    icon: '',
+    description: 'Population density, Night Lights and Mobile Phone Coverage.',
     sub: {
       arc: {
         label: 'Population Density (ARC 2016)',
@@ -210,6 +219,9 @@ export default [
   {
     id: 'facilities',
     label: 'Public facilities',
+    icon: '',
+    description:
+      'Locations of Schools, Doctors, Hospitals and other Health Institutions.',
     sub: {
       health: {
         label: 'Health Facilities',
@@ -226,6 +238,8 @@ export default [
   {
     id: 'transport',
     label: 'Transport',
+    icon: '',
+    description: 'Transport networks, roads and routes.',
     sub: {
       road: {
         label: 'Roads',
