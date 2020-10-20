@@ -14,6 +14,10 @@ const Heading = styled.h1`
   font-size: ${theme.fontSizes[4]}pt;
   font-weight: ${theme.fontWeights.heading};
   margin: 0;
+
+  display: inline-flex;
+  align-items: center;
+  gap: ${theme.space[2]}px;
 `
 
 const Tagline = styled.label`
@@ -24,14 +28,18 @@ const Tagline = styled.label`
   text-transform: uppercase;
 `
 
+const Flag = styled.span`
+  font-size: ${theme.fontSizes[3]}pt;
+`
+
 export default function Header({ siteName, headline }) {
   return (
     <HeaderContainer>
       <Tagline>{siteName}</Tagline>
       <Heading>
-        <span role='img' aria-label='flag-ke'>
+        <Flag role='img' aria-label='flag-ke'>
           🇰🇪
-        </span>{' '}
+        </Flag>
         {headline}
       </Heading>
     </HeaderContainer>
