@@ -6,10 +6,10 @@ import Drawer from '../components/Drawer'
 import Map from '../components/Map'
 import Source from '../components/Source'
 import Layer from '../components/Layer'
-import CsvExperiment from '../components/CsvExperiment'
+import CsvLayers from '../components/CsvLayers'
 import Basemap from '../components/Basemap'
 
-import groups from '../config/groups'
+import uicontrols from '../config/uicontrols'
 import sources from '../config/sources'
 import layers from '../config/layers'
 
@@ -21,7 +21,7 @@ const PageContainer = styled.main`
 `
 
 function getDefaultVisibility() {
-  return groups.reduce((obj, cur) => {
+  return uicontrols.reduce((obj, cur) => {
     return (
       Object.entries(cur.sub).map(([subId, sub]) => {
         if (sub.sub) {
@@ -38,7 +38,7 @@ function getDefaultVisibility() {
 
 function getSubIdForLayer(layerId) {
   let subId
-  groups.find((group) => {
+  uicontrols.find((group) => {
     const entry = Object.entries(group.sub).find(
       ([, sub]) =>
         (sub.layerIds && sub.layerIds.includes(layerId)) ||
@@ -106,7 +106,7 @@ export default function Home({ config }) {
             </Source>
           ))
         )}
-        <CsvExperiment id='csv' layerVisibility={layerVisibility} />
+        <CsvLayers id='csv' layerVisibility={layerVisibility} />
         <Basemap id='road' isVisible={layerVisibility['road']} />
       </Map>
     </PageContainer>

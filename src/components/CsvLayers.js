@@ -8,7 +8,7 @@ import theme from '../config/theme'
 import Source from './Source'
 import Layer from './Layer'
 
-export default function CsvExperiment({ layerVisibility, map }) {
+export default function CsvLayers({ layerVisibility, map }) {
   const [data, setData] = useState(null)
   const [layers, setLayer] = useState([])
 
@@ -20,9 +20,9 @@ export default function CsvExperiment({ layerVisibility, map }) {
       data.columns.forEach((column) => {
         l.push({
           id: `${column}`,
-          type: 'fill',
-          source: 'csv-counties',
+          source: 'census',
           'source-layer': 'Counties_47_-_Coded-1htj4o',
+          type: 'fill',
           paint: {
             'fill-color': [
               'case',
@@ -62,12 +62,7 @@ export default function CsvExperiment({ layerVisibility, map }) {
 
   return (
     data && (
-      <Source
-        id='csv-counties'
-        type='vector'
-        tilesetid='iandmuir.6e5zcwl0'
-        map={map}
-      >
+      <Source id='census' type='vector' tilesetid='iandmuir.6e5zcwl0' map={map}>
         {data &&
           layers &&
           layers.map((layer) => (
@@ -85,7 +80,7 @@ export default function CsvExperiment({ layerVisibility, map }) {
   )
 }
 
-CsvExperiment.propTypes = {
+CsvLayers.propTypes = {
   layerVisibility: PropTypes.object.isRequired,
   map: PropTypes.object,
 }
