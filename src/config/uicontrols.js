@@ -7,7 +7,7 @@ export default [
     icon: '',
     description:
       'Detailed dataset of country administrative both large and small scale.',
-    sub: {
+    controls: {
       counties: {
         label: 'Counties',
         defaultVisibility: true,
@@ -27,7 +27,7 @@ export default [
     icon: '',
     description:
       'Location of mini-grids, transmission lines, fuels & technologies used.',
-    sub: {
+    controls: {
       gridfinder: {
         label: 'Gridfinder',
         defaultVisibility: true,
@@ -35,7 +35,7 @@ export default [
       },
       census: {
         label: 'Census',
-        sub: {
+        subcontrols: {
           ['Conventional Households']: {
             label: 'Conventional Households',
             defaultVisibility: false,
@@ -175,7 +175,7 @@ export default [
     label: 'Financial Services',
     icon: '',
     description: 'Locations of Banks, Micro-finances and SACCOs.',
-    sub: {
+    controls: {
       banks: {
         label: 'Banks',
         defaultVisibility: true,
@@ -198,7 +198,7 @@ export default [
     label: 'Population',
     icon: '',
     description: 'Population density, Night Lights and Mobile Phone Coverage.',
-    sub: {
+    controls: {
       arc: {
         label: 'Population Density (ARC 2016)',
         defaultVisibility: false,
@@ -222,7 +222,7 @@ export default [
     icon: '',
     description:
       'Locations of Schools, Doctors, Hospitals and other Health Institutions.',
-    sub: {
+    controls: {
       health: {
         label: 'Health Facilities',
         defaultVisibility: false,
@@ -240,7 +240,7 @@ export default [
     label: 'Transport',
     icon: '',
     description: 'Transport networks, roads and routes.',
-    sub: {
+    controls: {
       road: {
         label: 'Roads',
         defaultVisibility: true,

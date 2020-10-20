@@ -23,46 +23,48 @@ const PageContainer = styled.main`
 function getDefaultVisibility() {
   return uicontrols.reduce((obj, cur) => {
     return (
-      Object.entries(cur.sub).map(([subId, sub]) => {
-        if (sub.sub) {
-          return Object.entries(sub.sub).map(
-            ([subsubId, subsub]) => (obj[subsubId] = subsub.defaultVisibility)
+      Object.entries(cur.controls).map(([controlId, control]) => {
+        if (control.subcontrols) {
+          return Object.entries(control.subcontrols).map(
+            ([subcontrolId, subcontrol]) =>
+              (obj[subcontrolId] = subcontrol.defaultVisibility)
           )
         }
-        return (obj[subId] = sub.defaultVisibility)
+        return (obj[controlId] = control.defaultVisibility)
       }),
       obj
     )
   }, {})
 }
 
-function getSubIdForLayer(layerId) {
-  let subId
+function getcontrolIdForLayer(layerId) {
+  let controlId
   uicontrols.find((group) => {
-    const entry = Object.entries(group.sub).find(
-      ([, sub]) =>
-        (sub.layerIds && sub.layerIds.includes(layerId)) ||
-        (sub.sub &&
-          Object.entries(sub.sub).find(([, subsub]) =>
-            subsub.layerIds.includes(layerId)
+    const entry = Object.entries(group.controls).find(
+      ([, control]) =>
+        (control.layerIds && control.layerIds.includes(layerId)) ||
+        (control.subcontrol &&
+          Object.entries(control.subcontrol).find(([, subcontrol]) =>
+            subcontrol.layerIds.includes(layerId)
           ))
     )
-    if (entry) subId = entry[0]
+    if (entry) controlId = entry[0]
     return entry
   })
-  if (!subId) console.warn(`Layer "${layerId}" is not assigned to any group.`)
-  return subId
+  if (!controlId)
+    console.warn(`Layer "${layerId}" is not assigned to any control group.`)
+  return controlId
 }
 
 function isLayerVisible(layerId, layerVisibility) {
-  const subId = getSubIdForLayer(layerId)
-  if (!subId) {
+  const controlId = getcontrolIdForLayer(layerId)
+  if (!controlId) {
     /**
      * Layer "${layerId}" is not assigned to any group. Will always be visible by default.
      */
     return false
   }
-  return layerVisibility[subId]
+  return layerVisibility[controlId]
 }
 
 export default function Home({ config }) {
@@ -70,9 +72,9 @@ export default function Home({ config }) {
     () => getDefaultVisibility() // lazy initialization of default state
   )
 
-  const toggleLayer = (subId) => {
+  const toggleLayer = (controlId) => {
     setLayerVisibility((layerVisibility) => {
-      return { ...layerVisibility, [subId]: !layerVisibility[subId] }
+      return { ...layerVisibility, [controlId]: !layerVisibility[controlId] }
     })
   }
 

@@ -40,7 +40,7 @@ export default function LayerControl({ toggleLayer, layerVisibility }) {
           key={group.id}
           label={group.label}
           description={group.description}
-          sub={group.sub}
+          controls={group.controls}
           indices={indices}
           index={index}
           toggleLayer={toggleLayer}
@@ -141,7 +141,7 @@ const FirstLevelHeading = styled.div`
 function FirstLevelPanel({
   label,
   description,
-  sub,
+  controls,
   indices,
   index,
   toggleLayer,
@@ -176,13 +176,13 @@ function FirstLevelPanel({
         </ToggleButton>
       </FirstLevelHeader>
       <AccordionPanel>
-        {Object.entries(sub).map(([subId, sub]) => {
-          if (sub.sub) {
+        {Object.entries(controls).map(([controlId, control]) => {
+          if (control.subcontrols) {
             return (
               <SecondLevelPanel
-                key={subId}
-                label={sub.label}
-                sub={sub.sub}
+                key={controlId}
+                label={control.label}
+                controls={control.subcontrols}
                 toggleLayer={toggleLayer}
                 layerVisibility={layerVisibility}
               />
@@ -191,9 +191,9 @@ function FirstLevelPanel({
 
           return (
             <ControlItem
-              key={subId}
-              id={subId}
-              label={sub.label}
+              key={controlId}
+              id={controlId}
+              label={control.label}
               toggleLayer={toggleLayer}
               layerVisibility={layerVisibility}
             />
@@ -207,7 +207,7 @@ function FirstLevelPanel({
 FirstLevelPanel.propTypes = {
   label: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  sub: PropTypes.object.isRequired,
+  controls: PropTypes.object.isRequired,
   indices: PropTypes.arrayOf(PropTypes.number.isRequired).isRequired,
   index: PropTypes.number.isRequired,
   toggleLayer: PropTypes.func.isRequired,
@@ -230,7 +230,7 @@ const SecondLevelHeading = styled.h3`
   margin: 0;
 `
 
-function SecondLevelPanel({ label, sub, toggleLayer, layerVisibility }) {
+function SecondLevelPanel({ label, controls, toggleLayer, layerVisibility }) {
   const [isOpen, setOpen] = useState(true)
 
   return (
@@ -258,11 +258,11 @@ function SecondLevelPanel({ label, sub, toggleLayer, layerVisibility }) {
         </ToggleButton>
       </SecondLevelHeader>
       <DisclosurePanel>
-        {Object.entries(sub).map(([subId, sub]) => (
+        {Object.entries(controls).map(([controlId, control]) => (
           <ControlItem
-            key={subId}
-            id={subId}
-            label={sub.label}
+            key={controlId}
+            id={controlId}
+            label={control.label}
             toggleLayer={toggleLayer}
             layerVisibility={layerVisibility}
           />
@@ -274,7 +274,7 @@ function SecondLevelPanel({ label, sub, toggleLayer, layerVisibility }) {
 
 SecondLevelPanel.propTypes = {
   label: PropTypes.string.isRequired,
-  sub: PropTypes.object.isRequired,
+  controls: PropTypes.object.isRequired,
   toggleLayer: PropTypes.func.isRequired,
   layerVisibility: PropTypes.object.isRequired,
 }
