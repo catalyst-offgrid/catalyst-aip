@@ -38,7 +38,7 @@ function getDefaultVisibility() {
   }, {})
 }
 
-function getcontrolIdForLayer(layerId) {
+function getControlIdForLayer(layerId) {
   let controlId
   uicontrols.find((group) => {
     const entry = Object.entries(group.controls).find(
@@ -58,7 +58,7 @@ function getcontrolIdForLayer(layerId) {
 }
 
 function isLayerVisible(layerId, layerVisibility) {
-  const controlId = getcontrolIdForLayer(layerId)
+  const controlId = getControlIdForLayer(layerId)
   if (!controlId) {
     /**
      * Layer "${layerId}" is not assigned to any group. Will always be visible by default.
