@@ -18,5 +18,5 @@ export default {
     heading: 700,
     bold: 700,
   },
-  space: [0, 4, 8, 16, 32, 347],
+  space: [0, 4, 8, 16, 32, 70, 347],
 }

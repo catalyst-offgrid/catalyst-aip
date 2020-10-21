@@ -11,7 +11,7 @@ const PageContainer = styled.main`
   flex-direction: row;
 `
 
-export default function Home({ config }) {
+export default function Info({ config }) {
   return (
     <PageContainer>
       <NavigationBar siteName={config.siteName} />
@@ -19,7 +19,7 @@ export default function Home({ config }) {
   )
 }
 
-Home.propTypes = {
+Info.propTypes = {
   config: PropTypes.shape({
     siteName: PropTypes.string.isRequired,
     country: PropTypes.string.isRequired,

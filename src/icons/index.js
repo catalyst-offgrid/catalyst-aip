@@ -1,3 +1,7 @@
+import Home from './Home'
+import Layers from './Layers'
+import Info from './Info'
+
 import ChevronDown from './ChevronDown'
 import ChevronUp from './ChevronUp'
 import Plus from './Plus'
@@ -12,6 +16,9 @@ import Public from './Public'
 import Transport from './Transport'
 
 export {
+  Home,
+  Layers,
+  Info,
   ChevronDown,
   ChevronUp,
   Plus,
