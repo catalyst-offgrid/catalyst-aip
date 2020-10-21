@@ -81,8 +81,8 @@ export default function Home({ config }) {
   return (
     <PageContainer>
       <Drawer
-        siteName={config.siteName}
-        headline={config.country}
+        country={config.country}
+        cc={config['country-code']}
         layerVisibility={layerVisibility}
         toggleLayer={toggleLayer}
       />
@@ -119,5 +119,6 @@ Home.propTypes = {
   config: PropTypes.shape({
     siteName: PropTypes.string.isRequired,
     country: PropTypes.string.isRequired,
+    'country-code': PropTypes.string.isRequired,
   }),
 }

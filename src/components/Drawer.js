@@ -14,15 +14,10 @@ const Container = styled.section`
   overflow-y: scroll;
 `
 
-export default function Drawer({
-  siteName,
-  headline,
-  layerVisibility,
-  toggleLayer,
-}) {
+export default function Drawer({ country, cc, layerVisibility, toggleLayer }) {
   return (
     <Container>
-      <Header siteName={siteName} headline={headline} />
+      <Header country={country} cc={cc} />
       <LayerControl
         toggleLayer={toggleLayer}
         layerVisibility={layerVisibility}
@@ -32,8 +27,8 @@ export default function Drawer({
 }
 
 Drawer.propTypes = {
-  siteName: PropTypes.string.isRequired,
-  headline: PropTypes.string.isRequired,
+  country: PropTypes.string.isRequired,
+  cc: PropTypes.string.isRequired,
   layerVisibility: PropTypes.object,
   toggleLayer: PropTypes.func.isRequired,
 }

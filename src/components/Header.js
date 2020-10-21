@@ -6,6 +6,8 @@ import theme from '../config/theme'
 
 const HeaderContainer = styled.header`
   padding: ${theme.space[4]}px ${theme.space[3]}px;
+  display: flex;
+  flex-direction: column;
 `
 
 const Heading = styled.h1`
@@ -32,21 +34,25 @@ const Flag = styled.span`
   font-size: ${theme.fontSizes[3]}pt;
 `
 
-export default function Header({ siteName, headline }) {
+export default function Header({ country, cc }) {
+  const ASCII_OFFSET = 127397
+  const chars = [...cc.toUpperCase()].map((c) => c.charCodeAt() + ASCII_OFFSET)
+  const flag = String.fromCodePoint(...chars)
+
   return (
     <HeaderContainer>
-      <Tagline>{siteName}</Tagline>
+      <Tagline>Country</Tagline>
       <Heading>
-        <Flag role='img' aria-label='flag-ke'>
-          🇰🇪
+        <Flag role='img' aria-label={`flag-${cc}`}>
+          {flag}
         </Flag>
-        {headline}
+        {country}
       </Heading>
     </HeaderContainer>
   )
 }
 
 Header.propTypes = {
-  siteName: PropTypes.string.isRequired,
-  headline: PropTypes.string.isRequired,
+  country: PropTypes.string.isRequired,
+  cc: PropTypes.string.isRequired,
 }
