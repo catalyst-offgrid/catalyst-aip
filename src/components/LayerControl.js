@@ -158,9 +158,6 @@ const IconContainer = styled.div`
   border-radius: 4px;
   width: 32px;
   height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `
 
 const getHasSelectedLayers = (controls, layerVisibility) => {
