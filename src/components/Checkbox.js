@@ -38,14 +38,14 @@ const StyledCheckbox = styled.div`
   justify-content: center;
   width: 20px;
   height: 20px;
-  background-color: ${colors.white};
+  background-color: ${colors.background};
   border: 1px solid
-    ${(props) => (props.checked ? colors.yellow : colors.mediumGrey)};
+    ${(props) => (props.checked ? colors.highlight : colors.accent)};
   border-radius: 4px;
   transition: all 150ms;
 
   ${HiddenCheckbox}:focus + & {
-    box-shadow: 0 0 0 3px ${colors.yellow};
+    box-shadow: 0 0 0 3px ${colors.highlight};
   }
 
   ${IconContainer} {
@@ -59,7 +59,7 @@ export default function Checkbox({ className, checked, ...props }) {
       <HiddenCheckbox checked={checked} {...props} />
       <StyledCheckbox checked={checked}>
         <IconContainer>
-          <Tick color={colors.yellow} />
+          <Tick color={colors.highlight} />
         </IconContainer>
       </StyledCheckbox>
     </CheckboxContainer>

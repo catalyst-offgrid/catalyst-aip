@@ -19,7 +19,7 @@ import { ChevronDown, ChevronUp, Plus, Minus } from '../icons'
 import theme from '../config/theme'
 import uicontrols from '../config/uicontrols'
 
-const { space } = theme
+const { space, colors } = theme
 
 export default function LayerControl({ toggleLayer, layerVisibility }) {
   const [indices, setIndices] = useState([0, 1])
@@ -58,13 +58,13 @@ LayerControl.propTypes = {
 }
 
 const ControlItemContainer = styled.label`
-  color: ${theme.colors.blue};
+  color: ${colors.primary};
   font-family: ${theme.fonts.body};
   font-size: ${theme.fontSizes[2]}pt;
   font-weight: ${theme.fontWeights.body};
 
-  background-color: ${theme.colors.lightGrey};
-  border-bottom: 1px solid ${theme.colors.white};
+  background-color: ${colors.muted};
+  border-bottom: 1px solid ${colors.background};
 
   display: grid;
   grid-template-columns: auto 1fr;
@@ -113,11 +113,12 @@ const FirstLevelHeader = styled.div`
   display: flex;
   border-left: ${(props) =>
     props.hasSelectedLayers
-      ? `5px solid ${theme.colors.yellow}`
-      : `5px solid ${theme.colors.white}`};
-  border-top: 1px solid ${theme.colors.mediumGrey};
+      ? `5px solid ${colors.highlight}`
+      : `5px solid ${colors.background}`};
+  border-top: 1px solid ${colors.accent};
   border-bottom: ${(props) =>
-    props.isOpen ? `1px solid ${theme.colors.mediumGrey}` : 0};
+    props.isOpen ? 0 : `1px solid ${theme.colors.accent}`};
+  margin: -1px 0 0 -1px; // to collapse neighboring borders
 `
 
 const FirstLevelHeading = styled.div`
@@ -127,7 +128,7 @@ const FirstLevelHeading = styled.div`
 
   h2 {
     margin: 0;
-    color: ${theme.colors.blue};
+    color: ${colors.primary};
     font-family: ${theme.fonts.heading};
     font-size: ${theme.fontSizes[3]}pt;
     font-weight: ${theme.fontWeights.heading};
@@ -136,7 +137,7 @@ const FirstLevelHeading = styled.div`
 
   p {
     margin: 0;
-    color: ${theme.colors.grey};
+    color: ${colors.text};
     font-family: ${theme.fonts.body};
     font-size: ${theme.fontSizes[0]}pt;
     font-weight: ${theme.fontWeights.body};
@@ -152,9 +153,7 @@ const Panel = styled.div`
 
 const IconContainer = styled.div`
   background-color: ${(props) =>
-    props.hasSelectedLayers
-      ? `${theme.colors.lightYellow}`
-      : `${theme.colors.lightGrey}`};
+    props.hasSelectedLayers ? `${colors.offlight}` : `${colors.muted}`};
   border-radius: 4px;
   width: 32px;
   height: 32px;
@@ -196,9 +195,7 @@ function FirstLevelPanel({
         <ToggleButton as={AccordionButton}>
           <IconContainer hasSelectedLayers={hasSelectedLayers}>
             <Icon
-              color={
-                hasSelectedLayers ? theme.colors.yellow : theme.colors.blue
-              }
+              color={hasSelectedLayers ? colors.highlight : colors.primary}
             />
           </IconContainer>
           <FirstLevelHeading>
@@ -208,11 +205,11 @@ function FirstLevelPanel({
 
           {indices.includes(index) ? (
             <span role='img' aria-label='chevron down'>
-              <ChevronDown color={theme.colors.blue} />
+              <ChevronDown color={colors.primary} />
             </span>
           ) : (
             <span role='img' aria-label='chevron up'>
-              <ChevronUp color={theme.colors.blue} />
+              <ChevronUp color={colors.primary} />
             </span>
           )}
         </ToggleButton>
@@ -258,14 +255,14 @@ FirstLevelPanel.propTypes = {
 }
 
 const SecondLevelHeader = styled(FirstLevelHeader)`
-  border-top: 1px solid ${theme.colors.white};
+  border-top: 1px solid ${colors.background};
   border-bottom: ${(props) =>
-    props.isOpen ? `1px solid ${theme.colors.white}` : 0};
-  background-color: ${theme.colors.lightGrey};
+    props.isOpen ? `1px solid ${colors.background}` : 0};
+  background-color: ${colors.muted};
 `
 
 const SecondLevelHeading = styled.h3`
-  color: ${theme.colors.blue};
+  color: ${colors.primary};
   font-family: ${theme.fonts.heading};
   font-size: ${theme.fontSizes[1]}pt;
   font-weight: ${theme.fontWeights.heading};
@@ -282,20 +279,12 @@ function SecondLevelPanel({ label, controls, toggleLayer, layerVisibility }) {
         <ToggleButton as={DisclosureButton}>
           <SecondLevelHeading>{label}</SecondLevelHeading>
           {isOpen ? (
-            <span
-              style={{ marginLeft: theme.space[3] }}
-              role='img'
-              aria-label='minus'
-            >
-              <Minus color={theme.colors.blue} />
+            <span role='img' aria-label='minus'>
+              <Minus color={colors.primary} />
             </span>
           ) : (
-            <span
-              style={{ marginLeft: theme.space[3] }}
-              role='img'
-              aria-label='plus'
-            >
-              <Plus color={theme.colors.blue} />
+            <span role='img' aria-label='plus'>
+              <Plus color={colors.primary} />
             </span>
           )}
         </ToggleButton>

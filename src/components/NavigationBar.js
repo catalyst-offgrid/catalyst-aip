@@ -7,14 +7,16 @@ import styled from 'styled-components'
 import { Home, Layers, Info } from '../icons'
 import theme from '../config/theme'
 
+const { space, colors } = theme
+
 const Container = styled.section`
-  width: ${theme.space[5]}px;
+  width: ${space[5]}px;
   height: 100%;
-  background-color: ${theme.colors.blue};
+  background-color: ${colors.primary};
 `
 
 const Name = styled.div`
-  color: ${theme.colors.white};
+  color: ${colors.background};
   font-family: ${theme.fonts.heading};
   font-size: ${theme.fontSizes[3]}pt;
   font-weight: ${theme.fontWeights.heading};
@@ -31,7 +33,7 @@ const NavList = styled.ul`
 const NavItem = styled.li`
   text-align: center;
   background-color: ${(props) =>
-    props.isMatch ? `${theme.colors.yellow}` : `${theme.colors.blue}`};
+    props.isMatch ? `${colors.highlight}` : `${colors.primary}`};
   border-radius: 4px;
   width: 48px;
   height: 48px;
@@ -48,17 +50,17 @@ export default function NavigationBar({ siteName }) {
         <NavList>
           <NavItem isMatch={path === '/'}>
             <Link to='/'>
-              <Home color={theme.colors.white} />
+              <Home color={colors.background} />
             </Link>
           </NavItem>
           <NavItem isMatch={path === '/explore'}>
             <Link to='/explore'>
-              <Layers color={theme.colors.white} />
+              <Layers color={colors.background} />
             </Link>
           </NavItem>
           <NavItem isMatch={path === '/info'}>
             <Link to='/info'>
-              <Info color={theme.colors.white} />
+              <Info color={colors.background} />
             </Link>
           </NavItem>
         </NavList>

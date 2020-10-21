@@ -4,14 +4,16 @@ import styled from 'styled-components'
 
 import theme from '../config/theme'
 
+const { colors, space } = theme
+
 const HeaderContainer = styled.header`
-  padding: ${theme.space[4]}px ${theme.space[3]}px;
+  padding: ${space[4]}px ${space[3]}px;
   display: flex;
   flex-direction: column;
 `
 
 const Heading = styled.h1`
-  color: ${theme.colors.blue};
+  color: ${colors.primary};
   font-family: ${theme.fonts.heading};
   font-size: ${theme.fontSizes[4]}pt;
   font-weight: ${theme.fontWeights.heading};
@@ -19,11 +21,11 @@ const Heading = styled.h1`
 
   display: inline-flex;
   align-items: center;
-  gap: ${theme.space[2]}px;
+  gap: ${space[2]}px;
 `
 
 const Tagline = styled.label`
-  color: ${theme.colors.blue};
+  color: ${colors.primary};
   font-family: ${theme.fonts.body};
   font-size: ${theme.fontSizes[0]}pt;
   font-weight: ${theme.fontWeights.bold};
