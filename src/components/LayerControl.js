@@ -39,6 +39,7 @@ export default function LayerControl({ toggleLayer, layerVisibility }) {
         <FirstLevelPanel
           key={group.id}
           label={group.label}
+          icon={group.icon}
           description={group.description}
           controls={group.controls}
           indices={indices}
@@ -102,6 +103,7 @@ const ToggleButton = styled.button`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: ${space[3]}px;
   width: fit-content;
 `
 
@@ -148,7 +150,20 @@ const Panel = styled.div`
   }
 `
 
-const hasSelectedLayers = (controls, layerVisibility) => {
+const IconContainer = styled.div`
+  background-color: ${(props) =>
+    props.hasSelectedLayers
+      ? `${theme.colors.lightYellow}`
+      : `${theme.colors.lightGrey}`};
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+const getHasSelectedLayers = (controls, layerVisibility) => {
   const selectedLayerIds = Object.keys(layerVisibility).filter(
     (key) => layerVisibility[key]
   )
@@ -166,6 +181,7 @@ const hasSelectedLayers = (controls, layerVisibility) => {
 
 function FirstLevelPanel({
   label,
+  icon: Icon,
   description,
   controls,
   indices,
@@ -173,32 +189,32 @@ function FirstLevelPanel({
   toggleLayer,
   layerVisibility,
 }) {
+  const hasSelectedLayers = getHasSelectedLayers(controls, layerVisibility)
   return (
     <AccordionItem>
       <FirstLevelHeader
         isOpen={indices.includes(index)}
-        hasSelectedLayers={hasSelectedLayers(controls, layerVisibility)}
+        hasSelectedLayers={hasSelectedLayers}
       >
         <ToggleButton as={AccordionButton}>
+          <IconContainer hasSelectedLayers={hasSelectedLayers}>
+            <Icon
+              color={
+                hasSelectedLayers ? theme.colors.yellow : theme.colors.blue
+              }
+            />
+          </IconContainer>
           <FirstLevelHeading>
             <h2>{label}</h2>
             <p>{description}</p>
           </FirstLevelHeading>
 
           {indices.includes(index) ? (
-            <span
-              style={{ marginLeft: theme.space[3] }}
-              role='img'
-              aria-label='chevron down'
-            >
+            <span role='img' aria-label='chevron down'>
               <ChevronDown color={theme.colors.blue} />
             </span>
           ) : (
-            <span
-              style={{ marginLeft: theme.space[3] }}
-              role='img'
-              aria-label='chevron up'
-            >
+            <span role='img' aria-label='chevron up'>
               <ChevronUp color={theme.colors.blue} />
             </span>
           )}
@@ -235,6 +251,7 @@ function FirstLevelPanel({
 
 FirstLevelPanel.propTypes = {
   label: PropTypes.string.isRequired,
+  icon: PropTypes.func.isRequired, // actually, this is a react component
   description: PropTypes.string.isRequired,
   controls: PropTypes.object.isRequired,
   indices: PropTypes.arrayOf(PropTypes.number.isRequired).isRequired,
@@ -260,7 +277,7 @@ const SecondLevelHeading = styled.h3`
 `
 
 function SecondLevelPanel({ label, controls, toggleLayer, layerVisibility }) {
-  const [isOpen, setOpen] = useState(true)
+  const [isOpen, setOpen] = useState(false)
 
   return (
     <Disclosure open={isOpen} onChange={() => setOpen(!isOpen)}>
