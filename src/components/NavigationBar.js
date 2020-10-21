@@ -49,17 +49,25 @@ export default function NavigationBar({ siteName }) {
         <Name>{siteName}</Name>
         <NavList>
           <NavItem isMatch={path === '/'}>
-            <Link to='/' aria-label='Go to Home page'>
+            <Link to='/' aria-label='Go to Home page' data-cy='link-home'>
               <Home color={colors.background} />
             </Link>
           </NavItem>
           <NavItem isMatch={path === '/explore'}>
-            <Link to='/explore' aria-label='Explore the Map'>
+            <Link
+              to='/explore'
+              aria-label='Explore the Map'
+              data-cy='link-explore'
+            >
               <Layers color={colors.background} />
             </Link>
           </NavItem>
           <NavItem isMatch={path === '/info'}>
-            <Link to='/info' aria-label='Read more about this project'>
+            <Link
+              to='/info'
+              aria-label='Read more about this project'
+              data-cy='link-info'
+            >
               <Info color={colors.background} />
             </Link>
           </NavItem>
