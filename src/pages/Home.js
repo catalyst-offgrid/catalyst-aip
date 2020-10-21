@@ -15,6 +15,7 @@ export default function Home({ config }) {
   return (
     <PageContainer>
       <NavigationBar siteName={config.siteName} />
+      <h1>🚧 Catalyst Access Insights Platform</h1>
     </PageContainer>
   )
 }

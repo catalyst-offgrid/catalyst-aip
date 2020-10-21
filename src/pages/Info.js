@@ -15,6 +15,7 @@ export default function Info({ config }) {
   return (
     <PageContainer>
       <NavigationBar siteName={config.siteName} />
+      <h1>🚧 The tool</h1>
     </PageContainer>
   )
 }
