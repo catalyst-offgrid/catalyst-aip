@@ -204,12 +204,12 @@ function FirstLevelPanel({
           </FirstLevelHeading>
 
           {indices.includes(index) ? (
-            <span role='img' aria-label='chevron down'>
-              <ChevronDown color={colors.primary} />
-            </span>
-          ) : (
             <span role='img' aria-label='chevron up'>
               <ChevronUp color={colors.primary} />
+            </span>
+          ) : (
+            <span role='img' aria-label='chevron down'>
+              <ChevronDown color={colors.primary} />
             </span>
           )}
         </ToggleButton>

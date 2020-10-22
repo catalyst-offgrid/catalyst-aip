@@ -72,7 +72,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </p>
         </div>
         <span
-          aria-label="chevron down"
+          aria-label="chevron up"
           role="img"
         >
           <svg
@@ -89,7 +89,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             />
             <polygon
               fill="#304CA2"
-              points="14.586,3.586 8,10.172 1.414,3.586 0,5 8,13 16,5"
+              points="1.414,12.414 8,5.828 14.586,12.414 16,11 8,3 0,11"
             />
           </svg>
         </span>
@@ -295,7 +295,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </p>
         </div>
         <span
-          aria-label="chevron down"
+          aria-label="chevron up"
           role="img"
         >
           <svg
@@ -312,7 +312,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             />
             <polygon
               fill="#304CA2"
-              points="14.586,3.586 8,10.172 1.414,3.586 0,5 8,13 16,5"
+              points="1.414,12.414 8,5.828 14.586,12.414 16,11 8,3 0,11"
             />
           </svg>
         </span>
@@ -1600,7 +1600,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </p>
         </div>
         <span
-          aria-label="chevron up"
+          aria-label="chevron down"
           role="img"
         >
           <svg
@@ -1617,7 +1617,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             />
             <polygon
               fill="#304CA2"
-              points="1.414,12.414 8,5.828 14.586,12.414 16,11 8,3 0,11"
+              points="14.586,3.586 8,10.172 1.414,3.586 0,5 8,13 16,5"
             />
           </svg>
         </span>
@@ -1817,7 +1817,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </p>
         </div>
         <span
-          aria-label="chevron up"
+          aria-label="chevron down"
           role="img"
         >
           <svg
@@ -1834,7 +1834,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             />
             <polygon
               fill="#304CA2"
-              points="1.414,12.414 8,5.828 14.586,12.414 16,11 8,3 0,11"
+              points="14.586,3.586 8,10.172 1.414,3.586 0,5 8,13 16,5"
             />
           </svg>
         </span>
@@ -1957,7 +1957,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </p>
         </div>
         <span
-          aria-label="chevron up"
+          aria-label="chevron down"
           role="img"
         >
           <svg
@@ -1974,7 +1974,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             />
             <polygon
               fill="#304CA2"
-              points="1.414,12.414 8,5.828 14.586,12.414 16,11 8,3 0,11"
+              points="14.586,3.586 8,10.172 1.414,3.586 0,5 8,13 16,5"
             />
           </svg>
         </span>
@@ -2140,7 +2140,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </p>
         </div>
         <span
-          aria-label="chevron up"
+          aria-label="chevron down"
           role="img"
         >
           <svg
@@ -2157,7 +2157,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             />
             <polygon
               fill="#304CA2"
-              points="1.414,12.414 8,5.828 14.586,12.414 16,11 8,3 0,11"
+              points="14.586,3.586 8,10.172 1.414,3.586 0,5 8,13 16,5"
             />
           </svg>
         </span>
