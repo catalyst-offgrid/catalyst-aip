@@ -9,7 +9,7 @@ import theme from '../config/theme'
 
 const { space, colors } = theme
 
-const Container = styled.section`
+const Container = styled.nav`
   width: ${space[5]}px;
   height: 100%;
   background-color: ${colors.primary};
@@ -45,34 +45,32 @@ export default function NavigationBar({ siteName }) {
 
   return (
     <Container>
-      <nav>
-        <Name>{siteName}</Name>
-        <NavList>
-          <NavItem isMatch={path === '/'}>
-            <Link to='/' aria-label='Go to Home page' data-cy='link-home'>
-              <Home color={colors.background} />
-            </Link>
-          </NavItem>
-          <NavItem isMatch={path === '/explore'}>
-            <Link
-              to='/explore'
-              aria-label='Explore the Map'
-              data-cy='link-explore'
-            >
-              <Layers color={colors.background} />
-            </Link>
-          </NavItem>
-          <NavItem isMatch={path === '/info'}>
-            <Link
-              to='/info'
-              aria-label='Read more about this project'
-              data-cy='link-info'
-            >
-              <Info color={colors.background} />
-            </Link>
-          </NavItem>
-        </NavList>
-      </nav>
+      <Name>{siteName}</Name>
+      <NavList>
+        <NavItem isMatch={path === '/'}>
+          <Link to='/' aria-label='Go to Home page' data-cy='link-home'>
+            <Home color={colors.background} />
+          </Link>
+        </NavItem>
+        <NavItem isMatch={path === '/explore'}>
+          <Link
+            to='/explore'
+            aria-label='Explore the Map'
+            data-cy='link-explore'
+          >
+            <Layers color={colors.background} />
+          </Link>
+        </NavItem>
+        <NavItem isMatch={path === '/info'}>
+          <Link
+            to='/info'
+            aria-label='Read more about this project'
+            data-cy='link-info'
+          >
+            <Info color={colors.background} />
+          </Link>
+        </NavItem>
+      </NavList>
     </Container>
   )
 }
