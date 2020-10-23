@@ -1,11 +1,12 @@
 export default {
   colors: {
-    blue: '#304CA2',
-    yellow: '#F98E08',
-    grey: '#373E49',
-    mediumGrey: '#DBDEEF',
-    lightGrey: '#F4F5F7',
-    white: '#FFFFFF',
+    primary: '#304CA2',
+    highlight: '#F98E08',
+    offlight: '#FDEFD9', // 15% opacity on highlight
+    background: '#FFFFFF',
+    muted: '#F4F5F7',
+    accent: '#DBDEEF',
+    text: '#373E49',
   },
   fonts: {
     body: 'Open Sans, sans-serif',
@@ -17,5 +18,5 @@ export default {
     heading: 700,
     bold: 700,
   },
-  space: [0, 4, 8, 16, 32, 347],
+  space: [0, 4, 8, 16, 32, 70, 347],
 }

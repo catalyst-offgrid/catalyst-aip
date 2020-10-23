@@ -7,22 +7,17 @@ import LayerControl from './LayerControl'
 import theme from '../config/theme'
 
 const Container = styled.section`
-  width: ${theme.space[5]}px;
+  width: ${theme.space[6]}px;
   height: 100%;
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.24);
   z-index: 1;
   overflow-y: scroll;
 `
 
-export default function Drawer({
-  siteName,
-  headline,
-  layerVisibility,
-  toggleLayer,
-}) {
+export default function Drawer({ country, cc, layerVisibility, toggleLayer }) {
   return (
     <Container>
-      <Header siteName={siteName} headline={headline} />
+      <Header country={country} cc={cc} />
       <LayerControl
         toggleLayer={toggleLayer}
         layerVisibility={layerVisibility}
@@ -32,8 +27,8 @@ export default function Drawer({
 }
 
 Drawer.propTypes = {
-  siteName: PropTypes.string.isRequired,
-  headline: PropTypes.string.isRequired,
+  country: PropTypes.string.isRequired,
+  cc: PropTypes.string.isRequired,
   layerVisibility: PropTypes.object,
   toggleLayer: PropTypes.func.isRequired,
 }

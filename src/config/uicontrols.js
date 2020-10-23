@@ -1,10 +1,19 @@
 import transportBasemapLayers from './transport-basemap-layers'
 
+import {
+  AdminBoundaries,
+  Energy,
+  Financial,
+  Population,
+  Public,
+  Transport,
+} from '../icons'
+
 export default [
   {
     id: 'admin',
     label: 'Administrative Boundaries',
-    icon: '',
+    icon: AdminBoundaries,
     description:
       'Detailed dataset of country administrative both large and small scale.',
     controls: {
@@ -24,7 +33,7 @@ export default [
   {
     id: 'energy',
     label: 'Energy',
-    icon: '',
+    icon: Energy,
     description:
       'Location of mini-grids, transmission lines, fuels & technologies used.',
     controls: {
@@ -173,7 +182,7 @@ export default [
   {
     id: 'finance',
     label: 'Financial Services',
-    icon: '',
+    icon: Financial,
     description: 'Locations of Banks, Micro-finances and SACCOs.',
     controls: {
       banks: {
@@ -196,7 +205,7 @@ export default [
   {
     id: 'population',
     label: 'Population',
-    icon: '',
+    icon: Population,
     description: 'Population density, Night Lights and Mobile Phone Coverage.',
     controls: {
       arc: {
@@ -219,7 +228,7 @@ export default [
   {
     id: 'facilities',
     label: 'Public facilities',
-    icon: '',
+    icon: Public,
     description:
       'Locations of Schools, Doctors, Hospitals and other Health Institutions.',
     controls: {
@@ -238,7 +247,7 @@ export default [
   {
     id: 'transport',
     label: 'Transport',
-    icon: '',
+    icon: Transport,
     description: 'Transport networks, roads and routes.',
     controls: {
       road: {

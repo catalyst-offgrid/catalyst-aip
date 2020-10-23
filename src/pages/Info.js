@@ -11,16 +11,16 @@ const PageContainer = styled.main`
   flex-direction: row;
 `
 
-export default function Home({ config }) {
+export default function Info({ config }) {
   return (
     <PageContainer>
       <NavigationBar siteName={config.siteName} />
-      <h1>🚧 Catalyst Access Insights Platform</h1>
+      <h1>🚧 The tool</h1>
     </PageContainer>
   )
 }
 
-Home.propTypes = {
+Info.propTypes = {
   config: PropTypes.shape({
     siteName: PropTypes.string.isRequired,
     country: PropTypes.string.isRequired,
