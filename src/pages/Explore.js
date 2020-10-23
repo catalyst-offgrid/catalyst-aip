@@ -76,7 +76,7 @@ export default function Explore({ config }) {
       <Drawer
         siteName={config.siteName}
         country={config.country}
-        cc={config['country-code']}
+        cc={config.countryCode}
         layerVisibility={layerVisibility}
         toggleLayer={toggleLayer}
       />
@@ -114,6 +114,6 @@ Explore.propTypes = {
     siteAcronym: PropTypes.string.isRequired,
     siteName: PropTypes.string.isRequired,
     country: PropTypes.string.isRequired,
-    'country-code': PropTypes.string.isRequired,
+    countryCode: PropTypes.string.isRequired,
   }),
 }

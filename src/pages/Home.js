@@ -93,7 +93,7 @@ const Image = styled.figure`
   margin: -140px -70px -140px 0;
   height: 100vh;
 
-  background-image: url('https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3043&q=80');
+  background-image: ${({ url }) => `url(${url})`};
   background-size: auto 100%;
   background-position: center;
 
@@ -124,7 +124,7 @@ export default function Home({ config }) {
         <img alt='CATALYST Off Grid Advisors' src={CATALYST_BLUE} width={400} />
       </Logo>
 
-      <Image />
+      <Image url={config.imageUrl} />
     </PageLayout>
   )
 }
@@ -134,6 +134,6 @@ Home.propTypes = {
     siteAcronym: PropTypes.string.isRequired,
     siteName: PropTypes.string.isRequired,
     country: PropTypes.string.isRequired,
-    'country-code': PropTypes.string.isRequired,
+    imageUrl: PropTypes.string.isRequired,
   }),
 }

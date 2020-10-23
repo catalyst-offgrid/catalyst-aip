@@ -7,5 +7,7 @@ export default {
   siteName: process.env.SITE_NAME,
   siteAcronym: process.env.SITE_ACRONYM,
   country: 'Kenya',
-  'country-code': 'ke',
+  countryCode: 'ke',
+  imageUrl:
+    'https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3043&q=80',
 }
