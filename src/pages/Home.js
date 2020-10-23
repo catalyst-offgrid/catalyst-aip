@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 import PageLayout from '../components/PageLayout'
@@ -46,7 +47,8 @@ const Actions = styled.div`
   gap: ${space[3]}px;
 `
 
-const PrimaryButton = styled.button`
+const PrimaryButton = styled(Link)`
+  text-decoration: none;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -97,8 +99,12 @@ export default function Home({ config }) {
           mile gap in electrification.
         </Paragraph>
         <Actions>
-          <PrimaryButton>Start Exploring</PrimaryButton>
-          <SecondaryButton>Learn more</SecondaryButton>
+          <PrimaryButton to='/explore' aria-label='Explore the Map'>
+            Start Exploring
+          </PrimaryButton>
+          <SecondaryButton to='/info' aria-label='Read more about this project'>
+            Learn more
+          </SecondaryButton>
         </Actions>
       </Introduction>
       <Logo>
