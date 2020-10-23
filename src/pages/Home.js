@@ -88,6 +88,18 @@ const Logo = styled.figure`
   flex-direction: column;
 `
 
+const Image = styled.figure`
+  grid-area: 1 / 6 / 3 / span 7;
+  margin: -140px -70px -140px 0;
+  height: 100vh;
+
+  background-image: url('https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3043&q=80');
+  background-size: auto 100%;
+  background-position: center;
+
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+`
+
 export default function Home({ config }) {
   return (
     <PageLayout siteAcronym={config.siteAcronym}>
@@ -111,6 +123,8 @@ export default function Home({ config }) {
         <Caption>An Innovation Of</Caption>
         <img alt='CATALYST Off Grid Advisors' src={CATALYST_BLUE} width={400} />
       </Logo>
+
+      <Image />
     </PageLayout>
   )
 }
