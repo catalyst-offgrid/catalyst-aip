@@ -82,11 +82,10 @@ export default function Home({ config }) {
       <NavigationBar siteName={config.siteName} />
       <MainContent>
         <Introduction>
-          <PageTitle>Catalyst Access Insights Platform</PageTitle>
+          <PageTitle>Access Insights Platform</PageTitle>
           <Paragraph>
-            Explore least cost electrification strategies around the world,
-            interacting with country contextual data and different investment
-            scenarios.
+            A business intelligence tool for enterprises looking to serve the
+            last mile gap in electrification.
           </Paragraph>
           <Actions>
             <PrimaryButton>Start Exploring</PrimaryButton>
