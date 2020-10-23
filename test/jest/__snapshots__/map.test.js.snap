@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Map renders a styled container 1`] = `
-<div
-  className="sc-bdnylx fxdjTP"
+<section
+  className="sc-bdnylx CMZYE"
   id="map"
 />
 `;

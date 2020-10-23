@@ -1,7 +1,7 @@
 {
   "name": "catalyst-aip",
   "version": "0.0.0",
-  "description": "a map based energy access exploration tool",
+  "description": "A business intelligence tool for enterprises looking to serve the last mile gap in electrification.",
   "main": "src/index.js",
   "scripts": {
     "clean": "rm -rf dist .cache",

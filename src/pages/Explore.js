@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
-import styled from 'styled-components'
 
-import NavigationBar from '../components/NavigationBar'
+import PageLayout from '../components/PageLayout'
 import Drawer from '../components/Drawer'
 import Map from '../components/Map'
 import Source from '../components/Source'
@@ -13,13 +12,6 @@ import Basemap from '../components/Basemap'
 import uicontrols from '../config/uicontrols'
 import sources from '../config/sources'
 import layers from '../config/layers'
-
-const PageContainer = styled.main`
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-`
 
 function getDefaultVisibility() {
   return uicontrols.reduce((obj, cur) => {
@@ -80,11 +72,11 @@ export default function Explore({ config }) {
   }
 
   return (
-    <PageContainer>
-      <NavigationBar siteName={config.siteName} />
+    <PageLayout siteAcronym={config.siteAcronym} noMargin>
       <Drawer
+        siteName={config.siteName}
         country={config.country}
-        cc={config['country-code']}
+        cc={config.countryCode}
         layerVisibility={layerVisibility}
         toggleLayer={toggleLayer}
       />
@@ -113,14 +105,15 @@ export default function Explore({ config }) {
         <CsvLayers id='csv' layerVisibility={layerVisibility} />
         <Basemap id='road' isVisible={layerVisibility['road']} />
       </Map>
-    </PageContainer>
+    </PageLayout>
   )
 }
 
 Explore.propTypes = {
   config: PropTypes.shape({
+    siteAcronym: PropTypes.string.isRequired,
     siteName: PropTypes.string.isRequired,
     country: PropTypes.string.isRequired,
-    'country-code': PropTypes.string.isRequired,
+    countryCode: PropTypes.string.isRequired,
   }),
 }

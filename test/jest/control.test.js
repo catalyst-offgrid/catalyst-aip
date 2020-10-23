@@ -13,7 +13,7 @@ const layerVisibility = {
   wards: false,
   gridfinder: true,
   'Conventional Households': false,
-  'Mains Electricity': false,
+  'Main Electricity': false,
   'Low-Quality Stopgap Total': false,
   'Kerosene (Total)': false,
   'Paraffin Pressure Lamp': false,

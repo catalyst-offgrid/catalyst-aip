@@ -50,10 +50,10 @@ export default [
             defaultVisibility: false,
             layerIds: ['Conventional Households'],
           },
-          ['Mains Electricity']: {
-            label: 'Mains Electricity',
+          ['Main Electricity']: {
+            label: 'Main Electricity',
             defaultVisibility: true,
-            layerIds: ['Mains Electricity'],
+            layerIds: ['Main Electricity'],
           },
           ['Low-Quality Stopgap Total']: {
             label: 'Low-Quality Stopgap Total',
