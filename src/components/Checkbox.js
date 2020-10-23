@@ -33,6 +33,7 @@ const HiddenCheckbox = styled.input.attrs({ type: 'checkbox' })`
 `
 
 const StyledCheckbox = styled.div`
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -21,6 +21,7 @@ export default [
         label: 'Counties',
         defaultVisibility: true,
         layerIds: ['counties'],
+        info: 'some blurp about this layer.',
       },
       'sub-counties': {
         label: 'Sub-Counties',
@@ -44,6 +45,7 @@ export default [
       },
       census: {
         label: 'Census',
+        info: 'some blurp about the data set.',
         subcontrols: {
           ['Conventional Households']: {
             label: 'Conventional Households',
@@ -64,6 +66,7 @@ export default [
             label: 'Kerosene (Total)',
             defaultVisibility: false,
             layerIds: ['Kerosene (Total)'],
+            info: 'some blurp about this layer.',
           },
           ['Paraffin Pressure Lamp']: {
             label: 'Paraffin Pressure Lamp',

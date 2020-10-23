@@ -4,8 +4,9 @@ import Info from './Info'
 
 import ChevronDown from './ChevronDown'
 import ChevronUp from './ChevronUp'
-import Plus from './Plus'
+import InfoSmall from './InfoSmall'
 import Minus from './Minus'
+import Plus from './Plus'
 import Tick from './Tick'
 
 import AdminBoundaries from './AdminBoundaries'
@@ -21,8 +22,9 @@ export {
   Info,
   ChevronDown,
   ChevronUp,
-  Plus,
+  InfoSmall,
   Minus,
+  Plus,
   Tick,
   AdminBoundaries,
   Energy,
