@@ -11,7 +11,8 @@ jobs:
 
     env:
       MAPBOX_ACCESS_TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
-      SITE_NAME: 'Catalyst AIP'
+      SITE_NAME: 'Access Insights Platform'
+      SITE_ACRONYM: 'AIP'
 
     steps:
       - name: Checkout
@@ -25,7 +26,7 @@ jobs:
       - name: Install and Build
         run: |
           yarn install
-          yarn build:ci
+          yarn build
 
       - name: Test
         uses: cypress-io/github-action@v2
@@ -34,9 +35,7 @@ jobs:
           wait-on: 'http://localhost:8000'
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.6.2
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: dist # The folder the action should deploy.
-          CLEAN: true # Automatically remove deleted files from the deploy branch
+        run: |
+          cp ./dist/index.html ./dist/200.html
+          npm install -g surge
+          surge ./dist ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
