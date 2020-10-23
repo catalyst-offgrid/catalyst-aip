@@ -15,9 +15,9 @@ const Introduction = styled.div`
 `
 
 const Tagline = styled.span`
-  color: ${colors.highlight};
+  color: ${colors.primary};
   font-family: ${theme.fonts.body};
-  font-size: ${theme.fontSizes[4]}pt;
+  font-size: ${theme.fontSizes[3]}pt;
   font-weight: ${theme.fontWeights.bold};
   text-transform: uppercase;
 `
@@ -70,7 +70,7 @@ const SecondaryButton = styled(PrimaryButton)`
 `
 
 const Caption = styled.figcaption`
-  color: ${colors.highlight};
+  color: ${colors.primary};
   font-family: ${theme.fonts.body};
   font-size: ${theme.fontSizes[3]}pt;
   font-weight: ${theme.fontWeights.body};
