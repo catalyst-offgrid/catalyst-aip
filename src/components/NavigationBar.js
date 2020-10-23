@@ -10,6 +10,7 @@ import theme from '../config/theme'
 const { space, colors } = theme
 
 const Container = styled.nav`
+  min-width: ${space[5]}px;
   width: ${space[5]}px;
   height: 100%;
   background-color: ${colors.primary};
@@ -40,12 +41,12 @@ const NavItem = styled.li`
   margin: 0 auto;
 `
 
-export default function NavigationBar({ siteName }) {
+export default function NavigationBar({ siteAcronym }) {
   let { path } = useRouteMatch()
 
   return (
     <Container>
-      <Name>{siteName}</Name>
+      <Name>{siteAcronym}</Name>
       <NavList>
         <NavItem isMatch={path === '/'}>
           <Link to='/' aria-label='Go to Home page' data-cy='link-home'>
@@ -76,5 +77,5 @@ export default function NavigationBar({ siteName }) {
 }
 
 NavigationBar.propTypes = {
-  siteName: PropTypes.string.isRequired,
+  siteAcronym: PropTypes.string.isRequired,
 }

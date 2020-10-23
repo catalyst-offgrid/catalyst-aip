@@ -105,6 +105,12 @@ const ToggleButton = styled.button`
   align-items: center;
   gap: ${space[3]}px;
   width: fit-content;
+
+  > div {
+    display: inline-flex;
+    gap: ${space[3]}px;
+    align-items: center;
+  }
 `
 
 const FirstLevelHeader = styled.div`
@@ -193,16 +199,17 @@ function FirstLevelPanel({
         hasSelectedLayers={hasSelectedLayers}
       >
         <ToggleButton as={AccordionButton}>
-          <IconContainer hasSelectedLayers={hasSelectedLayers}>
-            <Icon
-              color={hasSelectedLayers ? colors.highlight : colors.primary}
-            />
-          </IconContainer>
-          <FirstLevelHeading>
-            <h2>{label}</h2>
-            <p>{description}</p>
-          </FirstLevelHeading>
-
+          <div>
+            <IconContainer hasSelectedLayers={hasSelectedLayers}>
+              <Icon
+                color={hasSelectedLayers ? colors.highlight : colors.primary}
+              />
+            </IconContainer>
+            <FirstLevelHeading>
+              <h2>{label}</h2>
+              <p>{description}</p>
+            </FirstLevelHeading>
+          </div>
           {indices.includes(index) ? (
             <span role='img' aria-label='chevron up'>
               <ChevronUp color={colors.primary} />

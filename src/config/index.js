@@ -3,8 +3,9 @@ if (!process.env.MAPBOX_ACCESS_TOKEN) {
 }
 
 export default {
-  siteName: process.env.SITE_NAME,
   mapboxAccessToken: process.env.MAPBOX_ACCESS_TOKEN,
+  siteName: process.env.SITE_NAME,
+  siteAcronym: process.env.SITE_ACRONYM,
   country: 'Kenya',
   'country-code': 'ke',
 }

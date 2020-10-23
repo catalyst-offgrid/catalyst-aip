@@ -36,14 +36,14 @@ const Flag = styled.span`
   font-size: ${theme.fontSizes[3]}pt;
 `
 
-export default function Header({ country, cc }) {
+export default function Header({ siteName, country, cc }) {
   const ASCII_OFFSET = 127397
   const chars = [...cc.toUpperCase()].map((c) => c.charCodeAt() + ASCII_OFFSET)
   const flag = String.fromCodePoint(...chars)
 
   return (
     <HeaderContainer>
-      <Tagline>Country</Tagline>
+      <Tagline>{siteName}</Tagline>
       <Heading>
         <Flag role='img' aria-label={`flag-${cc}`}>
           {flag}
@@ -55,6 +55,7 @@ export default function Header({ country, cc }) {
 }
 
 Header.propTypes = {
+  siteName: PropTypes.string.isRequired,
   country: PropTypes.string.isRequired,
   cc: PropTypes.string.isRequired,
 }

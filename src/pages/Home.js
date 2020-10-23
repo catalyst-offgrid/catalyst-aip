@@ -2,30 +2,23 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 
-import NavigationBar from '../components/NavigationBar'
+import PageLayout from '../components/PageLayout'
 import theme from '../config/theme'
 
 import CATALYST_BLUE from '../CATALYST_BLUE.png'
 
 const { colors, space } = theme
 
-const PageContainer = styled.div`
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-`
-
-const MainContent = styled.main`
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: max-content;
-  gap: ${space[4]}px;
-  margin: ${space[5]}px auto;
-  padding: ${space[5]}px;
-`
 const Introduction = styled.div`
   grid-column: 1 / span 5;
+`
+
+const Tagline = styled.span`
+  color: ${colors.highlight};
+  font-family: ${theme.fonts.body};
+  font-size: ${theme.fontSizes[4]}pt;
+  font-weight: ${theme.fontWeights.bold};
+  text-transform: uppercase;
 `
 
 const PageTitle = styled.h1`
@@ -33,6 +26,9 @@ const PageTitle = styled.h1`
   font-family: ${theme.fonts.heading};
   font-size: ${theme.fontSizes[5]}pt;
   font-weight: ${theme.fontWeights.heading};
+
+  margin-top: ${space[3]}px;
+  margin-bottom: ${space[4]}px;
 `
 
 const Paragraph = styled.p`
@@ -41,7 +37,8 @@ const Paragraph = styled.p`
   font-size: ${theme.fontSizes[3]}pt;
   font-weight: ${theme.fontWeights.body};
 
-  margin-bottom: ${space[5]}px;
+  margin-top: ${space[4]}px;
+  margin-bottom: ${space[3] + space[4]}px;
 `
 
 const Actions = styled.div`
@@ -70,42 +67,51 @@ const SecondaryButton = styled(PrimaryButton)`
   color: ${colors.primary};
 `
 
+const Caption = styled.figcaption`
+  color: ${colors.primary};
+  font-family: ${theme.fonts.body};
+  font-size: ${theme.fontSizes[3]}pt;
+  font-weight: ${theme.fontWeights.body};
+  text-transform: uppercase;
+
+  margin: ${space[3]}px 0;
+`
+
 const Logo = styled.figure`
   grid-column: 1 / span 5;
   align-self: end;
   margin: 0;
+
+  display: flex;
+  flex-direction: column;
 `
 
 export default function Home({ config }) {
   return (
-    <PageContainer>
-      <NavigationBar siteName={config.siteName} />
-      <MainContent>
-        <Introduction>
-          <PageTitle>Access Insights Platform</PageTitle>
-          <Paragraph>
-            A business intelligence tool for enterprises looking to serve the
-            last mile gap in electrification.
-          </Paragraph>
-          <Actions>
-            <PrimaryButton>Start Exploring</PrimaryButton>
-            <SecondaryButton>Learn more</SecondaryButton>
-          </Actions>
-        </Introduction>
-        <Logo>
-          <img
-            alt='CATALYST Off Grid Advisors'
-            src={CATALYST_BLUE}
-            width={400}
-          />
-        </Logo>
-      </MainContent>
-    </PageContainer>
+    <PageLayout siteAcronym={config.siteAcronym}>
+      <Introduction>
+        <Tagline>Welcome to the</Tagline>
+        <PageTitle>{config.siteName}</PageTitle>
+        <Paragraph>
+          A business intelligence tool for enterprises looking to serve the last
+          mile gap in electrification.
+        </Paragraph>
+        <Actions>
+          <PrimaryButton>Start Exploring</PrimaryButton>
+          <SecondaryButton>Learn more</SecondaryButton>
+        </Actions>
+      </Introduction>
+      <Logo>
+        <Caption>An Innovation Of</Caption>
+        <img alt='CATALYST Off Grid Advisors' src={CATALYST_BLUE} width={400} />
+      </Logo>
+    </PageLayout>
   )
 }
 
 Home.propTypes = {
   config: PropTypes.shape({
+    siteAcronym: PropTypes.string.isRequired,
     siteName: PropTypes.string.isRequired,
     country: PropTypes.string.isRequired,
     'country-code': PropTypes.string.isRequired,

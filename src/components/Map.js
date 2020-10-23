@@ -3,9 +3,8 @@ import PropTypes from 'prop-types'
 import mapbox from 'mapbox-gl'
 import styled from 'styled-components'
 
-const MapContainer = styled.div`
-  height: 100%;
-  flex-grow: 1;
+const MapContainer = styled.section`
+  grid-column: 4 / span 9;
 `
 
 export default function Map({ children }) {
