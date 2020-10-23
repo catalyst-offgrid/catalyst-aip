@@ -469,7 +469,7 @@ exports[`LayerControl matches the snapshot 1`] = `
         </label>
         <label
           className="sc-eCApGN deBRhj"
-          htmlFor="Mains Electricity"
+          htmlFor="Main Electricity"
         >
           <div
             className="sc-gtssRu XsuIH"
@@ -477,7 +477,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             <input
               checked={false}
               className="sc-dlnjPT bVNyMh"
-              id="Mains Electricity"
+              id="Main Electricity"
               onChange={[Function]}
               type="checkbox"
             />
@@ -508,7 +508,7 @@ exports[`LayerControl matches the snapshot 1`] = `
               </div>
             </div>
           </div>
-          Mains Electricity
+          Main Electricity
         </label>
         <label
           className="sc-eCApGN deBRhj"
