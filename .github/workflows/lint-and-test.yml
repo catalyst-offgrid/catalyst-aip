@@ -33,7 +33,7 @@ jobs:
         run: yarn test
 
       - name: Build
-        run: yarn build:ci
+        run: yarn build
 
       - name: Test End-to-end
         uses: cypress-io/github-action@v2
