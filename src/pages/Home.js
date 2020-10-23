@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import PageLayout from '../components/PageLayout'
 import theme from '../config/theme'
 
-import CATALYST_BLUE from '../CATALYST_BLUE.png'
+import CATALYST_BLUE from '../../img/CATALYST_BLUE.png'
 
 const { colors, space } = theme
 
@@ -68,7 +68,7 @@ const SecondaryButton = styled(PrimaryButton)`
 `
 
 const Caption = styled.figcaption`
-  color: ${colors.primary};
+  color: ${colors.highlight};
   font-family: ${theme.fonts.body};
   font-size: ${theme.fontSizes[3]}pt;
   font-weight: ${theme.fontWeights.body};

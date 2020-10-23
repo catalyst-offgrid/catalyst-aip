@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import { Link, useRouteMatch } from 'react-router-dom'
-
 import styled from 'styled-components'
+
+import CATALYST_LOGO from '../../img/CATALYST_LOGO.png'
 
 import { Home, Layers, Info } from '../icons'
 import theme from '../config/theme'
@@ -14,6 +15,10 @@ const Container = styled.nav`
   width: ${space[5]}px;
   height: 100%;
   background-color: ${colors.primary};
+`
+
+const Logo = styled.figure`
+  margin: ${space[3]}px ${space[3]}px ${space[2]}px ${space[3]}px;
 `
 
 const Name = styled.div`
@@ -46,6 +51,9 @@ export default function NavigationBar({ siteAcronym }) {
 
   return (
     <Container>
+      <Logo>
+        <img alt='CATALYST Off Grid Advisors' src={CATALYST_LOGO} width={40} />
+      </Logo>
       <Name>{siteAcronym}</Name>
       <NavList>
         <NavItem isMatch={path === '/'}>
