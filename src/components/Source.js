@@ -7,18 +7,21 @@ export default function Source({ id, type, tilesetid, map, children }) {
   const tileSize = type === 'raster' ? 256 : 512
 
   useEffect(() => {
-    const s = map.addSource(id, {
-      type,
-      url: `mapbox://${tilesetid}`,
-      tileSize,
-    })
+    let s = map.getSource(`${id}-source`)
+    if (!s) {
+      s = map.addSource(id, {
+        type,
+        url: `mapbox://${tilesetid}`,
+        tileSize,
+      })
+    }
+
     setSource(s)
 
     return () => {
       if (source) map.removeSource(id)
     }
   }, [])
-
   return (
     <>
       {source &&

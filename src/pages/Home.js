@@ -6,9 +6,10 @@ import Drawer from '../components/Drawer'
 import Map from '../components/Map'
 import Source from '../components/Source'
 import Layer from '../components/Layer'
+import CsvLayers from '../components/CsvLayers'
 import Basemap from '../components/Basemap'
 
-import groups from '../config/groups'
+import uicontrols from '../config/uicontrols'
 import sources from '../config/sources'
 import layers from '../config/layers'
 
@@ -20,38 +21,50 @@ const PageContainer = styled.main`
 `
 
 function getDefaultVisibility() {
-  return groups.reduce((obj, cur) => {
+  return uicontrols.reduce((obj, cur) => {
     return (
-      Object.entries(cur.sub).map(
-        ([subId, sub]) => (obj[subId] = sub.defaultVisibility)
-      ),
+      Object.entries(cur.controls).map(([controlId, control]) => {
+        if (control.subcontrols) {
+          return Object.entries(control.subcontrols).map(
+            ([subcontrolId, subcontrol]) =>
+              (obj[subcontrolId] = subcontrol.defaultVisibility)
+          )
+        }
+        return (obj[controlId] = control.defaultVisibility)
+      }),
       obj
     )
   }, {})
 }
 
-function getSubIdForLayer(layerId) {
-  let subId
-  groups.find((group) => {
-    const entry = Object.entries(group.sub).find(([, sub]) =>
-      sub.layerIds.includes(layerId)
+function getcontrolIdForLayer(layerId) {
+  let controlId
+  uicontrols.find((group) => {
+    const entry = Object.entries(group.controls).find(
+      ([, control]) =>
+        (control.layerIds && control.layerIds.includes(layerId)) ||
+        (control.subcontrol &&
+          Object.entries(control.subcontrol).find(([, subcontrol]) =>
+            subcontrol.layerIds.includes(layerId)
+          ))
     )
-    if (entry) subId = entry[0]
+    if (entry) controlId = entry[0]
     return entry
   })
-  if (!subId) console.warn(`Layer "${layerId}" is not assigned to any group.`)
-  return subId
+  if (!controlId)
+    console.warn(`Layer "${layerId}" is not assigned to any control group.`)
+  return controlId
 }
 
 function isLayerVisible(layerId, layerVisibility) {
-  const subId = getSubIdForLayer(layerId)
-  if (!subId) {
+  const controlId = getcontrolIdForLayer(layerId)
+  if (!controlId) {
     /**
      * Layer "${layerId}" is not assigned to any group. Will always be visible by default.
      */
-    return true
+    return false
   }
-  return layerVisibility[subId]
+  return layerVisibility[controlId]
 }
 
 export default function Home({ config }) {
@@ -59,9 +72,9 @@ export default function Home({ config }) {
     () => getDefaultVisibility() // lazy initialization of default state
   )
 
-  const toggleLayer = (subId) => {
+  const toggleLayer = (controlId) => {
     setLayerVisibility((layerVisibility) => {
-      return { ...layerVisibility, [subId]: !layerVisibility[subId] }
+      return { ...layerVisibility, [controlId]: !layerVisibility[controlId] }
     })
   }
 
@@ -95,6 +108,7 @@ export default function Home({ config }) {
             </Source>
           ))
         )}
+        <CsvLayers id='csv' layerVisibility={layerVisibility} />
         <Basemap id='road' isVisible={layerVisibility['road']} />
       </Map>
     </PageContainer>
