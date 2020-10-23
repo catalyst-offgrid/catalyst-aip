@@ -2,7 +2,7 @@
 
 exports[`Map renders a styled container 1`] = `
 <div
-  className="sc-bdnylx hmhEvm"
+  className="sc-bdnylx fxdjTP"
   id="map"
 />
 `;

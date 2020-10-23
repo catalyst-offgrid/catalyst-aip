@@ -5,6 +5,7 @@ import styled from 'styled-components'
 
 const MapContainer = styled.div`
   height: 100%;
+  flex-grow: 1;
 `
 
 export default function Map({ children }) {
