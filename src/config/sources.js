@@ -49,6 +49,11 @@ export default {
    */
   vector: [
     {
+      id: 'population-mask',
+      layer: 'kenya-383p36',
+      tilesetid: 'iandmuir.cs0l5h8t',
+    },
+    {
       id: 'education',
       layer: 'Education_Facilities-6v7pmw',
       tilesetid: 'iandmuir.922ukwf8',

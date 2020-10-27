@@ -13,6 +13,16 @@
 
 export default [
   {
+    id: 'population-mask',
+    source: 'population-mask',
+    'source-layer': 'kenya-383p36',
+    type: 'fill',
+    paint: {
+      'fill-color': 'grey',
+      'fill-opacity': ['interpolate', ['linear'], ['get', 'pop'], 0, 0, 3, 1],
+    },
+  },
+  {
     id: 'population-density',
     source: 'population',
     'source-layer': 'Kenya_Population_Density_ARC_-90y1wi',

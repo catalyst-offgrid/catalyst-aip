@@ -20,6 +20,8 @@ export default function Drawer({
   cc,
   layerVisibility,
   toggleLayer,
+  changeSlider,
+  sliderValue,
 }) {
   return (
     <Container>
@@ -27,6 +29,8 @@ export default function Drawer({
       <LayerControl
         toggleLayer={toggleLayer}
         layerVisibility={layerVisibility}
+        changeSlider={changeSlider}
+        sliderValue={sliderValue}
       />
     </Container>
   )

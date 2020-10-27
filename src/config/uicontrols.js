@@ -19,12 +19,12 @@ export default [
     controls: {
       counties: {
         label: 'Counties',
-        defaultVisibility: true,
+        defaultVisibility: false,
         layerIds: ['counties'],
       },
       'sub-counties': {
         label: 'Sub-Counties',
-        defaultVisibility: true,
+        defaultVisibility: false,
         layerIds: ['sub-counties'],
       },
       wards: { label: 'Wards', defaultVisibility: false, layerIds: ['wards'] },
@@ -39,7 +39,7 @@ export default [
     controls: {
       gridfinder: {
         label: 'Gridfinder',
-        defaultVisibility: true,
+        defaultVisibility: false,
         layerIds: ['gridfinder'],
       },
       census: {
@@ -52,7 +52,7 @@ export default [
           },
           ['Main Electricity']: {
             label: 'Main Electricity',
-            defaultVisibility: true,
+            defaultVisibility: false,
             layerIds: ['Main Electricity'],
           },
           ['Low-Quality Stopgap Total']: {
@@ -62,7 +62,7 @@ export default [
           },
           ['Kerosene (Total)']: {
             label: 'Kerosene (Total)',
-            defaultVisibility: false,
+            defaultVisibility: true,
             layerIds: ['Kerosene (Total)'],
           },
           ['Paraffin Pressure Lamp']: {
@@ -187,17 +187,17 @@ export default [
     controls: {
       banks: {
         label: 'Banks',
-        defaultVisibility: true,
+        defaultVisibility: false,
         layerIds: ['banks'],
       },
       mfi: {
         label: 'MFIs',
-        defaultVisibility: true,
+        defaultVisibility: false,
         layerIds: ['mfi'],
       },
       sacco: {
         label: 'SACCOs',
-        defaultVisibility: true,
+        defaultVisibility: false,
         layerIds: ['sacco'],
       },
     },
@@ -212,6 +212,11 @@ export default [
         label: 'Population Density (ARC 2016)',
         defaultVisibility: false,
         layerIds: ['population-density'],
+      },
+      'population-mask': {
+        label: 'Population Mask',
+        defaultVisibility: true,
+        layerIds: ['population-mask'],
       },
       // 'fb-population': {
       //   label: 'Facebook Population',
@@ -252,7 +257,7 @@ export default [
     controls: {
       road: {
         label: 'Roads',
-        defaultVisibility: true,
+        defaultVisibility: false,
         layerIds: transportBasemapLayers,
       },
       // rail: {

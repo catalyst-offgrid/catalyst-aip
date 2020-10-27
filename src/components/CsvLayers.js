@@ -8,7 +8,7 @@ import theme from '../config/theme'
 import Source from './Source'
 import Layer from './Layer'
 
-export default function CsvLayers({ layerVisibility, map }) {
+export default function CsvLayers({ layerVisibility, map, sliderValue }) {
   const [data, setData] = useState(null)
   const [layers, setLayer] = useState([])
 
@@ -74,6 +74,7 @@ export default function CsvLayers({ layerVisibility, map }) {
               spec={layer}
               data={data}
               before='land-structure-line' // This is a layer id from the basemap. It might not exist in other basemaps styles!
+              sliderValue={sliderValue}
             />
           ))}
       </Source>

@@ -71,6 +71,14 @@ export default function Explore({ config }) {
     })
   }
 
+  const [sliderValue, setSliderValue] = useState({
+    'population-mask': { min: 0, max: 300 },
+    'Kerosene (Total)': { min: 0, max: 50 },
+  })
+  const changeSlider = (value) => {
+    setSliderValue(value)
+  }
+
   return (
     <PageLayout siteAcronym={config.siteAcronym} noMargin>
       <Drawer
@@ -79,6 +87,8 @@ export default function Explore({ config }) {
         cc={config.countryCode}
         layerVisibility={layerVisibility}
         toggleLayer={toggleLayer}
+        changeSlider={changeSlider}
+        sliderValue={sliderValue}
       />
       <Map>
         {Object.entries(sources).map(([type, list]) =>
@@ -97,12 +107,17 @@ export default function Explore({ config }) {
                     id={layer.id}
                     isVisible={isLayerVisible(layer.id, layerVisibility)}
                     spec={layer}
+                    sliderValue={sliderValue[layer.id]}
                   />
                 ))}
             </Source>
           ))
         )}
-        <CsvLayers id='csv' layerVisibility={layerVisibility} />
+        <CsvLayers
+          id='csv'
+          layerVisibility={layerVisibility}
+          sliderValue={sliderValue['Kerosene (Total)']}
+        />
         <Basemap id='road' isVisible={layerVisibility['road']} />
       </Map>
     </PageLayout>

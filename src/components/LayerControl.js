@@ -12,6 +12,8 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from '@reach/disclosure'
+import InputRange from 'react-input-range'
+import 'react-input-range/lib/css/index.css'
 import styled from 'styled-components'
 
 import Checkbox from './Checkbox'
@@ -21,8 +23,13 @@ import uicontrols from '../config/uicontrols'
 
 const { space, colors } = theme
 
-export default function LayerControl({ toggleLayer, layerVisibility }) {
-  const [indices, setIndices] = useState([0, 1])
+export default function LayerControl({
+  toggleLayer,
+  layerVisibility,
+  changeSlider,
+  sliderValue,
+}) {
+  const [indices, setIndices] = useState([0, 3])
   function toggleAccordionItem(toggledIndex) {
     if (indices.includes(toggledIndex)) {
       setIndices(
@@ -46,6 +53,8 @@ export default function LayerControl({ toggleLayer, layerVisibility }) {
           index={index}
           toggleLayer={toggleLayer}
           layerVisibility={layerVisibility}
+          changeSlider={changeSlider}
+          sliderValue={sliderValue}
         />
       ))}
     </Accordion>
@@ -64,7 +73,7 @@ const ControlItemContainer = styled.label`
   font-weight: ${theme.fontWeights.body};
 
   background-color: ${colors.muted};
-  border-bottom: 1px solid ${colors.background};
+  border-top: 1px solid ${colors.background};
 
   display: grid;
   grid-template-columns: auto 1fr;
@@ -72,16 +81,51 @@ const ControlItemContainer = styled.label`
   padding: ${space[3]}px;
 `
 
-function ControlItem({ id, label, toggleLayer, layerVisibility }) {
+function ControlItem({
+  id,
+  label,
+  toggleLayer,
+  layerVisibility,
+  changeSlider,
+  sliderValue,
+}) {
   return (
-    <ControlItemContainer htmlFor={id}>
-      <Checkbox
-        id={id}
-        onChange={() => toggleLayer(id)}
-        checked={layerVisibility[id]}
-      />
-      {label}
-    </ControlItemContainer>
+    <>
+      <ControlItemContainer htmlFor={id}>
+        <Checkbox
+          id={id}
+          onChange={() => toggleLayer(id)}
+          checked={layerVisibility[id]}
+        />
+        {label}
+      </ControlItemContainer>
+      {id === 'population-mask' && (
+        <div style={{ padding: 32, backgroundColor: colors.muted }}>
+          <InputRange
+            minValue={0}
+            maxValue={300}
+            step={10}
+            value={sliderValue['population-mask']}
+            onChange={(value) =>
+              changeSlider({ ...sliderValue, 'population-mask': value })
+            }
+          />
+        </div>
+      )}
+      {id === 'Kerosene (Total)' && (
+        <div style={{ padding: 32, backgroundColor: colors.muted }}>
+          <InputRange
+            minValue={0}
+            maxValue={50}
+            step={10}
+            value={sliderValue['Kerosene (Total)']}
+            onChange={(value) =>
+              changeSlider({ ...sliderValue, 'Kerosene (Total)': value })
+            }
+          />
+        </div>
+      )}
+    </>
   )
 }
 
@@ -190,6 +234,8 @@ function FirstLevelPanel({
   index,
   toggleLayer,
   layerVisibility,
+  changeSlider,
+  sliderValue,
 }) {
   const hasSelectedLayers = getHasSelectedLayers(controls, layerVisibility)
   return (
@@ -231,6 +277,8 @@ function FirstLevelPanel({
                 controls={control.subcontrols}
                 toggleLayer={toggleLayer}
                 layerVisibility={layerVisibility}
+                changeSlider={changeSlider}
+                sliderValue={sliderValue}
               />
             )
           }
@@ -242,6 +290,8 @@ function FirstLevelPanel({
               label={control.label}
               toggleLayer={toggleLayer}
               layerVisibility={layerVisibility}
+              changeSlider={changeSlider}
+              sliderValue={sliderValue}
             />
           )
         })}
@@ -277,7 +327,14 @@ const SecondLevelHeading = styled.h3`
   margin: 0;
 `
 
-function SecondLevelPanel({ label, controls, toggleLayer, layerVisibility }) {
+function SecondLevelPanel({
+  label,
+  controls,
+  toggleLayer,
+  layerVisibility,
+  changeSlider,
+  sliderValue,
+}) {
   const [isOpen, setOpen] = useState(false)
 
   return (
@@ -304,6 +361,8 @@ function SecondLevelPanel({ label, controls, toggleLayer, layerVisibility }) {
             label={control.label}
             toggleLayer={toggleLayer}
             layerVisibility={layerVisibility}
+            changeSlider={changeSlider}
+            sliderValue={sliderValue}
           />
         ))}
       </Panel>
