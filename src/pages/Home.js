@@ -51,6 +51,7 @@ const Image = styled.figure`
   background-position: center;
 
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  z-index: -1;
 `
 
 export default function Home({ config }) {
@@ -64,10 +65,18 @@ export default function Home({ config }) {
           mile gap in electrification.
         </Paragraph>
         <Actions>
-          <PrimaryButton to='/explore' aria-label='Explore the Map'>
+          <PrimaryButton
+            to='/explore'
+            aria-label='Explore the Map'
+            data-cy='explore-button'
+          >
             Start Exploring
           </PrimaryButton>
-          <SecondaryButton to='/info' aria-label='Read more about this project'>
+          <SecondaryButton
+            to='/info'
+            aria-label='Read more about this project'
+            data-cy='info-button'
+          >
             Learn more
           </SecondaryButton>
         </Actions>

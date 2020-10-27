@@ -22,6 +22,8 @@ const MainContent = styled.main`
 
   margin: ${({ noMargin }) => (noMargin ? 0 : `${space[5]}px auto`)};
   padding: ${({ noMargin }) => (noMargin ? 0 : `${space[5]}px`)};
+
+  overflow: scroll;
 `
 
 export default function PageLayout({ siteAcronym, noMargin, children }) {
