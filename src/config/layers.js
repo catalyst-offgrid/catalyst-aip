@@ -22,6 +22,16 @@ export default [
     },
   },
   {
+    id: 'nightlights',
+    source: 'nightlights',
+    'source-layer': 'tif6-1z4g21',
+    type: 'raster',
+    paint: {
+      'raster-opacity': 0.9,
+      'raster-hue-rotate': 70,
+    },
+  },
+  {
     id: 'education',
     source: 'education',
     'source-layer': 'Education_Facilities-6v7pmw',
