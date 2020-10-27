@@ -12,11 +12,11 @@ exports[`LayerControl matches the snapshot 1`] = `
       className="sc-fujyUd lpkqJa"
     >
       <button
-        aria-controls="panel--5---1"
+        aria-controls="panel--2---1"
         aria-expanded={false}
         className="sc-iCoHVE glFGSk"
         data-reach-accordion-button=""
-        id="button--5---1"
+        id="button--2---1"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
@@ -98,12 +98,12 @@ exports[`LayerControl matches the snapshot 1`] = `
       </button>
     </div>
     <div
-      aria-labelledby="button--5---1"
+      aria-labelledby="button--2---1"
       className="sc-jrsJCI kENOln"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
-      id="panel--5---1"
+      id="panel--2---1"
       role="region"
       tabIndex={-1}
     >
@@ -149,32 +149,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Counties
-        <button
-          className="sc-jSFkmK jWmFvF"
-          data-reach-tooltip-trigger=""
-          onBlur={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseMove={[Function]}
-        >
-          <svg
-            height="16"
-            width="16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h16v16H0z"
-              fill="none"
-            />
-            <path
-              d="M7 12h2V7H7v5zm1-8a1 1 0 100 2 1 1 0 000-2zm0-4a8 8 0 100 16A8 8 0 008 0zm4.243 12.243C11.109 13.376 9.603 14 8 14s-3.109-.624-4.243-1.757C2.624 11.109 2 9.603 2 8s.624-3.109 1.757-4.243C4.891 2.624 6.397 2 8 2s3.109.624 4.243 1.757A5.963 5.963 0 0114 8a5.963 5.963 0 01-1.757 4.243z"
-              fill="#DBDEEF"
-            />
-          </svg>
-        </button>
+        
       </label>
       <label
         className="sc-gKAblj hcftQd"
@@ -218,6 +193,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Sub-Counties
+        
       </label>
       <label
         className="sc-gKAblj hcftQd"
@@ -261,6 +237,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Wards
+        
       </label>
     </div>
   </div>
@@ -272,11 +249,11 @@ exports[`LayerControl matches the snapshot 1`] = `
       className="sc-fujyUd goRCjc"
     >
       <button
-        aria-controls="panel--5---1"
+        aria-controls="panel--2---1"
         aria-expanded={false}
         className="sc-iCoHVE glFGSk"
         data-reach-accordion-button=""
-        id="button--5---1"
+        id="button--2---1"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
@@ -349,12 +326,12 @@ exports[`LayerControl matches the snapshot 1`] = `
       </button>
     </div>
     <div
-      aria-labelledby="button--5---1"
+      aria-labelledby="button--2---1"
       className="sc-jrsJCI kENOln"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
-      id="panel--5---1"
+      id="panel--2---1"
       role="region"
       tabIndex={-1}
     >
@@ -400,12 +377,13 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Gridfinder
+        
       </label>
       <div
         className="sc-fujyUd sc-iqAbSa dmEgMx bNpYyU"
       >
         <button
-          aria-controls="panel--4"
+          aria-controls="panel--1"
           aria-expanded={false}
           className="sc-iCoHVE glFGSk"
           data-reach-disclosure-button=""
@@ -418,32 +396,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             Census
           </h3>
           <div>
-            <button
-              className="sc-jSFkmK jWmFvF"
-              data-reach-tooltip-trigger=""
-              onBlur={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onMouseMove={[Function]}
-            >
-              <svg
-                height="16"
-                width="16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h16v16H0z"
-                  fill="none"
-                />
-                <path
-                  d="M7 12h2V7H7v5zm1-8a1 1 0 100 2 1 1 0 000-2zm0-4a8 8 0 100 16A8 8 0 008 0zm4.243 12.243C11.109 13.376 9.603 14 8 14s-3.109-.624-4.243-1.757C2.624 11.109 2 9.603 2 8s.624-3.109 1.757-4.243C4.891 2.624 6.397 2 8 2s3.109.624 4.243 1.757A5.963 5.963 0 0114 8a5.963 5.963 0 01-1.757 4.243z"
-                  fill="#DBDEEF"
-                />
-              </svg>
-            </button>
+            
             <span
               aria-label="plus"
               role="img"
@@ -475,7 +428,7 @@ exports[`LayerControl matches the snapshot 1`] = `
         data-reach-disclosure-panel=""
         data-state="collapsed"
         hidden={true}
-        id="panel--4"
+        id="panel--1"
         tabIndex={-1}
       >
         <label
@@ -520,6 +473,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Conventional Households
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -563,6 +517,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Main Electricity
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -606,6 +561,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Low-Quality Stopgap Total
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -649,32 +605,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Kerosene (Total)
-          <button
-            className="sc-jSFkmK jWmFvF"
-            data-reach-tooltip-trigger=""
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseMove={[Function]}
-          >
-            <svg
-              height="16"
-              width="16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h16v16H0z"
-                fill="none"
-              />
-              <path
-                d="M7 12h2V7H7v5zm1-8a1 1 0 100 2 1 1 0 000-2zm0-4a8 8 0 100 16A8 8 0 008 0zm4.243 12.243C11.109 13.376 9.603 14 8 14s-3.109-.624-4.243-1.757C2.624 11.109 2 9.603 2 8s.624-3.109 1.757-4.243C4.891 2.624 6.397 2 8 2s3.109.624 4.243 1.757A5.963 5.963 0 0114 8a5.963 5.963 0 01-1.757 4.243z"
-                fill="#DBDEEF"
-              />
-            </svg>
-          </button>
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -718,6 +649,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Paraffin Pressure Lamp
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -761,6 +693,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Paraffin Lantern
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -804,6 +737,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Paraffin Tin Lamp
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -847,6 +781,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Gas Lamp
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -890,6 +825,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Wood
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -933,6 +869,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Solar (Total)
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -976,6 +913,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Solar
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -1019,6 +957,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Torch / Spotlight (Solar-Charged)
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -1062,6 +1001,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Torch / Spotlight (Dry Cells))
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -1105,6 +1045,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Candle
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -1148,6 +1089,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Battery (Car-Charged)
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -1191,6 +1133,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Generator (Diesel / Petrol)
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -1234,6 +1177,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Biogas
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -1277,6 +1221,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Not Stated
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -1320,6 +1265,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Cooking - Electricity
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -1363,6 +1309,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Cooking - Paraffin
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -1406,6 +1353,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Cooking - Gas (LPG)
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -1449,6 +1397,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Cooking - Biogas
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -1492,6 +1441,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Cooking - Firewood
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -1535,6 +1485,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Cooking - Charcoal
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -1578,6 +1529,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Cooking - Solar
+          
         </label>
         <label
           className="sc-gKAblj hcftQd"
@@ -1621,6 +1573,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Cooking - Not Stated
+          
         </label>
       </div>
     </div>
@@ -1633,11 +1586,11 @@ exports[`LayerControl matches the snapshot 1`] = `
       className="sc-fujyUd dmEgMx"
     >
       <button
-        aria-controls="panel--5---1"
+        aria-controls="panel--2---1"
         aria-expanded={false}
         className="sc-iCoHVE glFGSk"
         data-reach-accordion-button=""
-        id="button--5---1"
+        id="button--2---1"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
@@ -1710,12 +1663,12 @@ exports[`LayerControl matches the snapshot 1`] = `
       </button>
     </div>
     <div
-      aria-labelledby="button--5---1"
+      aria-labelledby="button--2---1"
       className="sc-jrsJCI kENOln"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
-      id="panel--5---1"
+      id="panel--2---1"
       role="region"
       tabIndex={-1}
     >
@@ -1761,6 +1714,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Banks
+        
       </label>
       <label
         className="sc-gKAblj hcftQd"
@@ -1804,6 +1758,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         MFIs
+        
       </label>
       <label
         className="sc-gKAblj hcftQd"
@@ -1847,6 +1802,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         SACCOs
+        
       </label>
     </div>
   </div>
@@ -1858,11 +1814,11 @@ exports[`LayerControl matches the snapshot 1`] = `
       className="sc-fujyUd dmEgMx"
     >
       <button
-        aria-controls="panel--5---1"
+        aria-controls="panel--2---1"
         aria-expanded={false}
         className="sc-iCoHVE glFGSk"
         data-reach-accordion-button=""
-        id="button--5---1"
+        id="button--2---1"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
@@ -1929,12 +1885,12 @@ exports[`LayerControl matches the snapshot 1`] = `
       </button>
     </div>
     <div
-      aria-labelledby="button--5---1"
+      aria-labelledby="button--2---1"
       className="sc-jrsJCI kENOln"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
-      id="panel--5---1"
+      id="panel--2---1"
       role="region"
       tabIndex={-1}
     >
@@ -1980,6 +1936,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Population Density (ARC 2016)
+        
       </label>
     </div>
   </div>
@@ -1991,11 +1948,11 @@ exports[`LayerControl matches the snapshot 1`] = `
       className="sc-fujyUd PqVSf"
     >
       <button
-        aria-controls="panel--5---1"
+        aria-controls="panel--2---1"
         aria-expanded={false}
         className="sc-iCoHVE glFGSk"
         data-reach-accordion-button=""
-        id="button--5---1"
+        id="button--2---1"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
@@ -2071,12 +2028,12 @@ exports[`LayerControl matches the snapshot 1`] = `
       </button>
     </div>
     <div
-      aria-labelledby="button--5---1"
+      aria-labelledby="button--2---1"
       className="sc-jrsJCI kENOln"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
-      id="panel--5---1"
+      id="panel--2---1"
       role="region"
       tabIndex={-1}
     >
@@ -2122,6 +2079,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Health Facilities
+        
       </label>
       <label
         className="sc-gKAblj hcftQd"
@@ -2165,6 +2123,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Education Facilities
+        
       </label>
     </div>
   </div>
@@ -2176,11 +2135,11 @@ exports[`LayerControl matches the snapshot 1`] = `
       className="sc-fujyUd dmEgMx"
     >
       <button
-        aria-controls="panel--5---1"
+        aria-controls="panel--2---1"
         aria-expanded={false}
         className="sc-iCoHVE glFGSk"
         data-reach-accordion-button=""
-        id="button--5---1"
+        id="button--2---1"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
@@ -2256,12 +2215,12 @@ exports[`LayerControl matches the snapshot 1`] = `
       </button>
     </div>
     <div
-      aria-labelledby="button--5---1"
+      aria-labelledby="button--2---1"
       className="sc-jrsJCI kENOln"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
-      id="panel--5---1"
+      id="panel--2---1"
       role="region"
       tabIndex={-1}
     >
@@ -2307,6 +2266,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Roads
+        
       </label>
     </div>
   </div>
