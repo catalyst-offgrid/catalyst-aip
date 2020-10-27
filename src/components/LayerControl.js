@@ -265,7 +265,7 @@ function SecondLevelPanel({
               <InfoButton
                 as='div'
                 info={info}
-                ariaLabel={`info about ${label} layers`}
+                aria-label={`info about ${label} layers`}
               />
             )}
             {/* as div: <button> cannot appear as a descendant of <button> */}

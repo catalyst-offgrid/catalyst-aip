@@ -40,7 +40,7 @@ export default function ControlItem({
       />
       {label}
       {info && (
-        <InfoButton info={info} ariaLabel={`info about ${label} layer`} />
+        <InfoButton info={info} aria-label={`info about ${label} layer`} />
       )}
     </ControlItemContainer>
   )
