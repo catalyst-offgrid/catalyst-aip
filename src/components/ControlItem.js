@@ -39,7 +39,9 @@ export default function ControlItem({
         checked={layerVisibility[id]}
       />
       {label}
-      {info && <InfoButton info={info} />}
+      {info && (
+        <InfoButton info={info} ariaLabel={`info about ${label} layer`} />
+      )}
     </ControlItemContainer>
   )
 }

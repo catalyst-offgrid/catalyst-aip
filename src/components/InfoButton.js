@@ -28,10 +28,10 @@ const IconButton = styled.button`
   display: flex;
 `
 
-export default function InfoButton({ info, as }) {
+export default function InfoButton({ info, as, ariaLabel }) {
   return (
     <Tooltip label={info}>
-      <IconButton as={as}>
+      <IconButton as={as} aria-label={ariaLabel}>
         {/* as div: <button> cannot appear as a descendant of <button> */}
         <InfoSmall color={colors.accent} />
       </IconButton>
@@ -42,4 +42,5 @@ export default function InfoButton({ info, as }) {
 InfoButton.propTypes = {
   info: PropTypes.string.isRequired,
   as: PropTypes.string,
+  ariaLabel: PropTypes.string.isRequired,
 }

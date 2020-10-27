@@ -261,7 +261,13 @@ function SecondLevelPanel({
         <ToggleButton as={DisclosureButton}>
           <SecondLevelHeading>{label}</SecondLevelHeading>
           <div>
-            {info && <InfoButton info={info} />}
+            {info && (
+              <InfoButton
+                as='div'
+                info={info}
+                ariaLabel={`info about ${label} layers`}
+              />
+            )}
             {/* as div: <button> cannot appear as a descendant of <button> */}
             {isOpen ? (
               <span role='img' aria-label='minus'>
