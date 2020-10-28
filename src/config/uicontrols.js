@@ -9,9 +9,8 @@ import {
   Transport,
 } from '../icons'
 
-export default [
-  {
-    id: 'admin',
+export default {
+  admin: {
     label: 'Administrative Boundaries',
     icon: AdminBoundaries,
     description:
@@ -37,8 +36,7 @@ export default [
       },
     },
   },
-  {
-    id: 'energy',
+  energy: {
     label: 'Energy',
     icon: Energy,
     description:
@@ -69,12 +67,16 @@ export default [
           ['Low-Quality Stopgap Total']: {
             label: 'Low-Quality Stopgap Total',
             defaultVisibility: false,
+            defaultRange: { min: 50, max: 80 },
+            domain: [0, 80],
             layerIds: ['Low-Quality Stopgap Total'],
             info: '',
           },
           ['Kerosene (Total)']: {
             label: 'Kerosene (Total)',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
+            domain: [0, 50],
             layerIds: ['Kerosene (Total)'],
             info: '',
           },
@@ -214,8 +216,7 @@ export default [
       },
     },
   },
-  {
-    id: 'finance',
+  finance: {
     label: 'Financial Services',
     icon: Financial,
     description: 'Locations of Banks, Micro-finances and SACCOs.',
@@ -240,8 +241,7 @@ export default [
       },
     },
   },
-  {
-    id: 'population',
+  population: {
     label: 'Population',
     icon: Population,
     description: 'Population density, Night Lights and Mobile Phone Coverage.',
@@ -266,8 +266,7 @@ export default [
       // },
     },
   },
-  {
-    id: 'facilities',
+  facilities: {
     label: 'Public facilities',
     icon: Public,
     description:
@@ -287,8 +286,7 @@ export default [
       },
     },
   },
-  {
-    id: 'transport',
+  transport: {
     label: 'Transport',
     icon: Transport,
     description: 'Transport networks, roads and routes.',
@@ -307,4 +305,4 @@ export default [
       // },
     },
   },
-]
+}

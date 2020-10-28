@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import React, { useState } from 'react'
+import React, { useReducer } from 'react'
 
 import PageLayout from '../components/PageLayout'
 import Drawer from '../components/Drawer'
@@ -12,27 +12,16 @@ import BasemapLayers from '../components/BasemapLayers'
 import uicontrols from '../config/uicontrols'
 import sources from '../config/sources'
 import layers from '../config/layers'
+import LayerControl from '../components/LayerControl'
 
-function getDefaultVisibility() {
-  return uicontrols.reduce((obj, cur) => {
-    return (
-      Object.entries(cur.controls).map(([controlId, control]) => {
-        if (control.subcontrols) {
-          return Object.entries(control.subcontrols).map(
-            ([subcontrolId, subcontrol]) =>
-              (obj[subcontrolId] = subcontrol.defaultVisibility)
-          )
-        }
-        return (obj[controlId] = control.defaultVisibility)
-      }),
-      obj
-    )
-  }, {})
-}
-
+/**
+ * Searches for the given layer id in the controls and subcontrols.
+ * Returns the first control id that contains the layer id.
+ * @param {String} layerId the id of a layer that should be controlled
+ */
 function getControlIdForLayer(layerId) {
   let controlId
-  uicontrols.find((group) => {
+  Object.values(uicontrols).find((group) => {
     const entry = Object.entries(group.controls).find(
       ([, control]) =>
         (control.layerIds && control.layerIds.includes(layerId)) ||
@@ -49,26 +38,68 @@ function getControlIdForLayer(layerId) {
   return controlId
 }
 
-function isLayerVisible(layerId, layerVisibility) {
-  const controlId = getControlIdForLayer(layerId)
-  if (!controlId) {
-    /**
-     * Layer "${layerId}" is not assigned to any group. Will always be visible by default.
-     */
-    return false
+/**
+ * Converts the uicontrols config structure into the initital
+ * ui state object
+ */
+function init(config) {
+  return Object.values(config).reduce((obj, cur) => {
+    return (
+      Object.entries(cur.controls).map(([controlId, control]) => {
+        if (control.subcontrols) {
+          return Object.entries(control.subcontrols).map(
+            ([subcontrolId, subcontrol]) =>
+              (obj[subcontrolId] = {
+                visibility: subcontrol.defaultVisibility,
+                domain: subcontrol.domain,
+                range: subcontrol.defaultRange,
+              })
+          )
+        }
+        return (obj[controlId] = {
+          visibility: control.defaultVisibility,
+          domain: control.domain,
+          range: control.defaultRange,
+        })
+      }),
+      obj
+    )
+  }, {})
+}
+
+function reducer(state, action) {
+  switch (action.type) {
+    case 'toggleLayer':
+      return {
+        ...state,
+        [action.payload]: {
+          ...state[action.payload],
+          visibility: !state[action.payload].visibility,
+        },
+      }
+    case 'setSlider':
+      return {
+        ...state,
+        [action.payload.controlId]: {
+          ...state[action.payload.controlId],
+          range: action.payload.range,
+        },
+      }
+    case 'reset':
+      return init(action.payload)
+    default:
+      throw new Error()
   }
-  return layerVisibility[controlId]
 }
 
 export default function Explore({ config }) {
-  const [layerVisibility, setLayerVisibility] = useState(
-    () => getDefaultVisibility() // lazy initialization of default state
-  )
+  const [state, dispatch] = useReducer(reducer, uicontrols, init)
 
   const toggleLayer = (controlId) => {
-    setLayerVisibility((layerVisibility) => {
-      return { ...layerVisibility, [controlId]: !layerVisibility[controlId] }
-    })
+    dispatch({ type: 'toggleLayer', payload: controlId })
+  }
+  const changeSlider = (payload) => {
+    dispatch({ type: 'setSlider', payload })
   }
 
   return (
@@ -77,9 +108,13 @@ export default function Explore({ config }) {
         siteName={config.siteName}
         country={config.country}
         cc={config.countryCode}
-        layerVisibility={layerVisibility}
-        toggleLayer={toggleLayer}
-      />
+      >
+        <LayerControl
+          uiState={state}
+          toggleLayer={toggleLayer}
+          changeSlider={changeSlider}
+        />
+      </Drawer>
       <Map>
         {Object.entries(sources).map(([type, list]) =>
           list.map((source) => (
@@ -91,34 +126,37 @@ export default function Explore({ config }) {
             >
               {layers
                 .filter((layer) => layer.source === source.id)
-                .map((layer) => (
-                  <Layer
-                    key={layer.id}
-                    id={layer.id}
-                    isVisible={isLayerVisible(layer.id, layerVisibility)}
-                    spec={layer}
-                  />
-                ))}
+                .map((layer) => {
+                  const controlId = getControlIdForLayer(layer.id)
+                  return (
+                    <Layer
+                      key={layer.id}
+                      id={layer.id}
+                      isVisible={state[controlId].visibility}
+                      spec={layer}
+                    />
+                  )
+                })}
             </Source>
           ))
         )}
 
-        <CsvLayers id='csv' layerVisibility={layerVisibility} />
+        <CsvLayers id='csv' uiState={state} />
 
         <BasemapLayers
           id='transport'
-          isVisible={layerVisibility['road']}
+          isVisible={state['road'].visibility}
           layerIds={
-            uicontrols.find((c) => c.id === 'transport').controls['road']
-              .layerIds
+            Object.entries(uicontrols).find(([id]) => id === 'transport')[1]
+              .controls['road'].layerIds
           }
         />
         <BasemapLayers
           id='admin'
-          isVisible={layerVisibility['counties']}
+          isVisible={state['counties'].visibility}
           layerIds={
-            uicontrols.find((c) => c.id === 'admin').controls['counties']
-              .layerIds
+            Object.entries(uicontrols).find(([id]) => id === 'admin')[1]
+              .controls['counties'].layerIds
           }
         />
       </Map>

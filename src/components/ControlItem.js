@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import InputRange from 'react-input-range'
+import 'react-input-range/lib/css/index.css'
 import styled from 'styled-components'
 
 import Checkbox from './Checkbox'
@@ -28,21 +30,42 @@ export default function ControlItem({
   id,
   label,
   info,
+  uiState,
   toggleLayer,
-  layerVisibility,
+  changeSlider,
 }) {
+  const isChecked = uiState[id]
+    ? uiState[id].visibility
+    : new Error(`can not find ui state for id ${id}`)
+
+  const hasRangeAndDomain =
+    uiState[id] && uiState[id].range && uiState[id].domain
+
   return (
-    <ControlItemContainer htmlFor={id}>
-      <Checkbox
-        id={id}
-        onChange={() => toggleLayer(id)}
-        checked={layerVisibility[id]}
-      />
-      {label}
-      {info && (
-        <InfoButton info={info} aria-label={`info about ${label} layer`} />
+    <>
+      <ControlItemContainer htmlFor={id}>
+        <Checkbox
+          id={id}
+          onChange={() => toggleLayer(id)}
+          checked={isChecked}
+        />
+        {label}
+        {info && (
+          <InfoButton info={info} aria-label={`info about ${label} layer`} />
+        )}
+      </ControlItemContainer>
+      {isChecked && hasRangeAndDomain && (
+        <div style={{ padding: 32, backgroundColor: colors.muted }}>
+          <InputRange
+            minValue={uiState[id].domain[0]}
+            maxValue={uiState[id].domain[1]}
+            step={10}
+            value={uiState[id].range}
+            onChange={(value) => changeSlider({ controlId: id, range: value })}
+          />
+        </div>
       )}
-    </ControlItemContainer>
+    </>
   )
 }
 
@@ -50,6 +73,7 @@ ControlItem.propTypes = {
   id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   info: PropTypes.string,
+  uiState: PropTypes.object.isRequired,
   toggleLayer: PropTypes.func.isRequired,
-  layerVisibility: PropTypes.object.isRequired,
+  changeSlider: PropTypes.func.isRequired,
 }

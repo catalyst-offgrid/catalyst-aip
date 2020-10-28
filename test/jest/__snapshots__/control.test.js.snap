@@ -571,15 +571,15 @@ exports[`LayerControl matches the snapshot 1`] = `
             className="sc-gtssRu XsuIH"
           >
             <input
-              checked={false}
+              checked={true}
               className="sc-dlnjPT bVNyMh"
               id="Kerosene (Total)"
               onChange={[Function]}
               type="checkbox"
             />
             <div
-              checked={false}
-              className="sc-hKFyIo hXphhU"
+              checked={true}
+              className="sc-hKFyIo BQrDm"
             >
               <div
                 className="sc-bdnylx ilSLBO"
