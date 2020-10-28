@@ -14,7 +14,7 @@ export default function Map({ children }) {
   useLayoutEffect(() => {
     const m = new mapbox.Map({
       container: ref.current,
-      style: 'mapbox://styles/mapbox/streets-v11',
+      style: 'mapbox://styles/mapbox/light-v10',
       zoom: 7,
       center: [37.85335, 0.44014],
     })
