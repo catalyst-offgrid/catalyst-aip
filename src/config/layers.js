@@ -28,15 +28,6 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': '#79ceb8',
-      'circle-opacity': [
-        'interpolate',
-        ['exponential', 0.5],
-        ['zoom'],
-        10,
-        0,
-        11,
-        1,
-      ],
     },
   },
   {
@@ -49,15 +40,6 @@ export default [
     },
     paint: {
       'icon-color': '#e53238',
-      'icon-opacity': [
-        'interpolate',
-        ['exponential', 0.5],
-        ['zoom'],
-        10,
-        0,
-        11,
-        1,
-      ],
     },
   },
   {
@@ -67,15 +49,6 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': '#e8f6fb',
-      'circle-opacity': [
-        'interpolate',
-        ['exponential', 0.5],
-        ['zoom'],
-        10,
-        0,
-        11,
-        1,
-      ],
     },
   },
   {
@@ -85,15 +58,6 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': '#5cc3e8',
-      'circle-opacity': [
-        'interpolate',
-        ['exponential', 0.5],
-        ['zoom'],
-        10,
-        0,
-        11,
-        1,
-      ],
     },
   },
   {
@@ -103,15 +67,6 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': '#314855',
-      'circle-opacity': [
-        'interpolate',
-        ['exponential', 0.5],
-        ['zoom'],
-        9,
-        0,
-        10,
-        1,
-      ],
     },
   },
   {
@@ -123,15 +78,6 @@ export default [
       'line-color': '#8F3A84',
       'line-dasharray': [5, 3],
       'line-width': 1,
-      'line-opacity': [
-        'interpolate',
-        ['exponential', 0.5],
-        ['zoom'],
-        9,
-        0,
-        10,
-        1,
-      ],
     },
   },
   {
@@ -143,15 +89,6 @@ export default [
       'line-color': '#8F3A84',
       'line-dasharray': [5, 3],
       'line-width': 1,
-      'line-opacity': [
-        'interpolate',
-        ['exponential', 0.5],
-        ['zoom'],
-        11,
-        0,
-        12,
-        1,
-      ],
     },
   },
   {
