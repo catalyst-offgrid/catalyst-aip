@@ -4,8 +4,8 @@ if (!process.env.MAPBOX_ACCESS_TOKEN) {
 
 export default {
   mapboxAccessToken: process.env.MAPBOX_ACCESS_TOKEN,
-  siteName: process.env.SITE_NAME,
-  siteAcronym: process.env.SITE_ACRONYM,
+  siteName: 'Access Insights Platform',
+  siteAcronym: 'AIP',
   country: 'Kenya',
   countryCode: 'ke',
   imageUrl:
