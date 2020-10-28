@@ -1,3 +1,5 @@
+import theme from '../config/theme'
+const { colors } = theme
 /**
  * A style's layers property lists all the layers available in that style.
  * The type of layer is specified by the "type" property, and must be one
@@ -75,7 +77,8 @@ export default [
     'source-layer': 'Sub-Counties_290-0f84my',
     type: 'line',
     paint: {
-      'line-color': '#8F3A84',
+      'line-color': colors.text,
+      'line-opacity': 0.3,
       'line-dasharray': [5, 3],
       'line-width': 1,
     },
@@ -86,7 +89,8 @@ export default [
     'source-layer': 'Wards_1450-60annj',
     type: 'line',
     paint: {
-      'line-color': '#8F3A84',
+      'line-color': colors.text,
+      'line-opacity': 0.3,
       'line-dasharray': [5, 3],
       'line-width': 1,
     },
@@ -106,9 +110,9 @@ export default [
     'source-layer': 'Counties_47_-_Coded-1htj4o',
     type: 'line',
     paint: {
-      'line-color': '#8F3A84',
+      'line-color': colors.text,
       'line-opacity': 0.3,
-      'line-width': 3,
+      'line-width': 2,
     },
   },
 ]
