@@ -23,14 +23,16 @@ const MainContent = styled.main`
   margin: ${({ noMargin }) => (noMargin ? 0 : `${space[5]}px auto`)};
   padding: ${({ noMargin }) => (noMargin ? 0 : `${space[5]}px`)};
 
-  overflow: scroll;
+  overflow: auto;
 `
 
 export default function PageLayout({ siteAcronym, noMargin, children }) {
   return (
     <PageContainer>
       <NavigationBar siteAcronym={siteAcronym} />
-      <MainContent noMargin={noMargin}>{children}</MainContent>
+      <MainContent noMargin={noMargin} tabIndex='0'>
+        {children}
+      </MainContent>
     </PageContainer>
   )
 }
@@ -46,6 +48,10 @@ PageLayout.propTypes = {
 
 export const Introduction = styled.div`
   grid-column: 1 / span 5;
+`
+
+export const InfoBlock = styled.div`
+  grid-column: 1 / span 8;
 `
 
 export const Tagline = styled.span`

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import PageLayout, {
-  Introduction,
+  InfoBlock,
   Tagline,
   PageTitle,
   Paragraph,
@@ -12,7 +12,7 @@ import PageLayout, {
 export default function Info({ config }) {
   return (
     <PageLayout siteAcronym={config.siteAcronym}>
-      <Introduction>
+      <InfoBlock>
         <Tagline>About</Tagline>
         <PageTitle>The tool</PageTitle>
         <Paragraph>
@@ -32,7 +32,7 @@ export default function Info({ config }) {
         </Paragraph>
         <Paragraph>Catalyst Off Grid Advisors</Paragraph>
         {/* TODO: Add point of contact  */}
-      </Introduction>
+      </InfoBlock>
       <Logo />
     </PageLayout>
   )
