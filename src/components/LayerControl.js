@@ -24,7 +24,7 @@ import uicontrols from '../config/uicontrols'
 const { space, colors } = theme
 
 export default function LayerControl({ toggleLayer, layerVisibility }) {
-  const [indices, setIndices] = useState([0, 1])
+  const [indices, setIndices] = useState([])
   function toggleAccordionItem(toggledIndex) {
     if (indices.includes(toggledIndex)) {
       setIndices(
