@@ -20,7 +20,7 @@ export default [
       counties: {
         label: 'Counties',
         defaultVisibility: true,
-        layerIds: ['counties'],
+        layerIds: ['counties', 'admin-1-boundary', 'admin-1-boundary-bg'],
         info: '',
       },
       'sub-counties': {

@@ -7,7 +7,7 @@ import Map from '../components/Map'
 import Source from '../components/Source'
 import Layer from '../components/Layer'
 import CsvLayers from '../components/CsvLayers'
-import Basemap from '../components/Basemap'
+import BasemapLayers from '../components/BasemapLayers'
 
 import uicontrols from '../config/uicontrols'
 import sources from '../config/sources'
@@ -102,8 +102,25 @@ export default function Explore({ config }) {
             </Source>
           ))
         )}
+
         <CsvLayers id='csv' layerVisibility={layerVisibility} />
-        <Basemap id='road' isVisible={layerVisibility['road']} />
+
+        <BasemapLayers
+          id='transport'
+          isVisible={layerVisibility['road']}
+          layerIds={
+            uicontrols.find((c) => c.id === 'transport').controls['road']
+              .layerIds
+          }
+        />
+        <BasemapLayers
+          id='admin'
+          isVisible={layerVisibility['counties']}
+          layerIds={
+            uicontrols.find((c) => c.id === 'admin').controls['counties']
+              .layerIds
+          }
+        />
       </Map>
     </PageLayout>
   )
