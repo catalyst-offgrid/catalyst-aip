@@ -29,19 +29,16 @@ export default [
     'source-layer': 'Education_Facilities-6v7pmw',
     type: 'circle',
     paint: {
-      'circle-color': '#79ceb8',
+      'circle-color': '#DB93B0',
     },
   },
   {
     id: 'health',
     source: 'health',
     'source-layer': 'Health_Facilities-2yj576',
-    type: 'symbol',
-    layout: {
-      'icon-image': 'hospital-11',
-    },
+    type: 'circle',
     paint: {
-      'icon-color': '#e53238',
+      'circle-color': '#6A9FB4',
     },
   },
   {
@@ -50,7 +47,7 @@ export default [
     'source-layer': 'SACCOs-btv3i8',
     type: 'circle',
     paint: {
-      'circle-color': '#e8f6fb',
+      'circle-color': '#1D7874',
     },
   },
   {
@@ -59,7 +56,7 @@ export default [
     'source-layer': 'MFIs-00ivvm',
     type: 'circle',
     paint: {
-      'circle-color': '#5cc3e8',
+      'circle-color': '#C8D6AF',
     },
   },
   {
@@ -68,7 +65,7 @@ export default [
     'source-layer': 'Banks_OSM-dn9mc8',
     type: 'circle',
     paint: {
-      'circle-color': '#314855',
+      'circle-color': '#679289',
     },
   },
   {
@@ -101,7 +98,7 @@ export default [
     'source-layer': 'gridfinder_kenya_sample-avd4fk',
     type: 'line',
     paint: {
-      'line-color': 'orange',
+      'line-color': colors.highlight,
     },
   },
   {
