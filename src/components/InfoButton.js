@@ -96,7 +96,7 @@ export default function InfoButton({ info, as, 'aria-label': ariaLabel }) {
     <Tooltip label={info} aria-label={ariaLabel}>
       <IconButton as={as} aria-label={ariaLabel}>
         {/* as div: <button> cannot appear as a descendant of <button> */}
-        <InfoSmall color={colors.accent} />
+        <InfoSmall color={colors.offtext} />
       </IconButton>
     </Tooltip>
   )

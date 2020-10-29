@@ -51,6 +51,7 @@ function init(config) {
             ([subcontrolId, subcontrol]) =>
               (obj[subcontrolId] = {
                 visibility: subcontrol.defaultVisibility,
+                unit: subcontrol.unit,
                 domain: subcontrol.domain,
                 range: subcontrol.defaultRange,
               })
@@ -58,6 +59,7 @@ function init(config) {
         }
         return (obj[controlId] = {
           visibility: control.defaultVisibility,
+          unit: control.unit,
           domain: control.domain,
           range: control.defaultRange,
         })
