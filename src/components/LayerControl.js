@@ -12,9 +12,11 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from '@reach/disclosure'
+import '@reach/tooltip/styles.css'
 import styled from 'styled-components'
 
-import Checkbox from './Checkbox'
+import ControlItem from './ControlItem'
+import InfoButton from './InfoButton'
 import { ChevronDown, ChevronUp, Plus, Minus } from '../icons'
 import theme from '../config/theme'
 import uicontrols from '../config/uicontrols'
@@ -53,41 +55,6 @@ export default function LayerControl({ toggleLayer, layerVisibility }) {
 }
 
 LayerControl.propTypes = {
-  toggleLayer: PropTypes.func.isRequired,
-  layerVisibility: PropTypes.object.isRequired,
-}
-
-const ControlItemContainer = styled.label`
-  color: ${colors.primary};
-  font-family: ${theme.fonts.body};
-  font-size: ${theme.fontSizes[2]}pt;
-  font-weight: ${theme.fontWeights.body};
-
-  background-color: ${colors.muted};
-  border-bottom: 1px solid ${colors.background};
-
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: ${space[3]}px;
-  padding: ${space[3]}px;
-`
-
-function ControlItem({ id, label, toggleLayer, layerVisibility }) {
-  return (
-    <ControlItemContainer htmlFor={id}>
-      <Checkbox
-        id={id}
-        onChange={() => toggleLayer(id)}
-        checked={layerVisibility[id]}
-      />
-      {label}
-    </ControlItemContainer>
-  )
-}
-
-ControlItem.propTypes = {
-  id: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
   toggleLayer: PropTypes.func.isRequired,
   layerVisibility: PropTypes.object.isRequired,
 }
@@ -228,6 +195,7 @@ function FirstLevelPanel({
               <SecondLevelPanel
                 key={controlId}
                 label={control.label}
+                info={control.info}
                 controls={control.subcontrols}
                 toggleLayer={toggleLayer}
                 layerVisibility={layerVisibility}
@@ -240,6 +208,7 @@ function FirstLevelPanel({
               key={controlId}
               id={controlId}
               label={control.label}
+              info={control.info}
               toggleLayer={toggleLayer}
               layerVisibility={layerVisibility}
             />
@@ -277,7 +246,13 @@ const SecondLevelHeading = styled.h3`
   margin: 0;
 `
 
-function SecondLevelPanel({ label, controls, toggleLayer, layerVisibility }) {
+function SecondLevelPanel({
+  label,
+  info,
+  controls,
+  toggleLayer,
+  layerVisibility,
+}) {
   const [isOpen, setOpen] = useState(false)
 
   return (
@@ -285,15 +260,25 @@ function SecondLevelPanel({ label, controls, toggleLayer, layerVisibility }) {
       <SecondLevelHeader isOpen={isOpen}>
         <ToggleButton as={DisclosureButton}>
           <SecondLevelHeading>{label}</SecondLevelHeading>
-          {isOpen ? (
-            <span role='img' aria-label='minus'>
-              <Minus color={colors.primary} />
-            </span>
-          ) : (
-            <span role='img' aria-label='plus'>
-              <Plus color={colors.primary} />
-            </span>
-          )}
+          <div>
+            {info && (
+              <InfoButton
+                as='div'
+                info={info}
+                aria-label={`info about ${label} layers`}
+              />
+            )}
+            {/* as div: <button> cannot appear as a descendant of <button> */}
+            {isOpen ? (
+              <span role='img' aria-label='minus'>
+                <Minus color={colors.primary} />
+              </span>
+            ) : (
+              <span role='img' aria-label='plus'>
+                <Plus color={colors.primary} />
+              </span>
+            )}
+          </div>
         </ToggleButton>
       </SecondLevelHeader>
       <Panel as={DisclosurePanel}>
@@ -302,6 +287,7 @@ function SecondLevelPanel({ label, controls, toggleLayer, layerVisibility }) {
             key={controlId}
             id={controlId}
             label={control.label}
+            info={control.info}
             toggleLayer={toggleLayer}
             layerVisibility={layerVisibility}
           />
@@ -313,6 +299,7 @@ function SecondLevelPanel({ label, controls, toggleLayer, layerVisibility }) {
 
 SecondLevelPanel.propTypes = {
   label: PropTypes.string.isRequired,
+  info: PropTypes.string.isRequired,
   controls: PropTypes.object.isRequired,
   toggleLayer: PropTypes.func.isRequired,
   layerVisibility: PropTypes.object.isRequired,
