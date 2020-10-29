@@ -64,6 +64,7 @@ export default {
           ['Main Electricity']: {
             label: 'Main Electricity',
             defaultVisibility: false,
+            defaultRange: { min: 50, max: 80 },
             domain: [0, 100],
             unit: '%',
             layerIds: ['Main Electricity'],
@@ -90,7 +91,8 @@ export default {
           ['Paraffin Pressure Lamp']: {
             label: 'Paraffin Pressure Lamp',
             defaultVisibility: false,
-            domain: [0, 1],
+            defaultRange: { min: 0, max: 10 },
+            domain: [0, 10],
             unit: '%',
             layerIds: ['Paraffin Pressure Lamp'],
             info: '',
@@ -98,6 +100,7 @@ export default {
           ['Paraffin Lantern']: {
             label: 'Paraffin Lantern',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Paraffin Lantern'],
@@ -106,6 +109,7 @@ export default {
           ['Paraffin Tin Lamp']: {
             label: 'Paraffin Tin Lamp',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Paraffin Tin Lamp'],
@@ -114,6 +118,7 @@ export default {
           ['Gas Lamp']: {
             label: 'Gas Lamp',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Gas Lamp'],
@@ -122,6 +127,7 @@ export default {
           ['Wood']: {
             label: 'Wood',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Wood'],
@@ -130,6 +136,7 @@ export default {
           ['Solar (Total)']: {
             label: 'Solar (Total)',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Solar (Total)'],
@@ -138,6 +145,7 @@ export default {
           ['Solar']: {
             label: 'Solar',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Solar'],
@@ -146,6 +154,7 @@ export default {
           ['Torch / Spotlight (Solar-Charged)']: {
             label: 'Torch / Spotlight (Solar-Charged)',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Torch / Spotlight (Solar-Charged)'],
@@ -154,6 +163,7 @@ export default {
           ['Torch / Spotlight (Dry Cells))']: {
             label: 'Torch / Spotlight (Dry Cells))',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Torch / Spotlight (Dry Cells))'],
@@ -162,6 +172,7 @@ export default {
           ['Candle']: {
             label: 'Candle',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Candle'],
@@ -170,6 +181,7 @@ export default {
           ['Battery (Car-Charged)']: {
             label: 'Battery (Car-Charged)',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Battery (Car-Charged)'],
@@ -178,6 +190,7 @@ export default {
           ['Generator (Diesel / Petrol)']: {
             label: 'Generator (Diesel / Petrol)',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Generator (Diesel / Petrol)'],
@@ -186,6 +199,7 @@ export default {
           ['Biogas']: {
             label: 'Biogas',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Biogas'],
@@ -194,6 +208,7 @@ export default {
           ['Not Stated']: {
             label: 'Not Stated',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Not Stated'],
@@ -202,6 +217,7 @@ export default {
           ['Cooking - Electricity']: {
             label: 'Cooking - Electricity',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Cooking - Electricity'],
@@ -210,6 +226,7 @@ export default {
           ['Cooking - Paraffin']: {
             label: 'Cooking - Paraffin',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Cooking - Paraffin'],
@@ -218,6 +235,7 @@ export default {
           ['Cooking - Gas (LPG)']: {
             label: 'Cooking - Gas (LPG)',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Cooking - Gas (LPG)'],
@@ -226,6 +244,7 @@ export default {
           ['Cooking - Biogas']: {
             label: 'Cooking - Biogas',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Cooking - Biogas'],
@@ -234,6 +253,7 @@ export default {
           ['Cooking - Firewood']: {
             label: 'Cooking - Firewood',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Cooking - Firewood'],
@@ -242,6 +262,7 @@ export default {
           ['Cooking - Charcoal']: {
             label: 'Cooking - Charcoal',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Cooking - Charcoal'],
@@ -250,6 +271,7 @@ export default {
           ['Cooking - Solar']: {
             label: 'Cooking - Solar',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Cooking - Solar'],
@@ -258,6 +280,7 @@ export default {
           ['Cooking - Not Stated']: {
             label: 'Cooking - Not Stated',
             defaultVisibility: false,
+            defaultRange: { min: 0, max: 50 },
             domain: [0, 50],
             unit: '%',
             layerIds: ['Cooking - Not Stated'],
