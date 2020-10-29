@@ -55,8 +55,8 @@ export default {
           ['Conventional Households']: {
             label: 'Conventional Households',
             defaultVisibility: false,
-            defaultRange: { min: 30000, max: 1000000 },
-            domain: [30000, 1000000],
+            defaultRange: { min: 30000, max: 1500000 },
+            domain: [30000, 1500000],
             unit: '#',
             layerIds: ['Conventional Households'],
             info: '',
