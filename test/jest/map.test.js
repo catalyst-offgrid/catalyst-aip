@@ -44,7 +44,7 @@ describe('Map', () => {
   it('adds a map', () => {
     expect(mapbox.Map).toHaveBeenCalledWith({
       container,
-      style: `mapbox://styles/mapbox/streets-v11`,
+      style: `mapbox://styles/mapbox/light-v10`,
       zoom: 7,
       center: [37.85335, 0.44014],
     })

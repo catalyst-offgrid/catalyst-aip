@@ -9,7 +9,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-fujyUd lpkqJa"
+      className="sc-fujyUd dmEgMx"
     >
       <button
         aria-controls="panel--2---1"
@@ -74,7 +74,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         <span
-          aria-label="chevron up"
+          aria-label="chevron down"
           role="img"
         >
           <svg
@@ -91,7 +91,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             />
             <polygon
               fill="#304CA2"
-              points="1.414,12.414 8,5.828 14.586,12.414 16,11 8,3 0,11"
+              points="14.586,3.586 8,10.172 1.414,3.586 0,5 8,13 16,5"
             />
           </svg>
         </span>
@@ -246,7 +246,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-fujyUd goRCjc"
+      className="sc-fujyUd PqVSf"
     >
       <button
         aria-controls="panel--2---1"
@@ -302,7 +302,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         <span
-          aria-label="chevron up"
+          aria-label="chevron down"
           role="img"
         >
           <svg
@@ -319,7 +319,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             />
             <polygon
               fill="#304CA2"
-              points="1.414,12.414 8,5.828 14.586,12.414 16,11 8,3 0,11"
+              points="14.586,3.586 8,10.172 1.414,3.586 0,5 8,13 16,5"
             />
           </svg>
         </span>

@@ -1,3 +1,5 @@
+import theme from '../config/theme'
+const { colors } = theme
 /**
  * A style's layers property lists all the layers available in that style.
  * The type of layer is specified by the "type" property, and must be one
@@ -27,37 +29,16 @@ export default [
     'source-layer': 'Education_Facilities-6v7pmw',
     type: 'circle',
     paint: {
-      'circle-color': '#79ceb8',
-      'circle-opacity': [
-        'interpolate',
-        ['exponential', 0.5],
-        ['zoom'],
-        10,
-        0,
-        11,
-        1,
-      ],
+      'circle-color': '#DB93B0',
     },
   },
   {
     id: 'health',
     source: 'health',
     'source-layer': 'Health_Facilities-2yj576',
-    type: 'symbol',
-    layout: {
-      'icon-image': 'hospital-11',
-    },
+    type: 'circle',
     paint: {
-      'icon-color': '#e53238',
-      'icon-opacity': [
-        'interpolate',
-        ['exponential', 0.5],
-        ['zoom'],
-        10,
-        0,
-        11,
-        1,
-      ],
+      'circle-color': '#6A9FB4',
     },
   },
   {
@@ -66,16 +47,7 @@ export default [
     'source-layer': 'SACCOs-btv3i8',
     type: 'circle',
     paint: {
-      'circle-color': '#e8f6fb',
-      'circle-opacity': [
-        'interpolate',
-        ['exponential', 0.5],
-        ['zoom'],
-        10,
-        0,
-        11,
-        1,
-      ],
+      'circle-color': '#1D7874',
     },
   },
   {
@@ -84,16 +56,7 @@ export default [
     'source-layer': 'MFIs-00ivvm',
     type: 'circle',
     paint: {
-      'circle-color': '#5cc3e8',
-      'circle-opacity': [
-        'interpolate',
-        ['exponential', 0.5],
-        ['zoom'],
-        10,
-        0,
-        11,
-        1,
-      ],
+      'circle-color': '#C8D6AF',
     },
   },
   {
@@ -102,16 +65,7 @@ export default [
     'source-layer': 'Banks_OSM-dn9mc8',
     type: 'circle',
     paint: {
-      'circle-color': '#314855',
-      'circle-opacity': [
-        'interpolate',
-        ['exponential', 0.5],
-        ['zoom'],
-        9,
-        0,
-        10,
-        1,
-      ],
+      'circle-color': '#679289',
     },
   },
   {
@@ -120,18 +74,10 @@ export default [
     'source-layer': 'Sub-Counties_290-0f84my',
     type: 'line',
     paint: {
-      'line-color': '#8F3A84',
+      'line-color': colors.text,
+      'line-opacity': 0.3,
       'line-dasharray': [5, 3],
       'line-width': 1,
-      'line-opacity': [
-        'interpolate',
-        ['exponential', 0.5],
-        ['zoom'],
-        9,
-        0,
-        10,
-        1,
-      ],
     },
   },
   {
@@ -140,18 +86,10 @@ export default [
     'source-layer': 'Wards_1450-60annj',
     type: 'line',
     paint: {
-      'line-color': '#8F3A84',
+      'line-color': colors.text,
+      'line-opacity': 0.3,
       'line-dasharray': [5, 3],
       'line-width': 1,
-      'line-opacity': [
-        'interpolate',
-        ['exponential', 0.5],
-        ['zoom'],
-        11,
-        0,
-        12,
-        1,
-      ],
     },
   },
   {
@@ -160,7 +98,7 @@ export default [
     'source-layer': 'gridfinder_kenya_sample-avd4fk',
     type: 'line',
     paint: {
-      'line-color': 'orange',
+      'line-color': colors.highlight,
     },
   },
   {
@@ -169,9 +107,9 @@ export default [
     'source-layer': 'Counties_47_-_Coded-1htj4o',
     type: 'line',
     paint: {
-      'line-color': '#8F3A84',
+      'line-color': colors.text,
       'line-opacity': 0.3,
-      'line-width': 3,
+      'line-width': 2,
     },
   },
 ]

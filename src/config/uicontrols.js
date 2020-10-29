@@ -19,13 +19,13 @@ export default [
     controls: {
       counties: {
         label: 'Counties',
-        defaultVisibility: true,
-        layerIds: ['counties'],
+        defaultVisibility: false,
+        layerIds: ['counties', 'admin-1-boundary', 'admin-1-boundary-bg'],
         info: '',
       },
       'sub-counties': {
         label: 'Sub-Counties',
-        defaultVisibility: true,
+        defaultVisibility: false,
         layerIds: ['sub-counties'],
         info: '',
       },
@@ -46,7 +46,7 @@ export default [
     controls: {
       gridfinder: {
         label: 'Gridfinder',
-        defaultVisibility: true,
+        defaultVisibility: false,
         layerIds: ['gridfinder'],
         info: '',
       },
@@ -62,7 +62,7 @@ export default [
           },
           ['Main Electricity']: {
             label: 'Main Electricity',
-            defaultVisibility: true,
+            defaultVisibility: false,
             layerIds: ['Main Electricity'],
             info: '',
           },
@@ -222,19 +222,19 @@ export default [
     controls: {
       banks: {
         label: 'Banks',
-        defaultVisibility: true,
+        defaultVisibility: false,
         layerIds: ['banks'],
         info: '',
       },
       mfi: {
         label: 'MFIs',
-        defaultVisibility: true,
+        defaultVisibility: false,
         layerIds: ['mfi'],
         info: '',
       },
       sacco: {
         label: 'SACCOs',
-        defaultVisibility: true,
+        defaultVisibility: false,
         layerIds: ['sacco'],
         info: '',
       },
@@ -254,13 +254,13 @@ export default [
       },
       // 'fb-population': {
       //   label: 'Facebook Population',
-      //   defaultVisibility: true,
+      //   defaultVisibility: false,
       //   layerIds: ['fb-population'],
       //   info: '',
       // },
       // nightlights: {
       //   label: 'Night Lights',
-      //   defaultVisibility: true,
+      //   defaultVisibility: false,
       //   layerIds: ['night-lights'],
       //   info: '',
       // },
@@ -295,7 +295,7 @@ export default [
     controls: {
       road: {
         label: 'Roads',
-        defaultVisibility: true,
+        defaultVisibility: false,
         layerIds: transportBasemapLayers,
         info: '',
       },
