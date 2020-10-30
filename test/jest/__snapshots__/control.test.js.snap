@@ -9,12 +9,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-fujyUd dmEgMx"
+      className="sc-jrsJCI jrHkdz"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-iCoHVE glFGSk"
+        className="sc-pNWxx LltbP"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
@@ -22,7 +22,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       >
         <div>
           <div
-            className="sc-kEqYlL gRKjGX"
+            className="sc-crzoUp fjuLTs"
           >
             <svg
               height="32"
@@ -63,7 +63,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </svg>
           </div>
           <div
-            className="sc-pNWxx jcuQnX"
+            className="sc-kEqYlL cgutmA"
           >
             <h2>
               Administrative Boundaries
@@ -99,7 +99,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
-      className="sc-jrsJCI kENOln"
+      className="sc-iqAbSa bScnPN"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
@@ -108,7 +108,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       tabIndex={-1}
     >
       <label
-        className="sc-gKAblj hcftQd"
+        className="sc-gKAblj grCahe"
         htmlFor="counties"
       >
         <div
@@ -149,10 +149,13 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Counties
+        <span
+          className="input-range__label"
+        />
         
       </label>
       <label
-        className="sc-gKAblj hcftQd"
+        className="sc-gKAblj grCahe"
         htmlFor="sub-counties"
       >
         <div
@@ -193,10 +196,13 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Sub-Counties
+        <span
+          className="input-range__label"
+        />
         
       </label>
       <label
-        className="sc-gKAblj hcftQd"
+        className="sc-gKAblj grCahe"
         htmlFor="wards"
       >
         <div
@@ -237,6 +243,9 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Wards
+        <span
+          className="input-range__label"
+        />
         
       </label>
     </div>
@@ -246,12 +255,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-fujyUd PqVSf"
+      className="sc-jrsJCI dpFtRZ"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-iCoHVE glFGSk"
+        className="sc-pNWxx LltbP"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
@@ -259,7 +268,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       >
         <div>
           <div
-            className="sc-kEqYlL plVX"
+            className="sc-crzoUp jSbDzg"
           >
             <svg
               height="32"
@@ -291,7 +300,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </svg>
           </div>
           <div
-            className="sc-pNWxx jcuQnX"
+            className="sc-kEqYlL cgutmA"
           >
             <h2>
               Energy
@@ -327,7 +336,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
-      className="sc-jrsJCI kENOln"
+      className="sc-iqAbSa bScnPN"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
@@ -336,7 +345,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       tabIndex={-1}
     >
       <label
-        className="sc-gKAblj hcftQd"
+        className="sc-gKAblj grCahe"
         htmlFor="gridfinder"
       >
         <div
@@ -377,21 +386,24 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Gridfinder
+        <span
+          className="input-range__label"
+        />
         
       </label>
       <div
-        className="sc-fujyUd sc-iqAbSa dmEgMx bNpYyU"
+        className="sc-jrsJCI sc-dIsAE jrHkdz iRKxnj"
       >
         <button
           aria-controls="panel--1"
           aria-expanded={false}
-          className="sc-iCoHVE glFGSk"
+          className="sc-pNWxx LltbP"
           data-reach-disclosure-button=""
           data-state="collapsed"
           onClick={[Function]}
         >
           <h3
-            className="sc-crzoUp jkybRw"
+            className="sc-bqGHjH kqCktb"
           >
             Census
           </h3>
@@ -424,7 +436,7 @@ exports[`LayerControl matches the snapshot 1`] = `
         </button>
       </div>
       <div
-        className="sc-jrsJCI kENOln"
+        className="sc-iqAbSa bScnPN"
         data-reach-disclosure-panel=""
         data-state="collapsed"
         hidden={true}
@@ -432,7 +444,7 @@ exports[`LayerControl matches the snapshot 1`] = `
         tabIndex={-1}
       >
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Conventional Households"
         >
           <div
@@ -473,10 +485,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Conventional Households
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Main Electricity"
         >
           <div
@@ -517,10 +532,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Main Electricity
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Low-Quality Stopgap Total"
         >
           <div
@@ -561,25 +579,28 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Low-Quality Stopgap Total
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Kerosene (Total)"
         >
           <div
             className="sc-gtssRu XsuIH"
           >
             <input
-              checked={false}
+              checked={true}
               className="sc-dlnjPT bVNyMh"
               id="Kerosene (Total)"
               onChange={[Function]}
               type="checkbox"
             />
             <div
-              checked={false}
-              className="sc-hKFyIo hXphhU"
+              checked={true}
+              className="sc-hKFyIo BQrDm"
             >
               <div
                 className="sc-bdnylx ilSLBO"
@@ -605,10 +626,39 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Kerosene (Total)
+          <span
+            className="input-range__label"
+          />
           
         </label>
+        <div
+          className="sc-iCoHVE cBdemk"
+        >
+          <div
+            className="sc-fujyUd hCTOm"
+          />
+          <div
+            className="input-range__label"
+            style={
+              Object {
+                "marginTop": "16px",
+              }
+            }
+          >
+            <span
+              className="input-range__label--min"
+            >
+              0
+            </span>
+            <span
+              className="input-range__label--max"
+            >
+              50
+            </span>
+          </div>
+        </div>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Paraffin Pressure Lamp"
         >
           <div
@@ -649,10 +699,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Paraffin Pressure Lamp
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Paraffin Lantern"
         >
           <div
@@ -693,10 +746,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Paraffin Lantern
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Paraffin Tin Lamp"
         >
           <div
@@ -737,10 +793,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Paraffin Tin Lamp
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Gas Lamp"
         >
           <div
@@ -781,10 +840,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Gas Lamp
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Wood"
         >
           <div
@@ -825,10 +887,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Wood
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Solar (Total)"
         >
           <div
@@ -869,10 +934,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Solar (Total)
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Solar"
         >
           <div
@@ -913,10 +981,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Solar
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Torch / Spotlight (Solar-Charged)"
         >
           <div
@@ -957,10 +1028,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Torch / Spotlight (Solar-Charged)
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Torch / Spotlight (Dry Cells))"
         >
           <div
@@ -1001,10 +1075,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Torch / Spotlight (Dry Cells))
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Candle"
         >
           <div
@@ -1045,10 +1122,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Candle
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Battery (Car-Charged)"
         >
           <div
@@ -1089,10 +1169,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Battery (Car-Charged)
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Generator (Diesel / Petrol)"
         >
           <div
@@ -1133,10 +1216,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Generator (Diesel / Petrol)
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Biogas"
         >
           <div
@@ -1177,10 +1263,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Biogas
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Not Stated"
         >
           <div
@@ -1221,10 +1310,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Not Stated
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Cooking - Electricity"
         >
           <div
@@ -1265,10 +1357,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Cooking - Electricity
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Cooking - Paraffin"
         >
           <div
@@ -1309,10 +1404,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Cooking - Paraffin
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Cooking - Gas (LPG)"
         >
           <div
@@ -1353,10 +1451,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Cooking - Gas (LPG)
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Cooking - Biogas"
         >
           <div
@@ -1397,10 +1498,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Cooking - Biogas
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Cooking - Firewood"
         >
           <div
@@ -1441,10 +1545,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Cooking - Firewood
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Cooking - Charcoal"
         >
           <div
@@ -1485,10 +1592,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Cooking - Charcoal
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Cooking - Solar"
         >
           <div
@@ -1529,10 +1639,13 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Cooking - Solar
+          <span
+            className="input-range__label"
+          />
           
         </label>
         <label
-          className="sc-gKAblj hcftQd"
+          className="sc-gKAblj grCahe"
           htmlFor="Cooking - Not Stated"
         >
           <div
@@ -1573,6 +1686,9 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Cooking - Not Stated
+          <span
+            className="input-range__label"
+          />
           
         </label>
       </div>
@@ -1583,12 +1699,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-fujyUd dmEgMx"
+      className="sc-jrsJCI jrHkdz"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-iCoHVE glFGSk"
+        className="sc-pNWxx LltbP"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
@@ -1596,7 +1712,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       >
         <div>
           <div
-            className="sc-kEqYlL gRKjGX"
+            className="sc-crzoUp fjuLTs"
           >
             <svg
               height="32"
@@ -1628,7 +1744,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </svg>
           </div>
           <div
-            className="sc-pNWxx jcuQnX"
+            className="sc-kEqYlL cgutmA"
           >
             <h2>
               Financial Services
@@ -1664,7 +1780,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
-      className="sc-jrsJCI kENOln"
+      className="sc-iqAbSa bScnPN"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
@@ -1673,7 +1789,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       tabIndex={-1}
     >
       <label
-        className="sc-gKAblj hcftQd"
+        className="sc-gKAblj grCahe"
         htmlFor="banks"
       >
         <div
@@ -1714,10 +1830,13 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Banks
+        <span
+          className="input-range__label"
+        />
         
       </label>
       <label
-        className="sc-gKAblj hcftQd"
+        className="sc-gKAblj grCahe"
         htmlFor="mfi"
       >
         <div
@@ -1758,10 +1877,13 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         MFIs
+        <span
+          className="input-range__label"
+        />
         
       </label>
       <label
-        className="sc-gKAblj hcftQd"
+        className="sc-gKAblj grCahe"
         htmlFor="sacco"
       >
         <div
@@ -1802,6 +1924,9 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         SACCOs
+        <span
+          className="input-range__label"
+        />
         
       </label>
     </div>
@@ -1811,12 +1936,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-fujyUd dmEgMx"
+      className="sc-jrsJCI jrHkdz"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-iCoHVE glFGSk"
+        className="sc-pNWxx LltbP"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
@@ -1824,7 +1949,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       >
         <div>
           <div
-            className="sc-kEqYlL gRKjGX"
+            className="sc-crzoUp fjuLTs"
           >
             <svg
               height="32"
@@ -1850,7 +1975,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </svg>
           </div>
           <div
-            className="sc-pNWxx jcuQnX"
+            className="sc-kEqYlL cgutmA"
           >
             <h2>
               Population
@@ -1886,7 +2011,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
-      className="sc-jrsJCI kENOln"
+      className="sc-iqAbSa bScnPN"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
@@ -1895,7 +2020,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       tabIndex={-1}
     >
       <label
-        className="sc-gKAblj hcftQd"
+        className="sc-gKAblj grCahe"
         htmlFor="arc"
       >
         <div
@@ -1936,6 +2061,9 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Population Density (ARC 2016)
+        <span
+          className="input-range__label"
+        />
         
       </label>
     </div>
@@ -1945,12 +2073,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-fujyUd PqVSf"
+      className="sc-jrsJCI dpFtRZ"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-iCoHVE glFGSk"
+        className="sc-pNWxx LltbP"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
@@ -1958,7 +2086,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       >
         <div>
           <div
-            className="sc-kEqYlL plVX"
+            className="sc-crzoUp jSbDzg"
           >
             <svg
               height="32"
@@ -1993,7 +2121,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </svg>
           </div>
           <div
-            className="sc-pNWxx jcuQnX"
+            className="sc-kEqYlL cgutmA"
           >
             <h2>
               Public facilities
@@ -2029,7 +2157,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
-      className="sc-jrsJCI kENOln"
+      className="sc-iqAbSa bScnPN"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
@@ -2038,7 +2166,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       tabIndex={-1}
     >
       <label
-        className="sc-gKAblj hcftQd"
+        className="sc-gKAblj grCahe"
         htmlFor="health"
       >
         <div
@@ -2079,10 +2207,13 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Health Facilities
+        <span
+          className="input-range__label"
+        />
         
       </label>
       <label
-        className="sc-gKAblj hcftQd"
+        className="sc-gKAblj grCahe"
         htmlFor="education"
       >
         <div
@@ -2123,6 +2254,9 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Education Facilities
+        <span
+          className="input-range__label"
+        />
         
       </label>
     </div>
@@ -2132,12 +2266,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-fujyUd dmEgMx"
+      className="sc-jrsJCI jrHkdz"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-iCoHVE glFGSk"
+        className="sc-pNWxx LltbP"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
@@ -2145,7 +2279,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       >
         <div>
           <div
-            className="sc-kEqYlL gRKjGX"
+            className="sc-crzoUp fjuLTs"
           >
             <svg
               height="32"
@@ -2180,7 +2314,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </svg>
           </div>
           <div
-            className="sc-pNWxx jcuQnX"
+            className="sc-kEqYlL cgutmA"
           >
             <h2>
               Transport
@@ -2216,7 +2350,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
-      className="sc-jrsJCI kENOln"
+      className="sc-iqAbSa bScnPN"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
@@ -2225,7 +2359,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       tabIndex={-1}
     >
       <label
-        className="sc-gKAblj hcftQd"
+        className="sc-gKAblj grCahe"
         htmlFor="road"
       >
         <div
@@ -2266,6 +2400,9 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Roads
+        <span
+          className="input-range__label"
+        />
         
       </label>
     </div>

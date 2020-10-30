@@ -23,7 +23,7 @@ import uicontrols from '../config/uicontrols'
 
 const { space, colors } = theme
 
-export default function LayerControl({ toggleLayer, layerVisibility }) {
+export default function LayerControl({ uiState, toggleLayer, changeSlider }) {
   const [indices, setIndices] = useState([])
   function toggleAccordionItem(toggledIndex) {
     if (indices.includes(toggledIndex)) {
@@ -37,17 +37,18 @@ export default function LayerControl({ toggleLayer, layerVisibility }) {
 
   return (
     <Accordion index={indices} onChange={toggleAccordionItem}>
-      {uicontrols.map((group, index) => (
+      {Object.values(uicontrols).map((group, index) => (
         <FirstLevelPanel
-          key={group.id}
+          key={index}
           label={group.label}
           icon={group.icon}
           description={group.description}
           controls={group.controls}
           indices={indices}
           index={index}
+          uiState={uiState}
           toggleLayer={toggleLayer}
-          layerVisibility={layerVisibility}
+          changeSlider={changeSlider}
         />
       ))}
     </Accordion>
@@ -55,8 +56,9 @@ export default function LayerControl({ toggleLayer, layerVisibility }) {
 }
 
 LayerControl.propTypes = {
+  uiState: PropTypes.object.isRequired,
   toggleLayer: PropTypes.func.isRequired,
-  layerVisibility: PropTypes.object.isRequired,
+  changeSlider: PropTypes.func.isRequired,
 }
 
 const ToggleButton = styled.button`
@@ -132,9 +134,9 @@ const IconContainer = styled.div`
   height: 32px;
 `
 
-const getHasSelectedLayers = (controls, layerVisibility) => {
-  const selectedLayerIds = Object.keys(layerVisibility).filter(
-    (key) => layerVisibility[key]
+const getHasSelectedLayers = (controls, uiState) => {
+  const selectedLayerIds = Object.keys(uiState).filter(
+    (key) => uiState[key].visibility
   )
 
   const hasFirstLevelSelection = (group) =>
@@ -155,10 +157,11 @@ function FirstLevelPanel({
   controls,
   indices,
   index,
+  uiState,
   toggleLayer,
-  layerVisibility,
+  changeSlider,
 }) {
-  const hasSelectedLayers = getHasSelectedLayers(controls, layerVisibility)
+  const hasSelectedLayers = getHasSelectedLayers(controls, uiState)
   return (
     <AccordionItem>
       <FirstLevelHeader
@@ -197,8 +200,9 @@ function FirstLevelPanel({
                 label={control.label}
                 info={control.info}
                 controls={control.subcontrols}
+                uiState={uiState}
                 toggleLayer={toggleLayer}
-                layerVisibility={layerVisibility}
+                changeSlider={changeSlider}
               />
             )
           }
@@ -209,8 +213,9 @@ function FirstLevelPanel({
               id={controlId}
               label={control.label}
               info={control.info}
+              uiState={uiState}
               toggleLayer={toggleLayer}
-              layerVisibility={layerVisibility}
+              changeSlider={changeSlider}
             />
           )
         })}
@@ -226,8 +231,9 @@ FirstLevelPanel.propTypes = {
   controls: PropTypes.object.isRequired,
   indices: PropTypes.arrayOf(PropTypes.number.isRequired).isRequired,
   index: PropTypes.number.isRequired,
+  uiState: PropTypes.object.isRequired,
   toggleLayer: PropTypes.func.isRequired,
-  layerVisibility: PropTypes.object.isRequired,
+  changeSlider: PropTypes.func.isRequired,
 }
 
 const SecondLevelHeader = styled(FirstLevelHeader)`
@@ -250,8 +256,9 @@ function SecondLevelPanel({
   label,
   info,
   controls,
+  uiState,
   toggleLayer,
-  layerVisibility,
+  changeSlider,
 }) {
   const [isOpen, setOpen] = useState(false)
 
@@ -288,8 +295,9 @@ function SecondLevelPanel({
             id={controlId}
             label={control.label}
             info={control.info}
+            uiState={uiState}
             toggleLayer={toggleLayer}
-            layerVisibility={layerVisibility}
+            changeSlider={changeSlider}
           />
         ))}
       </Panel>
@@ -301,6 +309,7 @@ SecondLevelPanel.propTypes = {
   label: PropTypes.string.isRequired,
   info: PropTypes.string.isRequired,
   controls: PropTypes.object.isRequired,
+  uiState: PropTypes.object.isRequired,
   toggleLayer: PropTypes.func.isRequired,
-  layerVisibility: PropTypes.object.isRequired,
+  changeSlider: PropTypes.func.isRequired,
 }

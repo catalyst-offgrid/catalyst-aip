@@ -8,7 +8,7 @@ import theme from '../config/theme'
 import Source from './Source'
 import Layer from './Layer'
 
-export default function CsvLayers({ layerVisibility, map }) {
+export default function CsvLayers({ uiState, map }) {
   const [data, setData] = useState(null)
   const [layers, setLayer] = useState([])
 
@@ -17,7 +17,7 @@ export default function CsvLayers({ layerVisibility, map }) {
       setData(data)
       const l = []
       data.columns
-        .filter((c) => Object.keys(layerVisibility).includes(c))
+        .filter((c) => Object.keys(uiState).includes(c))
         .forEach((column) => {
           l.push({
             id: `${column}`,
@@ -32,27 +32,14 @@ export default function CsvLayers({ layerVisibility, map }) {
                   'interpolate',
                   ['linear'],
                   ['to-number', ['feature-state', column]],
-                  0,
+                  uiState[column].domain[0],
                   theme.colors.background,
-                  50,
+                  uiState[column].domain[1],
                   theme.colors.primary,
                 ],
                 theme.colors.muted,
               ],
-              'fill-opacity': [
-                'case',
-                ['!=', ['feature-state', column], null],
-                [
-                  'interpolate',
-                  ['linear'],
-                  ['to-number', ['feature-state', column]],
-                  0,
-                  0.2,
-                  50,
-                  1,
-                ],
-                0.5,
-              ],
+              'fill-opacity': 0.5,
             },
           })
         })
@@ -60,6 +47,34 @@ export default function CsvLayers({ layerVisibility, map }) {
       setLayer(l)
     })
   }, [])
+
+  useEffect(() => {
+    layers.forEach((layer) => {
+      const range = uiState[layer.id].range
+      const domain = uiState[layer.id].domain
+      if (range && domain) {
+        // Note: we need to use opacity to visually filter, because
+        // "feature-state" data expressions are not supported with filters.
+        map.setPaintProperty(layer.id, 'fill-opacity', [
+          'interpolate',
+          ['linear'],
+          ['to-number', ['feature-state', layer.id]],
+          domain[0] - 2,
+          0,
+          Math.max(domain[0] - 1, range.min - 1),
+          0,
+          range.min,
+          0.5,
+          range.max,
+          0.5,
+          Math.min(domain[1] + 1, range.max + 1),
+          0,
+          domain[1] + 2,
+          0,
+        ])
+      }
+    })
+  }, [uiState])
 
   return (
     data && (
@@ -70,7 +85,7 @@ export default function CsvLayers({ layerVisibility, map }) {
             <Layer
               key={layer.id}
               id={layer.id}
-              isVisible={layerVisibility[layer.id]}
+              isVisible={uiState[layer.id].visibility}
               spec={layer}
               data={data}
               before='land-structure-line' // This is a layer id from the basemap. It might not exist in other basemaps styles!
@@ -82,6 +97,6 @@ export default function CsvLayers({ layerVisibility, map }) {
 }
 
 CsvLayers.propTypes = {
-  layerVisibility: PropTypes.object.isRequired,
+  uiState: PropTypes.object.isRequired,
   map: PropTypes.object,
 }

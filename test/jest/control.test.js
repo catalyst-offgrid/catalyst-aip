@@ -6,46 +6,10 @@ import { DisclosureButton } from '@reach/disclosure'
 import LayerControl from '../../src/components/LayerControl'
 import Checkbox from '../../src/components/Checkbox'
 
+import uiState from '../__fixtures__/uiState'
+
 const toggleLayer = jest.fn()
-const layerVisibility = {
-  counties: false,
-  'sub-counties': false,
-  wards: false,
-  gridfinder: true,
-  'Conventional Households': false,
-  'Main Electricity': false,
-  'Low-Quality Stopgap Total': false,
-  'Kerosene (Total)': false,
-  'Paraffin Pressure Lamp': false,
-  'Paraffin Lantern': false,
-  'Paraffin Tin Lamp': false,
-  'Gas Lamp': false,
-  Wood: false,
-  'Solar (Total)': false,
-  Solar: false,
-  'Torch / Spotlight (Solar-Charged)': false,
-  'Torch / Spotlight (Dry Cells))': false,
-  Candle: false,
-  'Battery (Car-Charged)': false,
-  'Generator (Diesel / Petrol)': false,
-  Biogas: false,
-  'Not Stated': false,
-  'Cooking - Electricity': false,
-  'Cooking - Paraffin': false,
-  'Cooking - Gas (LPG)': false,
-  'Cooking - Biogas': false,
-  'Cooking - Firewood': false,
-  'Cooking - Charcoal': false,
-  'Cooking - Solar': false,
-  'Cooking - Not Stated': false,
-  banks: false,
-  mfi: false,
-  sacco: false,
-  arc: false,
-  health: false,
-  education: true,
-  road: false,
-}
+const changeSlider = jest.fn()
 
 let testRenderer
 let testInstance
@@ -55,8 +19,9 @@ describe('LayerControl', () => {
     renderer.act(() => {
       testRenderer = renderer.create(
         <LayerControl
+          uiState={uiState}
           toggleLayer={toggleLayer}
-          layerVisibility={layerVisibility}
+          changeSlider={changeSlider}
         />
       )
     })
@@ -76,16 +41,16 @@ describe('LayerControl', () => {
     expect(testInstance.findAllByType(DisclosureButton).length).toEqual(1)
   })
 
-  it('creates a checkbox per layer control item in layerVisibility', () => {
+  it('creates a checkbox per layer control item in uiState', () => {
     expect(testInstance.findAllByType(Checkbox).length).toEqual(
-      Object.keys(layerVisibility).length
+      Object.keys(uiState).length
     )
   })
 
   it('sets the checkbox state based on default layer visibility', () => {
-    const totalCount = Object.keys(layerVisibility).length
-    const checkedCount = Object.keys(layerVisibility).filter(
-      (key) => layerVisibility[key]
+    const totalCount = Object.keys(uiState).length
+    const checkedCount = Object.keys(uiState).filter(
+      (key) => uiState[key].visibility
     ).length
 
     expect(testInstance.findAllByProps({ checked: true }).length).toEqual(

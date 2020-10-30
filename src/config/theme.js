@@ -7,6 +7,7 @@ export default {
     muted: '#F4F5F7',
     accent: '#DBDEEF',
     text: '#373E49',
+    offtext: '#AAAAAA',
   },
   fonts: {
     body: 'Open Sans, sans-serif',

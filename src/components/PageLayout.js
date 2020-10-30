@@ -20,8 +20,9 @@ const MainContent = styled.main`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 
-  margin: ${({ noMargin }) => (noMargin ? 0 : `${space[5]}px auto`)};
-  padding: ${({ noMargin }) => (noMargin ? 0 : `${space[5]}px`)};
+  margin: ${({ noMargin }) => (noMargin ? 0 : `0 auto`)};
+  padding: ${({ noMargin }) =>
+    noMargin ? 0 : `${2 * space[5]}px ${space[5]}px`};
 
   overflow: auto;
 `
