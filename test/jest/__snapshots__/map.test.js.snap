@@ -2,7 +2,7 @@
 
 exports[`Map renders a styled container 1`] = `
 <section
-  className="sc-bdnylx CMZYE"
+  className="sc-bdfBwQ gTjyg"
   id="map"
 />
 `;
