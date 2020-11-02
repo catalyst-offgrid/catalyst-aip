@@ -101,6 +101,13 @@ export default function Explore({ siteAcronym, siteName, config, theme }) {
   const changeSlider = (payload) => {
     dispatch({ type: 'setSlider', payload })
   }
+  const clearAll = () => {
+    dispatch({ type: 'reset', payload: uicontrols })
+  }
+
+  const hasSelectedLayers = Object.values(state).some(
+    (control) => control.visibility
+  )
 
   return (
     <PageLayout siteAcronym={siteAcronym} theme={theme} noMargin>
@@ -108,6 +115,8 @@ export default function Explore({ siteAcronym, siteName, config, theme }) {
         siteName={siteName}
         country={config.country}
         cc={config.countryCode}
+        clearAll={clearAll}
+        hasSelectedLayers={hasSelectedLayers}
       >
         <LayerControl
           uiState={state}
