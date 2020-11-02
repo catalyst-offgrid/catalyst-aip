@@ -6,26 +6,24 @@ import styled from 'styled-components'
 import CATALYST_LOGO from '../../img/CATALYST_LOGO.png'
 
 import { Home, Layers, Info } from '../icons'
-import theme from '../config/theme'
-
-const { space, colors } = theme
 
 const Container = styled.nav`
-  min-width: ${space[5]}px;
-  width: ${space[5]}px;
+  min-width: ${({ theme }) => `${theme.space[5]}px`};
+  width: ${({ theme }) => `${theme.space[5]}px`};
   height: 100%;
-  background-color: ${colors.primary};
+  background-color: ${({ theme }) => theme.colors.primary};
 `
 
 const Logo = styled.figure`
-  margin: ${space[3]}px ${space[3]}px ${space[2]}px ${space[3]}px;
+  margin: ${({ theme }) => `${theme.space[3]}px`};
+  margin-bottom: ${({ theme }) => `${theme.space[2]}px`};
 `
 
 const Name = styled.div`
-  color: ${colors.background};
-  font-family: ${theme.fonts.heading};
-  font-size: ${theme.fontSizes[3]}pt;
-  font-weight: ${theme.fontWeights.heading};
+  color: ${({ theme }) => theme.colors.background};
+  font-family: ${({ theme }) => theme.fonts.heading};
+  font-size: ${({ theme }) => theme.fontSizes[3]}pt;
+  font-weight: ${({ theme }) => theme.fontWeights.heading};
   text-transform: uppercase;
   text-align: center;
 `
@@ -38,15 +36,15 @@ const NavList = styled.ul`
 
 const NavItem = styled.li`
   text-align: center;
-  background-color: ${(props) =>
-    props.isMatch ? `${colors.highlight}` : `${colors.primary}`};
+  background-color: ${({ isMatch, theme }) =>
+    isMatch ? `${theme.colors.highlight}` : `${theme.colors.primary}`};
   border-radius: 4px;
   width: 48px;
   height: 48px;
   margin: 0 auto;
 `
 
-export default function NavigationBar({ siteAcronym }) {
+export default function NavigationBar({ siteAcronym, theme }) {
   let { path } = useRouteMatch()
 
   return (
@@ -58,7 +56,7 @@ export default function NavigationBar({ siteAcronym }) {
       <NavList>
         <NavItem isMatch={path === '/'}>
           <Link to='/' aria-label='Go to Home page' data-cy='link-home'>
-            <Home color={colors.background} />
+            <Home color={theme.colors.background} />
           </Link>
         </NavItem>
         <NavItem isMatch={path === '/explore'}>
@@ -67,7 +65,7 @@ export default function NavigationBar({ siteAcronym }) {
             aria-label='Explore the Map'
             data-cy='link-explore'
           >
-            <Layers color={colors.background} />
+            <Layers color={theme.colors.background} />
           </Link>
         </NavItem>
         <NavItem isMatch={path === '/info'}>
@@ -76,7 +74,7 @@ export default function NavigationBar({ siteAcronym }) {
             aria-label='Read more about this project'
             data-cy='link-info'
           >
-            <Info color={colors.background} />
+            <Info color={theme.colors.background} />
           </Link>
         </NavItem>
       </NavList>
@@ -86,4 +84,5 @@ export default function NavigationBar({ siteAcronym }) {
 
 NavigationBar.propTypes = {
   siteAcronym: PropTypes.string.isRequired,
+  theme: PropTypes.object.isRequired,
 }

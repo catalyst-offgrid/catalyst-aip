@@ -9,9 +9,6 @@ import Layer from '../components/Layer'
 import CsvLayers from '../components/CsvLayers'
 import BasemapLayers from '../components/BasemapLayers'
 
-import uicontrols from '../config/uicontrols'
-import sources from '../config/sources'
-import layers from '../config/layers'
 import LayerControl from '../components/LayerControl'
 
 /**
@@ -19,7 +16,7 @@ import LayerControl from '../components/LayerControl'
  * Returns the first control id that contains the layer id.
  * @param {String} layerId the id of a layer that should be controlled
  */
-function getControlIdForLayer(layerId) {
+function getControlIdForLayer(layerId, uicontrols) {
   let controlId
   Object.values(uicontrols).find((group) => {
     const entry = Object.entries(group.controls).find(
@@ -42,8 +39,8 @@ function getControlIdForLayer(layerId) {
  * Converts the uicontrols config structure into the initital
  * ui state object
  */
-function init(config) {
-  return Object.values(config).reduce((obj, cur) => {
+function init(uicontrols) {
+  return Object.values(uicontrols).reduce((obj, cur) => {
     return (
       Object.entries(cur.controls).map(([controlId, control]) => {
         if (control.subcontrols) {
@@ -94,7 +91,8 @@ function reducer(state, action) {
   }
 }
 
-export default function Explore({ config }) {
+export default function Explore({ siteAcronym, siteName, config, theme }) {
+  const { uicontrols, sources, layers, csv } = config
   const [state, dispatch] = useReducer(reducer, uicontrols, init)
 
   const toggleLayer = (controlId) => {
@@ -105,19 +103,20 @@ export default function Explore({ config }) {
   }
 
   return (
-    <PageLayout siteAcronym={config.siteAcronym} noMargin>
+    <PageLayout siteAcronym={siteAcronym} theme={theme} noMargin>
       <Drawer
-        siteName={config.siteName}
+        siteName={siteName}
         country={config.country}
         cc={config.countryCode}
       >
         <LayerControl
           uiState={state}
+          uicontrols={uicontrols}
           toggleLayer={toggleLayer}
           changeSlider={changeSlider}
         />
       </Drawer>
-      <Map>
+      <Map zoom={config.zoom} center={config.center}>
         {Object.entries(sources).map(([type, list]) =>
           list.map((source) => (
             <Source
@@ -129,7 +128,7 @@ export default function Explore({ config }) {
               {layers
                 .filter((layer) => layer.source === source.id)
                 .map((layer) => {
-                  const controlId = getControlIdForLayer(layer.id)
+                  const controlId = getControlIdForLayer(layer.id, uicontrols)
                   return (
                     <Layer
                       key={layer.id}
@@ -143,7 +142,7 @@ export default function Explore({ config }) {
           ))
         )}
 
-        <CsvLayers id='csv' uiState={state} />
+        <CsvLayers id='csv' csv={csv} uiState={state} theme={theme} />
 
         <BasemapLayers
           id='transport'
@@ -167,10 +166,17 @@ export default function Explore({ config }) {
 }
 
 Explore.propTypes = {
+  siteAcronym: PropTypes.string.isRequired,
+  siteName: PropTypes.string.isRequired,
   config: PropTypes.shape({
-    siteAcronym: PropTypes.string.isRequired,
-    siteName: PropTypes.string.isRequired,
     country: PropTypes.string.isRequired,
     countryCode: PropTypes.string.isRequired,
+    center: PropTypes.arrayOf(PropTypes.number.isRequired).isRequired,
+    zoom: PropTypes.number.isRequired,
+    uicontrols: PropTypes.object.isRequired,
+    sources: PropTypes.object.isRequired,
+    layers: PropTypes.array.isRequired,
+    csv: PropTypes.string.isRequired,
   }),
+  theme: PropTypes.object.isRequired,
 }

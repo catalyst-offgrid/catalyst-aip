@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import PropTypes from 'prop-types'
 import {
   Accordion,
@@ -13,17 +13,18 @@ import {
   DisclosurePanel,
 } from '@reach/disclosure'
 import '@reach/tooltip/styles.css'
-import styled from 'styled-components'
+import styled, { ThemeContext } from 'styled-components'
 
 import ControlItem from './ControlItem'
 import InfoButton from './InfoButton'
 import { ChevronDown, ChevronUp, Plus, Minus } from '../icons'
-import theme from '../config/theme'
-import uicontrols from '../config/uicontrols'
 
-const { space, colors } = theme
-
-export default function LayerControl({ uiState, toggleLayer, changeSlider }) {
+export default function LayerControl({
+  uiState,
+  uicontrols,
+  toggleLayer,
+  changeSlider,
+}) {
   const [indices, setIndices] = useState([])
   function toggleAccordionItem(toggledIndex) {
     if (indices.includes(toggledIndex)) {
@@ -57,6 +58,7 @@ export default function LayerControl({ uiState, toggleLayer, changeSlider }) {
 
 LayerControl.propTypes = {
   uiState: PropTypes.object.isRequired,
+  uicontrols: PropTypes.object.isRequired,
   toggleLayer: PropTypes.func.isRequired,
   changeSlider: PropTypes.func.isRequired,
 }
@@ -65,34 +67,34 @@ const ToggleButton = styled.button`
   appearance: none;
   background: 0;
   border: 0;
-  padding: 0 ${space[2]}px;
+  padding: ${({ theme }) => `0 ${theme.space[2]}px`};
   flex-grow: 1;
   flex-shrink: 0;
   margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: ${space[3]}px;
+  gap: ${({ theme }) => `${theme.space[3]}px`};
   width: fit-content;
 
   > div {
     display: inline-flex;
-    gap: ${space[3]}px;
+    gap: ${({ theme }) => `${theme.space[3]}px`};
     align-items: center;
   }
 `
 
 const FirstLevelHeader = styled.div`
   align-items: center;
-  padding: ${space[3]}px ${space[2]}px;
+  padding: ${({ theme }) => `${theme.space[3]}px ${theme.space[2]}px`};
   display: flex;
-  border-left: ${(props) =>
-    props.hasSelectedLayers
-      ? `5px solid ${colors.highlight}`
-      : `5px solid ${colors.background}`};
-  border-top: 1px solid ${colors.accent};
-  border-bottom: ${(props) =>
-    props.isOpen ? 0 : `1px solid ${theme.colors.accent}`};
+  border-left: ${({ hasSelectedLayers, theme }) =>
+    hasSelectedLayers
+      ? `5px solid ${theme.colors.highlight}`
+      : `5px solid ${theme.colors.background}`};
+  border-top: ${({ theme }) => `1px solid ${theme.colors.accent}`};
+  border-bottom: ${({ isOpen, theme }) =>
+    isOpen ? 0 : `1px solid ${theme.colors.accent}`};
   margin: -1px 0 0 -1px; // to collapse neighboring borders
 `
 
@@ -103,19 +105,19 @@ const FirstLevelHeading = styled.div`
 
   h2 {
     margin: 0;
-    color: ${colors.primary};
-    font-family: ${theme.fonts.heading};
-    font-size: ${theme.fontSizes[3]}pt;
-    font-weight: ${theme.fontWeights.heading};
+    color: ${({ theme }) => theme.colors.primary};
+    font-family: ${({ theme }) => theme.fonts.heading};
+    font-size: ${({ theme }) => theme.fontSizes[3]}pt;
+    font-weight: ${({ theme }) => theme.fontWeights.heading};
     text-align: start;
   }
 
   p {
     margin: 0;
-    color: ${colors.text};
-    font-family: ${theme.fonts.body};
-    font-size: ${theme.fontSizes[0]}pt;
-    font-weight: ${theme.fontWeights.body};
+    color: ${({ theme }) => theme.colors.text};
+    font-family: ${({ theme }) => theme.fonts.body};
+    font-size: ${({ theme }) => theme.fontSizes[0]}pt;
+    font-weight: ${({ theme }) => theme.fontWeights.body};
     text-align: start;
   }
 `
@@ -127,8 +129,8 @@ const Panel = styled.div`
 `
 
 const IconContainer = styled.div`
-  background-color: ${(props) =>
-    props.hasSelectedLayers ? `${colors.offlight}` : `${colors.muted}`};
+  background-color: ${({ hasSelectedLayers, theme }) =>
+    hasSelectedLayers ? `${theme.colors.offlight}` : `${theme.colors.muted}`};
   border-radius: 4px;
   width: 32px;
   height: 32px;
@@ -161,7 +163,9 @@ function FirstLevelPanel({
   toggleLayer,
   changeSlider,
 }) {
+  const theme = useContext(ThemeContext)
   const hasSelectedLayers = getHasSelectedLayers(controls, uiState)
+
   return (
     <AccordionItem>
       <FirstLevelHeader
@@ -172,7 +176,11 @@ function FirstLevelPanel({
           <div>
             <IconContainer hasSelectedLayers={hasSelectedLayers}>
               <Icon
-                color={hasSelectedLayers ? colors.highlight : colors.primary}
+                color={
+                  hasSelectedLayers
+                    ? theme.colors.highlight
+                    : theme.colors.primary
+                }
               />
             </IconContainer>
             <FirstLevelHeading>
@@ -182,11 +190,11 @@ function FirstLevelPanel({
           </div>
           {indices.includes(index) ? (
             <span role='img' aria-label='chevron up'>
-              <ChevronUp color={colors.primary} />
+              <ChevronUp color={theme.colors.primary} />
             </span>
           ) : (
             <span role='img' aria-label='chevron down'>
-              <ChevronDown color={colors.primary} />
+              <ChevronDown color={theme.colors.primary} />
             </span>
           )}
         </ToggleButton>
@@ -237,17 +245,17 @@ FirstLevelPanel.propTypes = {
 }
 
 const SecondLevelHeader = styled(FirstLevelHeader)`
-  border-top: 1px solid ${colors.background};
+  border-top: 1px solid ${({ theme }) => theme.colors.background};
   border-bottom: ${(props) =>
-    props.isOpen ? `1px solid ${colors.background}` : 0};
-  background-color: ${colors.muted};
+    props.isOpen ? `1px solid ${({ theme }) => theme.colors.background}` : 0};
+  background-color: ${({ theme }) => theme.colors.muted};
 `
 
 const SecondLevelHeading = styled.h3`
-  color: ${colors.primary};
-  font-family: ${theme.fonts.heading};
-  font-size: ${theme.fontSizes[1]}pt;
-  font-weight: ${theme.fontWeights.heading};
+  color: ${({ theme }) => theme.colors.primary};
+  font-family: ${({ theme }) => theme.fonts.heading};
+  font-size: ${({ theme }) => theme.fontSizes[1]}pt;
+  font-weight: ${({ theme }) => theme.fontWeights.heading};
   text-transform: uppercase;
   margin: 0;
 `
@@ -260,6 +268,7 @@ function SecondLevelPanel({
   toggleLayer,
   changeSlider,
 }) {
+  const theme = useContext(ThemeContext)
   const [isOpen, setOpen] = useState(false)
 
   return (
@@ -278,11 +287,11 @@ function SecondLevelPanel({
             {/* as div: <button> cannot appear as a descendant of <button> */}
             {isOpen ? (
               <span role='img' aria-label='minus'>
-                <Minus color={colors.primary} />
+                <Minus color={theme.colors.primary} />
               </span>
             ) : (
               <span role='img' aria-label='plus'>
-                <Plus color={colors.primary} />
+                <Plus color={theme.colors.primary} />
               </span>
             )}
           </div>

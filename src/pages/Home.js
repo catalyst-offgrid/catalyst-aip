@@ -10,13 +10,10 @@ import PageLayout, {
   Paragraph,
   Logo,
 } from '../components/PageLayout'
-import theme from '../config/theme'
-
-const { colors, space } = theme
 
 const Actions = styled.div`
   display: inline-flex;
-  gap: ${space[3]}px;
+  gap: ${({ theme }) => theme.space[3]}px;
 `
 
 const PrimaryButton = styled(Link)`
@@ -25,20 +22,20 @@ const PrimaryButton = styled(Link)`
   text-align: center;
   vertical-align: middle;
   min-width: 240px;
-  padding: ${space[3]}px ${space[4]}px;
-  border: 4px solid ${colors.primary};
+  padding: ${({ theme }) => `${theme.space[3]}px ${theme.space[4]}px`};
+  border: ${({ theme }) => `4px solid ${theme.colors.primary}`};
   border-radius: 4px;
 
-  background-color: ${colors.primary};
-  color: ${colors.background};
-  font-family: ${theme.fonts.body};
-  font-size: ${theme.fontSizes[3]}pt;
-  font-weight: ${theme.fontWeights.bold};
+  background-color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.background};
+  font-family: ${({ theme }) => theme.fonts.body};
+  font-size: ${({ theme }) => theme.fontSizes[3]}pt;
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
 `
 
 const SecondaryButton = styled(PrimaryButton)`
-  background-color: ${colors.background};
-  color: ${colors.primary};
+  background-color: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.primary};
 `
 
 const Image = styled.figure`
@@ -54,12 +51,12 @@ const Image = styled.figure`
   z-index: -1;
 `
 
-export default function Home({ config }) {
+export default function Home({ siteAcronym, siteName, imageUrl, theme }) {
   return (
-    <PageLayout siteAcronym={config.siteAcronym}>
+    <PageLayout siteAcronym={siteAcronym} theme={theme}>
       <Introduction>
         <Tagline>Welcome to the</Tagline>
-        <PageTitle>{config.siteName}</PageTitle>
+        <PageTitle>{siteName}</PageTitle>
         <Paragraph>
           A business intelligence tool for enterprises looking to serve the last
           mile gap in electrification.
@@ -82,16 +79,14 @@ export default function Home({ config }) {
         </Actions>
       </Introduction>
       <Logo withTagline />
-      <Image url={config.imageUrl} />
+      <Image url={imageUrl} />
     </PageLayout>
   )
 }
 
 Home.propTypes = {
-  config: PropTypes.shape({
-    siteAcronym: PropTypes.string.isRequired,
-    siteName: PropTypes.string.isRequired,
-    country: PropTypes.string.isRequired,
-    imageUrl: PropTypes.string.isRequired,
-  }),
+  siteAcronym: PropTypes.string.isRequired,
+  siteName: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
+  theme: PropTypes.object.isRequired,
 }

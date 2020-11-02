@@ -1,11 +1,14 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
+import { ThemeProvider } from 'styled-components'
 
 import { AccordionItem, AccordionButton } from '@reach/accordion'
 import { DisclosureButton } from '@reach/disclosure'
 import LayerControl from '../../src/components/LayerControl'
 import Checkbox from '../../src/components/Checkbox'
 
+import uicontrols from '../../src/config/ke/uicontrols'
+import theme from '../../src/config/theme'
 import uiState from '../__fixtures__/uiState'
 
 const toggleLayer = jest.fn()
@@ -18,11 +21,14 @@ describe('LayerControl', () => {
   beforeEach(() => {
     renderer.act(() => {
       testRenderer = renderer.create(
-        <LayerControl
-          uiState={uiState}
-          toggleLayer={toggleLayer}
-          changeSlider={changeSlider}
-        />
+        <ThemeProvider theme={theme}>
+          <LayerControl
+            uiState={uiState}
+            uicontrols={uicontrols}
+            toggleLayer={toggleLayer}
+            changeSlider={changeSlider}
+          />
+        </ThemeProvider>
       )
     })
     testInstance = testRenderer.root
@@ -54,11 +60,11 @@ describe('LayerControl', () => {
     ).length
 
     expect(testInstance.findAllByProps({ checked: true }).length).toEqual(
-      checkedCount * 5 // TODO: why is there 5 times as much as checked items expected?
+      checkedCount * 6 // TODO: why is there 6 times as much as checked items expected?
     )
 
     expect(testInstance.findAllByProps({ checked: false }).length).toEqual(
-      (totalCount - checkedCount) * 5 // TODO: why is there 5 times as much as checked items expected?
+      (totalCount - checkedCount) * 6 // TODO: why is there 6 times as much as checked items expected?
     )
   })
 })

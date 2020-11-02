@@ -7,7 +7,7 @@ const MapContainer = styled.section`
   grid-column: 4 / span 9;
 `
 
-export default function Map({ children }) {
+export default function Map({ center, zoom, children }) {
   const ref = useRef()
   const [map, setMap] = useState(null)
 
@@ -15,8 +15,8 @@ export default function Map({ children }) {
     const m = new mapbox.Map({
       container: ref.current,
       style: 'mapbox://styles/mapbox/light-v10',
-      zoom: 7,
-      center: [37.85335, 0.44014],
+      center,
+      zoom,
     })
 
     m.on('load', () => {
@@ -49,5 +49,7 @@ export default function Map({ children }) {
 }
 
 Map.propTypes = {
+  center: PropTypes.arrayOf(PropTypes.number.isRequired).isRequired,
+  zoom: PropTypes.number.isRequired,
   children: PropTypes.node,
 }

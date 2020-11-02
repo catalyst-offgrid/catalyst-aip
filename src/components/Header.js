@@ -2,38 +2,34 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 
-import theme from '../config/theme'
-
-const { colors, space } = theme
-
 const HeaderContainer = styled.header`
-  padding: ${space[4]}px ${space[3]}px;
+  padding: ${({ theme }) => `${theme.space[4]}px ${theme.space[3]}px`};
   display: flex;
   flex-direction: column;
 `
 
 const Heading = styled.h1`
-  color: ${colors.primary};
-  font-family: ${theme.fonts.heading};
-  font-size: ${theme.fontSizes[4]}pt;
-  font-weight: ${theme.fontWeights.heading};
+  color: ${({ theme }) => theme.colors.primary};
+  font-family: ${({ theme }) => theme.fonts.heading};
+  font-size: ${({ theme }) => theme.fontSizes[4]}pt;
+  font-weight: ${({ theme }) => theme.fontWeights.heading};
   margin: 0;
 
   display: inline-flex;
   align-items: center;
-  gap: ${space[2]}px;
+  gap: ${({ theme }) => `${theme.space[2]}px`};
 `
 
 const Tagline = styled.label`
-  color: ${colors.primary};
-  font-family: ${theme.fonts.body};
-  font-size: ${theme.fontSizes[0]}pt;
-  font-weight: ${theme.fontWeights.bold};
+  color: ${({ theme }) => theme.colors.primary};
+  font-family: ${({ theme }) => theme.fonts.body};
+  font-size: ${({ theme }) => theme.fontSizes[0]}pt;
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
   text-transform: uppercase;
 `
 
 const Flag = styled.span`
-  font-size: ${theme.fontSizes[3]}pt;
+  font-size: ${({ theme }) => theme.fontSizes[3]}pt;
 `
 
 export default function Header({ siteName, country, cc }) {
