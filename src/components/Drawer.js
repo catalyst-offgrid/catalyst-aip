@@ -74,7 +74,9 @@ export default function Drawer({
   return (
     <Container>
       <Header siteName={siteName} country={country} cc={cc} />
+
       <ScrollContainer>{children}</ScrollContainer>
+
       {hasSelectedLayers && (
         <Actions>
           <SecondaryButton

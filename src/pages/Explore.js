@@ -48,17 +48,15 @@ function init(uicontrols) {
             ([subcontrolId, subcontrol]) =>
               (obj[subcontrolId] = {
                 visibility: subcontrol.defaultVisibility,
-                unit: subcontrol.unit,
-                domain: subcontrol.domain,
-                range: subcontrol.defaultRange,
+                domain: subcontrol.legend.domain,
+                range: subcontrol.legend.defaultRange,
               })
           )
         }
         return (obj[controlId] = {
           visibility: control.defaultVisibility,
-          unit: control.unit,
-          domain: control.domain,
-          range: control.defaultRange,
+          domain: control.legend.domain,
+          range: control.legend.defaultRange,
         })
       }),
       obj

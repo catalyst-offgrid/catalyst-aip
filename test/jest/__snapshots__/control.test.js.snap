@@ -9,12 +9,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-jrsJCI kUBCfj"
+      className="sc-kEqYlL dXxusy"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-pNWxx mMrMf"
+        className="sc-jrsJCI iPPVld"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
@@ -22,7 +22,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       >
         <div>
           <div
-            className="sc-crzoUp fjuLTs"
+            className="sc-dIsAE bPOPDj"
           >
             <svg
               height="32"
@@ -63,7 +63,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </svg>
           </div>
           <div
-            className="sc-kEqYlL cgutmA"
+            className="sc-iqAbSa bqMOFj"
           >
             <h2>
               Administrative Boundaries
@@ -99,7 +99,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
-      className="sc-iqAbSa bScnPN"
+      className="sc-crzoUp bAbytN"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
@@ -255,12 +255,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-jrsJCI bPkGyN"
+      className="sc-kEqYlL cstexE"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-pNWxx mMrMf"
+        className="sc-jrsJCI iPPVld"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
@@ -268,7 +268,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       >
         <div>
           <div
-            className="sc-crzoUp jSbDzg"
+            className="sc-dIsAE iJPVdf"
           >
             <svg
               height="32"
@@ -300,7 +300,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </svg>
           </div>
           <div
-            className="sc-kEqYlL cgutmA"
+            className="sc-iqAbSa bqMOFj"
           >
             <h2>
               Energy
@@ -336,7 +336,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
-      className="sc-iqAbSa bScnPN"
+      className="sc-crzoUp bAbytN"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
@@ -392,18 +392,18 @@ exports[`LayerControl matches the snapshot 1`] = `
         
       </label>
       <div
-        className="sc-jrsJCI sc-dIsAE kUBCfj iRKxnj"
+        className="sc-kEqYlL sc-bqGHjH dXxusy dxWHsH"
       >
         <button
           aria-controls="panel--1"
           aria-expanded={false}
-          className="sc-pNWxx mMrMf"
+          className="sc-jrsJCI iPPVld"
           data-reach-disclosure-button=""
           data-state="collapsed"
           onClick={[Function]}
         >
           <h3
-            className="sc-bqGHjH kqCktb"
+            className="sc-ksluoS dGbUuo"
           >
             Census
           </h3>
@@ -436,7 +436,7 @@ exports[`LayerControl matches the snapshot 1`] = `
         </button>
       </div>
       <div
-        className="sc-iqAbSa bScnPN"
+        className="sc-crzoUp bAbytN"
         data-reach-disclosure-panel=""
         data-state="collapsed"
         hidden={true}
@@ -628,7 +628,9 @@ exports[`LayerControl matches the snapshot 1`] = `
           Kerosene (Total)
           <span
             className="input-range__label"
-          />
+          >
+            in %
+          </span>
           
         </label>
         <div
@@ -1699,12 +1701,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-jrsJCI kUBCfj"
+      className="sc-kEqYlL dXxusy"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-pNWxx mMrMf"
+        className="sc-jrsJCI iPPVld"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
@@ -1712,7 +1714,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       >
         <div>
           <div
-            className="sc-crzoUp fjuLTs"
+            className="sc-dIsAE bPOPDj"
           >
             <svg
               height="32"
@@ -1744,7 +1746,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </svg>
           </div>
           <div
-            className="sc-kEqYlL cgutmA"
+            className="sc-iqAbSa bqMOFj"
           >
             <h2>
               Financial Services
@@ -1780,7 +1782,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
-      className="sc-iqAbSa bScnPN"
+      className="sc-crzoUp bAbytN"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
@@ -1936,12 +1938,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-jrsJCI kUBCfj"
+      className="sc-kEqYlL dXxusy"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-pNWxx mMrMf"
+        className="sc-jrsJCI iPPVld"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
@@ -1949,7 +1951,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       >
         <div>
           <div
-            className="sc-crzoUp fjuLTs"
+            className="sc-dIsAE bPOPDj"
           >
             <svg
               height="32"
@@ -1975,7 +1977,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </svg>
           </div>
           <div
-            className="sc-kEqYlL cgutmA"
+            className="sc-iqAbSa bqMOFj"
           >
             <h2>
               Population
@@ -2011,7 +2013,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
-      className="sc-iqAbSa bScnPN"
+      className="sc-crzoUp bAbytN"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
@@ -2073,12 +2075,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-jrsJCI bPkGyN"
+      className="sc-kEqYlL cstexE"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-pNWxx mMrMf"
+        className="sc-jrsJCI iPPVld"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
@@ -2086,7 +2088,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       >
         <div>
           <div
-            className="sc-crzoUp jSbDzg"
+            className="sc-dIsAE iJPVdf"
           >
             <svg
               height="32"
@@ -2121,7 +2123,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </svg>
           </div>
           <div
-            className="sc-kEqYlL cgutmA"
+            className="sc-iqAbSa bqMOFj"
           >
             <h2>
               Public facilities
@@ -2157,7 +2159,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
-      className="sc-iqAbSa bScnPN"
+      className="sc-crzoUp bAbytN"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}
@@ -2254,6 +2256,10 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Education Facilities
+        <div
+          className="sc-pNWxx iIzQFa"
+          color="#DB93B0"
+        />
         <span
           className="input-range__label"
         />
@@ -2266,12 +2272,12 @@ exports[`LayerControl matches the snapshot 1`] = `
     data-state="collapsed"
   >
     <div
-      className="sc-jrsJCI kUBCfj"
+      className="sc-kEqYlL dXxusy"
     >
       <button
         aria-controls="panel--2---1"
         aria-expanded={false}
-        className="sc-pNWxx mMrMf"
+        className="sc-jrsJCI iPPVld"
         data-reach-accordion-button=""
         id="button--2---1"
         onClick={[Function]}
@@ -2279,7 +2285,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       >
         <div>
           <div
-            className="sc-crzoUp fjuLTs"
+            className="sc-dIsAE bPOPDj"
           >
             <svg
               height="32"
@@ -2314,7 +2320,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             </svg>
           </div>
           <div
-            className="sc-kEqYlL cgutmA"
+            className="sc-iqAbSa bqMOFj"
           >
             <h2>
               Transport
@@ -2350,7 +2356,7 @@ exports[`LayerControl matches the snapshot 1`] = `
     </div>
     <div
       aria-labelledby="button--2---1"
-      className="sc-iqAbSa bScnPN"
+      className="sc-crzoUp bAbytN"
       data-reach-accordion-panel=""
       data-state="collapsed"
       hidden={true}

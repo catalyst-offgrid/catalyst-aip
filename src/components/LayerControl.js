@@ -221,7 +221,8 @@ function FirstLevelPanel({
               id={controlId}
               label={control.label}
               info={control.info}
-              uiState={uiState}
+              legend={control.legend}
+              controlState={uiState[controlId]}
               toggleLayer={toggleLayer}
               changeSlider={changeSlider}
             />
@@ -304,7 +305,8 @@ function SecondLevelPanel({
             id={controlId}
             label={control.label}
             info={control.info}
-            uiState={uiState}
+            legend={control.legend}
+            controlState={uiState[controlId]}
             toggleLayer={toggleLayer}
             changeSlider={changeSlider}
           />

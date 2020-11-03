@@ -79,6 +79,13 @@ const Gradient = styled.div`
   margin-bottom: -6px;
 `
 
+const Dot = styled.div`
+  background: ${({ color }) => color};
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+`
+
 const NoInputRange = ({ minValue, maxValue }) => (
   <div className='input-range__label' style={{ marginTop: `16px` }}>
     <span className='input-range__label--min'>
@@ -99,17 +106,15 @@ export default function ControlItem({
   id,
   label,
   info,
-  uiState,
+  legend,
+  controlState,
   toggleLayer,
   changeSlider,
 }) {
-  const isChecked = uiState[id]
-    ? uiState[id].visibility
-    : new Error(`can not find ui state for id ${id}`)
+  const isChecked = !!controlState.visibility
 
-  const hasUnit = uiState[id] && uiState[id].unit
-  const hasDomain = uiState[id] && uiState[id].domain
-  const hasRange = uiState[id] && uiState[id].range
+  const hasUnit = !!legend.unit
+  const canBeFiltered = !!controlState.range
 
   return (
     <>
@@ -121,32 +126,33 @@ export default function ControlItem({
         />
         {label}
 
+        {isChecked && legend.type === 'dot' && <Dot color={legend.color} />}
         <span className='input-range__label'>
-          {isChecked && hasUnit && `in ${uiState[id].unit}`}
+          {isChecked && hasUnit && `in ${legend.unit}`}
         </span>
 
         {info && (
           <InfoButton info={info} aria-label={`info about ${label} layer`} />
         )}
       </ControlItemContainer>
-      {isChecked && hasDomain && (
+      {isChecked && legend.type === 'gradient' && (
         <SliderContainer>
           <Gradient />
-          {hasRange ? (
+          {canBeFiltered ? (
             <InputRange
-              minValue={uiState[id].domain[0]}
-              maxValue={uiState[id].domain[1]}
+              minValue={legend.domain[0]}
+              maxValue={legend.domain[1]}
               formatLabel={(number) => numeral(number).format('0a')}
               step={1}
-              value={uiState[id].range}
+              value={controlState.range}
               onChange={(value) =>
                 changeSlider({ controlId: id, range: value })
               }
             />
           ) : (
             <NoInputRange
-              minValue={uiState[id].domain[0]}
-              maxValue={uiState[id].domain[1]}
+              minValue={legend.domain[0]}
+              maxValue={legend.domain[1]}
             />
           )}
         </SliderContainer>
@@ -159,7 +165,16 @@ ControlItem.propTypes = {
   id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   info: PropTypes.string,
-  uiState: PropTypes.object.isRequired,
+  legend: PropTypes.oneOfType([
+    PropTypes.shape({
+      type: PropTypes.string.isRequired,
+      color: PropTypes.string,
+      unit: PropTypes.string,
+      domain: PropTypes.arrayOf(PropTypes.number),
+    }).isRequired,
+    PropTypes.oneOf(['none']).isRequired,
+  ]).isRequired,
+  controlState: PropTypes.object.isRequired,
   toggleLayer: PropTypes.func.isRequired,
   changeSlider: PropTypes.func.isRequired,
 }
