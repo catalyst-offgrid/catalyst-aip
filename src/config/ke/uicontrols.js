@@ -1,5 +1,4 @@
 import transportBasemapLayers from './transport-basemap-layers'
-
 import {
   AdminBoundaries,
   Energy,
@@ -8,6 +7,8 @@ import {
   Public,
   Transport,
 } from '../../icons'
+import theme from '../theme'
+const { colors } = theme
 
 export default {
   admin: {
@@ -48,7 +49,7 @@ export default {
       gridfinder: {
         label: 'Gridfinder',
         defaultVisibility: false,
-        legend: 'none',
+        legend: { type: 'line', color: colors.highlight },
         layerIds: ['gridfinder'],
         info: '',
       },

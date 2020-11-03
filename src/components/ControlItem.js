@@ -86,6 +86,12 @@ const Dot = styled.div`
   width: 15px;
 `
 
+const Line = styled.div`
+  background: ${({ color }) => color};
+  height: 2px;
+  width: 25px;
+`
+
 const NoInputRange = ({ minValue, maxValue }) => (
   <div className='input-range__label' style={{ marginTop: `16px` }}>
     <span className='input-range__label--min'>
@@ -127,6 +133,7 @@ export default function ControlItem({
         {label}
 
         {isChecked && legend.type === 'dot' && <Dot color={legend.color} />}
+        {isChecked && legend.type === 'line' && <Line color={legend.color} />}
         <span className='input-range__label'>
           {isChecked && hasUnit && `in ${legend.unit}`}
         </span>
