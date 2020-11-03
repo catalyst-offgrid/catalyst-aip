@@ -9,9 +9,9 @@ import PageLayout, {
   Logo,
 } from '../components/PageLayout'
 
-export default function Info({ config }) {
+export default function Info({ siteAcronym, theme }) {
   return (
-    <PageLayout siteAcronym={config.siteAcronym}>
+    <PageLayout siteAcronym={siteAcronym} theme={theme}>
       <InfoBlock>
         <Tagline>About</Tagline>
         <PageTitle>The tool</PageTitle>
@@ -39,7 +39,6 @@ export default function Info({ config }) {
 }
 
 Info.propTypes = {
-  config: PropTypes.shape({
-    siteAcronym: PropTypes.string.isRequired,
-  }),
+  siteAcronym: PropTypes.string.isRequired,
+  theme: PropTypes.object.isRequired,
 }
