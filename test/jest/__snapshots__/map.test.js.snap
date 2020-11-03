@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Map renders a styled container 1`] = `
+.c0 {
+  grid-column: 4 / span 9;
+}
+
 <section
-  className="sc-bdnylx CMZYE"
+  className="c0"
   id="map"
 />
 `;
