@@ -104,16 +104,16 @@ exports[`LayerControl matches the snapshot 1`] = `
   padding: 16px;
 }
 
-.c18 {
+.c19 {
   padding: 20px;
   background-color: #F4F5F7;
 }
 
-.c18 .input-range__track--background {
+.c19 .input-range__track--background {
   background: #F4F5F7;
 }
 
-.c18 .input-range__slider {
+.c19 .input-range__slider {
   background: #304CA2;
   border: 0;
   border-radius: 0;
@@ -123,7 +123,7 @@ exports[`LayerControl matches the snapshot 1`] = `
   width: 8px;
 }
 
-.c18 .input-range__slider::before {
+.c19 .input-range__slider::before {
   border-bottom: 8px solid #304CA2;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
@@ -135,22 +135,35 @@ exports[`LayerControl matches the snapshot 1`] = `
   top: -8px;
 }
 
-.c18 .input-range__label--value {
+.c19 .input-range__label--value {
   top: -40px;
 }
 
-.c18 .input-range__label--min,
-.c18 .input-range__label--max {
+.c19 .input-range__label--min,
+.c19 .input-range__label--max {
   bottom: -16px;
 }
 
-.c19 {
+.c20 {
   height: 18px;
   width: 100%;
   background: #F4F5F7;
   background: linear-gradient( 90deg, #FFFFFF 0%, #304CA2 100% );
   opacity: 0.5;
   margin-bottom: -6px;
+}
+
+.c21 {
+  background: #DB93B0;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+}
+
+.c16 {
+  background: #F98E08;
+  height: 2px;
+  width: 25px;
 }
 
 .c1 {
@@ -280,13 +293,13 @@ exports[`LayerControl matches the snapshot 1`] = `
   height: 32px;
 }
 
-.c16 {
+.c17 {
   border-top: 1px solid #FFFFFF;
   border-bottom: 0;
   background-color: #F4F5F7;
 }
 
-.c17 {
+.c18 {
   color: #304CA2;
   font-family: Open Sans,sans-serif;
   font-size: 12pt;
@@ -680,13 +693,17 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Gridfinder
+        <div
+          className="c16"
+          color="#F98E08"
+        />
         <span
           className="input-range__label"
         />
         
       </label>
       <div
-        className="c0 c16"
+        className="c0 c17"
       >
         <button
           aria-controls="panel--1"
@@ -697,7 +714,7 @@ exports[`LayerControl matches the snapshot 1`] = `
           onClick={[Function]}
         >
           <h3
-            className="c17"
+            className="c18"
           >
             Census
           </h3>
@@ -922,14 +939,16 @@ exports[`LayerControl matches the snapshot 1`] = `
           Kerosene (Total)
           <span
             className="input-range__label"
-          />
+          >
+            in %
+          </span>
           
         </label>
         <div
-          className="c18"
+          className="c19"
         >
           <div
-            className="c19"
+            className="c20"
           />
           <div
             className="input-range__label"
@@ -2548,6 +2567,10 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Education Facilities
+        <div
+          className="c21"
+          color="#DB93B0"
+        />
         <span
           className="input-range__label"
         />

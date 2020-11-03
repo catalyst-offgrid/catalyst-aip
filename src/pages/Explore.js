@@ -48,17 +48,15 @@ function init(uicontrols) {
             ([subcontrolId, subcontrol]) =>
               (obj[subcontrolId] = {
                 visibility: subcontrol.defaultVisibility,
-                unit: subcontrol.unit,
-                domain: subcontrol.domain,
-                range: subcontrol.defaultRange,
+                domain: subcontrol.legend.domain,
+                range: subcontrol.legend.defaultRange,
               })
           )
         }
         return (obj[controlId] = {
           visibility: control.defaultVisibility,
-          unit: control.unit,
-          domain: control.domain,
-          range: control.defaultRange,
+          domain: control.legend.domain,
+          range: control.legend.defaultRange,
         })
       }),
       obj
@@ -101,6 +99,13 @@ export default function Explore({ siteAcronym, siteName, config, theme }) {
   const changeSlider = (payload) => {
     dispatch({ type: 'setSlider', payload })
   }
+  const clearAll = () => {
+    dispatch({ type: 'reset', payload: uicontrols })
+  }
+
+  const hasSelectedLayers = Object.values(state).some(
+    (control) => control.visibility
+  )
 
   return (
     <PageLayout siteAcronym={siteAcronym} theme={theme} noMargin>
@@ -108,6 +113,8 @@ export default function Explore({ siteAcronym, siteName, config, theme }) {
         siteName={siteName}
         country={config.country}
         cc={config.countryCode}
+        clearAll={clearAll}
+        hasSelectedLayers={hasSelectedLayers}
       >
         <LayerControl
           uiState={state}
