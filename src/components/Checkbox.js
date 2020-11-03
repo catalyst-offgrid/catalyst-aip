@@ -1,11 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { withTheme } from 'styled-components'
 
-import theme from '../config/theme'
 import Tick from '../icons/Tick'
-
-const { colors } = theme
 
 const IconContainer = styled.div`
   visibility: ${(props) => (props.checked ? 'visible' : 'hidden')};
@@ -39,35 +36,39 @@ const StyledCheckbox = styled.div`
   justify-content: center;
   width: 20px;
   height: 20px;
-  background-color: ${colors.background};
+  background-color: ${({ theme }) => theme.colors.background};
   border: 1px solid
-    ${(props) => (props.checked ? colors.highlight : colors.accent)};
+    ${({ checked, theme }) =>
+      checked ? theme.colors.highlight : theme.colors.accent};
   border-radius: 4px;
   transition: all 150ms;
 
   ${HiddenCheckbox}:focus + & {
-    box-shadow: 0 0 0 3px ${colors.highlight};
+    box-shadow: ${({ theme }) => `0 0 0 3px ${theme.colors.highlight}`};
   }
 
   ${IconContainer} {
-    visibility: ${(props) => (props.checked ? 'visible' : 'hidden')};
+    visibility: ${({ checked }) => (checked ? 'visible' : 'hidden')};
   }
 `
 
-export default function Checkbox({ className, checked, ...props }) {
+function Checkbox({ className, checked, theme, ...props }) {
   return (
     <CheckboxContainer className={className}>
       <HiddenCheckbox checked={checked} {...props} />
       <StyledCheckbox checked={checked}>
         <IconContainer>
-          <Tick color={colors.highlight} />
+          <Tick color={theme.colors.highlight} />
         </IconContainer>
       </StyledCheckbox>
     </CheckboxContainer>
   )
 }
 
+export default withTheme(Checkbox)
+
 Checkbox.propTypes = {
   className: PropTypes.string,
   checked: PropTypes.bool.isRequired,
+  theme: PropTypes.object.isRequired,
 }

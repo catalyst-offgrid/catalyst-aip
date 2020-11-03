@@ -7,39 +7,36 @@ import numeral from 'numeral'
 
 import Checkbox from './Checkbox'
 import InfoButton from './InfoButton'
-import theme from '../config/theme'
-
-const { space, colors } = theme
 
 const ControlItemContainer = styled.label`
-  color: ${colors.primary};
-  font-family: ${theme.fonts.body};
-  font-size: ${theme.fontSizes[2]}pt;
-  font-weight: ${theme.fontWeights.body};
+  color: ${({ theme }) => theme.colors.primary};
+  font-family: ${({ theme }) => theme.fonts.body};
+  font-size: ${({ theme }) => theme.fontSizes[2]}pt;
+  font-weight: ${({ theme }) => theme.fontWeights.body};
 
-  background-color: ${colors.muted};
-  border-top: 1px solid ${colors.background};
+  background-color: ${({ theme }) => theme.colors.muted};
+  border-top: ${({ theme }) => `1px solid ${theme.colors.background}`};
 
   display: grid;
   grid-template-columns: auto 1fr auto 16px;
   align-items: center;
-  gap: ${space[3]}px;
-  padding: ${space[3]}px;
+  gap: ${({ theme }) => `${theme.space[3]}px`};
+  padding: ${({ theme }) => `${theme.space[3]}px`};
 `
 
 const SliderContainer = styled.div`
-  padding: ${space[1] + space[3]}px;
-  background-color: ${colors.muted};
+  padding: ${({ theme }) => `${theme.space[1] + theme.space[3]}px`};
+  background-color: ${({ theme }) => theme.colors.muted};
 
   /* The following uses the class names of the react-input-range
    * components to overwrite their styles:
    */
   .input-range__track--background {
-    background: ${colors.muted};
+    background: ${({ theme }) => theme.colors.muted};
   }
 
   .input-range__slider {
-    background: ${colors.primary};
+    background: ${({ theme }) => theme.colors.primary};
     border: 0;
     border-radius: 0;
     height: 12px;
@@ -48,7 +45,7 @@ const SliderContainer = styled.div`
     width: 8px;
 
     &::before {
-      border-bottom: 8px solid ${colors.primary};
+      border-bottom: ${({ theme }) => `8px solid ${theme.colors.primary}`};
       border-left: 4px solid transparent;
       border-right: 4px solid transparent;
       content: '';
@@ -72,18 +69,18 @@ const SliderContainer = styled.div`
 const Gradient = styled.div`
   height: 18px;
   width: 100%;
-  background: ${colors.muted};
-  background: ${`linear-gradient(
+  background: ${({ theme }) => theme.colors.muted};
+  background: ${({ theme }) => `linear-gradient(
     90deg,
-    ${colors.background} 0%,
-    ${colors.primary} 100%
+    ${theme.colors.background} 0%,
+    ${theme.colors.primary} 100%
   )`};
   opacity: 0.5;
   margin-bottom: -6px;
 `
 
 const NoInputRange = ({ minValue, maxValue }) => (
-  <div className='input-range__label' style={{ marginTop: `${space[3]}px` }}>
+  <div className='input-range__label' style={{ marginTop: `16px` }}>
     <span className='input-range__label--min'>
       {numeral(minValue).format('0a')}
     </span>

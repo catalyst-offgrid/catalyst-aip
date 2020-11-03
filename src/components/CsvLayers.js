@@ -2,13 +2,11 @@ import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
 import * as d3 from 'd3-fetch'
-import csv from '../../data/Energy/Census/KenyaLighting_Cooking.csv'
 
-import theme from '../config/theme'
 import Source from './Source'
 import Layer from './Layer'
 
-export default function CsvLayers({ uiState, map }) {
+export default function CsvLayers({ csv, uiState, theme, map }) {
   const [data, setData] = useState(null)
   const [layers, setLayer] = useState([])
 
@@ -97,6 +95,8 @@ export default function CsvLayers({ uiState, map }) {
 }
 
 CsvLayers.propTypes = {
+  csv: PropTypes.string.isRequired,
   uiState: PropTypes.object.isRequired,
+  theme: PropTypes.object.isRequired,
   map: PropTypes.object,
 }

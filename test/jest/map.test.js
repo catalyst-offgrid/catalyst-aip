@@ -9,6 +9,11 @@ import Layer from '../../src/components/Layer'
 let container
 let mapWrapper, sourceWrapper, layerWrapper
 
+const config = {
+  center: [37.85335, 0.44014],
+  zoom: 7,
+}
+
 const source = {
   id: 'test-source',
   layer: 'test-source',
@@ -28,12 +33,19 @@ const layer = {
 describe('Map', () => {
   beforeEach(() => {
     renderer.act(() => {
-      mapWrapper = renderer.create(<Map style={{ height: 200 }} />, {
-        createNodeMock: (element) => {
-          container = element
-          return element
-        },
-      })
+      mapWrapper = renderer.create(
+        <Map
+          style={{ height: 200 }}
+          zoom={config.zoom}
+          center={config.center}
+        />,
+        {
+          createNodeMock: (element) => {
+            container = element
+            return element
+          },
+        }
+      )
     })
   })
 

@@ -14,13 +14,23 @@ export default function App() {
             renders the first one that matches the current URL. */}
       <Switch>
         <Route path='/explore'>
-          <Explore config={config} />
+          <Explore
+            siteAcronym={config.siteAcronym}
+            siteName={config.siteName}
+            config={config.ke}
+            theme={config.theme}
+          />
         </Route>
         <Route path='/info'>
-          <Info config={config} />
+          <Info siteAcronym={config.siteAcronym} theme={config.theme} />
         </Route>
         <Route path='/'>
-          <Home config={config} />
+          <Home
+            siteAcronym={config.siteAcronym}
+            siteName={config.siteName}
+            imageUrl={config.imageUrl}
+            theme={config.theme}
+          />
         </Route>
       </Switch>
     </BrowserRouter>

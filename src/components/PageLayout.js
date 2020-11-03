@@ -1,12 +1,9 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 
 import NavigationBar from './NavigationBar'
-import theme from '../config/theme'
 import CATALYST_BLUE from '../../img/CATALYST_BLUE.png'
-
-const { space, colors } = theme
 
 const PageContainer = styled.div`
   height: 100%;
@@ -21,25 +18,28 @@ const MainContent = styled.main`
   grid-template-columns: repeat(12, 1fr);
 
   margin: ${({ noMargin }) => (noMargin ? 0 : `0 auto`)};
-  padding: ${({ noMargin }) =>
-    noMargin ? 0 : `${2 * space[5]}px ${space[5]}px`};
+  padding: ${({ noMargin, theme }) =>
+    noMargin ? 0 : `${2 * theme.space[5]}px ${theme.space[5]}px`};
 
   overflow: auto;
 `
 
-export default function PageLayout({ siteAcronym, noMargin, children }) {
+export default function PageLayout({ siteAcronym, theme, noMargin, children }) {
   return (
-    <PageContainer>
-      <NavigationBar siteAcronym={siteAcronym} />
-      <MainContent noMargin={noMargin} tabIndex='0'>
-        {children}
-      </MainContent>
-    </PageContainer>
+    <ThemeProvider theme={theme}>
+      <PageContainer>
+        <NavigationBar siteAcronym={siteAcronym} theme={theme} />
+        <MainContent noMargin={noMargin} tabIndex='0'>
+          {children}
+        </MainContent>
+      </PageContainer>
+    </ThemeProvider>
   )
 }
 
 PageLayout.propTypes = {
   siteAcronym: PropTypes.string.isRequired,
+  theme: PropTypes.object.isRequired,
   noMargin: PropTypes.bool,
   children: PropTypes.oneOfType([
     PropTypes.element,
@@ -56,31 +56,31 @@ export const InfoBlock = styled.div`
 `
 
 export const Tagline = styled.span`
-  color: ${colors.primary};
-  font-family: ${theme.fonts.body};
-  font-size: ${theme.fontSizes[3]}pt;
-  font-weight: ${theme.fontWeights.bold};
+  color: ${({ theme }) => theme.colors.primary};
+  font-family: ${({ theme }) => theme.fonts.body};
+  font-size: ${({ theme }) => theme.fontSizes[3]}pt;
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
   text-transform: uppercase;
 `
 
 export const PageTitle = styled.h1`
-  color: ${colors.primary};
-  font-family: ${theme.fonts.heading};
-  font-size: ${theme.fontSizes[5]}pt;
-  font-weight: ${theme.fontWeights.heading};
+  color: ${({ theme }) => theme.colors.primary};
+  font-family: ${({ theme }) => theme.fonts.heading};
+  font-size: ${({ theme }) => theme.fontSizes[5]}pt;
+  font-weight: ${({ theme }) => theme.fontWeights.heading};
 
-  margin-top: ${space[3]}px;
-  margin-bottom: ${space[4]}px;
+  margin-top: ${({ theme }) => theme.space[3]}px;
+  margin-bottom: ${({ theme }) => theme.space[4]}px;
 `
 
 export const Paragraph = styled.p`
-  color: ${colors.text};
-  font-family: ${theme.fonts.body};
-  font-size: ${theme.fontSizes[3]}pt;
-  font-weight: ${theme.fontWeights.body};
+  color: ${({ theme }) => theme.colors.text};
+  font-family: ${({ theme }) => theme.fonts.body};
+  font-size: ${({ theme }) => theme.fontSizes[3]}pt;
+  font-weight: ${({ theme }) => theme.fontWeights.body};
 
-  margin-top: ${space[4]}px;
-  margin-bottom: ${space[3] + space[4]}px;
+  margin-top: ${({ theme }) => theme.space[4]}px;
+  margin-bottom: ${({ theme }) => theme.space[3] + theme.space[4]}px;
 `
 
 const LogoContainer = styled.figure`
@@ -93,13 +93,13 @@ const LogoContainer = styled.figure`
 `
 
 const Caption = styled.figcaption`
-  color: ${colors.primary};
-  font-family: ${theme.fonts.body};
-  font-size: ${theme.fontSizes[3]}pt;
-  font-weight: ${theme.fontWeights.body};
+  color: ${({ theme }) => theme.colors.primary};
+  font-family: ${({ theme }) => theme.fonts.body};
+  font-size: ${({ theme }) => theme.fontSizes[3]}pt;
+  font-weight: ${({ theme }) => theme.fontWeights.body};
   text-transform: uppercase;
 
-  margin: ${space[3]}px 0;
+  margin: ${({ theme }) => theme.space[3]}px 0;
 `
 
 export const Logo = ({ withTagline }) => (
