@@ -2,6 +2,7 @@
 
 The Catalyst Access Insights Platform (AIP) is an open access, interactive, online platform that allows users to better understand energy access technology and coverage. The first version focusses on Kenya. The platform becomes a single window to easily analyse and identify investment opportunities. The platform allows users to overlay over 42 different layers ranging from core datasets like population, high-voltage grid to county level census information.
 
+![image](https://user-images.githubusercontent.com/371666/98085502-6e105a00-1ea3-11eb-94c5-44f89e2d48cd.png)
 
 # Documentation
 - [Outline](https://github.com/developmentseed/catalyst-aip/wiki)
