@@ -142,6 +142,7 @@ export default function Explore({ siteAcronym, siteName, config, theme }) {
                       id={layer.id}
                       isVisible={state[controlId].visibility}
                       spec={layer}
+                      before='road-label' // This is a layer id from the basemap. It might not exist in other basemaps styles!
                     />
                   )
                 })}
