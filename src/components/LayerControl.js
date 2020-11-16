@@ -38,7 +38,7 @@ export default function LayerControl({
 
   return (
     <Accordion index={indices} onChange={toggleAccordionItem}>
-      {Object.values(uicontrols).map((group, index) => (
+      {uicontrols.map((group, index) => (
         <FirstLevelPanel
           key={index}
           label={group.label}
@@ -58,7 +58,7 @@ export default function LayerControl({
 
 LayerControl.propTypes = {
   uiState: PropTypes.object.isRequired,
-  uicontrols: PropTypes.object.isRequired,
+  uicontrols: PropTypes.array.isRequired,
   toggleLayer: PropTypes.func.isRequired,
   changeSlider: PropTypes.func.isRequired,
 }
@@ -142,10 +142,10 @@ const getHasSelectedLayers = (controls, uiState) => {
   )
 
   const hasFirstLevelSelection = (group) =>
-    Object.keys(group).some((key) => selectedLayerIds.includes(key))
+    group.some((control) => selectedLayerIds.includes(control.id))
 
   const hasSecondLevelSelection = (group) =>
-    Object.values(group)
+    group
       .filter((control) => !!control.subcontrols)
       .some((control) => hasFirstLevelSelection(control.subcontrols))
 
@@ -200,11 +200,11 @@ function FirstLevelPanel({
         </ToggleButton>
       </FirstLevelHeader>
       <Panel as={AccordionPanel}>
-        {Object.entries(controls).map(([controlId, control]) => {
+        {controls.map((control) => {
           if (control.subcontrols) {
             return (
               <SecondLevelPanel
-                key={controlId}
+                key={control.id}
                 label={control.label}
                 info={control.info}
                 controls={control.subcontrols}
@@ -217,12 +217,12 @@ function FirstLevelPanel({
 
           return (
             <ControlItem
-              key={controlId}
-              id={controlId}
+              key={control.id}
+              id={control.id}
               label={control.label}
               info={control.info}
               legend={control.legend}
-              controlState={uiState[controlId]}
+              controlState={uiState[control.id]}
               toggleLayer={toggleLayer}
               changeSlider={changeSlider}
             />
@@ -237,7 +237,7 @@ FirstLevelPanel.propTypes = {
   label: PropTypes.string.isRequired,
   icon: PropTypes.func.isRequired, // actually, this is a react component
   description: PropTypes.string.isRequired,
-  controls: PropTypes.object.isRequired,
+  controls: PropTypes.array.isRequired,
   indices: PropTypes.arrayOf(PropTypes.number.isRequired).isRequired,
   index: PropTypes.number.isRequired,
   uiState: PropTypes.object.isRequired,
@@ -299,14 +299,14 @@ function SecondLevelPanel({
         </ToggleButton>
       </SecondLevelHeader>
       <Panel as={DisclosurePanel}>
-        {Object.entries(controls).map(([controlId, control]) => (
+        {controls.map((control) => (
           <ControlItem
-            key={controlId}
-            id={controlId}
+            key={control.id}
+            id={control.id}
             label={control.label}
             info={control.info}
             legend={control.legend}
-            controlState={uiState[controlId]}
+            controlState={uiState[control.id]}
             toggleLayer={toggleLayer}
             changeSlider={changeSlider}
           />
@@ -319,7 +319,7 @@ function SecondLevelPanel({
 SecondLevelPanel.propTypes = {
   label: PropTypes.string.isRequired,
   info: PropTypes.string.isRequired,
-  controls: PropTypes.object.isRequired,
+  controls: PropTypes.array.isRequired,
   uiState: PropTypes.object.isRequired,
   toggleLayer: PropTypes.func.isRequired,
   changeSlider: PropTypes.func.isRequired,

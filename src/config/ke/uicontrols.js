@@ -10,54 +10,62 @@ import {
 import theme from '../theme'
 const { colors } = theme
 
-export default {
-  admin: {
+export default [
+  {
+    id: 'admin',
     label: 'Administrative Boundaries',
     icon: AdminBoundaries,
     description:
       'Detailed dataset of country administrative both large and small scale.',
-    controls: {
-      counties: {
+    controls: [
+      {
+        id: 'counties',
         label: 'Counties',
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['counties', 'admin-1-boundary', 'admin-1-boundary-bg'],
         info: '',
       },
-      'sub-counties': {
+      {
+        id: 'sub-counties',
         label: 'Sub-Counties',
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['sub-counties'],
         info: '',
       },
-      wards: {
+      {
+        id: 'wards',
         label: 'Wards',
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['wards'],
         info: '',
       },
-    },
+    ],
   },
-  energy: {
+  {
+    id: 'energy',
     label: 'Energy',
     icon: Energy,
     description:
       'Location of mini-grids, transmission lines, fuels & technologies used.',
-    controls: {
-      gridfinder: {
+    controls: [
+      {
+        id: 'gridfinder',
         label: 'Gridfinder',
         defaultVisibility: false,
         legend: { type: 'line', color: colors.highlight },
         layerIds: ['gridfinder'],
         info: '',
       },
-      census: {
+      {
+        id: 'census',
         label: 'Census',
         info: '',
-        subcontrols: {
-          'Conventional Households': {
+        subcontrols: [
+          {
+            id: 'Conventional Households',
             label: 'Conventional Households',
             defaultVisibility: false,
             legend: {
@@ -69,7 +77,8 @@ export default {
             layerIds: ['Conventional Households'],
             info: '',
           },
-          'Main Electricity': {
+          {
+            id: 'Main Electricity',
             label: 'Main Electricity',
             defaultVisibility: false,
             legend: {
@@ -81,7 +90,8 @@ export default {
             layerIds: ['Main Electricity'],
             info: '',
           },
-          'Low-Quality Stopgap Total': {
+          {
+            id: 'Low-Quality Stopgap Total',
             label: 'Low-Quality Stopgap Total',
             defaultVisibility: false,
             legend: {
@@ -93,7 +103,8 @@ export default {
             layerIds: ['Low-Quality Stopgap Total'],
             info: '',
           },
-          'Kerosene (Total)': {
+          {
+            id: 'Kerosene (Total)',
             label: 'Kerosene (Total)',
             defaultVisibility: false,
             legend: {
@@ -105,7 +116,8 @@ export default {
             layerIds: ['Kerosene (Total)'],
             info: '',
           },
-          'Paraffin Pressure Lamp': {
+          {
+            id: 'Paraffin Pressure Lamp',
             label: 'Paraffin Pressure Lamp',
             defaultVisibility: false,
             legend: {
@@ -117,7 +129,8 @@ export default {
             layerIds: ['Paraffin Pressure Lamp'],
             info: '',
           },
-          'Paraffin Lantern': {
+          {
+            id: 'Paraffin Lantern',
             label: 'Paraffin Lantern',
             defaultVisibility: false,
             legend: {
@@ -129,7 +142,8 @@ export default {
             layerIds: ['Paraffin Lantern'],
             info: '',
           },
-          'Paraffin Tin Lamp': {
+          {
+            id: 'Paraffin Tin Lamp',
             label: 'Paraffin Tin Lamp',
             defaultVisibility: false,
             legend: {
@@ -141,7 +155,8 @@ export default {
             layerIds: ['Paraffin Tin Lamp'],
             info: '',
           },
-          'Gas Lamp': {
+          {
+            id: 'Gas Lamp',
             label: 'Gas Lamp',
             defaultVisibility: false,
             legend: {
@@ -153,7 +168,8 @@ export default {
             layerIds: ['Gas Lamp'],
             info: '',
           },
-          Wood: {
+          {
+            id: 'Wood',
             label: 'Wood',
             defaultVisibility: false,
             legend: {
@@ -165,7 +181,8 @@ export default {
             layerIds: ['Wood'],
             info: '',
           },
-          'Solar (Total)': {
+          {
+            id: 'Solar (Total)',
             label: 'Solar (Total)',
             defaultVisibility: false,
             legend: {
@@ -177,7 +194,8 @@ export default {
             layerIds: ['Solar (Total)'],
             info: '',
           },
-          Solar: {
+          {
+            id: 'Solar',
             label: 'Solar',
             defaultVisibility: false,
             legend: {
@@ -189,7 +207,8 @@ export default {
             layerIds: ['Solar'],
             info: '',
           },
-          'Torch / Spotlight (Solar-Charged)': {
+          {
+            id: 'Torch / Spotlight (Solar-Charged)',
             label: 'Torch / Spotlight (Solar-Charged)',
             defaultVisibility: false,
             legend: {
@@ -201,7 +220,8 @@ export default {
             layerIds: ['Torch / Spotlight (Solar-Charged)'],
             info: '',
           },
-          'Torch / Spotlight (Dry Cells))': {
+          {
+            id: 'Torch / Spotlight (Dry Cells))',
             label: 'Torch / Spotlight (Dry Cells))',
             defaultVisibility: false,
             legend: {
@@ -213,7 +233,8 @@ export default {
             layerIds: ['Torch / Spotlight (Dry Cells))'],
             info: '',
           },
-          Candle: {
+          {
+            id: 'Candle',
             label: 'Candle',
             defaultVisibility: false,
             legend: {
@@ -225,7 +246,8 @@ export default {
             layerIds: ['Candle'],
             info: '',
           },
-          'Battery (Car-Charged)': {
+          {
+            id: 'Battery (Car-Charged)',
             label: 'Battery (Car-Charged)',
             defaultVisibility: false,
             legend: {
@@ -237,7 +259,8 @@ export default {
             layerIds: ['Battery (Car-Charged)'],
             info: '',
           },
-          'Generator (Diesel / Petrol)': {
+          {
+            id: 'Generator (Diesel / Petrol)',
             label: 'Generator (Diesel / Petrol)',
             defaultVisibility: false,
             legend: {
@@ -249,7 +272,8 @@ export default {
             layerIds: ['Generator (Diesel / Petrol)'],
             info: '',
           },
-          Biogas: {
+          {
+            id: 'Biogas',
             label: 'Biogas',
             defaultVisibility: false,
             legend: {
@@ -261,7 +285,8 @@ export default {
             layerIds: ['Biogas'],
             info: '',
           },
-          'Not Stated': {
+          {
+            id: 'Not Stated',
             label: 'Not Stated',
             defaultVisibility: false,
             legend: {
@@ -273,7 +298,8 @@ export default {
             layerIds: ['Not Stated'],
             info: '',
           },
-          'Cooking - Electricity': {
+          {
+            id: 'Cooking - Electricity',
             label: 'Cooking - Electricity',
             defaultVisibility: false,
             legend: {
@@ -285,7 +311,8 @@ export default {
             layerIds: ['Cooking - Electricity'],
             info: '',
           },
-          'Cooking - Paraffin': {
+          {
+            id: 'Cooking - Paraffin',
             label: 'Cooking - Paraffin',
             defaultVisibility: false,
             legend: {
@@ -297,7 +324,8 @@ export default {
             layerIds: ['Cooking - Paraffin'],
             info: '',
           },
-          'Cooking - Gas (LPG)': {
+          {
+            id: 'Cooking - Gas (LPG)',
             label: 'Cooking - Gas (LPG)',
             defaultVisibility: false,
             legend: {
@@ -309,7 +337,8 @@ export default {
             layerIds: ['Cooking - Gas (LPG)'],
             info: '',
           },
-          'Cooking - Biogas': {
+          {
+            id: 'Cooking - Biogas',
             label: 'Cooking - Biogas',
             defaultVisibility: false,
             legend: {
@@ -321,7 +350,8 @@ export default {
             layerIds: ['Cooking - Biogas'],
             info: '',
           },
-          'Cooking - Firewood': {
+          {
+            id: 'Cooking - Firewood',
             label: 'Cooking - Firewood',
             defaultVisibility: false,
             legend: {
@@ -333,7 +363,8 @@ export default {
             layerIds: ['Cooking - Firewood'],
             info: '',
           },
-          'Cooking - Charcoal': {
+          {
+            id: 'Cooking - Charcoal',
             label: 'Cooking - Charcoal',
             defaultVisibility: false,
             legend: {
@@ -345,7 +376,8 @@ export default {
             layerIds: ['Cooking - Charcoal'],
             info: '',
           },
-          'Cooking - Solar': {
+          {
+            id: 'Cooking - Solar',
             label: 'Cooking - Solar',
             defaultVisibility: false,
             legend: {
@@ -357,7 +389,8 @@ export default {
             layerIds: ['Cooking - Solar'],
             info: '',
           },
-          'Cooking - Not Stated': {
+          {
+            id: 'Cooking - Not Stated',
             label: 'Cooking - Not Stated',
             defaultVisibility: false,
             legend: {
@@ -369,44 +402,50 @@ export default {
             layerIds: ['Cooking - Not Stated'],
             info: '',
           },
-        },
+        ],
       },
-    },
+    ],
   },
-  finance: {
+  {
+    id: 'finance',
     label: 'Financial Services',
     icon: Financial,
     description: 'Locations of Banks, Micro-finances and SACCOs.',
-    controls: {
-      banks: {
+    controls: [
+      {
+        id: 'banks',
         label: 'Banks',
         defaultVisibility: false,
         legend: { type: 'dot', color: '#679289' },
         layerIds: ['banks'],
         info: '',
       },
-      mfi: {
+      {
+        id: 'mfi',
         label: 'MFIs',
         defaultVisibility: false,
         legend: { type: 'dot', color: '#C8D6AF' },
         layerIds: ['mfi'],
         info: '',
       },
-      sacco: {
+      {
+        id: 'sacco',
         label: 'SACCOs',
         defaultVisibility: false,
         legend: { type: 'dot', color: '#1D7874' },
         layerIds: ['sacco'],
         info: '',
       },
-    },
+    ],
   },
-  population: {
+  {
+    id: 'population',
     label: 'Population',
     icon: Population,
     description: 'Population density, Night Lights and Mobile Phone Coverage.',
-    controls: {
-      arc: {
+    controls: [
+      {
+        id: 'arc',
         label: 'Population Density (ARC 2016)',
         defaultVisibility: false,
         legend: 'none',
@@ -425,36 +464,41 @@ export default {
       //   layerIds: ['night-lights'],
       //   info: '',
       // },
-    },
+    ],
   },
-  facilities: {
+  {
+    id: 'facilities',
     label: 'Public facilities',
     icon: Public,
     description:
       'Locations of Schools, Doctors, Hospitals and other Health Institutions.',
-    controls: {
-      health: {
+    controls: [
+      {
+        id: 'health',
         label: 'Health Facilities',
         defaultVisibility: false,
         legend: { type: 'dot', color: '#6A9FB4' },
         layerIds: ['health'],
         info: '',
       },
-      education: {
+      {
+        id: 'education',
         label: 'Education Facilities',
         defaultVisibility: false,
         legend: { type: 'dot', color: '#DB93B0' },
         layerIds: ['education'],
         info: '',
       },
-    },
+    ],
   },
-  transport: {
+  {
+    id: 'transport',
     label: 'Transport',
     icon: Transport,
     description: 'Transport networks, roads and routes.',
-    controls: {
-      road: {
+    controls: [
+      {
+        id: 'road',
         label: 'Roads',
         defaultVisibility: false,
         legend: 'none',
@@ -467,6 +511,6 @@ export default {
       //   layerIds: ['rail'],
       //   info: '',
       // },
-    },
+    ],
   },
-}
+]
