@@ -15,7 +15,7 @@ const { colors } = theme
 
 export default [
   {
-    id: 'population-density',
+    id: 'arc-population-density',
     source: 'population',
     'source-layer': 'Kenya_Population_Density_ARC_-90y1wi',
     type: 'raster',
