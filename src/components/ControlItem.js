@@ -118,8 +118,6 @@ export default function ControlItem({
   changeSlider,
 }) {
   const isChecked = !!controlState.visibility
-
-  const hasUnit = !!legend.unit
   const canBeFiltered = !!controlState.range
 
   return (
@@ -134,9 +132,6 @@ export default function ControlItem({
 
         {isChecked && legend.type === 'dot' && <Dot color={legend.color} />}
         {isChecked && legend.type === 'line' && <Line color={legend.color} />}
-        <span className='input-range__label'>
-          {isChecked && hasUnit && `in ${legend.unit}`}
-        </span>
 
         {info && (
           <InfoButton info={info} aria-label={`info about ${label} layer`} />
@@ -149,7 +144,11 @@ export default function ControlItem({
             <InputRange
               minValue={legend.domain[0]}
               maxValue={legend.domain[1]}
-              formatLabel={(number) => numeral(number).format('0a')}
+              formatLabel={(number) =>
+                `${numeral(number).format('0a')}${
+                  legend.unit ? legend.unit : ''
+                }`
+              }
               step={1}
               value={controlState.range}
               onChange={(value) =>

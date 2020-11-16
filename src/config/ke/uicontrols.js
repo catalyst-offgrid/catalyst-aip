@@ -64,7 +64,6 @@ export default {
               type: 'gradient',
               defaultRange: { min: 30000, max: 1500000 },
               domain: [30000, 1500000],
-              unit: '#',
             },
             layerIds: ['Conventional Households'],
             info: '',
