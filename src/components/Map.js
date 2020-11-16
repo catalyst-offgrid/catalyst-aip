@@ -19,6 +19,8 @@ export default function Map({ center, zoom, children }) {
       zoom,
     })
 
+    m.addControl(new mapbox.NavigationControl({ visualizePitch: true }))
+
     m.on('load', () => {
       setMap(m)
 
