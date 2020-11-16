@@ -24,6 +24,15 @@ export default [
     },
   },
   {
+    id: 'fb-population-density',
+    source: 'fb-population',
+    'source-layer': 'tif6-1z4g21',
+    type: 'raster',
+    paint: {
+      'raster-opacity': 0.5,
+    },
+  },
+  {
     id: 'education',
     source: 'education',
     'source-layer': 'Education_Facilities-6v7pmw',

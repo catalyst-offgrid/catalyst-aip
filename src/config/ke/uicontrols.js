@@ -366,14 +366,14 @@ export default [
         layerIds: ['arc-population-density'],
         info: '',
       },
-      // {
-      //   id: 'fb-population',
-      //   label: 'FB Population Density',
-      //   defaultVisibility: false,
-      //   legend: 'none',
-      //   layerIds: ['fb-population-density'],
-      //   info: '',
-      // },
+      {
+        id: 'fb-population',
+        label: 'FB Population Density',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['fb-population-density'],
+        info: '',
+      },
       // {
       //   id: 'nightlights',
       //   label: 'Night Lights',
