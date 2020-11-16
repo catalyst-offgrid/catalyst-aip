@@ -7,8 +7,8 @@ import { DisclosureButton } from '@reach/disclosure'
 import LayerControl from '../../src/components/LayerControl'
 import Checkbox from '../../src/components/Checkbox'
 
-import uicontrols from '../../src/config/ke/uicontrols'
 import theme from '../../src/config/theme'
+import uicontrols from '../__fixtures__/uicontrols'
 import uiState from '../__fixtures__/uiState'
 
 const toggleLayer = jest.fn()
@@ -19,18 +19,16 @@ let testInstance
 
 describe('LayerControl', () => {
   beforeEach(() => {
-    renderer.act(() => {
-      testRenderer = renderer.create(
-        <ThemeProvider theme={theme}>
-          <LayerControl
-            uiState={uiState}
-            uicontrols={uicontrols}
-            toggleLayer={toggleLayer}
-            changeSlider={changeSlider}
-          />
-        </ThemeProvider>
-      )
-    })
+    testRenderer = renderer.create(
+      <ThemeProvider theme={theme}>
+        <LayerControl
+          uiState={uiState}
+          uicontrols={uicontrols}
+          toggleLayer={toggleLayer}
+          changeSlider={changeSlider}
+        />
+      </ThemeProvider>
+    )
     testInstance = testRenderer.root
   })
 
@@ -39,12 +37,12 @@ describe('LayerControl', () => {
   })
 
   it('creates a first level accordion item with button per ui control group', () => {
-    expect(testInstance.findAllByType(AccordionItem).length).toEqual(6)
-    expect(testInstance.findAllByType(AccordionButton).length).toEqual(6)
+    expect(testInstance.findAllByType(AccordionItem).length).toEqual(4)
+    expect(testInstance.findAllByType(AccordionButton).length).toEqual(4)
   })
 
   it('creates a second level header per ui control sub group', () => {
-    expect(testInstance.findAllByType(DisclosureButton).length).toEqual(1)
+    expect(testInstance.findAllByType(DisclosureButton).length).toEqual(4)
   })
 
   it('creates a checkbox per layer control item in uiState', () => {
