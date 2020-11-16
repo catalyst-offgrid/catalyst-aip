@@ -64,7 +64,7 @@ export default {
   gridfinder: {
     visibility: true,
   },
-  'banks (OSM)': {
+  banks: {
     visibility: false,
   },
   mfi: {
