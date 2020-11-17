@@ -11,7 +11,7 @@ export default {
 
     // data viz
     airsuperiorityblue: '#6A9FB4',
-    myrtlegreen: '#1D7874',
+    shinyshamrock: '#54A06F',
     wintergreendream: '#679289',
     teagreen: '#C8D6AF',
     charmpink: '#DB93B0',

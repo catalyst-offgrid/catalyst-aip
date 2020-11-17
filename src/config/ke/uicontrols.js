@@ -382,7 +382,7 @@ export default [
             id: 'sacco',
             label: 'SACCOs',
             defaultVisibility: false,
-            legend: { type: 'dot', color: colors.myrtlegreen },
+            legend: { type: 'dot', color: colors.shinyshamrock },
             layerIds: ['sacco'],
             info: '',
           },

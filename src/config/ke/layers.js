@@ -92,7 +92,7 @@ export default [
     'source-layer': 'SACCOs-btv3i8',
     type: 'circle',
     paint: {
-      'circle-color': colors.myrtlegreen,
+      'circle-color': colors.shinyshamrock,
     },
   },
   {
