@@ -1,12 +1,4 @@
-import transportBasemapLayers from './transport-basemap-layers'
-import {
-  AdminBoundaries,
-  Energy,
-  Financial,
-  Population,
-  Public,
-  Transport,
-} from '../../icons'
+import { AdminBoundaries, Energy, Population, Public } from '../../icons'
 import theme from '../theme'
 const { colors } = theme
 
@@ -52,33 +44,12 @@ export default [
       'Location of mini-grids, transmission lines, fuels & technologies used.',
     controls: [
       {
-        id: 'gridfinder',
-        label: 'Gridfinder',
-        defaultVisibility: false,
-        legend: { type: 'line', color: colors.highlight },
-        layerIds: ['gridfinder'],
-        info: '',
-      },
-      {
-        id: 'census',
-        label: 'Census',
+        id: 'lighting',
+        label: 'Lighting',
         info: '',
         subcontrols: [
           {
-            id: 'Conventional Households',
-            label: 'Conventional Households',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 30000, max: 1500000 },
-              domain: [30000, 1500000],
-              unit: '#',
-            },
-            layerIds: ['Conventional Households'],
-            info: '',
-          },
-          {
-            id: 'Main Electricity',
+            id: 'Main Electricity', // matches .csv column name
             label: 'Main Electricity',
             defaultVisibility: false,
             legend: {
@@ -91,7 +62,7 @@ export default [
             info: '',
           },
           {
-            id: 'Low-Quality Stopgap Total',
+            id: 'Low-Quality Stopgap Total', // matches .csv column name
             label: 'Low-Quality Stopgap Total',
             defaultVisibility: false,
             legend: {
@@ -104,7 +75,7 @@ export default [
             info: '',
           },
           {
-            id: 'Kerosene (Total)',
+            id: 'Kerosene (Total)', // matches .csv column name
             label: 'Kerosene (Total)',
             defaultVisibility: false,
             legend: {
@@ -117,7 +88,7 @@ export default [
             info: '',
           },
           {
-            id: 'Paraffin Pressure Lamp',
+            id: 'Paraffin Pressure Lamp', // matches .csv column name
             label: 'Paraffin Pressure Lamp',
             defaultVisibility: false,
             legend: {
@@ -130,7 +101,7 @@ export default [
             info: '',
           },
           {
-            id: 'Paraffin Lantern',
+            id: 'Paraffin Lantern', // matches .csv column name
             label: 'Paraffin Lantern',
             defaultVisibility: false,
             legend: {
@@ -143,7 +114,7 @@ export default [
             info: '',
           },
           {
-            id: 'Paraffin Tin Lamp',
+            id: 'Paraffin Tin Lamp', // matches .csv column name
             label: 'Paraffin Tin Lamp',
             defaultVisibility: false,
             legend: {
@@ -156,7 +127,7 @@ export default [
             info: '',
           },
           {
-            id: 'Gas Lamp',
+            id: 'Gas Lamp', // matches .csv column name
             label: 'Gas Lamp',
             defaultVisibility: false,
             legend: {
@@ -169,7 +140,7 @@ export default [
             info: '',
           },
           {
-            id: 'Wood',
+            id: 'Wood', // matches .csv column name
             label: 'Wood',
             defaultVisibility: false,
             legend: {
@@ -182,7 +153,7 @@ export default [
             info: '',
           },
           {
-            id: 'Solar (Total)',
+            id: 'Solar (Total)', // matches .csv column name
             label: 'Solar (Total)',
             defaultVisibility: false,
             legend: {
@@ -195,7 +166,7 @@ export default [
             info: '',
           },
           {
-            id: 'Solar',
+            id: 'Solar', // matches .csv column name
             label: 'Solar',
             defaultVisibility: false,
             legend: {
@@ -208,7 +179,7 @@ export default [
             info: '',
           },
           {
-            id: 'Torch / Spotlight (Solar-Charged)',
+            id: 'Torch / Spotlight (Solar-Charged)', // matches .csv column name
             label: 'Torch / Spotlight (Solar-Charged)',
             defaultVisibility: false,
             legend: {
@@ -221,7 +192,7 @@ export default [
             info: '',
           },
           {
-            id: 'Torch / Spotlight (Dry Cells))',
+            id: 'Torch / Spotlight (Dry Cells))', // matches .csv column name
             label: 'Torch / Spotlight (Dry Cells))',
             defaultVisibility: false,
             legend: {
@@ -233,74 +204,16 @@ export default [
             layerIds: ['Torch / Spotlight (Dry Cells))'],
             info: '',
           },
+        ],
+      },
+      {
+        id: 'cooking',
+        label: 'Cooking Fuels',
+        info: '',
+        subcontrols: [
           {
-            id: 'Candle',
-            label: 'Candle',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
-              unit: '%',
-            },
-            layerIds: ['Candle'],
-            info: '',
-          },
-          {
-            id: 'Battery (Car-Charged)',
-            label: 'Battery (Car-Charged)',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
-              unit: '%',
-            },
-            layerIds: ['Battery (Car-Charged)'],
-            info: '',
-          },
-          {
-            id: 'Generator (Diesel / Petrol)',
-            label: 'Generator (Diesel / Petrol)',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
-              unit: '%',
-            },
-            layerIds: ['Generator (Diesel / Petrol)'],
-            info: '',
-          },
-          {
-            id: 'Biogas',
-            label: 'Biogas',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
-              unit: '%',
-            },
-            layerIds: ['Biogas'],
-            info: '',
-          },
-          {
-            id: 'Not Stated',
-            label: 'Not Stated',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
-              unit: '%',
-            },
-            layerIds: ['Not Stated'],
-            info: '',
-          },
-          {
-            id: 'Cooking - Electricity',
-            label: 'Cooking - Electricity',
+            id: 'Cooking - Electricity', // matches .csv column name
+            label: 'Electricity',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -312,60 +225,8 @@ export default [
             info: '',
           },
           {
-            id: 'Cooking - Paraffin',
-            label: 'Cooking - Paraffin',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
-              unit: '%',
-            },
-            layerIds: ['Cooking - Paraffin'],
-            info: '',
-          },
-          {
-            id: 'Cooking - Gas (LPG)',
-            label: 'Cooking - Gas (LPG)',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
-              unit: '%',
-            },
-            layerIds: ['Cooking - Gas (LPG)'],
-            info: '',
-          },
-          {
-            id: 'Cooking - Biogas',
-            label: 'Cooking - Biogas',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
-              unit: '%',
-            },
-            layerIds: ['Cooking - Biogas'],
-            info: '',
-          },
-          {
-            id: 'Cooking - Firewood',
-            label: 'Cooking - Firewood',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
-              unit: '%',
-            },
-            layerIds: ['Cooking - Firewood'],
-            info: '',
-          },
-          {
-            id: 'Cooking - Charcoal',
-            label: 'Cooking - Charcoal',
+            id: 'Cooking - Charcoal', // matches .csv column name
+            label: 'Charcoal',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -377,8 +238,8 @@ export default [
             info: '',
           },
           {
-            id: 'Cooking - Solar',
-            label: 'Cooking - Solar',
+            id: 'Cooking - Gas (LPG)', // matches .csv column name
+            label: 'Gas (LPG)',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -386,12 +247,12 @@ export default [
               domain: [0, 50],
               unit: '%',
             },
-            layerIds: ['Cooking - Solar'],
+            layerIds: ['Cooking - Gas (LPG)'],
             info: '',
           },
           {
-            id: 'Cooking - Not Stated',
-            label: 'Cooking - Not Stated',
+            id: 'Cooking - Biogas', // matches .csv column name
+            label: 'Biogas',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -399,7 +260,36 @@ export default [
               domain: [0, 50],
               unit: '%',
             },
-            layerIds: ['Cooking - Not Stated'],
+            layerIds: ['Cooking - Biogas'],
+            info: '',
+          },
+          {
+            id: 'Cooking - Firewood', // matches .csv column name
+            label: 'Firewood',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 50 },
+              domain: [0, 50],
+              unit: '%',
+            },
+            layerIds: ['Cooking - Firewood'],
+            info: '',
+          },
+        ],
+      },
+
+      {
+        id: 'grid',
+        label: 'Grid Electricity',
+        info: '',
+        subcontrols: [
+          {
+            id: 'gridfinder',
+            label: 'Gridfinder Map',
+            defaultVisibility: false,
+            legend: { type: 'line', color: colors.highlight },
+            layerIds: ['gridfinder'],
             info: '',
           },
         ],
@@ -407,72 +297,43 @@ export default [
     ],
   },
   {
-    id: 'finance',
-    label: 'Financial Services',
-    icon: Financial,
-    description: 'Locations of Banks, Micro-finances and SACCOs.',
-    controls: [
-      {
-        id: 'banks',
-        label: 'Banks',
-        defaultVisibility: false,
-        legend: { type: 'dot', color: '#679289' },
-        layerIds: ['banks'],
-        info: '',
-      },
-      {
-        id: 'mfi',
-        label: 'MFIs',
-        defaultVisibility: false,
-        legend: { type: 'dot', color: '#C8D6AF' },
-        layerIds: ['mfi'],
-        info: '',
-      },
-      {
-        id: 'sacco',
-        label: 'SACCOs',
-        defaultVisibility: false,
-        legend: { type: 'dot', color: '#1D7874' },
-        layerIds: ['sacco'],
-        info: '',
-      },
-    ],
-  },
-  {
-    id: 'population',
-    label: 'Population',
-    icon: Population,
-    description: 'Population density, Night Lights and Mobile Phone Coverage.',
-    controls: [
-      {
-        id: 'arc',
-        label: 'Population Density (ARC 2016)',
-        defaultVisibility: false,
-        legend: 'none',
-        layerIds: ['population-density'],
-        info: '',
-      },
-      // 'fb-population': {
-      //   label: 'Facebook Population',
-      //   defaultVisibility: false,
-      //   layerIds: ['fb-population'],
-      //   info: '',
-      // },
-      // nightlights: {
-      //   label: 'Night Lights',
-      //   defaultVisibility: false,
-      //   layerIds: ['night-lights'],
-      //   info: '',
-      // },
-    ],
-  },
-  {
     id: 'facilities',
-    label: 'Public facilities',
+    label: 'Public Facilities and Institutions',
     icon: Public,
     description:
-      'Locations of Schools, Doctors, Hospitals and other Health Institutions.',
+      'Locations of Financial Services, Schools, Doctors, Hospitals and other Health Institutions.',
     controls: [
+      {
+        id: 'finance',
+        label: 'Financial Services',
+        info: 'Locations of Banks, Micro-finances and SACCOs.',
+        subcontrols: [
+          {
+            id: 'banks (OSM)',
+            label: 'Banks',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: '#679289' },
+            layerIds: ['banks'],
+            info: '',
+          },
+          {
+            id: 'mfi',
+            label: 'MFIs',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: '#C8D6AF' },
+            layerIds: ['mfi'],
+            info: '',
+          },
+          {
+            id: 'sacco',
+            label: 'SACCOs',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: '#1D7874' },
+            layerIds: ['sacco'],
+            info: '',
+          },
+        ],
+      },
       {
         id: 'health',
         label: 'Health Facilities',
@@ -492,23 +353,33 @@ export default [
     ],
   },
   {
-    id: 'transport',
-    label: 'Transport',
-    icon: Transport,
-    description: 'Transport networks, roads and routes.',
+    id: 'demographics',
+    label: 'Demographics',
+    icon: Population,
+    description: 'Population density, Night Lights and Mobile Phone Coverage.',
     controls: [
       {
-        id: 'road',
-        label: 'Roads',
+        id: 'arc',
+        label: 'Population Density (ARC 2016)',
         defaultVisibility: false,
         legend: 'none',
-        layerIds: transportBasemapLayers,
+        layerIds: ['arc-population-density'],
         info: '',
       },
-      // rail: {
-      //   label: 'Railway',
+      {
+        id: 'fb-population',
+        label: 'FB Population Density',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['fb-population-density'],
+        info: '',
+      },
+      // {
+      //   id: 'nightlights',
+      //   label: 'Night Lights',
       //   defaultVisibility: false,
-      //   layerIds: ['rail'],
+      //   legend: 'none',
+      //   layerIds: ['night-lights'],
       //   info: '',
       // },
     ],

@@ -160,15 +160,6 @@ export default function Explore({ siteAcronym, siteName, config, theme }) {
         <CsvLayers id='csv' csv={csv} uiState={state} theme={theme} />
 
         <BasemapLayers
-          id='transport'
-          isVisible={state['road'].visibility}
-          layerIds={
-            uicontrols
-              .find((group) => group.id === 'transport')
-              .controls.find((control) => control.id === 'road').layerIds
-          }
-        />
-        <BasemapLayers
           id='admin'
           isVisible={state['counties'].visibility}
           layerIds={

@@ -613,7 +613,6 @@ exports[`LayerControl matches the snapshot 1`] = `
                 <rect
                   fill="none"
                   height="16"
-                  id="icon-bound"
                   width="16"
                 />
                 <polygon
@@ -1258,7 +1257,6 @@ exports[`LayerControl matches the snapshot 1`] = `
                 <rect
                   fill="none"
                   height="16"
-                  id="icon-bound"
                   width="16"
                 />
                 <polygon
@@ -1546,7 +1544,6 @@ exports[`LayerControl matches the snapshot 1`] = `
                 <rect
                   fill="none"
                   height="16"
-                  id="icon-bound"
                   width="16"
                 />
                 <polygon
@@ -1719,7 +1716,6 @@ exports[`LayerControl matches the snapshot 1`] = `
                 <rect
                   fill="none"
                   height="16"
-                  id="icon-bound"
                   width="16"
                 />
                 <polygon
@@ -1741,7 +1737,7 @@ exports[`LayerControl matches the snapshot 1`] = `
       >
         <label
           className="c5"
-          htmlFor="banks (OSM)"
+          htmlFor="banks"
         >
           <div
             className="c6"
@@ -1749,7 +1745,7 @@ exports[`LayerControl matches the snapshot 1`] = `
             <input
               checked={false}
               className="c7 c8"
-              id="banks (OSM)"
+              id="banks"
               onChange={[Function]}
               type="checkbox"
             />
@@ -1780,7 +1776,7 @@ exports[`LayerControl matches the snapshot 1`] = `
               </div>
             </div>
           </div>
-          Banks
+          Banks (OSM)
           <span
             className="input-range__label"
           />

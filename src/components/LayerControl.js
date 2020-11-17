@@ -280,12 +280,12 @@ function SecondLevelPanel({
           <div>
             {info && (
               <InfoButton
-                as='div'
+                as='div' // as div: <button> cannot appear as a descendant of <button>
                 info={info}
                 aria-label={`info about ${label} layers`}
               />
             )}
-            {/* as div: <button> cannot appear as a descendant of <button> */}
+
             {isOpen ? (
               <span role='img' aria-label='minus'>
                 <Minus color={theme.colors.primary} />

@@ -305,8 +305,8 @@ export default [
         info: '',
         subcontrols: [
           {
-            id: 'banks (OSM)',
-            label: 'Banks',
+            id: 'banks',
+            label: 'Banks (OSM)',
             defaultVisibility: false,
             legend: { type: 'dot', color: '#679289' },
             layerIds: ['banks'],
