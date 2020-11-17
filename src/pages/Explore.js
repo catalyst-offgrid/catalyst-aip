@@ -17,22 +17,30 @@ import LayerControl from '../components/LayerControl'
  * @param {String} layerId the id of a layer that should be controlled
  */
 function getControlIdForLayer(layerId, uicontrols) {
-  let controlId
-  Object.values(uicontrols).find((group) => {
-    const entry = Object.entries(group.controls).find(
-      ([, control]) =>
-        (control.layerIds && control.layerIds.includes(layerId)) ||
-        (control.subcontrol &&
-          Object.entries(control.subcontrol).find(([, subcontrol]) =>
-            subcontrol.layerIds.includes(layerId)
-          ))
-    )
-    if (entry) controlId = entry[0]
-    return entry
+  let id
+  uicontrols.map((group) => {
+    group.controls.map((control) => {
+      if (control.subcontrols) {
+        control.subcontrols.find((subcontrol) => {
+          if (subcontrol.layerIds.includes(layerId)) {
+            id = subcontrol.id
+            return true
+          }
+          return false
+        })
+      }
+
+      if (control.layerIds && control.layerIds.includes(layerId)) {
+        id = control.id
+        return true
+      }
+      return false
+    })
   })
-  if (!controlId)
+
+  if (!id)
     console.warn(`Layer "${layerId}" is not assigned to any control group.`)
-  return controlId
+  return id
 }
 
 /**
@@ -40,20 +48,20 @@ function getControlIdForLayer(layerId, uicontrols) {
  * ui state object
  */
 function init(uicontrols) {
-  return Object.values(uicontrols).reduce((obj, cur) => {
+  return uicontrols.reduce((obj, cur) => {
     return (
-      Object.entries(cur.controls).map(([controlId, control]) => {
+      cur.controls.map((control) => {
         if (control.subcontrols) {
-          return Object.entries(control.subcontrols).map(
-            ([subcontrolId, subcontrol]) =>
-              (obj[subcontrolId] = {
+          return control.subcontrols.map(
+            (subcontrol) =>
+              (obj[subcontrol.id] = {
                 visibility: subcontrol.defaultVisibility,
                 domain: subcontrol.legend.domain,
                 range: subcontrol.legend.defaultRange,
               })
           )
         }
-        return (obj[controlId] = {
+        return (obj[control.id] = {
           visibility: control.defaultVisibility,
           domain: control.legend.domain,
           range: control.legend.defaultRange,
@@ -142,6 +150,7 @@ export default function Explore({ siteAcronym, siteName, config, theme }) {
                       id={layer.id}
                       isVisible={state[controlId].visibility}
                       spec={layer}
+                      before='road-label' // This is a layer id from the basemap. It might not exist in other basemaps styles!
                     />
                   )
                 })}
@@ -152,19 +161,12 @@ export default function Explore({ siteAcronym, siteName, config, theme }) {
         <CsvLayers id='csv' csv={csv} uiState={state} theme={theme} />
 
         <BasemapLayers
-          id='transport'
-          isVisible={state['road'].visibility}
-          layerIds={
-            Object.entries(uicontrols).find(([id]) => id === 'transport')[1]
-              .controls['road'].layerIds
-          }
-        />
-        <BasemapLayers
           id='admin'
           isVisible={state['counties'].visibility}
           layerIds={
-            Object.entries(uicontrols).find(([id]) => id === 'admin')[1]
-              .controls['counties'].layerIds
+            uicontrols
+              .find((group) => group.id === 'admin')
+              .controls.find((control) => control.id === 'counties').layerIds
           }
         />
       </Map>
@@ -180,7 +182,7 @@ Explore.propTypes = {
     countryCode: PropTypes.string.isRequired,
     center: PropTypes.arrayOf(PropTypes.number.isRequired).isRequired,
     zoom: PropTypes.number.isRequired,
-    uicontrols: PropTypes.object.isRequired,
+    uicontrols: PropTypes.array.isRequired,
     sources: PropTypes.object.isRequired,
     layers: PropTypes.array.isRequired,
     csv: PropTypes.string.isRequired,

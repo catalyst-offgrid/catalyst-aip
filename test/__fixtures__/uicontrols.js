@@ -1,12 +1,8 @@
-import { AdminBoundaries, Energy, Population, Public } from '../../icons'
-import theme from '../theme'
-const { colors } = theme
-
 export default [
   {
     id: 'admin',
     label: 'Administrative Boundaries',
-    icon: AdminBoundaries,
+    icon: () => '',
     description:
       'Detailed dataset of country administrative both large and small scale.',
     controls: [
@@ -39,7 +35,7 @@ export default [
   {
     id: 'energy',
     label: 'Energy',
-    icon: Energy,
+    icon: () => '',
     description:
       'Location of mini-grids, transmission lines, fuels & technologies used.',
     controls: [
@@ -288,7 +284,7 @@ export default [
             id: 'gridfinder',
             label: 'Gridfinder Map',
             defaultVisibility: false,
-            legend: { type: 'line', color: colors.highlight },
+            legend: { type: 'line', color: 'orange' },
             layerIds: ['gridfinder'],
             info: '',
           },
@@ -299,18 +295,18 @@ export default [
   {
     id: 'facilities',
     label: 'Public Facilities and Institutions',
-    icon: Public,
+    icon: () => '',
     description:
       'Locations of Financial Services, Schools, Doctors, Hospitals and other Health Institutions.',
     controls: [
       {
         id: 'finance',
         label: 'Financial Services',
-        info: 'Locations of Banks, Micro-finances and SACCOs.',
+        info: '',
         subcontrols: [
           {
-            id: 'banks (OSM)',
-            label: 'Banks',
+            id: 'banks',
+            label: 'Banks (OSM)',
             defaultVisibility: false,
             legend: { type: 'dot', color: '#679289' },
             layerIds: ['banks'],
@@ -355,7 +351,7 @@ export default [
   {
     id: 'demographics',
     label: 'Demographics',
-    icon: Population,
+    icon: () => '',
     description: 'Population density, Night Lights and Mobile Phone Coverage.',
     controls: [
       {
