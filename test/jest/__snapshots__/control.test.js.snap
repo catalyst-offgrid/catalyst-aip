@@ -413,9 +413,6 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Counties
-        <span
-          className="input-range__label"
-        />
         
       </label>
       <label
@@ -460,9 +457,6 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Sub-Counties
-        <span
-          className="input-range__label"
-        />
         
       </label>
       <label
@@ -507,9 +501,6 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Wards
-        <span
-          className="input-range__label"
-        />
         
       </label>
     </div>
@@ -674,9 +665,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Main Electricity
-          <span
-            className="input-range__label"
-          />
           
         </label>
         <label
@@ -721,9 +709,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Low-Quality Stopgap Total
-          <span
-            className="input-range__label"
-          />
           
         </label>
         <label
@@ -768,11 +753,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Kerosene (Total)
-          <span
-            className="input-range__label"
-          >
-            in %
-          </span>
           
         </label>
         <div
@@ -843,9 +823,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Paraffin Pressure Lamp
-          <span
-            className="input-range__label"
-          />
           
         </label>
         <label
@@ -890,9 +867,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Paraffin Lantern
-          <span
-            className="input-range__label"
-          />
           
         </label>
         <label
@@ -937,9 +911,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Paraffin Tin Lamp
-          <span
-            className="input-range__label"
-          />
           
         </label>
         <label
@@ -984,9 +955,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Gas Lamp
-          <span
-            className="input-range__label"
-          />
           
         </label>
         <label
@@ -1031,9 +999,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Wood
-          <span
-            className="input-range__label"
-          />
           
         </label>
         <label
@@ -1078,9 +1043,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Solar (Total)
-          <span
-            className="input-range__label"
-          />
           
         </label>
         <label
@@ -1125,9 +1087,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Solar
-          <span
-            className="input-range__label"
-          />
           
         </label>
         <label
@@ -1172,9 +1131,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Torch / Spotlight (Solar-Charged)
-          <span
-            className="input-range__label"
-          />
           
         </label>
         <label
@@ -1219,9 +1175,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Torch / Spotlight (Dry Cells))
-          <span
-            className="input-range__label"
-          />
           
         </label>
       </div>
@@ -1318,9 +1271,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Electricity
-          <span
-            className="input-range__label"
-          />
           
         </label>
         <label
@@ -1365,9 +1315,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Charcoal
-          <span
-            className="input-range__label"
-          />
           
         </label>
         <label
@@ -1412,9 +1359,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Gas (LPG)
-          <span
-            className="input-range__label"
-          />
           
         </label>
         <label
@@ -1459,9 +1403,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Biogas
-          <span
-            className="input-range__label"
-          />
           
         </label>
         <label
@@ -1506,9 +1447,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Firewood
-          <span
-            className="input-range__label"
-          />
           
         </label>
       </div>
@@ -1608,9 +1546,6 @@ exports[`LayerControl matches the snapshot 1`] = `
           <div
             className="c20"
             color="orange"
-          />
-          <span
-            className="input-range__label"
           />
           
         </label>
@@ -1777,9 +1712,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           Banks (OSM)
-          <span
-            className="input-range__label"
-          />
           
         </label>
         <label
@@ -1824,9 +1756,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           MFIs
-          <span
-            className="input-range__label"
-          />
           
         </label>
         <label
@@ -1871,9 +1800,6 @@ exports[`LayerControl matches the snapshot 1`] = `
             </div>
           </div>
           SACCOs
-          <span
-            className="input-range__label"
-          />
           
         </label>
       </div>
@@ -1919,9 +1845,6 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Health Facilities
-        <span
-          className="input-range__label"
-        />
         
       </label>
       <label
@@ -1966,9 +1889,6 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Education Facilities
-        <span
-          className="input-range__label"
-        />
         
       </label>
     </div>
@@ -2082,9 +2002,6 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         Population Density (ARC 2016)
-        <span
-          className="input-range__label"
-        />
         
       </label>
       <label
@@ -2129,9 +2046,6 @@ exports[`LayerControl matches the snapshot 1`] = `
           </div>
         </div>
         FB Population Density
-        <span
-          className="input-range__label"
-        />
         
       </label>
     </div>
