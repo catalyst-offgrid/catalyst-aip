@@ -47,7 +47,7 @@ export default [
     'source-layer': 'Education_Facilities-6v7pmw',
     type: 'circle',
     paint: {
-      'circle-color': '#DB93B0',
+      'circle-color': colors.charmpink,
     },
   },
   {
@@ -83,7 +83,7 @@ export default [
     'source-layer': 'Kenya_Health_Type1-81jhng',
     type: 'circle',
     paint: {
-      'circle-color': '#6A9FB4',
+      'circle-color': colors.airsuperiorityblue,
     },
   },
   {
@@ -92,7 +92,7 @@ export default [
     'source-layer': 'SACCOs-btv3i8',
     type: 'circle',
     paint: {
-      'circle-color': '#1D7874',
+      'circle-color': colors.myrtlegreen,
     },
   },
   {
@@ -101,7 +101,7 @@ export default [
     'source-layer': 'MFIs-00ivvm',
     type: 'circle',
     paint: {
-      'circle-color': '#C8D6AF',
+      'circle-color': colors.teagreen,
     },
   },
   {
@@ -110,7 +110,7 @@ export default [
     'source-layer': 'Banks_OSM-dn9mc8',
     type: 'circle',
     paint: {
-      'circle-color': '#679289',
+      'circle-color': colors.wintergreendream,
     },
   },
   {

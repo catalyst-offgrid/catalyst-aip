@@ -8,6 +8,13 @@ export default {
     accent: '#DBDEEF',
     text: '#373E49',
     offtext: '#AAAAAA',
+
+    // data viz
+    airsuperiorityblue: '#6A9FB4',
+    myrtlegreen: '#1D7874',
+    wintergreendream: '#679289',
+    teagreen: '#C8D6AF',
+    charmpink: '#DB93B0',
   },
   fonts: {
     body: 'Open Sans, sans-serif',
