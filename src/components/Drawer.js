@@ -93,16 +93,19 @@ export default function Drawer({
                 }
               />
             </IconContainer>
-            Clear selection
+            Clear map
           </SecondaryButton>
           <PrimaryButton
-            onClick={() => console.log('download not implemented')}
+            onClick={() => console.log('not implemented')}
             data-cy='download-button'
+            disabled={true}
           >
             <IconContainer aria-hidden='true'>
-              <Download color={theme.colors.background} />
+              <Download
+                color={/*theme.colors.background*/ theme.colors.offtext}
+              />
             </IconContainer>
-            Download
+            Get data
           </PrimaryButton>
         </Actions>
       )}
