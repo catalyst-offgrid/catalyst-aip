@@ -93,7 +93,7 @@ export default function Drawer({
                 }
               />
             </IconContainer>
-            Clear selection
+            Clear map
           </SecondaryButton>
           <PrimaryButton
             onClick={() => console.log('download not implemented')}
