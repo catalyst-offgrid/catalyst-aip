@@ -363,8 +363,8 @@ export default [
         info: 'Locations of Banks, Micro-finances and SACCOs.',
         subcontrols: [
           {
-            id: 'banks (OSM)',
-            label: 'Banks',
+            id: 'banks',
+            label: 'Banks (OSM)',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.wintergreendream },
             layerIds: ['banks'],
