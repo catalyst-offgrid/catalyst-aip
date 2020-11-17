@@ -4,6 +4,7 @@ import styled, { ThemeContext } from 'styled-components'
 import { ArrowLoop, Download } from '../icons'
 
 import Header from './Header'
+import Credits from './Credits'
 
 const Container = styled.section`
   grid-column: 1 / span 3;
@@ -76,6 +77,8 @@ export default function Drawer({
       <Header siteName={siteName} country={country} cc={cc} />
 
       <ScrollContainer>{children}</ScrollContainer>
+
+      <Credits />
 
       {hasSelectedLayers && (
         <Actions>
