@@ -99,7 +99,11 @@ export default function Drawer({
             Clear map
           </SecondaryButton>
           <PrimaryButton
-            onClick={() => window.open('https://drive.google.com/drive/folders/1M6KiWyMFnii4t9kL861QlDhJiDFKwwc3?usp=sharing')}
+            onClick={() =>
+              window.open(
+                'https://drive.google.com/drive/folders/1M6KiWyMFnii4t9kL861QlDhJiDFKwwc3?usp=sharing'
+              )
+            }
             data-cy='download-button'
           >
             <IconContainer aria-hidden='true'>
