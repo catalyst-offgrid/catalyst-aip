@@ -8,7 +8,7 @@ export default [
     label: 'Administrative Boundaries',
     icon: AdminBoundaries,
     description:
-      'Detailed dataset of country administrative both large and small scale.',
+      'Official administritative boundaries from the Government of Kenya.',
     controls: [
       {
         id: 'counties',
@@ -16,7 +16,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['counties', 'admin-1-boundary', 'admin-1-boundary-bg'],
-        info: '',
+        info: 'Counties',
       },
       {
         id: 'sub-counties',
@@ -24,7 +24,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['sub-counties'],
-        info: '',
+        info: 'Sub Counties',
       },
       {
         id: 'wards',
@@ -32,7 +32,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['wards'],
-        info: '',
+        info: 'Wards',
       },
     ],
   },
@@ -41,7 +41,7 @@ export default [
     label: 'Energy',
     icon: Energy,
     description:
-      'Location of mini-grids, transmission lines, fuels & technologies used.',
+      'Location of electricity grid, transmission lines, fuels & technologies used.',
     controls: [
       {
         id: 'lighting',
