@@ -51,12 +51,16 @@ const PrimaryButton = styled.button`
   font-family: ${({ theme }) => theme.fonts.body};
   font-size: ${({ theme }) => theme.fontSizes[2]}pt;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
+
+  grid-column: 2;
 `
 
 const SecondaryButton = styled(PrimaryButton)`
   background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme, disabled }) =>
     disabled ? theme.colors.offtext : theme.colors.primary};
+
+  grid-column: 1;
 `
 
 const IconContainer = styled.span`
@@ -80,8 +84,8 @@ export default function Drawer({
 
       <Credits />
 
-      {hasSelectedLayers && (
-        <Actions>
+      <Actions>
+        {hasSelectedLayers && (
           <SecondaryButton
             onClick={clearAll}
             disabled={!hasSelectedLayers}
@@ -98,23 +102,18 @@ export default function Drawer({
             </IconContainer>
             Clear map
           </SecondaryButton>
-          <PrimaryButton
-            onClick={() =>
-              window.open(
-                'https://drive.google.com/drive/folders/1M6KiWyMFnii4t9kL861QlDhJiDFKwwc3?usp=sharing'
-              )
-            }
-            data-cy='download-button'
-          >
-            <IconContainer aria-hidden='true'>
-              <Download
-                color={/*theme.colors.background*/ theme.colors.offtext}
-              />
-            </IconContainer>
-            Get data
-          </PrimaryButton>
-        </Actions>
-      )}
+        )}
+        <PrimaryButton
+          as='a'
+          href='https://drive.google.com/drive/folders/1M6KiWyMFnii4t9kL861QlDhJiDFKwwc3?usp=sharing'
+          data-cy='download-button'
+        >
+          <IconContainer aria-hidden='true'>
+            <Download color={theme.colors.background} />
+          </IconContainer>
+          Get data
+        </PrimaryButton>
+      </Actions>
     </Container>
   )
 }
