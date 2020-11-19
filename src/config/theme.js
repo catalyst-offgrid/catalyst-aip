@@ -24,8 +24,7 @@ export default {
     accent5: '#386cb0',
     accent6: '#f0027f',
     accent7: '#bf5b17',
-    accent8: '#666666'
-
+    accent8: '#666666',
   },
   fonts: {
     body: 'Open Sans, sans-serif',
