@@ -33,6 +33,15 @@ export default [
     },
   },
   {
+    id: 'compress',
+    source: 'compress',
+    'source-layer': 'compress-7pv3v4',
+    type: 'raster',
+    paint: {
+      'raster-opacity': 0.5,
+    },
+  },
+  {
     id: 'education',
     source: 'education',
     'source-layer': 'Education_Facilities-6v7pmw',
@@ -42,9 +51,36 @@ export default [
     },
   },
   {
-    id: 'health',
-    source: 'health',
-    'source-layer': 'Health_Facilities-2yj576',
+    id: 'health_type4',
+    source: 'health_type4',
+    'source-layer': 'Kenya_Health_Type4-3fxfr8',
+    type: 'circle',
+    paint: {
+      'circle-color': '#6A9FB4',
+    },
+  },
+  {
+    id: 'health_type3',
+    source: 'health_type3',
+    'source-layer': 'Kenya_Health_Type3-0api8i',
+    type: 'circle',
+    paint: {
+      'circle-color': '#6A9FB4',
+    },
+  },
+  {
+    id: 'health_type2',
+    source: 'health_type2',
+    'source-layer': 'Kenya_Health_Type2-2bis9f',
+    type: 'circle',
+    paint: {
+      'circle-color': '#6A9FB4',
+    },
+  },
+  {
+    id: 'health_type1',
+    source: 'health_type1',
+    'source-layer': 'Kenya_Health_Type1-81jhng',
     type: 'circle',
     paint: {
       'circle-color': '#6A9FB4',
@@ -108,6 +144,60 @@ export default [
     type: 'line',
     paint: {
       'line-color': colors.highlight,
+    },
+  },
+  {
+    id: 'transmission_lines_11kv',
+    source: 'transmission_lines_11kv',
+    'source-layer': 'Transmission_Lines_11KV_RePro-br4ylm',
+    type: 'line',
+    paint: {
+      'line-color': colors.highlight,
+    },
+  },
+  {
+    id: 'transmission_lines_66kv',
+    source: 'transmission_lines_66kv',
+    'source-layer': 'Transmission_Lines_66KV_Repro-6e0r2m',
+    type: 'line',
+    paint: {
+      'line-color': colors.highlight,
+    },
+  },
+  {
+    id: 'transmission_lines_220kv',
+    source: 'transmission_lines_220kv',
+    'source-layer': 'Transmission_Lines_220KV_Repr-4sai37',
+    type: 'line',
+    paint: {
+      'line-color': colors.highlight,
+    },
+  },
+  {
+    id: 'mini-grids_under_development',
+    source: 'mini-grids_under_development',
+    'source-layer': 'Mini-Grids_Under_Development_-7tdfio',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.highlight,
+    },
+  },
+  {
+    id: 'existing_mini-grids',
+    source: 'existing_mini-grids',
+    'source-layer': 'Existing_Mini-Grids_Reproject-7inrxo',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.highlight,
+    },
+  },
+  {
+    id: 'proposed_kosap_mini-grids',
+    source: 'proposed_kosap_mini-grids',
+    'source-layer': 'Proposed_KOSAP_Mini-Grids_Rep-74ct1d',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.highlight,
     },
   },
   {

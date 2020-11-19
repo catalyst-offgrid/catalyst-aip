@@ -42,6 +42,11 @@ export default {
       layer: 'tif6-1z4g21',
       tilesetid: 'iandmuir.5p43u8tc',
     },
+    {
+      id: 'compress',
+      layer: 'compress-7pv3v4',
+      tilesetid: 'iandmuir.c7feip8c',
+    },
   ],
   /**
    * Vector Tilesets
@@ -62,6 +67,26 @@ export default {
       id: 'health',
       layer: 'Health_Facilities-2yj576',
       tilesetid: 'iandmuir.d2qqlxhc',
+    },
+    {
+      id: 'health_type4',
+      layer: 'Kenya_Health_Type4-3fxfr8',
+      tilesetid: 'iandmuir.9ualp7e4',
+    },
+    {
+      id: 'health_type3',
+      layer: 'Kenya_Health_Type3-0api8i',
+      tilesetid: 'iandmuir.8sn3y6ba',
+    },
+    {
+      id: 'health_type2',
+      layer: 'Kenya_Health_Type2-2bis9f',
+      tilesetid: 'iandmuir.65b4atxf',
+    },
+    {
+      id: 'health_type1',
+      layer: 'Kenya_Health_Type1-81jhng',
+      tilesetid: 'iandmuir.9sc2a6zr',
     },
     {
       id: 'sacco',
@@ -92,6 +117,36 @@ export default {
       id: 'gridfinder',
       layer: 'gridfinder_kenya_sample-avd4fk',
       tilesetid: 'iandmuir.900iiva8',
+    },
+    {
+      id: 'transmission_lines_11kv',
+      layer: 'Transmission_Lines_11KV_RePro-br4ylm',
+      tilesetid: 'iandmuir.dw3qu0un',
+    },
+    {
+      id: 'transmission_lines_66kv',
+      layer: 'Transmission_Lines_66KV_Repro-6e0r2m',
+      tilesetid: 'iandmuir.4ze40n49',
+    },
+    {
+      id: 'transmission_lines_220kv',
+      layer: 'Transmission_Lines_220KV_Repr-4sai37',
+      tilesetid: 'iandmuir.2169m0rv',
+    },
+    {
+      id: 'mini-grids_under_development',
+      layer: 'Mini-Grids_Under_Development_-7tdfio',
+      tilesetid: 'iandmuir.damvyu86',
+    },
+    {
+      id: 'existing_mini-grids',
+      layer: 'Existing_Mini-Grids_Reproject-7inrxo',
+      tilesetid: 'iandmuir.0u9e821k',
+    },
+    {
+      id: 'proposed_kosap_mini-grids',
+      layer: 'Proposed_KOSAP_Mini-Grids_Rep-74ct1d',
+      tilesetid: 'iandmuir.2apgp0fe',
     },
     {
       id: 'counties',
