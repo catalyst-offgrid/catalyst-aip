@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import styled from 'styled-components'
+import Credits from '../components/Credits'
 
 import PageLayout, {
   InfoBlock,
@@ -8,6 +10,10 @@ import PageLayout, {
   Paragraph,
   Logo,
 } from '../components/PageLayout'
+
+const PartnersBlock = styled.div`
+  grid-column: 1 / span 4;
+`
 
 export default function Info({ siteAcronym, theme }) {
   return (
@@ -47,6 +53,11 @@ export default function Info({ siteAcronym, theme }) {
         </Paragraph>
         {/* TODO: Add point of contact  */}
       </InfoBlock>
+      <PartnersBlock>
+        <Paragraph as='div'>
+          In partnership with <Credits />
+        </Paragraph>
+      </PartnersBlock>
       <Logo />
     </PageLayout>
   )
