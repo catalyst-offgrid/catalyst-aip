@@ -53,12 +53,14 @@ export default function Info({ siteAcronym, theme }) {
         </Paragraph>
         {/* TODO: Add point of contact  */}
       </InfoBlock>
+
+      <Logo />
+
       <PartnersBlock>
         <Paragraph as='div'>
           In partnership with <Credits />
         </Paragraph>
       </PartnersBlock>
-      <Logo />
     </PageLayout>
   )
 }
