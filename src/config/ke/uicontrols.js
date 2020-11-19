@@ -269,8 +269,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
+              defaultRange: { min: 0, max: 100 },
+              domain: [0, 100],
               unit: '%',
             },
             layerIds: ['Cooking - Firewood'],
