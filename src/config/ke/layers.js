@@ -152,7 +152,7 @@ export default [
     'source-layer': 'Transmission_Lines_11KV_RePro-br4ylm',
     type: 'line',
     paint: {
-      'line-color': colors.highlight,
+      'line-color': colors.accent9,
     },
   },
   {
@@ -161,7 +161,7 @@ export default [
     'source-layer': 'Transmission_Lines_66KV_Repro-6e0r2m',
     type: 'line',
     paint: {
-      'line-color': colors.highlight,
+      'line-color': colors.accent10,
     },
   },
   {
@@ -170,7 +170,7 @@ export default [
     'source-layer': 'Transmission_Lines_220KV_Repr-4sai37',
     type: 'line',
     paint: {
-      'line-color': colors.highlight,
+      'line-color': colors.accent11,
     },
   },
   {
@@ -179,7 +179,7 @@ export default [
     'source-layer': 'Mini-Grids_Under_Development_-7tdfio',
     type: 'circle',
     paint: {
-      'circle-color': colors.highlight,
+      'circle-color': colors.accent1,
     },
   },
   {
@@ -188,7 +188,7 @@ export default [
     'source-layer': 'Existing_Mini-Grids_Reproject-7inrxo',
     type: 'circle',
     paint: {
-      'circle-color': colors.highlight,
+      'circle-color': colors.accent2,
     },
   },
   {
@@ -197,7 +197,7 @@ export default [
     'source-layer': 'Proposed_KOSAP_Mini-Grids_Rep-74ct1d',
     type: 'circle',
     paint: {
-      'circle-color': colors.highlight,
+      'circle-color': colors.accent3,
     },
   },
   {

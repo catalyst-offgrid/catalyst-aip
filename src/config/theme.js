@@ -25,6 +25,11 @@ export default {
     accent6: '#f0027f',
     accent7: '#bf5b17',
     accent8: '#666666',
+
+    // sequential class 3
+    accent9: '#fb6a4a',
+    accent10: '#de2d26',
+    accent11: '#a50f15',
   },
   fonts: {
     body: 'Open Sans, sans-serif',
