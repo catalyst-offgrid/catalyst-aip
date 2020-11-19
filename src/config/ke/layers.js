@@ -47,7 +47,7 @@ export default [
     'source-layer': 'Education_Facilities-6v7pmw',
     type: 'circle',
     paint: {
-      'circle-color': '#DB93B0',
+      'circle-color': colors.charmpink,
     },
   },
   {
@@ -56,7 +56,7 @@ export default [
     'source-layer': 'Kenya_Health_Type4-3fxfr8',
     type: 'circle',
     paint: {
-      'circle-color': '#6A9FB4',
+      'circle-color': colors.accent4,
     },
   },
   {
@@ -65,7 +65,7 @@ export default [
     'source-layer': 'Kenya_Health_Type3-0api8i',
     type: 'circle',
     paint: {
-      'circle-color': '#6A9FB4',
+      'circle-color': colors.accent3,
     },
   },
   {
@@ -74,7 +74,7 @@ export default [
     'source-layer': 'Kenya_Health_Type2-2bis9f',
     type: 'circle',
     paint: {
-      'circle-color': '#6A9FB4',
+      'circle-color': colors.accent7,
     },
   },
   {
@@ -83,7 +83,7 @@ export default [
     'source-layer': 'Kenya_Health_Type1-81jhng',
     type: 'circle',
     paint: {
-      'circle-color': '#6A9FB4',
+      'circle-color': colors.accent1,
     },
   },
   {
@@ -92,7 +92,7 @@ export default [
     'source-layer': 'SACCOs-btv3i8',
     type: 'circle',
     paint: {
-      'circle-color': '#1D7874',
+      'circle-color': colors.accent2,
     },
   },
   {
@@ -101,7 +101,7 @@ export default [
     'source-layer': 'MFIs-00ivvm',
     type: 'circle',
     paint: {
-      'circle-color': '#C8D6AF',
+      'circle-color': colors.accent6,
     },
   },
   {
@@ -110,7 +110,7 @@ export default [
     'source-layer': 'Banks_OSM-dn9mc8',
     type: 'circle',
     paint: {
-      'circle-color': '#679289',
+      'circle-color': colors.accent5,
     },
   },
   {
@@ -152,7 +152,7 @@ export default [
     'source-layer': 'Transmission_Lines_11KV_RePro-br4ylm',
     type: 'line',
     paint: {
-      'line-color': colors.highlight,
+      'line-color': colors.accent9,
     },
   },
   {
@@ -161,7 +161,7 @@ export default [
     'source-layer': 'Transmission_Lines_66KV_Repro-6e0r2m',
     type: 'line',
     paint: {
-      'line-color': colors.highlight,
+      'line-color': colors.accent10,
     },
   },
   {
@@ -170,7 +170,7 @@ export default [
     'source-layer': 'Transmission_Lines_220KV_Repr-4sai37',
     type: 'line',
     paint: {
-      'line-color': colors.highlight,
+      'line-color': colors.accent11,
     },
   },
   {
@@ -179,7 +179,7 @@ export default [
     'source-layer': 'Mini-Grids_Under_Development_-7tdfio',
     type: 'circle',
     paint: {
-      'circle-color': colors.highlight,
+      'circle-color': colors.accent1,
     },
   },
   {
@@ -188,7 +188,7 @@ export default [
     'source-layer': 'Existing_Mini-Grids_Reproject-7inrxo',
     type: 'circle',
     paint: {
-      'circle-color': colors.highlight,
+      'circle-color': colors.accent2,
     },
   },
   {
@@ -197,7 +197,7 @@ export default [
     'source-layer': 'Proposed_KOSAP_Mini-Grids_Rep-74ct1d',
     type: 'circle',
     paint: {
-      'circle-color': colors.highlight,
+      'circle-color': colors.accent3,
     },
   },
   {

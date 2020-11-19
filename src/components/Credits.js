@@ -25,7 +25,7 @@ export default function Credits() {
         src={A2EI_LOGO}
         height={50}
       />
-      <img alt='CDC Group plc' src={CDC_LOGO} height={40} />
+      <img alt='CDC Group plc' src={CDC_LOGO} height={50} />
     </Container>
   )
 }
