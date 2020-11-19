@@ -58,7 +58,9 @@ export default function Home({ siteAcronym, siteName, imageUrl, theme }) {
         <Tagline>Welcome to the</Tagline>
         <PageTitle>{siteName}</PageTitle>
         <Paragraph>
-        AIP is an open-source platform for data analysis, visualizations, and tools that are directly applicable to last-mile service delivery in emerging markets.
+          AIP is an open-source platform for data analysis, visualizations, and
+          tools that are directly applicable to last-mile service delivery in
+          emerging markets.
         </Paragraph>
         <Actions>
           <PrimaryButton
