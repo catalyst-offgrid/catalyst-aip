@@ -58,8 +58,7 @@ export default function Home({ siteAcronym, siteName, imageUrl, theme }) {
         <Tagline>Welcome to the</Tagline>
         <PageTitle>{siteName}</PageTitle>
         <Paragraph>
-          A business intelligence tool for enterprises looking to serve the last
-          mile gap in electrification.
+        AIP is an open-source platform for data analysis, visualizations, and tools that are directly applicable to last-mile service delivery in emerging markets.
         </Paragraph>
         <Actions>
           <PrimaryButton
