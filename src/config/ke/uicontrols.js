@@ -7,8 +7,7 @@ export default [
     id: 'admin',
     label: 'Administrative Boundaries',
     icon: AdminBoundaries,
-    description:
-      'Official administritative boundaries from the Government of Kenya.',
+    info: 'Administritative boundaries from the Government of Kenya.',
     controls: [
       {
         id: 'counties',
@@ -40,8 +39,7 @@ export default [
     id: 'energy',
     label: 'Energy',
     icon: Energy,
-    description:
-      'Location of electricity grid, transmission lines, fuels & technologies used.',
+    info: 'Information on Energy Sources.',
     controls: [
       {
         id: 'lighting',
@@ -50,11 +48,11 @@ export default [
         subcontrols: [
           {
             id: 'Main Electricity', // matches .csv column name
-            label: 'Main Electricity',
+            label: 'Grid Connection',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 50, max: 80 },
+              defaultRange: { min: 0, max: 100 },
               domain: [0, 100],
               unit: '%',
             },
@@ -67,7 +65,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 50, max: 80 },
+              defaultRange: { min: 0, max: 100 },
               domain: [0, 80],
               unit: '%',
             },
@@ -76,7 +74,7 @@ export default [
           },
           {
             id: 'Kerosene (Total)', // matches .csv column name
-            label: 'Kerosene (Total)',
+            label: 'Kerosene',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -352,9 +350,9 @@ export default [
   },
   {
     id: 'facilities',
-    label: 'Public Facilities and Institutions',
+    label: 'Services and Institutions',
     icon: Public,
-    description:
+    info:
       'Locations of Financial Services, Schools, Doctors, Hospitals and other Health Institutions.',
     controls: [
       {
@@ -391,7 +389,7 @@ export default [
       {
         id: 'health',
         label: 'Health Facilities',
-        info: '',
+        info: 'Displays the locations of the health facilities in Kenya by the facility type.',
         subcontrols: [
           {
             id: 'health_type1',
@@ -427,21 +425,60 @@ export default [
           },
         ],
       },
-      {
+	  {
         id: 'education',
         label: 'Education Facilities',
-        defaultVisibility: false,
-        legend: { type: 'dot', color: colors.charmpink },
-        layerIds: ['education'],
-        info: '',
+        info: 'Displays the locations of the education facilities in Kenya by the facility type.',
+        subcontrols: [
+		{
+			id: 'all_education',
+			label: 'All Education Facilities',
+			defaultVisibility: false,
+			legend: { type: 'dot', color: colors.charmpink },
+			layerIds: ['all_education'],
+			info: '',
+		},
+		{
+			id: 'ke_kindergarten',
+			label: 'Kindergartens',
+			defaultVisibility: false,
+			legend: { type: 'dot', color: colors.accent1 },
+			layerIds: ['ke_kindergarten'],
+			info: '',
+		},
+		{
+			id: 'ke_schools',
+			label: 'Schools',
+			defaultVisibility: false,
+			legend: { type: 'dot', color: colors.accent2},
+			layerIds: ['ke_schools'],
+			info: '',
+		},
+				{
+			id: 'ke_colleges',
+			label: 'Colleges',
+			defaultVisibility: false,
+			legend: { type: 'dot', color: colors.accent3},
+			layerIds: ['ke_colleges'],
+			info: '',
+		},
+				{
+			id: 'ke_universities',
+			label: 'Universities',
+			defaultVisibility: false,
+			legend: { type: 'dot', color: colors.accent4},
+			layerIds: ['ke_universities'],
+			info: '',
+		},
+		],
       },
     ],
   },
   {
     id: 'demographics',
-    label: 'Demographics',
+    label: 'Population & Demographics',
     icon: Population,
-    description: 'Population density, Night Lights and Mobile Phone Coverage.',
+    info: 'Population density, demographic statistics and Night Lights.',
     controls: [
       {
         id: 'arc',
@@ -466,6 +503,131 @@ export default [
         legend: 'none',
         layerIds: ['compress'],
         info: '',
+      },
+    ],
+  },
+  {
+    id: 'mobileData',
+    label: 'Mobile Data',
+    icon: Public,
+    description:
+      'Mobile Coverage Data © Collins Bartholomew and GSMA 2020',
+	controls: [
+      {
+        id: 'airtel',
+        label: 'AirTel',
+        info: 'Coverage on the AirTel Network.',
+        subcontrols: [
+          {
+            id: 'airtel2g',
+            label: 'AirTel 2G',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['mobile_data_airtel_2g'],
+            info: '',
+          }, 
+		  {
+            id: 'airtel3g',
+            label: 'AirTel 3G',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['mobile_data_airtel_3g'],
+            info: '',
+          }, 
+		  {
+            id: 'airtel4g',
+            label: 'AirTel 4G',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['mobile_data_airtel_4g'],
+            info: '',
+          }, 
+        ],
+      },
+      {
+        id: 'orange',
+        label: 'Orange',
+        info: 'Coverage on the Orange (now Telkom) Network',
+        subcontrols: [
+          {
+            id: 'orange2g',
+            label: 'Orange 2G',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['mobile_data_orange_2g'],
+            info: '',
+          },
+          {
+            id: 'orange3g',
+            label: 'Orange 3G',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['mobile_data_orange_3g'],
+            info: '',
+          },
+          {
+            id: 'orange4g',
+            label: 'Orange 4G',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['mobile_data_orange_4g'],
+            info: '',
+          },
+        ],
+      },
+	  {
+        id: 'safaricom',
+        label: 'Safaricom',
+        info: 'Coverage on the Safaricom Network',
+        subcontrols: [
+          {
+            id: 'safaricom2g',
+            label: 'Safaricom 2G',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['mobile_data_safaricom_2g'],
+            info: '',
+          },
+          {
+            id: 'safaricom3g',
+            label: 'Safaricom 3G',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['mobile_data_safaricom_3g'],
+            info: '',
+          },
+          {
+            id: 'safaricom4g',
+            label: 'Safaricom 4G',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['mobile_data_safaricom_4g'],
+            info: '',
+          },
+        ],
+      },
+	  {
+        id: 'yu',
+        label: 'YuMobile',
+        info: 'Coverage on the YuMobile Network',
+        subcontrols: [
+          {
+            id: 'yu2g',
+            label: 'YuMobile 2G',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['mobile_data_yu_2g'],
+            info: '',
+          },
+          {
+            id: 'yu3g',
+            label: 'YuMobile 3G',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['mobile_data_yu_3g'],
+            info: '',
+          },
+        ],
       },
     ],
   },

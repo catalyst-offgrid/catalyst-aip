@@ -82,8 +82,7 @@ export default function Drawer({
 
       <ScrollContainer>{children}</ScrollContainer>
 
-      <Credits />
-
+      
       <Actions>
         {hasSelectedLayers && (
           <SecondaryButton

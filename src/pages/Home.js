@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import Credits from '../components/Credits'
 
 import PageLayout, {
   Introduction,
@@ -16,12 +17,16 @@ const Actions = styled.div`
   gap: ${({ theme }) => theme.space[3]}px;
 `
 
+const PartnersBlock = styled.div`
+  grid-column: 1 / span 4;
+`
+
 const PrimaryButton = styled(Link)`
   text-decoration: none;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  min-width: 240px;
+  min-width: 200px;
   padding: ${({ theme }) => `${theme.space[3]}px ${theme.space[4]}px`};
   border: ${({ theme }) => `4px solid ${theme.colors.primary}`};
   border-radius: 4px;
@@ -29,7 +34,7 @@ const PrimaryButton = styled(Link)`
   background-color: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.background};
   font-family: ${({ theme }) => theme.fonts.body};
-  font-size: ${({ theme }) => theme.fontSizes[3]}pt;
+  font-size: ${({ theme }) => theme.fontSizes[1]}pt;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
 `
 
@@ -41,7 +46,7 @@ const SecondaryButton = styled(PrimaryButton)`
 const Image = styled.figure`
   grid-area: 1 / 6 / 3 / span 7;
   margin: -140px -70px -140px 0;
-  height: 100vh;
+  height: 115vh;
 
   background-image: ${({ url }) => `url(${url})`};
   background-size: auto 100%;
@@ -54,6 +59,7 @@ const Image = styled.figure`
 export default function Home({ siteAcronym, siteName, imageUrl, theme }) {
   return (
     <PageLayout siteAcronym={siteAcronym} theme={theme}>
+	  <Logo />
       <Introduction>
         <Tagline>Welcome to the</Tagline>
         <PageTitle>{siteName}</PageTitle>
@@ -79,8 +85,12 @@ export default function Home({ siteAcronym, siteName, imageUrl, theme }) {
           </SecondaryButton>
         </Actions>
       </Introduction>
-      <Logo withTagline />
       <Image url={imageUrl} />
+	  <PartnersBlock>
+        <Paragraph as='div'>
+          In partnership with <Credits />
+        </Paragraph>
+      </PartnersBlock>
     </PageLayout>
   )
 }

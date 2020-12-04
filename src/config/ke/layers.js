@@ -42,12 +42,48 @@ export default [
     },
   },
   {
-    id: 'education',
-    source: 'education',
+    id: 'all_education',
+    source: 'all_education',
     'source-layer': 'Education_Facilities-6v7pmw',
     type: 'circle',
     paint: {
       'circle-color': colors.charmpink,
+    },
+  },
+  {
+	id: 'ke_kindergarten',
+	source: 'ke_kindergarten',
+	'source-layer': 'Kenya_Education_Kindergarten-5ky2rp',
+	type: 'circle',
+	paint: {
+      'circle-color': colors.accent1,
+    },
+  },
+  {
+	id: 'ke_schools',
+	source: 'ke_schools',
+	'source-layer': 'Kenya_Education_School-8odt1x',
+	type: 'circle',
+	paint: {
+      'circle-color': colors.accent2,
+    },
+  },
+  {
+	id: 'ke_colleges',
+	source: 'ke_colleges',
+	'source-layer': 'Kenya_Education_College-34ukfd',
+	type: 'circle',
+	paint: {
+      'circle-color': colors.accent3,
+    },
+  },
+  {
+	id: 'ke_universities',
+	source: 'ke_universities',
+	'source-layer': 'Kenya_Education_University-79bh8a',
+	type: 'circle',
+	paint: {
+      'circle-color': colors.accent4,
     },
   },
   {
@@ -211,4 +247,105 @@ export default [
       'line-width': 2,
     },
   },
+  {
+    id: 'mobile_data_airtel_2g',
+    source: 'mobile_data_airtel_2g',
+    'source-layer': 'Kenya_AirTel_2G-5cn53k',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent1,
+    },
+  },
+  {
+    id: 'mobile_data_airtel_3g',
+    source: 'mobile_data_airtel_3g',
+    'source-layer': 'Kenya_AirTel_3G-2rbgg2',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent2,
+    },
+  },
+  {
+    id: 'mobile_data_airtel_4g',
+    source: 'mobile_data_airtel_4g',
+    'source-layer': 'Kenya_AirTel_4G-0djjn4',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent3,
+    },
+  },
+  {
+    id: 'mobile_data_orange_2g',
+    source: 'mobile_data_orange_2g',
+    'source-layer': 'Kenya_Orange_Telkom_Kenya_2G-d9i7a5',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent1,
+    },
+  },
+  {
+    id: 'mobile_data_orange_3g',
+    source: 'mobile_data_orange_3g',
+    'source-layer': 'Kenya_Orange_Telkom_Kenya_3G-5jhw51',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent2,
+    },
+  },
+  {
+    id: 'mobile_data_orange_4g',
+    source: 'mobile_data_orange_4g',
+    'source-layer': 'Kenya_Orange_Telkom_Kenya_4G-agrv99',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent3,
+    },
+  },
+  {
+    id: 'mobile_data_safaricom_2g',
+    source: 'mobile_data_safaricom_2g',
+    'source-layer': 'Kenya_Safaricom_2G-65qxmz',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent1,
+    },
+  },
+  {
+    id: 'mobile_data_safaricom_3g',
+    source: 'mobile_data_safaricom_3g',
+    'source-layer': 'Kenya_Safaricom_3G-cncrjf',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent2,
+    },
+  },
+  {
+    id: 'mobile_data_safaricom_4g',
+    source: 'mobile_data_safaricom_4g',
+    'source-layer': 'Kenya_Safaricom_4G-3cmbys',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent3,
+    },
+  },
+  {
+    id: 'mobile_data_yu_2g',
+    source: 'mobile_data_yu_2g',
+    'source-layer': 'Kenya_yuMobile_2G-414jt7',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent1,
+    },
+  },
+  {
+    id: 'mobile_data_yu_3g',
+    source: 'mobile_data_yu_3g',
+    'source-layer': 'Kenya_yuMobile_2G-346xcb',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent2,
+    },
+  },
+  
+  
 ]

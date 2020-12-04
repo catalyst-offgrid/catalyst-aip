@@ -14,7 +14,7 @@ export default function Map({ center, zoom, children }) {
   useLayoutEffect(() => {
     const m = new mapbox.Map({
       container: ref.current,
-      // style: 'mapbox://styles/iandmuir/ckhom8rti07cy19pclrmewimq', // use this for high contrast roads
+      //style: 'mapbox://styles/iandmuir/ckhom8rti07cy19pclrmewimq', // use this for high contrast roads
       style: 'mapbox://styles/mapbox/light-v10',
       center,
       zoom,

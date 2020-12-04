@@ -19,7 +19,7 @@ const MainContent = styled.main`
 
   margin: ${({ noMargin }) => (noMargin ? 0 : `0 auto`)};
   padding: ${({ noMargin, theme }) =>
-    noMargin ? 0 : `${2 * theme.space[5]}px ${theme.space[5]}px`};
+    noMargin ? 0 : `${2 * theme.space[3]}px ${theme.space[5]}px`};
 
   overflow: auto;
 `
@@ -58,7 +58,7 @@ export const InfoBlock = styled.div`
 export const Tagline = styled.span`
   color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.fonts.body};
-  font-size: ${({ theme }) => theme.fontSizes[3]}pt;
+  font-size: ${({ theme }) => theme.fontSizes[2]}pt;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   text-transform: uppercase;
 `
@@ -76,7 +76,7 @@ export const PageTitle = styled.h1`
 export const Paragraph = styled.p`
   color: ${({ theme }) => theme.colors.text};
   font-family: ${({ theme }) => theme.fonts.body};
-  font-size: ${({ theme }) => theme.fontSizes[3]}pt;
+  font-size: ${({ theme }) => theme.fontSizes[1]}pt;
   font-weight: ${({ theme }) => theme.fontWeights.body};
 
   margin-top: ${({ theme }) => theme.space[4]}px;
@@ -86,7 +86,7 @@ export const Paragraph = styled.p`
 const LogoContainer = styled.figure`
   grid-column: 1 / span 5;
   align-self: end;
-  margin: 0;
+  margin: 5;
 
   display: flex;
   flex-direction: column;
@@ -105,7 +105,7 @@ const Caption = styled.figcaption`
 export const Logo = ({ withTagline }) => (
   <LogoContainer>
     {withTagline && <Caption>An Innovation Of</Caption>}
-    <img alt='CATALYST Off Grid Advisors' src={CATALYST_BLUE} width={400} />
+    <img alt='CATALYST Off Grid Advisors' src={CATALYST_BLUE} width={300} />
   </LogoContainer>
 )
 
