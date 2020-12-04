@@ -47,6 +47,16 @@ export default {
       layer: 'compress-7pv3v4',
       tilesetid: 'iandmuir.c7feip8c',
     },
+	{
+      id: 'ke_mobile_2g',
+	  layer: 'MCE_KE2G_2020-2bfoj1',
+	  tilesetid: 'iandmuir.8p507ivv',
+	},
+	{
+      id: 'ke_mobile_3g',
+	  layer: 'MCE_KE3G_2020-4yzo7v',
+	  tilesetid: 'iandmuir.c68bpwdl',
+	},
   ],
   /**
    * Vector Tilesets
@@ -223,7 +233,7 @@ export default {
       layer: 'Kenya_Education_College-34ukfd',
       tilesetid: 'iandmuir.agse7ijk',
     },
-		{
+	{
       id: 'ke_universities',
       layer: 'Kenya_Education_University-79bh8a',
       tilesetid: 'iandmuir.7kco28zt',

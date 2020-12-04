@@ -33,6 +33,7 @@ export default [
       'raster-opacity': 0.5,
     },
   },
+  
   // {
     // id: 'compress',
     // source: 'compress',
@@ -356,6 +357,24 @@ export default [
     paint: {
       'fill-color': colors.accent4,
 	  'fill-opacity': mobileOpacity,
+    },
+  },
+  {
+    id: 'ke_mobile_2g',
+    source: 'ke_mobile_2g',
+    'source-layer': 'MCE_KE2G_2020-2bfoj1',
+    type: 'raster',
+    paint: {
+      'raster-opacity': mobileOpacity,
+    },
+  },
+  {
+    id: 'ke_mobile_3g',
+    source: 'ke_mobile_3g',
+    'source-layer': 'MCE_KE3G_2020-4yzo7v',
+    type: 'raster',
+    paint: {
+      'raster-opacity': mobileOpacity,
     },
   },
   

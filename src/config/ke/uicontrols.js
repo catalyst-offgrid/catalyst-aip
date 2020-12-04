@@ -542,6 +542,29 @@ export default [
 	info:
       'Mobile Coverage Data © Collins Bartholomew and GSMA 2020',
 	controls: [
+	  {
+        id: 'allCarrier',
+        label: 'All Carriers',
+        info: 'Coverage from all carriers as self reported by the carriers in survey responses.',
+        subcontrols: [
+          {
+            id: 'ke_mobile_2g',
+            label: 'Kenya 2G Coverage',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['ke_mobile_2g'],
+            info: '',
+          }, 
+		  {
+            id: 'all3g',
+            label: 'Kenya 3G Coverage',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['ke_mobile_3g'],
+            info: '',
+          }, 
+        ],
+      },
       {
         id: 'airtel',
         label: 'AirTel',
