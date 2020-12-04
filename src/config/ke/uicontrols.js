@@ -482,11 +482,11 @@ export default [
     controls: [
       {
         id: 'arc',
-        label: 'Population Density (ARC 2016)',
+        label: 'Population Density (Heatmap)',
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['arc-population-density'],
-        info: '',
+        info: 'Source: Arc 2016',
       },
       {
         id: 'fb-population',
