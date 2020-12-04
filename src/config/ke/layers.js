@@ -12,6 +12,7 @@ const { colors } = theme
  *
  * See: https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/
  */
+var mobileOpacity = 0.35
 
 export default [
   {
@@ -254,6 +255,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent1,
+	  'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -262,7 +264,8 @@ export default [
     'source-layer': 'Kenya_AirTel_3G-2rbgg2',
     type: 'fill',
     paint: {
-      'fill-color': colors.accent2,
+      'fill-color': colors.accent4,
+	  'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -272,6 +275,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent3,
+	  'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -281,6 +285,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent1,
+	  'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -289,7 +294,8 @@ export default [
     'source-layer': 'Kenya_Orange_Telkom_Kenya_3G-5jhw51',
     type: 'fill',
     paint: {
-      'fill-color': colors.accent2,
+      'fill-color': colors.accent4,
+	  'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -299,6 +305,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent3,
+	  'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -308,6 +315,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent1,
+	  'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -316,7 +324,8 @@ export default [
     'source-layer': 'Kenya_Safaricom_3G-cncrjf',
     type: 'fill',
     paint: {
-      'fill-color': colors.accent2,
+      'fill-color': colors.accent4,
+	  'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -326,6 +335,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent3,
+	  'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -335,6 +345,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent1,
+	  'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -343,7 +354,8 @@ export default [
     'source-layer': 'Kenya_yuMobile_2G-346xcb',
     type: 'fill',
     paint: {
-      'fill-color': colors.accent2,
+      'fill-color': colors.accent4,
+	  'fill-opacity': mobileOpacity,
     },
   },
   
