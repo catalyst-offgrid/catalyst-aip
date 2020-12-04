@@ -287,7 +287,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'line', color: colors.highlight },
             layerIds: ['gridfinder'],
-            info: '',
+            info: 'Source: GridFinder',
           },
           {
             id: 'transmission_lines_11kv',
@@ -295,7 +295,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent9 },
             layerIds: ['transmission_lines_11kv'],
-            info: '',
+            info: 'Source: KPLC',
           },
           {
             id: 'transmission_lines_66kv',
@@ -303,7 +303,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent10 },
             layerIds: ['transmission_lines_66kv'],
-            info: '',
+            info: 'Source: KPLC',
           },
           {
             id: 'transmission_lines_220kv',
@@ -311,7 +311,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent11 },
             layerIds: ['transmission_lines_220kv'],
-            info: '',
+            info: 'Source: KPLC',
           },
         ],
       },
@@ -322,7 +322,7 @@ export default [
         subcontrols: [
           {
             id: 'mini-grids_under_development',
-            label: 'Mini-grids under development',
+            label: 'Mini-grids Under Development',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['mini-grids_under_development'],
@@ -330,7 +330,7 @@ export default [
           },
           {
             id: 'existing_mini-grids',
-            label: 'Existing mini-grids',
+            label: 'Existing Mini-Grids',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['existing_mini-grids'],
@@ -338,7 +338,7 @@ export default [
           },
           {
             id: 'proposed_kosap_mini-grids',
-            label: 'Proposed kosap mini-grids',
+            label: 'Proposed KOSAP Mini-Grids',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['proposed_kosap_mini-grids'],
@@ -350,7 +350,7 @@ export default [
   },
   {
     id: 'facilities',
-    label: 'Services and Institutions',
+    label: 'Institutions and Services',
     icon: Public,
     info:
       'Locations of Financial Services, Schools, Doctors, Hospitals and other Health Institutions.',
@@ -362,11 +362,11 @@ export default [
         subcontrols: [
           {
             id: 'banks',
-            label: 'Banks (OSM)',
+            label: 'Banks',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent5 },
             layerIds: ['banks'],
-            info: '',
+            info: 'Source: OSM',
           },
           {
             id: 'mfi',
@@ -490,11 +490,11 @@ export default [
       },
       {
         id: 'fb-population',
-        label: 'FB Population Density',
+        label: 'Population Density (HD)',
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['fb-population-density'],
-        info: '',
+        info: 'Source: Facebook',
       },
       {
         id: 'compress',
