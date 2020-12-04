@@ -19,7 +19,7 @@ const MainContent = styled.main`
 
   margin: ${({ noMargin }) => (noMargin ? 0 : `0 auto`)};
   padding: ${({ noMargin, theme }) =>
-    noMargin ? 0 : `${2 * theme.space[3]}px ${theme.space[5]}px`};
+    noMargin ? 0 : `${2 * theme.space[1]}px ${theme.space[5]}px`};
 
   overflow: auto;
 `
@@ -105,7 +105,7 @@ const Caption = styled.figcaption`
 export const Logo = ({ withTagline }) => (
   <LogoContainer>
     {withTagline && <Caption>An Innovation Of</Caption>}
-    <img alt='CATALYST Off Grid Advisors' src={CATALYST_BLUE} width={300} />
+    <img alt='CATALYST Off Grid Advisors' src={CATALYST_BLUE} width={400} />
   </LogoContainer>
 )
 
