@@ -33,15 +33,15 @@ export default [
       'raster-opacity': 0.5,
     },
   },
-  {
-    id: 'compress',
-    source: 'compress',
-    'source-layer': 'compress-7pv3v4',
-    type: 'raster',
-    paint: {
-      'raster-opacity': 0.5,
-    },
-  },
+  // {
+    // id: 'compress',
+    // source: 'compress',
+    // 'source-layer': 'compress-7pv3v4',
+    // type: 'raster',
+    // paint: {
+      // 'raster-opacity': 0.5,
+    // },
+  // },
   {
     id: 'all_education',
     source: 'all_education',
@@ -351,7 +351,7 @@ export default [
   {
     id: 'mobile_data_yu_3g',
     source: 'mobile_data_yu_3g',
-    'source-layer': 'Kenya_yuMobile_2G-346xcb',
+    'source-layer': 'Kenya_yuMobile_3G-346xcb',
     type: 'fill',
     paint: {
       'fill-color': colors.accent4,

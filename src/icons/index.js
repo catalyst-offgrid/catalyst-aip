@@ -17,6 +17,10 @@ import Financial from './Financial'
 import Population from './Population'
 import Public from './Public'
 import Transport from './Transport'
+import Health from './Health'
+
+import Placeholder from './Placeholder'
+
 
 export {
   Home,
@@ -36,4 +40,6 @@ export {
   Population,
   Public,
   Transport,
+  Health,
+  Placeholder,
 }

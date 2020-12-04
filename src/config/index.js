@@ -13,12 +13,12 @@ export default {
   siteName: 'Access Insights Platform',
   siteAcronym: 'AIP',
   imageUrl:
-    'https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3043&q=80',
+    'https://lh3.googleusercontent.com/oBj0pG4JQ4Nlx6F1VXsIA1iGYWRwYlmjNwDmKP-NyaUtkALATIkVEeRvJuzWWe_gZPDFOnBaeW0ZkgK7-aWo1l6Voxc3N9jDmP1i6scMqecWek-OoUj8SoNbBGDcVnHzjBd-TLo4=w2400',
   ke: {
     country: 'Kenya',
     countryCode: 'ke',
     center: [37.85335, 0.44014],
-    zoom: 7,
+    zoom: 6,
     layers,
     sources,
     uicontrols,

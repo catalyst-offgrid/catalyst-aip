@@ -205,7 +205,7 @@ export default {
     },
 	{
       id: 'mobile_data_yu_3g',
-      layer: 'Kenya_yuMobile_2G-346xcb',
+      layer: 'Kenya_yuMobile_3G-346xcb',
       tilesetid: 'iandmuir.51kz3jak',
     },
 	{
