@@ -78,7 +78,7 @@ export default function Home({ siteAcronym, siteName, imageUrl, theme }) {
           </PrimaryButton>
           <SecondaryButton
             to='/info'
-            aria-label='Read more about this project'
+            aria-label='Read some more about this project'
             data-cy='info-button'
           >
             Learn more
