@@ -397,7 +397,7 @@ export default [
         subcontrols: [
           {
             id: 'health_type1',
-            label: 'Type 1',
+            label: 'District & Sub-District Hospitals',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['health_type1'],
@@ -405,7 +405,7 @@ export default [
           },
           {
             id: 'health_type2',
-            label: 'Type 2',
+            label: 'Provincial Hospitals',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent7 },
             layerIds: ['health_type2'],
@@ -413,7 +413,7 @@ export default [
           },
           {
             id: 'health_type3',
-            label: 'Type 3',
+            label: 'Health Centers',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['health_type3'],
@@ -421,7 +421,7 @@ export default [
           },
           {
             id: 'health_type4',
-            label: 'Type 4',
+            label: 'Dispensaries',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['health_type4'],
