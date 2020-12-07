@@ -90,7 +90,7 @@ export default [
           },
           {
             id: 'Paraffin Pressure Lamp', // matches .csv column name
-            label: 'Paraffin Pressure Lamp',
+            label: 'Kerosene Pressure Lamp',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -103,7 +103,7 @@ export default [
           },
           {
             id: 'Paraffin Lantern', // matches .csv column name
-            label: 'Paraffin Lantern',
+            label: 'Kerosene Lantern',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -116,7 +116,7 @@ export default [
           },
           {
             id: 'Paraffin Tin Lamp', // matches .csv column name
-            label: 'Paraffin Tin Lamp',
+            label: 'Kerosene Tin Lamp',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -168,7 +168,7 @@ export default [
           },
           {
             id: 'Solar', // matches .csv column name
-            label: 'Solar',
+            label: 'Solar System',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -181,7 +181,7 @@ export default [
           },
           {
             id: 'Torch / Spotlight (Solar-Charged)', // matches .csv column name
-            label: 'Torch / Spotlight (Solar-Charged)',
+            label: 'Solar Lantern',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -194,7 +194,7 @@ export default [
           },
           {
             id: 'Torch / Spotlight (Dry Cells))', // matches .csv column name
-            label: 'Torch / Spotlight (Dry Cells))',
+            label: 'Dry-Cell Powered Torch',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
