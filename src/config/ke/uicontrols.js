@@ -423,7 +423,7 @@ export default [
             id: 'health_type4',
             label: 'Dispensaries',
             defaultVisibility: false,
-            legend: { type: 'dot', color: colors.accent4 },
+            legend: { type: 'dot', color: colors.accent5 },
             layerIds: ['health_type4'],
             info: '',
           },
