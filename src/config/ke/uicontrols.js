@@ -77,7 +77,7 @@ export default [
           },
           {
             id: 'Kerosene (Total)', // matches .csv column name
-            label: 'Kerosene',
+            label: 'Kerosene (Total)',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
