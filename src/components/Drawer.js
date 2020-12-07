@@ -27,7 +27,7 @@ const ScrollContainer = styled.div`
 const Actions = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: ${({ theme }) => `${theme.space[3]}px`};
+  padding: ${({ theme }) => `${theme.space[2]}px`};
   gap: ${({ theme }) => `${theme.space[3]}px`};
 `
 

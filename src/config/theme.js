@@ -38,7 +38,7 @@ export default {
   fontSizes: [10, 12, 14, 16, 32, 52],
   fontWeights: {
     body: 400,
-    heading: 700,
+    heading: 550,
     bold: 700,
   },
   space: [0, 4, 8, 16, 32, 70],

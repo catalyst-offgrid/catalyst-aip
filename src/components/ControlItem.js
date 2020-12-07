@@ -11,7 +11,7 @@ import InfoButton from './InfoButton'
 const ControlItemContainer = styled.label`
   color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.fonts.body};
-  font-size: ${({ theme }) => theme.fontSizes[2]}pt;
+  font-size: ${({ theme }) => theme.fontSizes[1]}pt;
   font-weight: ${({ theme }) => theme.fontWeights.body};
 
   background-color: ${({ theme }) => theme.colors.muted};
@@ -20,8 +20,8 @@ const ControlItemContainer = styled.label`
   display: grid;
   grid-template-columns: auto 1fr auto 16px;
   align-items: center;
-  gap: ${({ theme }) => `${theme.space[3]}px`};
-  padding: ${({ theme }) => `${theme.space[3]}px`};
+  gap: ${({ theme }) => `${theme.space[1]}px`};
+  padding: ${({ theme }) => `${theme.space[1]}px`};
 `
 
 const SliderContainer = styled.div`

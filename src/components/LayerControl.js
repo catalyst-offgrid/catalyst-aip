@@ -86,7 +86,7 @@ const ToggleButton = styled.button`
 
 const FirstLevelHeader = styled.div`
   align-items: center;
-  padding: ${({ theme }) => `${theme.space[3]}px ${theme.space[2]}px`};
+  padding: ${({ theme }) => `${theme.space[1]}px ${theme.space[1]}px`};
   display: flex;
   border-left: ${({ hasSelectedLayers, theme }) =>
     hasSelectedLayers
@@ -107,7 +107,7 @@ const FirstLevelHeading = styled.div`
     margin: 0;
     color: ${({ theme }) => theme.colors.primary};
     font-family: ${({ theme }) => theme.fonts.heading};
-    font-size: ${({ theme }) => theme.fontSizes[3]}pt;
+    font-size: ${({ theme }) => theme.fontSizes[2]}pt;
     font-weight: ${({ theme }) => theme.fontWeights.heading};
     text-align: start;
   }
@@ -255,9 +255,9 @@ const SecondLevelHeader = styled(FirstLevelHeader)`
 const SecondLevelHeading = styled.h3`
   color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.fonts.heading};
-  font-size: ${({ theme }) => theme.fontSizes[1]}pt;
+  font-size: ${({ theme }) => theme.fontSizes[0]}pt;
   font-weight: ${({ theme }) => theme.fontWeights.heading};
-  text-transform: uppercase;
+  #text-transform: uppercase;
   margin: 0;
 `
 

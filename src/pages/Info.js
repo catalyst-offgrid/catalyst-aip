@@ -12,7 +12,7 @@ import PageLayout, {
 } from '../components/PageLayout'
 
 const PartnersBlock = styled.div`
-  grid-column: 1 / span 4;
+  grid-column: 2 / span 1;
 `
 
 export default function Info({ siteAcronym, theme }) {

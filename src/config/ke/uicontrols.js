@@ -64,7 +64,7 @@ export default [
           },
           {
             id: 'Low-Quality Stopgap Total', // matches .csv column name
-            label: 'Low-Quality Stopgap Total',
+            label: 'Low-Quality Stopgap (Total)',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
