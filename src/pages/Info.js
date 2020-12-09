@@ -49,12 +49,15 @@ export default function Info({ siteAcronym, theme }) {
         </Paragraph>
         <Paragraph>
           For any inquiries and potential collaboration please contact the
-          development team <a href='mailto:development@catalystoffgrid.com'>Catalyst Off-Grid Advisors</a>
+          development team{' '}
+          <a href='mailto:development@catalystoffgrid.com'>
+            Catalyst Off-Grid Advisors
+          </a>
         </Paragraph>
         {/* TODO: Add point of contact  */}
       </InfoBlock>
 
-      <Logo withTagline/>
+      <Logo withTagline />
 
       <PartnersBlock>
         <Paragraph as='div'>

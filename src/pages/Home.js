@@ -59,9 +59,12 @@ const Image = styled.figure`
 export default function Home({ siteAcronym, siteName, imageUrl, theme }) {
   return (
     <PageLayout siteAcronym={siteAcronym} theme={theme}>
-	  <Logo />
+      <Logo />
       <Introduction>
-        <Tagline><br/>Welcome to the</Tagline>
+        <Tagline>
+          <br />
+          Welcome to the
+        </Tagline>
         <PageTitle>{siteName}</PageTitle>
         <Paragraph>
           AIP is an open-source platform for data analysis, visualizations, and
@@ -86,7 +89,7 @@ export default function Home({ siteAcronym, siteName, imageUrl, theme }) {
         </Actions>
       </Introduction>
       <Image url={imageUrl} />
-	  <PartnersBlock>
+      <PartnersBlock>
         <Paragraph as='div'>
           In partnership with <Credits />
         </Paragraph>

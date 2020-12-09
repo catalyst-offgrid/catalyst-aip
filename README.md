@@ -5,6 +5,7 @@ The Catalyst Access Insights Platform (AIP) is an open access, interactive, onli
 ![image](https://user-images.githubusercontent.com/371666/98085502-6e105a00-1ea3-11eb-94c5-44f89e2d48cd.png)
 
 # Documentation
+
 - [Outline](https://github.com/developmentseed/catalyst-aip/wiki)
 - [Introduction](https://github.com/developmentseed/catalyst-aip/wiki/Home/_edit#introduction)
 - [The Platform](https://github.com/developmentseed/catalyst-aip/wiki/The-Platform)
@@ -24,8 +25,6 @@ The Catalyst Access Insights Platform (AIP) is an open access, interactive, onli
     - [Filters](https://github.com/developmentseed/catalyst-aip/wiki/Configuring-the-Map#filters)
 - [Limitations](https://github.com/developmentseed/catalyst-aip/wiki/Limitations)
 - [Future Development](https://github.com/developmentseed/catalyst-aip/wiki/Future-Development)
-
-
 
 ## License
 

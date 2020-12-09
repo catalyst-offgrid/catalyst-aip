@@ -21,7 +21,6 @@ import Health from './Health'
 
 import Placeholder from './Placeholder'
 
-
 export {
   Home,
   Layers,

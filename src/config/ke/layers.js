@@ -33,15 +33,15 @@ export default [
       'raster-opacity': 0.5,
     },
   },
-  
+
   // {
-    // id: 'compress',
-    // source: 'compress',
-    // 'source-layer': 'compress-7pv3v4',
-    // type: 'raster',
-    // paint: {
-      // 'raster-opacity': 0.5,
-    // },
+  // id: 'compress',
+  // source: 'compress',
+  // 'source-layer': 'compress-7pv3v4',
+  // type: 'raster',
+  // paint: {
+  // 'raster-opacity': 0.5,
+  // },
   // },
   {
     id: 'all_education',
@@ -53,38 +53,38 @@ export default [
     },
   },
   {
-	id: 'ke_kindergarten',
-	source: 'ke_kindergarten',
-	'source-layer': 'Kenya_Education_Kindergarten-5ky2rp',
-	type: 'circle',
-	paint: {
+    id: 'ke_kindergarten',
+    source: 'ke_kindergarten',
+    'source-layer': 'Kenya_Education_Kindergarten-5ky2rp',
+    type: 'circle',
+    paint: {
       'circle-color': colors.accent1,
     },
   },
   {
-	id: 'ke_schools',
-	source: 'ke_schools',
-	'source-layer': 'Kenya_Education_School-8odt1x',
-	type: 'circle',
-	paint: {
+    id: 'ke_schools',
+    source: 'ke_schools',
+    'source-layer': 'Kenya_Education_School-8odt1x',
+    type: 'circle',
+    paint: {
       'circle-color': colors.accent2,
     },
   },
   {
-	id: 'ke_colleges',
-	source: 'ke_colleges',
-	'source-layer': 'Kenya_Education_College-34ukfd',
-	type: 'circle',
-	paint: {
+    id: 'ke_colleges',
+    source: 'ke_colleges',
+    'source-layer': 'Kenya_Education_College-34ukfd',
+    type: 'circle',
+    paint: {
       'circle-color': colors.accent3,
     },
   },
   {
-	id: 'ke_universities',
-	source: 'ke_universities',
-	'source-layer': 'Kenya_Education_University-79bh8a',
-	type: 'circle',
-	paint: {
+    id: 'ke_universities',
+    source: 'ke_universities',
+    'source-layer': 'Kenya_Education_University-79bh8a',
+    type: 'circle',
+    paint: {
       'circle-color': colors.accent4,
     },
   },
@@ -256,7 +256,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent1,
-	  'fill-opacity': mobileOpacity,
+      'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -266,7 +266,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent4,
-	  'fill-opacity': mobileOpacity,
+      'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -276,7 +276,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent3,
-	  'fill-opacity': mobileOpacity,
+      'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -286,7 +286,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent1,
-	  'fill-opacity': mobileOpacity,
+      'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -296,7 +296,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent4,
-	  'fill-opacity': mobileOpacity,
+      'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -306,7 +306,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent3,
-	  'fill-opacity': mobileOpacity,
+      'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -316,7 +316,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent1,
-	  'fill-opacity': mobileOpacity,
+      'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -326,7 +326,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent4,
-	  'fill-opacity': mobileOpacity,
+      'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -336,7 +336,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent3,
-	  'fill-opacity': mobileOpacity,
+      'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -346,7 +346,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent1,
-	  'fill-opacity': mobileOpacity,
+      'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -356,7 +356,7 @@ export default [
     type: 'fill',
     paint: {
       'fill-color': colors.accent4,
-	  'fill-opacity': mobileOpacity,
+      'fill-opacity': mobileOpacity,
     },
   },
   {
@@ -377,6 +377,4 @@ export default [
       'raster-opacity': mobileOpacity,
     },
   },
-  
-  
 ]
