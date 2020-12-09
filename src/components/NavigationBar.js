@@ -65,15 +65,6 @@ export default function NavigationBar({ siteAcronym, theme }) {
             aria-label='Choose country'
             data-cy='link-countries'
           >
-            <Population color={theme.colors.background} />
-          </Link>
-        </NavItem>
-        <NavItem isMatch={path === '/explore'}>
-          <Link
-            to='/explore'
-            aria-label='Explore the Map'
-            data-cy='link-explore'
-          >
             <Layers color={theme.colors.background} />
           </Link>
         </NavItem>
