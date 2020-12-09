@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Home from './pages/Home'
 import Countries from './pages/Countries'
+import Dash from './pages/Dash'
 import Explore from './pages/Explore'
 import Info from './pages/Info'
 
@@ -16,6 +17,14 @@ export default function App() {
       <Switch>
         <Route path='/countries'>
           <Countries
+            siteAcronym={config.siteAcronym}
+            siteName={config.siteName}
+            config={config.ke}
+            theme={config.theme}
+          />
+        </Route>
+        <Route path='/dash'>
+          <Dash
             siteAcronym={config.siteAcronym}
             siteName={config.siteName}
             config={config.ke}

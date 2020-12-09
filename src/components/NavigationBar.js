@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 import CATALYST_LOGO from '../../img/CATALYST_LOGO.png'
 
-import { Home, Population, Layers, Info } from '../icons'
+import { Home, Financial, Layers, Info } from '../icons'
 
 const Container = styled.nav`
   min-width: ${({ theme }) => `${theme.space[5]}px`};
@@ -66,6 +66,11 @@ export default function NavigationBar({ siteAcronym, theme }) {
             data-cy='link-countries'
           >
             <Layers color={theme.colors.background} />
+          </Link>
+        </NavItem>
+        <NavItem isMatch={path === '/dash'}>
+          <Link to='/dash' aria-label='Go to dashboard' data-cy='link-dash'>
+            <Financial color={theme.colors.background} />
           </Link>
         </NavItem>
         <NavItem isMatch={path === '/info'}>
