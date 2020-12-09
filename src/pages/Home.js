@@ -70,7 +70,7 @@ export default function Home({ siteAcronym, siteName, imageUrl, theme }) {
         </Paragraph>
         <Actions>
           <PrimaryButton
-            to='/explore'
+            to='/countries'
             aria-label='Explore the Map'
             data-cy='explore-button'
           >

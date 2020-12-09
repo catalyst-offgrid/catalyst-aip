@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Home from './pages/Home'
+import Countries from './pages/Countries'
 import Explore from './pages/Explore'
 import Info from './pages/Info'
 
@@ -13,6 +14,14 @@ export default function App() {
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
       <Switch>
+        <Route path='/countries'>
+          <Countries
+            siteAcronym={config.siteAcronym}
+            siteName={config.siteName}
+            config={config.ke}
+            theme={config.theme}
+          />
+        </Route>
         <Route path='/explore'>
           <Explore
             siteAcronym={config.siteAcronym}
