@@ -272,6 +272,19 @@ export default [
             info: '',
           },
           {
+            id: 'FooBar', // matches .csv column name
+            label: 'FooBar Csv Data',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 50 },
+              domain: [0, 50],
+              unit: '%',
+            },
+            layerIds: ['FooBar'],
+            info: '',
+          },
+          {
             id: 'Cooking - Firewood', // matches .csv column name
             label: 'Firewood',
             defaultVisibility: false,
