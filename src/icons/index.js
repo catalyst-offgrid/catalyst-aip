@@ -17,9 +17,13 @@ import Financial from './Financial'
 import Population from './Population'
 import Public from './Public'
 import Transport from './Transport'
-import Health from './Health'
 
+import Health from './Health'
 import Placeholder from './Placeholder'
+import Mobile from './Mobile'
+import EconHealth from './EconHealth'
+import HHAsset from './HHAsset'
+import EconAct from './EconAct'
 
 
 export {
@@ -42,4 +46,8 @@ export {
   Transport,
   Health,
   Placeholder,
+  Mobile,
+  EconHealth,
+  HHAsset,
+  EconAct,
 }

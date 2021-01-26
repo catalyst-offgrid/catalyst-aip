@@ -1,4 +1,4 @@
-import { AdminBoundaries, Energy, Population, Public, Health, Placeholder } from '../../icons'
+import { AdminBoundaries, Energy, Population, Public, Health, Placeholder, Mobile, EconHealth, HHAsset, EconAct} from '../../icons'
 import theme from '../theme'
 const { colors } = theme
 
@@ -536,8 +536,8 @@ export default [
   },
   {
     id: 'mobileData',
-    label: 'Mobile Data',
-    icon: Placeholder,
+    label: 'Mobile Coverage',
+    icon: Mobile,
     description:'',
 	info:
       'Mobile Coverage Data © Collins Bartholomew and GSMA 2020',
@@ -686,7 +686,7 @@ export default [
   {
     id: 'health',
     label: 'Health',
-    icon: Placeholder,
+    icon: Health,
 	description:'',
     info: 'Explores access to services that impact health and health outcomes.',
     controls: [
@@ -734,7 +734,7 @@ export default [
   {
     id: 'hhAssets',
     label: 'Household Assets',
-    icon: Placeholder,
+    icon: HHAsset,
 	description:'',
     info: 'Assets and ownership.',
     controls: [
@@ -774,7 +774,7 @@ export default [
     {
     id: 'economicHealth',
     label: 'Economic Health',
-    icon: Placeholder,
+    icon: EconHealth,
 	description:'',
     info: 'Assets and ownership.',
     controls: [
@@ -823,7 +823,7 @@ export default [
   {
     id: 'economicActivity',
     label: 'Economic Activity',
-    icon: Placeholder,
+    icon: EconAct,
 	description:'',
     info: 'Work and Expenditure',
     controls: [
