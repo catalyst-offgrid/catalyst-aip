@@ -18,7 +18,8 @@ export default function Map({ center, zoom, children }) {
       style: 'mapbox://styles/mapbox/light-v10',
       center,
       zoom,
-	  customAttribution: "Mobile Coverage Data © Collins Bartholomew and GSMA 2020"
+      customAttribution:
+        'Mobile Coverage Data © Collins Bartholomew and GSMA 2020',
     })
 
     m.addControl(new mapbox.NavigationControl({ visualizePitch: true }))

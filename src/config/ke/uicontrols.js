@@ -1,4 +1,15 @@
-import { AdminBoundaries, Energy, Population, Public, Health, Placeholder, Mobile, EconHealth, HHAsset, EconAct} from '../../icons'
+import {
+  AdminBoundaries,
+  Energy,
+  Population,
+  Public,
+  Health,
+  //Placeholder,
+  Mobile,
+  EconHealth,
+  HHAsset,
+  EconAct,
+} from '../../icons'
 import theme from '../theme'
 const { colors } = theme
 
@@ -7,7 +18,7 @@ export default [
     id: 'admin',
     label: 'Administrative Boundaries',
     icon: AdminBoundaries,
-	description:'',
+    description: '',
     info: 'Administritative boundaries from the Government of Kenya.',
     controls: [
       {
@@ -40,7 +51,7 @@ export default [
     id: 'energy',
     label: 'Energy',
     icon: Energy,
-	description:'',
+    description: '',
     info: 'Information on Energy Sources.',
     controls: [
       {
@@ -58,9 +69,10 @@ export default [
               domain: [0, 100],
               unit: '%',
             },
-			color: colors.accent1,
+            color: colors.accent1,
             layerIds: ['Main Electricity'],
-            info: 'Percentage of households in each area that are lit by electricity from a grid connection. <br> Here is how.',
+            info:
+              'Percentage of households in each area that are lit by electricity from a grid connection. <br> Here is how.',
           },
           {
             id: 'Low-Quality Stopgap Total', // matches .csv column name
@@ -355,7 +367,7 @@ export default [
     id: 'facilities',
     label: 'Institutions and Services',
     icon: Public,
-	description:'',
+    description: '',
     info:
       'Locations of Financial Services, Schools, Doctors, Hospitals and other Health Institutions.',
     controls: [
@@ -393,7 +405,8 @@ export default [
       {
         id: 'healthFacs',
         label: 'Health Facilities',
-        info: 'Displays the locations of the health facilities in Kenya by the facility type.',
+        info:
+          'Displays the locations of the health facilities in Kenya by the facility type.',
         subcontrols: [
           {
             id: 'health_type1',
@@ -429,52 +442,53 @@ export default [
           },
         ],
       },
-	  {
+      {
         id: 'education',
         label: 'Education Facilities',
-        info: 'Displays the locations of the education facilities in Kenya by the facility type.',
+        info:
+          'Displays the locations of the education facilities in Kenya by the facility type.',
         subcontrols: [
-		{
-			id: 'all_education',
-			label: 'All Education Facilities',
-			defaultVisibility: false,
-			legend: { type: 'dot', color: colors.charmpink },
-			layerIds: ['all_education'],
-			info: '',
-		},
-		{
-			id: 'ke_kindergarten',
-			label: 'Kindergartens',
-			defaultVisibility: false,
-			legend: { type: 'dot', color: colors.accent1 },
-			layerIds: ['ke_kindergarten'],
-			info: '',
-		},
-		{
-			id: 'ke_schools',
-			label: 'Schools',
-			defaultVisibility: false,
-			legend: { type: 'dot', color: colors.accent2},
-			layerIds: ['ke_schools'],
-			info: '',
-		},
-				{
-			id: 'ke_colleges',
-			label: 'Colleges',
-			defaultVisibility: false,
-			legend: { type: 'dot', color: colors.accent3},
-			layerIds: ['ke_colleges'],
-			info: '',
-		},
-				{
-			id: 'ke_universities',
-			label: 'Universities',
-			defaultVisibility: false,
-			legend: { type: 'dot', color: colors.accent4},
-			layerIds: ['ke_universities'],
-			info: '',
-		},
-		],
+          {
+            id: 'all_education',
+            label: 'All Education Facilities',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.charmpink },
+            layerIds: ['all_education'],
+            info: '',
+          },
+          {
+            id: 'ke_kindergarten',
+            label: 'Kindergartens',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent1 },
+            layerIds: ['ke_kindergarten'],
+            info: '',
+          },
+          {
+            id: 'ke_schools',
+            label: 'Schools',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent2 },
+            layerIds: ['ke_schools'],
+            info: '',
+          },
+          {
+            id: 'ke_colleges',
+            label: 'Colleges',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent3 },
+            layerIds: ['ke_colleges'],
+            info: '',
+          },
+          {
+            id: 'ke_universities',
+            label: 'Universities',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent4 },
+            layerIds: ['ke_universities'],
+            info: '',
+          },
+        ],
       },
     ],
   },
@@ -482,55 +496,57 @@ export default [
     id: 'demographics',
     label: 'Population & Demographics',
     icon: Population,
-	description:'',
+    description: '',
     info: 'Population density, demographic statistics and Night Lights.',
     controls: [
-	{
+      {
         id: 'popAndMovement',
         label: 'Population and Movement',
-        info: 'Displays where the people of Kenya live and the patterns in their movement.',
+        info:
+          'Displays where the people of Kenya live and the patterns in their movement.',
         subcontrols: [
-		{
-			id: 'arc',
-			label: 'Population Density (Heatmap)',
-			defaultVisibility: false,
-			legend: 'none',
-			layerIds: ['arc-population-density'],
-			info: 'Source: Arc 2016',
-		},
-		{
-			id: 'fb-population',
-			label: 'Population Density (HD)',
-			defaultVisibility: false,
-			legend: 'none',
-			layerIds: ['fb-population-density'],
-			info: 'Source: Facebook',
-		},
-		],
-	},
-	{
+          {
+            id: 'arc',
+            label: 'Population Density (Heatmap)',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['arc-population-density'],
+            info: 'Source: Arc 2016',
+          },
+          {
+            id: 'fb-population',
+            label: 'Population Density (HD)',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['fb-population-density'],
+            info: 'Source: Facebook',
+          },
+        ],
+      },
+      {
         id: 'ageRanges',
         label: 'Age Ranges',
         info: 'Breakdown of the regions by the age of their population.',
         subcontrols: [
-		// Add layers here
-		],
-	},
-	{
+          // Add layers here
+        ],
+      },
+      {
         id: 'householdChar',
         label: 'Household Characteristics',
-        info: 'Descriptive statistics of the households located in each region.',
+        info:
+          'Descriptive statistics of the households located in each region.',
         subcontrols: [
-		// Add layers here
-		],
-	},
+          // Add layers here
+        ],
+      },
       // {
-        // id: 'compress',
-        // label: 'Night Lights',
-        // defaultVisibility: false,
-        // legend: 'none',
-        // layerIds: ['compress'],
-        // info: '',
+      // id: 'compress',
+      // label: 'Night Lights',
+      // defaultVisibility: false,
+      // legend: 'none',
+      // layerIds: ['compress'],
+      // info: '',
       // },
     ],
   },
@@ -538,14 +554,14 @@ export default [
     id: 'mobileData',
     label: 'Mobile Coverage',
     icon: Mobile,
-    description:'',
-	info:
-      'Mobile Coverage Data © Collins Bartholomew and GSMA 2020',
-	controls: [
-	  {
+    description: '',
+    info: 'Mobile Coverage Data © Collins Bartholomew and GSMA 2020',
+    controls: [
+      {
         id: 'allCarrier',
         label: 'All Carriers',
-        info: 'Coverage from all carriers as self reported by the carriers in survey responses.',
+        info:
+          'Coverage from all carriers as self reported by the carriers in survey responses.',
         subcontrols: [
           {
             id: 'ke_mobile_2g',
@@ -555,7 +571,7 @@ export default [
             layerIds: ['ke_mobile_2g'],
             info: '',
           },
-		  {
+          {
             id: 'all3g',
             label: 'Kenya 3G Coverage',
             defaultVisibility: false,
@@ -578,7 +594,7 @@ export default [
             layerIds: ['mobile_data_airtel_2g'],
             info: '',
           },
-		  {
+          {
             id: 'airtel3g',
             label: 'AirTel 3G',
             defaultVisibility: false,
@@ -586,7 +602,7 @@ export default [
             layerIds: ['mobile_data_airtel_3g'],
             info: '',
           },
-		  {
+          {
             id: 'airtel4g',
             label: 'AirTel 4G',
             defaultVisibility: false,
@@ -627,7 +643,7 @@ export default [
           },
         ],
       },
-	  {
+      {
         id: 'safaricom',
         label: 'Safaricom',
         info: 'Coverage on the Safaricom Network',
@@ -658,7 +674,7 @@ export default [
           },
         ],
       },
-	  {
+      {
         id: 'yu',
         label: 'YuMobile',
         info: 'Coverage on the YuMobile Network',
@@ -687,190 +703,190 @@ export default [
     id: 'health',
     label: 'Health',
     icon: Health,
-	description:'',
+    description: '',
     info: 'Explores access to services that impact health and health outcomes.',
     controls: [
-	{
+      {
         id: 'wasteDisposal',
         label: 'Mode of Human Waste Disposal',
         info: '',
         subcontrols: [
-		// {
-			// id: 'arc',
-			// label: 'Population Density (Heatmap)',
-			// defaultVisibility: false,
-			// legend: 'none',
-			// layerIds: ['arc-population-density'],
-			// info: 'Source: Arc 2016',
-		// },
-		{
-			 id: 'Main Sewer - Human Waste Disposal',
-			 label: 'Sewers',
-			 defaultVisibility: false,
-			 legend: {
-			   type: 'gradient',
-			   defaultRange: { min: 0, max: 50 },
-			   domain: [0, 100],
-			   unit: '%',
-			 },
-			 layerIds: ['Main Sewer - Human Waste Disposal'],
-			 info: ' ',
-		},
-		],
-	},
-	{
+          // {
+          // id: 'arc',
+          // label: 'Population Density (Heatmap)',
+          // defaultVisibility: false,
+          // legend: 'none',
+          // layerIds: ['arc-population-density'],
+          // info: 'Source: Arc 2016',
+          // },
+          {
+            id: 'Main Sewer - Human Waste Disposal',
+            label: 'Sewers',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 50 },
+              domain: [0, 100],
+              unit: '%',
+            },
+            layerIds: ['Main Sewer - Human Waste Disposal'],
+            info: ' ',
+          },
+        ],
+      },
+      {
         id: 'drinkingWater',
         label: 'Source of Drinking Water',
         info: '',
         subcontrols: [
-		// Add layers here
-		],
-	},
-	{
+          // Add layers here
+        ],
+      },
+      {
         id: 'births',
         label: 'Births',
         info: '',
         subcontrols: [
-		// Add layers here
-		],
-	},
+          // Add layers here
+        ],
+      },
     ],
   },
   {
     id: 'hhAssets',
     label: 'Household Assets',
     icon: HHAsset,
-	description:'',
+    description: '',
     info: 'Assets and ownership.',
     controls: [
-	{
+      {
         id: 'electronic_appliance',
         label: 'Electronics and Appliances',
         info: '',
         subcontrols: [
-		// {
-			// id: 'arc',
-			// label: 'Population Density (Heatmap)',
-			// defaultVisibility: false,
-			// legend: 'none',
-			// layerIds: ['arc-population-density'],
-			// info: 'Source: Arc 2016',
-		// },
-		// {
-			// id: 'fb-population',
-			// label: 'Population Density (HD)',
-			// defaultVisibility: false,
-			// legend: 'none',
-			// layerIds: ['fb-population-density'],
-			// info: 'Source: Facebook',
-		// },
-		],
-	},
-	{
+          // {
+          // id: 'arc',
+          // label: 'Population Density (Heatmap)',
+          // defaultVisibility: false,
+          // legend: 'none',
+          // layerIds: ['arc-population-density'],
+          // info: 'Source: Arc 2016',
+          // },
+          // {
+          // id: 'fb-population',
+          // label: 'Population Density (HD)',
+          // defaultVisibility: false,
+          // legend: 'none',
+          // layerIds: ['fb-population-density'],
+          // info: 'Source: Facebook',
+          // },
+        ],
+      },
+      {
         id: 'vehicles',
         label: 'Vehicles',
         info: '',
         subcontrols: [
-		// Add layers here
-		],
-	},
+          // Add layers here
+        ],
+      },
     ],
   },
-    {
+  {
     id: 'economicHealth',
     label: 'Economic Health',
     icon: EconHealth,
-	description:'',
+    description: '',
     info: 'Assets and ownership.',
     controls: [
-	{
+      {
         id: 'roof',
         label: 'Roof Material',
         info: '',
         subcontrols: [
-		// Add layers here
-		// {
-			// id: 'arc',
-			// label: 'Population Density (Heatmap)',
-			// defaultVisibility: false,
-			// legend: 'none',
-			// layerIds: ['arc-population-density'],
-			// info: 'Source: Arc 2016',
-		// },
-		// {
-			// id: 'fb-population',
-			// label: 'Population Density (HD)',
-			// defaultVisibility: false,
-			// legend: 'none',
-			// layerIds: ['fb-population-density'],
-			// info: 'Source: Facebook',
-		// },
-		],
-	},
-	{
+          // Add layers here
+          // {
+          // id: 'arc',
+          // label: 'Population Density (Heatmap)',
+          // defaultVisibility: false,
+          // legend: 'none',
+          // layerIds: ['arc-population-density'],
+          // info: 'Source: Arc 2016',
+          // },
+          // {
+          // id: 'fb-population',
+          // label: 'Population Density (HD)',
+          // defaultVisibility: false,
+          // legend: 'none',
+          // layerIds: ['fb-population-density'],
+          // info: 'Source: Facebook',
+          // },
+        ],
+      },
+      {
         id: 'wall_material',
         label: 'Wall Material',
         info: '',
         subcontrols: [
-		// Add layers here
-		],
-	},
-	{
+          // Add layers here
+        ],
+      },
+      {
         id: 'floor_material',
         label: 'Floor Material',
         info: '',
         subcontrols: [
-		// Add layers here
-		],
-	},
+          // Add layers here
+        ],
+      },
     ],
   },
   {
     id: 'economicActivity',
     label: 'Economic Activity',
     icon: EconAct,
-	description:'',
+    description: '',
     info: 'Work and Expenditure',
     controls: [
-	{
+      {
         id: 'industry_participation',
         label: 'Industry Participation',
         info: '',
         subcontrols: [
-		// {
-			// id: 'arc',
-			// label: 'Population Density (Heatmap)',
-			// defaultVisibility: false,
-			// legend: 'none',
-			// layerIds: ['arc-population-density'],
-			// info: 'Source: Arc 2016',
-		// },
-		// {
-			// id: 'fb-population',
-			// label: 'Population Density (HD)',
-			// defaultVisibility: false,
-			// legend: 'none',
-			// layerIds: ['fb-population-density'],
-			// info: 'Source: Facebook',
-		// },
-		],
-	},
-	{
+          // {
+          // id: 'arc',
+          // label: 'Population Density (Heatmap)',
+          // defaultVisibility: false,
+          // legend: 'none',
+          // layerIds: ['arc-population-density'],
+          // info: 'Source: Arc 2016',
+          // },
+          // {
+          // id: 'fb-population',
+          // label: 'Population Density (HD)',
+          // defaultVisibility: false,
+          // legend: 'none',
+          // layerIds: ['fb-population-density'],
+          // info: 'Source: Facebook',
+          // },
+        ],
+      },
+      {
         id: 'livestock_fish',
         label: 'Livestock & Fish',
         info: '',
         subcontrols: [
-		// Add layers here
-		],
-	},
-	{
+          // Add layers here
+        ],
+      },
+      {
         id: 'permanent_crops',
         label: 'Permanent Crop Growth',
         info: '',
         subcontrols: [
-		// Add layers here
-		],
-	},
+          // Add layers here
+        ],
+      },
     ],
   },
 ]
