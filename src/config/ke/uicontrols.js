@@ -730,7 +730,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Main Sewer - Human Waste Disposal'],
-            info: ' ',
+            info: '',
           },
         ],
       },
