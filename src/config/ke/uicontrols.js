@@ -512,7 +512,7 @@ export default [
         id: 'ageRanges',
         label: 'Age Ranges',
         info: 'Breakdown of the regions by the age of their population.',
-        subcontrols: [	
+        subcontrols: [
 		// Add layers here
 		],
 	},
@@ -520,7 +520,7 @@ export default [
         id: 'householdChar',
         label: 'Household Characteristics',
         info: 'Descriptive statistics of the households located in each region.',
-        subcontrols: [	
+        subcontrols: [
 		// Add layers here
 		],
 	},
@@ -554,7 +554,7 @@ export default [
             legend: 'none',
             layerIds: ['ke_mobile_2g'],
             info: '',
-          }, 
+          },
 		  {
             id: 'all3g',
             label: 'Kenya 3G Coverage',
@@ -562,7 +562,7 @@ export default [
             legend: 'none',
             layerIds: ['ke_mobile_3g'],
             info: '',
-          }, 
+          },
         ],
       },
       {
@@ -577,7 +577,7 @@ export default [
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['mobile_data_airtel_2g'],
             info: '',
-          }, 
+          },
 		  {
             id: 'airtel3g',
             label: 'AirTel 3G',
@@ -585,7 +585,7 @@ export default [
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['mobile_data_airtel_3g'],
             info: '',
-          }, 
+          },
 		  {
             id: 'airtel4g',
             label: 'AirTel 4G',
@@ -593,7 +593,7 @@ export default [
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['mobile_data_airtel_4g'],
             info: '',
-          }, 
+          },
         ],
       },
       {
@@ -703,21 +703,26 @@ export default [
 			// layerIds: ['arc-population-density'],
 			// info: 'Source: Arc 2016',
 		// },
-		// {
-			// id: 'fb-population',
-			// label: 'Population Density (HD)',
-			// defaultVisibility: false,
-			// legend: 'none',
-			// layerIds: ['fb-population-density'],
-			// info: 'Source: Facebook',
-		// },
+		{
+			 id: 'Main Sewer - Human Waste Disposal',
+			 label: 'Sewers',
+			 defaultVisibility: false,
+			 legend: {
+			   type: 'gradient',
+			   defaultRange: { min: 0, max: 50 },
+			   domain: [0, 100],
+			   unit: '%',
+			 },
+			 layerIds: ['Main Sewer - Human Waste Disposal'],
+			 info: ' ',
+		},
 		],
 	},
 	{
         id: 'drinkingWater',
         label: 'Source of Drinking Water',
         info: '',
-        subcontrols: [	
+        subcontrols: [
 		// Add layers here
 		],
 	},
@@ -725,7 +730,7 @@ export default [
         id: 'births',
         label: 'Births',
         info: '',
-        subcontrols: [	
+        subcontrols: [
 		// Add layers here
 		],
 	},
@@ -765,7 +770,7 @@ export default [
         id: 'vehicles',
         label: 'Vehicles',
         info: '',
-        subcontrols: [	
+        subcontrols: [
 		// Add layers here
 		],
 	},
@@ -806,7 +811,7 @@ export default [
         id: 'wall_material',
         label: 'Wall Material',
         info: '',
-        subcontrols: [	
+        subcontrols: [
 		// Add layers here
 		],
 	},
@@ -814,7 +819,7 @@ export default [
         id: 'floor_material',
         label: 'Floor Material',
         info: '',
-        subcontrols: [	
+        subcontrols: [
 		// Add layers here
 		],
 	},
@@ -854,7 +859,7 @@ export default [
         id: 'livestock_fish',
         label: 'Livestock & Fish',
         info: '',
-        subcontrols: [	
+        subcontrols: [
 		// Add layers here
 		],
 	},
@@ -862,7 +867,7 @@ export default [
         id: 'permanent_crops',
         label: 'Permanent Crop Growth',
         info: '',
-        subcontrols: [	
+        subcontrols: [
 		// Add layers here
 		],
 	},
