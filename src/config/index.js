@@ -24,5 +24,15 @@ export default {
     uicontrols,
     csv,
   },
+  ug: {
+    country: 'Uganda',
+    countryCode: 'ug',
+    center: [32.391613, 1.56394],
+    zoom: 6,
+    layers,
+    sources,
+    uicontrols,
+    csv,
+  },
   theme,
 }

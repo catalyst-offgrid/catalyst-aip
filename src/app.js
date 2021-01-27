@@ -20,7 +20,6 @@ export default function App() {
           <Modules
             siteAcronym={config.siteAcronym}
             siteName={config.siteName}
-            config={config.ke}
             theme={config.theme}
           />
 		</Route>
@@ -28,7 +27,6 @@ export default function App() {
           <Countries
             siteAcronym={config.siteAcronym}
             siteName={config.siteName}
-            config={config.ke}
             theme={config.theme}
           />
         </Route>
@@ -36,7 +34,6 @@ export default function App() {
           <Dash
             siteAcronym={config.siteAcronym}
             siteName={config.siteName}
-            config={config.ke}
             theme={config.theme}
           />
         </Route>
@@ -44,7 +41,7 @@ export default function App() {
           <Explore
             siteAcronym={config.siteAcronym}
             siteName={config.siteName}
-            config={config.ke}
+            config={config.ug}
             theme={config.theme}
           />
         </Route>
