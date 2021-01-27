@@ -6,6 +6,7 @@ import Countries from './pages/Countries'
 import Dash from './pages/Dash'
 import Explore from './pages/Explore'
 import Info from './pages/Info'
+import Modules from './pages/Modules'
 
 import config from './config'
 
@@ -14,7 +15,15 @@ export default function App() {
     <BrowserRouter>
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-      <Switch>
+      <Switch>        
+		<Route path='/modules'>
+          <Modules
+            siteAcronym={config.siteAcronym}
+            siteName={config.siteName}
+            config={config.ke}
+            theme={config.theme}
+          />
+		</Route>
         <Route path='/countries'>
           <Countries
             siteAcronym={config.siteAcronym}

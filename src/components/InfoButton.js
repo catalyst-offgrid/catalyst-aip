@@ -8,7 +8,7 @@ import { InfoSmall } from '../icons'
 
 const TooltipPopup = styled(ReachTooltipPopup)`
   max-width: 200px;
-  white-space: unset;
+  white-space: pre-wrap;
   background: ${({ theme }) => theme.colors.text};
   color: ${({ theme }) => theme.colors.background};
   border: none;

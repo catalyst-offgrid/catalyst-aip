@@ -67,7 +67,7 @@ export default [
             color: colors.accent1,
             layerIds: ['Main Electricity'],
             info:
-              'Percentage of households in each area that are lit by electricity from a grid connection. <br> Here is how.',
+			'Percentage of households in each area that are lit by electricity from a grid connection. \n\nHere is how.',
           },
           {
             id: 'Low-Quality Stopgap Total', // matches .csv column name
