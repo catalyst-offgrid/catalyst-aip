@@ -90,7 +90,7 @@ exports[`LayerControl matches the snapshot 1`] = `
 .c5 {
   color: #304CA2;
   font-family: Open Sans,sans-serif;
-  font-size: 14pt;
+  font-size: 12pt;
   font-weight: 400;
   background-color: #F4F5F7;
   border-top: 1px solid #FFFFFF;
@@ -100,8 +100,8 @@ exports[`LayerControl matches the snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 16px;
-  padding: 16px;
+  gap: 4px;
+  padding: 4px;
 }
 
 .c18 {
@@ -209,7 +209,7 @@ exports[`LayerControl matches the snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 8px;
+  padding: 4px 4px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -225,7 +225,7 @@ exports[`LayerControl matches the snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 8px;
+  padding: 4px 4px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -254,8 +254,8 @@ exports[`LayerControl matches the snapshot 1`] = `
   margin: 0;
   color: #304CA2;
   font-family: Open Sans,sans-serif;
-  font-size: 16pt;
-  font-weight: 700;
+  font-size: 14pt;
+  font-weight: 550;
   text-align: start;
 }
 
@@ -295,9 +295,9 @@ exports[`LayerControl matches the snapshot 1`] = `
 .c16 {
   color: #304CA2;
   font-family: Open Sans,sans-serif;
-  font-size: 12pt;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 10pt;
+  font-weight: 550;
+  #text-transform: uppercase;
   margin: 0;
 }
 

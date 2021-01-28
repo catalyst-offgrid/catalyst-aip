@@ -47,16 +47,16 @@ export default {
       layer: 'compress-7pv3v4',
       tilesetid: 'iandmuir.c7feip8c',
     },
-	{
+    {
       id: 'ke_mobile_2g',
-	  layer: 'MCE_KE2G_2020-2bfoj1',
-	  tilesetid: 'iandmuir.8p507ivv',
-	},
-	{
+      layer: 'MCE_KE2G_2020-2bfoj1',
+      tilesetid: 'iandmuir.8p507ivv',
+    },
+    {
       id: 'ke_mobile_3g',
-	  layer: 'MCE_KE3G_2020-4yzo7v',
-	  tilesetid: 'iandmuir.c68bpwdl',
-	},
+      layer: 'MCE_KE3G_2020-4yzo7v',
+      tilesetid: 'iandmuir.c68bpwdl',
+    },
   ],
   /**
    * Vector Tilesets
@@ -163,17 +163,17 @@ export default {
       layer: 'Counties_47_-_Coded-1htj4o',
       tilesetid: 'iandmuir.6e5zcwl0',
     },
-	{
+    {
       id: 'mobile_data_airtel_2g',
       layer: 'Kenya_AirTel_2G-5cn53k',
       tilesetid: 'iandmuir.al27wibf',
     },
-	{
+    {
       id: 'mobile_data_airtel_3g',
       layer: 'Kenya_AirTel_3G-2rbgg2',
       tilesetid: 'iandmuir.cvqp4ruy',
     },
-	{
+    {
       id: 'mobile_data_airtel_4g',
       layer: 'Kenya_AirTel_4G-0djjn4',
       tilesetid: 'iandmuir.6on4c2sx',
@@ -188,12 +188,12 @@ export default {
       layer: 'Kenya_Orange_Telkom_Kenya_3G-5jhw51',
       tilesetid: 'iandmuir.05bpljjf',
     },
-	{
+    {
       id: 'mobile_data_orange_4g',
       layer: 'Kenya_Orange_Telkom_Kenya_4G-agrv99',
       tilesetid: 'iandmuir.awo8csfo',
     },
-	{
+    {
       id: 'mobile_data_safaricom_2g',
       layer: 'Kenya_Safaricom_2G-65qxmz',
       tilesetid: 'iandmuir.7mq790n8',
@@ -203,42 +203,41 @@ export default {
       layer: 'Kenya_Safaricom_3G-cncrjf',
       tilesetid: 'iandmuir.7egb86kw',
     },
-	{
+    {
       id: 'mobile_data_safaricom_4g',
       layer: 'Kenya_Safaricom_4G-3cmbys',
       tilesetid: 'iandmuir.cp1jqqfk',
     },
-	{
+    {
       id: 'mobile_data_yu_2g',
       layer: 'Kenya_yuMobile_2G-414jt7',
       tilesetid: 'iandmuir.254mj8g2',
     },
-	{
+    {
       id: 'mobile_data_yu_3g',
       layer: 'Kenya_yuMobile_3G-346xcb',
       tilesetid: 'iandmuir.51kz3jak',
     },
-	{
+    {
       id: 'ke_kindergarten',
       layer: 'Kenya_Education_Kindergarten-5ky2rp',
       tilesetid: 'iandmuir.0i98qj63',
     },
-	{
+    {
       id: 'ke_schools',
       layer: 'Kenya_Education_School-8odt1x',
       tilesetid: 'iandmuir.0kuetd35',
     },
-		{
+    {
       id: 'ke_colleges',
       layer: 'Kenya_Education_College-34ukfd',
       tilesetid: 'iandmuir.agse7ijk',
     },
-	{
+    {
       id: 'ke_universities',
       layer: 'Kenya_Education_University-79bh8a',
       tilesetid: 'iandmuir.7kco28zt',
     },
-	
   ],
   /**
    * GeoJSON Datasets

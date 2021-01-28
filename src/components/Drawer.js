@@ -4,7 +4,7 @@ import styled, { ThemeContext } from 'styled-components'
 import { ArrowLoop, Download } from '../icons'
 
 import Header from './Header'
-import Credits from './Credits'
+//import Credits from './Credits'
 
 const Container = styled.section`
   grid-column: 1 / span 3;
@@ -82,7 +82,6 @@ export default function Drawer({
 
       <ScrollContainer>{children}</ScrollContainer>
 
-      
       <Actions>
         {hasSelectedLayers && (
           <SecondaryButton

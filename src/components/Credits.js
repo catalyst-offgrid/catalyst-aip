@@ -21,7 +21,7 @@ export default function Credits() {
   return (
     <Container>
       <img alt='UK aid' src={UKAID_LOGO} height={50} />
-	  <img alt='CDC Group plc' src={CDC_LOGO} height={50} />
+      <img alt='CDC Group plc' src={CDC_LOGO} height={50} />
       <img
         alt='Access to Energy Institute (A2EI)'
         src={A2EI_LOGO}

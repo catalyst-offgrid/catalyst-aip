@@ -2,7 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Health = ({ color = 'none', background = 'none' }) => (
-  <svg width='32' height='32' xmlns='http://www.w3.org/2000/svg' viewBox="0 0 32 32">
+  <svg
+    width='32'
+    height='32'
+    xmlns='http://www.w3.org/2000/svg'
+    viewBox='0 0 32 32'
+  >
     <g fill='none' fillRule='evenodd'>
       <rect fill={background} width='32' height='32' rx='4' />
       <g fill={color} fillRule='nonzero'>
