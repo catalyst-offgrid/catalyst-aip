@@ -93,7 +93,7 @@ describe('Layer', () => {
       layerWrapper = renderer.create(
         <Layer
           id={layer.id}
-          isVisible={true} // TODO: why does this test pass, when this is _not_ a bool?
+          isVisible={'why?'} // TODO: why does this test pass, when this is _not_ a bool?
           spec={layer}
           sourceId={source.id}
           map={mapbox.Map()}
