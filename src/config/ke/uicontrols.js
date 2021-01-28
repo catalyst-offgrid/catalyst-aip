@@ -740,6 +740,19 @@ export default [
         info: '',
         subcontrols: [
           // Add layers here
+          {
+            id: 'Dam/Lake - Drinking Water Source', // matches .csv column name
+            label: 'Dam/Lake',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 50 },
+              domain: [0, 50],
+              unit: '%',
+            },
+            layerIds: ['Dam/Lake - Drinking Water Source'],
+            info: '',
+          },
         ],
       },
       {
@@ -748,6 +761,19 @@ export default [
         info: '',
         subcontrols: [
           // Add layers here
+          {
+            id: 'Total Births - 12 Months', // matches .csv column name
+            label: 'Total Births (1 Year)',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 100 },
+              domain: [0, 100],
+              unit: '%',
+            },
+            layerIds: ['Dam/Lake - Drinking Water Source'],
+            info: '',
+          },
         ],
       },
     ],
@@ -780,6 +806,20 @@ export default [
           // layerIds: ['fb-population-density'],
           // info: 'Source: Facebook',
           // },
+          {
+            id: 'Computer/Tablet', // matches .csv column name
+            label: 'Computer/Tablet',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 50 },
+              domain: [0, 50],
+              unit: '%',
+            },
+            layerIds: ['Computer/Tablet'],
+            info: '',
+          },
+
         ],
       },
       {
@@ -788,6 +828,19 @@ export default [
         info: '',
         subcontrols: [
           // Add layers here
+          {
+            id: 'Car', // matches .csv column name
+            label: 'Car',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 50 },
+              domain: [0, 50],
+              unit: '%',
+            },
+            layerIds: ['Car'],
+            info: '',
+          },
         ],
       },
     ],
@@ -821,6 +874,19 @@ export default [
           // layerIds: ['fb-population-density'],
           // info: 'Source: Facebook',
           // },
+          {
+            id: 'Grass/Twigs - Roofing', // matches .csv column name
+            label: 'Grass/Twigs',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 100 },
+              domain: [0, 100],
+              unit: '%',
+            },
+            layerIds: ['Grass/Twigs - Roofing'],
+            info: '',
+          },
         ],
       },
       {
@@ -829,6 +895,19 @@ export default [
         info: '',
         subcontrols: [
           // Add layers here
+          {
+            id: 'Mud/Cow Dung - Wall Material', // matches .csv column name
+            label: 'Mud/Cow Dung',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 100 },
+              domain: [0, 100],
+              unit: '%',
+            },
+            layerIds: ['Mud/Cow Dung - Wall Material'],
+            info: '',
+          },
         ],
       },
       {
@@ -837,6 +916,19 @@ export default [
         info: '',
         subcontrols: [
           // Add layers here
+          {
+            id: 'Earth/Sand - Floor Material', // matches .csv column name
+            label: 'Earth/Sand',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 100 },
+              domain: [0, 100],
+              unit: '%',
+            },
+            layerIds: ['Earth/Sand - Floor Material'],
+            info: '',
+          },
         ],
       },
     ],
@@ -869,6 +961,19 @@ export default [
           // layerIds: ['fb-population-density'],
           // info: 'Source: Facebook',
           // },
+          {
+            id: 'Livestock Production', // matches .csv column name
+            label: 'Livestock Production',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 100 },
+              domain: [0, 100],
+              unit: '%',
+            },
+            layerIds: ['Livestock Production'],
+            info: '',
+          },
         ],
       },
       {
@@ -877,6 +982,7 @@ export default [
         info: '',
         subcontrols: [
           // Add layers here
+
         ],
       },
       {
