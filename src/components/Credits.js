@@ -12,7 +12,7 @@ const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.background};
   border-radius: 4px;
   display: flex;
-  gap: ${({ theme }) => `${theme.space[3]}px`};
+  gap: ${({ theme }) => `${theme.space[5]}px`};
   justify-content: space-between;
   align-items: center;
 `
@@ -20,8 +20,8 @@ const Container = styled.div`
 export default function Credits() {
   return (
     <Container>
-      <img alt='UK aid' src={UKAID_LOGO} height={50} />
-      <img alt='CDC Group plc' src={CDC_LOGO} height={50} />
+      <img alt='UK aid' src={UKAID_LOGO} height={70} />
+      <img alt='CDC Group plc' src={CDC_LOGO} height={60} />
       <img
         alt='Access to Energy Institute (A2EI)'
         src={A2EI_LOGO}

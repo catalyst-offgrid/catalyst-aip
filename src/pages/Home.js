@@ -52,7 +52,7 @@ const Image = styled.figure`
   background-size: auto 100%;
   background-position: center;
 
-  clip-path: polygon(25% 0%, 115% 0%, 100% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(35% 0%, 115% 0%, 100% 100%, 35% 100%, 15% 60%);
   z-index: -1;
 `
 
@@ -60,6 +60,7 @@ export default function Home({ siteAcronym, siteName, imageUrl, theme }) {
   return (
     <PageLayout siteAcronym={siteAcronym} theme={theme}>
       <Logo />
+	  <Image url={imageUrl} />
       <Introduction>
         <Tagline>
           <br />
@@ -87,13 +88,12 @@ export default function Home({ siteAcronym, siteName, imageUrl, theme }) {
             Learn more
           </SecondaryButton>
         </Actions>
-      </Introduction>
-      <Image url={imageUrl} />
-      <PartnersBlock>
-        <Paragraph as='div'>
+	    <Paragraph as='div'>
           In partnership with <Credits />
         </Paragraph>
-      </PartnersBlock>
+      </Introduction>
+      
+
     </PageLayout>
   )
 }

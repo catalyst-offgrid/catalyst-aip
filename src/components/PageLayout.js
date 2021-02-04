@@ -4,6 +4,7 @@ import styled, { ThemeProvider } from 'styled-components'
 
 import NavigationBar from './NavigationBar'
 import CATALYST_BLUE from '../../img/CATALYST_BLUE.png'
+import CATALYST_BLUE_wTag from '../../img/CATALYST_BLUE_wTag_11.23.jpg'
 
 const PageContainer = styled.div`
   height: 100%;
@@ -105,7 +106,7 @@ const Caption = styled.figcaption`
 export const Logo = ({ withTagline }) => (
   <LogoContainer>
     {withTagline && <Caption>An Innovation Of</Caption>}
-    <img alt='CATALYST Off Grid Advisors' src={CATALYST_BLUE} width={400} />
+    <img alt='CATALYST Off Grid Advisors' src={CATALYST_BLUE_wTag} width={400} />
   </LogoContainer>
 )
 
