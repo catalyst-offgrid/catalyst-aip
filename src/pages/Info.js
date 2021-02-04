@@ -49,7 +49,7 @@ export default function Info({ siteAcronym, theme }) {
         </Paragraph>
         <Paragraph>
           For any inquiries and potential collaboration please contact the
-          development team{' '}
+          development and support team{' '}
           <a href='mailto:development@catalystoffgrid.com'>
             Catalyst Off-Grid Advisors
           </a>
