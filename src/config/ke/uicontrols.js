@@ -529,6 +529,45 @@ export default [
         info: 'Breakdown of the regions by the age of their population.',
         subcontrols: [
           // Add layers here
+          {
+            id: 'Under 18 Percent', // matches .csv column name
+            label: 'Under 18',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 32 },
+              domain: [0, 65],
+              unit: '%',
+            },
+            layerIds: ['Under 18 Percent'],
+            info: '',
+          },
+          {
+            id: 'Over 60 Percent', // matches .csv column name
+            label: 'Over 60',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 5 },
+              domain: [0, 10],
+              unit: '%',
+            },
+            layerIds: ['Over 60 Percent'],
+            info: '',
+          },
+          {
+            id: 'Over 70 Percent', // matches .csv column name
+            label: 'Over 70',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 2 },
+              domain: [0, 5],
+              unit: '%',
+            },
+            layerIds: ['Over 70 Percent'],
+            info: '',
+          }
         ],
       },
       {
@@ -1283,6 +1322,27 @@ export default [
           }
         ],
       },
+      {
+        id: 'Disability',
+        label: 'Disability',
+        info: '',
+        subcontrols: [
+          // Add layers here
+          {
+            id: 'Total Disability Percent', // matches .csv column name
+            label: 'Disabled Population',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 3 },
+              domain: [0, 6],
+              unit: '%',
+            },
+            layerIds: ['Total Disability Percent'],
+            info: '',
+          }
+        ]
+      }
     ],
   },
   {
@@ -1298,6 +1358,45 @@ export default [
         info: '',
         subcontrols: [
           //insert unemployment layers here
+          {
+            id: 'Working', // matches .csv column name
+            label: 'Employed',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 45 },
+              domain: [0, 90],
+              unit: '%',
+            },
+            layerIds: ['Working'],
+            info: '',
+          },
+          {
+            id: 'Seeking Work', // matches .csv column name
+            label: 'Seeking Work',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 20 },
+              domain: [0, 40],
+              unit: '%',
+            },
+            layerIds: ['Seeking Work'],
+            info: '',
+          },
+          {
+            id: 'Outside the Labor Force', // matches .csv column name
+            label: 'Outside the Labor Force',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 13 },
+              domain: [0, 26],
+              unit: '%',
+            },
+            layerIds: ['Outside the Labor Force'],
+            info: '',
+          }
         ]
       },
       {
@@ -1943,7 +2042,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 17000 },
+              defaultRange: { min: 0, max: 170000 },
               domain: [0, 340000],
               unit: '',
             },
