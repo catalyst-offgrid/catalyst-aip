@@ -1,6 +1,18 @@
-import layers from './ke/layers'
-import sources from './ke/sources'
-import uicontrols from './ke/uicontrols'
+// Kenya Config
+import kelayers from './ke/layers'
+import kesources from './ke/sources'
+import keuicontrols from './ke/uicontrols'
+
+// Sierra Leone Config
+import sllayers from './sl/layers'
+import slsources from './sl/sources'
+import sluicontrols from './sl/uicontrols'
+
+// Uganda Config
+import uglayers from './ug/layers'
+import ugsources from './ug/sources'
+import uguicontrols from './ug/uicontrols'
+
 import theme from './theme'
 import csv from '../../data/Energy/Census/KenyaLighting_Cooking.csv'
 
@@ -19,9 +31,29 @@ export default {
     countryCode: 'ke',
     center: [37.85335, 0.44014],
     zoom: 6,
-    layers,
-    sources,
-    uicontrols,
+    kelayers,
+    kesources,
+    keuicontrols,
+    csv,
+  },
+  ug: {
+    country: 'Uganda',
+    countryCode: 'ug',
+    center: [37.85335, 0.44014],
+    zoom: 6,
+    uglayers,
+    ugsources,
+    uguicontrols,
+    csv,
+  },
+  sl: {
+    country: 'Sierra Leone',
+    countryCode: 'sl',
+    center: [37.85335, 0.44014],
+    zoom: 6,
+    sllayers,
+    slsources,
+    sluicontrols,
     csv,
   },
   theme,
