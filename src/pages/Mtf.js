@@ -277,7 +277,6 @@ export default function Mtf({ siteAcronym, siteName, config, theme }) {
           selectedGraph={selectedGraph}
         />
         {selectedGraph}
-        {JSON.stringify(state)}
       </MtfDrawer>
 
       <VegaContainer>
