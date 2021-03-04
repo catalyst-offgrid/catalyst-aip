@@ -65,6 +65,14 @@ export default [
         label: 'Grid Electricity',
         info: '',
         subcontrols: [
+          {
+            id: 'sierra-leone-transmission',
+            label: 'Transmission Lines',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['sierra-leone-transmission'],
+            info: '',
+          }
         ],
       },
       {
@@ -89,6 +97,14 @@ export default [
         label: 'Financial Services',
         info: 'Locations of Banks, Micro-finances and SACCOs.',
         subcontrols: [
+          {
+            id: 'sierra-leone-banks',
+            label: 'Banks',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['sierra-leone-banks'],
+            info: '',
+          }
         ],
       },
       {
@@ -97,6 +113,14 @@ export default [
         info:
           'Displays the locations of the health facilities in Kenya by the facility type.',
         subcontrols: [
+          {
+            id: 'sierra-leone-pharmacy',
+            label: 'Pharmacy',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['sierra-leone-pharmacy'],
+            info: '',
+          }
         ],
       },
       {
@@ -105,6 +129,14 @@ export default [
         info:
           'Displays the locations of the education facilities in Kenya by the facility type.',
         subcontrols: [
+          {
+            id: 'sierra-leone-schools',
+            label: 'Schools',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['sierra-leone-schools'],
+            info: '',
+          }
         ],
       },
     ],

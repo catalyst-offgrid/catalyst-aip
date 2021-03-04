@@ -54,6 +54,26 @@ export default {
       layer: 'Uganda_Sub_Regions-9l2yfr',
       tilesetid: 'iandmuir.7r3eldtl',
     },
+    {
+      id: 'uganda-hospital',
+      layer: 'Uganda_Hospital-0bztlx',
+      tilesetid: 'iandmuir.apv3495r',
+    },
+    {
+      id: 'uganda-mobile-money',
+      layer: 'Uganda_Mobile_Money_Agent-578x2y',
+      tilesetid: 'iandmuir.4dpl2mdy',
+    },
+    {
+      id: 'uganda-schools',
+      layer: 'Uganda_Schools-6ge035',
+      tilesetid: 'iandmuir.5b4ns1de',
+    },
+    {
+      id: 'uganda-roads',
+      layer: 'Uganda_Road_Network-782lk2',
+      tilesetid: 'iandmuir.d6ngd8fj',
+    },
   ],
   /**
    * GeoJSON Datasets

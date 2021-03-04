@@ -39,4 +39,43 @@ export default [
       'line-width': 1,
     },
   },
+  {
+    id: 'uganda-hospital',
+    source: 'uganda-hospital',
+    'source-layer': 'Uganda_Hospital-0bztlx',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent1,
+    },
+  },
+  {
+    id: 'uganda-schools',
+    source: 'uganda-schools',
+    'source-layer': 'Uganda_Schools-6ge035',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent1,
+    },
+  },
+  {
+    id: 'uganda-mobile-money',
+    source: 'uganda-mobile-money',
+    'source-layer': 'Uganda_Mobile_Money_Agent-578x2y',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent1,
+    },
+  },
+  {
+    id: 'uganda-roads',
+    source: 'uganda-roads',
+    'source-layer': 'Uganda_Road_Network-782lk2',
+    type: 'vector',
+    paint: {
+      'line-color': colors.text,
+      'line-opacity': 0.3,
+      'line-dasharray': [5, 3],
+      'line-width': 1,
+    },
+  },
 ]

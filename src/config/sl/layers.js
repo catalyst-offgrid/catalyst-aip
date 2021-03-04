@@ -38,5 +38,44 @@ export default [
        'line-dasharray': [5, 3],
        'line-width': 1,
      },
-   }
+   },
+   {
+     id: 'sierra-leone-transmission',
+     source: 'sierra-leone-transmission',
+     'source-layer': 'Sierra_Leone_Transmission_Lin-dyrefu',
+     type: 'vector',
+     paint: {
+       'line-color': colors.text,
+       'line-opacity': 0.3,
+       'line-dasharray': [5, 3],
+       'line-width': 1,
+     },
+   },
+   {
+     id: 'sierra-leone-pharmacy',
+     source: 'sierra-leone-pharmacy',
+     'source-layer': 'Sierra_Leone_Pharmacies-cz5yed',
+     type: 'circle',
+     paint: {
+       'circle-color': colors.accent1,
+     },
+   },
+   {
+     id: 'sierra-leone-schools',
+     source: 'sierra-leone-schools',
+     'source-layer': 'Sierra_Leone_Schools-0nmwd3',
+     type: 'circle',
+     paint: {
+       'circle-color': colors.accent1,
+     },
+   },
+   {
+     id: 'sierra-leone-banks',
+     source: 'sierra-leone-banks',
+     'source-layer': 'Sierra_Leone_Banks-0q3a0o',
+     type: 'circle',
+     paint: {
+       'circle-color': colors.accent1,
+     },
+   },
 ]

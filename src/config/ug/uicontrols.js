@@ -37,6 +37,14 @@ export default [
         layerIds: ['sub-counties'],
         info: 'Sub Counties',
       },
+      {
+        id: 'uganda-roads',
+        label: 'Road Network',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['uganda-roads'],
+        info: '',
+      },
     ],
   },
   {
@@ -89,6 +97,14 @@ export default [
         label: 'Financial Services',
         info: 'Locations of Banks, Micro-finances and SACCOs.',
         subcontrols: [
+          {
+            id: 'uganda-mobile-money',
+            label: 'Mobile Money Agents',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['uganda-mobile-money'],
+            info: '',
+          },
         ],
       },
       {
@@ -97,6 +113,14 @@ export default [
         info:
           'Displays the locations of the health facilities in Kenya by the facility type.',
         subcontrols: [
+          {
+            id: 'uganda-hospital',
+            label: 'Hospitals',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['uganda-hospital'],
+            info: '',
+          },
         ],
       },
       {
@@ -105,6 +129,14 @@ export default [
         info:
           'Displays the locations of the education facilities in Kenya by the facility type.',
         subcontrols: [
+          {
+            id: 'uganda-schools',
+            label: 'Schools',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['uganda-schools'],
+            info: '',
+          },
         ],
       },
     ],

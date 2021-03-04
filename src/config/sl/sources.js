@@ -52,6 +52,26 @@ export default {
       layer: 'Sierra_Leone_Districts-c34k65',
       tilesetid: 'iandmuir.4f3biqz2',
     },
+    {
+      id: 'sierra-leone-transmission',
+      layer: 'Sierra_Leone_Transmission_Lin-dyrefu',
+      tilesetid: 'iandmuir.cv1a7jo6',
+    },
+    {
+      id: 'sierra-leone-pharmacy',
+      layer: 'Sierra_Leone_Pharmacies-cz5yed',
+      tilesetid: 'iandmuir.5me2tui9',
+    },
+    {
+      id: 'sierra-leone-schools',
+      layer: 'Sierra_Leone_Schools-0nmwd3',
+      tilesetid: 'iandmuir.az8kzkrs',
+    },
+    {
+      id: 'sierra-leone-banks',
+      layer: 'Sierra_Leone_Banks-0q3a0o',
+      tilesetid: 'iandmuir.26ukns6c',
+    },
   ],
   /**
    * GeoJSON Datasets
