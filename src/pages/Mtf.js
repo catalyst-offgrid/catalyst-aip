@@ -66,6 +66,19 @@ function getControlIdForLayer(layerId, uicontrols) {
   return id
 }
 
+const HelpMessage = styled.h3`
+  color: ${({ theme }) => theme.colors.primary};
+  font-family: ${({ theme }) => theme.fonts.heading};
+  font-size: ${({ theme }) => theme.fontSizes[2]}pt;
+  font-weight: ${({ theme }) => theme.fontWeights.heading};
+  margin: 30px;
+  padding: 30px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: ${({ theme }) => `${theme.space[2]}px`};
+`
+
 /**
  * Converts the uicontrols config structure into the initital
  * ui state object
@@ -141,6 +154,52 @@ const mtfUiControls = [
             legend: 'none',
             info: '',
           },
+
+          {
+            id: 'heatmap_fuel_stove',
+            label: 'heatmap_fuel_stove',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+
+          {
+            id: 'primary_stove',
+            label: 'primary_stove',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+        ],
+        info: '',
+      },
+      {
+        id: 'energy_access_summary',
+        label: 'Energy Access Summary',
+        defaultVisibility: false,
+        legend: 'none',
+        subcontrols: [
+          {
+            id: 'electricity_access_tiers2',
+            label: 'electricity_access_tiers2',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'primary_cooking',
+            label: 'primary_cooking',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'primary_lighting',
+            label: 'primary_lighting',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
         ],
         info: '',
       },
@@ -153,6 +212,44 @@ const mtfUiControls = [
           {
             id: 'avg_grid_availability',
             label: 'Average Grid Availability',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'grid_acc_tier',
+            label: 'grid_acc_tier',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+        ],
+      },
+      {
+        id: 'solar_based_device_detail',
+        label: 'Solar-based Device Detail',
+        defaultVisibility: false,
+        legend: 'none',
+        subcontrols: [
+          {
+            id: 'solar_prior',
+            label: 'solar_prior',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+        ],
+      },
+
+      {
+        id: 'demo_graph',
+        label: 'Demo Graphs',
+        defaultVisibility: false,
+        legend: 'none',
+        subcontrols: [
+          {
+            id: 'g117',
+            label: 'g117',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -181,9 +278,71 @@ const mtfUiControls = [
             legend: 'none',
             info: '',
           },
+          {
+            id: 'i_41_a',
+            label: 'i_41_a',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'i_5_cost',
+            label: 'i_5_cost',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
         ],
         info: '',
       },
+      {
+        id: 'section_l_part_1',
+        label: 'Section L Part 1: 1-12',
+        defaultVisibility: false,
+        legend: 'none',
+        subcontrols: [
+          {
+            id: 'l15',
+            label: 'l15',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+        ],
+        info: '',
+      },
+
+      {
+        id: 'kerosene_existing_expenditures',
+        label: '(Kerosene) Existing Expenditures',
+        defaultVisibility: false,
+        legend: 'none',
+        subcontrols: [
+          {
+            id: 'f8',
+            label: 'f8',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'f9',
+            label: 'f9',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'f11',
+            label: 'f11',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+        ],
+        info: '',
+      },
+
       {
         id: 'cooking_wtp',
         label: '(Cooking) WTP',
@@ -193,6 +352,49 @@ const mtfUiControls = [
           {
             id: 'k2k3_charcoal',
             label: 'K2K3 Charcoal',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'k6k7_fuelwood',
+            label: 'k6k7_fuelwood',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+        ],
+      },
+      {
+        id: 'elec_grid_willing_to_pay',
+        label: '(Elec/Grid) Willingness to Pay',
+        defaultVisibility: false,
+        legend: 'none',
+        subcontrols: [
+          {
+            id: 'wtp_d6',
+            label: 'wtp_d6',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'wtp_d7',
+            label: 'wtp_d7',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'wtp_e7',
+            label: 'wtp_e7',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'wtp_e8',
+            label: 'wtp_e8',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -208,14 +410,13 @@ const mtfUiControls = [
     description: '',
     info: 'Administritative boundaries from the Government of Kenya.',
     controls: [
-      // {
-      //   id: 'counties',
-      //   label: 'Energy Access Summary',
-      //   defaultVisibility: false,
-      //   legend: 'none',
-      //   // layerIds: ['counties', 'admin-1-boundary', 'admin-1-boundary-bg'],
-      //   info: 'Counties',
-      // },
+      {
+        id: 'c160',
+        label: 'c160',
+        defaultVisibility: false,
+        legend: 'none',
+        info: '',
+      },
     ],
   },
   {
@@ -225,14 +426,27 @@ const mtfUiControls = [
     description: '',
     info: 'Administritative boundaries from the Government of Kenya.',
     controls: [
-      // {
-      //   id: 'counties',
-      //   label: 'Energy Access Summary',
-      //   defaultVisibility: false,
-      //   legend: 'none',
-      //   // layerIds: ['counties', 'admin-1-boundary', 'admin-1-boundary-bg'],
-      //   info: 'Counties',
-      // },
+      {
+        id: 'b9',
+        label: 'b9',
+        defaultVisibility: false,
+        legend: 'none',
+        info: '',
+      },
+      {
+        id: 'b10_b11_b12',
+        label: 'b10_b11_b12',
+        defaultVisibility: false,
+        legend: 'none',
+        info: '',
+      },
+      {
+        id: 'b10',
+        label: 'b10',
+        defaultVisibility: false,
+        legend: 'none',
+        info: '',
+      },
     ],
   },
 ]
@@ -281,56 +495,18 @@ export default function Mtf({ siteAcronym, siteName, config, theme }) {
 
       <VegaContainer>
         {/* <VisualizationSelector /> */}
-
-        <Vega
-          height={250}
-          style={{ height: '100%', width: '100%', padding: '50px' }}
-          spec={vegaData[selectedGraph]}
-        />
-      </VegaContainer>
-
-      {/* <Map zoom={config.zoom} center={config.center}>
-        {Object.entries(sources).map(([type, list]) =>
-          list.map((source) => (
-            <Source
-              key={source.id}
-              id={source.id}
-              type={type}
-              tilesetid={source.tilesetid}
-            >
-              {layers
-                .filter((layer) => layer.source === source.id)
-                .map((layer) => {
-                  const controlId = getControlIdForLayer(
-                    layer.id,
-                    mtfUiControls
-                  )
-                  return (
-                    <Layer
-                      key={layer.id}
-                      id={layer.id}
-                      isVisible={state[controlId].visibility}
-                      spec={layer}
-                      before='road-label' // This is a layer id from the basemap. It might not exist in other basemaps styles!
-                    />
-                  )
-                })}
-            </Source>
-          ))
+        {selectedGraph === '' ? (
+          <HelpMessage>
+            Please select a graph using the navigation bar on the left.
+          </HelpMessage>
+        ) : (
+          <Vega
+            height={250}
+            style={{ height: '100%', width: '100%', padding: '50px' }}
+            spec={vegaData[selectedGraph]}
+          />
         )}
-
-        <CsvLayers id='csv' csv={csv} uiState={state} theme={theme} />
-
-        <BasemapLayers
-          id='admin'
-          isVisible={state['counties'].visibility}
-          layerIds={
-            mtfUiControls
-              .find((group) => group.id === 'admin')
-              .controls.find((control) => control.id === 'counties').layerIds
-          }
-        />
-      </Map> */}
+      </VegaContainer>
     </PageLayout>
   )
 }
