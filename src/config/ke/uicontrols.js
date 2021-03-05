@@ -19,7 +19,7 @@ export default [
     label: 'Administrative Boundaries',
     icon: AdminBoundaries,
     description: '',
-    info: 'Administritative boundaries from the Government of Kenya.',
+    info: 'Administrative boundaries from the Government of Kenya.',
     controls: [
       {
         id: 'counties',
@@ -80,8 +80,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 100 },
-              domain: [0, 80],
+              defaultRange: { min: 0, max: 75},
+              domain: [0, 75],
               unit: '%',
             },
             layerIds: ['Low-Quality Stopgap Total'],
@@ -93,8 +93,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
+              defaultRange: { min: 0, max: 42 },
+              domain: [0, 42],
               unit: '%',
             },
             layerIds: ['Kerosene (Total)'],
@@ -106,8 +106,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 10 },
-              domain: [0, 10],
+              defaultRange: { min: 0, max: 1},
+              domain: [0, 1],
               unit: '%',
             },
             layerIds: ['Paraffin Pressure Lamp'],
@@ -119,8 +119,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
+              defaultRange: { min: 0, max: 16},
+              domain: [0, 16],
               unit: '%',
             },
             layerIds: ['Paraffin Lantern'],
@@ -132,8 +132,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
+              defaultRange: { min: 0, max: 35 },
+              domain: [0, 35],
               unit: '%',
             },
             layerIds: ['Paraffin Tin Lamp'],
@@ -145,8 +145,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
+              defaultRange: { min: 0, max: 4 },
+              domain: [0, 4],
               unit: '%',
             },
             layerIds: ['Gas Lamp'],
@@ -171,8 +171,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
+              defaultRange: { min: 0, max: 65 },
+              domain: [0, 65],
               unit: '%',
             },
             layerIds: ['Solar (Total)'],
@@ -184,8 +184,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
+              defaultRange: { min: 0, max: 55},
+              domain: [0, 55],
               unit: '%',
             },
             layerIds: ['Solar'],
@@ -197,8 +197,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
+              defaultRange: { min: 0, max: 31 },
+              domain: [0, 31],
               unit: '%',
             },
             layerIds: ['Torch / Spotlight (Solar-Charged)'],
@@ -210,8 +210,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
+              defaultRange: { min: 0, max: 45 },
+              domain: [0, 45],
               unit: '%',
             },
             layerIds: ['Torch / Spotlight (Dry Cells))'],
@@ -230,8 +230,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
+              defaultRange: { min: 0, max: 5},
+              domain: [0, 5],
               unit: '%',
             },
             layerIds: ['Cooking - Electricity'],
@@ -243,8 +243,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
+              defaultRange: { min: 0, max: 32 },
+              domain: [0, 32],
               unit: '%',
             },
             layerIds: ['Cooking - Charcoal'],
@@ -256,8 +256,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
+              defaultRange: { min: 0, max: 70 },
+              domain: [0, 70],
               unit: '%',
             },
             layerIds: ['Cooking - Gas (LPG)'],
@@ -269,8 +269,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
-              domain: [0, 50],
+              defaultRange: { min: 0, max: 5 },
+              domain: [0, 5],
               unit: '%',
             },
             layerIds: ['Cooking - Biogas'],
@@ -282,8 +282,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 100 },
-              domain: [0, 100],
+              defaultRange: { min: 0, max: 90 },
+              domain: [0, 90],
               unit: '%',
             },
             layerIds: ['Cooking - Firewood'],
@@ -535,7 +535,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 32 },
+              defaultRange: { min: 0, max: 65 },
               domain: [0, 65],
               unit: '%',
             },
@@ -548,7 +548,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 5 },
+              defaultRange: { min: 0, max: 10 },
               domain: [0, 10],
               unit: '%',
             },
@@ -561,7 +561,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 2 },
+              defaultRange: { min: 0, max: 5 },
               domain: [0, 5],
               unit: '%',
             },
@@ -582,7 +582,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 1000000 },
+              defaultRange: { min: 0, max: 1507000 },
               domain: [0, 1507000],
               unit: '',
             },
@@ -595,7 +595,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 3.5 },
+              defaultRange: { min: 0, max: 7 },
               domain: [0, 7],
               unit: '',
             },
@@ -789,7 +789,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 30 },
+              defaultRange: { min: 0, max: 60 },
               domain: [0, 60],
               unit: '%',
             },
@@ -802,7 +802,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 17 },
+              defaultRange: { min: 0, max: 35 },
               domain: [0, 35],
               unit: '%',
             },
@@ -815,7 +815,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 2.5 },
+              defaultRange: { min: 0, max: 5 },
               domain: [0, 5],
               unit: '%',
             },
@@ -828,7 +828,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 12 },
+              defaultRange: { min: 0, max: 25 },
               domain: [0, 25],
               unit: '%',
             },
@@ -841,7 +841,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 40 },
+              defaultRange: { min: 0, max: 80 },
               domain: [0, 80],
               unit: '%',
             },
@@ -854,7 +854,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 15 },
+              defaultRange: { min: 0, max: 30 },
               domain: [0, 30],
               unit: '%',
             },
@@ -867,7 +867,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 7 },
+              defaultRange: { min: 0, max: 15 },
               domain: [0, 15],
               unit: '%',
             },
@@ -880,7 +880,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 35 },
+              defaultRange: { min: 0, max: 70 },
               domain: [0, 70],
               unit: '%',
             },
@@ -914,7 +914,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 10 },
+              defaultRange: { min: 0, max: 20 },
               domain: [0, 20],
               unit: '%',
             },
@@ -927,7 +927,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 15 },
+              defaultRange: { min: 0, max: 30 },
               domain: [0, 30],
               unit: '%',
             },
@@ -940,7 +940,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 30 },
+              defaultRange: { min: 0, max: 60 },
               domain: [0, 60],
               unit: '%',
             },
@@ -953,7 +953,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 27 },
+              defaultRange: { min: 0, max: 55 },
               domain: [0, 55],
               unit: '%',
             },
@@ -966,8 +966,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 5 },
-              domain: [0, 10.2],
+              defaultRange: { min: 0, max: 11},
+              domain: [0, 11],
               unit: '%',
             },
             layerIds: ['Unprotected Spring - Drinking Water Source'],
@@ -979,7 +979,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 12 },
+              defaultRange: { min: 0, max: 25 },
               domain: [0, 25],
               unit: '%',
             },
@@ -992,7 +992,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 10 },
+              defaultRange: { min: 0, max: 20 },
               domain: [0, 20],
               unit: '%',
             },
@@ -1005,7 +1005,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 17 },
+              defaultRange: { min: 0, max: 35 },
               domain: [0, 35],
               unit: '%',
             },
@@ -1018,7 +1018,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 12 },
+              defaultRange: { min: 0, max: 25 },
               domain: [0, 25],
               unit: '%',
             },
@@ -1031,8 +1031,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 20 },
-              domain: [0, 40.2],
+              defaultRange: { min: 0, max: 41 },
+              domain: [0, 41],
               unit: '%',
             },
             layerIds: ['Piped to Yard/Plot - Drinking Water Source'],
@@ -1044,7 +1044,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 7 },
+              defaultRange: { min: 0, max: 15 },
               domain: [0, 15],
               unit: '%',
             },
@@ -1057,7 +1057,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 10 },
+              defaultRange: { min: 0, max: 20 },
               domain: [0, 20],
               unit: '%',
             },
@@ -1070,7 +1070,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 22 },
+              defaultRange: { min: 0, max: 45 },
               domain: [0, 45],
               unit: '%',
             },
@@ -1083,7 +1083,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 20 },
+              defaultRange: { min: 0, max: 40 },
               domain: [0, 40],
               unit: '%',
             },
@@ -1104,7 +1104,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 65000 },
+              defaultRange: { min: 0, max: 136000 },
               domain: [0, 136000],
               unit: '',
             },
@@ -1117,7 +1117,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 250000 },
+              defaultRange: { min: 0, max: 506000 },
               domain: [0, 506000],
               unit: '',
             },
@@ -1162,7 +1162,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 37 },
+              defaultRange: { min: 0, max: 75 },
               domain: [0, 75],
               unit: '%',
             },
@@ -1175,7 +1175,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 12 },
+              defaultRange: { min: 0, max: 25 },
               domain: [0, 25],
               unit: '%',
             },
@@ -1188,7 +1188,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 35 },
+              defaultRange: { min: 0, max: 70 },
               domain: [0, 70],
               unit: '%',
             },
@@ -1201,7 +1201,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 5 },
+              defaultRange: { min: 0, max: 10 },
               domain: [0, 10],
               unit: '%',
             },
@@ -1214,7 +1214,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 22 },
+              defaultRange: { min: 0, max: 45 },
               domain: [0, 45],
               unit: '%',
             },
@@ -1227,7 +1227,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 12 },
+              defaultRange: { min: 0, max: 25 },
               domain: [0, 25],
               unit: '%',
             },
@@ -1240,7 +1240,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 35 },
+              defaultRange: { min: 0, max: 70 },
               domain: [0, 70],
               unit: '%',
             },
@@ -1261,7 +1261,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 17 },
+              defaultRange: { min: 0, max: 35 },
               domain: [0, 35],
               unit: '%',
             },
@@ -1274,7 +1274,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 10 },
+              defaultRange: { min: 0, max: 20 },
               domain: [0, 20],
               unit: '%',
             },
@@ -1287,7 +1287,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 7 },
+              defaultRange: { min: 0, max: 15 },
               domain: [0, 15],
               unit: '%',
             },
@@ -1300,7 +1300,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 1 },
+              defaultRange: { min: 0, max: 2 },
               domain: [0, 2],
               unit: '%',
             },
@@ -1313,7 +1313,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 1 },
+              defaultRange: { min: 0, max: 3 },
               domain: [0, 3],
               unit: '%',
             },
@@ -1334,7 +1334,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 3 },
+              defaultRange: { min: 0, max: 6 },
               domain: [0, 6],
               unit: '%',
             },
@@ -1364,7 +1364,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 45 },
+              defaultRange: { min: 0, max: 90 },
               domain: [0, 90],
               unit: '%',
             },
@@ -1377,7 +1377,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 20 },
+              defaultRange: { min: 0, max: 40 },
               domain: [0, 40],
               unit: '%',
             },
@@ -1390,7 +1390,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 13 },
+              defaultRange: { min: 0, max: 26 },
               domain: [0, 26],
               unit: '%',
             },
@@ -1427,8 +1427,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 25 },
-              domain: [0, 50.8],
+              defaultRange: { min: 0, max: 51 },
+              domain: [0, 51],
               unit: '%',
             },
             layerIds: ['Grass/Twigs - Roofing'],
@@ -1440,8 +1440,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 12 },
-              domain: [0, 25.4],
+              defaultRange: { min: 0, max: 26 },
+              domain: [0, 26],
               unit: '%',
             },
             layerIds: ['Makuti Thatch - Roofing'],
@@ -1453,7 +1453,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 5 },
+              defaultRange: { min: 0, max:10 },
               domain: [0, 10],
               unit: '%',
             },
@@ -1466,7 +1466,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 50 },
+              defaultRange: { min: 0, max: 100 },
               domain: [0, 100],
               unit: '%',
             },
@@ -1479,7 +1479,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 0.5 },
+              defaultRange: { min: 0, max: 1 },
               domain: [0, 1],
               unit: '%',
             },
@@ -1492,7 +1492,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 1.5 },
+              defaultRange: { min: 0, max: 3 },
               domain: [0, 3],
               unit: '%',
             },
@@ -1505,7 +1505,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 20 },
+              defaultRange: { min: 0, max: 40 },
               domain: [0, 40],
               unit: '%',
             },
@@ -1518,7 +1518,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 2.5 },
+              defaultRange: { min: 0, max: 5 },
               domain: [0, 5],
               unit: '%',
             },
@@ -1531,7 +1531,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 1 },
+              defaultRange: { min: 0, max: 2 },
               domain: [0, 2],
               unit: '%',
             },
@@ -1544,7 +1544,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 1 },
+              defaultRange: { min: 0, max: 2 },
               domain: [0, 2],
               unit: '%',
             },
@@ -1557,7 +1557,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 7 },
+              defaultRange: { min: 0, max: 15 },
               domain: [0, 15],
               unit: '%',
             },
@@ -1570,7 +1570,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 0.5 },
+              defaultRange: { min: 0, max: 1 },
               domain: [0, 1],
               unit: '%',
             },
@@ -1591,7 +1591,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 10 },
+              defaultRange: { min: 0, max: 20 },
               domain: [0, 20],
               unit: '%',
             },
@@ -1604,7 +1604,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 22 },
+              defaultRange: { min: 0, max: 45 },
               domain: [0, 45],
               unit: '%',
             },
@@ -1617,7 +1617,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 37 },
+              defaultRange: { min: 0, max: 75 },
               domain: [0, 75],
               unit: '%',
             },
@@ -1630,7 +1630,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 7 },
+              defaultRange: { min: 0, max: 15 },
               domain: [0, 15],
               unit: '%',
             },
@@ -1643,8 +1643,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 8 },
-              domain: [0, 16.2],
+              defaultRange: { min: 0, max: 17 },
+              domain: [0, 17],
               unit: '%',
             },
             layerIds: ['Covered Adobe - Wall Material'],
@@ -1656,7 +1656,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 4 },
+              defaultRange: { min: 0, max: 8 },
               domain: [0, 8],
               unit: '%',
             },
@@ -1669,7 +1669,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 1 },
+              defaultRange: { min: 0, max: 2 },
               domain: [0, 2],
               unit: '%',
             },
@@ -1682,7 +1682,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 5 },
+              defaultRange: { min: 0, max: 10 },
               domain: [0, 10],
               unit: '%',
             },
@@ -1695,7 +1695,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 17 },
+              defaultRange: { min: 0, max: 35 },
               domain: [0, 35],
               unit: '%',
             },
@@ -1708,8 +1708,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 20 },
-              domain: [0, 40.3],
+              defaultRange: { min: 0, max: 41 },
+              domain: [0, 41],
               unit: '%',
             },
             layerIds: ['Concrete/Concrete Blocks/Precast Wall - Wall Material'],
@@ -1721,8 +1721,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 20 },
-              domain: [0, 40.3],
+              defaultRange: { min: 0, max: 41 },
+              domain: [0, 41],
               unit: '%',
             },
             layerIds: ['Stone with Lime/Cement - Wall Material'],
@@ -1734,7 +1734,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 30 },
+              defaultRange: { min: 0, max: 60 },
               domain: [0, 60],
               unit: '%',
             },
@@ -1747,7 +1747,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 1.5 },
+              defaultRange: { min: 0, max: 3 },
               domain: [0, 3],
               unit: '%',
             },
@@ -1760,7 +1760,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 5 },
+              defaultRange: { min: 0, max: 10 },
               domain: [0, 10],
               unit: '%',
             },
@@ -1773,7 +1773,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 30 },
+              defaultRange: { min: 0, max: 60 },
               domain: [0, 60],
               unit: '%',
             },
@@ -1786,7 +1786,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 0.5 },
+              defaultRange: { min: 0, max: 1 },
               domain: [0, 1],
               unit: '%',
             },
@@ -1807,7 +1807,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 42 },
+              defaultRange: { min: 0, max: 85 },
               domain: [0, 85],
               unit: '%',
             },
@@ -1820,7 +1820,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 30 },
+              defaultRange: { min: 0, max: 60},
               domain: [0, 60],
               unit: '%',
             },
@@ -1833,8 +1833,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 1 },
-              domain: [0, 2.2],
+              defaultRange: { min: 0, max: 3 },
+              domain: [0, 3],
               unit: '%',
             },
             layerIds: ['Wood Planks/Shingles/Timber - Floor Material'],
@@ -1846,7 +1846,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 0.5 },
+              defaultRange: { min: 0, max: 1 },
               domain: [0, 1],
               unit: '%',
             },
@@ -1859,7 +1859,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 1 },
+              defaultRange: { min: 0, max: 2 },
               domain: [0, 2],
               unit: '%',
             },
@@ -1872,7 +1872,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 0.5 },
+              defaultRange: { min: 0, max: 1 },
               domain: [0, 1],
               unit: '%',
             },
@@ -1885,8 +1885,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 12 },
-              domain: [0, 25.4],
+              defaultRange: { min: 0, max: 26 },
+              domain: [0, 26],
               unit: '%',
             },
             layerIds: ['Ceramic Tiles - Floor Material'],
@@ -1898,7 +1898,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 32 },
+              defaultRange: { min: 0, max: 65 },
               domain: [0, 65],
               unit: '%',
             },
@@ -1911,7 +1911,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 2 },
+              defaultRange: { min: 0, max: 5 },
               domain: [0, 5],
               unit: '%',
             },
@@ -1957,7 +1957,7 @@ export default [
             legend: {
               type: 'gradient',
               defaultRange: { min: 0, max: 85 },
-              domain: [0, 42],
+              domain: [0, 85],
               unit: '%',
             },
             layerIds: ['Farming'],
@@ -1970,7 +1970,7 @@ export default [
             legend: {
               type: 'gradient',
               defaultRange: { min: 0, max: 80 },
-              domain: [0, 40],
+              domain: [0, 80],
               unit: '%',
             },
             layerIds: ['Crop Production'],
@@ -1983,7 +1983,7 @@ export default [
             legend: {
               type: 'gradient',
               defaultRange: { min: 0, max: 70 },
-              domain: [0, 35],
+              domain: [0, 70],
               unit: '%',
             },
             layerIds: ['Livestock Production'],
@@ -1995,7 +1995,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 1 },
+              defaultRange: { min: 0, max: 2 },
               domain: [0, 2],
               unit: '%',
             },
@@ -2008,7 +2008,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 5 },
+              defaultRange: { min: 0, max: 10 },
               domain: [0, 10],
               unit: '%',
             },
@@ -2022,7 +2022,7 @@ export default [
             legend: {
               type: 'gradient',
               defaultRange: { min: 0, max: 22 },
-              domain: [0, 11],
+              domain: [0, 22],
               unit: '%',
             },
             layerIds: ['Irrigation'],
@@ -2042,7 +2042,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 170000 },
+              defaultRange: { min: 0, max: 340000 },
               domain: [0, 340000],
               unit: '',
             },
@@ -2055,7 +2055,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 50000 },
+              defaultRange: { min: 0, max: 100000 },
               domain: [0, 100000],
               unit: '',
             },
@@ -2068,7 +2068,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 750000 },
+              defaultRange: { min: 0, max: 1500000 },
               domain: [0, 1500000],
               unit: '',
             },
@@ -2081,7 +2081,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 1400000 },
+              defaultRange: { min: 0, max: 2800000 },
               domain: [0, 2800000],
               unit: '',
             },
@@ -2094,7 +2094,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 2500000 },
+              defaultRange: { min: 0, max: 5000000 },
               domain: [0, 5000000],
               unit: '',
             },
@@ -2107,7 +2107,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 1000000 },
+              defaultRange: { min: 0, max: 2000000 },
               domain: [0, 2000000],
               unit: '',
             },
@@ -2120,7 +2120,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 135000 },
+              defaultRange: { min: 0, max: 170000 },
               domain: [0, 170000],
               unit: '',
             },
@@ -2133,7 +2133,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 750000 },
+              defaultRange: { min: 0, max: 1500000 },
               domain: [0, 1500000],
               unit: '',
             },
@@ -2146,7 +2146,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 800000 },
+              defaultRange: { min: 0, max: 1600000 },
               domain: [0, 1600000],
               unit: '',
             },
@@ -2159,7 +2159,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 950000 },
+              defaultRange: { min: 0, max: 1900000 },
               domain: [0, 1900000],
               unit: '',
             },
@@ -2172,7 +2172,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 115000 },
+              defaultRange: { min: 0, max: 230000 },
               domain: [0, 230000],
               unit: '',
             },
@@ -2185,7 +2185,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 25000 },
+              defaultRange: { min: 0, max: 50000 },
               domain: [0, 50000],
               unit: '',
             },
@@ -2198,7 +2198,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 6000 },
+              defaultRange: { min: 0, max: 12000 },
               domain: [0, 12000],
               unit: '',
             },
@@ -2211,7 +2211,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 1000 },
+              defaultRange: { min: 0, max: 2000 },
               domain: [0, 2000],
               unit: '',
             },
@@ -2231,7 +2231,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 35000 },
+              defaultRange: { min: 0, max: 70000 },
               domain: [0, 70000],
               unit: '',
             },
@@ -2245,7 +2245,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 30000 },
+              defaultRange: { min: 0, max: 60000 },
               domain: [0, 60000],
               unit: '',
             },
@@ -2258,7 +2258,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 45000 },
+              defaultRange: { min: 0, max: 90000 },
               domain: [0, 90000],
               unit: '',
             },
@@ -2271,7 +2271,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 15000 },
+              defaultRange: { min: 0, max: 30000 },
               domain: [0, 30000],
               unit: '',
             },
@@ -2284,7 +2284,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 40000 },
+              defaultRange: { min: 0, max: 80000 },
               domain: [0, 80000],
               unit: '',
             },
@@ -2297,7 +2297,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 25000 },
+              defaultRange: { min: 0, max: 50000 },
               domain: [0, 50000],
               unit: '',
             },
@@ -2310,7 +2310,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 15000 },
+              defaultRange: { min: 0, max: 30000 },
               domain: [0, 30000],
               unit: '',
             },
@@ -2323,7 +2323,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 45000 },
+              defaultRange: { min: 0, max: 90000 },
               domain: [0, 90000],
               unit: '',
             },
