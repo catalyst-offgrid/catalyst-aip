@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf dist .cache",
     "develop": "parcel -p 8000 src/index.html --open",
-    "build": "NODE_ENV=production parcel build src/index.html",
+    "build": " parcel build src/index.html",
     "serve": "npx http-server -p 8000 dist",
     "deploy": "surge ./dist",
     "lint": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\"",
