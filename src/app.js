@@ -17,7 +17,7 @@ export default function App() {
           <Explore
             siteAcronym={config.siteAcronym}
             siteName={config.siteName}
-            config={config.ke}
+            config={config.ug}
             theme={config.theme}
           />
         </Route>
