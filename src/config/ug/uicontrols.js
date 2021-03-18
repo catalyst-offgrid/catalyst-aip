@@ -22,7 +22,7 @@ export default [
     info: 'Administrative boundaries from the Government of Uganda.',
     controls: [
       {
-        id: 'uganda-borders',
+        id: 'counties', // Was uganda-borders
         label: 'Borders',
         defaultVisibility: false,
         legend: 'none',
@@ -30,12 +30,12 @@ export default [
         info: 'Country boundaries',
       },
       {
-        id: 'uganda-sub-counties',
-        label: 'Sub-Counties',
+        id: 'uganda-sub-regions',
+        label: 'Sub-Regions',
         defaultVisibility: false,
         legend: 'none',
-        layerIds: ['sub-counties'],
-        info: 'Sub Counties',
+        layerIds: ['uganda-sub-regions'],
+        info: 'Sub regions',
       },
       {
         id: 'uganda-roads',
@@ -58,29 +58,25 @@ export default [
         id: 'lighting',
         label: 'Lighting',
         info: '',
-        subcontrols: [
-        ],
+        subcontrols: [],
       },
       {
         id: 'cooking',
         label: 'Cooking Fuels',
         info: '',
-        subcontrols: [
-        ],
+        subcontrols: [],
       },
       {
         id: 'grid',
         label: 'Grid Electricity',
         info: '',
-        subcontrols: [
-        ],
+        subcontrols: [],
       },
       {
         id: 'mini-grid',
         label: 'Mini Grid Electricity',
         info: '',
-        subcontrols: [
-        ],
+        subcontrols: [],
       },
     ],
   },
@@ -153,8 +149,7 @@ export default [
         label: 'Population and Movement',
         info:
           'Displays where the people of Kenya live and the patterns in their movement.',
-        subcontrols: [
-        ],
+        subcontrols: [],
       },
       {
         id: 'ageRanges',
@@ -169,9 +164,7 @@ export default [
         label: 'Household Characteristics',
         info:
           'Descriptive statistics of the households located in each region.',
-        subcontrols: [
-
-        ],
+        subcontrols: [],
       },
       // {
       // id: 'compress',
@@ -189,52 +182,7 @@ export default [
     icon: Mobile,
     description: '',
     info: 'Mobile Coverage Data © Collins Bartholomew and GSMA 2020',
-    controls: [
-      {
-        id: 'allCarrier',
-        label: 'All Carriers',
-        info:
-          'Coverage from all carriers as self reported by the carriers in survey responses.',
-        subcontrols: [
-        ],
-      },
-      {
-        id: 'airtel',
-        label: 'AirTel',
-        info: 'Coverage on the AirTel Network.',
-        subcontrols: [
-        ],
-      },
-      {
-        id: 'orange',
-        label: 'Orange',
-        info: 'Coverage on the Orange (now Telkom) Network',
-        subcontrols: [
-        ],
-      },
-      {
-        id: 'safaricom',
-        label: 'Safaricom',
-        info: 'Coverage on the Safaricom Network',
-        subcontrols: [
-          {
-            //id: 'safaricom2g',
-            //label: 'Safaricom 2G',
-            //defaultVisibility: false,
-            //legend: { type: 'dot', color: colors.accent1 },
-            //layerIds: ['mobile_data_safaricom_2g'],
-            //info: '',
-          },
-        ],
-      },
-      {
-        id: 'yu',
-        label: 'YuMobile',
-        info: 'Coverage on the YuMobile Network',
-        subcontrols: [
-        ],
-      },
-    ],
+    controls: [],
   },
   {
     id: 'health',
@@ -320,8 +268,8 @@ export default [
         info: '',
         subcontrols: [
           // Add layers here
-        ]
-      }
+        ],
+      },
     ],
   },
   {
@@ -337,7 +285,7 @@ export default [
         info: '',
         subcontrols: [
           //insert unemployment layers here
-        ]
+        ],
       },
       {
         id: 'roof',

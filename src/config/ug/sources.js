@@ -31,18 +31,7 @@ export default {
    *   tileSize: 256,
    * })
    */
-  raster: [
-    {
-      //id: 'population',
-      //layer: 'Kenya_Population_Density_ARC_-90y1wi',
-      //tilesetid: 'iandmuir.5j2qnfbz',
-    },
-    {
-      //id: 'fb-population',
-      //layer: 'tif6-1z4g21',
-      //tilesetid: 'iandmuir.5p43u8tc',
-    },
-  ],
+  raster: [],
   vector: [
     {
       id: 'uganda-borders',
