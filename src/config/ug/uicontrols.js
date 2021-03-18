@@ -22,7 +22,7 @@ export default [
     info: 'Administrative boundaries from the Government of Uganda.',
     controls: [
       {
-        id: 'counties', // WAS uganda-borders
+        id: 'counties', // Was uganda-borders
         label: 'Borders',
         defaultVisibility: false,
         legend: 'none',

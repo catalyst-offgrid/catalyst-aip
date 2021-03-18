@@ -19,7 +19,7 @@ export default [
     id: 'uganda-borders',
     source: 'uganda-borders',
     'source-layer': 'Uganda_Borders-bcqe2h',
-    type: 'vector',
+    type: 'line',
     paint: {
       'line-color': colors.text,
       'line-opacity': 0.3,
@@ -31,7 +31,7 @@ export default [
     id: 'uganda-sub-regions',
     source: 'uganda-sub-regions',
     'source-layer': 'Uganda_Sub_Regions-9l2yfr',
-    type: 'vector',
+    type: 'line',
     paint: {
       'line-color': colors.text,
       'line-opacity': 0.3,
@@ -70,7 +70,7 @@ export default [
     id: 'uganda-roads',
     source: 'uganda-roads',
     'source-layer': 'Uganda_Road_Network-782lk2',
-    type: 'vector',
+    type: 'line',
     paint: {
       'line-color': colors.text,
       'line-opacity': 0.3,

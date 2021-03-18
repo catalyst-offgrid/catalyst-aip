@@ -22,7 +22,7 @@ export default [
     info: 'Administrative boundaries from the Government of Sierra Leone.',
     controls: [
       {
-        id: 'sierra-leone-borders',
+        id: 'counties', // Was sierra-leone-borders
         label: 'Borders',
         defaultVisibility: false,
         legend: 'none',
@@ -36,7 +36,7 @@ export default [
         legend: 'none',
         layerIds: ['sierra-leone-districts'],
         info: 'Districts',
-      }
+      },
     ],
   },
   {
@@ -50,15 +50,13 @@ export default [
         id: 'lighting',
         label: 'Lighting',
         info: '',
-        subcontrols: [
-        ],
+        subcontrols: [],
       },
       {
         id: 'cooking',
         label: 'Cooking Fuels',
         info: '',
-        subcontrols: [
-        ],
+        subcontrols: [],
       },
       {
         id: 'grid',
@@ -72,15 +70,14 @@ export default [
             legend: 'none',
             layerIds: ['sierra-leone-transmission'],
             info: '',
-          }
+          },
         ],
       },
       {
         id: 'mini-grid',
         label: 'Mini Grid Electricity',
         info: '',
-        subcontrols: [
-        ],
+        subcontrols: [],
       },
     ],
   },
@@ -104,7 +101,7 @@ export default [
             legend: 'none',
             layerIds: ['sierra-leone-banks'],
             info: '',
-          }
+          },
         ],
       },
       {
@@ -120,7 +117,7 @@ export default [
             legend: 'none',
             layerIds: ['sierra-leone-pharmacy'],
             info: '',
-          }
+          },
         ],
       },
       {
@@ -136,7 +133,7 @@ export default [
             legend: 'none',
             layerIds: ['sierra-leone-schools'],
             info: '',
-          }
+          },
         ],
       },
     ],
@@ -153,8 +150,7 @@ export default [
         label: 'Population and Movement',
         info:
           'Displays where the people of Kenya live and the patterns in their movement.',
-        subcontrols: [
-        ],
+        subcontrols: [],
       },
       {
         id: 'ageRanges',
@@ -169,9 +165,7 @@ export default [
         label: 'Household Characteristics',
         info:
           'Descriptive statistics of the households located in each region.',
-        subcontrols: [
-
-        ],
+        subcontrols: [],
       },
       // {
       // id: 'compress',
@@ -189,8 +183,7 @@ export default [
     icon: Mobile,
     description: '',
     info: 'Mobile Coverage Data © Collins Bartholomew and GSMA 2020',
-    controls: [
-    ],
+    controls: [],
   },
   {
     id: 'health',
@@ -276,8 +269,8 @@ export default [
         info: '',
         subcontrols: [
           // Add layers here
-        ]
-      }
+        ],
+      },
     ],
   },
   {
@@ -293,7 +286,7 @@ export default [
         info: '',
         subcontrols: [
           //insert unemployment layers here
-        ]
+        ],
       },
       {
         id: 'roof',
