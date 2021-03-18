@@ -22,7 +22,7 @@ export default [
     info: 'Administrative boundaries from the Government of Uganda.',
     controls: [
       {
-        id: 'uganda-borders',
+        id: 'counties', // Was uganda-borders
         label: 'Borders',
         defaultVisibility: false,
         legend: 'none',
@@ -58,29 +58,25 @@ export default [
         id: 'lighting',
         label: 'Lighting',
         info: '',
-        subcontrols: [
-        ],
+        subcontrols: [],
       },
       {
         id: 'cooking',
         label: 'Cooking Fuels',
         info: '',
-        subcontrols: [
-        ],
+        subcontrols: [],
       },
       {
         id: 'grid',
         label: 'Grid Electricity',
         info: '',
-        subcontrols: [
-        ],
+        subcontrols: [],
       },
       {
         id: 'mini-grid',
         label: 'Mini Grid Electricity',
         info: '',
-        subcontrols: [
-        ],
+        subcontrols: [],
       },
     ],
   },
@@ -153,8 +149,7 @@ export default [
         label: 'Population and Movement',
         info:
           'Displays where the people of Kenya live and the patterns in their movement.',
-        subcontrols: [
-        ],
+        subcontrols: [],
       },
       {
         id: 'ageRanges',
@@ -169,9 +164,7 @@ export default [
         label: 'Household Characteristics',
         info:
           'Descriptive statistics of the households located in each region.',
-        subcontrols: [
-
-        ],
+        subcontrols: [],
       },
       // {
       // id: 'compress',
@@ -276,8 +269,8 @@ export default [
         info: '',
         subcontrols: [
           // Add layers here
-        ]
-      }
+        ],
+      },
     ],
   },
   {
@@ -293,7 +286,7 @@ export default [
         info: '',
         subcontrols: [
           //insert unemployment layers here
-        ]
+        ],
       },
       {
         id: 'roof',
