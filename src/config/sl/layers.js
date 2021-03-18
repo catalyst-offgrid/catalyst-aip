@@ -19,7 +19,7 @@ export default [
      id: 'sierra-leone-borders',
      source: 'sierra-leone-borders',
      'source-layer': 'Sierra_Leone_Country_Border-cch16f',
-     type: 'vector',
+     type: 'line',
      paint: {
        'line-color': colors.text,
        'line-opacity': 0.3,
@@ -31,7 +31,7 @@ export default [
      id: 'sierra-leone-districts',
      source: 'sierra-leone-districts',
      'source-layer': 'Sierra_Leone_Districts-c34k65',
-     type: 'vector',
+     type: 'line',
      paint: {
        'line-color': colors.text,
        'line-opacity': 0.3,
@@ -43,7 +43,7 @@ export default [
      id: 'sierra-leone-transmission',
      source: 'sierra-leone-transmission',
      'source-layer': 'Sierra_Leone_Transmission_Lin-dyrefu',
-     type: 'vector',
+     type: 'line',
      paint: {
        'line-color': colors.text,
        'line-opacity': 0.3,

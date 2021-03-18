@@ -34,7 +34,7 @@ export default [
         label: 'Sub-Regions',
         defaultVisibility: false,
         legend: 'none',
-        layerIds: ['sub-regions'],
+        layerIds: ['uganda-sub-regions'],
         info: 'Sub regions',
       },
       {
