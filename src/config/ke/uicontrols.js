@@ -567,7 +567,7 @@ export default [
             },
             layerIds: ['Over 70 Percent'],
             info: '',
-          }
+          },
         ],
       },
       {
@@ -601,7 +601,7 @@ export default [
             },
             layerIds: ['Average Household Size'],
             info: '',
-          }
+          },
         ],
       },
       // {
@@ -899,7 +899,7 @@ export default [
             },
             layerIds: ['Bio-Septic Tank/Biodigester - Human Waste Disposal'],
             info: '',
-          }
+          },
         ],
       },
       {
@@ -1089,7 +1089,7 @@ export default [
             },
             layerIds: ['Public Tap/Standpipe - Drinking Water Source'],
             info: '',
-          }
+          },
         ],
       },
       {
@@ -1123,7 +1123,7 @@ export default [
             },
             layerIds: ['Total Births - 5 Years'],
             info: '',
-          }
+          },
         ],
       },
     ],
@@ -1246,7 +1246,7 @@ export default [
             },
             layerIds: ['Phone'],
             info: '',
-          }
+          },
         ],
       },
       {
@@ -1319,7 +1319,7 @@ export default [
             },
             layerIds: ['Tuk Tuk'],
             info: '',
-          }
+          },
         ],
       },
       {
@@ -1340,9 +1340,9 @@ export default [
             },
             layerIds: ['Total Disability Percent'],
             info: '',
-          }
-        ]
-      }
+          },
+        ],
+      },
     ],
   },
   {
@@ -1396,8 +1396,8 @@ export default [
             },
             layerIds: ['Outside the Labor Force'],
             info: '',
-          }
-        ]
+          },
+        ],
       },
       {
         id: 'roof',
@@ -1576,7 +1576,7 @@ export default [
             },
             layerIds: ['Shingles - Roofing'],
             info: '',
-          }
+          },
         ],
       },
       {
@@ -1792,7 +1792,7 @@ export default [
             },
             layerIds: ['Prefabricated Panels - Wall Material'],
             info: '',
-          }
+          },
         ],
       },
       {
@@ -1917,7 +1917,7 @@ export default [
             },
             layerIds: ['Wall to Wall Carpet - Floor Material'],
             info: '',
-          }
+          },
         ],
       },
     ],
@@ -2027,7 +2027,7 @@ export default [
             },
             layerIds: ['Irrigation'],
             info: '',
-          }
+          },
         ],
       },
       {
@@ -2217,7 +2217,7 @@ export default [
             },
             layerIds: ['Fish Cages - Livestock & Fish'],
             info: '',
-          }
+          },
         ],
       },
       {
@@ -2329,7 +2329,7 @@ export default [
             },
             layerIds: ['Khat (Miraa) - Permanent Crop Growth'],
             info: '',
-          }
+          },
         ],
       },
     ],

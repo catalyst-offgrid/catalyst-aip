@@ -52,14 +52,15 @@ function init(uicontrols) {
     return (
       cur.controls.map((control) => {
         if (control.subcontrols) {
-          return control.subcontrols.map(
-            (subcontrol) =>
-              (obj[subcontrol.id] = {
-                visibility: subcontrol.defaultVisibility,
-                domain: subcontrol.legend.domain,
-                range: subcontrol.legend.defaultRange,
-              })
-          )
+          return control.subcontrols.map((subcontrol) => {
+            if (!subcontrol.legend)
+              console.log('No legend for ', JSON.stringify(control))
+            return (obj[subcontrol.id] = {
+              visibility: subcontrol.defaultVisibility,
+              domain: subcontrol.legend.domain,
+              range: subcontrol.legend.defaultRange,
+            })
+          })
         }
         return (obj[control.id] = {
           visibility: control.defaultVisibility,
@@ -144,6 +145,14 @@ export default function Explore({ siteAcronym, siteName, config, theme }) {
                 .filter((layer) => layer.source === source.id)
                 .map((layer) => {
                   const controlId = getControlIdForLayer(layer.id, uicontrols)
+
+                  if (!state[controlId])
+                    console.log(
+                      'Control ID: ',
+                      controlId,
+                      'No visibility for ',
+                      JSON.stringify(layer.id)
+                    )
                   return (
                     <Layer
                       key={layer.id}
