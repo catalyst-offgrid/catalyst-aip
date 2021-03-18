@@ -39,7 +39,7 @@ export default {
   ug: {
     country: 'Uganda',
     countryCode: 'ug',
-    center: [37.85335, 0.44014],
+    center: [32.2903, 1.3733],
     zoom: 6,
     layers: uglayers,
     sources: ugsources,
@@ -49,7 +49,7 @@ export default {
   sl: {
     country: 'Sierra Leone',
     countryCode: 'sl',
-    center: [37.85335, 0.44014],
+    center: [11.7799, 8.4606],
     zoom: 6,
     layers: sllayers,
     sources: slsources,
