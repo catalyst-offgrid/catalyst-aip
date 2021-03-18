@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 import CATALYST_LOGO from '../../img/CATALYST_LOGO.png'
 
-import { Home, Layers, Info } from '../icons'
+import { Home, Layers, Info, EconHealth } from '../icons'
 
 const Container = styled.nav`
   min-width: ${({ theme }) => `${theme.space[5]}px`};
@@ -68,6 +68,17 @@ export default function NavigationBar({ siteAcronym, theme }) {
             <Layers color={theme.colors.background} />
           </Link>
         </NavItem>
+
+        <NavItem isMatch={path === '/mtf'}>
+          <Link
+            to='/mtf'
+            aria-label='Explore the MTF Module'
+            data-cy='link-mtf'
+          >
+            <EconHealth color={theme.colors.background} />
+          </Link>
+        </NavItem>
+
         <NavItem isMatch={path === '/info'}>
           <Link
             to='/info'

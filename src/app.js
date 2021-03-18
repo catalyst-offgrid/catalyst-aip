@@ -7,6 +7,7 @@ import ExploreSelector from './pages/ExploreSelector'
 import Info from './pages/Info'
 
 import config from './config'
+import Mtf from './pages/Mtf'
 
 export default function App() {
   return (
@@ -43,6 +44,14 @@ export default function App() {
             siteAcronym={config.siteAcronym}
             siteName={config.siteName}
             config={config.sl}
+            theme={config.theme}
+          />
+        </Route>
+        <Route path='/mtf'>
+          <Mtf
+            siteAcronym={config.siteAcronym}
+            siteName={config.siteName}
+            config={config.ke}
             theme={config.theme}
           />
         </Route>
