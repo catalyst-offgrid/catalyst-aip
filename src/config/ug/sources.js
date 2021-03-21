@@ -33,6 +33,7 @@ export default {
    */
   raster: [],
   vector: [
+    // Administrative Boundaries
     {
       id: 'uganda-borders',
       layer: 'Uganda_Borders-bcqe2h',
@@ -44,9 +45,128 @@ export default {
       tilesetid: 'iandmuir.7r3eldtl',
     },
     {
+      id: 'uganda-regions',
+      layer: 'Uganda_Regions-91rxit',
+      tilesetid: 'iandmuir.3ps72e0a',
+    },
+    {
+      id: 'uganda-districts',
+      layer: 'Uganda_Districts-8v64lf',
+      tilesetid: 'iandmuir.bczdp5q2',
+    },
+    // Educational Faciltiies
+    {
+      id: 'uganda-colleges',
+      layer: 'Uganda_Colleges-599tfi',
+      tilesetid: 'iandmuir.ay43oo8s',
+    },
+    {
+      id: 'uganda-kindergarten',
+      layer: 'Uganda_Kindergartens-bkmnyx',
+      tilesetid: 'iandmuir.3plijllp',
+    },
+    {
+      id: 'uganda-university',
+      layer: 'Uganda_University-8g01jc',
+      tilesetid: 'iandmuir.aj1h97wo',
+    },
+    {
+      id: 'uganda-schools',
+      layer: 'Uganda_Schools-6ge035',
+      tilesetid: 'iandmuir.5b4ns1de',
+    },
+    // Mobile Layers
+    {
+      id: 'uganda-africell-2g',
+      layer: 'Uganda_Africell_2G-dt96o0',
+      tilesetid: 'iandmuir.67he4vz2',
+    },
+    {
+      id: 'uganda-africell-3g',
+      layer: 'Uganda_Africell_3G-d5wnvw',
+      tilesetid: 'iandmuir.8pl0hn1m',
+    },
+    {
+      id: 'uganda-africell-4g',
+      layer: 'Uganda_Africell_4G-c6kffc',
+      tilesetid: 'iandmuir.5k6ocgnv',
+    },
+    {
+      id: 'uganda-airtel-2g',
+      layer: 'Uganda_Airtel_2G-c4jpps',
+      tilesetid: 'iandmuir.15oayqk5',
+    },
+    {
+      id: 'uganda-airtel-3g',
+      layer: 'Uganda_Airtel_3G-d516xf',
+      tilesetid: 'iandmuir.65rnir4t',
+    },
+    {
+      id: 'uganda-airtel-4g',
+      layer: 'Uganda_Alrtel_4G-bm8p4w',
+      tilesetid: 'iandmuir.73krfrsj',
+    },
+    {
+      id: 'uganda-mtn-2g',
+      layer: 'Uganda_MTN_2G-72jl5d',
+      tilesetid: 'iandmuir.69bc12c7',
+    },
+    {
+      id: 'uganda-mtn-3g',
+      layer: 'Uganda_MTN_3G-4d9p6l',
+      tilesetid: 'iandmuir.abnqrlli',
+    },
+    {
+      id: 'uganda-mtn-4g',
+      layer: 'Uganda_MTN_4G-dfc43v',
+      tilesetid: 'iandmuir.0p4a6h10',
+    },
+    {
+      id: 'uganda-ut-mobile-2g',
+      layer: 'Uganda_UT_Mobile_2G-9g5t9y',
+      tilesetid: 'iandmuir.ak7kephz',
+    },
+    {
+      id: 'uganda-ut-mobile-3g',
+      layer: 'Uganda_UT_Mobile_3G-bykqj2',
+      tilesetid: 'iandmuir.7rk0564x',
+    },
+    // Health Facilities
+    {
       id: 'uganda-hospital',
       layer: 'Uganda_Hospital-0bztlx',
       tilesetid: 'iandmuir.apv3495r',
+    },
+    {
+      id: 'uganda-clinics',
+      layer: 'Uganda_Clinics-7mi6w3',
+      tilesetid: 'iandmuir.0ggfqd0s',
+    },
+    {
+      id: 'uganda-dentist',
+      layer: 'Uganda_Dentist-349iyr',
+      tilesetid: 'iandmuir.dvvg7m0b',
+    },
+    {
+      id: 'uganda-health-post',
+      layer: 'Uganda_Health_Post-7eftiz',
+      tilesetid: 'iandmuir.8txb5wyk',
+    },
+    {
+      id: 'uganda-pharmacy',
+      layer: 'Uganda_Pharmacy-0c23jm',
+      tilesetid: 'iandmuir.810ntp00',
+    },
+    {
+      id: 'uganda-doctors',
+      layer: 'Uganda_Doctors-87ldy5',
+      tilesetid: 'iandmuir.5ac29phf',
+    },
+    // Financial Facilities
+    {
+      id: 'uganda-banks',
+      layer: 'Uganda_Bank-co2cp0',
+      tilesetid: 'iandmuir.ac3g8e59',
     },
     {
       id: 'uganda-mobile-money',
@@ -54,14 +174,50 @@ export default {
       tilesetid: 'iandmuir.4dpl2mdy',
     },
     {
-      id: 'uganda-schools',
-      layer: 'Uganda_Schools-6ge035',
-      tilesetid: 'iandmuir.5b4ns1de',
+      id: 'uganda-sacco',
+      layer: 'Uganda_SACCO-5blhk6',
+      tilesetid: 'iandmuir.byypady5',
+    },
+    {
+      id: 'uganda-atm',
+      layer: 'Uganda_ATM-ahz99o',
+      tilesetid: 'iandmuir.8wucr5ux',
+    },
+    {
+      id: 'uganda-bureau-de-change',
+      layer: 'Uganda_Bureau_de_Change-3hqomh',
+      tilesetid: 'iandmuir.276d9uuo',
+    },
+    {
+      id: 'uganda-microfinance',
+      layer: 'Uganda_Microfinance-1fdcvh',
+      tilesetid: 'iandmuir.2t8jfesu',
+    },
+    {
+      id: 'uganda-money-transfer',
+      layer: 'Uganda_Money_Transfer-a598y9',
+      tilesetid: 'xiandmuir.cinqlrol',
+    },
+    {
+      id: 'uganda-post-office',
+      layer: 'Uganda_Post_Office-64dicr',
+      tilesetid: 'iandmuir.02zk7mqu',
+    },
+    // Other
+    {
+      id: 'uganda-substations',
+      layer: 'Uganda_Substations-bf4bp6',
+      tilesetid: 'iandmuir.cl879q0g',
     },
     {
       id: 'uganda-roads',
       layer: 'Uganda_Road_Network-782lk2',
       tilesetid: 'iandmuir.d6ngd8fj',
+    },
+    {
+      id: 'uganda-transmission',
+      layer: 'Uganda_Transmission_Lines-0qt0n8',
+      tilesetid: 'iandmuir.4qqlx7cg',
     },
   ],
   /**

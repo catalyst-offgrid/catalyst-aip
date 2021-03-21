@@ -615,6 +615,15 @@ export default [
     ],
   },
   {
+    id: 'infrastructure',
+    label: 'Infrastructure',
+    icon: Public,
+    description: '',
+    info:
+      '',
+    controls: []
+  },
+  {
     id: 'mobileData',
     label: 'Mobile Coverage',
     icon: Mobile,
