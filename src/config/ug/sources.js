@@ -40,7 +40,7 @@ export default {
       tilesetid: 'iandmuir.72xmwm7z',
     },
     {
-      id: 'uganda-sub-regions',
+      id: 'counties',
       layer: 'Uganda_Sub_Regions-9l2yfr',
       tilesetid: 'iandmuir.7r3eldtl',
     },
@@ -103,7 +103,7 @@ export default {
     },
     {
       id: 'uganda-airtel-4g',
-      layer: 'Uganda_Alrtel_4G-bm8p4w',
+      layer: 'Uganda_AIrtel_4G-bm8p4w',
       tilesetid: 'iandmuir.73krfrsj',
     },
     {
@@ -196,7 +196,7 @@ export default {
     {
       id: 'uganda-money-transfer',
       layer: 'Uganda_Money_Transfer-a598y9',
-      tilesetid: 'xiandmuir.cinqlrol',
+      tilesetid: 'iandmuir.cinqlrol',
     },
     {
       id: 'uganda-post-office',

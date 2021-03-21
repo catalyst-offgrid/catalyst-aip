@@ -4,7 +4,7 @@ import {
   Population,
   Public,
   Health,
-  //Placeholder,
+  //Placeholder, INSERT ICON FOR INFRASTRUCTURE
   Mobile,
   EconHealth,
   HHAsset,
@@ -22,7 +22,7 @@ export default [
     info: 'Administrative boundaries from the Government of Uganda.',
     controls: [
       {
-        id: 'counties', // Was uganda-borders
+        id: 'uganda-borders', // Was uganda-borders
         label: 'Borders',
         defaultVisibility: false,
         legend: 'none',
@@ -30,11 +30,12 @@ export default [
         info: 'Country boundaries',
       },
       {
-        id: 'uganda-sub-regions',
+        //ACtUALLY CALLED SUBREGIONS BUT SITE WILL NOT WORK
+        id: 'counties',
         label: 'Sub-Regions',
         defaultVisibility: false,
         legend: 'none',
-        layerIds: ['uganda-sub-regions'],
+        layerIds: ['counties'],
         info: 'Sub regions',
       },
       {
@@ -66,7 +67,21 @@ export default [
         id: 'lighting',
         label: 'Lighting',
         info: '',
-        subcontrols: [],
+        subcontrols: [
+          {
+            id: 'Tadooba - Lighting Fuel', // matches .csv column name
+            label: 'Tadooba',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 75},
+              domain: [0, 75],
+              unit: '%',
+            },
+            layerIds: ['Tadooba - Lighting Fuel'],
+            info: '',
+          },
+        ],
       },
       {
         id: 'cooking',

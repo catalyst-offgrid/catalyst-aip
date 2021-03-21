@@ -167,7 +167,7 @@ export default function Explore({ siteAcronym, siteName, config, theme }) {
           ))
         )}
 
-        <CsvLayers id='csv' csv={csv} uiState={state} theme={theme} />
+        <CsvLayers id='csv' csv={csv} uiState={state} theme={theme} country={config.country} />
 
         <BasemapLayers
           id='admin'
@@ -194,7 +194,7 @@ Explore.propTypes = {
     uicontrols: PropTypes.array.isRequired,
     sources: PropTypes.object.isRequired,
     layers: PropTypes.array.isRequired,
-    csv: PropTypes.string.isRequired,
+    //csv: PropTypes.string.isRequired,
   }),
   theme: PropTypes.object.isRequired,
 }

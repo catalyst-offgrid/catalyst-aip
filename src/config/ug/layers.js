@@ -28,8 +28,8 @@ export default [
     },
   },
   {
-    id: 'uganda-sub-regions',
-    source: 'uganda-sub-regions',
+    id: 'counties',
+    source: 'counties',
     'source-layer': 'Uganda_Sub_Regions-9l2yfr',
     type: 'line',
     paint: {
@@ -166,7 +166,7 @@ export default [
   {
     id: 'uganda-africell-3g',
     source: 'uganda-africell-3g',
-    'source-layer': 'Uganda_Africell_3G-d5wnv',
+    'source-layer': 'Uganda_Africell_3G-d5wnvw',
     type: 'fill',
     paint: {
       'fill-color': colors.accent3,
@@ -206,7 +206,7 @@ export default [
   {
     id: 'uganda-airtel-4g',
     source: 'uganda-airtel-4g',
-    'source-layer': 'Uganda_Alrtel_4G-bm8p4w',
+    'source-layer': 'Uganda_AIrtel_4G-bm8p4w',
     type: 'fill',
     paint: {
       'fill-color': colors.accent3,
@@ -226,7 +226,7 @@ export default [
   {
     id: 'uganda-mtn-3g',
     source: 'uganda-mtn-3g',
-    'source-layer': 'Uganda_MTN_3G-4d9p6ld',
+    'source-layer': 'Uganda_MTN_3G-4d9p6l',
     type: 'fill',
     paint: {
       'fill-color': colors.accent3,
@@ -285,7 +285,7 @@ export default [
   {
     id: 'uganda-sacco',
     source: 'uganda-sacco',
-    'source-layer': 'Uganda_SACCO-5blhk60',
+    'source-layer': 'Uganda_SACCO-5blhk6',
     type: 'circle',
     paint: {
       'circle-color': colors.accent1,

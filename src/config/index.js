@@ -15,6 +15,7 @@ import uguicontrols from './ug/uicontrols'
 
 import theme from './theme'
 import csv from '../../data/Energy/Census/KenyaLighting_Cooking.csv'
+import ugcsv from '../../data/Energy/Census/UgandaDataSubregion.csv'
 
 if (!process.env.MAPBOX_ACCESS_TOKEN) {
   throw new Error('MAPBOX_ACCESS_TOKEN env var is required')
@@ -39,17 +40,17 @@ export default {
   ug: {
     country: 'Uganda',
     countryCode: 'ug',
-    center: [37.85335, 0.44014],
+    center: [32.2903, 1.3733],
     zoom: 6,
     layers: uglayers,
     sources: ugsources,
     uicontrols: uguicontrols,
-    csv,
+    ugcsv,
   },
   sl: {
     country: 'Sierra Leone',
     countryCode: 'sl',
-    center: [37.85335, 0.44014],
+    center: [-10.4606, 8.7799],
     zoom: 6,
     layers: sllayers,
     sources: slsources,
