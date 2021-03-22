@@ -34,20 +34,20 @@ export default {
   raster: [],
   vector: [
     // Administrative Boundaries
+    //{
+      //id: 'uganda-borders',
+      //layer: 'Uganda_Borders-bcqe2h',
+      //tilesetid: 'iandmuir.72xmwm7z',
+    //},
     {
-      id: 'uganda-borders',
-      layer: 'Uganda_Borders-bcqe2h',
-      tilesetid: 'iandmuir.72xmwm7z',
+      id: 'uganda-regions',
+      layer: 'Uganda_Regions-91rxit',
+      tilesetid: 'iandmuir.3ps72e0a',
     },
     {
       id: 'counties',
       layer: 'Uganda_Sub_Regions-9l2yfr',
       tilesetid: 'iandmuir.7r3eldtl',
-    },
-    {
-      id: 'uganda-regions',
-      layer: 'Uganda_Regions-91rxit',
-      tilesetid: 'iandmuir.3ps72e0a',
     },
     {
       id: 'uganda-districts',

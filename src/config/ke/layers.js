@@ -194,12 +194,30 @@ export default [
     },
   },
   {
+    id: 'transmission_lines_33kv',
+    source: 'transmission_lines_33kv',
+    'source-layer': 'Transmission_Lines_33KV_Repro-3bqaf1',
+    type: 'line',
+    paint: {
+      'line-color': colors.accent8,
+    },
+  },
+  {
     id: 'transmission_lines_66kv',
     source: 'transmission_lines_66kv',
     'source-layer': 'Transmission_Lines_66KV_Repro-6e0r2m',
     type: 'line',
     paint: {
       'line-color': colors.accent10,
+    },
+  },
+  {
+    id: 'transmission_lines_132kv',
+    source: 'transmission_lines_132kv',
+    'source-layer': 'Transmission_Lines_132KV_Repr-cw6ysy',
+    type: 'line',
+    paint: {
+      'line-color': colors.accent7,
     },
   },
   {
@@ -375,6 +393,17 @@ export default [
     type: 'raster',
     paint: {
       'raster-opacity': mobileOpacity,
+    },
+  },
+  {
+    id: 'ke_roads',
+    source: 'ke_roads',
+    'source-layer': 'Kenya_Roads-4sztzy',
+    type: 'line',
+    paint: {
+      'line-color': colors.text,
+      'line-opacity': 0.3,
+      'line-width': 1,
     },
   },
 ]

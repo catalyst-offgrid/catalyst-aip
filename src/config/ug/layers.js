@@ -16,17 +16,17 @@ var mobileOpacity = 0.35
 
 export default [
   // Administrative Boundaries
-   {
-    id: 'uganda-borders',
-    source: 'uganda-borders',
-    'source-layer': 'Uganda_Borders-bcqe2h',
-    type: 'line',
-    paint: {
-      'line-color': colors.text,
-      'line-opacity': 0.3,
-      'line-width': 1,
-    },
-  },
+   //{
+    //id: 'uganda-borders',
+    //source: 'uganda-borders',
+    //'source-layer': 'Uganda_Borders-bcqe2h',
+    //type: 'line',
+    //paint: {
+      //'line-color': colors.text,
+      //'line-opacity': 0,
+      //'line-width': 1,
+    //},
+  //},
   {
     id: 'counties',
     source: 'counties',
@@ -34,7 +34,7 @@ export default [
     type: 'line',
     paint: {
       'line-color': colors.text,
-      'line-opacity': 0.3,
+      'line-opacity': 0.5,
       'line-width': 1,
     },
   },
@@ -45,7 +45,7 @@ export default [
     type: 'line',
     paint: {
       'line-color': colors.text,
-      'line-opacity': 0.3,
+      'line-opacity': 0.5,
       'line-width': 1,
     },
   },
@@ -56,7 +56,7 @@ export default [
     type: 'line',
     paint: {
       'line-color': colors.text,
-      'line-opacity': 0.3,
+      'line-opacity': 0.5,
       'line-width': 1,
     },
   },
@@ -76,7 +76,7 @@ export default [
     'source-layer': 'Uganda_Clinics-7mi6w3',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent1,
+      'circle-color': colors.accent2,
     },
   },
   {
@@ -85,7 +85,7 @@ export default [
     'source-layer': 'Uganda_Dentist-349iyr',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent1,
+      'circle-color': colors.accent3,
     },
   },
   {
@@ -94,7 +94,7 @@ export default [
     'source-layer': 'Uganda_Health_Post-7eftiz',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent1,
+      'circle-color': colors.accent4,
     },
   },
   {
@@ -103,7 +103,7 @@ export default [
     'source-layer': 'Uganda_Pharmacy-0c23jm',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent1,
+      'circle-color': colors.accent5,
     },
   },
   {
@@ -112,7 +112,7 @@ export default [
     'source-layer': 'Uganda_Doctors-87ldy5',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent1,
+      'circle-color': colors.accent6,
     },
   },
   // Education Facilities
@@ -122,7 +122,7 @@ export default [
     'source-layer': 'Uganda_Schools-6ge035',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent1,
+      'circle-color': colors.accent2,
     },
   },
   {
@@ -131,7 +131,7 @@ export default [
     'source-layer': 'Uganda_Colleges-599tfi',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent1,
+      'circle-color': colors.accent3,
     },
   },
   {
@@ -149,7 +149,7 @@ export default [
     'source-layer': 'Uganda_University-8g01jc',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent1,
+      'circle-color': colors.accent4,
     },
   },
   // Mobile Data
@@ -159,7 +159,7 @@ export default [
     'source-layer': 'Uganda_Africell_2G-dt96o0',
     type: 'fill',
     paint: {
-      'fill-color': colors.accent3,
+      'fill-color': colors.accent1,
       'fill-opacity': mobileOpacity,
     },
   },
@@ -169,7 +169,7 @@ export default [
     'source-layer': 'Uganda_Africell_3G-d5wnvw',
     type: 'fill',
     paint: {
-      'fill-color': colors.accent3,
+      'fill-color': colors.accent4,
       'fill-opacity': mobileOpacity,
     },
   },
@@ -189,7 +189,7 @@ export default [
     'source-layer': 'Uganda_Airtel_2G-c4jpps',
     type: 'fill',
     paint: {
-      'fill-color': colors.accent3,
+      'fill-color': colors.accent1,
       'fill-opacity': mobileOpacity,
     },
   },
@@ -199,7 +199,7 @@ export default [
     'source-layer': 'Uganda_Airtel_3G-d516xf',
     type: 'fill',
     paint: {
-      'fill-color': colors.accent3,
+      'fill-color': colors.accent4,
       'fill-opacity': mobileOpacity,
     },
   },
@@ -219,7 +219,7 @@ export default [
     'source-layer': 'Uganda_MTN_2G-72jl5d',
     type: 'fill',
     paint: {
-      'fill-color': colors.accent3,
+      'fill-color': colors.accent1,
       'fill-opacity': mobileOpacity,
     },
   },
@@ -229,7 +229,7 @@ export default [
     'source-layer': 'Uganda_MTN_3G-4d9p6l',
     type: 'fill',
     paint: {
-      'fill-color': colors.accent3,
+      'fill-color': colors.accent4,
       'fill-opacity': mobileOpacity,
     },
   },
@@ -249,7 +249,7 @@ export default [
     'source-layer': 'Uganda_UT_Mobile_2G-9g5t9y',
     type: 'fill',
     paint: {
-      'fill-color': colors.accent3,
+      'fill-color': colors.accent1,
       'fill-opacity': mobileOpacity,
     },
   },
@@ -259,7 +259,7 @@ export default [
     'source-layer': 'Uganda_UT_Mobile_3G-bykqj2',
     type: 'fill',
     paint: {
-      'fill-color': colors.accent3,
+      'fill-color': colors.accent4,
       'fill-opacity': mobileOpacity,
     },
   },
@@ -279,7 +279,7 @@ export default [
     'source-layer': 'Uganda_Bank-co2cp0',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent1,
+      'circle-color': colors.accent2,
     },
   },
   {
@@ -288,7 +288,7 @@ export default [
     'source-layer': 'Uganda_SACCO-5blhk6',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent1,
+      'circle-color': colors.accent3,
     },
   },
   {
@@ -297,7 +297,7 @@ export default [
     'source-layer': 'Uganda_ATM-ahz99o',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent1,
+      'circle-color': colors.accent4,
     },
   },
   {
@@ -306,7 +306,7 @@ export default [
     'source-layer': 'Uganda_Bureau_de_Change-3hqomh',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent1,
+      'circle-color': colors.accent5,
     },
   },
   {
@@ -315,7 +315,7 @@ export default [
     'source-layer': 'Uganda_Microfinance-1fdcvh',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent1,
+      'circle-color': colors.accent6,
     },
   },
   {
@@ -324,7 +324,7 @@ export default [
     'source-layer': 'Uganda_Money_Transfer-a598y9',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent1,
+      'circle-color': colors.accent8,
     },
   },
   {
@@ -333,7 +333,7 @@ export default [
     'source-layer': 'Uganda_Post_Office-64dicr',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent1,
+      'circle-color': colors.accent9,
     },
   },
   // Other
@@ -363,9 +363,8 @@ export default [
     'source-layer': 'Uganda_Transmission_Lines-0qt0n8',
     type: 'line',
     paint: {
-      'line-color': colors.text,
+      'line-color': colors.accent9,
       'line-opacity': 0.3,
-      'line-width': 1,
     },
   },
 ]

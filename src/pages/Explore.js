@@ -194,7 +194,7 @@ Explore.propTypes = {
     uicontrols: PropTypes.array.isRequired,
     sources: PropTypes.object.isRequired,
     layers: PropTypes.array.isRequired,
-    //csv: PropTypes.string.isRequired,
+    csv: PropTypes.string.isRequired,
   }),
   theme: PropTypes.object.isRequired,
 }
