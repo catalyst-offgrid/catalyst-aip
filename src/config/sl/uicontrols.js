@@ -38,7 +38,7 @@ export default [
         info: 'Sub regions',
       },
       {
-        id: 'sierra-leone--districts',
+        id: 'sierra-leone-districts',
         label: 'Districts',
         defaultVisibility: false,
         legend: 'none',
