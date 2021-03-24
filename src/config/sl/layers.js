@@ -154,7 +154,7 @@ export default [
   {
     id: 'sierra-leone-atm',
     source: 'sierra-leone-atm',
-    'source-layer': 'Sierra_Leone_ATM-85myoa',
+    'source-layer': 'Sierra_Leone_ATMs-85myoa',
     type: 'circle',
     paint: {
       'circle-color': colors.accent4,

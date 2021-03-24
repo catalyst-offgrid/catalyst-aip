@@ -92,7 +92,7 @@ export default {
     },
     {
       id: 'sierra-leone-atm',
-      layer: 'Sierra_Leone_ATM-85myoa',
+      layer: 'Sierra_Leone_ATMs-85myoa',
       tilesetid: 'iandmuir.7w9k79gx',
     },
     {
