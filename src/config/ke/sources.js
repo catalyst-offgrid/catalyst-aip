@@ -134,9 +134,19 @@ export default {
       tilesetid: 'iandmuir.dw3qu0un',
     },
     {
+      id: 'transmission_lines_33kv',
+      layer: 'Transmission_Lines_33KV_Repro-3bqaf1',
+      tilesetid: 'iandmuir.3ed4sgg1',
+    },
+    {
       id: 'transmission_lines_66kv',
       layer: 'Transmission_Lines_66KV_Repro-6e0r2m',
       tilesetid: 'iandmuir.4ze40n49',
+    },
+    {
+      id: 'transmission_lines_132kv',
+      layer: 'Transmission_Lines_132KV_Repr-cw6ysy',
+      tilesetid: 'iandmuir.8w1n62uh',
     },
     {
       id: 'transmission_lines_220kv',
@@ -237,6 +247,11 @@ export default {
       id: 'ke_universities',
       layer: 'Kenya_Education_University-79bh8a',
       tilesetid: 'iandmuir.7kco28zt',
+    },
+    {
+      id: 'ke_roads',
+      layer: 'Kenya_Roads-4sztzy',
+      tilesetid: 'iandmuir.co7fwwip',
     },
   ],
   /**

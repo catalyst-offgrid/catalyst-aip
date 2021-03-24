@@ -6,9 +6,24 @@ import * as d3 from 'd3-fetch'
 import Source from './Source'
 import Layer from './Layer'
 
-export default function CsvLayers({ csv, uiState, theme, map }) {
+export default function CsvLayers({ csv, uiState, theme, map, country }) {
   const [data, setData] = useState(null)
   const [layers, setLayer] = useState([])
+  // Matt's attempted fix begins here:
+  var country_base = ""
+  var base_id = ""
+  if (country == 'Kenya') {
+    country_base = 'Counties_47_-_Coded-1htj4o'
+    base_id = 'iandmuir.6e5zcwl0'
+  }
+  if (country == 'Uganda') {
+    country_base = 'Uganda_Sub_Regions-9l2yfr'
+    base_id = 'iandmuir.7r3eldtl'
+  }
+  if (country == 'Sierra Leone') {
+    country_base = 'Sierra_Leone_Districts-c34k65'
+    base_id = 'iandmuir.4f3biqz2'
+  }
 
   useEffect(() => {
     d3.csv(csv).then((data) => {
@@ -20,7 +35,7 @@ export default function CsvLayers({ csv, uiState, theme, map }) {
           l.push({
             id: `${column}`,
             source: 'census',
-            'source-layer': 'Counties_47_-_Coded-1htj4o',
+            'source-layer': country_base, //'Counties_47_-_Coded-1htj4o',
             type: 'fill',
             paint: {
               'fill-color': [
@@ -76,7 +91,7 @@ export default function CsvLayers({ csv, uiState, theme, map }) {
 
   return (
     data && (
-      <Source id='census' type='vector' tilesetid='iandmuir.6e5zcwl0' map={map}>
+      <Source id='census' type='vector' tilesetid={base_id} map={map}>
         {data &&
           layers &&
           layers.map((layer) => (
@@ -95,8 +110,9 @@ export default function CsvLayers({ csv, uiState, theme, map }) {
 }
 
 CsvLayers.propTypes = {
-  csv: PropTypes.string.isRequired,
+  //csv: PropTypes.string.isRequired,
   uiState: PropTypes.object.isRequired,
   theme: PropTypes.object.isRequired,
   map: PropTypes.object,
+  country: PropTypes.string.isRequired,
 }

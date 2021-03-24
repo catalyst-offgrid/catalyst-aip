@@ -167,7 +167,7 @@ export default function Explore({ siteAcronym, siteName, config, theme }) {
           ))
         )}
 
-        <CsvLayers id='csv' csv={csv} uiState={state} theme={theme} />
+        <CsvLayers id='csv' csv={csv} uiState={state} theme={theme} country={config.country} />
 
         <BasemapLayers
           id='admin'

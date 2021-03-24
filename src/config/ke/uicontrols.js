@@ -313,11 +313,27 @@ export default [
             info: 'Source: KPLC',
           },
           {
+            id: 'transmission_lines_33kv',
+            label: 'Transmission Lines 33kv',
+            defaultVisibility: false,
+            legend: { type: 'line', color: colors.accent8 },
+            layerIds: ['transmission_lines_33kv'],
+            info: 'Source: KPLC',
+          },
+          {
             id: 'transmission_lines_66kv',
             label: 'Transmission Lines 66kv',
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent10 },
             layerIds: ['transmission_lines_66kv'],
+            info: 'Source: KPLC',
+          },
+          {
+            id: 'transmission_lines_132kv',
+            label: 'Transmission Lines 132kv',
+            defaultVisibility: false,
+            legend: { type: 'line', color: colors.accent7 },
+            layerIds: ['transmission_lines_132kv'],
             info: 'Source: KPLC',
           },
           {
@@ -613,6 +629,24 @@ export default [
       // info: '',
       // },
     ],
+  },
+  {
+    id: 'infrastructure',
+    label: 'Infrastructure',
+    icon: Public,
+    description: '',
+    info:
+      '',
+    controls: [
+      {
+        id: 'ke_roads',
+        label: 'Road Network',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['ke_roads'],
+        info: '',
+      },
+    ]
   },
   {
     id: 'mobileData',
