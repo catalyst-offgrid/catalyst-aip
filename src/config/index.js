@@ -14,7 +14,7 @@ import ugsources from './ug/sources'
 import uguicontrols from './ug/uicontrols'
 
 import theme from './theme'
-import csv from '../../data/Energy/Census/KenyaLighting_Cooking.csv'
+import kecsv from '../../data/Energy/Census/KenyaLighting_Cooking.csv'
 import ugcsv from '../../data/Energy/Census/UgandaDataSubregion.csv'
 
 if (!process.env.MAPBOX_ACCESS_TOKEN) {
@@ -35,7 +35,7 @@ export default {
     layers: kelayers,
     sources: kesources,
     uicontrols: keuicontrols,
-    csv,
+    csv: kecsv,
   },
   ug: {
     country: 'Uganda',
@@ -45,17 +45,17 @@ export default {
     layers: uglayers,
     sources: ugsources,
     uicontrols: uguicontrols,
-    ugcsv,
+    csv: ugcsv,
   },
   sl: {
     country: 'Sierra Leone',
     countryCode: 'sl',
-    center: [-10.4606, 8.7799],
+    center: [11.7799, 8.4606],
     zoom: 6,
     layers: sllayers,
     sources: slsources,
     uicontrols: sluicontrols,
-    csv,
+    csv: kecsv,
   },
   theme,
 }

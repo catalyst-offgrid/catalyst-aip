@@ -10,8 +10,8 @@ export default function CsvLayers({ csv, uiState, theme, map, country }) {
   const [data, setData] = useState(null)
   const [layers, setLayer] = useState([])
   // Matt's attempted fix begins here:
-  var country_base = ""
-  var base_id = ""
+  var country_base = ''
+  var base_id = ''
   if (country == 'Kenya') {
     country_base = 'Counties_47_-_Coded-1htj4o'
     base_id = 'iandmuir.6e5zcwl0'
@@ -28,6 +28,7 @@ export default function CsvLayers({ csv, uiState, theme, map, country }) {
   useEffect(() => {
     d3.csv(csv).then((data) => {
       setData(data)
+      console.log('CSV Data:', data)
       const l = []
       data.columns
         .filter((c) => Object.keys(uiState).includes(c))
@@ -63,6 +64,7 @@ export default function CsvLayers({ csv, uiState, theme, map, country }) {
 
   useEffect(() => {
     layers.forEach((layer) => {
+      console.log(layer)
       const range = uiState[layer.id].range
       const domain = uiState[layer.id].domain
       if (range && domain) {
