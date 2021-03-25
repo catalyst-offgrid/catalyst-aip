@@ -50,7 +50,7 @@ export default {
   sl: {
     country: 'Sierra Leone',
     countryCode: 'sl',
-    center: [11.7799, 8.4606],
+    center: [-10.4606, 8.7799],
     zoom: 6,
     layers: sllayers,
     sources: slsources,
