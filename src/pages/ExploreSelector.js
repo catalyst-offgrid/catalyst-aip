@@ -67,7 +67,7 @@ export default function ExploreSelector({
     <PageLayout siteAcronym={siteAcronym} theme={theme}>
       <Image url={imageUrl} />
       <Introduction>
-        <PageTitle>AIP Explorer</PageTitle>
+        <PageTitle>Dataset Selection</PageTitle>
 
         <Tagline>
           <br />

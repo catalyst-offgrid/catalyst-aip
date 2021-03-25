@@ -145,11 +145,6 @@ export default {
       layer: 'Sierra_Leone_Road_Network-62c45g',
       tilesetid: 'iandmuir.dwpqwh2m',
     },
-    {
-      id: 'sierra-leone-transmission',
-      layer: 'Sierra_Leone_Transmission_Lin-dyrefu',
-      tilesetid: 'iandmuir.cv1a7jo6',
-    },
   ],
   /**
    * GeoJSON Datasets
