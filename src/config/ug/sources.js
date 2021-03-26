@@ -31,7 +31,13 @@ export default {
    *   tileSize: 256,
    * })
    */
-  raster: [],
+  raster: [
+    {
+      id: 'uganda-density',
+      layer: 'Uganda_Population_Density-7ec47s',
+      tilesetid: 'iandmuir.8xf9gnn2',
+    },
+  ],
   vector: [
     // Administrative Boundaries
     //{
@@ -53,6 +59,11 @@ export default {
       id: 'uganda-districts',
       layer: 'Uganda_Districts-8v64lf',
       tilesetid: 'iandmuir.bczdp5q2',
+    },
+    {
+      id: 'uganda-towns',
+      layer: 'Uganda_Towns-d10dpi',
+      tilesetid: 'iandmuir.3iq0au53',
     },
     // Educational Faciltiies
     {
@@ -215,9 +226,9 @@ export default {
       tilesetid: 'iandmuir.d6ngd8fj',
     },
     {
-      id: 'uganda-transmission',
-      layer: 'Uganda_Transmission_Lines-0qt0n8',
-      tilesetid: 'iandmuir.4qqlx7cg',
+      id: 'uganda-grid',
+      layer: 'Uganda_Grid_Final-1jbbnz',
+      tilesetid: 'iandmuir.90wqwo6o',
     },
   ],
   /**
@@ -229,5 +240,6 @@ export default {
    *  data: 'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_10m_ports.geojson'
    * });
    */
-  geojson: [],
+  geojson: [
+  ],
 }
