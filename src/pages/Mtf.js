@@ -149,7 +149,7 @@ const mtfUiControls = [
         subcontrols: [
           {
             id: 'Primary_vs_Secondary_Fuel_Types',
-            label: 'Primary_vs_Secondary_Fuel_Types',
+            label: 'Primary vs Secondary Fuel Types',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -157,7 +157,7 @@ const mtfUiControls = [
 
           {
             id: 'Primary_Cooking_Fuel_vs_Primary_Cookstove',
-            label: 'Primary_Cooking_Fuel_vs_Primary_Cookstove',
+            label: 'Primary Cooking Fuel vs Primary Cookstove',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -165,7 +165,7 @@ const mtfUiControls = [
 
           {
             id: 'Primary_Stove_Type',
-            label: 'Primary_Stove_Type',
+            label: 'Primary Stove Type',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -188,14 +188,14 @@ const mtfUiControls = [
           },
           {
             id: 'Primary_Sources_of_Cooking_Fuel_by_Electricity_Tier',
-            label: 'Primary_Sources_of_Cooking_Fuel_by_Electricity_Tier',
+            label: 'Primary Sources of Cooking Fuel by Electricity_Tier',
             defaultVisibility: false,
             legend: 'none',
             info: '',
           },
           {
             id: 'Primary_Sources_of_Household_Lighting',
-            label: 'Primary_Sources_of_Household_Lighting',
+            label: 'Primary Sources of Household Lighting',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -211,7 +211,7 @@ const mtfUiControls = [
         subcontrols: [
           {
             id: 'Grid_Electricity_Access_by_Tier',
-            label: 'Grid_Electricity_Access_by_Tier',
+            label: 'Grid Electricity Access by Tier',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -226,7 +226,7 @@ const mtfUiControls = [
         subcontrols: [
           {
             id: 'Primary_Source_of_Lighting_Prior_to_Solar',
-            label: 'Primary_Source_of_Lighting_Prior_to_Solar',
+            label: 'Primary Source of Lighting Prior to Solar',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -250,14 +250,14 @@ const mtfUiControls = [
         subcontrols: [
           {
             id: 'Amount_Spent_on_Fuel_for_Stoves',
-            label: 'Amount_Spent_on_Fuel_for_Stoves',
+            label: 'Amount Spent on Fuel for Stoves',
             defaultVisibility: false,
             legend: 'none',
             info: '',
           },
           {
             id: 'Amount_Paid_for_Cookstoves',
-            label: 'Amount_Paid_for_Cookstoves',
+            label: 'Amount Paid for Cookstoves',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -273,14 +273,14 @@ const mtfUiControls = [
         subcontrols: [
           {
             id: 'Amount_Spent_on_Mobile_Phone_Top_up_per_Month',
-            label: 'Amount_Spent_on_Mobile_Phone_Top_up_per_Month',
+            label: 'Amount Spent on Mobile Phone Top up per Month',
             defaultVisibility: false,
             legend: 'none',
             info: '',
           },
           {
             id: 'Amount_Spent_on_House_Rent_per_Month',
-            label: 'Amount_Spent_on_House_Rent_per_Month',
+            label: 'Amount Spent on House Rent per Month',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -297,21 +297,21 @@ const mtfUiControls = [
         subcontrols: [
           {
             id: 'Days_Used_Lamp_or_Candle_per_Month',
-            label: 'Days_Used_Lamp_or_Candle_per_Month',
+            label: 'Days Used Lamp or Candle per Month',
             defaultVisibility: false,
             legend: 'none',
             info: '',
           },
           {
             id: 'Hours_Used_Lamp_or_Candle_per_Day',
-            label: 'Hours_Used_Lamp_or_Candle_per_Day',
+            label: 'Hours Used Lamp or Candle per Day',
             defaultVisibility: false,
             legend: 'none',
             info: '',
           },
           {
             id: 'Weekly_Expenditure_on_Lamps_or_Candles',
-            label: 'Weekly_Expenditure_on_Lamps_or_Candles',
+            label: 'Weekly Expenditure on Lamps or Candles',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -335,7 +335,7 @@ const mtfUiControls = [
           // },
           {
             id: 'Willingness_to_Pay_over_12_months_for_a_Fuelwood_Cookstove',
-            label: 'Willingness_to_Pay_over_12_months_for_a_Fuelwood_Cookstove',
+            label: 'Willingness to Pay over 12 months for a Fuelwood Cookstove',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -389,7 +389,7 @@ const mtfUiControls = [
     controls: [
       {
         id: 'Number_of_Phones_the_Household_Owns',
-        label: 'Number_of_Phones_the_Household_Owns',
+        label: 'Number of Phones the Household Owns',
         defaultVisibility: false,
         legend: 'none',
         info: '',
@@ -411,21 +411,21 @@ const mtfUiControls = [
         subcontrols: [
           {
             id: 'Number_of_Rooms_the_Household_Occupies',
-            label: 'Number_of_Rooms_the_Household_Occupies',
+            label: 'Number of Rooms the ousehold_Occupies',
             defaultVisibility: false,
             legend: 'none',
             info: '',
           },
           {
             id: 'Wall_Dwelling_Materials',
-            label: 'Wall_Dwelling_Materials',
+            label: 'Wall Dwelling Materials',
             defaultVisibility: false,
             legend: 'none',
             info: '',
           },
           {
             id: 'Floor_vs_Wall_Dwelling_Material',
-            label: 'Floor_vs_Wall_Dwelling_Material',
+            label: 'Floor vs Wall Dwelling Material',
             defaultVisibility: false,
             legend: 'none',
             info: '',
