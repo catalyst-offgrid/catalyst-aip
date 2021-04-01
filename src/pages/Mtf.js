@@ -136,7 +136,7 @@ function reducer(state, action) {
 const mtfUiControls = [
   {
     id: 'admin',
-    label: 'Module 1',
+    label: 'Module 1 – Household Energy Access',
     icon: AdminBoundaries,
     description: '',
     info: 'Administritative boundaries from the Government of Kenya.',
@@ -237,7 +237,7 @@ const mtfUiControls = [
   },
   {
     id: 'admin',
-    label: 'Module 2',
+    label: 'Module 2 – Consumption & Economics',
     icon: AdminBoundaries,
     description: '',
     info: 'Administritative boundaries from the Government of Kenya.',
@@ -382,7 +382,7 @@ const mtfUiControls = [
   },
   {
     id: 'admin',
-    label: 'Module 3',
+    label: 'Module 3 – Financial Inclusion & ICT',
     icon: AdminBoundaries,
     description: '',
     info: 'Administritative boundaries from the Government of Kenya.',
@@ -398,7 +398,7 @@ const mtfUiControls = [
   },
   {
     id: 'admin',
-    label: 'Module 4',
+    label: 'Module 4 – Household Characteristics & Assets',
     icon: AdminBoundaries,
     description: '',
     info: 'Administritative boundaries from the Government of Kenya.',
