@@ -475,7 +475,6 @@ export default function Mtf({ siteAcronym, siteName, config, theme }) {
           changeSlider={changeSlider}
           selectedGraph={selectedGraph}
         />
-        {selectedGraph}
       </MtfDrawer>
 
       <VegaContainer>
