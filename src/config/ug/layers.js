@@ -28,6 +28,15 @@ export default [
     //},
   //},
   {
+    id: 'uganda-density',
+    source: 'uganda-density',
+    'source-layer': 'Uganda_Population_Densoty-7ec47s',
+    type: 'raster',
+    paint: {
+      'raster-opacity': 0.5,
+    },
+  },
+  {
     id: 'counties',
     source: 'counties',
     'source-layer': 'Uganda_Sub_Regions-9l2yfr',
@@ -58,6 +67,15 @@ export default [
       'line-color': colors.text,
       'line-opacity': 0.5,
       'line-width': 1,
+    },
+  },
+  {
+    id: 'uganda-towns',
+    source: 'uganda-towns',
+    'source-layer': 'Uganda_Towns-d10dpi',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent5,
     },
   },
   // Health Facilities
@@ -358,13 +376,15 @@ export default [
     },
   },
   {
-    id: 'uganda-transmission',
-    source: 'uganda-transmission',
-    'source-layer': 'Uganda_Transmission_Lines-0qt0n8',
+    id: 'uganda-grid',
+    source: 'uganda-grid',
+    'source-layer': 'Uganda_Grid_Final-1jbbnz',
     type: 'line',
     paint: {
       'line-color': colors.accent9,
       'line-opacity': 0.3,
+      'line-width': 1,
     },
   },
+
 ]

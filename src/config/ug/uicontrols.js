@@ -54,6 +54,14 @@ export default [
         layerIds: ['uganda-districts'],
         info: '',
       },
+      {
+        id: 'uganda-towns',
+        label: 'Towns',
+        defaultVisibility: false,
+        legend: {type: 'dot', color: colors.accent5 },
+        layerIds: ['uganda-towns'],
+        info: '',
+      },
     ],
   },
   {
@@ -74,20 +82,138 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 75},
-              domain: [0, 75],
+              defaultRange: { min: 0, max: 58},
+              domain: [0, 58],
               unit: '%',
             },
             layerIds: ['Tadooba - Lighting Fuel'],
+            info: '',
+          },
+          {
+            id: 'Lantern - Lighting Fuel', // matches .csv column name
+            label: 'Lantern',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 13},
+              domain: [0, 13],
+              unit: '%',
+            },
+            layerIds: ['Lantern - Lighting Fuel'],
+            info: '',
+          },
+          {
+            id: 'Grid Electricity - Lighting Fuel', // matches .csv column name
+            label: 'Grid Electricity',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 70},
+              domain: [0, 70],
+              unit: '%',
+            },
+            layerIds: ['Grid Electricity - Lighting Fuel'],
+            info: '',
+          },
+          {
+            id: 'Solar - Lighting Fuel', // matches .csv column name
+            label: 'Solar',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 33},
+              domain: [0, 33],
+              unit: '%',
+            },
+            layerIds: ['Solar - Lighting Fuel'],
+            info: '',
+          },
+          {
+            id: 'Dry Cells/Batteries - Lighting Fuel', // matches .csv column name
+            label: 'Dry Cells/Batteries',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 57},
+              domain: [0, 57],
+              unit: '%',
+            },
+            layerIds: ['Dry Cells/Batteries - Lighting Fuel'],
+            info: '',
+          },
+          {
+            id: 'Candles - Lighting Fuel', // matches .csv column name
+            label: 'Candles',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 6},
+              domain: [0, 6],
+              unit: '%',
+            },
+            layerIds: ['Candles - Lighting Fuel'],
+            info: '',
+          },
+          {
+            id: 'Other Lighting Fuel', // matches .csv column name
+            label: 'Other',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 41},
+              domain: [0, 41],
+              unit: '%',
+            },
+            layerIds: ['Other Lighting Fuel'],
             info: '',
           },
         ],
       },
       {
         id: 'cooking',
-        label: 'Cooking Fuels',
+        label: 'Firewood',
         info: '',
-        subcontrols: [],
+        subcontrols: [
+          {
+            id: 'Firewood - Cooking Fuel', // matches .csv column name
+            label: 'Firewood',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 87},
+              domain: [0, 87],
+              unit: '%',
+            },
+            layerIds: ['Firewood - Cooking Fuel'],
+            info: '',
+          },
+          {
+            id: 'Charcoal - Cooking Fuel', // matches .csv column name
+            label: 'Charcoal',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 70},
+              domain: [0, 70],
+              unit: '%',
+            },
+            layerIds: ['Charcoal - Cooking Fuel'],
+            info: '',
+          },
+          {
+            id: 'Other Cooking Fuel', // matches .csv column name
+            label: 'Other',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 15},
+              domain: [0, 15],
+              unit: '%',
+            },
+            layerIds: ['Other Cooking Fuel'],
+            info: '',
+          },
+        ],
       },
       {
         id: 'grid',
@@ -103,20 +229,86 @@ export default [
             info: '',
           },
           {
-            id: 'uganda-transmission',
+            id: 'uganda-grid',
             label: 'Transmission Lines',
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent9 },
-            layerIds: ['uganda-transmission'],
+            layerIds: ['uganda-grid'],
             info: '',
           },
         ],
       },
       {
-        id: 'mini-grid',
-        label: 'Mini Grid Electricity',
+        id: 'grid-disconnection',
+        label: 'Reason for Grid Exclusion',
         info: '',
-        subcontrols: [],
+        subcontrols: [
+          {
+            id: 'Too Far/Not Available - Reason for Non-Connection to Grid', // matches .csv column name
+            label: 'Too Far or Not Available',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 78},
+              domain: [0, 78],
+              unit: '%',
+            },
+            layerIds: ['Too Far/Not Available - Reason for Non-Connection to Grid'],
+            info: '',
+          },
+          {
+            id: 'Cost of Connection Too Expensive - Reason for Non-Connection to Grid', // matches .csv column name
+            label: 'Cost of Connection',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 51},
+              domain: [0, 51],
+              unit: '%',
+            },
+            layerIds: ['Cost of Connection Too Expensive - Reason for Non-Connection to Grid'],
+            info: '',
+          },
+          {
+            id: 'Renting or Landlord Decision - Reason for Non-Connection to Grid', // matches .csv column name
+            label: 'Landlord Decision',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 21},
+              domain: [0, 21],
+              unit: '%',
+            },
+            layerIds: ['Renting or Landlord Decision - Reason for Non-Connection to Grid'],
+            info: '',
+          },
+          {
+            id: 'Monthly Fee Too Expensive - Reason for Non-Connection to Grid', // matches .csv column name
+            label: 'Monthly Fee Cost',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 19},
+              domain: [0, 19],
+              unit: '%',
+            },
+            layerIds: ['Monthly Fee Too Expensive - Reason for Non-Connection to Grid'],
+            info: '',
+          },
+          {
+            id: 'Other Reason for Non-Connection to Grid', // matches .csv column name
+            label: 'Other',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 9},
+              domain: [0, 9],
+              unit: '%',
+            },
+            layerIds: ['Other Reason for Non-Connection to Grid'],
+            info: '',
+          },
+        ],
       },
     ],
   },
@@ -309,7 +501,16 @@ export default [
         label: 'Population and Movement',
         info:
           'Displays where the people of Kenya live and the patterns in their movement.',
-        subcontrols: [],
+        subcontrols: [
+          {
+            id: 'uganda-density',
+            label: 'Population Density',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['uganda-density'],
+            info: '',
+          },
+        ],
       },
       {
         id: 'ageRanges',
@@ -317,6 +518,45 @@ export default [
         info: 'Breakdown of the regions by the age of their population.',
         subcontrols: [
           // Add layers here
+          {
+            id: 'Household Population 0-13', // matches .csv column name
+            label: 'Under 14',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 56},
+              domain: [0, 56],
+              unit: '%',
+            },
+            layerIds: ['Household Population 0-13'],
+            info: '',
+          },
+          {
+            id: 'Household Population 14-64', // matches .csv column name
+            label: '14 - 64',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 60},
+              domain: [0, 60],
+              unit: '%',
+            },
+            layerIds: ['Household Population 14-64'],
+            info: '',
+          },
+          {
+            id: 'Household Population 65+', // matches .csv column name
+            label: '65+',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 5},
+              domain: [0, 5],
+              unit: '%',
+            },
+            layerIds: ['Household Population 65+'],
+            info: '',
+          },
         ],
       },
       {
@@ -324,7 +564,34 @@ export default [
         label: 'Household Characteristics',
         info:
           'Descriptive statistics of the households located in each region.',
-        subcontrols: [],
+        subcontrols: [
+          {
+            id: 'Average Household Size', // matches .csv column name
+            label: 'Average Household Size',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 7},
+              domain: [0, 7],
+              unit: '',
+            },
+            layerIds: ['Average Household Size'],
+            info: '',
+          },
+          {
+            id: 'Total Households', // matches .csv column name
+            label: 'Total Households',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 1500000},
+              domain: [0, 1500000],
+              unit: '',
+            },
+            layerIds: ['Total Households'],
+            info: '',
+          },
+        ],
       },
       // {
       // id: 'compress',
@@ -491,30 +758,105 @@ export default [
         label: 'Mode of Human Waste Disposal',
         info: '',
         subcontrols: [
-          // {
-          // id: 'arc',
-          // label: 'Population Density (Heatmap)',
-          // defaultVisibility: false,
-          // legend: 'none',
-          // layerIds: ['arc-population-density'],
-          // info: 'Source: Arc 2016',
-          // },
+          {
+            id: 'Pit Latrine - Type of Toilet', // matches .csv column name
+            label: 'Pit Latrine',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 96},
+              domain: [0, 96],
+              unit: '%',
+            },
+            layerIds: ['Pit Latrine - Type of Toilet'],
+            info: '',
+          },
+          {
+            id: 'VIP Latrine - Type of Toilet', // matches .csv column name
+            label: 'VIP Latrine',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 17},
+              domain: [0, 17],
+              unit: '%',
+            },
+            layerIds: ['VIP Latrine - Type of Toilet'],
+            info: '',
+          },
+          {
+            id: 'Bush/No Toilet - Type of Toilet', // matches .csv column name
+            label: 'Bush/No Toilet',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 66},
+              domain: [0, 66],
+              unit: '%',
+            },
+            layerIds: ['Bush/No Toilet - Type of Toilet'],
+            info: '',
+          },
+          {
+            id: 'Flush - Type of Toilet', // matches .csv column name
+            label: 'Flush Toilet',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 11},
+              domain: [0, 11],
+              unit: '%',
+            },
+            layerIds: ['Flush - Type of Toilet'],
+            info: '',
+          },
         ],
       },
       {
         id: 'drinkingWater',
-        label: 'Source of Drinking Water',
+        label: 'Distance from Water Source',
         info: '',
         subcontrols: [
           // Add layers here
-        ],
-      },
-      {
-        id: 'births',
-        label: 'Births',
-        info: '',
-        subcontrols: [
-          // Add layers here
+          {
+            id: '< 3km - Distance to Drinking Water Source', // matches .csv column name
+            label: 'Less than 3 km',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 99},
+              domain: [0, 99],
+              unit: '%',
+            },
+            layerIds: ['< 3km - Distance to Drinking Water Source'],
+            info: '',
+          },
+          {
+            id: '3-5km - Distance to Drinking Water Source', // matches .csv column name
+            label: '3 to 5 km',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 6},
+              domain: [0, 6],
+              unit: '%',
+            },
+            layerIds: ['3-5km - Distance to Drinking Water Source'],
+            info: '',
+          },
+          {
+            id: '5+ km - Distance to Drinking Water Source', // matches .csv column name
+            label: '5+ km',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 2},
+              domain: [0, 2],
+              unit: '%',
+            },
+            layerIds: ['5+ km - Distance to Drinking Water Source'],
+            info: '',
+          },
         ],
       },
     ],
@@ -526,37 +868,18 @@ export default [
     description: '',
     info: 'Assets and ownership.',
     controls: [
-      {
-        id: 'electronic_appliance',
-        label: 'Electronics and Appliances',
-        info: '',
-        subcontrols: [
-          // {
-          // id: 'arc',
-          // label: 'Population Density (Heatmap)',
-          // defaultVisibility: false,
-          // legend: 'none',
-          // layerIds: ['arc-population-density'],
-          // info: 'Source: Arc 2016',
-          // },
-          // {
-          // id: 'fb-population',
-          // label: 'Population Density (HD)',
-          // defaultVisibility: false,
-          // legend: 'none',
-          // layerIds: ['fb-population-density'],
-          // info: 'Source: Facebook',
-          // },
-        ],
-      },
-      {
-        id: 'vehicles',
-        label: 'Vehicles',
-        info: '',
-        subcontrols: [
-          // Add layers here
-        ],
-      },
+      //{
+      //  id: 'electronic_appliance',
+      //  label: 'Electronics and Appliances',
+      //  info: '',
+      //  subcontrols: [],
+      //},
+      //{
+      //  id: 'vehicles',
+      //  label: 'Vehicles',
+      //  info: '',
+      //  subcontrols: [],
+      //},
       {
         id: 'Disability',
         label: 'Disability',
@@ -575,11 +898,50 @@ export default [
     info: 'Assets and ownership.',
     controls: [
       {
-        id: 'unemployment',
-        label: 'Unemployment',
+        id: 'indicators',
+        label: 'Indicators',
         info: '',
         subcontrols: [
           //insert unemployment layers here
+          {
+            id: 'Percent of Population in Poverty', // matches .csv column name
+            label: 'Poverty',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 11},
+              domain: [0, 11],
+              unit: '%',
+            },
+            layerIds: ['Percent of Population in Poverty'],
+            info: '',
+          },
+          {
+            id: 'Average Nominal Monthly Household Income', // matches .csv column name
+            label: 'Average Household Income',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 1000000},
+              domain: [0, 1000000],
+              unit: '',
+            },
+            layerIds: ['Average Nominal Monthly Household Income'],
+            info: '',
+          },
+          {
+            id: 'Unemployment Rate', // matches .csv column name
+            label: 'Unemployment',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 17},
+              domain: [0, 17],
+              unit: '%',
+            },
+            layerIds: ['Unemployment Rate'],
+            info: '',
+          },
         ],
       },
       {
@@ -587,23 +949,45 @@ export default [
         label: 'Roof Material',
         info: '',
         subcontrols: [
-          // Add layers here
-          // {
-          // id: 'arc',
-          // label: 'Population Density (Heatmap)',
-          // defaultVisibility: false,
-          // legend: 'none',
-          // layerIds: ['arc-population-density'],
-          // info: 'Source: Arc 2016',
-          // },
-          // {
-          // id: 'fb-population',
-          // label: 'Population Density (HD)',
-          // defaultVisibility: false,
-          // legend: 'none',
-          // layerIds: ['fb-population-density'],
-          // info: 'Source: Facebook',
-          // },
+          {
+            id: 'Iron Sheets - Roofing', // matches .csv column name
+            label: 'Iron Sheets',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 98},
+              domain: [0, 98],
+              unit: '%',
+            },
+            layerIds: ['Iron Sheets - Roofing'],
+            info: '',
+          },
+          {
+            id: 'Thatched - Roofing', // matches .csv column name
+            label: 'Thatched',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 92},
+              domain: [0, 92],
+              unit: '%',
+            },
+            layerIds: ['Thatched - Roofing'],
+            info: '',
+          },
+          {
+            id: 'Other Roofing Type', // matches .csv column name
+            label: 'Other',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 4},
+              domain: [0, 4],
+              unit: '%',
+            },
+            layerIds: ['Other Roofing Type'],
+            info: '',
+          },
         ],
       },
       {
@@ -612,6 +996,45 @@ export default [
         info: '',
         subcontrols: [
           // Add layers here
+          {
+            id: 'Bricks - Walls', // matches .csv column name
+            label: 'Bricks',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 97},
+              domain: [0, 97],
+              unit: '%',
+            },
+            layerIds: ['Bricks - Walls'],
+            info: '',
+          },
+          {
+            id: 'Mud & Poles - Wall', // matches .csv column name
+            label: 'Mud & Poles',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 84},
+              domain: [0, 84],
+              unit: '%',
+            },
+            layerIds: ['Mud & Poles - Walls'],
+            info: '',
+          },
+          {
+            id: 'Other Wall Material', // matches .csv column name
+            label: 'Other',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 12},
+              domain: [0, 12],
+              unit: '%',
+            },
+            layerIds: ['Other Wall Material'],
+            info: '',
+          },
         ],
       },
       {
@@ -620,6 +1043,45 @@ export default [
         info: '',
         subcontrols: [
           // Add layers here
+          {
+            id: 'Earth - Flooring', // matches .csv column name
+            label: 'Earth',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 97},
+              domain: [0, 97],
+              unit: '%',
+            },
+            layerIds: ['Earth - Flooring'],
+            info: '',
+          },
+          {
+            id: 'Cement - Flooring', // matches .csv column name
+            label: 'Cement',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 64},
+              domain: [0, 64],
+              unit: '%',
+            },
+            layerIds: ['Cement - Flooring'],
+            info: '',
+          },
+          {
+            id: 'Other Flooring Material', // matches .csv column name
+            label: 'Other',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 20},
+              domain: [0, 20],
+              unit: '%',
+            },
+            layerIds: ['Other Flooring Material'],
+            info: '',
+          },
         ],
       },
     ],
@@ -636,38 +1098,58 @@ export default [
         label: 'Industry Participation',
         info: '',
         subcontrols: [
-          // {
-          // id: 'arc',
-          // label: 'Population Density (Heatmap)',
-          // defaultVisibility: false,
-          // legend: 'none',
-          // layerIds: ['arc-population-density'],
-          // info: 'Source: Arc 2016',
-          // },
-          // {
-          // id: 'fb-population',
-          // label: 'Population Density (HD)',
-          // defaultVisibility: false,
-          // legend: 'none',
-          // layerIds: ['fb-population-density'],
-          // info: 'Source: Facebook',
-          // },
-        ],
-      },
-      {
-        id: 'livestock_fish',
-        label: 'Livestock & Fish',
-        info: '',
-        subcontrols: [
-          // Add layers here
-        ],
-      },
-      {
-        id: 'permanent_crops',
-        label: 'Permanent Crop Growth',
-        info: '',
-        subcontrols: [
-          // Add layers here
+          {
+            id: 'Agriculture - Employed Persons by Industry', // matches .csv column name
+            label: 'Agriculture',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 46},
+              domain: [0, 46],
+              unit: '%',
+            },
+            layerIds: ['Agriculture - Employed Persons by Industry'],
+            info: '',
+          },
+          {
+            id: 'Construction - Employed Persons by Industry', // matches .csv column name
+            label: 'Construction',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 20},
+              domain: [0, 20],
+              unit: '%',
+            },
+            layerIds: ['Construction - Employed Persons by Industry'],
+            info: '',
+          },
+          {
+            id: 'Trade - Employed Persons by Industry', // matches .csv column name
+            label: 'Trade',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 28},
+              domain: [0, 28],
+              unit: '%',
+            },
+            layerIds: ['Trade - Employed Persons by Industry'],
+            info: '',
+          },
+          {
+            id: 'Other Services - Employed Persons by Industry', // matches .csv column name
+            label: 'Other Service',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 45},
+              domain: [0, 45],
+              unit: '%',
+            },
+            layerIds: ['Other Services - Employed Persons by Industry'],
+            info: '',
+          },
         ],
       },
     ],
