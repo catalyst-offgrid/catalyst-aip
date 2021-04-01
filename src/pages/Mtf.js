@@ -10,22 +10,10 @@ import CsvLayers from '../components/CsvLayers'
 import BasemapLayers from '../components/BasemapLayers'
 
 import { Vega } from 'react-vega'
-import fuelsHeatmap from '../assets/mtf-graphs/module_1/cooking_fuel_detail/fuels_heatmap'
 
 import GraphControl from '../components/GraphControl'
 
-import {
-  AdminBoundaries,
-  Energy,
-  Population,
-  Public,
-  Health,
-  //Placeholder,
-  Mobile,
-  EconHealth,
-  HHAsset,
-  EconAct,
-} from '../icons'
+import { AdminBoundaries } from '../icons'
 
 import LayerControl from '../components/LayerControl'
 import MtfDrawer from '../components/MtfDrawer'

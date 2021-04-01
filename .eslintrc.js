@@ -27,6 +27,12 @@ module.exports = {
   },
   rules: {
     'inclusive-language/use-inclusive-words': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
   overrides: [
     {
