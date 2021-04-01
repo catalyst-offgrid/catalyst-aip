@@ -142,6 +142,67 @@ const mtfUiControls = [
     info: 'Administritative boundaries from the Government of Kenya.',
     controls: [
       {
+        id: 'energy_access_summary',
+        label: 'Energy Access Summary',
+        defaultVisibility: false,
+        legend: 'none',
+        subcontrols: [
+          {
+            id: 'Primary_Sources_of_Electricity_by_Tier',
+            label: 'Primary Sources of Electricity by Tier',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'Primary_Sources_of_Cooking_Fuel_by_Electricity_Tier',
+            label: 'Primary Sources of Cooking Fuel by Electricity_Tier',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'Primary_Sources_of_Household_Lighting',
+            label: 'Primary Sources of Household Lighting',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+        ],
+        info: '',
+      },
+
+      {
+        id: 'stopgap_household_detail',
+        label: 'Stopgap Household Detail',
+        defaultVisibility: false,
+        legend: 'none',
+        subcontrols: [
+          {
+            id: 'Primary_Source_of_Lighting_Prior_to_Solar',
+            label: 'Primary Source of Lighting Prior to Solar',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+        ],
+      },
+      {
+        id: 'grid_hh_detail',
+        label: 'Grid Household Detail',
+        defaultVisibility: false,
+        legend: 'none',
+        subcontrols: [
+          {
+            id: 'Grid_Electricity_Access_by_Tier',
+            label: 'Grid Electricity Access by Tier',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+        ],
+      },
+      {
         id: 'cooking_fuel_detail',
         label: 'Cooking Fuel Detail',
         defaultVisibility: false,
@@ -173,66 +234,6 @@ const mtfUiControls = [
         ],
         info: '',
       },
-      {
-        id: 'energy_access_summary',
-        label: 'Energy Access Summary',
-        defaultVisibility: false,
-        legend: 'none',
-        subcontrols: [
-          {
-            id: 'Primary_Sources_of_Electricity_by_Tier',
-            label: 'Primary Sources of Electricity by Tier',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-          {
-            id: 'Primary_Sources_of_Cooking_Fuel_by_Electricity_Tier',
-            label: 'Primary Sources of Cooking Fuel by Electricity_Tier',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-          {
-            id: 'Primary_Sources_of_Household_Lighting',
-            label: 'Primary Sources of Household Lighting',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-        ],
-        info: '',
-      },
-      {
-        id: 'grid_hh_detail',
-        label: 'Grid Household Detail',
-        defaultVisibility: false,
-        legend: 'none',
-        subcontrols: [
-          {
-            id: 'Grid_Electricity_Access_by_Tier',
-            label: 'Grid Electricity Access by Tier',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-        ],
-      },
-      {
-        id: 'stopgap_household_detail',
-        label: 'Stopgap Household Detail',
-        defaultVisibility: false,
-        legend: 'none',
-        subcontrols: [
-          {
-            id: 'Primary_Source_of_Lighting_Prior_to_Solar',
-            label: 'Primary Source of Lighting Prior to Solar',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-        ],
-      },
     ],
   },
   {
@@ -242,53 +243,6 @@ const mtfUiControls = [
     description: '',
     info: 'Administritative boundaries from the Government of Kenya.',
     controls: [
-      {
-        id: 'cooking_existing_expenditures',
-        label: 'Existing expenditures on energy for cooking',
-        defaultVisibility: false,
-        legend: 'none',
-        subcontrols: [
-          {
-            id: 'Amount_Spent_on_Fuel_for_Stoves',
-            label: 'Amount Spent on Fuel for Stoves',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-          {
-            id: 'Amount_Paid_for_Cookstoves',
-            label: 'Amount Paid for Cookstoves',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-        ],
-        info: '',
-      },
-      {
-        id: 'section_l_part_1',
-        label: 'Consumption / expenditure on other goods & services',
-        defaultVisibility: false,
-        legend: 'none',
-        subcontrols: [
-          {
-            id: 'Amount_Spent_on_Mobile_Phone_Top_up_per_Month',
-            label: 'Amount Spent on Mobile Phone Top up per Month',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-          {
-            id: 'Amount_Spent_on_House_Rent_per_Month',
-            label: 'Amount Spent on House Rent per Month',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-        ],
-        info: '',
-      },
-
       {
         id: 'lighting_existing_expenditures',
         label: 'Existing expenditures on energy for lighting & appliances',
@@ -319,7 +273,29 @@ const mtfUiControls = [
         ],
         info: '',
       },
-
+      {
+        id: 'cooking_existing_expenditures',
+        label: 'Existing expenditures on energy for cooking',
+        defaultVisibility: false,
+        legend: 'none',
+        subcontrols: [
+          {
+            id: 'Amount_Spent_on_Fuel_for_Stoves',
+            label: 'Amount Spent on Fuel for Stoves',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'Amount_Paid_for_Cookstoves',
+            label: 'Amount Paid for Cookstoves',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+        ],
+        info: '',
+      },
       {
         id: 'cooking_wtp',
         label: 'Existing expenditures on energy for improved cookstoves',
@@ -342,6 +318,30 @@ const mtfUiControls = [
           },
         ],
       },
+      {
+        id: 'section_l_part_1',
+        label: 'Consumption / expenditure on other goods & services',
+        defaultVisibility: false,
+        legend: 'none',
+        subcontrols: [
+          {
+            id: 'Amount_Spent_on_Mobile_Phone_Top_up_per_Month',
+            label: 'Amount Spent on Mobile Phone Top up per Month',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'Amount_Spent_on_House_Rent_per_Month',
+            label: 'Amount Spent on House Rent per Month',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+        ],
+        info: '',
+      },
+
       // {
       //   id: 'elec_grid_willing_to_pay',
       //   label: '(Elec/Grid) Willingness to Pay',
@@ -404,14 +404,14 @@ const mtfUiControls = [
     info: 'Administritative boundaries from the Government of Kenya.',
     controls: [
       {
-        id: 'cooking_wtp',
-        label: 'Existing expenditures on energy for improved cookstoves',
+        id: 'dwelling_detail',
+        label: 'Household Dwelling Detail',
         defaultVisibility: false,
         legend: 'none',
         subcontrols: [
           {
             id: 'Number_of_Rooms_the_Household_Occupies',
-            label: 'Number of Rooms the ousehold_Occupies',
+            label: 'Number of Rooms the Household Occupies',
             defaultVisibility: false,
             legend: 'none',
             info: '',
