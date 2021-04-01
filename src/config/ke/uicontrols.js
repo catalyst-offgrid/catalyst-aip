@@ -80,12 +80,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 75},
+              defaultRange: { min: 0, max: 75 },
               domain: [0, 75],
               unit: '%',
             },
             layerIds: ['Low-Quality Stopgap Total'],
-            info: 
+            info:
               'Description: Percentage of households in an area whose primary lighting source is a stopgap solution (e.g., keronse, candles, dry-cell batteries, etc.). Source: 2019 Kenya Population and Housing Census',
           },
           {
@@ -99,7 +99,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Kerosene (Total)'],
-            info: 
+            info:
               'Description: Percentage of households in an area whose primary lighting source is kerosene (irrespective of lamp type used). Source: 2019 Kenya Population and Housing Census',
           },
           {
@@ -108,12 +108,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 1},
+              defaultRange: { min: 0, max: 1 },
               domain: [0, 1],
               unit: '%',
             },
             layerIds: ['Paraffin Pressure Lamp'],
-            info: 
+            info:
               'Description: Percentage of households in an area whose primary lighting source is a paraffin kerosene pressure lamp. Source: 2019 Kenya Population and Housing Census',
           },
           {
@@ -122,12 +122,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 16},
+              defaultRange: { min: 0, max: 16 },
               domain: [0, 16],
               unit: '%',
             },
             layerIds: ['Paraffin Lantern'],
-            info: 
+            info:
               'Description: Percentage of households in an area whose primary lighting source is a kerosene lantern. Source: 2019 Kenya Population and Housing Census',
           },
           {
@@ -141,8 +141,8 @@ export default [
               unit: '%',
             },
             layerIds: ['Paraffin Tin Lamp'],
-            info: 
-              'Description: Percentage of households in an area whose primary lighting source is a kerosene tin lamp (which also includes plastic or bottle lamps). Source: 2019 Kenya Population and Housing Census'',
+            info:
+              'Description: Percentage of households in an area whose primary lighting source is a kerosene tin lamp (which also includes plastic or bottle lamps). Source: 2019 Kenya Population and Housing Census',
           },
           {
             id: 'Gas Lamp', // matches .csv column name
@@ -155,7 +155,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Gas Lamp'],
-            info: 
+            info:
               'Description: Percentage of households in an area whose primary lighting source is a gas lamp (likely fueled by biogas, LPG, or natural gas). Source: 2019 Kenya Population and Housing Census',
           },
           {
@@ -169,7 +169,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Wood'],
-            info: 
+            info:
               'Description: Percentage of households in an area whose primary lighting source is wood. Source: 2019 Kenya Population and Housing Census',
           },
           {
@@ -183,7 +183,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Solar (Total)'],
-            info: 
+            info:
               'Description: Percentage of households in an area whose primary lighting source is a solar device (e.g., solar lantern, solar ligthing system, solar home system). Source: 2019 Kenya Population and Housing Census',
           },
           {
@@ -192,12 +192,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 55},
+              defaultRange: { min: 0, max: 55 },
               domain: [0, 55],
               unit: '%',
             },
             layerIds: ['Solar'],
-            info: 
+            info:
               'Description: Percentage of households in an area whose primary lighting source is a solar system (not including solar lanterns). Source: 2019 Kenya Population and Housing Census',
           },
           {
@@ -211,7 +211,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Torch / Spotlight (Solar-Charged)'],
-            info: 
+            info:
               'Description: Percentage of households in an area whose primary lighting source is a solar lantern. Source: 2019 Kenya Population and Housing Census',
           },
           {
@@ -225,8 +225,8 @@ export default [
               unit: '%',
             },
             layerIds: ['Torch / Spotlight (Dry Cells))'],
-            info: 
-            'Description: Percentage of households in an area whose primary lighting source is a torch (flashlight) powered by dry-cell batteries. Source: 2019 Kenya Population and Housing Census',
+            info:
+              'Description: Percentage of households in an area whose primary lighting source is a torch (flashlight) powered by dry-cell batteries. Source: 2019 Kenya Population and Housing Census',
           },
         ],
       },
@@ -241,12 +241,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 5},
+              defaultRange: { min: 0, max: 5 },
               domain: [0, 5],
               unit: '%',
             },
             layerIds: ['Cooking - Electricity'],
-            info: 
+            info:
               'Description: Percentage of households in an area whose primary cooking fuel is electricity. Source: 2019 Kenya Population and Housing Census',
           },
           {
@@ -260,7 +260,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Cooking - Charcoal'],
-            info: 
+            info:
               'Description: Percentage of households in an area whose primary cooking fuel is charcoal. Source: 2019 Kenya Population and Housing Census',
           },
           {
@@ -274,7 +274,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Cooking - Gas (LPG)'],
-            info: 
+            info:
               'Description: Percentage of households in an area whose primary cooking fuel is liquefied petrloleum gas (LPG). Source: 2019 Kenya Population and Housing Census',
           },
           {
@@ -288,7 +288,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Cooking - Biogas'],
-            info: 
+            info:
               'Description: Percentage of households in an area whose primary cooking fuel is biogas (i.e, natural gas produced by a biodigester system). Source: 2019 Kenya Population and Housing Census',
           },
           {
@@ -302,7 +302,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Cooking - Firewood'],
-            info: 
+            info:
               'Description: Percentage of households in an area whose primary cooking fuel is firewood. Source: 2019 Kenya Population and Housing Census',
           },
         ],
@@ -318,7 +318,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'line', color: colors.highlight },
             layerIds: ['gridfinder'],
-            info: 
+            info:
               'Source: GridFinder predictive algorithm based on night lights imagery, estimating the location of high- and medium-voltage transmission lines.',
           },
           {
@@ -327,8 +327,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent9 },
             layerIds: ['transmission_lines_11kv'],
-            info: 
-              'Source: KPLC',
+            info: 'Source: KPLC',
           },
           {
             id: 'transmission_lines_33kv',
@@ -336,8 +335,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent8 },
             layerIds: ['transmission_lines_33kv'],
-            info: 
-              'Source: KPLC',
+            info: 'Source: KPLC',
           },
           {
             id: 'transmission_lines_66kv',
@@ -345,8 +343,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent10 },
             layerIds: ['transmission_lines_66kv'],
-            info: 
-              'Source: KPLC',
+            info: 'Source: KPLC',
           },
           {
             id: 'transmission_lines_132kv',
@@ -354,8 +351,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent7 },
             layerIds: ['transmission_lines_132kv'],
-            info: 
-              'Source: KPLC',
+            info: 'Source: KPLC',
           },
           {
             id: 'transmission_lines_220kv',
@@ -363,8 +359,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent11 },
             layerIds: ['transmission_lines_220kv'],
-            info: 
-              'Source: KPLC',
+            info: 'Source: KPLC',
           },
         ],
       },
@@ -379,7 +374,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['mini-grids_under_development'],
-            info: 
+            info:
               'Source: GIS analysis funded by the World Bank and undertaken in 2017 as part of KOSAP project preparation.',
           },
           {
@@ -388,7 +383,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['existing_mini-grids'],
-            info: 
+            info:
               'Source: GIS analysis funded by the World Bank and undertaken in 2017 as part of KOSAP project preparation.',
           },
           {
@@ -397,7 +392,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['proposed_kosap_mini-grids'],
-            info: 
+            info:
               'Source: GIS analysis funded by the World Bank and undertaken in 2017 as part of KOSAP project preparation.',
           },
         ],
@@ -431,8 +426,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent6 },
             layerIds: ['mfi'],
-            info: 
-              'Source:',
+            info: 'Source:',
           },
           {
             id: 'sacco',
@@ -440,8 +434,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['sacco'],
-            info: 
-              'Source:',
+            info: 'Source:',
           },
         ],
       },
@@ -457,8 +450,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['health_type1'],
-            info: 
-              'Source:',
+            info: 'Source:',
           },
           {
             id: 'health_type2',
@@ -466,8 +458,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent7 },
             layerIds: ['health_type2'],
-            info: 
-              'Source:',
+            info: 'Source:',
           },
           {
             id: 'health_type3',
@@ -475,8 +466,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['health_type3'],
-            info: 
-              'Source:',
+            info: 'Source:',
           },
           {
             id: 'health_type4',
@@ -484,8 +474,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['health_type4'],
-            info: 
-              'Source:',
+            info: 'Source:',
           },
         ],
       },
@@ -501,8 +490,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.charmpink },
             layerIds: ['all_education'],
-            info: 
-              'Source: ',
+            info: 'Source: ',
           },
           {
             id: 'ke_kindergarten',
@@ -510,8 +498,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['ke_kindergarten'],
-            info: 
-              'Source: ',
+            info: 'Source: ',
           },
           {
             id: 'ke_schools',
@@ -519,8 +506,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['ke_schools'],
-            info: 
-              'Source: ',
+            info: 'Source: ',
           },
           {
             id: 'ke_colleges',
@@ -528,8 +514,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['ke_colleges'],
-            info: 
-              'Source: ',
+            info: 'Source: ',
           },
           {
             id: 'ke_universities',
@@ -537,8 +522,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['ke_universities'],
-            info: 
-              'Source: ',
+            info: 'Source: ',
           },
         ],
       },
@@ -571,8 +555,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['fb-population-density'],
-            info: 
-              'Source: Facebook Data For Good',
+            info: 'Source: Facebook Data For Good',
           },
         ],
       },
@@ -593,9 +576,8 @@ export default [
               unit: '%',
             },
             layerIds: ['Under 18 Percent'],
-            info: 
-             'Source: 2019 Kenya Population and Housing Census',
-          },  
+            info: 'Source: 2019 Kenya Population and Housing Census',
+          },
           {
             id: 'Over 60 Percent', // matches .csv column name
             label: 'Over 60',
@@ -607,8 +589,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Over 60 Percent'],
-            info: 
-              'Source: 2019 Kenya Population and Housing Census',
+            info: 'Source: 2019 Kenya Population and Housing Census',
           },
           {
             id: 'Over 70 Percent', // matches .csv column name
@@ -621,8 +602,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Over 70 Percent'],
-            info: 
-              'Source: 2019 Kenya Population and Housing Census',
+            info: 'Source: 2019 Kenya Population and Housing Census',
           },
         ],
       },
@@ -643,8 +623,7 @@ export default [
               unit: '',
             },
             layerIds: ['Total Households'],
-            info: 
-              'Source: 2019 Kenya Population and Housing Census',
+            info: 'Source: 2019 Kenya Population and Housing Census',
           },
           {
             id: 'Average Household Size', // matches .csv column name
@@ -657,8 +636,7 @@ export default [
               unit: '',
             },
             layerIds: ['Average Household Size'],
-            info: 
-              'Source: 2019 Kenya Population and Housing Census',
+            info: 'Source: 2019 Kenya Population and Housing Census',
           },
         ],
       },
@@ -677,8 +655,7 @@ export default [
     label: 'Infrastructure',
     icon: Public,
     description: '',
-    info:
-      '',
+    info: '',
     controls: [
       {
         id: 'ke_roads',
@@ -686,10 +663,9 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['ke_roads'],
-        info: 
-          'Source: ',
+        info: 'Source: ',
       },
-    ]
+    ],
   },
   {
     id: 'mobileData',
@@ -710,8 +686,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['ke_mobile_2g'],
-            info: 
-              'Source: Collins Batholomew and GSMA 2020',
+            info: 'Source: Collins Batholomew and GSMA 2020',
           },
           {
             id: 'all3g',
@@ -719,8 +694,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['ke_mobile_3g'],
-            info: 
-              'Source: Collins Batholomew and GSMA 2020',
+            info: 'Source: Collins Batholomew and GSMA 2020',
           },
         ],
       },
@@ -735,8 +709,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['mobile_data_airtel_2g'],
-            info: 
-              'Source: Collins Batholomew and GSMA 2020',
+            info: 'Source: Collins Batholomew and GSMA 2020',
           },
           {
             id: 'airtel3g',
@@ -744,8 +717,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['mobile_data_airtel_3g'],
-            info: 
-              'Source: Collins Batholomew and GSMA 2020',
+            info: 'Source: Collins Batholomew and GSMA 2020',
           },
           {
             id: 'airtel4g',
@@ -753,8 +725,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['mobile_data_airtel_4g'],
-            info: 
-              'Source: Collins Batholomew and GSMA 2020',
+            info: 'Source: Collins Batholomew and GSMA 2020',
           },
         ],
       },
@@ -769,8 +740,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['mobile_data_orange_2g'],
-            info: 
-              'Source: Collins Batholomew and GSMA 2020',
+            info: 'Source: Collins Batholomew and GSMA 2020',
           },
           {
             id: 'orange3g',
@@ -778,8 +748,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['mobile_data_orange_3g'],
-            info: 
-              'Source: Collins Batholomew and GSMA 2020',
+            info: 'Source: Collins Batholomew and GSMA 2020',
           },
           {
             id: 'orange4g',
@@ -787,8 +756,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['mobile_data_orange_4g'],
-            info: 
-              'Source: Collins Batholomew and GSMA 2020',
+            info: 'Source: Collins Batholomew and GSMA 2020',
           },
         ],
       },
@@ -803,8 +771,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['mobile_data_safaricom_2g'],
-            info: 
-              'Source: Collins Batholomew and GSMA 2020',
+            info: 'Source: Collins Batholomew and GSMA 2020',
           },
           {
             id: 'safaricom3g',
@@ -812,8 +779,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['mobile_data_safaricom_3g'],
-            info: 
-              'Source: Collins Batholomew and GSMA 2020',
+            info: 'Source: Collins Batholomew and GSMA 2020',
           },
           {
             id: 'safaricom4g',
@@ -821,8 +787,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['mobile_data_safaricom_4g'],
-            info: 
-              'Source: Collins Batholomew and GSMA 2020',
+            info: 'Source: Collins Batholomew and GSMA 2020',
           },
         ],
       },
@@ -837,8 +802,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['mobile_data_yu_2g'],
-            info: 
-              'Source: Collins Batholomew and GSMA 2020',
+            info: 'Source: Collins Batholomew and GSMA 2020',
           },
           {
             id: 'yu3g',
@@ -846,8 +810,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['mobile_data_yu_3g'],
-            info: 
-              'Source: Collins Batholomew and GSMA 2020',
+            info: 'Source: Collins Batholomew and GSMA 2020',
           },
         ],
       },
@@ -863,10 +826,8 @@ export default [
       {
         id: 'wasteDisposal',
         label: 'Mode of Human Waste Disposal',
-        info: 
-          'Source: 2019 Kenya Population and Housing Census',
+        info: 'Source: 2019 Kenya Population and Housing Census',
         subcontrols: [
-         
           {
             id: 'Main Sewer - Human Waste Disposal',
             label: 'Sewers',
@@ -1050,7 +1011,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 11},
+              defaultRange: { min: 0, max: 11 },
               domain: [0, 11],
               unit: '%',
             },
@@ -1217,7 +1178,8 @@ export default [
     label: 'Household Assets',
     icon: HHAsset,
     description: '',
-    info: 'Description: Assets and ownership. Source: 2019 Kenya Population and Housing Census',
+    info:
+      'Description: Assets and ownership. Source: 2019 Kenya Population and Housing Census',
     controls: [
       {
         id: 'electronic_appliance',
@@ -1439,8 +1401,7 @@ export default [
       {
         id: 'unemployment',
         label: 'Unemployment',
-        info: 
-          'Source: 2019 Kenya Population and Housing Census',
+        info: 'Source: 2019 Kenya Population and Housing Census',
         subcontrols: [
           //insert unemployment layers here
           {
@@ -1487,8 +1448,7 @@ export default [
       {
         id: 'roof',
         label: 'Roof Material',
-        info: 
-          'Source: 2019 Kenya Population and Housing Census',
+        info: 'Source: 2019 Kenya Population and Housing Census',
         subcontrols: [
           // Add layers here
           // {
@@ -1539,7 +1499,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max:10 },
+              defaultRange: { min: 0, max: 10 },
               domain: [0, 10],
               unit: '%',
             },
@@ -1668,8 +1628,7 @@ export default [
       {
         id: 'wall_material',
         label: 'Wall Material',
-        info: 
-          'Source: 2019 Kenya Population and Housing Census',
+        info: 'Source: 2019 Kenya Population and Housing Census',
         subcontrols: [
           // Add layers here
           {
@@ -1885,8 +1844,7 @@ export default [
       {
         id: 'floor_material',
         label: 'Floor Material',
-        info: 
-          'Source: 2019 Kenya Population and Housing Census',
+        info: 'Source: 2019 Kenya Population and Housing Census',
         subcontrols: [
           // Add layers here
           {
@@ -1908,7 +1866,7 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 60},
+              defaultRange: { min: 0, max: 60 },
               domain: [0, 60],
               unit: '%',
             },
@@ -2020,10 +1978,8 @@ export default [
       {
         id: 'industry_participation',
         label: 'Industry Participation',
-        info: 
-          'Source: 2019 Kenya Population and Housing Census',
+        info: 'Source: 2019 Kenya Population and Housing Census',
         subcontrols: [
-          
           {
             id: 'Farming', // matches .csv column name
             label: 'Farming',
@@ -2107,8 +2063,7 @@ export default [
       {
         id: 'livestock_fish',
         label: 'Livestock & Fish',
-        info: 
-          'Source: 2019 Kenya Population and Housing Census',
+        info: 'Source: 2019 Kenya Population and Housing Census',
         subcontrols: [
           // Add layers here
           {
@@ -2298,8 +2253,7 @@ export default [
       {
         id: 'permanent_crops',
         label: 'Permanent Crop Growth',
-        info: 
-          'Source: 2019 Kenya Population and Housing Census',
+        info: 'Source: 2019 Kenya Population and Housing Census',
         subcontrols: [
           {
             id: 'Tea - Permanent Crop Growth', // matches .csv column name

@@ -258,6 +258,7 @@ const SecondLevelHeader = styled(FirstLevelHeader)`
 `
 
 const SecondLevelHeading = styled.h3`
+  text-align: left;
   color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.fonts.heading};
   font-size: ${({ theme }) => theme.fontSizes[0]}pt;
