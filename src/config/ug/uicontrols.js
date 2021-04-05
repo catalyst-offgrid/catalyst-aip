@@ -30,6 +30,14 @@ export default [
         //info: 'Country boundaries',
       //},
       {
+        id: 'uganda-regions',
+        label: 'Regions',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['uganda-regions'],
+        info: '',
+      },
+      {
         //ACtUALLY CALLED SUBREGIONS BUT SITE WILL NOT WORK
         id: 'counties',
         label: 'Sub-Regions',
@@ -37,14 +45,6 @@ export default [
         legend: 'none',
         layerIds: ['counties'],
         info: 'Sub regions',
-      },
-      {
-        id: 'uganda-regions',
-        label: 'Regions',
-        defaultVisibility: false,
-        legend: 'none',
-        layerIds: ['uganda-regions'],
-        info: '',
       },
       {
         id: 'uganda-districts',
@@ -350,14 +350,6 @@ export default [
             info: '',
           },
           {
-            id: 'uganda-atm',
-            label: 'ATM',
-            defaultVisibility: false,
-            legend: { type: 'dot', color: colors.accent4 },
-            layerIds: ['uganda-atm'],
-            info: '',
-          },
-          {
             id: 'uganda-bureau-de-change',
             label: 'Bureau de Change',
             defaultVisibility: false,
@@ -371,14 +363,6 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent6 },
             layerIds: ['uganda-microfinance'],
-            info: '',
-          },
-          {
-            id: 'uganda-money-transfer',
-            label: 'Money Transfer',
-            defaultVisibility: false,
-            legend: { type: 'dot', color: colors.accent8 },
-            layerIds: ['uganda-money-transfer'],
             info: '',
           },
           {
@@ -414,14 +398,6 @@ export default [
             info: '',
           },
           {
-            id: 'uganda-dentist',
-            label: 'Dentist',
-            defaultVisibility: false,
-            legend: { type: 'dot', color: colors.accent3 },
-            layerIds: ['uganda-dentist'],
-            info: '',
-          },
-          {
             id: 'uganda-health-post',
             label: 'Health Post',
             defaultVisibility: false,
@@ -435,14 +411,6 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent5 },
             layerIds: ['uganda-pharmacy'],
-            info: '',
-          },
-          {
-            id: 'uganda-doctors',
-            label: 'Doctors',
-            defaultVisibility: false,
-            legend: { type: 'dot', color: colors.accent6 },
-            layerIds: ['uganda-doctors'],
             info: '',
           },
         ],
@@ -861,35 +829,23 @@ export default [
       },
     ],
   },
-  {
-    id: 'hhAssets',
-    label: 'Household Assets',
-    icon: HHAsset,
-    description: '',
-    info: 'Assets and ownership.',
-    controls: [
-      //{
-      //  id: 'electronic_appliance',
-      //  label: 'Electronics and Appliances',
-      //  info: '',
-      //  subcontrols: [],
-      //},
-      //{
-      //  id: 'vehicles',
-      //  label: 'Vehicles',
-      //  info: '',
-      //  subcontrols: [],
-      //},
-      {
-        id: 'Disability',
-        label: 'Disability',
-        info: '',
-        subcontrols: [
+  //{
+  //  id: 'hhAssets',
+  //  label: 'Household Assets',
+  //  icon: HHAsset,
+  //  description: '',
+  //  info: 'Assets and ownership.',
+  //  controls: [
+  //    {
+  //      id: 'Disability',
+  //      label: 'Disability',
+  //      info: '',
+  //      subcontrols: [
           // Add layers here
-        ],
-      },
-    ],
-  },
+  //      ],
+  //    },
+  //  ],
+  //},
   {
     id: 'economicHealth',
     label: 'Economic Health',

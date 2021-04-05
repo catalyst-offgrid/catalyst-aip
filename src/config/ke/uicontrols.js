@@ -48,6 +48,27 @@ export default [
     ],
   },
   {
+    id: 'planning',
+    label: 'Planning and Programs',
+    icon: AdminBoundaries,
+    description: '',
+    info: '.',
+    controls: [
+      {
+        // Legend removed/not specified.
+        id: 'KOSAP Counties', // matches .csv column name
+        label: 'KOSAP Counties',
+        defaultVisibility: false,
+        legend: {
+          domain: [0, 1],
+          unit: '',
+        },
+        layerIds: ['KOSAP Counties'],
+        info: 'Source: ',
+      },
+    ]
+  },
+  {
     id: 'energy',
     label: 'Energy',
     icon: Energy,
@@ -320,6 +341,14 @@ export default [
             layerIds: ['gridfinder'],
             info:
               'Source: GridFinder predictive algorithm based on night lights imagery, estimating the location of high- and medium-voltage transmission lines.',
+          },
+          {
+            id: 'ke_all_transmission',
+            label: 'All Transmission Lines',
+            defaultVisibility: false,
+            legend: { type: 'line', color: colors.accent3 },
+            layerIds: ['ke_all_transmission'],
+            info: '',
           },
           {
             id: 'transmission_lines_11kv',

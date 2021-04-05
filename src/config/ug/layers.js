@@ -98,15 +98,6 @@ export default [
     },
   },
   {
-    id: 'uganda-dentist',
-    source: 'uganda-dentist',
-    'source-layer': 'Uganda_Dentist-349iyr',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent3,
-    },
-  },
-  {
     id: 'uganda-health-post',
     source: 'uganda-health-post',
     'source-layer': 'Uganda_Health_Post-7eftiz',
@@ -122,15 +113,6 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.accent5,
-    },
-  },
-  {
-    id: 'uganda-doctors',
-    source: 'uganda-doctors',
-    'source-layer': 'Uganda_Doctors-87ldy5',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent6,
     },
   },
   // Education Facilities
@@ -310,15 +292,6 @@ export default [
     },
   },
   {
-    id: 'uganda-atm',
-    source: 'uganda-atm',
-    'source-layer': 'Uganda_ATM-ahz99o',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent4,
-    },
-  },
-  {
     id: 'uganda-bureau-de-change',
     source: 'uganda-bureau-de-change',
     'source-layer': 'Uganda_Bureau_de_Change-3hqomh',
@@ -334,15 +307,6 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.accent6,
-    },
-  },
-  {
-    id: 'uganda-money-transfer',
-    source: 'uganda-money-transfer',
-    'source-layer': 'Uganda_Money_Transfer-a598y9',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent8,
     },
   },
   {
