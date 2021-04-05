@@ -16,6 +16,7 @@ import uguicontrols from './ug/uicontrols'
 import theme from './theme'
 import kecsv from '../../data/Energy/Census/KenyaLighting_Cooking.csv'
 import ugcsv from '../../data/Energy/Census/UgandaDataSubregion.csv'
+import slcsv from '../../data/Energy/Census/SierraLeoneFinal.csv'
 
 if (!process.env.MAPBOX_ACCESS_TOKEN) {
   throw new Error('MAPBOX_ACCESS_TOKEN env var is required')
@@ -55,7 +56,7 @@ export default {
     layers: sllayers,
     sources: slsources,
     uicontrols: sluicontrols,
-    csv: kecsv,
+    csv: slcsv,
   },
   theme,
 }

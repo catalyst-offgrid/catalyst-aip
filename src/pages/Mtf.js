@@ -10,22 +10,10 @@ import CsvLayers from '../components/CsvLayers'
 import BasemapLayers from '../components/BasemapLayers'
 
 import { Vega } from 'react-vega'
-import fuelsHeatmap from '../assets/mtf-graphs/module_1/cooking_fuel_detail/fuels_heatmap'
 
 import GraphControl from '../components/GraphControl'
 
-import {
-  AdminBoundaries,
-  Energy,
-  Population,
-  Public,
-  Health,
-  //Placeholder,
-  Mobile,
-  EconHealth,
-  HHAsset,
-  EconAct,
-} from '../icons'
+import { AdminBoundaries } from '../icons'
 
 import LayerControl from '../components/LayerControl'
 import MtfDrawer from '../components/MtfDrawer'
@@ -136,43 +124,11 @@ function reducer(state, action) {
 const mtfUiControls = [
   {
     id: 'admin',
-    label: 'Module 1',
+    label: 'Module 1 – Household Energy Access',
     icon: AdminBoundaries,
     description: '',
     info: 'Administritative boundaries from the Government of Kenya.',
     controls: [
-      {
-        id: 'cooking_fuel_detail',
-        label: 'Cooking Fuels Detail',
-        defaultVisibility: false,
-        legend: 'none',
-        subcontrols: [
-          {
-            id: 'fuels_heatmap',
-            label: 'Fuels Heatmap',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-
-          {
-            id: 'heatmap_fuel_stove',
-            label: 'heatmap_fuel_stove',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-
-          {
-            id: 'primary_stove',
-            label: 'primary_stove',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-        ],
-        info: '',
-      },
       {
         id: 'energy_access_summary',
         label: 'Energy Access Summary',
@@ -180,45 +136,54 @@ const mtfUiControls = [
         legend: 'none',
         subcontrols: [
           {
-            id: 'electricity_access_tiers2',
-            label: 'electricity_access_tiers2',
+            id: 'Primary_Sources_of_Electricity_by_Tier',
+            label: 'Primary Sources of Electricity by Tier',
             defaultVisibility: false,
             legend: 'none',
             info: '',
           },
           {
-            id: 'primary_cooking',
-            label: 'primary_cooking',
+            id: 'Primary_Sources_of_Cooking_Fuel_by_Electricity_Tier',
+            label: 'Primary Sources of Cooking Fuel by Electricity_Tier',
             defaultVisibility: false,
             legend: 'none',
             info: '',
           },
           {
-            id: 'primary_lighting',
-            label: 'primary_lighting',
+            id: 'Primary_Sources_of_Household_Lighting',
+            label: 'Primary Sources of Household Lighting',
             defaultVisibility: false,
             legend: 'none',
             info: '',
           },
         ],
         info: '',
+      },
+
+      {
+        id: 'stopgap_household_detail',
+        label: 'Stopgap Household Detail',
+        defaultVisibility: false,
+        legend: 'none',
+        subcontrols: [
+          {
+            id: 'Primary_Source_of_Lighting_Prior_to_Solar',
+            label: 'Primary Source of Lighting Prior to Solar',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+        ],
       },
       {
         id: 'grid_hh_detail',
-        label: 'Grid HH Detail',
+        label: 'Grid Household Detail',
         defaultVisibility: false,
         legend: 'none',
         subcontrols: [
           {
-            id: 'avg_grid_availability',
-            label: 'Average Grid Availability',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-          {
-            id: 'grid_acc_tier',
-            label: 'grid_acc_tier',
+            id: 'Grid_Electricity_Access_by_Tier',
+            label: 'Grid Electricity Access by Tier',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -226,84 +191,137 @@ const mtfUiControls = [
         ],
       },
       {
-        id: 'solar_based_device_detail',
-        label: 'Solar-based Device Detail',
+        id: 'cooking_fuel_detail',
+        label: 'Cooking Fuel Detail',
         defaultVisibility: false,
         legend: 'none',
         subcontrols: [
           {
-            id: 'solar_prior',
-            label: 'solar_prior',
+            id: 'Primary_vs_Secondary_Fuel_Types',
+            label: 'Primary vs Secondary Fuel Types',
             defaultVisibility: false,
             legend: 'none',
             info: '',
           },
-        ],
-      },
 
-      {
-        id: 'demo_graph',
-        label: 'Demo Graphs',
-        defaultVisibility: false,
-        legend: 'none',
-        subcontrols: [
           {
-            id: 'g117',
-            label: 'g117',
+            id: 'Primary_Cooking_Fuel_vs_Primary_Cookstove',
+            label: 'Primary Cooking Fuel vs Primary Cookstove',
             defaultVisibility: false,
             legend: 'none',
             info: '',
           },
-        ],
-      },
-    ],
-  },
-  {
-    id: 'admin',
-    label: 'Module 2',
-    icon: AdminBoundaries,
-    description: '',
-    info: 'Administritative boundaries from the Government of Kenya.',
-    controls: [
-      {
-        id: 'cooking_existing_expenditures',
-        label: '(Cooking) Existing Expenditures',
-        defaultVisibility: false,
-        legend: 'none',
-        subcontrols: [
+
           {
-            id: 'i_4_obtain',
-            label: 'Obtain (Cookstove)',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-          {
-            id: 'i_41_a',
-            label: 'i_41_a',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-          {
-            id: 'i_5_cost',
-            label: 'i_5_cost',
+            id: 'Primary_Stove_Type',
+            label: 'Primary Stove Type',
             defaultVisibility: false,
             legend: 'none',
             info: '',
           },
         ],
         info: '',
+      },
+    ],
+  },
+  {
+    id: 'admin',
+    label: 'Module 2 – Consumption & Economics',
+    icon: AdminBoundaries,
+    description: '',
+    info: 'Administritative boundaries from the Government of Kenya.',
+    controls: [
+      {
+        id: 'lighting_existing_expenditures',
+        label: 'Existing expenditures on energy for lighting & appliances',
+        defaultVisibility: false,
+        legend: 'none',
+        subcontrols: [
+          {
+            id: 'Days_Used_Lamp_or_Candle_per_Month',
+            label: 'Days Used Lamp or Candle per Month',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'Hours_Used_Lamp_or_Candle_per_Day',
+            label: 'Hours Used Lamp or Candle per Day',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'Weekly_Expenditure_on_Lamps_or_Candles',
+            label: 'Weekly Expenditure on Lamps or Candles',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+        ],
+        info: '',
+      },
+      {
+        id: 'cooking_existing_expenditures',
+        label: 'Existing expenditures on energy for cooking',
+        defaultVisibility: false,
+        legend: 'none',
+        subcontrols: [
+          {
+            id: 'Amount_Spent_on_Fuel_for_Stoves',
+            label: 'Amount Spent on Fuel for Stoves',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'Amount_Paid_for_Cookstoves',
+            label: 'Amount Paid for Cookstoves',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+        ],
+        info: '',
+      },
+      {
+        id: 'cooking_wtp',
+        label: 'Existing expenditures on energy for improved cookstoves',
+        defaultVisibility: false,
+        legend: 'none',
+        subcontrols: [
+          // {
+          //   id: 'k2k3_charcoal',
+          //   label: 'K2K3 Charcoal',
+          //   defaultVisibility: false,
+          //   legend: 'none',
+          //   info: '',
+          // },
+          {
+            id: 'Willingness_to_Pay_over_12_months_for_a_Fuelwood_Cookstove',
+            label: 'Willingness to Pay over 12 months for a Fuelwood Cookstove',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+        ],
       },
       {
         id: 'section_l_part_1',
-        label: 'Section L Part 1: 1-12',
+        label: 'Consumption / expenditure on other goods & services',
         defaultVisibility: false,
         legend: 'none',
         subcontrols: [
           {
-            id: 'l15',
-            label: 'l15',
+            id: 'Amount_Spent_on_Mobile_Phone_Top_up_per_Month',
+            label: 'Amount Spent on Mobile Phone Top up per Month',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'Amount_Spent_on_House_Rent_per_Month',
+            label: 'Amount Spent on House Rent per Month',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -312,107 +330,54 @@ const mtfUiControls = [
         info: '',
       },
 
-      {
-        id: 'kerosene_existing_expenditures',
-        label: '(Kerosene) Existing Expenditures',
-        defaultVisibility: false,
-        legend: 'none',
-        subcontrols: [
-          {
-            id: 'f8',
-            label: 'f8',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-          {
-            id: 'f9',
-            label: 'f9',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-          {
-            id: 'f11',
-            label: 'f11',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-        ],
-        info: '',
-      },
-
-      {
-        id: 'cooking_wtp',
-        label: '(Cooking) WTP',
-        defaultVisibility: false,
-        legend: 'none',
-        subcontrols: [
-          {
-            id: 'k2k3_charcoal',
-            label: 'K2K3 Charcoal',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-          {
-            id: 'k6k7_fuelwood',
-            label: 'k6k7_fuelwood',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-        ],
-      },
-      {
-        id: 'elec_grid_willing_to_pay',
-        label: '(Elec/Grid) Willingness to Pay',
-        defaultVisibility: false,
-        legend: 'none',
-        subcontrols: [
-          {
-            id: 'wtp_d6',
-            label: 'wtp_d6',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-          {
-            id: 'wtp_d7',
-            label: 'wtp_d7',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-          {
-            id: 'wtp_e7',
-            label: 'wtp_e7',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-          {
-            id: 'wtp_e8',
-            label: 'wtp_e8',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-        ],
-      },
+      // {
+      //   id: 'elec_grid_willing_to_pay',
+      //   label: '(Elec/Grid) Willingness to Pay',
+      //   defaultVisibility: false,
+      //   legend: 'none',
+      //   subcontrols: [
+      //     {
+      //       id: 'wtp_d6',
+      //       label: 'wtp_d6',
+      //       defaultVisibility: false,
+      //       legend: 'none',
+      //       info: '',
+      //     },
+      //     {
+      //       id: 'wtp_d7',
+      //       label: 'wtp_d7',
+      //       defaultVisibility: false,
+      //       legend: 'none',
+      //       info: '',
+      //     },
+      //     {
+      //       id: 'wtp_e7',
+      //       label: 'wtp_e7',
+      //       defaultVisibility: false,
+      //       legend: 'none',
+      //       info: '',
+      //     },
+      //     {
+      //       id: 'wtp_e8',
+      //       label: 'wtp_e8',
+      //       defaultVisibility: false,
+      //       legend: 'none',
+      //       info: '',
+      //     },
+      //   ],
+      // },
     ],
   },
   {
     id: 'admin',
-    label: 'Module 3',
+    label: 'Module 3 – Financial Inclusion & ICT',
     icon: AdminBoundaries,
     description: '',
     info: 'Administritative boundaries from the Government of Kenya.',
     controls: [
       {
-        id: 'c160',
-        label: 'c160',
+        id: 'Number_of_Phones_the_Household_Owns',
+        label: 'Number of Phones the Household Owns',
         defaultVisibility: false,
         legend: 'none',
         info: '',
@@ -421,31 +386,39 @@ const mtfUiControls = [
   },
   {
     id: 'admin',
-    label: 'Module 4',
+    label: 'Module 4 – Household Characteristics & Assets',
     icon: AdminBoundaries,
     description: '',
     info: 'Administritative boundaries from the Government of Kenya.',
     controls: [
       {
-        id: 'b9',
-        label: 'b9',
+        id: 'dwelling_detail',
+        label: 'Household Dwelling Detail',
         defaultVisibility: false,
         legend: 'none',
-        info: '',
-      },
-      {
-        id: 'b10_b11_b12',
-        label: 'b10_b11_b12',
-        defaultVisibility: false,
-        legend: 'none',
-        info: '',
-      },
-      {
-        id: 'b10',
-        label: 'b10',
-        defaultVisibility: false,
-        legend: 'none',
-        info: '',
+        subcontrols: [
+          {
+            id: 'Number_of_Rooms_the_Household_Occupies',
+            label: 'Number of Rooms the Household Occupies',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'Wall_Dwelling_Materials',
+            label: 'Wall Dwelling Materials',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'Floor_vs_Wall_Dwelling_Material',
+            label: 'Floor vs Wall Dwelling Material',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+        ],
       },
     ],
   },
@@ -490,7 +463,6 @@ export default function Mtf({ siteAcronym, siteName, config, theme }) {
           changeSlider={changeSlider}
           selectedGraph={selectedGraph}
         />
-        {selectedGraph}
       </MtfDrawer>
 
       <VegaContainer>

@@ -4,6 +4,7 @@ import styled, { ThemeProvider } from 'styled-components'
 
 import NavigationBar from './NavigationBar'
 import CATALYST_BLUE from '../../img/CATALYST_BLUE.png'
+import AIP_LOGO from '../../img/AIP_logo.png'
 import CATALYST_BLUE_wTag from '../../img/CATALYST_BLUE_wTag_11.23.jpg'
 
 const PageContainer = styled.div`
@@ -17,6 +18,11 @@ const MainContent = styled.main`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 30%;
+  grid-template-areas:
+    'a a b'
+    'a a b'
+    'c d d';
 
   margin: ${({ noMargin }) => (noMargin ? 0 : `0 auto`)};
   padding: ${({ noMargin, theme }) =>
@@ -50,6 +56,9 @@ PageLayout.propTypes = {
 
 export const Introduction = styled.div`
   grid-column: 1 / span 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `
 
 export const InfoBlock = styled.div`
@@ -85,9 +94,8 @@ export const Paragraph = styled.p`
 `
 
 const LogoContainer = styled.figure`
-  grid-column: 1 / span 5;
+  /* grid-column: 1 / span 5; */
   align-self: end;
-  margin: 5;
 
   display: flex;
   flex-direction: column;
@@ -104,10 +112,10 @@ const Caption = styled.figcaption`
 `
 
 export const Logo = ({ withTagline }) => (
-  <LogoContainer>
+  <>
     {withTagline && <Caption>An Innovation Of</Caption>}
-    <img alt='CATALYST Off Grid Advisors' src={CATALYST_BLUE_wTag} width={400} />
-  </LogoContainer>
+    <img alt='AIP Logo' src={AIP_LOGO} width={400} />
+  </>
 )
 
 Logo.propTypes = {
