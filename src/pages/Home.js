@@ -6,7 +6,8 @@ import Credits from '../components/Credits'
 
 import INNOVATION_LOGO from '../../img/INNOVATION_LOGO.png'
 
-import PageLayout, {
+import {
+  HomePageLayout,
   Introduction,
   Tagline,
   PageTitle,
@@ -68,7 +69,7 @@ const CatalystLogo = styled.div`
 
 export default function Home({ siteAcronym, siteName, imageUrl, theme }) {
   return (
-    <PageLayout siteAcronym={siteAcronym} theme={theme}>
+    <HomePageLayout siteAcronym={siteAcronym} theme={theme}>
       <Logo />
       <Image url={imageUrl} />
       <Introduction>
@@ -107,7 +108,7 @@ export default function Home({ siteAcronym, siteName, imageUrl, theme }) {
       <CatalystLogo>
         <img src={INNOVATION_LOGO} />
       </CatalystLogo>
-    </PageLayout>
+    </HomePageLayout>
   )
 }
 

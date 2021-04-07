@@ -17,8 +17,23 @@ const PageContainer = styled.div`
 const MainContent = styled.main`
   width: 100%;
   display: grid;
+  grid-template-areas:
+    'a a b'
+    'a a b'
+    'c d d';
+
+  margin: ${({ noMargin }) => (noMargin ? 0 : `0 auto`)};
+  padding: ${({ noMargin, theme }) =>
+    noMargin ? 0 : `${2 * theme.space[1]}px ${theme.space[5]}px`};
+
+  overflow: auto;
+`
+
+const MainContentHome = styled.main`
+  width: 100%;
+  display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 30%;
+  grid-template-rows: 20%;
   grid-template-areas:
     'a a b'
     'a a b'
@@ -44,7 +59,30 @@ export default function PageLayout({ siteAcronym, theme, noMargin, children }) {
   )
 }
 
+export const HomePageLayout = ({ siteAcronym, theme, noMargin, children }) => {
+  return (
+    <ThemeProvider theme={theme}>
+      <PageContainer>
+        <NavigationBar siteAcronym={siteAcronym} theme={theme} />
+        <MainContentHome noMargin={noMargin} tabIndex='0'>
+          {children}
+        </MainContentHome>
+      </PageContainer>
+    </ThemeProvider>
+  )
+}
+
 PageLayout.propTypes = {
+  siteAcronym: PropTypes.string.isRequired,
+  theme: PropTypes.object.isRequired,
+  noMargin: PropTypes.bool,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element),
+  ]),
+}
+
+HomePageLayout.propTypes = {
   siteAcronym: PropTypes.string.isRequired,
   theme: PropTypes.object.isRequired,
   noMargin: PropTypes.bool,
