@@ -950,7 +950,7 @@ export default [
       {
         id: 'drinkingWater',
         label: 'Source of Drinking Water',
-        info: '',
+        info: 'Source: 2019 Kenya Population and Housing Census',
         subcontrols: [
           // Add layers here
           {
@@ -1140,7 +1140,7 @@ export default [
       {
         id: 'births',
         label: 'Births',
-        info: '',
+        info: 'Source: 2019 Kenya Population and Housing Census',
         subcontrols: [
           // Add layers here
           {
@@ -1184,7 +1184,7 @@ export default [
       {
         id: 'electronic_appliance',
         label: 'Electronics and Appliances',
-        info: '',
+        info: 'Source: 2019 Kenya Population and Housing Census',
         subcontrols: [
           // {
           // id: 'arc',
@@ -1298,7 +1298,7 @@ export default [
       {
         id: 'vehicles',
         label: 'Vehicles',
-        info: '',
+        info: 'Source: 2019 Kenya Population and Housing Census',
         subcontrols: [
           // Add layers here
           {
@@ -1371,7 +1371,7 @@ export default [
       {
         id: 'Disability',
         label: 'Disability',
-        info: '',
+        info: 'Source: 2019 Kenya Population and Housing Census',
         subcontrols: [
           // Add layers here
           {
