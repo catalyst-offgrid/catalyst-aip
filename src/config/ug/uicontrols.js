@@ -73,7 +73,7 @@ export default [
     controls: [
       {
         id: 'lighting',
-        label: 'Lighting',
+        label: 'Lighting (Sub Region Level)',
         info: '',
         subcontrols: [
           {
@@ -170,8 +170,14 @@ export default [
         ],
       },
       {
+        id: 'lighting',
+        label: 'Lighting (District Level)',
+        info: '',
+        subcontrols: []
+      },
+      {
         id: 'cooking',
-        label: 'Firewood',
+        label: 'Cooking Fuels (Sub-Region Level)',
         info: '',
         subcontrols: [
           {
@@ -214,6 +220,12 @@ export default [
             info: '',
           },
         ],
+      },
+      {
+        id: 'cooking',
+        label: 'Cooking Fuels (District Level)',
+        info: '',
+        subcontrols: []
       },
       {
         id: 'grid',

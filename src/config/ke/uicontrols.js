@@ -49,7 +49,7 @@ export default [
   },
   {
     id: 'planning',
-    label: 'Planning and Programs',
+    label: 'Planning & Programs',
     icon: AdminBoundaries,
     description: '',
     info: '.',
@@ -430,7 +430,7 @@ export default [
   },
   {
     id: 'facilities',
-    label: 'Institutions and Services',
+    label: 'Institutions & Services',
     icon: Public,
     description: '',
     info:
