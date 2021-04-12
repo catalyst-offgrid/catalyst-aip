@@ -129,6 +129,11 @@ export default {
       tilesetid: 'iandmuir.900iiva8',
     },
     {
+      id: 'ke_all_transmission',
+      layer: 'Kenya_Final_Transmission-451cm2',
+      tilesetid: 'iandmuir.a5rq9eqc',
+    },
+    {
       id: 'transmission_lines_11kv',
       layer: 'Transmission_Lines_11KV_RePro-br4ylm',
       tilesetid: 'iandmuir.dw3qu0un',

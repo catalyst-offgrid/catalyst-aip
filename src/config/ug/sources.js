@@ -154,11 +154,6 @@ export default {
       tilesetid: 'iandmuir.0ggfqd0s',
     },
     {
-      id: 'uganda-dentist',
-      layer: 'Uganda_Dentist-349iyr',
-      tilesetid: 'iandmuir.dvvg7m0b',
-    },
-    {
       id: 'uganda-health-post',
       layer: 'Uganda_Health_Post-7eftiz',
       tilesetid: 'iandmuir.8txb5wyk',
@@ -167,11 +162,6 @@ export default {
       id: 'uganda-pharmacy',
       layer: 'Uganda_Pharmacy-0c23jm',
       tilesetid: 'iandmuir.810ntp00',
-    },
-    {
-      id: 'uganda-doctors',
-      layer: 'Uganda_Doctors-87ldy5',
-      tilesetid: 'iandmuir.5ac29phf',
     },
     // Financial Facilities
     {
@@ -190,11 +180,6 @@ export default {
       tilesetid: 'iandmuir.byypady5',
     },
     {
-      id: 'uganda-atm',
-      layer: 'Uganda_ATM-ahz99o',
-      tilesetid: 'iandmuir.8wucr5ux',
-    },
-    {
       id: 'uganda-bureau-de-change',
       layer: 'Uganda_Bureau_de_Change-3hqomh',
       tilesetid: 'iandmuir.276d9uuo',
@@ -203,11 +188,6 @@ export default {
       id: 'uganda-microfinance',
       layer: 'Uganda_Microfinance-1fdcvh',
       tilesetid: 'iandmuir.2t8jfesu',
-    },
-    {
-      id: 'uganda-money-transfer',
-      layer: 'Uganda_Money_Transfer-a598y9',
-      tilesetid: 'iandmuir.cinqlrol',
     },
     {
       id: 'uganda-post-office',

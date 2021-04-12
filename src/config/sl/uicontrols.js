@@ -30,20 +30,20 @@ export default [
         //info: 'Country boundaries',
       //},
       {
-        id: 'counties',
-        label: 'Sub-Regions',
-        defaultVisibility: false,
-        legend: 'none',
-        layerIds: ['counties'],
-        info: 'Sub regions',
-      },
-      {
         id: 'sierra-leone-districts',
         label: 'Districts',
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['sierra-leone-districts'],
         info: '',
+      },
+      {
+        id: 'counties',
+        label: 'Chiefdoms',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['counties'],
+        info: 'Sub regions',
       },
     ],
   },
@@ -265,12 +265,6 @@ export default [
           },
         ],
       },
-      {
-        id: 'mini-grid',
-        label: 'Mini Grid Electricity',
-        info: '',
-        subcontrols: [],
-      },
     ],
   },
   {
@@ -417,13 +411,6 @@ export default [
     description: '',
     info: 'Population density, demographic statistics and Night Lights.',
     controls: [
-      {
-        id: 'popAndMovement',
-        label: 'Population and Movement',
-        info:
-          'Displays where the people of Kenya live and the patterns in their movement.',
-        subcontrols: [],
-      },
       {
         id: 'ageRanges',
         label: 'Age Ranges',
@@ -907,14 +894,6 @@ export default [
           },
         ],
       },
-      {
-        id: 'births',
-        label: 'Births',
-        info: '',
-        subcontrols: [
-          // Add layers here
-        ],
-      },
     ],
   },
   {
@@ -1190,14 +1169,6 @@ export default [
     description: '',
     info: 'Assets and ownership.',
     controls: [
-      {
-        id: 'unemployment',
-        label: 'Unemployment',
-        info: '',
-        subcontrols: [
-          //insert unemployment layers here
-        ],
-      },
       {
         id: 'roof',
         label: 'Roof Material',

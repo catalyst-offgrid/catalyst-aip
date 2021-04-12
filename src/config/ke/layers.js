@@ -185,6 +185,15 @@ export default [
     },
   },
   {
+    id: 'ke_all_transmission',
+    source: 'ke_all_transmission',
+    'source-layer': 'Kenya_Final_Transmission-451cm2',
+    type: 'line',
+    paint: {
+      'line-color': colors.accent3,
+    },
+  },
+  {
     id: 'transmission_lines_11kv',
     source: 'transmission_lines_11kv',
     'source-layer': 'Transmission_Lines_11KV_RePro-br4ylm',
