@@ -152,10 +152,18 @@ const Caption = styled.figcaption`
   margin: ${({ theme }) => theme.space[3]}px 0;
 `
 
+const LogoImg = styled.img`
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+`
+
 export const Logo = ({ withTagline }) => (
   <>
     {withTagline && <Caption>An Innovation Of</Caption>}
-    <img alt='AIP Logo' src={AIP_LOGO} width={400} />
+    <LogoImg alt='AIP Logo' src={AIP_LOGO} width={400} />
   </>
 )
 
