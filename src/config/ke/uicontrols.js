@@ -304,8 +304,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 5 },
-              domain: [0, 5],
+              defaultRange: { min: 0, max: 1 },
+              domain: [0, 1],
               unit: '%',
             },
             layerIds: ['Cooking - Biogas'],
