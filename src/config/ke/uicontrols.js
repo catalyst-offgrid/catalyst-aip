@@ -479,7 +479,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['health_type1'],
-            info: 'Source:',
+            info: 'Source: Government of Kenya',
           },
           {
             id: 'health_type2',
@@ -487,7 +487,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent7 },
             layerIds: ['health_type2'],
-            info: 'Source:',
+            info: 'Source: Government of Kenya',
           },
           {
             id: 'health_type3',
@@ -495,7 +495,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['health_type3'],
-            info: 'Source:',
+            info: 'Source: Government of Kenya',
           },
           {
             id: 'health_type4',
@@ -503,7 +503,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['health_type4'],
-            info: 'Source:',
+            info: 'Source: Government of Kenya',
           },
         ],
       },
@@ -519,7 +519,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.charmpink },
             layerIds: ['all_education'],
-            info: 'Source: ',
+            info: 'Source: Open Street Maps (OSM)',
           },
           {
             id: 'ke_kindergarten',
@@ -527,7 +527,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['ke_kindergarten'],
-            info: 'Source: ',
+            info: 'Source: Open Street Maps (OSM)',
           },
           {
             id: 'ke_schools',
@@ -535,7 +535,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['ke_schools'],
-            info: 'Source: ',
+            info: 'Source: Open Street Maps (OSM)',
           },
           {
             id: 'ke_colleges',
@@ -543,7 +543,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['ke_colleges'],
-            info: 'Source: ',
+            info: 'Source: Open Street Maps (OSM)',
           },
           {
             id: 'ke_universities',
@@ -551,7 +551,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['ke_universities'],
-            info: 'Source: ',
+            info: 'Source: Open Street Maps (OSM)',
           },
         ],
       },
