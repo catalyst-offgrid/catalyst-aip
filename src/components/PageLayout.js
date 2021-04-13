@@ -17,10 +17,13 @@ const PageContainer = styled.div`
 const MainContent = styled.main`
   width: 100%;
   display: grid;
-  grid-template-areas:
+  /* grid-template-areas:
     'a a b'
     'a a b'
-    'c d d';
+    'c d d'; */
+
+  grid-template-columns: auto minmax(0, 1fr); // see note below
+  grid-template-areas: 'sidebar content';
 
   margin: ${({ noMargin }) => (noMargin ? 0 : `0 auto`)};
   padding: ${({ noMargin, theme }) =>

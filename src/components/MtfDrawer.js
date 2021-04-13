@@ -7,14 +7,15 @@ import MtfHeader from './MtfHeader'
 //import Credits from './Credits'
 
 const Container = styled.section`
-  grid-column: 1 / span 3;
-
   height: 100vh;
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.24);
   z-index: 1;
+  grid-area: sidebar;
 
   display: flex;
   flex-direction: column;
+
+  width: 350px;
 `
 
 const ScrollContainer = styled.div`

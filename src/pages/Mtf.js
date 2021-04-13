@@ -425,7 +425,7 @@ const mtfUiControls = [
 ]
 
 const VegaContainer = styled.section`
-  grid-column: 4 / span 9;
+  grid-area: content;
 `
 export default function Mtf({ siteAcronym, siteName, config, theme }) {
   const { sources, layers, csv } = config
