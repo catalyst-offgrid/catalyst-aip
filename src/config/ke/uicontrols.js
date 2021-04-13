@@ -455,7 +455,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent6 },
             layerIds: ['mfi'],
-            info: 'Source:',
+            info: 'Source: FinAccess Geospatial Mapping 2015',
           },
           {
             id: 'sacco',
@@ -463,7 +463,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['sacco'],
-            info: 'Source:',
+            info: 'Source: FinAccess Geospatial Mapping 2015',
           },
         ],
       },
