@@ -19,8 +19,8 @@ export default function Info({ siteAcronym, theme }) {
   return (
     <PageLayout siteAcronym={siteAcronym} theme={theme}>
       <InfoBlock>
-        <Tagline>About</Tagline>
-        <PageTitle>The tool</PageTitle>
+        <Tagline></Tagline>
+        <PageTitle>About AIP</PageTitle>
         <Paragraph>
           The Access Insights Platform (AIP) is an interactive, open-source data
           visualization platform that provides key insights on factors related
@@ -50,7 +50,7 @@ export default function Info({ siteAcronym, theme }) {
         <Paragraph>
           For any inquiries and potential collaboration please contact the
           development team{' '}
-          <a href='mailto:development@catalystoffgrid.com'>
+          <a href='mailto:aip@catalystoffgrid.com'>
             Catalyst Off-Grid Advisors
           </a>
         </Paragraph>
