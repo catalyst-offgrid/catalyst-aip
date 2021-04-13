@@ -46,7 +46,7 @@ import Number_of_Phones_the_Household_Owns from './Number_of_Phones_the_Househol
 import Number_of_Rooms_the_Household_Occupies from './Number_of_Rooms_the_Household_Occupies'
 import Primary_Cooking_Fuel_vs_Primary_Cookstove from './Primary_Cooking_Fuel_vs_Primary_Cookstove'
 import Primary_Source_of_Lighting_Prior_to_Solar from './Primary_Source_of_Lighting_Prior_to_Solar'
-import Primary_Sources_of_Cooking_Fuel from './Primary_Sources_of_Cooking_Fuel'
+// import Primary_Sources_of_Cooking_Fuel from './Primary_Sources_of_Cooking_Fuel'
 import Primary_Sources_of_Cooking_Fuel_by_Electricity_Tier from './Primary_Sources_of_Cooking_Fuel_by_Electricity_Tier'
 import Primary_Sources_of_Electricity_by_Tier from './Primary_Sources_of_Electricity_by_Tier'
 import Primary_Sources_of_Household_Lighting from './Primary_Sources_of_Household_Lighting'
@@ -55,6 +55,20 @@ import Primary_vs_Secondary_Fuel_Types from './Primary_vs_Secondary_Fuel_Types'
 import Wall_Dwelling_Materials from './Wall_Dwelling_Materials'
 import Weekly_Expenditure_on_Lamps_or_Candles from './Weekly_Expenditure_on_Lamps_or_Candles'
 import Willingness_to_Pay_over_12_months_for_a_Fuelwood_Cookstove from './Willingness_to_Pay_over_12_months_for_a_Fuelwood_Cookstove'
+
+import Kerosene_Usage_per_Week from './Kerosene_Usage_per_Week'
+import LPG_Usage_per_Week from './LPG_Usage_per_Week'
+import Primary_Source_of_Cooking_Fuel from './Primary_Source_of_Cooking_Fuel'
+import Expected_Monthly_Expenditure_on_Electricity from './Expected_Monthly_Expenditure_on_Electricity'
+import Mobile_Money_Accounts from './Mobile_Money_Accounts'
+import Mobile_Money_Payments from './Mobile_Money_Payments'
+import Mobile_Account_Activity from './Mobile_Account_Activity'
+import Mobile_Money_Service_Usage from './Mobile_Money_Service_Usage'
+import Electricity_Bill_Payments from './Electricity_Bill_Payments'
+import Types_of_Financial_Institutions from './Types_of_Financial_Institutions'
+import Sources_of_Loans_and_Credit from './Sources_of_Loans_and_Credit'
+import Household_Water_Quality from './Household_Water_Quality'
+import Total_Land_Size from './Total_Land_Size'
 
 export default {
   Amount_Paid_for_Cookstoves,
@@ -69,7 +83,6 @@ export default {
   Number_of_Rooms_the_Household_Occupies,
   Primary_Cooking_Fuel_vs_Primary_Cookstove,
   Primary_Source_of_Lighting_Prior_to_Solar,
-  Primary_Sources_of_Cooking_Fuel,
   Primary_Sources_of_Cooking_Fuel_by_Electricity_Tier,
   Primary_Sources_of_Electricity_by_Tier,
   Primary_Sources_of_Household_Lighting,
@@ -78,7 +91,19 @@ export default {
   Wall_Dwelling_Materials,
   Weekly_Expenditure_on_Lamps_or_Candles,
   Willingness_to_Pay_over_12_months_for_a_Fuelwood_Cookstove,
-
+  Kerosene_Usage_per_Week,
+  LPG_Usage_per_Week,
+  Primary_Source_of_Cooking_Fuel,
+  Expected_Monthly_Expenditure_on_Electricity,
+  Mobile_Money_Accounts,
+  Mobile_Money_Payments,
+  Mobile_Account_Activity,
+  Mobile_Money_Service_Usage,
+  Electricity_Bill_Payments,
+  Types_of_Financial_Institutions,
+  Sources_of_Loans_and_Credit,
+  Household_Water_Quality,
+  Total_Land_Size,
   // Old charts
   // avg_grid_availability,
   // fuels_heatmap,
