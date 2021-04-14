@@ -102,7 +102,7 @@ export default function Drawer({
         )}
         <PrimaryButton
           as='a'
-          href='https://drive.google.com/drive/folders/1nVNOTB9967Zx3A4IXPUL-jXFJhEJaVoK?usp=sharing'
+          href='https://drive.google.com/drive/folders/11DbaXgeQcKbOf-1CqFtvlaK_cgdxN2mC'
           data-cy='download-button'
         >
           <IconContainer aria-hidden='true'>

@@ -84,7 +84,7 @@ export default function MtfDrawer({
       <ScrollContainer>{children}</ScrollContainer>
 
       <Actions>
-        {hasSelectedLayers && (
+        {/* {hasSelectedLayers && (
           <SecondaryButton
             onClick={clearAll}
             disabled={!hasSelectedLayers}
@@ -101,10 +101,10 @@ export default function MtfDrawer({
             </IconContainer>
             Clear map
           </SecondaryButton>
-        )}
+        )} */}
         <PrimaryButton
           as='a'
-          href='https://drive.google.com/drive/folders/1nVNOTB9967Zx3A4IXPUL-jXFJhEJaVoK?usp=sharing'
+          href='https://drive.google.com/drive/u/2/folders/17h8YhIGyNWBRk_HwyTOXZPbhrFyttGRW'
           data-cy='download-button'
         >
           <IconContainer aria-hidden='true'>
