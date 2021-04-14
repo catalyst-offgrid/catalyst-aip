@@ -531,7 +531,7 @@ export default [
           },
           {
             id: 'ke_kindergarten',
-            label: 'Kindergartens',
+            label: 'Primary Schools',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['ke_kindergarten'],
@@ -539,7 +539,7 @@ export default [
           },
           {
             id: 'ke_schools',
-            label: 'Schools',
+            label: 'Secondary Schools',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['ke_schools'],
@@ -588,7 +588,7 @@ export default [
           },
           {
             id: 'fb-population',
-            label: 'Population Density (30-Meter Resolution)',
+            label: 'Population Density (30M Resolution)',
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['fb-population-density'],
