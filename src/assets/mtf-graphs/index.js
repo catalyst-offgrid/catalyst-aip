@@ -72,13 +72,25 @@ import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electrici
 import Primary_Source_of_Cooking_Fuel_by_Agg_Cooking_Tier from './Primary_Source_of_Cooking_Fuel_by_Agg_Cooking_Tier'
 import Primary_Source_of_Household_Lighting from './Primary_Source_of_Household_Lighting'
 import Primary_Source_of_Backup_Lighting from './Primary_Source_of_Backup_Lighting'
-// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
-// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
-// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
-// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
-// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
-// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
-// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
+import Monthly_Expenditure_on_Dry_Cell_Batteries from './Monthly_Expenditure_on_Dry_Cell_Batteries'
+import Willingness_to_Pay_over_12_months_for_Solar_Device from './Willingness_to_Pay_over_12_months_for_Solar_Device'
+import Willingness_to_Pay_over_12_months_for_Electricity from './Willingness_to_Pay_over_12_months_for_Electricity'
+import Expenditure_on_Cereal_and_Cereal_Products_per_Week from './Expenditure_on_Cereal_and_Cereal_Products_per_Week'
+import Expenditure_on_Pulses_and_Nuts_per_Week from './Expenditure_on_Pulses_and_Nuts_per_Week'
+import Expenditure_on_Milk_and_Milk_Products_per_Week from './Expenditure_on_Milk_and_Milk_Products_per_Week'
+import Expenditure_on_Vegetables_per_Week from './Expenditure_on_Vegetables_per_Week'
+import Expenditure_on_Eggs_Meat_and_Poultry_per_Week from './Expenditure_on_Eggs_Meat_and_Poultry_per_Week'
+import Expenditure_on_Sugar_per_Week from './Expenditure_on_Sugar_per_Week'
+import Expenditure_on_Other_Food_Items_per_Week from './Expenditure_on_Other_Food_Items_per_Week'
+import Expenditure_on_Beverages_per_Week from './Expenditure_on_Beverages_per_Week'
+import Expenditure_on_Alcohol_Tobacco_and_Cigarettes_per_Week from './Expenditure_on_Alcohol_Tobacco_and_Cigarettes_per_Week'
+import Expenditure_on_Medical_Expenses_per_Month from './Expenditure_on_Medical_Expenses_per_Month'
+import Expenditure_on_Transportation_per_Month from './Expenditure_on_Transportation_per_Month'
+import Expenditure_on_Internet_and_Household_Communication_per_Month from './Expenditure_on_Internet_and_Household_Communication_per_Month'
+import Expenditure_on_Soaps_Disinfectants_per_Month from './Expenditure_on_Soaps_Disinfectants_per_Month'
+import Expenditure_on_Water_Supply_per_Month from './Expenditure_on_Water_Supply_per_Month'
+import Expenditure_on_School_Fees_and_Educational_Expenses_per_Year from './Expenditure_on_School_Fees_and_Educational_Expenses_per_Year'
+import Expenditure_on_Clothing_Shoes_and_Accessories_per_Year from './Expenditure_on_Clothing_Shoes_and_Accessories_per_Year'
 // import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
 // import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
 // import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
@@ -123,6 +135,27 @@ export default {
   Primary_Source_of_Cooking_Fuel_by_Agg_Cooking_Tier,
   Primary_Source_of_Household_Lighting,
   Primary_Source_of_Backup_Lighting,
+
+  Monthly_Expenditure_on_Dry_Cell_Batteries,
+  Willingness_to_Pay_over_12_months_for_Solar_Device,
+  Willingness_to_Pay_over_12_months_for_Electricity,
+  Expenditure_on_Cereal_and_Cereal_Products_per_Week,
+  Expenditure_on_Pulses_and_Nuts_per_Week,
+  Expenditure_on_Milk_and_Milk_Products_per_Week,
+  Expenditure_on_Vegetables_per_Week,
+  Expenditure_on_Eggs_Meat_and_Poultry_per_Week,
+  Expenditure_on_Sugar_per_Week,
+  Expenditure_on_Other_Food_Items_per_Week,
+  Expenditure_on_Beverages_per_Week,
+  Expenditure_on_Alcohol_Tobacco_and_Cigarettes_per_Week,
+  Expenditure_on_Medical_Expenses_per_Month,
+  Expenditure_on_Transportation_per_Month,
+  Expenditure_on_Internet_and_Household_Communication_per_Month,
+  Expenditure_on_Soaps_Disinfectants_per_Month,
+  Expenditure_on_Water_Supply_per_Month,
+  Expenditure_on_School_Fees_and_Educational_Expenses_per_Year,
+  Expenditure_on_Clothing_Shoes_and_Accessories_per_Year,
+
   // Old charts
   // avg_grid_availability,
   // fuels_heatmap,
