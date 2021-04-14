@@ -159,6 +159,11 @@ export default {
       tilesetid: 'iandmuir.2169m0rv',
     },
     {
+      id: 'unidentified_grid',
+      layer: 'Unidentified_Grid_Network_Rep-cr21jl',
+      tilesetid: 'iandmuir.8fyvbe9e',
+    },
+    {
       id: 'mini-grids_under_development',
       layer: 'Mini-Grids_Under_Development_-7tdfio',
       tilesetid: 'iandmuir.damvyu86',
