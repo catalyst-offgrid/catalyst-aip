@@ -144,7 +144,7 @@ const mtfUiControls = [
           },
           {
             id: 'Primary_Sources_of_Cooking_Fuel_by_Electricity_Tier',
-            label: 'Primary Sources of Cooking Fuel by Electricity_Tier',
+            label: 'Primary Sources of Cooking Fuel by Electricity Tier',
             defaultVisibility: false,
             legend: 'none',
             info: '',
