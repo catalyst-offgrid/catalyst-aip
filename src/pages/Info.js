@@ -20,7 +20,7 @@ export default function Info({ siteAcronym, theme }) {
     <PageLayout siteAcronym={siteAcronym} theme={theme}>
       <InfoBlock>
         <Tagline></Tagline>
-        <PageTitle>About AIP</PageTitle>
+        <PageTitle>About the AIP</PageTitle>
         <Paragraph>
           The Access Insights Platform (AIP) is an interactive, open-source data
           aggregation and visualization platform that provides key insights on
@@ -38,10 +38,11 @@ export default function Info({ siteAcronym, theme }) {
           service levels experienced by households.
         </Paragraph>
         <Paragraph>
-          AIP’s objective is to help organizations make well-informed strategic
+          AIP’s primary objective is to help enterprises make well-informed strategic
           decisions in the markets in which they operate or intend to operate in
           the future, helping them understand opportunities and risks in
-          geographically defined areas.
+          geographically defined areas. It is also intended to support governments and 
+          development partners identify shortcomings and maximize the impacts of their programs.
         </Paragraph>
 
         <Paragraph>
