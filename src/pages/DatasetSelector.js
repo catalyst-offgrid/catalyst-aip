@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Credits from '../components/Credits'
 
-import PageLayout, {
+import SelectionPageLayout, {
   Introduction,
   Tagline,
   PageTitle,
   Paragraph,
   Logo,
-} from '../components/PageLayout'
+} from '../components/SelectionPageLayout'
 
 const Actions = styled.div`
   display: inline-flex;
@@ -59,7 +59,7 @@ const Image = styled.figure`
 
 export default function DatasetSelector({ siteAcronym, imageUrl, theme }) {
   return (
-    <PageLayout siteAcronym={siteAcronym} theme={theme}>
+    <SelectionPageLayout siteAcronym={siteAcronym} theme={theme}>
       <Image url={imageUrl} />
       <Introduction>
         <PageTitle>Dataset Selection</PageTitle>
@@ -86,7 +86,7 @@ export default function DatasetSelector({ siteAcronym, imageUrl, theme }) {
           </PrimaryButton>
         </Actions>
       </Introduction>
-    </PageLayout>
+    </SelectionPageLayout>
   )
 }
 

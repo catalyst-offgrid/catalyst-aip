@@ -91,13 +91,6 @@ import Expenditure_on_Soaps_Disinfectants_per_Month from './Expenditure_on_Soaps
 import Expenditure_on_Water_Supply_per_Month from './Expenditure_on_Water_Supply_per_Month'
 import Expenditure_on_School_Fees_and_Educational_Expenses_per_Year from './Expenditure_on_School_Fees_and_Educational_Expenses_per_Year'
 import Expenditure_on_Clothing_Shoes_and_Accessories_per_Year from './Expenditure_on_Clothing_Shoes_and_Accessories_per_Year'
-// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
-// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
-// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
-// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
-// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
-// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
-// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
 
 export default {
   Amount_Paid_for_Cookstoves,
