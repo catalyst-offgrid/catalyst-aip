@@ -79,10 +79,10 @@ export default function DatasetSelector({ siteAcronym, imageUrl, theme }) {
             aria-label='explore kenya'
             data-cy='explore-button'
           >
-            Geospatial
+            Kenya Geospatial
           </PrimaryButton>
           <PrimaryButton to='/mtf' aria-label='mtf' data-cy='explore-button'>
-            MTF
+            Kenya MTF
           </PrimaryButton>
         </Actions>
       </Introduction>
