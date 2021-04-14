@@ -136,22 +136,22 @@ const mtfUiControls = [
         legend: 'none',
         subcontrols: [
           {
-            id: 'Primary_Sources_of_Electricity_by_Tier',
-            label: 'Primary Sources of Electricity by Tier',
+            id: 'Primary_Source_of_Electricity_by_Tier',
+            label: 'Primary Source of Electricity by Tier',
             defaultVisibility: false,
             legend: 'none',
             info: '',
           },
           {
-            id: 'Primary_Sources_of_Cooking_Fuel_by_Electricity_Tier',
-            label: 'Primary Sources of Cooking Fuel by Electricity Tier',
+            id: 'Primary_Source_of_Cooking_Fuel_by_Agg_Cooking_Tier',
+            label: 'Primary Source of Cooking Fuel by Electricity Tier',
             defaultVisibility: false,
             legend: 'none',
             info: '',
           },
           {
-            id: 'Primary_Sources_of_Household_Lighting',
-            label: 'Primary Sources of Household Lighting',
+            id: 'Primary_Source_of_Household_Lighting',
+            label: 'Primary Source of Household Lighting',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -167,8 +167,8 @@ const mtfUiControls = [
         legend: 'none',
         subcontrols: [
           {
-            id: 'Primary_Source_of_Lighting_Prior_to_Solar',
-            label: 'Primary Source of Lighting Prior to Solar',
+            id: 'Primary_Source_of_Backup_Lighting',
+            label: 'Primary Source of Backup Lighting',
             defaultVisibility: false,
             legend: 'none',
             info: '',

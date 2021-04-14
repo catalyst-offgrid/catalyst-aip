@@ -48,8 +48,6 @@ import Primary_Cooking_Fuel_vs_Primary_Cookstove from './Primary_Cooking_Fuel_vs
 import Primary_Source_of_Lighting_Prior_to_Solar from './Primary_Source_of_Lighting_Prior_to_Solar'
 // import Primary_Sources_of_Cooking_Fuel from './Primary_Sources_of_Cooking_Fuel'
 import Primary_Sources_of_Cooking_Fuel_by_Electricity_Tier from './Primary_Sources_of_Cooking_Fuel_by_Electricity_Tier'
-import Primary_Sources_of_Electricity_by_Tier from './Primary_Sources_of_Electricity_by_Tier'
-import Primary_Sources_of_Household_Lighting from './Primary_Sources_of_Household_Lighting'
 import Primary_Stove_Type from './Primary_Stove_Type'
 import Primary_vs_Secondary_Fuel_Types from './Primary_vs_Secondary_Fuel_Types'
 import Wall_Dwelling_Materials from './Wall_Dwelling_Materials'
@@ -70,6 +68,25 @@ import Sources_of_Loans_and_Credit from './Sources_of_Loans_and_Credit'
 import Household_Water_Quality from './Household_Water_Quality'
 import Total_Land_Size from './Total_Land_Size'
 
+import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
+import Primary_Source_of_Cooking_Fuel_by_Agg_Cooking_Tier from './Primary_Source_of_Cooking_Fuel_by_Agg_Cooking_Tier'
+import Primary_Source_of_Household_Lighting from './Primary_Source_of_Household_Lighting'
+import Primary_Source_of_Backup_Lighting from './Primary_Source_of_Backup_Lighting'
+// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
+// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
+// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
+// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
+// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
+// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
+// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
+// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
+// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
+// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
+// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
+// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
+// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
+// import Primary_Source_of_Electricity_by_Tier from './Primary_Source_of_Electricity_by_Tier'
+
 export default {
   Amount_Paid_for_Cookstoves,
   Amount_Spent_on_Fuel_for_Stoves,
@@ -84,8 +101,6 @@ export default {
   Primary_Cooking_Fuel_vs_Primary_Cookstove,
   Primary_Source_of_Lighting_Prior_to_Solar,
   Primary_Sources_of_Cooking_Fuel_by_Electricity_Tier,
-  Primary_Sources_of_Electricity_by_Tier,
-  Primary_Sources_of_Household_Lighting,
   Primary_Stove_Type,
   Primary_vs_Secondary_Fuel_Types,
   Wall_Dwelling_Materials,
@@ -104,6 +119,10 @@ export default {
   Sources_of_Loans_and_Credit,
   Household_Water_Quality,
   Total_Land_Size,
+  Primary_Source_of_Electricity_by_Tier,
+  Primary_Source_of_Cooking_Fuel_by_Agg_Cooking_Tier,
+  Primary_Source_of_Household_Lighting,
+  Primary_Source_of_Backup_Lighting,
   // Old charts
   // avg_grid_availability,
   // fuels_heatmap,
