@@ -7,7 +7,7 @@ import { BsTable } from 'react-icons/bs'
 const TopNav = styled.section`
   background-color: ${({ theme }) => `${theme.colors.muted}`};
   overflow: hidden;
-  grid-column: 4 / span 9;
+  grid-column: 2 / span 9;
   height: 130px;
   display: flex;
   flex-direction: column;

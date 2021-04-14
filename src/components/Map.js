@@ -4,7 +4,8 @@ import mapbox from 'mapbox-gl'
 import styled from 'styled-components'
 
 const MapContainer = styled.section`
-  grid-column: 4 / span 9;
+  /* grid-column: 2 / span 9; */
+  grid-area: content;
 `
 
 export default function Map({ center, zoom, children }) {

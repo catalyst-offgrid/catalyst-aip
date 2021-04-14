@@ -57,12 +57,7 @@ const Image = styled.figure`
   z-index: -1;
 `
 
-export default function ExploreSelector({
-  siteAcronym,
-  siteName,
-  imageUrl,
-  theme,
-}) {
+export default function DatasetSelector({ siteAcronym, imageUrl, theme }) {
   return (
     <SelectionPageLayout siteAcronym={siteAcronym} theme={theme}>
       <Image url={imageUrl} />
@@ -71,7 +66,7 @@ export default function ExploreSelector({
 
         <Tagline>
           <br />
-          Select a Country
+          Select a dataset
         </Tagline>
         {/* <Paragraph>
           AIP is an open-source platform for data analysis, visualizations, and
@@ -81,34 +76,22 @@ export default function ExploreSelector({
         <Actions>
           <PrimaryButton
             to='/explore/ke'
-            aria-label='Kenya'
+            aria-label='explore kenya'
             data-cy='explore-button'
           >
-            Kenya
+            Geospatial
           </PrimaryButton>
-          <PrimaryButton
-            to='/explore/ug'
-            aria-label='Uganda'
-            data-cy='explore-button'
-          >
-            Uganda
+          <PrimaryButton to='/mtf' aria-label='mtf' data-cy='explore-button'>
+            MTF
           </PrimaryButton>
-          <SecondaryButton
-            to='/explore/sl'
-            aria-label='Sierra Leone'
-            data-cy='info-button'
-          >
-            Sierra Leone
-          </SecondaryButton>
         </Actions>
       </Introduction>
     </SelectionPageLayout>
   )
 }
 
-ExploreSelector.propTypes = {
+DatasetSelector.propTypes = {
   siteAcronym: PropTypes.string.isRequired,
-  siteName: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
   theme: PropTypes.object.isRequired,
 }

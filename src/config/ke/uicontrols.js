@@ -27,7 +27,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['counties', 'admin-1-boundary', 'admin-1-boundary-bg'],
-        info: 'Counties',
+        info: 'Source: Kenya Independent Electoral and Boundaries Commission (IEBC)',
       },
       {
         id: 'sub-counties',
@@ -35,7 +35,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['sub-counties'],
-        info: 'Sub Counties',
+        info: 'Source: Kenya Independent Electoral and Boundaries Commission (IEBC)',
       },
       {
         id: 'wards',
@@ -43,7 +43,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['wards'],
-        info: 'Wards',
+        info: 'Note: Requires higher zoom level. Source: Kenya Independent Electoral and Boundaries Commission (IEBC)',
       },
     ],
   },
@@ -64,7 +64,7 @@ export default [
           unit: '',
         },
         layerIds: ['KOSAP Counties'],
-        info: 'Source: KOSAP',
+        info: 'Source: Kenya Ministry of Energy',
       },
     ]
   },
@@ -304,8 +304,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 5 },
-              domain: [0, 5],
+              defaultRange: { min: 0, max: 2 },
+              domain: [0, 2],
               unit: '%',
             },
             layerIds: ['Cooking - Biogas'],
@@ -335,7 +335,7 @@ export default [
         subcontrols: [
           {
             id: 'gridfinder',
-            label: 'Gridfinder MV/HV',
+            label: 'Gridfinder MV/HV Lines',
             defaultVisibility: false,
             legend: { type: 'line', color: colors.highlight },
             layerIds: ['gridfinder'],
@@ -344,15 +344,15 @@ export default [
           },
           {
             id: 'ke_all_transmission',
-            label: 'All Transmission Lines',
+            label: 'All Grid T&D Lines',
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent3 },
             layerIds: ['ke_all_transmission'],
-            info: '',
+            info: 'Source: KPLC',
           },
           {
             id: 'transmission_lines_11kv',
-            label: 'Transmission Lines 11kv',
+            label: 'Grid T&D Lines - 11kV',
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent9 },
             layerIds: ['transmission_lines_11kv'],
@@ -360,7 +360,7 @@ export default [
           },
           {
             id: 'transmission_lines_33kv',
-            label: 'Transmission Lines 33kv',
+            label: 'Grid T&D Lines - 33kV',
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent8 },
             layerIds: ['transmission_lines_33kv'],
@@ -368,7 +368,7 @@ export default [
           },
           {
             id: 'transmission_lines_66kv',
-            label: 'Transmission Lines 66kv',
+            label: 'Grid T&D Lines - 66kV',
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent10 },
             layerIds: ['transmission_lines_66kv'],
@@ -376,7 +376,7 @@ export default [
           },
           {
             id: 'transmission_lines_132kv',
-            label: 'Transmission Lines 132kv',
+            label: 'Grid T&D Lines - 132kV',
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent7 },
             layerIds: ['transmission_lines_132kv'],
@@ -384,7 +384,7 @@ export default [
           },
           {
             id: 'transmission_lines_220kv',
-            label: 'Transmission Lines 220kv',
+            label: 'Grid T&D Lines - 220kV',
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent11 },
             layerIds: ['transmission_lines_220kv'],
@@ -455,7 +455,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['banks'],
-            info: 'Source: OSM',
+            info: 'Source: Open Street Maps (OSM)',
           },
           {
             id: 'mfi',
@@ -463,7 +463,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent6 },
             layerIds: ['mfi'],
-            info: 'Source:',
+            info: 'Source: FinAccess Geospatial Mapping 2015',
           },
           {
             id: 'sacco',
@@ -471,7 +471,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['sacco'],
-            info: 'Source:',
+            info: 'Source: FinAccess Geospatial Mapping 2015',
           },
         ],
       },
@@ -487,7 +487,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['health_type1'],
-            info: 'Source:',
+            info: 'Source: Government of Kenya',
           },
           {
             id: 'health_type2',
@@ -495,7 +495,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent7 },
             layerIds: ['health_type2'],
-            info: 'Source:',
+            info: 'Source: Government of Kenya',
           },
           {
             id: 'health_type3',
@@ -503,7 +503,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['health_type3'],
-            info: 'Source:',
+            info: 'Source: Government of Kenya',
           },
           {
             id: 'health_type4',
@@ -511,7 +511,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['health_type4'],
-            info: 'Source:',
+            info: 'Source: Government of Kenya',
           },
         ],
       },
@@ -527,7 +527,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.charmpink },
             layerIds: ['all_education'],
-            info: 'Source: ',
+            info: 'Source: Open Street Maps (OSM)',
           },
           {
             id: 'ke_kindergarten',
@@ -535,7 +535,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['ke_kindergarten'],
-            info: 'Source: ',
+            info: 'Source: Open Street Maps (OSM)',
           },
           {
             id: 'ke_schools',
@@ -543,7 +543,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['ke_schools'],
-            info: 'Source: ',
+            info: 'Source: Open Street Maps (OSM)',
           },
           {
             id: 'ke_colleges',
@@ -551,7 +551,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['ke_colleges'],
-            info: 'Source: ',
+            info: 'Source: Open Street Maps (OSM)',
           },
           {
             id: 'ke_universities',
@@ -559,7 +559,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['ke_universities'],
-            info: 'Source: ',
+            info: 'Source: Open Street Maps (OSM)',
           },
         ],
       },

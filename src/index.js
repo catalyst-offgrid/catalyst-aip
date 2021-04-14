@@ -6,4 +6,5 @@ import config from './config'
 
 mapbox.accessToken = config.mapboxAccessToken
 
+
 render(<App />, document.querySelector('#app'))

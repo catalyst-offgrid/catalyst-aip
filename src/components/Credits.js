@@ -15,6 +15,7 @@ const Container = styled.div`
   gap: ${({ theme }) => `${theme.space[5]}px`};
   justify-content: space-between;
   align-items: center;
+  width: 800px;
 `
 
 export default function Credits() {
