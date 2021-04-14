@@ -4,10 +4,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Credits from '../components/Credits'
 
-import INNOVATION_LOGO from '../../img/INNOVATION_LOGO.png'
-
-import {
-  HomePageLayout,
+import PageLayout, {
   Introduction,
   Tagline,
   PageTitle,
@@ -17,6 +14,7 @@ import {
 
 const Actions = styled.div`
   display: inline-flex;
+  margin-top: 10px;
   gap: ${({ theme }) => theme.space[3]}px;
 `
 
@@ -59,62 +57,41 @@ const Image = styled.figure`
   z-index: -1;
 `
 
-const CatalystLogo = styled.div`
-  position: absolute;
-  margin: 15px;
-  margin-right: 30px;
-  right: 0;
-  bottom: 0;
-`
-
-export default function Home({ siteAcronym, siteName, imageUrl, theme }) {
+export default function DatasetSelector({ siteAcronym, imageUrl, theme }) {
   return (
-    <HomePageLayout siteAcronym={siteAcronym} theme={theme}>
-      <Logo />
+    <PageLayout siteAcronym={siteAcronym} theme={theme}>
       <Image url={imageUrl} />
       <Introduction>
-        <div>
-          <Tagline>
-            <br />
-            Welcome to the
-          </Tagline>
-          <PageTitle>{siteName}</PageTitle>
-          <Paragraph>
-            AIP is an open-source platform for data analysis, visualizations,
-            and tools that are directly applicable to last-mile service delivery
-            in emerging markets.
-          </Paragraph>
-          <Actions>
-            <PrimaryButton
-              to='/select'
-              aria-label='Explore the Map'
-              data-cy='explore-button'
-            >
-              Start Exploring
-            </PrimaryButton>
-            <SecondaryButton
-              to='/info'
-              aria-label='Read some more about this project'
-              data-cy='info-button'
-            >
-              Learn more
-            </SecondaryButton>
-          </Actions>
-        </div>
-        <Paragraph as='div' style={{ alignSelf: 'flexEnd' }}>
-          In partnership with <Credits />
-        </Paragraph>
+        <PageTitle>Dataset Selection</PageTitle>
+
+        <Tagline>
+          <br />
+          Select a dataset
+        </Tagline>
+        {/* <Paragraph>
+          AIP is an open-source platform for data analysis, visualizations, and
+          tools that are directly applicable to last-mile service delivery in
+          emerging markets.
+        </Paragraph> */}
+        <Actions>
+          <PrimaryButton
+            to='/explore/ke'
+            aria-label='explore kenya'
+            data-cy='explore-button'
+          >
+            Geospatial
+          </PrimaryButton>
+          <PrimaryButton to='/mtf' aria-label='mtf' data-cy='explore-button'>
+            MTF
+          </PrimaryButton>
+        </Actions>
       </Introduction>
-      <CatalystLogo>
-        <img src={INNOVATION_LOGO} />
-      </CatalystLogo>
-    </HomePageLayout>
+    </PageLayout>
   )
 }
 
-Home.propTypes = {
+DatasetSelector.propTypes = {
   siteAcronym: PropTypes.string.isRequired,
-  siteName: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
   theme: PropTypes.object.isRequired,
 }

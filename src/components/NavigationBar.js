@@ -59,9 +59,9 @@ export default function NavigationBar({ siteAcronym, theme }) {
             <Home color={theme.colors.background} />
           </Link>
         </NavItem>
-        <NavItem isMatch={path === '/explore'}>
+        <NavItem isMatch={path === '/explore/ke'}>
           <Link
-            to='/explore'
+            to='/explore/ke'
             aria-label='Explore the Map'
             data-cy='link-explore'
           >

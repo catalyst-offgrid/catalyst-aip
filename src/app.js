@@ -4,6 +4,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Explore from './pages/Explore'
 import ExploreSelector from './pages/ExploreSelector'
+import DatasetSelector from './pages/DatasetSelector'
+
 import Info from './pages/Info'
 
 import config from './config'
@@ -14,6 +16,21 @@ export default function App() {
     <BrowserRouter>
       <Switch>
         <Route path='/explore' exact>
+          <ExploreSelector
+            siteAcronym={config.siteAcronym}
+            siteName={config.siteName}
+            imageUrl={config.imageUrl}
+            theme={config.theme}
+          />
+        </Route>
+        <Route path='/select' exact>
+          <DatasetSelector
+            siteAcronym={config.siteAcronym}
+            imageUrl={config.imageUrl}
+            theme={config.theme}
+          />
+        </Route>
+        <Route path='/select/ke' exact>
           <ExploreSelector
             siteAcronym={config.siteAcronym}
             siteName={config.siteName}
