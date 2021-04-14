@@ -167,6 +167,17 @@ export const Logo = ({ withTagline }) => (
   </>
 )
 
+export const CatalystLogo = ({ withTagline }) => (
+  <>
+    {withTagline && <Caption>An Innovation Of</Caption>}
+    <LogoImg alt='AIP Logo' src={CATALYST_BLUE} width={150} />
+  </>
+)
+
 Logo.propTypes = {
+  withTagline: PropTypes.bool,
+}
+
+CatalystLogo.propTypes = {
   withTagline: PropTypes.bool,
 }
