@@ -535,7 +535,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['ke_kindergarten'],
-            info: 'Source: Open Street Maps (OSM)',
+            info: 'Source: Kenya Ministry of Education',
           },
           {
             id: 'ke_schools',
@@ -543,7 +543,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['ke_schools'],
-            info: 'Source: Open Street Maps (OSM)',
+            info: 'Source: Kenya Ministry of Education',
           },
           {
             id: 'ke_colleges',
