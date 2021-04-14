@@ -148,7 +148,7 @@ export default [
     'source-layer': 'Banks_OSM-dn9mc8',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent5,
+      'circle-color': colors.accent4,
     },
   },
   {
@@ -236,6 +236,15 @@ export default [
     type: 'line',
     paint: {
       'line-color': colors.accent11,
+    },
+  },
+  {
+    id: 'unidentified_grid',
+    source: 'unidentified_grid',
+    'source-layer': 'Unidentified_Grid_Network_Rep-cr21jl',
+    type: 'line',
+    paint: {
+      'line-color': colors.accent1,
     },
   },
   {

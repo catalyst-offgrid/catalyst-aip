@@ -64,7 +64,7 @@ export default [
           unit: '',
         },
         layerIds: ['KOSAP Counties'],
-        info: 'Source: ',
+        info: 'Source: KOSAP',
       },
     ]
   },
@@ -390,6 +390,14 @@ export default [
             layerIds: ['transmission_lines_220kv'],
             info: 'Source: KPLC',
           },
+          {
+            id: 'unidentified_grid',
+            label: 'Unidentified Grid Network',
+            defaultVisibility: false,
+            legend: { type: 'line', color: colors.accent1 },
+            layerIds: ['unidentified_grid'],
+            info: 'Source: KPLC',
+          },
         ],
       },
       {
@@ -445,7 +453,7 @@ export default [
             id: 'banks',
             label: 'Banks',
             defaultVisibility: false,
-            legend: { type: 'dot', color: colors.accent5 },
+            legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['banks'],
             info: 'Source: OSM',
           },
@@ -586,6 +594,19 @@ export default [
             layerIds: ['fb-population-density'],
             info: 'Source: Facebook Data For Good',
           },
+          {
+            id: 'Total Households', // matches .csv column name
+            label: 'Number of Households',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 1507000 },
+              domain: [0, 1507000],
+              unit: '',
+            },
+            layerIds: ['Total Households'],
+            info: 'Source: 2019 Kenya Population and Housing Census',
+          },
         ],
       },
       {
@@ -641,19 +662,6 @@ export default [
         info:
           'Descriptive statistics of the households located in each region.',
         subcontrols: [
-          {
-            id: 'Total Households', // matches .csv column name
-            label: 'Number of Households',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 1507000 },
-              domain: [0, 1507000],
-              unit: '',
-            },
-            layerIds: ['Total Households'],
-            info: 'Source: 2019 Kenya Population and Housing Census',
-          },
           {
             id: 'Average Household Size', // matches .csv column name
             label: 'Average Household Size',
@@ -1200,6 +1208,27 @@ export default [
           },
         ],
       },
+      {
+        id: 'Disability',
+        label: 'Disability',
+        info: 'Source: 2019 Kenya Population and Housing Census',
+        subcontrols: [
+          // Add layers here
+          {
+            id: 'Total Disability Percent', // matches .csv column name
+            label: 'Disabled Population',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 6 },
+              domain: [0, 6],
+              unit: '%',
+            },
+            layerIds: ['Total Disability Percent'],
+            info: '',
+          },
+        ],
+      },
     ],
   },
   {
@@ -1393,27 +1422,6 @@ export default [
               unit: '%',
             },
             layerIds: ['Tuk Tuk'],
-            info: '',
-          },
-        ],
-      },
-      {
-        id: 'Disability',
-        label: 'Disability',
-        info: 'Source: 2019 Kenya Population and Housing Census',
-        subcontrols: [
-          // Add layers here
-          {
-            id: 'Total Disability Percent', // matches .csv column name
-            label: 'Disabled Population',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 6 },
-              domain: [0, 6],
-              unit: '%',
-            },
-            layerIds: ['Total Disability Percent'],
             info: '',
           },
         ],
