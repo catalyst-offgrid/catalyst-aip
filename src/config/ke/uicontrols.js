@@ -107,7 +107,7 @@ export default [
             },
             layerIds: ['Low-Quality Stopgap Total'],
             info:
-              'Description: Percentage of households in an area whose primary lighting source is a stopgap solution (e.g., keronse, candles, dry-cell batteries, etc.). Source: 2019 Kenya Population and Housing Census',
+              'Description: Percentage of households in an area whose primary lighting source is a stopgap solution (e.g., kerosene, candles, dry-cell batteries, etc.). Source: 2019 Kenya Population and Housing Census',
           },
           {
             id: 'Kerosene (Total)', // matches .csv column name
