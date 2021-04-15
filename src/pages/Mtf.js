@@ -144,7 +144,7 @@ const mtfUiControls = [
           },
           {
             id: 'Primary_Source_of_Cooking_Fuel_by_Agg_Cooking_Tier',
-            label: 'Primary Source of Cooking Fuel by Electricity Tier',
+            label: 'Primary Source of Cooking Fuel by Aggregate Cooking Tier',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -176,13 +176,6 @@ const mtfUiControls = [
           {
             id: 'Kerosene_Usage_per_Week',
             label: 'Kerosene Usage per Week',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-          {
-            id: 'LPG_Usage_per_Week',
-            label: 'LPG Usage per Week',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -240,6 +233,13 @@ const mtfUiControls = [
             legend: 'none',
             info: '',
           },
+          {
+            id: 'LPG_Usage_per_Week',
+            label: 'LPG Usage per Week',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
         ],
         info: '',
       },
@@ -266,20 +266,6 @@ const mtfUiControls = [
             info: '',
           },
           {
-            id: 'Willingness_to_Pay_over_12_months_for_Solar_Device',
-            label: 'Willingness to Pay over 12 months for Solar Device',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-          {
-            id: 'Willingness_to_Pay_over_12_months_for_Electricity',
-            label: 'Willingness to Pay over 12 months for Electricity',
-            defaultVisibility: false,
-            legend: 'none',
-            info: '',
-          },
-          {
             id: 'Monthly_Expenditure_on_Dry_Cell_Batteries',
             label: 'Monthly Expenditure on Dry Cell Batteries',
             defaultVisibility: false,
@@ -296,6 +282,20 @@ const mtfUiControls = [
           {
             id: 'Weekly_Expenditure_on_Lamps_or_Candles',
             label: 'Weekly Expenditure on Lamps or Candles',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'Willingness_to_Pay_over_12_months_for_Solar_Device',
+            label: 'Willingness to Pay over 12 months for Solar Device',
+            defaultVisibility: false,
+            legend: 'none',
+            info: '',
+          },
+          {
+            id: 'Willingness_to_Pay_over_12_months_for_Electricity',
+            label: 'Willingness to Pay over 12 months for Electricity',
             defaultVisibility: false,
             legend: 'none',
             info: '',
@@ -323,22 +323,6 @@ const mtfUiControls = [
             legend: 'none',
             info: '',
           },
-        ],
-        info: '',
-      },
-      {
-        id: 'cooking_wtp',
-        label: 'Existing expenditures on energy for improved cookstoves',
-        defaultVisibility: false,
-        legend: 'none',
-        subcontrols: [
-          // {
-          //   id: 'k2k3_charcoal',
-          //   label: 'K2K3 Charcoal',
-          //   defaultVisibility: false,
-          //   legend: 'none',
-          //   info: '',
-          // },
           {
             id: 'Willingness_to_Pay_over_12_months_for_a_Fuelwood_Cookstove',
             label: 'Willingness to Pay over 12 months for a Fuelwood Cookstove',
@@ -347,6 +331,7 @@ const mtfUiControls = [
             info: '',
           },
         ],
+        info: '',
       },
       {
         id: 'section_l_part_1',

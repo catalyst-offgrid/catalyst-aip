@@ -92,6 +92,8 @@ import Expenditure_on_Water_Supply_per_Month from './Expenditure_on_Water_Supply
 import Expenditure_on_School_Fees_and_Educational_Expenses_per_Year from './Expenditure_on_School_Fees_and_Educational_Expenses_per_Year'
 import Expenditure_on_Clothing_Shoes_and_Accessories_per_Year from './Expenditure_on_Clothing_Shoes_and_Accessories_per_Year'
 
+import Formal_Bank_Accounts from './Formal_Bank_Accounts'
+
 export default {
   Amount_Paid_for_Cookstoves,
   Amount_Spent_on_Fuel_for_Stoves,
@@ -128,7 +130,7 @@ export default {
   Primary_Source_of_Cooking_Fuel_by_Agg_Cooking_Tier,
   Primary_Source_of_Household_Lighting,
   Primary_Source_of_Backup_Lighting,
-
+  Formal_Bank_Accounts,
   Monthly_Expenditure_on_Dry_Cell_Batteries,
   Willingness_to_Pay_over_12_months_for_Solar_Device,
   Willingness_to_Pay_over_12_months_for_Electricity,
