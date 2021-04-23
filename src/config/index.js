@@ -27,7 +27,7 @@ export default {
   siteName: 'Access Insights Platform',
   siteAcronym: 'AIP',
   imageUrl:
-    'https://lh3.googleusercontent.com/oBj0pG4JQ4Nlx6F1VXsIA1iGYWRwYlmjNwDmKP-NyaUtkALATIkVEeRvJuzWWe_gZPDFOnBaeW0ZkgK7-aWo1l6Voxc3N9jDmP1i6scMqecWek-OoUj8SoNbBGDcVnHzjBd-TLo4=w2400',
+    'https://images.squarespace-cdn.com/content/5a0f434de45a7cf4ec600930/1619190575278-E9NAPWZLG5OQK4W02G92/Sunset+VB.jpg',
   ke: {
     country: 'Kenya',
     countryCode: 'ke',
