@@ -68,11 +68,11 @@ export default {
    * });
    */
   vector: [
-    {
-      id: 'all_education',
-      layer: 'Education_Facilities-6v7pmw',
-      tilesetid: 'iandmuir.922ukwf8',
-    },
+    //{
+    //  id: 'all_education',
+    //  layer: 'Education_Facilities-6v7pmw',
+    //  tilesetid: 'iandmuir.922ukwf8',
+    //},
     {
       id: 'health',
       layer: 'Health_Facilities-2yj576',
@@ -110,8 +110,8 @@ export default {
     },
     {
       id: 'banks',
-      layer: 'Banks_OSM-dn9mc8',
-      tilesetid: 'iandmuir.9d154qzm',
+      layer: 'Banks_Corrected-afjhtn',
+      tilesetid: 'iandmuir.3gk0cpm3',
     },
     {
       id: 'sub-counties',

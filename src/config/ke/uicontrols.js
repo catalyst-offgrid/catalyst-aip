@@ -521,14 +521,14 @@ export default [
         info:
           'Displays the locations of the education facilities in Kenya by the facility type.',
         subcontrols: [
-          {
-            id: 'all_education',
-            label: 'All Education Facilities',
-            defaultVisibility: false,
-            legend: { type: 'dot', color: colors.charmpink },
-            layerIds: ['all_education'],
-            info: 'Source: Open Street Maps (OSM)',
-          },
+          //{
+          //  id: 'all_education',
+          //  label: 'All Education Facilities',
+          //  defaultVisibility: false,
+          //  legend: { type: 'dot', color: colors.charmpink },
+          //  layerIds: ['all_education'],
+          //  info: 'Source: Open Street Maps (OSM)',
+          //},
           {
             id: 'ke_kindergarten',
             label: 'Primary Schools',

@@ -43,15 +43,15 @@ export default [
   // 'raster-opacity': 0.5,
   // },
   // },
-  {
-    id: 'all_education',
-    source: 'all_education',
-    'source-layer': 'Education_Facilities-6v7pmw',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.charmpink,
-    },
-  },
+  //{
+  //  id: 'all_education',
+  //  source: 'all_education',
+  //  'source-layer': 'Education_Facilities-6v7pmw',
+  //  type: 'circle',
+  //  paint: {
+  //    'circle-color': colors.charmpink,
+  //  },
+  //},
   {
     id: 'ke_kindergarten',
     source: 'ke_kindergarten',
@@ -145,7 +145,7 @@ export default [
   {
     id: 'banks',
     source: 'banks',
-    'source-layer': 'Banks_OSM-dn9mc8',
+    'source-layer': 'Banks_Corrected-afjhtn',
     type: 'circle',
     paint: {
       'circle-color': colors.accent4,
