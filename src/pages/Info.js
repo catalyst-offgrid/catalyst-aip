@@ -42,7 +42,17 @@ export default function Info({ siteAcronym, theme }) {
           decisions in the markets in which they operate or intend to operate in
           the future, helping them understand opportunities and risks in
           geographically defined areas. It is also intended to support governments and 
-          development partners identify shortcomings and maximize the impacts of their programs.
+          development partners identify shortcomings and maximize the impacts of their programs. 
+          AIP is sector agnostic, with a focus on democratizing data for practitioners that are 
+          focused on last mile service delivery. It was inspired by and complements other data 
+          visualization and analytic platforms that are available to practitioners and policymakers. 
+          We encourage visitors to AIP to also explore these offerings: 
+        </Paragraph>
+
+        <Paragraph>
+          <a href="https://www.atlasai.co/">Atlas AI</a> brings together world class machine learning 
+          talent and deep domain expertise to develop software that allows customers to plan and monitor
+          high stakes investments including infrastructure development initiatives and market expansion programs.
         </Paragraph>
 
         <Paragraph>
