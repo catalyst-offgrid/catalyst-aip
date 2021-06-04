@@ -20,7 +20,7 @@ export default function Info({ siteAcronym, theme }) {
     <PageLayout siteAcronym={siteAcronym} theme={theme}>
       <InfoBlock>
         <Tagline></Tagline>
-        <PageTitle>About the AIP</PageTitle>
+        <PageTitle>About AIP</PageTitle>
         <Paragraph>
           The Access Insights Platform (AIP) is an interactive, open-source data
           aggregation and visualization platform that provides key insights on
