@@ -83,6 +83,15 @@ export default [
       'circle-color': colors.accent6,
     },
   },
+  {
+    id: 'sierra-leone-health-site',
+    source: 'sierra-leone-health-site',
+    'source-layer': 'Sierra_Leone_Health_Sites-9y95b6',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent7,
+    },
+  },
   // Education Facilities
   {
     id: 'sierra-leone-schools',
@@ -198,6 +207,25 @@ export default [
     paint: {
       'line-color': colors.accent9,
       'line-opacity': 0.3,
+    },
+  },
+  {
+    id: 'sierra-leone-minigrid',
+    source: 'sierra-leone-minigrid',
+    'source-layer': 'Sierra_Leone_Minigrid-4mg3od',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent9,
+    },
+  },
+  {
+    id: 'sierra-rwi',
+    style: 'mapbox://styles/iandmuir/ckplcvz8s3o8d19nphpjg3m33',
+    source: 'sierra-rwi',
+    'source-layer': 'SLE_RWI-2y0cag',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent2,
     },
   },
 ]

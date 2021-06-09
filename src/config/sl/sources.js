@@ -54,6 +54,11 @@ export default {
       tilesetid: 'iandmuir.cv1a7jo6',
     },
     {
+      id: 'sierra-leone-minigrid',
+      layer: 'Sierra_Leone_Minigrid-4mg3od',
+      tilesetid: 'iandmuir.db2sk9ub',
+    },
+    {
       id: 'counties',
       layer: 'Sierra_Leone_Counties-483pik',
       tilesetid: 'iandmuir.0yw0gux0',
@@ -83,6 +88,11 @@ export default {
       id: 'sierra-leone-hospital',
       layer: 'Sierra_Leone_Hospitals-193kwh',
       tilesetid: 'iandmuir.7pdvami3',
+    },
+    {
+      id: 'sierra-leone-health-site',
+      layer: 'Sierra_Leone_Health_Sites-9y95b6',
+      tilesetid: 'iandmuir.1ajn7tmm',
     },
     // Financial Facilities
     {
@@ -144,6 +154,11 @@ export default {
       id: 'sierra-leone-roads',
       layer: 'Sierra_Leone_Road_Network-62c45g',
       tilesetid: 'iandmuir.dwpqwh2m',
+    },
+    {
+      id: 'sierra-rwi',
+      layer: 'SLE_RWI-2y0cag',
+      tilesetid: 'iandmuir.8rorjxet',
     },
   ],
   /**
