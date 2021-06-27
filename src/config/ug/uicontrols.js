@@ -73,7 +73,7 @@ export default [
     controls: [
       {
         id: 'lighting',
-        label: 'Lighting (Sub Region Level)',
+        label: 'Lighting',
         info: '',
         subcontrols: [
           {
@@ -169,15 +169,15 @@ export default [
           },
         ],
       },
-      {
-        id: 'lighting',
-        label: 'Lighting (District Level)',
-        info: '',
-        subcontrols: []
-      },
+      //{
+      //  id: 'lighting',
+      //  label: 'Lighting (District Level)',
+      //  info: '',
+      //  subcontrols: []
+      //},
       {
         id: 'cooking',
-        label: 'Cooking Fuels (Sub-Region Level)',
+        label: 'Cooking Fuels',
         info: '',
         subcontrols: [
           {
@@ -221,12 +221,12 @@ export default [
           },
         ],
       },
-      {
-        id: 'cooking',
-        label: 'Cooking Fuels (District Level)',
-        info: '',
-        subcontrols: []
-      },
+      //{
+      //  id: 'cooking',
+      //  label: 'Cooking Fuels (District Level)',
+      //  info: '',
+      //  subcontrols: []
+      //},
       {
         id: 'grid',
         label: 'Grid Electricity',
@@ -393,36 +393,44 @@ export default [
         info:
           'Displays the locations of the health facilities in Kenya by the facility type.',
         subcontrols: [
+          // {
+          //   id: 'uganda-hospital',
+          //   label: 'Hospitals',
+          //   defaultVisibility: false,
+          //   legend: { type: 'dot', color: colors.accent1 },
+          //   layerIds: ['uganda-hospital'],
+          //   info: '',
+          // },
+          // {
+          //   id: 'uganda-clinics',
+          //   label: 'Clinics',
+          //   defaultVisibility: false,
+          //   legend: { type: 'dot', color: colors.accent2 },
+          //   layerIds: ['uganda-clinics'],
+          //   info: '',
+          // },
+          // {
+          //   id: 'uganda-health-post',
+          //   label: 'Health Post',
+          //   defaultVisibility: false,
+          //   legend: { type: 'dot', color: colors.accent4 },
+          //   layerIds: ['uganda-health-post'],
+          //   info: '',
+          // },
+          // {
+          //   id: 'uganda-pharmacy',
+          //   label: 'Pharmacy',
+          //   defaultVisibility: false,
+          //   legend: { type: 'dot', color: colors.accent5 },
+          //   layerIds: ['uganda-pharmacy'],
+          //   info: '',
+          // },
           {
-            id: 'uganda-hospital',
-            label: 'Hospitals',
+            id: 'uganda-healthsites',
+            label: 'Healthsites',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
-            layerIds: ['uganda-hospital'],
-            info: '',
-          },
-          {
-            id: 'uganda-clinics',
-            label: 'Clinics',
-            defaultVisibility: false,
-            legend: { type: 'dot', color: colors.accent2 },
-            layerIds: ['uganda-clinics'],
-            info: '',
-          },
-          {
-            id: 'uganda-health-post',
-            label: 'Health Post',
-            defaultVisibility: false,
-            legend: { type: 'dot', color: colors.accent4 },
-            layerIds: ['uganda-health-post'],
-            info: '',
-          },
-          {
-            id: 'uganda-pharmacy',
-            label: 'Pharmacy',
-            defaultVisibility: false,
-            legend: { type: 'dot', color: colors.accent5 },
-            layerIds: ['uganda-pharmacy'],
+            layerIds: ['uganda-healthsites'],
             info: '',
           },
         ],

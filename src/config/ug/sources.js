@@ -163,6 +163,11 @@ export default {
       layer: 'Uganda_Pharmacy-0c23jm',
       tilesetid: 'iandmuir.810ntp00',
     },
+    {
+      id: 'uganda-healthsites',
+      layer: 'Uganda_Healthsites-54ktyh',
+      tilesetid: 'iandmuir.ccgwvn9i'
+    },
     // Financial Facilities
     {
       id: 'uganda-banks',

@@ -79,40 +79,49 @@ export default [
     },
   },
   // Health Facilities
+  // {
+  //   id: 'uganda-hospital',
+  //   source: 'uganda-hospital',
+  //   'source-layer': 'Uganda_Hospital-0bztlx',
+  //   type: 'circle',
+  //   paint: {
+  //     'circle-color': colors.accent1,
+  //   },
+  // },
+  // {
+  //   id: 'uganda-clinics',
+  //   source: 'uganda-clinics',
+  //   'source-layer': 'Uganda_Clinics-7mi6w3',
+  //   type: 'circle',
+  //   paint: {
+  //     'circle-color': colors.accent2,
+  //   },
+  // },
+  // {
+  //   id: 'uganda-health-post',
+  //   source: 'uganda-health-post',
+  //   'source-layer': 'Uganda_Health_Post-7eftiz',
+  //   type: 'circle',
+  //   paint: {
+  //     'circle-color': colors.accent4,
+  //   },
+  // },
+  // {
+  //   id: 'uganda-pharmacy',
+  //   source: 'uganda-pharmacy',
+  //   'source-layer': 'Uganda_Pharmacy-0c23jm',
+  //   type: 'circle',
+  //   paint: {
+  //     'circle-color': colors.accent5,
+  //   },
+  // },
   {
-    id: 'uganda-hospital',
-    source: 'uganda-hospital',
-    'source-layer': 'Uganda_Hospital-0bztlx',
+    id: 'uganda-healthsites',
+    source: 'uganda-healthsites',
+    'source-layer': 'Uganda_Healthsites-54ktyh',
     type: 'circle',
     paint: {
       'circle-color': colors.accent1,
-    },
-  },
-  {
-    id: 'uganda-clinics',
-    source: 'uganda-clinics',
-    'source-layer': 'Uganda_Clinics-7mi6w3',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent2,
-    },
-  },
-  {
-    id: 'uganda-health-post',
-    source: 'uganda-health-post',
-    'source-layer': 'Uganda_Health_Post-7eftiz',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent4,
-    },
-  },
-  {
-    id: 'uganda-pharmacy',
-    source: 'uganda-pharmacy',
-    'source-layer': 'Uganda_Pharmacy-0c23jm',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent5,
     },
   },
   // Education Facilities
