@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import React, { useReducer, useState } from 'react'
+import React, { useReducer, useEffect, useState } from 'react'
 
 import PageLayout from '../components/PageLayout'
 import Drawer from '../components/Drawer'
@@ -315,6 +315,8 @@ const mtfUiControls = [
             defaultVisibility: false,
             legend: 'none',
             info: '',
+            link:
+              'https://raw.githubusercontent.com/JosephSemrai/mtf-graph-test/main/Amount_Spent_on_Fuel_for_Stoves.js',
           },
           {
             id: 'Amount_Paid_for_Cookstoves',
@@ -322,6 +324,8 @@ const mtfUiControls = [
             defaultVisibility: false,
             legend: 'none',
             info: '',
+            link:
+              'https://raw.githubusercontent.com/JosephSemrai/mtf-graph-test/main/Amount_Paid_For_Cookstoves.js',
           },
           {
             id: 'Willingness_to_Pay_over_12_months_for_a_Fuelwood_Cookstove',
@@ -649,7 +653,8 @@ const VegaContainer = styled.section`
 export default function Mtf({ siteAcronym, siteName, config, theme }) {
   const { sources, layers, csv } = config
   const [state, dispatch] = useReducer(reducer, mtfUiControls, init)
-  const [selectedGraph, setSelectedGraph] = useState('')
+  const [selectedGraph, setSelectedGraph] = useState("")
+  const [selectedGraphData, setSelectedGraphData] = useState()
 
   const toggleLayer = (controlId) => {
     setSelectedGraph(controlId)
@@ -665,6 +670,20 @@ export default function Mtf({ siteAcronym, siteName, config, theme }) {
   const hasSelectedLayers = Object.values(state).some(
     (control) => control.visibility
   )
+
+  useEffect(() => {
+    console.log('Fetching new graph')
+    fetch(
+      `https://raw.githubusercontent.com/JosephSemrai/mtf-graph-test/main/${selectedGraph}.json`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        
+        console.log("Async MTF graph retrieval: ", data) 
+        setSelectedGraphData(data)
+        })
+        
+  }, [selectedGraph])
 
   return (
     <PageLayout siteAcronym={siteAcronym} theme={theme} noMargin>
@@ -686,7 +705,7 @@ export default function Mtf({ siteAcronym, siteName, config, theme }) {
 
       <VegaContainer>
         {/* <VisualizationSelector /> */}
-        {selectedGraph === '' ? (
+        {!selectedGraph ? (
           <HelpMessage>
             Please select a graph using the navigation bar on the left.
           </HelpMessage>
@@ -694,7 +713,7 @@ export default function Mtf({ siteAcronym, siteName, config, theme }) {
           <Vega
             height={250}
             style={{ height: '100%', width: '100%', padding: '50px' }}
-            spec={vegaData[selectedGraph]}
+            spec={selectedGraphData}
           />
         )}
       </VegaContainer>
