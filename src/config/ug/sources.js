@@ -143,26 +143,26 @@ export default {
       tilesetid: 'iandmuir.7rk0564x',
     },
     // Health Facilities
-    {
-      id: 'uganda-hospital',
-      layer: 'Uganda_Hospital-0bztlx',
-      tilesetid: 'iandmuir.apv3495r',
-    },
-    {
-      id: 'uganda-clinics',
-      layer: 'Uganda_Clinics-7mi6w3',
-      tilesetid: 'iandmuir.0ggfqd0s',
-    },
-    {
-      id: 'uganda-health-post',
-      layer: 'Uganda_Health_Post-7eftiz',
-      tilesetid: 'iandmuir.8txb5wyk',
-    },
-    {
-      id: 'uganda-pharmacy',
-      layer: 'Uganda_Pharmacy-0c23jm',
-      tilesetid: 'iandmuir.810ntp00',
-    },
+    // {
+    //   id: 'uganda-hospital',
+    //   layer: 'Uganda_Hospital-0bztlx',
+    //   tilesetid: 'iandmuir.apv3495r',
+    // },
+    // {
+    //   id: 'uganda-clinics',
+    //   layer: 'Uganda_Clinics-7mi6w3',
+    //   tilesetid: 'iandmuir.0ggfqd0s',
+    // },
+    // {
+    //   id: 'uganda-health-post',
+    //   layer: 'Uganda_Health_Post-7eftiz',
+    //   tilesetid: 'iandmuir.8txb5wyk',
+    // },
+    // {
+    //   id: 'uganda-pharmacy',
+    //   layer: 'Uganda_Pharmacy-0c23jm',
+    //   tilesetid: 'iandmuir.810ntp00',
+    // },
     {
       id: 'uganda-healthsites',
       layer: 'Uganda_Healthsites-54ktyh',
@@ -199,12 +199,33 @@ export default {
       layer: 'Uganda_Post_Office-64dicr',
       tilesetid: 'iandmuir.02zk7mqu',
     },
-    // Other
+    // Electricity
     {
       id: 'uganda-substations',
       layer: 'Uganda_Substations-bf4bp6',
       tilesetid: 'iandmuir.cl879q0g',
     },
+    {
+      id: 'uganda-data-for-good',
+      layer: 'Uganda_Data_for_Good_Transmis-0cbk8p',
+      tilesetid: 'iandmuir.6oyn35yp',
+    },
+    {
+      id: 'uganda-electrical',
+      layer: 'Uganda_Electrical_Network-bjpgmv',
+      tilesetid: 'iandmuir.7km81bbp',
+    },
+    {
+      id: 'uganda-planned-transmission',
+      layer: 'Uganda_Planned_Transmission-5gqds1',
+      tilesetid: 'iandmuir.7ho8emtu',
+    },
+    {
+      id: 'uganda-construct-transmission',
+      layer: 'Uganda_Transmission_Construct-6skv0n',
+      tilesetid: 'iandmuir.7xu57wv4',
+    },
+    // Other
     {
       id: 'uganda-roads',
       layer: 'Uganda_Road_Network-782lk2',
