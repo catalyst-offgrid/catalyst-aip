@@ -20,7 +20,7 @@ import MtfDrawer from '../components/MtfDrawer'
 import VisualizationSelector from '../components/VisualizationSelector'
 import styled from 'styled-components'
 
-import vegaData from '../assets/mtf-graphs'
+// import vegaData from '../assets/mtf-graphs'
 
 /**
  * Searches for the given layer id in the controls and subcontrols.
@@ -673,6 +673,9 @@ export default function Mtf({ siteAcronym, siteName, config, theme }) {
 
   useEffect(() => {
     console.log('Fetching new graph')
+
+    if (selectedGraph === "") return;
+
     fetch(
       `https://raw.githubusercontent.com/JosephSemrai/mtf-graph-test/main/${selectedGraph}.json`
     )
@@ -682,6 +685,7 @@ export default function Mtf({ siteAcronym, siteName, config, theme }) {
         console.log("Async MTF graph retrieval: ", data) 
         setSelectedGraphData(data)
         })
+      .catch(e => alert("Failed to load: ", e))
         
   }, [selectedGraph])
 
