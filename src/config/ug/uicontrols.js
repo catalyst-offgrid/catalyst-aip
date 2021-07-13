@@ -22,12 +22,12 @@ export default [
     info: 'Administrative boundaries from the Government of Uganda.',
     controls: [
       //{
-        //id: 'uganda-borders', // Was uganda-borders
-        //label: 'Borders',
-        //defaultVisibility: false,
-        //legend: 'none',
-        //layerIds: ['uganda-borders'],
-        //info: 'Country boundaries',
+      //id: 'uganda-borders', // Was uganda-borders
+      //label: 'Borders',
+      //defaultVisibility: false,
+      //legend: 'none',
+      //layerIds: ['uganda-borders'],
+      //info: 'Country boundaries',
       //},
       {
         id: 'uganda-regions',
@@ -35,7 +35,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['uganda-regions'],
-        info: '',
+        info: 'Source: Uganda Bureau of Statistics with support from WHO',
       },
       {
         //ACtUALLY CALLED SUBREGIONS BUT SITE WILL NOT WORK
@@ -52,15 +52,15 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['uganda-districts'],
-        info: '',
+        info: 'Source: Uganda Bureau of Statistics with support from WHO',
       },
       {
         id: 'uganda-towns',
         label: 'Towns',
         defaultVisibility: false,
-        legend: {type: 'dot', color: colors.accent5 },
+        legend: { type: 'dot', color: colors.accent5 },
         layerIds: ['uganda-towns'],
-        info: '',
+        info: 'Source: Uganda Bureau of Statistics with support from WHO',
       },
     ],
   },
@@ -74,7 +74,7 @@ export default [
       {
         id: 'lighting',
         label: 'Lighting (Sub Region Level)',
-        info: '',
+        info: 'Source: Uganda Bureau of Statistics with support from WHO',
         subcontrols: [
           {
             id: 'Tadooba - Lighting Fuel', // matches .csv column name
@@ -82,12 +82,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 58},
+              defaultRange: { min: 0, max: 58 },
               domain: [0, 58],
               unit: '%',
             },
             layerIds: ['Tadooba - Lighting Fuel'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics with support from WHO',
           },
           {
             id: 'Lantern - Lighting Fuel', // matches .csv column name
@@ -95,12 +95,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 13},
+              defaultRange: { min: 0, max: 13 },
               domain: [0, 13],
               unit: '%',
             },
             layerIds: ['Lantern - Lighting Fuel'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics with support from WHO',
           },
           {
             id: 'Grid Electricity - Lighting Fuel', // matches .csv column name
@@ -108,12 +108,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 70},
+              defaultRange: { min: 0, max: 70 },
               domain: [0, 70],
               unit: '%',
             },
             layerIds: ['Grid Electricity - Lighting Fuel'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics with support from WHO',
           },
           {
             id: 'Solar - Lighting Fuel', // matches .csv column name
@@ -121,12 +121,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 33},
+              defaultRange: { min: 0, max: 33 },
               domain: [0, 33],
               unit: '%',
             },
             layerIds: ['Solar - Lighting Fuel'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics with support from WHO',
           },
           {
             id: 'Dry Cells/Batteries - Lighting Fuel', // matches .csv column name
@@ -134,12 +134,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 57},
+              defaultRange: { min: 0, max: 57 },
               domain: [0, 57],
               unit: '%',
             },
             layerIds: ['Dry Cells/Batteries - Lighting Fuel'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics with support from WHO',
           },
           {
             id: 'Candles - Lighting Fuel', // matches .csv column name
@@ -147,12 +147,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 6},
+              defaultRange: { min: 0, max: 6 },
               domain: [0, 6],
               unit: '%',
             },
             layerIds: ['Candles - Lighting Fuel'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics with support from WHO',
           },
           {
             id: 'Other Lighting Fuel', // matches .csv column name
@@ -160,25 +160,25 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 41},
+              defaultRange: { min: 0, max: 41 },
               domain: [0, 41],
               unit: '%',
             },
             layerIds: ['Other Lighting Fuel'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics with support from WHO',
           },
         ],
       },
       {
         id: 'lighting',
         label: 'Lighting (District Level)',
-        info: '',
-        subcontrols: []
+        info: 'Source: Uganda Bureau of Statistics with support from WHO',
+        subcontrols: [],
       },
       {
         id: 'cooking',
         label: 'Cooking Fuels (Sub-Region Level)',
-        info: '',
+        info: 'Source: Uganda Bureau of Statistics with support from WHO',
         subcontrols: [
           {
             id: 'Firewood - Cooking Fuel', // matches .csv column name
@@ -186,12 +186,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 87},
+              defaultRange: { min: 0, max: 87 },
               domain: [0, 87],
               unit: '%',
             },
             layerIds: ['Firewood - Cooking Fuel'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics with support from WHO',
           },
           {
             id: 'Charcoal - Cooking Fuel', // matches .csv column name
@@ -199,12 +199,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 70},
+              defaultRange: { min: 0, max: 70 },
               domain: [0, 70],
               unit: '%',
             },
             layerIds: ['Charcoal - Cooking Fuel'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics with support from WHO',
           },
           {
             id: 'Other Cooking Fuel', // matches .csv column name
@@ -212,25 +212,25 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 15},
+              defaultRange: { min: 0, max: 15 },
               domain: [0, 15],
               unit: '%',
             },
             layerIds: ['Other Cooking Fuel'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics with support from WHO',
           },
         ],
       },
       {
         id: 'cooking',
         label: 'Cooking Fuels (District Level)',
-        info: '',
-        subcontrols: []
+        info: 'Source: Uganda Bureau of Statistics with support from WHO',
+        subcontrols: [],
       },
       {
         id: 'grid',
         label: 'Grid Electricity',
-        info: '',
+        info: 'Source: Ugandan Energy Sector GIS Working Group ',
         subcontrols: [
           {
             id: 'uganda-substations',
@@ -238,7 +238,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['uganda-substations'],
-            info: '',
+            info: 'Source: Ugandan Energy Sector GIS Working Group ',
           },
           {
             id: 'uganda-grid',
@@ -246,14 +246,14 @@ export default [
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent9 },
             layerIds: ['uganda-grid'],
-            info: '',
+            info: 'Source: Ugandan Energy Sector GIS Working Group ',
           },
         ],
       },
       {
         id: 'grid-disconnection',
         label: 'Reason for Grid Exclusion',
-        info: '',
+        info: 'Source: Uganda Bureau of Statistics',
         subcontrols: [
           {
             id: 'Too Far/Not Available - Reason for Non-Connection to Grid', // matches .csv column name
@@ -261,38 +261,46 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 78},
+              defaultRange: { min: 0, max: 78 },
               domain: [0, 78],
               unit: '%',
             },
-            layerIds: ['Too Far/Not Available - Reason for Non-Connection to Grid'],
-            info: '',
+            layerIds: [
+              'Too Far/Not Available - Reason for Non-Connection to Grid',
+            ],
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
-            id: 'Cost of Connection Too Expensive - Reason for Non-Connection to Grid', // matches .csv column name
+            id:
+              'Cost of Connection Too Expensive - Reason for Non-Connection to Grid', // matches .csv column name
             label: 'Cost of Connection',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 51},
+              defaultRange: { min: 0, max: 51 },
               domain: [0, 51],
               unit: '%',
             },
-            layerIds: ['Cost of Connection Too Expensive - Reason for Non-Connection to Grid'],
-            info: '',
+            layerIds: [
+              'Cost of Connection Too Expensive - Reason for Non-Connection to Grid',
+            ],
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
-            id: 'Renting or Landlord Decision - Reason for Non-Connection to Grid', // matches .csv column name
+            id:
+              'Renting or Landlord Decision - Reason for Non-Connection to Grid', // matches .csv column name
             label: 'Landlord Decision',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 21},
+              defaultRange: { min: 0, max: 21 },
               domain: [0, 21],
               unit: '%',
             },
-            layerIds: ['Renting or Landlord Decision - Reason for Non-Connection to Grid'],
-            info: '',
+            layerIds: [
+              'Renting or Landlord Decision - Reason for Non-Connection to Grid',
+            ],
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Monthly Fee Too Expensive - Reason for Non-Connection to Grid', // matches .csv column name
@@ -300,12 +308,14 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 19},
+              defaultRange: { min: 0, max: 19 },
               domain: [0, 19],
               unit: '%',
             },
-            layerIds: ['Monthly Fee Too Expensive - Reason for Non-Connection to Grid'],
-            info: '',
+            layerIds: [
+              'Monthly Fee Too Expensive - Reason for Non-Connection to Grid',
+            ],
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Other Reason for Non-Connection to Grid', // matches .csv column name
@@ -313,12 +323,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 9},
+              defaultRange: { min: 0, max: 9 },
               domain: [0, 9],
               unit: '%',
             },
             layerIds: ['Other Reason for Non-Connection to Grid'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
         ],
       },
@@ -343,7 +353,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['uganda-mobile-money'],
-            info: '',
+            info: 'Source: OpenStreetMap contributors',
           },
           {
             id: 'uganda-banks',
@@ -351,7 +361,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['uganda-banks'],
-            info: '',
+            info: 'Source: OpenStreetMap contributors',
           },
           {
             id: 'uganda-sacco',
@@ -359,7 +369,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['uganda-sacco'],
-            info: '',
+            info: 'Source: OpenStreetMap contributors',
           },
           {
             id: 'uganda-bureau-de-change',
@@ -367,7 +377,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent5 },
             layerIds: ['uganda-bureau-de-change'],
-            info: '',
+            info: 'Source: OpenStreetMap contributors',
           },
           {
             id: 'uganda-microfinance',
@@ -375,7 +385,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent6 },
             layerIds: ['uganda-microfinance'],
-            info: '',
+            info: 'Source: OpenStreetMap contributors',
           },
           {
             id: 'uganda-post-office',
@@ -383,7 +393,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent9 },
             layerIds: ['uganda-post-office'],
-            info: '',
+            info: 'Source: OpenStreetMap contributors',
           },
         ],
       },
@@ -399,7 +409,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['uganda-hospital'],
-            info: '',
+            info: 'Source: HealthSites.io',
           },
           {
             id: 'uganda-clinics',
@@ -407,7 +417,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['uganda-clinics'],
-            info: '',
+            info: 'Source: HealthSites.io',
           },
           {
             id: 'uganda-health-post',
@@ -415,7 +425,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['uganda-health-post'],
-            info: '',
+            info: 'Source: HealthSites.io',
           },
           {
             id: 'uganda-pharmacy',
@@ -423,7 +433,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent5 },
             layerIds: ['uganda-pharmacy'],
-            info: '',
+            info: 'Source: HealthSites.io',
           },
         ],
       },
@@ -439,7 +449,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['uganda-colleges'],
-            info: '',
+            info: 'Source: OpenStreetMap contributors',
           },
           {
             id: 'uganda-schools',
@@ -447,7 +457,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['uganda-schools'],
-            info: '',
+            info: 'Source: OpenStreetMap contributors',
           },
           {
             id: 'uganda-kindergarten',
@@ -455,7 +465,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['uganda-kindergarten'],
-            info: '',
+            info: 'Source: OpenStreetMap contributors',
           },
           {
             id: 'uganda-university',
@@ -463,7 +473,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['uganda-university'],
-            info: '',
+            info: 'Source: OpenStreetMap contributors',
           },
         ],
       },
@@ -488,7 +498,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['uganda-density'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
         ],
       },
@@ -504,12 +514,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 56},
+              defaultRange: { min: 0, max: 56 },
               domain: [0, 56],
               unit: '%',
             },
             layerIds: ['Household Population 0-13'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Household Population 14-64', // matches .csv column name
@@ -517,12 +527,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 60},
+              defaultRange: { min: 0, max: 60 },
               domain: [0, 60],
               unit: '%',
             },
             layerIds: ['Household Population 14-64'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Household Population 65+', // matches .csv column name
@@ -530,12 +540,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 5},
+              defaultRange: { min: 0, max: 5 },
               domain: [0, 5],
               unit: '%',
             },
             layerIds: ['Household Population 65+'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
         ],
       },
@@ -551,12 +561,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 7},
+              defaultRange: { min: 0, max: 7 },
               domain: [0, 7],
               unit: '',
             },
             layerIds: ['Average Household Size'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Total Households', // matches .csv column name
@@ -564,12 +574,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 1500000},
+              defaultRange: { min: 0, max: 1500000 },
               domain: [0, 1500000],
               unit: '',
             },
             layerIds: ['Total Households'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
         ],
       },
@@ -579,7 +589,7 @@ export default [
       // defaultVisibility: false,
       // legend: 'none',
       // layerIds: ['compress'],
-      // info: '',
+      // info: "Source: Uganda Bureau of Statistics",
       // },
     ],
   },
@@ -588,8 +598,7 @@ export default [
     label: 'Infrastructure',
     icon: Public,
     description: '',
-    info:
-      '',
+    info: '',
     controls: [
       {
         id: 'uganda-roads',
@@ -597,9 +606,10 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['uganda-roads'],
-        info: '',
+        info:
+          'Source: Geo-IM working group network in Uganda chaired by UBOS and UNOCHA as Secretariat',
       },
-    ]
+    ],
   },
   {
     id: 'mobileData',
@@ -619,7 +629,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['uganda-africell-2g'],
-            info: '',
+            info: 'Source: Mobile Coverage Explorer',
           },
           {
             id: 'uganda-africell-3g',
@@ -627,7 +637,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['uganda-africell-3g'],
-            info: '',
+            info: 'Source: Mobile Coverage Explorer',
           },
           {
             id: 'uganda-africell-4g',
@@ -635,9 +645,9 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['uganda-africell-4g'],
-            info: '',
+            info: 'Source: Mobile Coverage Explorer',
           },
-        ]
+        ],
       },
       {
         id: 'Airtel',
@@ -650,7 +660,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['uganda-airtel-2g'],
-            info: '',
+            info: 'Source: Mobile Coverage Explorer',
           },
           {
             id: 'uganda-airtel-3g',
@@ -658,7 +668,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['uganda-airtel-3g'],
-            info: '',
+            info: 'Source: Mobile Coverage Explorer',
           },
           {
             id: 'uganda-airtel-4g',
@@ -666,9 +676,9 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['uganda-airtel-4g'],
-            info: '',
+            info: 'Source: Mobile Coverage Explorer',
           },
-        ]
+        ],
       },
       {
         id: 'MTN',
@@ -681,7 +691,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['uganda-mtn-2g'],
-            info: '',
+            info: 'Source: Mobile Coverage Explorer',
           },
           {
             id: 'uganda-mtn-3g',
@@ -689,7 +699,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['uganda-mtn-3g'],
-            info: '',
+            info: 'Source: Mobile Coverage Explorer',
           },
           {
             id: 'uganda-mtn-4g',
@@ -697,9 +707,9 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['uganda-mtn-4g'],
-            info: '',
+            info: 'Source: Mobile Coverage Explorer',
           },
-        ]
+        ],
       },
       {
         id: 'UT Mobile',
@@ -712,7 +722,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['uganda-ut-mobile-2g'],
-            info: '',
+            info: 'Source: Mobile Coverage Explorer',
           },
           {
             id: 'uganda-ut-mobile-3g',
@@ -720,10 +730,10 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['uganda-ut-mobile-3g'],
-            info: '',
+            info: 'Source: Mobile Coverage Explorer',
           },
-        ]
-      }
+        ],
+      },
     ],
   },
   {
@@ -736,7 +746,7 @@ export default [
       {
         id: 'wasteDisposal',
         label: 'Mode of Human Waste Disposal',
-        info: '',
+        info: 'Source: Uganda Bureau of Statistics',
         subcontrols: [
           {
             id: 'Pit Latrine - Type of Toilet', // matches .csv column name
@@ -744,12 +754,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 96},
+              defaultRange: { min: 0, max: 96 },
               domain: [0, 96],
               unit: '%',
             },
             layerIds: ['Pit Latrine - Type of Toilet'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'VIP Latrine - Type of Toilet', // matches .csv column name
@@ -757,12 +767,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 17},
+              defaultRange: { min: 0, max: 17 },
               domain: [0, 17],
               unit: '%',
             },
             layerIds: ['VIP Latrine - Type of Toilet'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Bush/No Toilet - Type of Toilet', // matches .csv column name
@@ -770,12 +780,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 66},
+              defaultRange: { min: 0, max: 66 },
               domain: [0, 66],
               unit: '%',
             },
             layerIds: ['Bush/No Toilet - Type of Toilet'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Flush - Type of Toilet', // matches .csv column name
@@ -783,19 +793,19 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 11},
+              defaultRange: { min: 0, max: 11 },
               domain: [0, 11],
               unit: '%',
             },
             layerIds: ['Flush - Type of Toilet'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
         ],
       },
       {
         id: 'drinkingWater',
         label: 'Distance from Water Source',
-        info: '',
+        info: 'Source: Uganda Bureau of Statistics',
         subcontrols: [
           // Add layers here
           {
@@ -804,12 +814,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 99},
+              defaultRange: { min: 0, max: 99 },
               domain: [0, 99],
               unit: '%',
             },
             layerIds: ['< 3km - Distance to Drinking Water Source'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: '3-5km - Distance to Drinking Water Source', // matches .csv column name
@@ -817,12 +827,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 6},
+              defaultRange: { min: 0, max: 6 },
               domain: [0, 6],
               unit: '%',
             },
             layerIds: ['3-5km - Distance to Drinking Water Source'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: '5+ km - Distance to Drinking Water Source', // matches .csv column name
@@ -830,12 +840,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 2},
+              defaultRange: { min: 0, max: 2 },
               domain: [0, 2],
               unit: '%',
             },
             layerIds: ['5+ km - Distance to Drinking Water Source'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
         ],
       },
@@ -851,9 +861,9 @@ export default [
   //    {
   //      id: 'Disability',
   //      label: 'Disability',
-  //      info: '',
+  //      info: "Source: Uganda Bureau of Statistics",
   //      subcontrols: [
-          // Add layers here
+  // Add layers here
   //      ],
   //    },
   //  ],
@@ -868,7 +878,7 @@ export default [
       {
         id: 'indicators',
         label: 'Indicators',
-        info: '',
+        info: 'Source: Uganda Bureau of Statistics',
         subcontrols: [
           //insert unemployment layers here
           {
@@ -877,12 +887,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 11},
+              defaultRange: { min: 0, max: 11 },
               domain: [0, 11],
               unit: '%',
             },
             layerIds: ['Percent of Population in Poverty'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Average Nominal Monthly Household Income', // matches .csv column name
@@ -890,12 +900,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 1000000},
+              defaultRange: { min: 0, max: 1000000 },
               domain: [0, 1000000],
               unit: '',
             },
             layerIds: ['Average Nominal Monthly Household Income'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Unemployment Rate', // matches .csv column name
@@ -903,19 +913,19 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 17},
+              defaultRange: { min: 0, max: 17 },
               domain: [0, 17],
               unit: '%',
             },
             layerIds: ['Unemployment Rate'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
         ],
       },
       {
         id: 'roof',
         label: 'Roof Material',
-        info: '',
+        info: 'Source: Uganda Bureau of Statistics',
         subcontrols: [
           {
             id: 'Iron Sheets - Roofing', // matches .csv column name
@@ -923,12 +933,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 98},
+              defaultRange: { min: 0, max: 98 },
               domain: [0, 98],
               unit: '%',
             },
             layerIds: ['Iron Sheets - Roofing'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Thatched - Roofing', // matches .csv column name
@@ -936,12 +946,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 92},
+              defaultRange: { min: 0, max: 92 },
               domain: [0, 92],
               unit: '%',
             },
             layerIds: ['Thatched - Roofing'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Other Roofing Type', // matches .csv column name
@@ -949,19 +959,19 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 4},
+              defaultRange: { min: 0, max: 4 },
               domain: [0, 4],
               unit: '%',
             },
             layerIds: ['Other Roofing Type'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
         ],
       },
       {
         id: 'wall_material',
         label: 'Wall Material',
-        info: '',
+        info: 'Source: Uganda Bureau of Statistics',
         subcontrols: [
           // Add layers here
           {
@@ -970,12 +980,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 97},
+              defaultRange: { min: 0, max: 97 },
               domain: [0, 97],
               unit: '%',
             },
             layerIds: ['Bricks - Walls'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Mud & Poles - Wall', // matches .csv column name
@@ -983,12 +993,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 84},
+              defaultRange: { min: 0, max: 84 },
               domain: [0, 84],
               unit: '%',
             },
             layerIds: ['Mud & Poles - Walls'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Other Wall Material', // matches .csv column name
@@ -996,19 +1006,19 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 12},
+              defaultRange: { min: 0, max: 12 },
               domain: [0, 12],
               unit: '%',
             },
             layerIds: ['Other Wall Material'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
         ],
       },
       {
         id: 'floor_material',
         label: 'Floor Material',
-        info: '',
+        info: 'Source: Uganda Bureau of Statistics',
         subcontrols: [
           // Add layers here
           {
@@ -1017,12 +1027,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 97},
+              defaultRange: { min: 0, max: 97 },
               domain: [0, 97],
               unit: '%',
             },
             layerIds: ['Earth - Flooring'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Cement - Flooring', // matches .csv column name
@@ -1030,12 +1040,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 64},
+              defaultRange: { min: 0, max: 64 },
               domain: [0, 64],
               unit: '%',
             },
             layerIds: ['Cement - Flooring'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Other Flooring Material', // matches .csv column name
@@ -1043,12 +1053,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 20},
+              defaultRange: { min: 0, max: 20 },
               domain: [0, 20],
               unit: '%',
             },
             layerIds: ['Other Flooring Material'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
         ],
       },
@@ -1064,7 +1074,7 @@ export default [
       {
         id: 'industry_participation',
         label: 'Industry Participation',
-        info: '',
+        info: 'Source: Uganda Bureau of Statistics',
         subcontrols: [
           {
             id: 'Agriculture - Employed Persons by Industry', // matches .csv column name
@@ -1072,12 +1082,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 46},
+              defaultRange: { min: 0, max: 46 },
               domain: [0, 46],
               unit: '%',
             },
             layerIds: ['Agriculture - Employed Persons by Industry'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Construction - Employed Persons by Industry', // matches .csv column name
@@ -1085,12 +1095,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 20},
+              defaultRange: { min: 0, max: 20 },
               domain: [0, 20],
               unit: '%',
             },
             layerIds: ['Construction - Employed Persons by Industry'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Trade - Employed Persons by Industry', // matches .csv column name
@@ -1098,12 +1108,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 28},
+              defaultRange: { min: 0, max: 28 },
               domain: [0, 28],
               unit: '%',
             },
             layerIds: ['Trade - Employed Persons by Industry'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
           {
             id: 'Other Services - Employed Persons by Industry', // matches .csv column name
@@ -1111,12 +1121,12 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 45},
+              defaultRange: { min: 0, max: 45 },
               domain: [0, 45],
               unit: '%',
             },
             layerIds: ['Other Services - Employed Persons by Industry'],
-            info: '',
+            info: 'Source: Uganda Bureau of Statistics',
           },
         ],
       },
