@@ -9,6 +9,7 @@ import SelectionPageLayout, {
   Tagline,
   PageTitle,
   Paragraph,
+  SecondaryTagline,
   Logo,
 } from '../components/SelectionPageLayout'
 
@@ -68,21 +69,48 @@ export default function DatasetSelector({ siteAcronym, imageUrl, theme }) {
           <br />
           Select a dataset
         </Tagline>
-        {/* <Paragraph>
-          AIP is an open-source platform for data analysis, visualizations, and
-          tools that are directly applicable to last-mile service delivery in
-          emerging markets.
-        </Paragraph> */}
+        <SecondaryTagline>
+          <br />
+          Kenya
+        </SecondaryTagline>
         <Actions>
           <PrimaryButton
             to='/explore/ke'
             aria-label='explore kenya'
             data-cy='explore-button'
           >
-            Kenya Geospatial
+            Geospatial
           </PrimaryButton>
           <PrimaryButton to='/mtf' aria-label='mtf' data-cy='explore-button'>
-            Kenya MTF
+            MTF
+          </PrimaryButton>
+        </Actions>
+
+        <SecondaryTagline>
+          <br />
+          Uganda (Beta)
+        </SecondaryTagline>
+        <Actions>
+          <PrimaryButton
+            to='/explore/ug'
+            aria-label='explore kenya'
+            data-cy='explore-button'
+          >
+            Geospatial
+          </PrimaryButton>
+        </Actions>
+
+        <SecondaryTagline>
+          <br />
+          Sierra Leone (Beta)
+        </SecondaryTagline>
+        <Actions>
+          <PrimaryButton
+            to='/explore/sl'
+            aria-label='explore kenya'
+            data-cy='explore-button'
+          >
+            Geospatial
           </PrimaryButton>
         </Actions>
       </Introduction>
