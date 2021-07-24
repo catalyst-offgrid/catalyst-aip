@@ -1160,6 +1160,293 @@ export default [
           },
         ],
       },
+      {
+        id: 'permanent_crops',
+        label: 'Agricultural Households',
+        info: '',
+        subcontrols: [
+          {
+            id: '%_agricultural_hh_members_with_financial_services_access', // matches .csv column name
+            label: 'Members with Access to Financial Services',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 14},
+              domain: [0, 14],
+              unit: '%',
+            },
+            layerIds: ['%_agricultural_hh_members_with_financial_services_access'],
+            info: '',
+          },
+          {
+            id: '%_agricultural_hh_members_in_agriculture', // matches .csv column name
+            label: 'Members Working in Agriculture',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 76},
+              domain: [0, 76],
+              unit: '%',
+            },
+            layerIds: ['%_agricultural_hh_members_in_agriculture'],
+            info: '',
+          },
+          {
+            id: '%_agricultural_hh_members_in_livestock_activities', // matches .csv column name
+            label: 'Members Working in Livestock',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 11},
+              domain: [0, 11],
+              unit: '%',
+            },
+            layerIds: ['%_agricultural_hh_members_in_livestock_activities'],
+            info: '',
+          },
+          {
+            id: '%_agricultural_hh_members_15+_with_agricultural_training', // matches .csv column name
+            label: 'Members 15+ with Agricultural Training',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 7},
+              domain: [0, 7],
+              unit: '%',
+            },
+            layerIds: ['%_agricultural_hh_members_15+_with_agricultural_training'],
+            info: '',
+          },
+          {
+            id: '%_agricultural_hh_paying_for_feeding_livestock', // matches .csv column name
+            label: 'Paying to Feed Livestock',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 41},
+              domain: [0, 41],
+              unit: '%',
+            },
+            layerIds: ['%_agricultural_hh_paying_for_feeding_livestock'],
+            info: '',
+          },
+          {
+            id: '%_agricultural_hh_paying_for_watering_livestock', // matches .csv column name
+            label: 'Paying to Water Livestock',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 44},
+              domain: [0, 44],
+              unit: '%',
+            },
+            layerIds: ['%_agricultural_hh_paying_for_watering_livestock'],
+            info: '',
+          },
+          {
+            id: '%_agricultural_hh_using_fertilizers', // matches .csv column name
+            label: 'Using Fertilizers',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 74},
+              domain: [0, 74],
+              unit: '%',
+            },
+            layerIds: ['%_agricultural_hh_using_fertilizers'],
+            info: '',
+          },
+          {
+            id: '%_agricultural_hh_using_improved_seeds', // matches .csv column name
+            label: 'Using Improved Seeds',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 33},
+              domain: [0, 33],
+              unit: '%',
+            },
+            layerIds: ['%_agricultural_hh_using_improved_seeds'],
+            info: '',
+          },
+          {
+            id: '%_agricultural_hh_using_irrigation', // matches .csv column name
+            label: 'Using Irrigation',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 7},
+              domain: [0, 7],
+              unit: '%',
+            },
+            layerIds: ['%_agricultural_hh_using_irrigation'],
+            info: '',
+          },
+          {
+            id: '%_agricultural_hh_access_to_credit', // matches .csv column name
+            label: 'Access to Credit',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 26},
+              domain: [0, 26],
+              unit: '%',
+            },
+            layerIds: ['%_agricultural_hh_access_to_credit'],
+            info: '',
+          },
+          {
+            id: '%_literate_agricultural_hh_members (10+)', // matches .csv column name
+            label: 'Members 10+ Literacy Rate',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 87},
+              domain: [0, 87],
+              unit: '%',
+            },
+            layerIds: ['%_literate_agricultural_hh_members (10+)'],
+            info: '',
+          },
+        ],
+      },
+      {
+        id: 'permanent_crops',
+        label: 'Permanent Crop Growth',
+        info: 'Source: 2019 Kenya Population and Housing Census',
+        subcontrols: [
+          {
+            id: '%_produce_banana (Food)', // matches .csv column name
+            label: 'Banana',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 98},
+              domain: [0, 98],
+              unit: '%',
+            },
+            layerIds: ['%_produce_banana (Food)'],
+            info: '',
+          },
+          {
+            id: '%_produce_Beans', // matches .csv column name
+            label: 'Beans',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 92},
+              domain: [0, 92],
+              unit: '%',
+            },
+            layerIds: ['%_produce_Beans'],
+            info: '',
+          },
+          {
+            id: '%_produce_Cassava', // matches .csv column name
+            label: 'Cassava',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 95},
+              domain: [0, 95],
+              unit: '%',
+            },
+            layerIds: ['%_produce_Cassava'],
+            info: '',
+          },
+          {
+            id: '%_produce_Coffee Arabica', // matches .csv column name
+            label: 'Coffee Arabica',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 61},
+              domain: [0, 61],
+              unit: '%',
+            },
+            layerIds: ['%_produce_Coffee Arabica'],
+            info: '',
+          },
+          {
+            id: '%_produce_Coffee Robusta', // matches .csv column name
+            label: 'Coffee Robusta',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 60},
+              domain: [0, 60],
+              unit: '%',
+            },
+            layerIds: ['%_produce_Coffee Robusta'],
+            info: '',
+          },
+          {
+            id: '%_produce_Groundnuts', // matches .csv column name
+            label: 'Groundnuts',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 47},
+              domain: [0, 47],
+              unit: '%',
+            },
+            layerIds: ['%_produce_Groundnuts'],
+            info: '',
+          },
+          {
+            id: '%_produce_Maize', // matches .csv column name
+            label: 'Maize',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 88},
+              domain: [0, 88],
+              unit: '%',
+            },
+            layerIds: ['%_produce_Maize'],
+            info: '',
+          },
+          {
+            id: '%_produce_Millet', // matches .csv column name
+            label: 'Millet',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 52},
+              domain: [0, 52],
+              unit: '%',
+            },
+            layerIds: ['%_produce_Millet'],
+            info: '',
+          },
+          {
+            id: '%_produce_Rice', // matches .csv column name
+            label: 'Rice',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 12},
+              domain: [0, 12],
+              unit: '%',
+            },
+            layerIds: ['%_produce_Rice'],
+            info: '',
+          },
+          {
+            id: '%_produce_Soya Beans', // matches .csv column name
+            label: 'Soya Beans',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 30},
+              domain: [0, 30],
+              unit: '%',
+            },
+            layerIds: ['%_produce_Soya Beans'],
+            info: '',
+          },
+        ],
+      },
     ],
   },
 ]

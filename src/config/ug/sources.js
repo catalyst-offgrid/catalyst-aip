@@ -52,8 +52,8 @@ export default {
     },
     {
       id: 'counties',
-      layer: 'Uganda_Sub_Regions-9l2yfr',
-      tilesetid: 'iandmuir.7r3eldtl',
+      layer: 'Uganda_Subregions_-_Custom_Cr-5iebq5',
+      tilesetid: 'iandmuir.dryt4o5i',
     },
     {
       id: 'uganda-districts',

@@ -39,7 +39,7 @@ export default [
   {
     id: 'counties',
     source: 'counties',
-    'source-layer': 'Uganda_Sub_Regions-9l2yfr',
+    'source-layer': 'Uganda_Subregions_-_Custom_Cr-5iebq5',
     type: 'line',
     paint: {
       'line-color': colors.text,
