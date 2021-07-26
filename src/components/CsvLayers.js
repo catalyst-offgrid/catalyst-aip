@@ -17,8 +17,8 @@ export default function CsvLayers({ csv, uiState, theme, map, country }) {
     base_id = 'iandmuir.6e5zcwl0'
   }
   if (country == 'Uganda') {
-    country_base = 'Uganda_Sub_Regions-9l2yfr'
-    base_id = 'iandmuir.7r3eldtl'
+    country_base = 'Uganda_Subregions_-_Custom_Cr-5iebq5'
+    base_id = 'iandmuir.dryt4o5i'
   }
   if (country == 'Sierra Leone') {
     country_base = 'Sierra_Leone_Districts-c34k65'
