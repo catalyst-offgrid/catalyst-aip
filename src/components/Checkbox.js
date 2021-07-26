@@ -22,10 +22,10 @@ const HiddenCheckbox = styled.input.attrs({ type: 'checkbox' })`
   margin: -1px;
   overflow: hidden;
   padding: 0;
-  position: absolute;
+  position: relative;
   white-space: nowrap;
   width: 1px;
-
+  height: 1px;
   clip-path: inset(50%);
 `
 
@@ -55,12 +55,12 @@ const StyledCheckbox = styled.div`
 function Checkbox({ className, checked, theme, ...props }) {
   return (
     <CheckboxContainer className={className}>
-      <HiddenCheckbox checked={checked} {...props} />
       <StyledCheckbox checked={checked}>
         <IconContainer>
           <Tick color={theme.colors.highlight} />
         </IconContainer>
       </StyledCheckbox>
+      <HiddenCheckbox checked={checked} {...props} />
     </CheckboxContainer>
   )
 }

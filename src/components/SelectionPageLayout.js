@@ -111,6 +111,14 @@ export const Tagline = styled.span`
   text-transform: uppercase;
 `
 
+export const SecondaryTagline = styled.span`
+  color: ${({ theme }) => theme.colors.primary};
+  font-family: ${({ theme }) => theme.fonts.body};
+  font-size: ${({ theme }) => theme.fontSizes[1]}pt;
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
+  text-transform: uppercase;
+`
+
 export const PageTitle = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.fonts.heading};
