@@ -400,7 +400,7 @@ export default [
          //   legend: { type: 'dot', color: colors.accent5 },
          //   layerIds: ['uganda-bureau-de-change'],
          //   info: '',
-          },
+         // },
           {
             id: 'uganda-microfinance',
             label: 'Microfinance',
