@@ -134,6 +134,16 @@ export const Paragraph = styled.p`
   margin-bottom: ${({ theme }) => theme.space[3] + theme.space[4]}px;
 `
 
+export const UnorderedList = styled.ul`
+  color: ${({ theme }) => theme.colors.text};
+  font-family: ${({ theme }) => theme.fonts.body};
+  font-size: ${({ theme }) => theme.fontSizes[1]}pt;
+  font-weight: ${({ theme }) => theme.fontWeights.body};
+
+  /* margin-top: ${({ theme }) => theme.space[4]}px; */
+  /* margin-bottom: ${({ theme }) => theme.space[3] + theme.space[4]}px; */
+`
+
 const LogoContainer = styled.figure`
   /* grid-column: 1 / span 5; */
   align-self: end;
