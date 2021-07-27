@@ -78,7 +78,7 @@ export default [
         subcontrols: [
           {
             id: 'Tadooba - Lighting Fuel', // matches .csv column name
-            label: 'Tadooba',
+            label: 'Tadooba (Kerosene Tin Lamp)',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -87,11 +87,11 @@ export default [
               unit: '%',
             },
             layerIds: ['Tadooba - Lighting Fuel'],
-            info: '',
+            info: 'Description: Percentage of households in an area whose primary lighting source is a tadooba (i.e., a basic kerosene tin lamp). Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Lantern - Lighting Fuel', // matches .csv column name
-            label: 'Lantern',
+            label: 'Kerosene Lantern',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -100,7 +100,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Lantern - Lighting Fuel'],
-            info: '',
+            info: 'Description: Percentage of households in an area whose primary lighting source is a kerosene latern (not including tadoobas). Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Grid Electricity - Lighting Fuel', // matches .csv column name
@@ -113,7 +113,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Grid Electricity - Lighting Fuel'],
-            info: '',
+            info: 'Description: Percentage of households in an area whose primary lighting source is grid electrcity. Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Solar - Lighting Fuel', // matches .csv column name
@@ -126,7 +126,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Solar - Lighting Fuel'],
-            info: '',
+            info: 'Description: Percentage of households in an area whose primary lighting source is a solar system. Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Dry Cells/Batteries - Lighting Fuel', // matches .csv column name
@@ -139,7 +139,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Dry Cells/Batteries - Lighting Fuel'],
-            info: '',
+            info: 'Description: Percentage of households in an area whose primary lighting source is a torch powered by dry-cell batteries. Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Candles - Lighting Fuel', // matches .csv column name
@@ -152,7 +152,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Candles - Lighting Fuel'],
-            info: '',
+            info: 'Description: Percentage of households in an area whose primary lighting source is candles. Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Other Lighting Fuel', // matches .csv column name
@@ -165,7 +165,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Other Lighting Fuel'],
-            info: '',
+            info: 'Description: Percentage of households in an area whose primary lighting source is either gas, biogas, candles, firewood, cow dung, grass, etc. Source: 2016/2017 UBOS Household Survey',
           },
         ],
       },
