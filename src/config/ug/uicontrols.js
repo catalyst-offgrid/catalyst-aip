@@ -362,12 +362,12 @@ export default [
     icon: Public,
     description: '',
     info:
-      'Locations of Financial Services, Schools, Doctors, Hospitals and other Health Institutions.',
+      'Locations of Financial Services, Schools, and Health institutions.',
     controls: [
       {
         id: 'finance',
         label: 'Financial Services',
-        info: 'Locations of Banks, Micro-finances and SACCOs.',
+        info: 'Locations of Banks, MFIs, and SACCOs in Uganda.',
         subcontrols: [
           //{
           //  id: 'uganda-mobile-money',
@@ -409,13 +409,13 @@ export default [
             layerIds: ['uganda-microfinance'],
             info: '',
           },
-          {
-            id: 'uganda-post-office',
-            label: 'Post Office',
-            defaultVisibility: false,
-            legend: { type: 'dot', color: colors.accent9 },
-            layerIds: ['uganda-post-office'],
-            info: '',
+         // {
+         //   id: 'uganda-post-office',
+         //   label: 'Post Office',
+         //   defaultVisibility: false,
+         //   legend: { type: 'dot', color: colors.accent9 },
+         //   layerIds: ['uganda-post-office'],
+         //   info: '',
           },
         ],
       },
@@ -423,7 +423,7 @@ export default [
         id: 'healthFacs',
         label: 'Health Facilities',
         info:
-          'Displays the locations of the health facilities in Kenya by the facility type.',
+          'Displays the locations of the health facilities in Uganda.',
         subcontrols: [
           // {
           //   id: 'uganda-hospital',
@@ -471,7 +471,7 @@ export default [
         id: 'education',
         label: 'Education Facilities',
         info:
-          'Displays the locations of the education facilities in Kenya by the facility type.',
+          'Displays the locations of the education facilities in Uganda by the facility type.',
         subcontrols: [
           {
             id: 'uganda-colleges',
@@ -789,7 +789,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Pit Latrine - Type of Toilet'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'VIP Latrine - Type of Toilet', // matches .csv column name
@@ -802,7 +802,7 @@ export default [
               unit: '%',
             },
             layerIds: ['VIP Latrine - Type of Toilet'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Bush/No Toilet - Type of Toilet', // matches .csv column name
@@ -815,7 +815,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Bush/No Toilet - Type of Toilet'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Flush - Type of Toilet', // matches .csv column name
@@ -828,7 +828,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Flush - Type of Toilet'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
         ],
       },
@@ -849,7 +849,7 @@ export default [
               unit: '%',
             },
             layerIds: ['< 3km - Distance to Drinking Water Source'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: '3-5km - Distance to Drinking Water Source', // matches .csv column name
@@ -862,7 +862,7 @@ export default [
               unit: '%',
             },
             layerIds: ['3-5km - Distance to Drinking Water Source'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: '5+ km - Distance to Drinking Water Source', // matches .csv column name
@@ -875,7 +875,7 @@ export default [
               unit: '%',
             },
             layerIds: ['5+ km - Distance to Drinking Water Source'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
         ],
       },
