@@ -153,7 +153,18 @@ const LogoContainer = styled.figure`
 `
 
 const Caption = styled.figcaption`
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.highlight};
+  font-family: ${({ theme }) => theme.fonts.body};
+  font-size: ${({ theme }) => theme.fontSizes[3]}pt;
+  font-weight: ${({ theme }) => theme.fontWeights.body};
+  font-style: italic;
+  text-transform: uppercase;
+
+  margin: ${({ theme }) => theme.space[3]}px 0;
+`
+
+export const CaptionNoItalics = styled.figcaption`
+  color: black;
   font-family: ${({ theme }) => theme.fonts.body};
   font-size: ${({ theme }) => theme.fontSizes[3]}pt;
   font-weight: ${({ theme }) => theme.fontWeights.body};

@@ -10,10 +10,11 @@ import PageLayout, {
   Paragraph,
   CatalystLogo,
   UnorderedList,
+  CaptionNoItalics,
 } from '../components/PageLayout'
 
 const PartnersBlock = styled.div`
-  grid-column: 2 / span 1;
+  grid-column: 1 / span 1;
 `
 
 export default function Info({ siteAcronym, theme }) {
@@ -24,26 +25,26 @@ export default function Info({ siteAcronym, theme }) {
         <PageTitle>About AIP</PageTitle>
         <Paragraph>
           The Access Insights Platform (AIP) is an interactive, open-source data
-          aggregation and visualization platform that provides key insights on
-          factors related to household and community level supply and demand of
-          electricity, demographics, socio-economics trends, and other factors
-          relevant to last-mile distrubiton enterprises. The geospatial module
-          utilizes predictive algorithms to visually depict population density
-          and key infrastructure (e.g., electricity grids) and allows users to
-          visualize mobile network coverage and the locations of health
-          facilities, financial institutions (banks, MFIs, SACCOs), and other
-          key infrastructure. Separately, AIP's MTF module offers users the
-          opportunity to interact with the powerful Multi-Tier framework survey
-          datasets which cover household access to electricity and clean cooking
-          and go beyond the binary approach to look at access as a spectrum of
-          service levels experienced by households.
+          visualization and aggregation platform. It provides users the ability
+          to understand geospatial dimensions of key factors that influence
+          last-mile service delivery, including critical infrastructure,
+          population and demographics, economic activity, and household
+          socioeconomic factors.
         </Paragraph>
+        <Paragraph>
+          AIP’s Multi-Tier Framework (MTF) module offers users the opportunity
+          to interact with the powerful MTF survey datasets which cover
+          household access to electricity and clean cooking and go beyond the
+          binary approach to look at access as a spectrum of service levels
+          experienced by households.
+        </Paragraph>
+
         <Paragraph>
           AIP’s primary objective is to help enterprises make well-informed
           strategic decisions in the markets in which they operate or intend to
           operate in the future, helping them understand opportunities and risks
           in geographically defined areas. It is also intended to support
-          governments and development partners identify shortcomings and
+          governments and development partners identify opportunities and
           maximize the impacts of their programs. AIP is sector agnostic, with a
           focus on democratizing data for practitioners that are focused on last
           mile service delivery. It was inspired by and complements other data
@@ -54,24 +55,32 @@ export default function Info({ siteAcronym, theme }) {
 
         <UnorderedList>
           <li>
-            <a href='https://www.atlasai.co/'>Atlas AI</a> brings together world
-            class machine learning talent and deep domain expertise to develop
-            software that allows customers to plan and monitor high stakes
-            investments including infrastructure development initiatives and
-            market expansion programs.
+            <a href='https://www.atlasai.co/' target='_blank' rel='noreferrer'>
+              Atlas AI
+            </a>{' '}
+            brings together world class machine learning talent and deep domain
+            expertise to develop software that allows customers to plan and
+            monitor high stakes investments including infrastructure development
+            initiatives and market expansion programs.
           </li>
 
           <li>
-            <a href='https://fraym.io/'>Fraym</a> was built to help fast-growing
-            companies, development organizations, and governments succeed in
-            places where data has been traditionally hard to access. Using the
-            latest geospatial technology, Fraym delivers unprecedented,
-            localized information about population characteristics and
-            behaviors.
+            <a href='https://fraym.io/' target='_blank' rel='noreferrer'>
+              Fraym
+            </a>{' '}
+            was built to help fast-growing companies, development organizations,
+            and governments succeed in places where data has been traditionally
+            hard to access. Using the latest geospatial technology, Fraym
+            delivers unprecedented, localized information about population
+            characteristics and behaviors.
           </li>
 
           <li>
-            <a href='https://www.energyaccessexplorer.org/'>
+            <a
+              href='https://www.energyaccessexplorer.org/'
+              target='_blank'
+              rel='noreferrer'
+            >
               Energy Access Explorer
             </a>{' '}
             is an online, open-source, interactive platform that synthesizes and
@@ -88,7 +97,11 @@ export default function Info({ siteAcronym, theme }) {
           </li>
 
           <li>
-            <a href='https://electrifynow.energydata.info/'>
+            <a
+              href='https://electrifynow.energydata.info/'
+              target='_blank'
+              rel='noreferrer'
+            >
               Global Electrification Platform
             </a>{' '}
             is an open access, interactive, online platform that allows for an
@@ -99,7 +112,11 @@ export default function Info({ siteAcronym, theme }) {
           </li>
 
           <li>
-            <a href='https://www.kenya-atlas.org/interactive/index.html'>
+            <a
+              href='https://www.kenya-atlas.org/interactive/index.html'
+              target='_blank'
+              rel='noreferrer'
+            >
               Socio-Economic Atlas of Kenya
             </a>{' '}
             features high-resolution spatial depictions and analyses of data
@@ -111,8 +128,14 @@ export default function Info({ siteAcronym, theme }) {
           </li>
 
           <li>
-            <a href='https://www.villagedata.io/'>Village Data Analytics</a> is
-            an earth observation and AI-powered custom software that enables
+            <a
+              href='https://www.villagedata.io/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Village Data Analytics
+            </a>{' '}
+            is an earth observation and AI-powered custom software that enables
             data-driven investment, business and policy decisions in rural
             villages in Africa and Asia.
           </li>
@@ -130,9 +153,9 @@ export default function Info({ siteAcronym, theme }) {
       <CatalystLogo withTagline />
 
       <PartnersBlock>
-        <Paragraph as='div'>
-          In partnership with <Credits />
-        </Paragraph>
+        <CaptionNoItalics>
+          In collaboration with <Credits />
+        </CaptionNoItalics>
       </PartnersBlock>
     </PageLayout>
   )
