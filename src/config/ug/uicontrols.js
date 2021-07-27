@@ -35,7 +35,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['uganda-regions'],
-        info: '',
+        info: 'Source: Uganda Bureau of Statistics',
       },
       {
         //ACtUALLY CALLED SUBREGIONS BUT SITE WILL NOT WORK
@@ -44,7 +44,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['counties'],
-        info: 'Sub regions',
+        info: 'Source: Uganda Bureau of Statistics',
       },
       {
         id: 'uganda-districts',
@@ -52,7 +52,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['uganda-districts'],
-        info: '',
+        info: 'Source: Uganda Bureau of Statistics',
       },
       {
         id: 'uganda-towns',
@@ -60,7 +60,7 @@ export default [
         defaultVisibility: false,
         legend: {type: 'dot', color: colors.accent5 },
         layerIds: ['uganda-towns'],
-        info: '',
+        info: 'Source: TBC',
       },
     ],
   },
@@ -254,7 +254,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['uganda-data-for-good'],
-            info: 'GridFinder predictive algorithm based on night lights imagery, estimating the location of high- and medium-voltage transmission lines, 2019.',
+            info: 'Source: GridFinder predictive algorithm based on night lights imagery, estimating the location of high- and medium-voltage transmission lines, 2019.',
           },
          // {
          //   id: 'uganda-electrical',
@@ -284,7 +284,7 @@ export default [
       },
       {
         id: 'mini-grid',
-        label: 'Mini Grid Electricity',
+        label: 'Mini-Grid Electricity',
         info: '',
         subcontrols: [
           {
@@ -293,7 +293,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['uganda-minigrids'],
-            info: '',
+            info: 'Source: Uganda REA Master Plan, 2019',
           },
         ]
       },
@@ -1234,7 +1234,7 @@ export default [
           },
           {
             id: '%_agricultural_hh_paying_for_feeding_livestock', // matches .csv column name
-            label: 'Paying to Feed Livestock',
+            label: 'Paying for Livestock Feed',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -1243,11 +1243,11 @@ export default [
               unit: '%',
             },
             layerIds: ['%_agricultural_hh_paying_for_feeding_livestock'],
-            info: 'Source: Uganda National Agricultultural Survey, 2018',
+            info: 'Description: Percentage of agricultural households paying to feed livestock. Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_agricultural_hh_paying_for_watering_livestock', // matches .csv column name
-            label: 'Paying to Water Livestock',
+            label: 'Paying for Water for Livestock',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -1256,7 +1256,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_agricultural_hh_paying_for_watering_livestock'],
-            info: 'Source: Uganda National Agricultultural Survey, 2018',
+            info: 'Description: Percentage of agricultural households paying for water for livestock. Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_agricultural_hh_using_fertilizers', // matches .csv column name
@@ -1269,7 +1269,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_agricultural_hh_using_fertilizers'],
-            info: 'Source: Uganda National Agricultultural Survey, 2018',
+            info: 'Description: Percentage of agricultural households using fertilizers. Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_agricultural_hh_using_improved_seeds', // matches .csv column name
@@ -1282,7 +1282,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_agricultural_hh_using_improved_seeds'],
-            info: 'Source: Uganda National Agricultultural Survey, 2018',
+            info: 'Description: Percentage of agricultural households using improved seeds. Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_agricultural_hh_using_irrigation', // matches .csv column name
@@ -1295,7 +1295,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_agricultural_hh_using_irrigation'],
-            info: 'Source: Uganda National Agricultultural Survey, 2018',
+            info: 'Description: Percentage of agricultural households using irrigation. Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_agricultural_hh_access_to_credit', // matches .csv column name
@@ -1308,11 +1308,11 @@ export default [
               unit: '%',
             },
             layerIds: ['%_agricultural_hh_access_to_credit'],
-            info: 'Source: Uganda National Agricultultural Survey, 2018',
+            info: 'Description: Percentage of agricultural households with access to credit. Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_literate_agricultural_hh_members (10+)', // matches .csv column name
-            label: 'Members 10+ Literacy Rate',
+            label: 'Literacy Rate (Members 10+)',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -1321,7 +1321,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_literate_agricultural_hh_members (10+)'],
-            info: 'Source: Uganda National Agricultultural Survey, 2018',
+            info: 'Description: Literacy rate of households members 10 years and older. Source: Uganda National Agricultultural Survey, 2018',
           },
         ],
       },
@@ -1332,7 +1332,7 @@ export default [
         subcontrols: [
           {
             id: '%_produce_banana (Food)', // matches .csv column name
-            label: 'Banana',
+            label: 'Bananas',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -1341,7 +1341,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_banana (Food)'],
-            info: 'Source: Uganda National Agricultultural Survey, 2018',
+            info: 'Description: Percentage of agricultural households growing bananas. Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Beans', // matches .csv column name
@@ -1354,7 +1354,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Beans'],
-            info: 'Source: Uganda National Agricultultural Survey, 2018',
+            info: 'Description: Percentage of agricultural households growing beans. Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Cassava', // matches .csv column name
@@ -1367,7 +1367,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Cassava'],
-            info: 'Source: Uganda National Agricultultural Survey, 2018',
+            info: 'Description: Percentage of agricultural households growing cassava. Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Coffee Arabica', // matches .csv column name
@@ -1380,7 +1380,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Coffee Arabica'],
-            info: 'Source: Uganda National Agricultultural Survey, 2018',
+            info: 'Description: Percentage of agricultural households growing arabica coffee beans. Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Coffee Robusta', // matches .csv column name
@@ -1393,7 +1393,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Coffee Robusta'],
-            info: 'Source: Uganda National Agricultultural Survey, 2018',
+            info: 'Description: Percentage of agricultural households growing robusta coffee beans. Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Groundnuts', // matches .csv column name
@@ -1406,7 +1406,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Groundnuts'],
-            info: 'Source: Uganda National Agricultultural Survey, 2018',
+            info: 'Description: Percentage of agricultural households growing groundnuts. Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Maize', // matches .csv column name
@@ -1419,7 +1419,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Maize'],
-            info: 'Source: Uganda National Agricultultural Survey, 2018',
+            info: 'Description: Percentage of agricultural households growing maize. Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Millet', // matches .csv column name
@@ -1432,7 +1432,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Millet'],
-            info: 'Source: Uganda National Agricultultural Survey, 2018',
+            info: 'Description: Percentage of agricultural households growing millet. Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Rice', // matches .csv column name
@@ -1445,7 +1445,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Rice'],
-            info: 'Source: Uganda National Agricultultural Survey, 2018',
+            info: 'Description: Percentage of agricultural households growing rice. Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Soya Beans', // matches .csv column name
@@ -1458,7 +1458,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Soya Beans'],
-            info: 'Source: Uganda National Agricultultural Survey, 2018',
+            info: 'Description: Percentage of agricultural households growing soybeans. Source: Uganda National Agricultultural Survey, 2018',
           },
         ],
       },
