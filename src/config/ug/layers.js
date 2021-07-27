@@ -16,16 +16,16 @@ var mobileOpacity = 0.35
 
 export default [
   // Administrative Boundaries
-   //{
-    //id: 'uganda-borders',
-    //source: 'uganda-borders',
-    //'source-layer': 'Uganda_Borders-bcqe2h',
-    //type: 'line',
-    //paint: {
-      //'line-color': colors.text,
-      //'line-opacity': 0,
-      //'line-width': 1,
-    //},
+  //{
+  //id: 'uganda-borders',
+  //source: 'uganda-borders',
+  //'source-layer': 'Uganda_Borders-bcqe2h',
+  //type: 'line',
+  //paint: {
+  //'line-color': colors.text,
+  //'line-opacity': 0,
+  //'line-width': 1,
+  //},
   //},
   {
     id: 'uganda-density',
@@ -273,15 +273,15 @@ export default [
     },
   },
   // Financial Facilities
-  {
-    id: 'uganda-mobile-money',
-    source: 'uganda-mobile-money',
-    'source-layer': 'Uganda_Mobile_Money_Agent-578x2y',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent1,
-    },
-  },
+  // {
+  //   id: 'uganda-mobile-money',
+  //   source: 'uganda-mobile-money',
+  //   'source-layer': 'Uganda_Mobile_Money_Agent-578x2y',
+  //   type: 'circle',
+  //   paint: {
+  //     'circle-color': colors.accent1,
+  //   },
+  // },
   {
     id: 'uganda-banks',
     source: 'uganda-banks',
@@ -300,15 +300,15 @@ export default [
       'circle-color': colors.accent3,
     },
   },
-  {
-    id: 'uganda-bureau-de-change',
-    source: 'uganda-bureau-de-change',
-    'source-layer': 'Uganda_Bureau_de_Change-3hqomh',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent5,
-    },
-  },
+  // {
+  //   id: 'uganda-bureau-de-change',
+  //   source: 'uganda-bureau-de-change',
+  //   'source-layer': 'Uganda_Bureau_de_Change-3hqomh',
+  //   type: 'circle',
+  //   paint: {
+  //     'circle-color': colors.accent5,
+  //   },
+  // },
   {
     id: 'uganda-microfinance',
     source: 'uganda-microfinance',
@@ -318,15 +318,15 @@ export default [
       'circle-color': colors.accent6,
     },
   },
-  {
-    id: 'uganda-post-office',
-    source: 'uganda-post-office',
-    'source-layer': 'Uganda_Post_Office-64dicr',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent9,
-    },
-  },
+  // {
+  //   id: 'uganda-post-office',
+  //   source: 'uganda-post-office',
+  //   'source-layer': 'Uganda_Post_Office-64dicr',
+  //   type: 'circle',
+  //   paint: {
+  //     'circle-color': colors.accent9,
+  //   },
+  // },
   // Other
   {
     id: 'uganda-roads',
@@ -339,15 +339,15 @@ export default [
       'line-width': 1,
     },
   },
-  {
-    id: 'uganda-substations',
-    source: 'uganda-substations',
-    'source-layer': 'Uganda_Substations-bf4bp6',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent1,
-    },
-  },
+  // {
+  //   id: 'uganda-substations',
+  //   source: 'uganda-substations',
+  //   'source-layer': 'Uganda_Substations-bf4bp6',
+  //   type: 'circle',
+  //   paint: {
+  //     'circle-color': colors.accent1,
+  //   },
+  // },
   {
     id: 'uganda-grid',
     source: 'uganda-grid',
@@ -368,26 +368,17 @@ export default [
       'circle-color': colors.accent1,
     },
   },
-  {
-    id: 'uganda-minigrids',
-    source: 'uganda-minigrids',
-    'source-layer': 'Uganda_MiniGrids_Final-1me9bl',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent4,
-    },
-  },
-  {
-    id: 'uganda-electrical',
-    source: 'uganda-electrical',
-    'source-layer': 'Uganda_Electrical_Network-bjpgmv',
-    type: 'line',
-    paint: {
-      'line-color': colors.accent9,
-      'line-opacity': 0.3,
-      'line-width': 2,
-    },
-  },
+  // {
+  //   id: 'uganda-electrical',
+  //   source: 'uganda-electrical',
+  //   'source-layer': 'Uganda_Electrical_Network-bjpgmv',
+  //   type: 'line',
+  //   paint: {
+  //     'line-color': colors.accent9,
+  //     'line-opacity': 0.3,
+  //     'line-width': 2,
+  //   },
+  // },
   {
     id: 'uganda-planned-transmission',
     source: 'uganda-planned-transmission',
@@ -410,5 +401,13 @@ export default [
       'line-width': 2,
     },
   },
-
+  {
+    id: 'uganda-minigrids',
+    source: 'uganda-minigrids',
+    'source-layer': 'Uganda_MiniGrids_Final-1me9bl',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent4,
+    },
+  },
 ]
