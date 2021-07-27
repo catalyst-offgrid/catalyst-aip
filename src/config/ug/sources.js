@@ -225,6 +225,11 @@ export default {
       layer: 'Uganda_Transmission_Construct-6skv0n',
       tilesetid: 'iandmuir.7xu57wv4',
     },
+    {
+      id: 'uganda-minigrids',
+      layer: 'Uganda_MiniGrids_Final-1me9bl',
+      tilesetid: 'iandmuir.dvrbbsqj',
+    },
     // Other
     {
       id: 'uganda-roads',
