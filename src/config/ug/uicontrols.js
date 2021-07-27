@@ -932,8 +932,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 11},
-              domain: [0, 11],
+              defaultRange: { min: 0, max: 61},
+              domain: [0, 61],
               unit: '%',
             },
             layerIds: ['Percent of Population in Poverty'],
