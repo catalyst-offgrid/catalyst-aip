@@ -391,7 +391,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['uganda-banks'],
-            info: '',
+            info: 'Source: OpenStreetMap contributors, 2021',
           },
           {
             id: 'uganda-sacco',
@@ -399,7 +399,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['uganda-sacco'],
-            info: '',
+            info: 'Source: OpenStreetMap contributors, 2021',
           },
          // {
          //   id: 'uganda-bureau-de-change',
@@ -415,7 +415,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent6 },
             layerIds: ['uganda-microfinance'],
-            info: '',
+            info: 'Source: OpenStreetMap contributors, 2021',
           },
          // {
          //   id: 'uganda-post-office',
@@ -487,7 +487,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['uganda-colleges'],
-            info: '',
+            info: 'Source: OpenStreetMap contributors, 2021',
           },
           {
             id: 'uganda-schools',
@@ -495,7 +495,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['uganda-schools'],
-            info: '',
+            info: 'Source: OpenStreetMap contributors, 2021',
           },
           {
             id: 'uganda-kindergarten',
@@ -503,7 +503,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['uganda-kindergarten'],
-            info: '',
+            info: 'Source: OpenStreetMap contributors, 2021',
           },
           {
             id: 'uganda-university',
@@ -511,7 +511,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['uganda-university'],
-            info: '',
+            info: 'Source: OpenStreetMap contributors, 2021',
           },
         ],
       },
@@ -522,13 +522,13 @@ export default [
     label: 'Population & Demographics',
     icon: Population,
     description: '',
-    info: 'Population density, demographic statistics and Night Lights.',
+    info: 'Population density and demographic statistics.',
     controls: [
       {
         id: 'popAndMovement',
         label: 'Population and Movement',
         info:
-          'Displays where the people of Kenya live and the patterns in their movement.',
+          'Displays where the people of Uganda live and the patterns in their movement.',
         subcontrols: [
           {
             id: 'uganda-density',
@@ -557,7 +557,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Household Population 0-13'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Household Population 14-64', // matches .csv column name
@@ -570,7 +570,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Household Population 14-64'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Household Population 65+', // matches .csv column name
@@ -583,7 +583,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Household Population 65+'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
         ],
       },
@@ -604,7 +604,7 @@ export default [
               unit: '',
             },
             layerIds: ['Average Household Size'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Total Households', // matches .csv column name
@@ -614,7 +614,7 @@ export default [
               type: 'gradient',
               defaultRange: { min: 0, max: 1500000},
               domain: [0, 1500000],
-              unit: '',
+              unit: 'Source: 2016/2017 UBOS Household Survey',
             },
             layerIds: ['Total Households'],
             info: '',
@@ -645,7 +645,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['uganda-roads'],
-        info: '',
+        info: 'Source: Geo-IM Working Group chaired by UBOS, 2018',
       },
     ]
   },
@@ -921,7 +921,7 @@ export default [
           //insert unemployment layers here
           {
             id: 'Percent of Population in Poverty', // matches .csv column name
-            label: 'Poverty',
+            label: 'Poverty Incidence',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -930,7 +930,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Percent of Population in Poverty'],
-            info: '',
+            info: 'Description: Percentage of the population living in poverty. Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Average Nominal Monthly Household Income', // matches .csv column name
@@ -943,11 +943,11 @@ export default [
               unit: '',
             },
             layerIds: ['Average Nominal Monthly Household Income'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Unemployment Rate', // matches .csv column name
-            label: 'Unemployment',
+            label: 'Unemployment Rate',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -956,7 +956,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Unemployment Rate'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
         ],
       },
@@ -976,7 +976,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Iron Sheets - Roofing'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Thatched - Roofing', // matches .csv column name
@@ -989,7 +989,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Thatched - Roofing'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Other Roofing Type', // matches .csv column name
@@ -1002,7 +1002,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Other Roofing Type'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
         ],
       },
@@ -1023,7 +1023,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Bricks - Walls'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Mud & Poles - Wall', // matches .csv column name
@@ -1036,7 +1036,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Mud & Poles - Walls'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Other Wall Material', // matches .csv column name
@@ -1049,7 +1049,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Other Wall Material'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
         ],
       },
@@ -1070,7 +1070,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Earth - Flooring'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Cement - Flooring', // matches .csv column name
@@ -1083,7 +1083,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Cement - Flooring'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Other Flooring Material', // matches .csv column name
@@ -1096,7 +1096,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Other Flooring Material'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
         ],
       },
@@ -1125,7 +1125,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Agriculture - Employed Persons by Industry'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: 'Construction - Employed Persons by Industry', // matches .csv column name
@@ -1138,7 +1138,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Construction - Employed Persons by Industry'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: 'Trade - Employed Persons by Industry', // matches .csv column name
@@ -1151,7 +1151,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Trade - Employed Persons by Industry'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: 'Other Services - Employed Persons by Industry', // matches .csv column name
@@ -1164,7 +1164,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Other Services - Employed Persons by Industry'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
         ],
       },
@@ -1184,7 +1184,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_agricultural_hh_members_with_financial_services_access'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_agricultural_hh_members_in_agriculture', // matches .csv column name
@@ -1197,7 +1197,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_agricultural_hh_members_in_agriculture'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_agricultural_hh_members_in_livestock_activities', // matches .csv column name
@@ -1210,7 +1210,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_agricultural_hh_members_in_livestock_activities'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_agricultural_hh_members_15+_with_agricultural_training', // matches .csv column name
@@ -1223,7 +1223,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_agricultural_hh_members_15+_with_agricultural_training'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_agricultural_hh_paying_for_feeding_livestock', // matches .csv column name
@@ -1236,7 +1236,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_agricultural_hh_paying_for_feeding_livestock'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_agricultural_hh_paying_for_watering_livestock', // matches .csv column name
@@ -1249,7 +1249,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_agricultural_hh_paying_for_watering_livestock'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_agricultural_hh_using_fertilizers', // matches .csv column name
@@ -1262,7 +1262,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_agricultural_hh_using_fertilizers'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_agricultural_hh_using_improved_seeds', // matches .csv column name
@@ -1275,7 +1275,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_agricultural_hh_using_improved_seeds'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_agricultural_hh_using_irrigation', // matches .csv column name
@@ -1288,7 +1288,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_agricultural_hh_using_irrigation'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_agricultural_hh_access_to_credit', // matches .csv column name
@@ -1301,7 +1301,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_agricultural_hh_access_to_credit'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_literate_agricultural_hh_members (10+)', // matches .csv column name
@@ -1314,7 +1314,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_literate_agricultural_hh_members (10+)'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
         ],
       },
@@ -1334,7 +1334,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_banana (Food)'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Beans', // matches .csv column name
@@ -1347,7 +1347,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Beans'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Cassava', // matches .csv column name
@@ -1360,7 +1360,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Cassava'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Coffee Arabica', // matches .csv column name
@@ -1373,7 +1373,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Coffee Arabica'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Coffee Robusta', // matches .csv column name
@@ -1386,7 +1386,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Coffee Robusta'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Groundnuts', // matches .csv column name
@@ -1399,7 +1399,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Groundnuts'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Maize', // matches .csv column name
@@ -1412,7 +1412,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Maize'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Millet', // matches .csv column name
@@ -1425,7 +1425,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Millet'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Rice', // matches .csv column name
@@ -1438,7 +1438,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Rice'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
           {
             id: '%_produce_Soya Beans', // matches .csv column name
@@ -1451,7 +1451,7 @@ export default [
               unit: '%',
             },
             layerIds: ['%_produce_Soya Beans'],
-            info: '',
+            info: 'Source: Uganda National Agricultultural Survey, 2018',
           },
         ],
       },
