@@ -369,6 +369,15 @@ export default [
     },
   },
   {
+    id: 'uganda-minigrids',
+    source: 'uganda-minigrids',
+    'source-layer': 'Uganda_MiniGrids_Final-1me9bl',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent4,
+    },
+  },
+  {
     id: 'uganda-electrical',
     source: 'uganda-electrical',
     'source-layer': 'Uganda_Electrical_Network-bjpgmv',
