@@ -617,7 +617,7 @@ export default [
               unit: 'Source: 2016/2017 UBOS Household Survey',
             },
             layerIds: ['Total Households'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
         ],
       },
@@ -1321,7 +1321,7 @@ export default [
       {
         id: 'permanent_crops',
         label: 'Permanent Crop Growth',
-        info: 'Source: 2019 Kenya Population and Housing Census',
+        info: '',
         subcontrols: [
           {
             id: '%_produce_banana (Food)', // matches .csv column name
