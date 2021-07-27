@@ -9,7 +9,10 @@ const IconContainer = styled.div`
 `
 
 const CheckboxContainer = styled.div`
-  display: inline-block;
+  display: flex;
+  height: 30px;
+  flex-direction: row;
+  align-items: center;
   vertical-align: middle;
 `
 
