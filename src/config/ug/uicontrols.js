@@ -416,7 +416,7 @@ export default [
          //   legend: { type: 'dot', color: colors.accent9 },
          //   layerIds: ['uganda-post-office'],
          //   info: '',
-          },
+         // },
         ],
       },
       {
