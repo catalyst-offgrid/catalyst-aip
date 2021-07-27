@@ -284,7 +284,7 @@ export default [
             id: 'uganda-minigrids',
             label: 'Minigrids',
             defaultVisibility: false,
-            legend: { type: 'line', color: colors.accent4 },
+            legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['uganda-minigrids'],
             info: '',
           },
