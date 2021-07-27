@@ -401,4 +401,13 @@ export default [
       'line-width': 2,
     },
   },
+  {
+    id: 'uganda-minigrids',
+    source: 'uganda-minigrids',
+    'source-layer': 'Uganda_MiniGrids_Final-1me9bl',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent4,
+    },
+  },
 ]
