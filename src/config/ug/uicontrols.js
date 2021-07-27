@@ -263,7 +263,7 @@ export default [
          //   legend: { type: 'line', color: colors.accent9 },
          //   layerIds: ['uganda-electrical'],
          //   info: '',
-          },
+         // },
           {
             id: 'uganda-planned-transmission',
             label: 'Planned Transmission Lines',
