@@ -280,15 +280,22 @@ export default [
             layerIds: ['uganda-construct-transmission'],
             info: 'Source: Ugandan Energy Sector GIS Working Group, 2016',
           },
+        ],
+      },
+      {
+        id: 'mini-grid',
+        label: 'Mini Grid Electricity',
+        info: '',
+        subcontrols: [
           {
             id: 'uganda-minigrids',
-            label: 'Minigrids',
+            label: 'Proposed Mini-Grid Sites',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['uganda-minigrids'],
             info: '',
           },
-        ],
+        ]
       },
       {
         id: 'grid-disconnection',
