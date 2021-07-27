@@ -165,7 +165,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Other Lighting Fuel'],
-            info: 'Description: Percentage of households in an area whose primary lighting source is either gas, biogas, candles, firewood, cow dung, grass, etc. Source: 2016/2017 UBOS Household Survey',
+            info: 'Description: Percentage of households in an area whose primary lighting source is either gas, biogas, candles, firewood, cow dung, grass, or others. Source: 2016/2017 UBOS Household Survey',
           },
         ],
       },
@@ -191,7 +191,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Firewood - Cooking Fuel'],
-            info: '',
+            info: 'Description: Percentage of households in an area whose primary cooking fuel source is firewood. Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Charcoal - Cooking Fuel', // matches .csv column name
@@ -204,7 +204,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Charcoal - Cooking Fuel'],
-            info: '',
+            info: 'Description: Percentage of households in an area whose primary cooking fuel source is charcoal. Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Other Cooking Fuel', // matches .csv column name
@@ -217,7 +217,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Other Cooking Fuel'],
-            info: '',
+            info: 'Description: Percentage of households in an area whose primary cooking fuel source is either kerosene, electricity, gas, cow dung, grass/reeds, or others. Source: 2016/2017 UBOS Household Survey',
           },
         ],
       },
@@ -232,37 +232,37 @@ export default [
         label: 'Grid Electricity',
         info: '',
         subcontrols: [
-          {
-            id: 'uganda-substations',
-            label: 'Substations',
-            defaultVisibility: false,
-            legend: { type: 'dot', color: colors.accent1 },
-            layerIds: ['uganda-substations'],
-            info: '',
-          },
+        //  {
+        //  id: 'uganda-substations',
+        //    label: 'Substations',
+        //    defaultVisibility: false,
+         //   legend: { type: 'dot', color: colors.accent1 },
+         //   layerIds: ['uganda-substations'],
+         //   info: '',
+          //},
           {
             id: 'uganda-grid',
-            label: 'Transmission Lines',
+            label: 'All Grid T&D Lines',
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent9 },
             layerIds: ['uganda-grid'],
-            info: '',
+            info: 'Source: Ugandan Energy Sector GIS Working Group, 2017.',
           },
           {
             id: 'uganda-data-for-good',
-            label: 'Medium-Voltage Grid Distribution',
+            label: 'Gridfinder MV/HV Lines',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['uganda-data-for-good'],
-            info: '',
+            info: 'GridFinder predictive algorithm based on night lights imagery, estimating the location of high- and medium-voltage transmission lines, 2019.',
           },
-          {
-            id: 'uganda-electrical',
-            label: 'Electrical and Distribution',
-            defaultVisibility: false,
-            legend: { type: 'line', color: colors.accent9 },
-            layerIds: ['uganda-electrical'],
-            info: '',
+         // {
+         //   id: 'uganda-electrical',
+         //   label: 'Electrical and Distribution',
+         //   defaultVisibility: false,
+         //   legend: { type: 'line', color: colors.accent9 },
+         //   layerIds: ['uganda-electrical'],
+         //   info: '',
           },
           {
             id: 'uganda-planned-transmission',
@@ -270,7 +270,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent9 },
             layerIds: ['uganda-planned-transmission'],
-            info: '',
+            info: 'Source: Ugandan Energy Sector GIS Working Group, 2016',
           },
           {
             id: 'uganda-construct-transmission',
@@ -278,7 +278,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent9 },
             layerIds: ['uganda-construct-transmission'],
-            info: '',
+            info: 'Source: Ugandan Energy Sector GIS Working Group, 2016',
           },
         ],
       },
@@ -298,7 +298,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Too Far/Not Available - Reason for Non-Connection to Grid'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Cost of Connection Too Expensive - Reason for Non-Connection to Grid', // matches .csv column name
@@ -311,7 +311,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Cost of Connection Too Expensive - Reason for Non-Connection to Grid'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Renting or Landlord Decision - Reason for Non-Connection to Grid', // matches .csv column name
@@ -324,7 +324,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Renting or Landlord Decision - Reason for Non-Connection to Grid'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Monthly Fee Too Expensive - Reason for Non-Connection to Grid', // matches .csv column name
@@ -337,7 +337,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Monthly Fee Too Expensive - Reason for Non-Connection to Grid'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
           {
             id: 'Other Reason for Non-Connection to Grid', // matches .csv column name
@@ -350,7 +350,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Other Reason for Non-Connection to Grid'],
-            info: '',
+            info: 'Source: 2016/2017 UBOS Household Survey',
           },
         ],
       },
@@ -369,14 +369,14 @@ export default [
         label: 'Financial Services',
         info: 'Locations of Banks, Micro-finances and SACCOs.',
         subcontrols: [
-          {
-            id: 'uganda-mobile-money',
-            label: 'Mobile Money Agents',
-            defaultVisibility: false,
-            legend: { type: 'dot', color: colors.accent1 },
-            layerIds: ['uganda-mobile-money'],
-            info: '',
-          },
+          //{
+          //  id: 'uganda-mobile-money',
+          //  label: 'Mobile Money Agents',
+          //  defaultVisibility: false,
+          //  legend: { type: 'dot', color: colors.accent1 },
+          //  layerIds: ['uganda-mobile-money'],
+          //  info: '',
+          //},
           {
             id: 'uganda-banks',
             label: 'Banks',
@@ -393,13 +393,13 @@ export default [
             layerIds: ['uganda-sacco'],
             info: '',
           },
-          {
-            id: 'uganda-bureau-de-change',
-            label: 'Bureau de Change',
-            defaultVisibility: false,
-            legend: { type: 'dot', color: colors.accent5 },
-            layerIds: ['uganda-bureau-de-change'],
-            info: '',
+         // {
+         //   id: 'uganda-bureau-de-change',
+         //   label: 'Bureau de Change',
+         //   defaultVisibility: false,
+         //   legend: { type: 'dot', color: colors.accent5 },
+         //   layerIds: ['uganda-bureau-de-change'],
+         //   info: '',
           },
           {
             id: 'uganda-microfinance',
@@ -459,11 +459,11 @@ export default [
           // },
           {
             id: 'uganda-healthsites',
-            label: 'Healthsites',
+            label: 'Health Facilities',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['uganda-healthsites'],
-            info: '',
+            info: 'Source: Healthsites.io extract, 2021',
           },
         ],
       },
