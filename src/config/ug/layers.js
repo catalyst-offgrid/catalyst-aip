@@ -39,7 +39,7 @@ export default [
   {
     id: 'counties',
     source: 'counties',
-    'source-layer': 'Uganda_Sub_Regions-9l2yfr',
+    'source-layer': 'Uganda_Subregions_-_Custom_Cr-5iebq5',
     type: 'line',
     paint: {
       'line-color': colors.text,
@@ -79,40 +79,49 @@ export default [
     },
   },
   // Health Facilities
+  // {
+  //   id: 'uganda-hospital',
+  //   source: 'uganda-hospital',
+  //   'source-layer': 'Uganda_Hospital-0bztlx',
+  //   type: 'circle',
+  //   paint: {
+  //     'circle-color': colors.accent1,
+  //   },
+  // },
+  // {
+  //   id: 'uganda-clinics',
+  //   source: 'uganda-clinics',
+  //   'source-layer': 'Uganda_Clinics-7mi6w3',
+  //   type: 'circle',
+  //   paint: {
+  //     'circle-color': colors.accent2,
+  //   },
+  // },
+  // {
+  //   id: 'uganda-health-post',
+  //   source: 'uganda-health-post',
+  //   'source-layer': 'Uganda_Health_Post-7eftiz',
+  //   type: 'circle',
+  //   paint: {
+  //     'circle-color': colors.accent4,
+  //   },
+  // },
+  // {
+  //   id: 'uganda-pharmacy',
+  //   source: 'uganda-pharmacy',
+  //   'source-layer': 'Uganda_Pharmacy-0c23jm',
+  //   type: 'circle',
+  //   paint: {
+  //     'circle-color': colors.accent5,
+  //   },
+  // },
   {
-    id: 'uganda-hospital',
-    source: 'uganda-hospital',
-    'source-layer': 'Uganda_Hospital-0bztlx',
+    id: 'uganda-healthsites',
+    source: 'uganda-healthsites',
+    'source-layer': 'Uganda_Healthsites-54ktyh',
     type: 'circle',
     paint: {
       'circle-color': colors.accent1,
-    },
-  },
-  {
-    id: 'uganda-clinics',
-    source: 'uganda-clinics',
-    'source-layer': 'Uganda_Clinics-7mi6w3',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent2,
-    },
-  },
-  {
-    id: 'uganda-health-post',
-    source: 'uganda-health-post',
-    'source-layer': 'Uganda_Health_Post-7eftiz',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent4,
-    },
-  },
-  {
-    id: 'uganda-pharmacy',
-    source: 'uganda-pharmacy',
-    'source-layer': 'Uganda_Pharmacy-0c23jm',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent5,
     },
   },
   // Education Facilities
@@ -348,6 +357,48 @@ export default [
       'line-color': colors.accent9,
       'line-opacity': 0.3,
       'line-width': 1,
+    },
+  },
+  {
+    id: 'uganda-data-for-good',
+    source: 'uganda-data-for-good',
+    'source-layer': 'Uganda_Data_for_Good_Transmis-0cbk8p',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent1,
+    },
+  },
+  {
+    id: 'uganda-electrical',
+    source: 'uganda-electrical',
+    'source-layer': 'Uganda_Electrical_Network-bjpgmv',
+    type: 'line',
+    paint: {
+      'line-color': colors.accent9,
+      'line-opacity': 0.3,
+      'line-width': 2,
+    },
+  },
+  {
+    id: 'uganda-planned-transmission',
+    source: 'uganda-planned-transmission',
+    'source-layer': 'Uganda_Planned_Transmission-5gqds1',
+    type: 'line',
+    paint: {
+      'line-color': colors.accent9,
+      'line-opacity': 0.3,
+      'line-width': 2,
+    },
+  },
+  {
+    id: 'uganda-construct-transmission',
+    source: 'uganda-construct-transmission',
+    'source-layer': 'Uganda_Transmission_Construct-6skv0n',
+    type: 'line',
+    paint: {
+      'line-color': colors.accent9,
+      'line-opacity': 0.3,
+      'line-width': 2,
     },
   },
 
