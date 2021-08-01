@@ -191,6 +191,16 @@ export default [
     },
   },
   {
+    id: 'sierra-built-areas',
+    source: 'sierra-built-areas',
+    'source-layer': 'Sierra_Leone_BuiltAreaExtent-7yo0na',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent1,
+      'fill-opacity': 0.5,
+    },
+  },
+  {
     id: 'sierra-leone-transmission',
     source: 'sierra-leone-transmission',
     'source-layer': 'Sierra_Leone_Transmission_Lin-dyrefu',

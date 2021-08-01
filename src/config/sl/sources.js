@@ -145,6 +145,11 @@ export default {
       layer: 'Sierra_Leone_Road_Network-62c45g',
       tilesetid: 'iandmuir.dwpqwh2m',
     },
+    {
+      id: 'sierra-built-areas',
+      layer: 'Sierra_Leone_BuiltAreaExtent-7yo0na',
+      tilesetid: 'iandmuir.accpcnpw',
+    },
   ],
   /**
    * GeoJSON Datasets

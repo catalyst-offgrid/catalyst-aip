@@ -552,6 +552,14 @@ export default [
         layerIds: ['sierra-leone-roads'],
         info: '',
       },
+      {
+        id: 'sierra-built-areas',
+        label: 'Extent of Built-Up Areas',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['sierra-built-areas'],
+        info: '',
+      },
     ]
   },
   {
