@@ -15,5 +15,13 @@ const { colors } = theme
 var mobileOpacity = 0.35
 
 export default [
-
+  {
+    id: 'nigeria-comm-risk',
+    source: 'nigeria-comm-risk',
+    'source-layer': 'Nigeria_CommAccessRisk-05wkv7',
+    type: 'raster',
+    paint: {
+      'raster-opacity': 0.5,
+    },
+  },
 ]

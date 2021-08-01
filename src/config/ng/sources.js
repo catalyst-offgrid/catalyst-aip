@@ -32,6 +32,11 @@ export default {
    * })
    */
   raster: [
+    {
+      id: 'nigeria-comm-risk',
+      layer: 'Nigeria_CommAccessRisk-05wkv7',
+      tilesetid: 'iandmuir.7pk1xkh1',
+    },
   ],
   /**
    * Vector Tilesets

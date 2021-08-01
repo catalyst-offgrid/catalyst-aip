@@ -121,8 +121,16 @@ export default [
         id: 'popAndMovement',
         label: 'Population and Movement',
         info:
-          'Displays where the people of Kenya live and the patterns in their movement.',
+          '',
         subcontrols: [
+          {
+            id: 'nigeria-comm-risk',
+            label: 'Communication Access Risk',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-comm-risk'],
+            info: '',
+          },
         ],
       },
       {
