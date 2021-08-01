@@ -32,11 +32,6 @@ export default {
    * })
    */
   raster: [
-    {
-      id: 'population',
-      layer: 'Kenya_Population_Density_ARC_-90y1wi',
-      tilesetid: 'iandmuir.5j2qnfbz',
-    },
   ],
   /**
    * Vector Tilesets
@@ -48,11 +43,6 @@ export default {
    * });
    */
   vector: [
-    {
-      id: 'all_education',
-      layer: 'Education_Facilities-6v7pmw',
-      tilesetid: 'iandmuir.922ukwf8',
-    },
   ],
   /**
    * GeoJSON Datasets
