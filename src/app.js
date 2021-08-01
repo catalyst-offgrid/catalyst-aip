@@ -62,6 +62,14 @@ export default function App() {
             theme={config.theme}
           />
         </Route>
+        <Route path='/explore/ng'>
+          <Explore
+            siteAcronym={config.siteAcronym}
+            siteName={config.siteName}
+            config={config.ng}
+            theme={config.theme}
+          />
+        </Route>
         <Route path='/mtf'>
           <Mtf
             siteAcronym={config.siteAcronym}
