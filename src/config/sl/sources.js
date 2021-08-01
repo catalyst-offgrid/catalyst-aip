@@ -150,6 +150,11 @@ export default {
       layer: 'Sierra_Leone_BuiltAreaExtent-7yo0na',
       tilesetid: 'iandmuir.accpcnpw',
     },
+    {
+      id: 'sierra-population-density',
+      layer: 'Sierra_Leone_Pop_Density-84xcxp',
+      tilesetid: 'iandmuir.aqvcxa5d',
+    },
   ],
   /**
    * GeoJSON Datasets

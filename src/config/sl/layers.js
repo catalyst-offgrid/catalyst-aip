@@ -210,4 +210,13 @@ export default [
       'line-opacity': 0.3,
     },
   },
+  {
+    id: 'sierra-population-density',
+    source: 'sierra-population-density',
+    'source-layer': 'Sierra_Leone_Pop_Density-84xcxp',
+    type: 'raster',
+    paint: {
+      'raster-opacity': 0.5,
+    },
+  },
 ]
