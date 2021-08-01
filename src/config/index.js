@@ -13,10 +13,16 @@ import uglayers from './ug/layers'
 import ugsources from './ug/sources'
 import uguicontrols from './ug/uicontrols'
 
+// Nigeria Config
+import nglayers from './ng/layers'
+import ngsources from './ng/sources'
+import nguicontrols from './ng/uicontrols'
+
 import theme from './theme'
 import kecsv from '../../data/Energy/Census/KenyaLighting_Cooking.csv'
 import ugcsv from '../../data/Energy/Census/UgandaDataSubregion.csv'
 import slcsv from '../../data/Energy/Census/SierraLeoneFinal.csv'
+import ngcsv from '../../data/Energy/Census/NigeriaData.csv'
 
 if (!process.env.MAPBOX_ACCESS_TOKEN) {
   throw new Error('MAPBOX_ACCESS_TOKEN env var is required')
@@ -57,6 +63,16 @@ export default {
     sources: slsources,
     uicontrols: sluicontrols,
     csv: slcsv,
+  },
+  ng: {
+    country: 'Nigeria',
+    countryCode: 'ng',
+    center: [9.072264, 7.491302],
+    zoom: 6,
+    layers: nglayers,
+    sources: ngsources,
+    uicontrols: nguicontrols,
+    csv: ngcsv,
   },
   theme,
 }
