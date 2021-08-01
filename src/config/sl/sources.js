@@ -31,7 +31,13 @@ export default {
    *   tileSize: 256,
    * })
    */
-  raster: [],
+  raster: [
+    {
+      id: 'sierra-population-density',
+      layer: 'Sierra_Leone_Pop_Density-84xcxp',
+      tilesetid: 'iandmuir.aqvcxa5d',
+    },
+  ],
   /**
    * Vector Tilesets
    *
@@ -149,11 +155,6 @@ export default {
       id: 'sierra-built-areas',
       layer: 'Sierra_Leone_BuiltAreaExtent-7yo0na',
       tilesetid: 'iandmuir.accpcnpw',
-    },
-    {
-      id: 'sierra-population-density',
-      layer: 'Sierra_Leone_Pop_Density-84xcxp',
-      tilesetid: 'iandmuir.aqvcxa5d',
     },
   ],
   /**
