@@ -702,6 +702,14 @@ export default [
         layerIds: ['ke_roads'],
         info: 'Source: ',
       },
+      {
+        id: 'ke_built_areas',
+        label: 'Extent of Built-Up Areas',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['ke_built_areas'],
+        info: 'Source: ',
+      },
     ],
   },
   {
