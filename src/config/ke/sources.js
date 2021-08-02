@@ -266,6 +266,7 @@ export default {
     {
       id: 'ke_built_areas',
       layer: 'Kenya_BuiltAreaExtent-d16qwo',
+      tilesetid: 'iandmuir.5azpo2ee',
     },
   ],
   /**
