@@ -654,6 +654,14 @@ export default [
         layerIds: ['uganda-roads'],
         info: 'Source: Geo-IM Working Group chaired by UBOS, 2018',
       },
+      {
+        id: 'uganda-built-areas',
+        label: 'Extent of Built-Up Areas',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['uganda-built-areas'],
+        info: '',
+      },
     ]
   },
   {

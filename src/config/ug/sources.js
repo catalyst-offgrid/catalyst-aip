@@ -241,6 +241,11 @@ export default {
       layer: 'Uganda_Grid_Final-1jbbnz',
       tilesetid: 'iandmuir.90wqwo6o',
     },
+    {
+      id: 'uganda-built-areas',
+      layer: 'Uganda_BuiltAreaExtent-bqh9nl',
+      tilesetid: 'iandmuir.ateg8f5q',
+    },
   ],
   /**
    * GeoJSON Datasets

@@ -412,6 +412,21 @@ export default [
     info: 'Population density, demographic statistics and Night Lights.',
     controls: [
       {
+        id: 'population',
+        label: 'Population',
+        info: '',
+        subcontrols: [
+          {
+            id: 'sierra-population-density',
+            label: 'Population Density',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['sierra-population-density'],
+            info: '',
+          },
+        ],
+      },
+      {
         id: 'ageRanges',
         label: 'Age Ranges',
         info: 'Breakdown of the regions by the age of their population.',
@@ -550,6 +565,14 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['sierra-leone-roads'],
+        info: '',
+      },
+      {
+        id: 'sierra-built-areas',
+        label: 'Extent of Built-Up Areas',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['sierra-built-areas'],
         info: '',
       },
     ]

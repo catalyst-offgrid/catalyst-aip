@@ -339,6 +339,16 @@ export default [
       'line-width': 1,
     },
   },
+  {
+    id: 'uganda-built-areas',
+    source: 'uganda-built-areas',
+    'source-layer': 'Uganda_BuiltAreaExtent-bqh9nl',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent4,
+      'fill-opacity': 0.5,
+    },
+  },
   // {
   //   id: 'uganda-substations',
   //   source: 'uganda-substations',

@@ -424,4 +424,14 @@ export default [
       'line-width': 1,
     },
   },
+  {
+    id: 'ke_built_areas',
+    source: 'ke_built_areas',
+    'source-layer': 'Kenya_BuiltAreaExtent-d16qwo',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent3,
+      'fill-opacity': 0.5,
+    },
+  },
 ]
