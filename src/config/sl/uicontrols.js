@@ -424,6 +424,14 @@ export default [
             layerIds: ['sierra-population-density'],
             info: '',
           },
+          {
+            id: 'sierra-built-areas',
+            label: 'Extent of Built-Up Areas',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['sierra-built-areas'],
+            info: '',
+           },
         ],
       },
       {
@@ -565,14 +573,6 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['sierra-leone-roads'],
-        info: '',
-      },
-      {
-        id: 'sierra-built-areas',
-        label: 'Extent of Built-Up Areas',
-        defaultVisibility: false,
-        legend: 'none',
-        layerIds: ['sierra-built-areas'],
         info: '',
       },
     ]
