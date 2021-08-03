@@ -37,6 +37,11 @@ export default {
       layer: 'Nigeria_CommAccessRisk-05wkv7',
       tilesetid: 'iandmuir.7pk1xkh1',
     },
+    {
+      id: 'nigeria-pop-density',
+      layer: 'Nigeria_Pop_Density-3pp5t1',
+      tilesetid: 'iandmuir.bje8z43d',
+    },
   ],
   /**
    * Vector Tilesets
@@ -48,6 +53,121 @@ export default {
    * });
    */
   vector: [
+    // boundaries
+    {
+      id: 'nigeria-lgas',
+      layer: 'Nigeria_LGAs-3355t4',
+      tilesetid: 'iandmuir.a9mpcwwe',
+    },
+    {
+      id: 'nigeria-states',
+      layer: 'Nigeria_States-50r7ib',
+      tilesetid: 'iandmuir.3et11jhs',
+    },
+    {
+      id: 'nigeria-wards',
+      layer: 'Nigeria_Wards-am70it',
+      tilesetid: 'iandmuir.cworqo3p',
+    },
+    {
+      id: 'nigeria-built-extent',
+      layer: 'Nigeria_BuiltAreaExtent-4m5kp8',
+      tilesetid: 'iandmuir.4t5013mn',
+    },
+    // School Layers
+    {
+      id: 'nigeria-preprimary',
+      layer: 'Nigeria_PrePrimary-a1kx4d',
+      tilesetid: 'iandmuir.0dp8zg3h',
+    },
+    {
+      id: 'nigeria-reg-primary',
+      layer: 'Nigeria_RegularPrimary-1ju8lc',
+      tilesetid: 'iandmuir.0m0y0gtk',
+    },
+    {
+      id: 'nigeria-standard-primary',
+      layer: 'Nigeria_StandardPrimary-be3q5g',
+      tilesetid: 'iandmuir.0dp8zg3h',
+    },
+    {
+      id: 'nigeria-secondary',
+      layer: 'Nigeria_RegularPrimary-1ju8lc',
+      tilesetid: 'iandmuir.0anocm20',
+    },
+    {
+      id: 'nigeria-tertiary',
+      layer: 'Nigeria_TertiarySchools-464ggm',
+      tilesetid: 'iandmuir.bh48osbo',
+    },
+    // Emergency services
+    {
+      id: 'nigeria-fire-stations',
+      layer: 'Nigeria_FireStations-bkdw77',
+      tilesetid: 'iandmuir.0jhk1qhn',
+    },
+    {
+      id: 'nigeria-prisons',
+      layer: 'Nigeria_Prisons-7iltxg',
+      tilesetid: 'iandmuir.53vycy7t',
+    },
+    {
+      id: 'nigeria-police-stations',
+      layer: 'Nigeria_PoliceStations-badl23',
+      tilesetid: 'iandmuir.ckfze7fz',
+    },
+    {
+      id: 'nigeria-idp-sites',
+      layer: 'Nigeria_IDPSites-3exis8',
+      tilesetid: 'iandmuir.blffn6kr',
+    },
+    // Infrastructure layers
+    {
+      id: 'nigeria-farms',
+      layer: 'Nigeria_Farms-5sf3zn',
+      tilesetid: 'iandmuir.0anocm20',
+    },
+    {
+      id: 'nigeria-water-points',
+      layer: 'Nigeria_WaterPoints-8y0kjp',
+      tilesetid: 'iandmuir.0ov865xq',
+    },
+    {
+      id: 'nigeria-gov-buildings',
+      layer: 'NIgeria_GovBuildings-bd4p7e',
+      tilesetid: 'iandmuir.6u5065ew',
+    },
+    {
+      id: 'nigeria-post-office',
+      layer: 'Nigeria_PostOffice-1o0q9r',
+      tilesetid: 'iandmuir.2somn0i6',
+    },
+    {
+      id: 'nigeria-healthsites',
+      layer: 'Nigeria_HealthSites-bd0fnq',
+      tilesetid: 'iandmuir.8jm787jz',
+    },
+    {
+      id: 'nigeria-markets',
+      layer: 'Nigeria_Markets-88pp5k',
+      tilesetid: 'iandmuir.4v42ad7d',
+    },
+    {
+      id: 'nigeria-filling-stations',
+      layer: 'Nigeria_FillingStations-d5e8dt',
+      tilesetid: 'iandmuir.bo8mlgnd',
+    },
+    {
+      id: 'nigeria-industrial-sites',
+      layer: 'Nigeria_IndustrialSite-7w4lef',
+      tilesetid: 'iandmuir.4vg0egnx',
+    },
+    // Power and Electricity
+    {
+      id: 'nigeria-substations',
+      layer: 'Nigeria_Substations-4t41q1',
+      tilesetid: 'iandmuir.9w22z0c4',
+    },
   ],
   /**
    * GeoJSON Datasets

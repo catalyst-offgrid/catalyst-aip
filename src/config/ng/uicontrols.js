@@ -29,6 +29,30 @@ export default [
         layerIds: ['counties', 'admin-1-boundary', 'admin-1-boundary-bg'],
         info: 'Source: Kenya Independent Electoral and Boundaries Commission (IEBC)',
       },
+      {
+        id: 'nigeria-lgas',
+        label: 'Local Government Areas',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['nigeria-lgas'],
+        info: '',
+      },
+      {
+        id: 'nigeria-states',
+        label: 'States',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['nigeria-states'],
+        info: '',
+      },
+      {
+        id: 'nigeria-wards',
+        label: 'Wards',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['nigeria-wards'],
+        info: '',
+      },
     ],
   },
   {
@@ -66,6 +90,14 @@ export default [
         label: 'Grid Electricity',
         info: '',
         subcontrols: [
+          {
+            id: 'nigeria-substations',
+            label: 'Substations',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-substations'],
+            info: '',
+          },
         ],
       },
       {
@@ -98,6 +130,14 @@ export default [
         info:
           'Displays the locations of the health facilities in Kenya by the facility type.',
         subcontrols: [
+          {
+            id: 'nigeria-healthsites',
+            label: 'Healthsites',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-healthsites'],
+            info: '',
+          },
         ],
       },
       {
@@ -106,6 +146,46 @@ export default [
         info:
           'Displays the locations of the education facilities in Kenya by the facility type.',
         subcontrols: [
+          {
+            id: 'nigeria-preprimary',
+            label: 'Pre-Primary Schools',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-preprimary'],
+            info: '',
+          },
+          {
+            id: 'nigeria-reg-primary',
+            label: 'Primary Schools',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-reg-primary'],
+            info: '',
+          },
+          {
+            id: 'nigeria-standard-primary',
+            label: 'Standard Primary Schools',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-standard-primary'],
+            info: '',
+          },
+          {
+            id: 'nigeria-secondary',
+            label: 'Secondary Schools',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-secondary'],
+            info: '',
+          },
+          {
+            id: 'nigeria-tertiary',
+            label: 'Tertiary Schools',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-tertiary'],
+            info: '',
+          },
         ],
       },
     ],
@@ -123,6 +203,14 @@ export default [
         info:
           '',
         subcontrols: [
+          {
+            id: 'nigeria-pop-density',
+            label: 'Population Density',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-pop-density'],
+            info: '',
+          },
           {
             id: 'nigeria-comm-risk',
             label: 'Communication Access Risk',
@@ -166,6 +254,55 @@ export default [
     description: '',
     info: '',
     controls: [
+      {
+        id: 'nigeria-built-extent',
+        label: 'Extent of Build-Up Areas',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['nigeria-built-extent'],
+        info: '',
+      },
+      {
+        id: 'nigeria-farms',
+        label: 'Farms',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['nigeria-farms'],
+        info: '',
+      },
+      {
+        id: 'nigeria-gov-buildings',
+        label: 'Government Buildings',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['nigeria-gov-buildings'],
+        info: '',
+      },
+      {
+        id: 'nigeria-post-office',
+        label: 'Post Offices',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['nigeria-post-office'],
+        info: '',
+      },
+      {
+        id: 'nigeria-markets',
+        label: 'Markets',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['nigeria-markets'],
+        info: '',
+      },
+      {
+        id: 'nigeria-industrial-sites',
+        label: 'Industrial Sites',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['nigeria-industrial-sites'],
+        info: '',
+      },
+
     ],
   },
   {
@@ -175,42 +312,6 @@ export default [
     description: '',
     info: 'Mobile Coverage Data © Collins Bartholomew and GSMA 2020',
     controls: [
-      {
-        id: 'allCarrier',
-        label: 'All Carriers',
-        info:
-          'Description: Coverage from all carriers as self reported by the carriers in survey responses. Source: Collins Batholomew and GSMA 2020',
-        subcontrols: [
-        ],
-      },
-      {
-        id: 'airtel',
-        label: 'AirTel',
-        info: 'Coverage on the AirTel Network.',
-        subcontrols: [
-        ],
-      },
-      {
-        id: 'orange',
-        label: 'Orange',
-        info: 'Coverage on the Orange (now Telkom) Network',
-        subcontrols: [
-        ],
-      },
-      {
-        id: 'safaricom',
-        label: 'Safaricom',
-        info: 'Coverage on the Safaricom Network',
-        subcontrols: [
-        ],
-      },
-      {
-        id: 'yu',
-        label: 'YuMobile',
-        info: 'Coverage on the YuMobile Network',
-        subcontrols: [
-        ],
-      },
     ],
   },
   {
@@ -220,6 +321,45 @@ export default [
     description: '',
     info: 'Explores access to services that impact health and health outcomes.',
     controls: [
+      {
+        id: 'emergencyServices',
+        label: 'Emergency Services',
+        info: '',
+        subcontrols: [
+          {
+            id: 'nigeria-fire-stations',
+            label: 'Fire Stations',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-fire-stations'],
+            info: '',
+          },
+          {
+            id: 'nigeria-police-stations',
+            label: 'Police Stations',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-police-stations'],
+            info: '',
+          },
+          {
+            id: 'nigeria-prisons',
+            label: 'Prisons',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-prisons'],
+            info: '',
+          },
+          {
+            id: 'nigeria-idp-sites',
+            label: 'IDP Sites',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-idp-sites'],
+            info: '',
+          },
+        ],
+      },
       {
         id: 'wasteDisposal',
         label: 'Mode of Human Waste Disposal',
@@ -233,6 +373,14 @@ export default [
         info: 'Source: 2019 Kenya Population and Housing Census',
         subcontrols: [
           // Add layers here
+          {
+            id: 'nigeria-water-points',
+            label: 'Water Points',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-water-points'],
+            info: '',
+          },
         ],
       },
       {
@@ -289,6 +437,14 @@ export default [
         label: 'Vehicles',
         info: 'Source: 2019 Kenya Population and Housing Census',
         subcontrols: [
+          {
+            id: 'nigeria-filling-stations',
+            label: 'Filling Stations',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-filling-stations'],
+            info: '',
+          },
           // Add layers here
         ],
       },
