@@ -78,12 +78,12 @@ export default {
     {
       id: 'nigeria-preprimary',
       layer: 'Nigeria_PrePrimary-a1kx4d',
-      tilesetid: 'iandmuir.0dp8zg3h',
+      tilesetid: 'iandmuir.0m0y0gtk',
     },
     {
       id: 'nigeria-reg-primary',
       layer: 'Nigeria_RegularPrimary-1ju8lc',
-      tilesetid: 'iandmuir.0m0y0gtk',
+      tilesetid: 'iandmuir.0anocm20',
     },
     {
       id: 'nigeria-standard-primary',
@@ -125,7 +125,7 @@ export default {
     {
       id: 'nigeria-farms',
       layer: 'Nigeria_Farms-5sf3zn',
-      tilesetid: 'iandmuir.0anocm20',
+      tilesetid: 'iandmuir.2eccbtem',
     },
     {
       id: 'nigeria-water-points',
