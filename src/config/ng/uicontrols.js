@@ -212,6 +212,14 @@ export default [
             info: '',
           },
           {
+            id: 'nigeria-built-extent',
+            label: 'Extent of Build-Up Areas',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-built-extent'],
+            info: '',
+          },
+          {
             id: 'nigeria-comm-risk',
             label: 'Communication Access Risk',
             defaultVisibility: false,
@@ -254,14 +262,6 @@ export default [
     description: '',
     info: '',
     controls: [
-      {
-        id: 'nigeria-built-extent',
-        label: 'Extent of Build-Up Areas',
-        defaultVisibility: false,
-        legend: 'none',
-        layerIds: ['nigeria-built-extent'],
-        info: '',
-      },
       {
         id: 'nigeria-farms',
         label: 'Farms',
