@@ -50,6 +50,11 @@ export default {
   vector: [
     // Administrative Boundaries
     {
+      id: 'sierra-leone-provinces',
+      layer: 'sierra-leone-admin-provinces-b0v3z3',
+      tilesetid: 'iandmuir.84sf2gch',
+    },
+    {
       id: 'sierra-leone-districts',
       layer: 'Sierra_Leone_Districts-c34k65',
       tilesetid: 'iandmuir.4f3biqz2',

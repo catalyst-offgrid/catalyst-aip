@@ -16,6 +16,17 @@ var mobileOpacity = 0.35
 
 export default [
   {
+    id: 'sierra-leone-provinces',
+    source: 'sierra-leone-provinces',
+    'source-layer': 'sierra-leone-admin-provinces-b0v3z3',
+    type: 'line',
+    paint: {
+      'line-color': colors.text,
+      'line-opacity': 0.5,
+      'line-width': 1,
+    },
+  },
+  {
     id: 'counties',
     source: 'counties',
     'source-layer': 'Sierra_Leone_Counties-483pik',

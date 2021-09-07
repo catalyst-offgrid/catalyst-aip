@@ -30,6 +30,14 @@ export default [
         //info: 'Country boundaries',
       //},
       {
+        id: 'sierra-leone-provinces',
+        label: 'Provinces',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['sierra-leone-provinces'],
+        info: 'Source: OCHA',
+      },
+      {
         id: 'sierra-leone-districts',
         label: 'Districts',
         defaultVisibility: false,
