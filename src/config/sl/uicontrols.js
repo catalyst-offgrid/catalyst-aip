@@ -35,7 +35,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['sierra-leone-districts'],
-        info: '',
+	info: 'Source: OCHA',
       },
       {
         id: 'counties',
@@ -43,7 +43,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['counties'],
-        info: 'Sub regions',
+        info: 'Source: OCHA',
       },
     ],
   },
@@ -70,7 +70,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Kerosene - Lighting'],
-            info: '',
+            info: 'Source: Sierra Leone Household Survey, 2018',
           },
           {
             id: 'Gas - Lighting', // matches .csv column name
@@ -83,7 +83,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Gas - Lighting'],
-            info: '',
+            info: 'Source: Sierra Leone Household Survey, 2018',
           },
           {
             id: 'EDSA - Lighting', // matches .csv column name
@@ -96,7 +96,7 @@ export default [
               unit: '%',
             },
             layerIds: ['EDSA - Lighting'],
-            info: '',
+            info: 'Source: Sierra Leone Household Survey, 2018',
           },
           {
             id: 'Generator - Lighting', // matches .csv column name
@@ -109,7 +109,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Generator - Lighting'],
-            info: '',
+            info: 'Source: Sierra Leone Household Survey, 2018',
           },
           {
             id: 'Solar Panel- Lighting', // matches .csv column name
@@ -122,7 +122,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Solar Panel- Lighting'],
-            info: '',
+            info: 'Source: Sierra Leone Household Survey, 2018',
           },
           {
             id: 'Battery - Lighting', // matches .csv column name
@@ -135,7 +135,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Battery - Lighting'],
-            info: '',
+            info: 'Source: Sierra Leone Household Survey, 2018',
           },
           {
             id: 'Candles - Lighting', // matches .csv column name
@@ -148,7 +148,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Candles - Lighting'],
-            info: '',
+            info: 'Source: Sierra Leone Household Survey, 2018',
           },
           {
             id: 'Firewood - Lighting', // matches .csv column name
@@ -161,7 +161,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Firewood - Lighting'],
-            info: '',
+            info: 'Source: Sierra Leone Household Survey, 2018',
           },
           {
             id: 'Other - Lighting', // matches .csv column name
@@ -174,7 +174,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Other - Lighting'],
-            info: '',
+            info: 'Source: Sierra Leone Household Survey, 2018',
           },
         ],
       },
@@ -194,7 +194,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Firewood - Cooking'],
-            info: '',
+            info: 'Source: Sierra Leone Household Survey, 2018',
           },
           {
             id: 'Kerosene - Cooking', // matches .csv column name
@@ -207,7 +207,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Kerosene - Cooking'],
-            info: '',
+            info: 'Source: Sierra Leone Household Survey, 2018',
           },
           {
             id: 'Gas - Cooking', // matches .csv column name
@@ -220,7 +220,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Gas - Cooking'],
-            info: '',
+            info: 'Source: Sierra Leone Household Survey, 2018',
           },
           {
             id: 'Saw Dust/Crop Residue - Cooking', // matches .csv column name
@@ -233,7 +233,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Saw Dust/Crop Residue - Cooking'],
-            info: '',
+            info: 'Source: Sierra Leone Household Survey, 2018',
           },
           {
             id: 'Animal Waste - Cooking', // matches .csv column name
@@ -246,7 +246,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Animal Waste - Cooking'],
-            info: '',
+            info: 'Source: Sierra Leone Household Survey, 2018',
           },
         ],
       },
@@ -261,7 +261,15 @@ export default [
             defaultVisibility: false,
             legend: { type: 'line', color: colors.accent9 },
             layerIds: ['sierra-leone-transmission'],
-            info: '',
+            info: 'Source: West African Power Pool (WAPP) GIS Database, 2017',
+          },
+          {
+            id: 'sierra-leone-gridfinder',
+            label: 'Gridfinder MV/HV Lines',
+            defaultVisibility: false,
+            legend: { type: 'line', color: colors.accent1},
+            layerIds: ['sierra-leone-gridfinder'],
+            info: 'Source: GridFinder predictive algorithm based on night lights imagery, estimating the location of high- and medium-voltage transmission lines, 2020.',
           },
         ],
       },
