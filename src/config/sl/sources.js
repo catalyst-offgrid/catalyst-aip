@@ -152,6 +152,11 @@ export default {
       tilesetid: 'iandmuir.cv1a7jo6',
     },
     {
+      id: 'sierra-leone-gridfinder',
+      layer: 'Sierra_Leone_Gridfinder-3iwtif',
+      tilesetid: 'iandmuir.a1cudc2c',
+    },
+    {
       id: 'sierra-built-areas',
       layer: 'Sierra_Leone_BuiltAreaExtent-7yo0na',
       tilesetid: 'iandmuir.accpcnpw',

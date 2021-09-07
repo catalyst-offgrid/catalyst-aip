@@ -211,6 +211,17 @@ export default [
     },
   },
   {
+    id: 'sierra-leone-gridfinder',
+    source: 'sierra-leone-gridfinder',
+    'source-layer': 'Sierra_Leone_Gridfinder-3iwtif',
+    type: 'line',
+    paint: {
+      'line-color': colors.accent1,
+      'line-opacity': 0.3,
+      'line-width': 3,
+    },
+  },
+  {
     id: 'sierra-population-density',
     source: 'sierra-population-density',
     'source-layer': 'Sierra_Leone_Pop_Density-84xcxp',
@@ -229,3 +240,4 @@ export default [
     },
   },
 ]
+
