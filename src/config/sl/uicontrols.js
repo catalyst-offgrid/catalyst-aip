@@ -265,6 +265,21 @@ export default [
           },
         ],
       },
+      {
+        id: 'mini-grid',
+        label: 'Mini-Grid Electricity',
+        info: '',
+        subcontrols: [
+          {
+            id: 'sierra-leone-minigrids',
+            label: 'Mini-Grid Sites',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent1 },
+            layerIds: ['sierra-leone-minigrids'],
+            info: 'Source: SEforALL Increasing Energy Access in Sierra Leone, 2021',
+          },
+        ]
+      },
     ],
   },
   {

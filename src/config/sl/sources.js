@@ -55,11 +55,6 @@ export default {
       tilesetid: 'iandmuir.4f3biqz2',
     },
     {
-      id: 'sierra-leone-transmission',
-      layer: 'Sierra_Leone_Transmission_Lin-dyrefu',
-      tilesetid: 'iandmuir.cv1a7jo6',
-    },
-    {
       id: 'counties',
       layer: 'Sierra_Leone_Counties-483pik',
       tilesetid: 'iandmuir.0yw0gux0',
@@ -152,9 +147,19 @@ export default {
       tilesetid: 'iandmuir.dwpqwh2m',
     },
     {
+      id: 'sierra-leone-transmission',
+      layer: 'Sierra_Leone_Transmission_Lin-dyrefu',
+      tilesetid: 'iandmuir.cv1a7jo6',
+    },
+    {
       id: 'sierra-built-areas',
       layer: 'Sierra_Leone_BuiltAreaExtent-7yo0na',
       tilesetid: 'iandmuir.accpcnpw',
+    },
+    {
+      id: 'sierra-leone-minigrids',
+      layer: 'Sierra_Leone_Minigrid-4mg3od',
+      tilesetid: 'iandmuir.db2sk9ub',
     },
   ],
   /**

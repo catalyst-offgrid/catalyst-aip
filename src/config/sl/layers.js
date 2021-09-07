@@ -219,4 +219,13 @@ export default [
       'raster-opacity': 0.5,
     },
   },
+  {
+    id: 'sierra-leone-minigrids',
+    source: 'sierra-leone-minigrids',
+    'source-layer': 'Sierra_Leone_Minigrid-4mg3od',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent1,
+    },
+  },
 ]
