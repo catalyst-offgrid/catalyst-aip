@@ -580,6 +580,27 @@ export default [
           },
         ],
       },
+      {
+        id: 'Disability',
+        label: 'Disability',
+        info: 'Distribution of Reported Population with Disabilities',
+        subcontrols: [
+          // Add layers here
+          {
+            id: 'Disability Percent', // matches .csv column name
+            label: 'Disability',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 2},
+              domain: [0, 2],
+              unit: '%',
+            },
+            layerIds: ['Disability Percent'],
+            info: 'Source: Sierra Leone 2018 Household Survey',
+          },
+        ],
+      },
       // {
       // id: 'compress',
       // label: 'Night Lights',
@@ -1190,27 +1211,6 @@ export default [
             },
             layerIds: ['Boat Percent'],
             info: '',
-          },
-        ],
-      },
-      {
-        id: 'Disability',
-        label: 'Disability',
-	info: 'Distribution of Reported Population with Disabilities',
-        subcontrols: [
-          // Add layers here
-          {
-            id: 'Disability Percent', // matches .csv column name
-            label: 'Disability',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 2},
-              domain: [0, 2],
-              unit: '%',
-            },
-            layerIds: ['Disability Percent'],
-	    info: 'Source: Sierra Leone 2018 Household Survey', 
           },
         ],
       },
