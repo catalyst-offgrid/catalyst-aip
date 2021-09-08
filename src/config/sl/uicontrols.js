@@ -317,7 +317,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['sierra-leone-banks'],
-            info: '',
+            info: 'Source: Humanitarian OpenStreetMap, 2020',
           },
           {
             id: 'sierra-leone-atm',
@@ -325,7 +325,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['sierra-leone-atm'],
-            info: '',
+            info: 'Source: Humanitarian OpenStreetMap, 2020',
           },
           {
             id: 'sierra-leone-money-exchange',
@@ -333,7 +333,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent7 },
             layerIds: ['sierra-leone-money-exchange'],
-            info: '',
+            info: 'Source: Humanitarian OpenStreetMap, 2020',
           },
           {
             id: 'sierra-leone-post-office',
@@ -341,7 +341,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent9 },
             layerIds: ['sierra-leone-post-office'],
-            info: '',
+            info: 'Source: Humanitarian OpenStreetMap, 2020',
           },
         ],
       },
@@ -405,7 +405,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['sierra-leone-college'],
-            info: '',
+            info: 'Source: Humanitarian OpenStreetMap, 2020',
           },
           {
             id: 'sierra-leone-schools',
@@ -413,7 +413,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['sierra-leone-schools'],
-            info: '',
+            info: 'Source: Humanitarian OpenStreetMap, 2020',
           },
           {
             id: 'sierra-leone-kindergarten',
@@ -421,7 +421,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['sierra-leone-kindergarten'],
-            info: '',
+            info: 'Source: Humanitarian OpenStreetMap, 2020',
           },
           {
             id: 'sierra-leone-university',
@@ -429,7 +429,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['sierra-leone-university'],
-            info: '',
+            info: 'Source: Humanitarian OpenStreetMap, 2020',
           },
         ],
       },
@@ -453,7 +453,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['sierra-population-density'],
-            info: '',
+            info: 'Source: Facebook Data for Good',
           },
           {
             id: 'sierra-built-areas',
@@ -461,7 +461,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['sierra-built-areas'],
-            info: '',
+            info: 'Source: GRID3 Sierra Leone Settlement Extents, 2020',
            },
         ],
       },
@@ -482,7 +482,7 @@ export default [
               unit: '%',
             },
             layerIds: ['0-19'],
-            info: '',
+            info: 'Source: Sierra Leone 2015 Census',
           },
           {
             id: '20-64', // matches .csv column name
@@ -495,7 +495,7 @@ export default [
               unit: '%',
             },
             layerIds: ['20-64'],
-            info: '',
+            info: 'Source: Sierra Leone 2015 Census',
           },
           {
             id: '65+', // matches .csv column name
@@ -508,7 +508,7 @@ export default [
               unit: '%',
             },
             layerIds: ['65+'],
-            info: '',
+            info: 'Source: Sierra Leone 2015 Census',
           },
         ],
       },
@@ -529,7 +529,7 @@ export default [
               unit: '',
             },
             layerIds: ['Total Households'],
-            info: '',
+            info: 'Source: Sierra Leone 2015 Census',
           },
           {
             id: 'Average Household Size', // matches .csv column name
@@ -542,7 +542,7 @@ export default [
               unit: '',
             },
             layerIds: ['Average Household Size'],
-            info: '',
+            info: 'Source: Sierra Leone 2015 Census',
           },
         ],
       },
@@ -563,7 +563,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Percent Rural'],
-            info: '',
+            info: 'Source: Sierra Leone 2015 Census',
           },
           {
             id: 'Percent Urban', // matches .csv column name
@@ -576,7 +576,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Percent Urban'],
-            info: '',
+            info: 'Source: Sierra Leone 2015 Census',
           },
         ],
       },
@@ -604,7 +604,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['sierra-leone-roads'],
-        info: '',
+        info: 'Source: WFPGeoNode',
       },
     ]
   },
@@ -626,7 +626,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['sierra-leone-orange-2g'],
-            info: '',
+            info: 'Source: Mobile Coverage Explorer',
           },
           {
             id: 'sierra-leone-orange-3g',
@@ -634,7 +634,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['sierra-leone-orange-3g'],
-            info: '',
+            info: 'Source: Mobile Coverage Explorer',
           },
         ]
       },
@@ -650,7 +650,7 @@ export default [
       {
         id: 'wasteDisposal',
         label: 'Mode of Human Waste Disposal',
-        info: '',
+        info: 'Source: Sierra Leone Household Survey 2018',
         subcontrols: [
           {
             id: 'Piped Sewer System - Toilet', // matches .csv column name
@@ -800,7 +800,7 @@ export default [
       {
         id: 'drinkingWater',
         label: 'Source of Drinking Water',
-        info: '',
+        info: 'Source: Sierra Leone Household Survey 2018',
         subcontrols: [
           // Add layers here
           {
@@ -943,12 +943,12 @@ export default [
               domain: [0, 1],
               unit: '%',
             },
-            layerIds: ['Other'],
+	    layerIds: ['Other'],
             info: '',
           },
         ],
       },
-    ],
+   ],
   },
   {
     id: 'hhAssets',
@@ -960,7 +960,7 @@ export default [
       {
         id: 'electronic_appliance',
         label: 'Electronics and Appliances',
-        info: '',
+        info: 'Source: Sierra Leone 2015 Census',
         subcontrols: [
           {
             id: 'Percent Access to Internet', // matches .csv column name
@@ -1123,7 +1123,7 @@ export default [
       {
         id: 'vehicles',
         label: 'Vehicles',
-        info: '',
+        info: 'Source: Sierra Leone 2015 Census',
         subcontrols: [
           // Add layers here
           {
@@ -1196,7 +1196,7 @@ export default [
       {
         id: 'Disability',
         label: 'Disability',
-        info: '',
+	info: 'Distribution of Reported Population with Disabilities',
         subcontrols: [
           // Add layers here
           {
@@ -1210,7 +1210,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Disability Percent'],
-            info: '',
+	    info: 'Source: Sierra Leone 2018 Household Survey', 
           },
         ],
       },
@@ -1226,7 +1226,7 @@ export default [
       {
         id: 'roof',
         label: 'Roof Material',
-        info: '',
+        info: 'Source: Sierra Leone Household Survey 2018',
         subcontrols: [
           {
             id: 'Thatch - Roofing', // matches .csv column name
@@ -1298,7 +1298,7 @@ export default [
       {
         id: 'wall_material',
         label: 'Wall Material',
-        info: '',
+        info: 'Source: Sierra Leone Household Survey 2018',
         subcontrols: [
           // Add layers here
           {
@@ -1384,7 +1384,7 @@ export default [
       {
         id: 'floor_material',
         label: 'Floor Material',
-        info: '',
+        info: 'Source: Sierra Leone Household Survey 2018',
         subcontrols: [
           // Add layers here
           {
@@ -1466,7 +1466,7 @@ export default [
       {
         id: 'industry_participation',
         label: 'Industry Participation',
-        info: '',
+        info: 'Source: Sierra Leone 2015 Census',
         subcontrols: [
           {
             id: 'Crop Farming Percent', // matches .csv column name
@@ -1564,7 +1564,7 @@ export default [
       {
         id: 'livestock_fish',
         label: 'Livestock & Fish',
-        info: '',
+        info: 'Source: Sierra Leone 2018 Household Survey',
         subcontrols: [
           // Add layers here
           {
@@ -1689,7 +1689,7 @@ export default [
       {
         id: 'permanent_crops',
         label: 'Permanent Crop Growth',
-        info: '',
+        info: 'Source: Sierra Leone 2015 Census',
         subcontrols: [
           // Add layers here
           {
