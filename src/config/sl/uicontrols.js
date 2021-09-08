@@ -582,13 +582,13 @@ export default [
       },
       {
         id: 'Disability',
-        label: 'Disability',
-        info: 'Distribution of Reported Population with Disabilities',
+        label: 'Reported Population with Disabilities',
+        info: '',
         subcontrols: [
           // Add layers here
           {
             id: 'Disability Percent', // matches .csv column name
-            label: 'Disability',
+            label: 'Proportion with Disabilities',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
