@@ -290,7 +290,7 @@ export default [
             id: 'sierra-leone-minigrids',
             label: 'Mini-Grid Sites',
             defaultVisibility: false,
-            legend: { type: 'dot', color: colors.accent1 },
+            legend: { type: 'dot', color: colors.accent4 },
             layerIds: ['sierra-leone-minigrids'],
             info: 'Source: SEforALL Increasing Energy Access in Sierra Leone, 2021',
           },

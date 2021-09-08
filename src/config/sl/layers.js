@@ -247,7 +247,7 @@ export default [
     'source-layer': 'Sierra_Leone_Minigrid-4mg3od',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent1,
+      'circle-color': colors.accent4,
     },
   },
 ]
