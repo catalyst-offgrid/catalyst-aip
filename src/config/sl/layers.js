@@ -50,48 +50,39 @@ export default [
   },
   // Health Facilities
   {
-    id: 'sierra-leone-hospital',
-    source: 'sierra-leone-hospital',
-    'source-layer': 'Sierra_Leone_Hospitals-193kwh',
+    id: 'sierra-leone-hospitals',
+    source: 'sierra-leone-hospitals',
+    'source-layer': 'sierra_leone_hospitals-drxwsx',
     type: 'circle',
     paint: {
       'circle-color': colors.accent1,
     },
   },
   {
-    id: 'sierra-leone-clinics',
-    source: 'sierra-leone-clinics',
-    'source-layer': 'Sierra_Leone_Clinics-c1m1du',
+    id: 'sierra-leone-health-centers',
+    source: 'sierra-leone-health-centers',
+    'source-layer': 'sierra_leone_health_centers-9vjwi1',
     type: 'circle',
     paint: {
       'circle-color': colors.accent2,
     },
   },
   {
-    id: 'sierra-leone-dentists',
-    source: 'sierra-leone-dentists',
-    'source-layer': 'Sierra_Leone_Dentists-9md7qv',
+    id: 'sierra-leone-health-clinics',
+    source: 'sierra-leone-health-clinics',
+    'source-layer': 'sierra_leone_health_clinics-a21n01',
     type: 'circle',
     paint: {
       'circle-color': colors.accent3,
     },
   },
   {
-    id: 'sierra-leone-pharmacy',
-    source: 'sierra-leone-pharmacy',
-    'source-layer': 'Sierra_Leone_Pharmacies-cz5yed',
+    id: 'sierra-leone-health-posts',
+    source: 'sierra-leone-health-posts',
+    'source-layer': 'sierra_leone_health_posts-0s3k2i',
     type: 'circle',
     paint: {
       'circle-color': colors.accent5,
-    },
-  },
-  {
-    id: 'sierra-leone-doctors',
-    source: 'sierra-leone-doctors',
-    'source-layer': 'Sierra_Leone_Doctors-br6e0v',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent6,
     },
   },
   // Education Facilities

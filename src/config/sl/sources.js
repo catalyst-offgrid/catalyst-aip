@@ -65,30 +65,50 @@ export default {
       tilesetid: 'iandmuir.0yw0gux0',
     },
     // Health Facilities
+   // {
+    //  id: 'sierra-leone-pharmacy',
+    // layer: 'Sierra_Leone_Pharmacies-cz5yed',
+     // tilesetid: 'iandmuir.5me2tui9',
+   // },
+    //{
+      // id: 'sierra-leone-clinics',
+      // layer: 'Sierra_Leone_Clinics-c1m1du',
+      // tilesetid: 'iandmuir.3lchkrw3',
+   // },
+   // {
+    //  id: 'sierra-leone-dentists',
+    //  layer: 'Sierra_Leone_Dentists-9md7qv',
+    //  tilesetid: 'iandmuir.cwa6dkci',
+   // },
+    // {
+    //  id: 'sierra-leone-doctors',
+    //  layer: 'Sierra_Leone_Doctors-br6e0v',
+    //  tilesetid: 'iandmuir.dcv47eyc',
+   // },
+    //{
+    //  id: 'sierra-leone-hospital',
+     // layer: 'Sierra_Leone_Hospitals-193kwh',
+    //  tilesetid: 'iandmuir.7pdvami3',
+   // },
     {
-      id: 'sierra-leone-pharmacy',
-      layer: 'Sierra_Leone_Pharmacies-cz5yed',
-      tilesetid: 'iandmuir.5me2tui9',
+      id: 'sierra-leone-hospitals',
+      layer: 'sierra_leone_hospitals-drxwsx',
+      tilesetid: 'iandmuir.9uer4tc4',
     },
     {
-      id: 'sierra-leone-clinics',
-      layer: 'Sierra_Leone_Clinics-c1m1du',
-      tilesetid: 'iandmuir.3lchkrw3',
+      id: 'sierra-leone-health-centers',
+      layer: 'sierra_leone_heath_centers-9vjwi1',
+      tilesetid: 'iandmuir.57sh96fy',
     },
     {
-      id: 'sierra-leone-dentists',
-      layer: 'Sierra_Leone_Dentists-9md7qv',
-      tilesetid: 'iandmuir.cwa6dkci',
+      id: 'sierra-leone-health-clinics',
+      layer: 'sierra_leone_health_clinics-a21n01',
+      tilesetid: 'iandmuir.8owvyyjf',
     },
     {
-      id: 'sierra-leone-doctors',
-      layer: 'Sierra_Leone_Doctors-br6e0v',
-      tilesetid: 'iandmuir.dcv47eyc',
-    },
-    {
-      id: 'sierra-leone-hospital',
-      layer: 'Sierra_Leone_Hospitals-193kwh',
-      tilesetid: 'iandmuir.7pdvami3',
+      id: 'sierra-leone-health-posts',
+      layer: 'sierra_leone_health_posts-0s3k2i',
+      tilesetid: 'iandmuir.91ihgcvj',
     },
     // Financial Facilities
     {
