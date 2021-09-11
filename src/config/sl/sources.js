@@ -134,24 +134,24 @@ export default {
 
     // Educational Facilities
     {
-      id: 'sierra-leone-college',
-      layer: 'Sierra_Leone_College-395h5g',
-      tilesetid: 'iandmuir.68sz3af2',
+      id: 'sierra-leone-colleges',
+      layer: 'sierra_leone_colleges-5o33n8',
+      tilesetid: 'iandmuir.622d11xp',
     },
     {
-      id: 'sierra-leone-university',
-      layer: 'Sierra_Leone_University-5gdunu',
-      tilesetid: 'iandmuir.amjt14lh',
+      id: 'sierra-leone-secondary-schools',
+      layer: 'sierra_leone_secondary_school-6kors2',
+      tilesetid: 'iandmuir.2m19ncrf',
     },
     {
-      id: 'sierra-leone-kindergarten',
-      layer: 'Sierra_Leone_Kindergartens-9l00gf',
-      tilesetid: 'iandmuir.dv6a0v3e',
+      id: 'sierra-leone-primary-schools',
+      layer: 'sierra_leone_primary_schools-6nczpj',
+      tilesetid: 'iandmuir.c8cq3q0t',
     },
     {
-      id: 'sierra-leone-schools',
-      layer: 'Sierra_Leone_Schools-0nmwd3',
-      tilesetid: 'iandmuir.az8kzkrs',
+      id: 'sierra-leone-schools-other',
+      layer: 'sierra_leone_schools_other-adt6yh',
+      tilesetid: 'iandmuir.ddtj312x',
     },
     // Mobile Data
     {

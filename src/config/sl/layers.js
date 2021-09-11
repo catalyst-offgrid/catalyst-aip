@@ -87,39 +87,39 @@ export default [
   },
   // Education Facilities
   {
-    id: 'sierra-leone-schools',
-    source: 'sierra-leone-schools',
-    'source-layer': 'Sierra_Leone_Schools-0nmwd3',
+    id: 'sierra-leone-schools-other',
+    source: 'sierra-leone-schools-other',
+    'source-layer': 'sierra_leone_schools_other-adt6yh',
     type: 'circle',
     paint: {
       'circle-color': colors.accent2,
     },
   },
   {
-    id: 'sierra-leone-college',
-    source: 'sierra-leone-college',
-    'source-layer': 'Sierra_Leone_College-395h5g',
+    id: 'sierra-leone-primary-schools',
+    source: 'sierra-leone-primary-schools',
+    'source-layer': 'sierra_leone_primary_schools-6nczpj',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent5,
+    },
+  },
+  {
+    id: 'sierra-leone-colleges',
+    source: 'sierra-leone-colleges',
+    'source-layer': 'sierra_leone_colleges-5o33n8',
     type: 'circle',
     paint: {
       'circle-color': colors.accent3,
     },
   },
   {
-    id: 'sierra-leone-kindergarten',
-    source: 'sierra-leone-kindergarten',
-    'source-layer': 'Sierra_Leone_Kindergartens-9l00gf',
+    id: 'sierra-leone-secondary-schools',
+    source: 'sierra-leone-secondary-schools',
+    'source-layer': 'sierra_leone_secondary_school-6kors2',
     type: 'circle',
     paint: {
       'circle-color': colors.accent1,
-    },
-  },
-  {
-    id: 'sierra-leone-university',
-    source: 'sierra-leone-university',
-    'source-layer': 'Sierra_Leone_University-5gdunu',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent4,
     },
   },
   // Mobile Data
