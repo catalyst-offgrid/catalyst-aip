@@ -397,7 +397,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
             layerIds: ['sierra-leone-colleges'],
-            info: 'Source: Humanitarian OpenStreetMap, 2020',
+            info: 'Source: openAFRICA, 2016',
           },
 	  {
             id: 'sierra-leone-secondary-schools',
@@ -405,7 +405,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
             layerIds: ['sierra-leone-secondary-schools'],
-            info: 'Source: Humanitarian OpenStreetMap, 2020',
+            info: 'Source: openAFRICA, 2016',
           },
           {
             id: 'sierra-leone-primary-schools',
@@ -413,7 +413,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent5 },
             layerIds: ['sierra-leone-primary-schools'],
-            info: 'Source: Humanitarian OpenStreetMap, 2020',
+            info: 'Source: openAFRICA, 2016',
           },
           {
             id: 'sierra-leone-schools-other',
@@ -421,7 +421,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent2 },
             layerIds: ['sierra-leone-schools-other'],
-            info: 'Source: Humanitarian OpenStreetMap, 2020',
+            info: 'Source: openAFRICA, 2016',
           },
         ],
       },
@@ -529,8 +529,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 8},
-              domain: [0, 8],
+              defaultRange: { min: 3, max: 8},
+              domain: [3, 8],
               unit: '',
             },
             layerIds: ['Average Household Size'],
@@ -613,11 +613,11 @@ export default [
     controls: [
       {
         id: 'sierra-leone-roads',
-        label: 'Road Network',
+        label: 'Road Network (HD)',
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['sierra-leone-roads'],
-        info: 'Source: WFPGeoNode',
+        info: 'Source: WFPGeoNode (Zoom in to view)',
       },
     ]
   },
