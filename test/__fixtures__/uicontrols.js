@@ -354,14 +354,14 @@ export default [
     icon: () => '',
     description: 'Population density, Night Lights and Mobile Phone Coverage.',
     controls: [
-      {
-        id: 'arc',
-        label: 'Population Density (ARC 2016)',
-        defaultVisibility: false,
-        legend: 'none',
-        layerIds: ['arc-population-density'],
-        info: '',
-      },
+      // {
+      //   id: 'arc',
+      //   label: 'Population Density (ARC 2016)',
+      //   defaultVisibility: false,
+      //   legend: 'none',
+      //   layerIds: ['arc-population-density'],
+      //   info: '',
+      // },
       {
         id: 'fb-population',
         label: 'FB Population Density',

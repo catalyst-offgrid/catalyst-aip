@@ -27,7 +27,8 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['counties', 'admin-1-boundary', 'admin-1-boundary-bg'],
-        info: 'Source: Kenya Independent Electoral and Boundaries Commission (IEBC)',
+        info:
+          'Source: Kenya Independent Electoral and Boundaries Commission (IEBC)',
       },
       {
         id: 'sub-counties',
@@ -35,7 +36,8 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['sub-counties'],
-        info: 'Source: Kenya Independent Electoral and Boundaries Commission (IEBC)',
+        info:
+          'Source: Kenya Independent Electoral and Boundaries Commission (IEBC)',
       },
       {
         id: 'wards',
@@ -43,7 +45,8 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['wards'],
-        info: 'Note: Requires higher zoom level. Source: Kenya Independent Electoral and Boundaries Commission (IEBC)',
+        info:
+          'Note: Requires higher zoom level. Source: Kenya Independent Electoral and Boundaries Commission (IEBC)',
       },
     ],
   },
@@ -66,7 +69,7 @@ export default [
         layerIds: ['KOSAP Counties'],
         info: 'Source: Kenya Ministry of Energy',
       },
-    ]
+    ],
   },
   {
     id: 'energy',
@@ -578,14 +581,14 @@ export default [
         info:
           'Displays where the people of Kenya live and the patterns in their movement.',
         subcontrols: [
-          {
-            id: 'arc',
-            label: 'Population Density (Low-Res Heatmap)',
-            defaultVisibility: false,
-            legend: 'none',
-            layerIds: ['arc-population-density'],
-            info: 'Source: Arc 2016',
-          },
+          // {
+          //   id: 'arc',
+          //   label: 'Population Density (Low-Res Heatmap)',
+          //   defaultVisibility: false,
+          //   legend: 'none',
+          //   layerIds: ['arc-population-density'],
+          //   info: 'Source: Arc 2016',
+          // },
           {
             id: 'fb-population',
             label: 'Population Density (30M Resolution)',
@@ -607,14 +610,14 @@ export default [
             layerIds: ['Total Households'],
             info: 'Source: 2019 Kenya Population and Housing Census',
           },
-          {
-            id: 'ke_built_areas',
-            label: 'Extent of Built-Up Areas',
-            defaultVisibility: false,
-            legend: 'none',
-            layerIds: ['ke_built_areas'],
-            info: 'Source: ',
-          },
+          // {
+          //   id: 'ke_built_areas',
+          //   label: 'Extent of Built-Up Areas',
+          //   defaultVisibility: false,
+          //   legend: 'none',
+          //   layerIds: ['ke_built_areas'],
+          //   info: 'Source: ',
+          // },
         ],
       },
       {

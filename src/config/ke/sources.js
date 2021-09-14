@@ -263,11 +263,11 @@ export default {
       layer: 'Kenya_Roads-4sztzy',
       tilesetid: 'iandmuir.co7fwwip',
     },
-    {
-      id: 'ke_built_areas',
-      layer: 'Kenya_BuiltAreaExtent-d16qwo',
-      tilesetid: 'iandmuir.5azpo2ee',
-    },
+    // {
+    //   id: 'ke_built_areas',
+    //   layer: 'Kenya_BuiltAreaExtent-d16qwo',
+    //   tilesetid: 'iandmuir.5azpo2ee',
+    // },
   ],
   /**
    * GeoJSON Datasets

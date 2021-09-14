@@ -15,15 +15,15 @@ const { colors } = theme
 var mobileOpacity = 0.35
 
 export default [
-  {
-    id: 'arc-population-density',
-    source: 'population',
-    'source-layer': 'Kenya_Population_Density_ARC_-90y1wi',
-    type: 'raster',
-    paint: {
-      'raster-opacity': 0.5,
-    },
-  },
+  // {
+  //   id: 'arc-population-density',
+  //   source: 'population',
+  //   'source-layer': 'Kenya_Population_Density_ARC_-90y1wi',
+  //   type: 'raster',
+  //   paint: {
+  //     'raster-opacity': 0.5,
+  //   },
+  // },
   {
     id: 'fb-population-density',
     source: 'fb-population',
@@ -424,14 +424,14 @@ export default [
       'line-width': 1,
     },
   },
-  {
-    id: 'ke_built_areas',
-    source: 'ke_built_areas',
-    'source-layer': 'Kenya_BuiltAreaExtent-d16qwo',
-    type: 'fill',
-    paint: {
-      'fill-color': colors.accent3,
-      'fill-opacity': 0.5,
-    },
-  },
+  // {
+  //   id: 'ke_built_areas',
+  //   source: 'ke_built_areas',
+  //   'source-layer': 'Kenya_BuiltAreaExtent-d16qwo',
+  //   type: 'fill',
+  //   paint: {
+  //     'fill-color': colors.accent3,
+  //     'fill-opacity': 0.5,
+  //   },
+  // },
 ]
