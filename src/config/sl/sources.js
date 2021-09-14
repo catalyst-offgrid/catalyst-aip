@@ -172,6 +172,11 @@ export default {
       tilesetid: 'iandmuir.dwpqwh2m',
     },
     {
+      id: 'sierra-leone-highways',
+      layer: 'sl_highways-69i9zs',
+      tilesetid: 'iandmuir.2yp3ywqc',
+    },
+    {
       id: 'sierra-leone-transmission',
       layer: 'Sierra_Leone_Transmission_Lin-dyrefu',
       tilesetid: 'iandmuir.cv1a7jo6',

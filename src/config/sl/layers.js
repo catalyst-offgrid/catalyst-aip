@@ -193,6 +193,17 @@ export default [
     },
   },
   {
+    id: 'sierra-leone-highways',
+    source: 'sierra-leone-highways',
+    'source-layer': 'sl_highways-69i9zs',
+    type: 'line',
+    paint: {
+      'line-color': colors.accent9,
+      'line-opacity': 0.3,
+      'line-width': 1,
+    },
+  },
+  {
     id: 'sierra-built-areas',
     source: 'sierra-built-areas',
     'source-layer': 'Sierra_Leone_BuiltAreaExtent-7yo0na',

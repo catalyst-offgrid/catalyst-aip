@@ -619,6 +619,14 @@ export default [
         layerIds: ['sierra-leone-roads'],
         info: 'Source: WFPGeoNode (Zoom in to view)',
       },
+      {
+        id: 'sierra-leone-highways',
+        label: 'Main Highways',
+        defaultVisibility: false,
+        legend: 'none',
+        layerIds: ['sierra-leone-highways'],
+        info: '',
+      },
     ]
   },
   {
