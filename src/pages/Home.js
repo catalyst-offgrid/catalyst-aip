@@ -82,7 +82,7 @@ export default function Home({ siteAcronym, siteName, imageUrl, theme }) {
           <Paragraph>
             AIP is a business intelligence tool for last mile distribution. As
             an open source, interactive platform it democratizes data by making
-            it easy for practitioners to us to inform strategy and operations.
+            it easy for practitioners to inform strategy and operations.
           </Paragraph>
           <Actions>
             <PrimaryButton
