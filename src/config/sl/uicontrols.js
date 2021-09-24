@@ -625,7 +625,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['sierra-leone-highways'],
-        info: '',
+        info: 'ECOWAS Regional Centre for Renewable Energy and Energy Efficiency (ECREEE)',
       },
     ]
   },
