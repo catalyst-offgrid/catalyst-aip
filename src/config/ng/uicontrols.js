@@ -127,6 +127,19 @@ export default [
         label: 'Mini Grid Electricity',
         info: '',
         subcontrols: [
+          {
+            id: 'Mini-Grid', // matches .csv column name
+            label: 'Percent Connected to Mini Grid',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 31 },
+              domain: [0, 31],
+              unit: '%',
+            },
+            layerIds: ['Mini-Grid'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019',
+          },
         ],
       },
     ],
