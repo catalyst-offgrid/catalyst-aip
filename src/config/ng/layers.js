@@ -238,4 +238,15 @@ export default [
       'circle-color': colors.accent5,
     },
   },
+  {
+    id: 'nigeria-gridfinder',
+    source: 'nigeria-gridfinder',
+    'source-layer': 'Nigeria_Gridfinder-2t65vi',
+    type: 'line',
+    paint: {
+      'line-color': colors.accent9,
+      'line-opacity': 0.5,
+      'line-width': 1,
+    },
+  },
 ]

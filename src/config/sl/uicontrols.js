@@ -19,7 +19,7 @@ export default [
     label: 'Administrative Boundaries',
     icon: AdminBoundaries,
     description: '',
-    info: 'Administrative boundaries from the Government of Uganda.',
+    info: 'Administrative boundaries from the Government of Sierra Leone',
     controls: [
       //{
         //id: 'uganda-borders', // Was uganda-borders

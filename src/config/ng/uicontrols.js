@@ -27,6 +27,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['counties', 'admin-1-boundary', 'admin-1-boundary-bg'],
+        // Is this correct for Nigeria? (comment by Kurt Oct 11, 2021)
         info: 'Source: Kenya Independent Electoral and Boundaries Commission (IEBC)',
       },
       {
@@ -91,12 +92,33 @@ export default [
         info: '',
         subcontrols: [
           {
+            id: 'National Grid', // matches .csv column name
+            label: 'Percent Connected to National Grid',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 19, max: 99},
+              domain: [19, 99],
+              unit: '%',
+            },
+            layerIds: ['National Grid'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019',
+          },
+          {
             id: 'nigeria-substations',
             label: 'Substations',
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-substations'],
             info: '',
+          },
+          {
+            id: 'nigeria-gridfinder',
+            label: 'Gridfinder MV/HV Lines',
+            defaultVisibility: false,
+            legend: { type: 'line', color: colors.accent9 },
+            layerIds: ['nigeria-gridfinder'],
+            info: 'Source: GridFinder predictive algorithm based on night lights imagery, estimating the location of high- and medium-voltage transmission lines, 2020',
           },
         ],
       },

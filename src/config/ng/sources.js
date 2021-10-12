@@ -168,6 +168,11 @@ export default {
       layer: 'Nigeria_Substations-4t41q1',
       tilesetid: 'iandmuir.9w22z0c4',
     },
+    {
+      id: 'nigeria-gridfinder',
+      layer: 'Nigeria_Gridfinder-2t65vi',
+      tilesetid: 'iandmuir.1rps7048',
+    },
   ],
   /**
    * GeoJSON Datasets

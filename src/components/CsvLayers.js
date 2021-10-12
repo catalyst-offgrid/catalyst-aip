@@ -24,6 +24,11 @@ export default function CsvLayers({ csv, uiState, theme, map, country }) {
     country_base = 'Sierra_Leone_Districts-c34k65'
     base_id = 'iandmuir.4f3biqz2'
   }
+  if (country == 'Nigeria') {
+    country_base = 'Nigeria_States-50r7ib'
+    base_id = 'iandmuir.3et11jhs'
+  }
+
 
   useEffect(() => {
     d3.csv(csv).then((data) => {
