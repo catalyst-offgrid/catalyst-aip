@@ -73,10 +73,75 @@ export default [
     info: 'Information on Energy Sources.',
     controls: [
       {
-        id: 'lighting',
-        label: 'Lighting',
+        id: 'electricity-access',
+        label: 'Electricity Access',
         info: '',
         subcontrols: [
+          {
+            id: 'Access to Electricity', // matches .csv column name
+            label: 'Access to Electricity',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 19, max: 99},
+              domain: [19, 99],
+              unit: '%',
+            },
+            layerIds: ['Access to Electricity'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019',
+          },
+          {
+            id: 'National Grid', // matches .csv column name
+            label: 'Access via National Grid',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 19, max: 99},
+              domain: [19, 99],
+              unit: '%',
+            },
+            layerIds: ['National Grid'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019',
+          },
+          {
+            id: 'Generator', // matches .csv column name
+            label: 'Access via Generator',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 51},
+              domain: [0, 51],
+              unit: '%',
+            },
+            layerIds: ['Generator'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019',
+          },
+          {
+            id: 'Solar System', // matches .csv column name
+            label: 'Access via Solar Device',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 4},
+              domain: [0, 4],
+              unit: '%',
+            },
+            layerIds: ['Solar System'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019',
+          },
+          {
+            id: 'Rechargeable Battery', // matches .csv column name
+            label: 'Access via Rechargeable Battery',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 5},
+              domain: [0, 5],
+              unit: '%',
+            },
+            layerIds: ['Rechargeable Battery'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019',
+          },
         ],
       },
       {
@@ -91,19 +156,7 @@ export default [
         label: 'Grid Electricity',
         info: '',
         subcontrols: [
-          {
-            id: 'National Grid', // matches .csv column name
-            label: 'Percent Connected to National Grid',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 19, max: 99},
-              domain: [19, 99],
-              unit: '%',
-            },
-            layerIds: ['National Grid'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019',
-          },
+
           {
             id: 'nigeria-substations',
             label: 'Substations',
