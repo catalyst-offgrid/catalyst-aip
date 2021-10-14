@@ -83,8 +83,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 19, max: 99},
-              domain: [19, 99],
+              defaultRange: { min: 19, max: 100},
+              domain: [19, 100],
               unit: '%',
             },
             layerIds: ['Access to Electricity'],
@@ -96,8 +96,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 19, max: 99},
-              domain: [19, 99],
+              defaultRange: { min: 19, max: 100},
+              domain: [19, 100],
               unit: '%',
             },
             layerIds: ['National Grid'],
