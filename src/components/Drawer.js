@@ -72,6 +72,7 @@ export default function Drawer({
   clearAll,
   hasSelectedLayers,
   children,
+  getDataHref,
 }) {
   const theme = useContext(ThemeContext)
 
@@ -100,11 +101,7 @@ export default function Drawer({
             Clear map
           </SecondaryButton>
         )}
-        <PrimaryButton
-          as='a'
-          href='https://drive.google.com/drive/folders/1nVNOTB9967Zx3A4IXPUL-jXFJhEJaVoK'
-          data-cy='download-button'
-        >
+        <PrimaryButton as='a' href={getDataHref} data-cy='download-button'>
           <IconContainer aria-hidden='true'>
             <Download color={theme.colors.background} />
           </IconContainer>
@@ -122,4 +119,5 @@ Drawer.propTypes = {
   hasSelectedLayers: PropTypes.bool.isRequired,
   clearAll: PropTypes.func.isRequired,
   children: PropTypes.element,
+  getDataHref: PropTypes.string.isRequired,
 }

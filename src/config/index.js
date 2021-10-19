@@ -43,6 +43,8 @@ export default {
     sources: kesources,
     uicontrols: keuicontrols,
     csv: kecsv,
+    getDataHref:
+      'https://drive.google.com/drive/folders/11DbaXgeQcKbOf-1CqFtvlaK_cgdxN2mC',
   },
   ug: {
     country: 'Uganda',
@@ -53,6 +55,8 @@ export default {
     sources: ugsources,
     uicontrols: uguicontrols,
     csv: ugcsv,
+    getDataHref:
+      'https://drive.google.com/drive/folders/1Jkx-OUVHMy_aSJfjatvC8utp1L53p3u1',
   },
   sl: {
     country: 'Sierra Leone',
@@ -63,6 +67,8 @@ export default {
     sources: slsources,
     uicontrols: sluicontrols,
     csv: slcsv,
+    getDataHref:
+      'https://drive.google.com/drive/folders/1H6ultMOgEs_FJCcRInPGpgNbVbBJtR8p',
   },
   ng: {
     country: 'Nigeria',
@@ -73,6 +79,8 @@ export default {
     sources: ngsources,
     uicontrols: nguicontrols,
     csv: ngcsv,
+    getDataHref:
+      'https://drive.google.com/drive/folders/1ReLxguK_ruPkzUAENBRBV53XPVZCb_Sw',
   },
   theme,
 }

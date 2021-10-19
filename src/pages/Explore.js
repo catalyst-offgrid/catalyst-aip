@@ -124,6 +124,7 @@ export default function Explore({ siteAcronym, siteName, config, theme }) {
         cc={config.countryCode}
         clearAll={clearAll}
         hasSelectedLayers={hasSelectedLayers}
+        getDataHref={config.getDataHref}
       >
         <LayerControl
           uiState={state}
@@ -167,7 +168,13 @@ export default function Explore({ siteAcronym, siteName, config, theme }) {
           ))
         )}
 
-        <CsvLayers id='csv' csv={csv} uiState={state} theme={theme} country={config.country} />
+        <CsvLayers
+          id='csv'
+          csv={csv}
+          uiState={state}
+          theme={theme}
+          country={config.country}
+        />
 
         <BasemapLayers
           id='admin'
@@ -195,6 +202,7 @@ Explore.propTypes = {
     sources: PropTypes.object.isRequired,
     layers: PropTypes.array.isRequired,
     csv: PropTypes.string.isRequired,
+    getDataHref: PropTypes.string.isRequired,
   }),
   theme: PropTypes.object.isRequired,
 }
