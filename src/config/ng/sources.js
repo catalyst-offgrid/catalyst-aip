@@ -143,11 +143,6 @@ export default {
       tilesetid: 'iandmuir.2somn0i6',
     },
     {
-      id: 'nigeria-healthsites',
-      layer: 'Nigeria_HealthSites-bd0fnq',
-      tilesetid: 'iandmuir.8jm787jz',
-    },
-    {
       id: 'nigeria-markets',
       layer: 'Nigeria_Markets-88pp5k',
       tilesetid: 'iandmuir.4v42ad7d',
@@ -172,6 +167,37 @@ export default {
       id: 'nigeria-gridfinder',
       layer: 'Nigeria_Gridfinder-2t65vi',
       tilesetid: 'iandmuir.1rps7048',
+    },
+    // Institutions and Services
+    {
+      id: 'nigeria-health-centers',
+      layer: 'nga_health_centers-8st5dw',
+      tilesetid: 'iandmuir.d9bheraa',
+    },
+    {
+      id: 'nigeria-compHC-cottage-hospitals',
+      layer: 'nga_comprehensiveHC_cottage_h-d0in6b',
+      tilesetid: 'iandmuir.abny0w7d',
+    },
+    {
+      id: 'nigeria-hospitals',
+      layer: 'nga_hospitals-749xam',
+      tilesetid: 'iandmuir.024vc7rm',
+    },
+    {
+      id: 'nigeria-dispensaries',
+      layer: 'nga_dispensaries-6xknxo',
+      tilesetid: 'iandmuir.3d6ubxnh',
+    },
+    {
+      id: 'nigeria-fed-health-facilities',
+      layer: 'nga_federal_health_facilities-c93y4s',
+      tilesetid: 'iandmuir.6mtvdtpb',
+    },
+    {
+      id: 'nigeria-maternity-homes',
+      layer: 'nga_maternity_homes-cdte3r',
+      tilesetid: 'iandmuir.brkd6bud',
     },
   ],
   /**

@@ -193,15 +193,7 @@ export default [
       'circle-color': colors.accent8,
     },
   },
-  {
-    id: 'nigeria-healthsites',
-    source: 'nigeria-healthsites',
-    'source-layer': 'Nigeria_HealthSites-bd0fnq',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent1,
-    },
-  },
+  
   {
     id: 'nigeria-markets',
     source: 'nigeria-markets',
@@ -247,6 +239,63 @@ export default [
       'line-color': colors.accent9,
       'line-opacity': 0.5,
       'line-width': 1,
+    },
+  },
+  {
+    id: 'nigeria-health-centers',
+    source: 'nigeria-health-centers',
+    'source-layer': 'nga_health_centers-8st5dw',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent1,
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'nigeria-compHC-cottage-hospitals',
+    source: 'nigeria-compHC-cottage-hospitals',
+    'source-layer': 'nga_comprehensiveHC_cottage_h-d0in6b',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent2,
+    },
+  },
+  {
+    id: 'nigeria-hospitals',
+    source: 'nigeria-hospitals',
+    'source-layer': 'nga_hospitals-749xam',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent3,
+    },
+  },
+  {
+    id: 'nigeria-dispensaries',
+    source: 'nigeria-dispensaries',
+    'source-layer': 'nga_dispensaries-6xknxo',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent4,
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'nigeria-fed-health-facilities',
+    source: 'nigeria-fed-health-facilities',
+    'source-layer': 'nga_federal_health_facilities-c93y4s',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent5,
+    },
+  },
+  {
+    id: 'nigeria-maternity-homes',
+    source: 'nigeria-maternity-homes',
+    'source-layer': 'nga_maternity_homes-cdte3r',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent6,
+      'circle-radius': 3
     },
   },
 ]
