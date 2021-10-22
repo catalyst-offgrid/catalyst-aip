@@ -142,6 +142,32 @@ export default [
             layerIds: ['Rechargeable Battery'],
             info: 'Source: Nigeria Living Standards Survey 2018-2019',
           },
+          {
+            id: 'Average Hrs Natl Grid Works During Day', // matches .csv column name
+            label: 'Avg Hrs Natl Grid Works During Day',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 2, max: 18},
+              domain: [2, 18],
+              unit: ' hr',
+            },
+            layerIds: ['Rechargeable Battery'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019; day is measured as sunrise to 6pm',
+          },
+          {
+            id: 'Average Hrs Natl Grid Works During Night', // matches .csv column name
+            label: 'Avg Hrs Natl Grid Works During Night',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 4},
+              domain: [0, 4],
+              unit: ' hr',
+            },
+            layerIds: ['Rechargeable Battery'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019; night is measured as 6pm to 10pm',
+          },
         ],
       },
       {
