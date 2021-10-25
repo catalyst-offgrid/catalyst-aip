@@ -530,9 +530,22 @@ export default [
               type: 'gradient',
               defaultRange: { min: 3, max: 9},
               domain: [3, 9],
-              unit: '%',
+              unit: '',
             },
             layerIds: ['Average Household Size'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, page 10',
+          },
+          {
+            id: 'Average Share Female Headed Households', // matches .csv column name
+            label: 'Average Share Female Headed Households',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 1, max: 36},
+              domain: [1, 36],
+              unit: '%',
+            },
+            layerIds: ['Average Share Female Headed Households'],
             info: 'Source: Nigeria Living Standards Survey 2018-2019, page 10',
           },
         ],
