@@ -143,30 +143,30 @@ export default [
             info: 'Source: Nigeria Living Standards Survey 2018-2019',
           },
           {
-            id: 'Average Hrs Natl Grid Works During Day', // matches .csv column name
-            label: 'Avg Hrs Natl Grid Works During Day',
+            id: 'Average Hours National Grid Works per Day', // matches .csv column name
+            label: 'Average Hours National Grid Works',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 2, max: 18},
-              domain: [2, 18],
+              defaultRange: { min: 3, max: 20},
+              domain: [3, 20],
               unit: ' hr',
             },
-            layerIds: ['Rechargeable Battery'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019; day is measured as sunrise to 6pm',
+            layerIds: ['Average Hours National Grid Works per Day'],
+            info: 'Measured in hours per 24 hour day; Source: Nigeria Living Standards Survey 2018-2019',
           },
           {
-            id: 'Average Hrs Natl Grid Works During Night', // matches .csv column name
-            label: 'Avg Hrs Natl Grid Works During Night',
+            id: 'Average Hours Electricity from Generator per Day', // matches .csv column name
+            label: 'Average Hours Electricity from Generator',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 4},
-              domain: [0, 4],
+              defaultRange: { min: 2, max: 14},
+              domain: [2, 14],
               unit: ' hr',
             },
-            layerIds: ['Rechargeable Battery'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019; night is measured as 6pm to 10pm',
+            layerIds: ['Average Hours Electricity from Generator per Day'],
+            info: 'Measured in hours per 24 hour day; Source: Nigeria Living Standards Survey 2018-2019',
           },
         ],
       },
