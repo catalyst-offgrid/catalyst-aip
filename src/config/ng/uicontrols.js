@@ -88,7 +88,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Access to Electricity'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019',
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.10',
           },
           {
             id: 'National Grid', // matches .csv column name
@@ -101,7 +101,7 @@ export default [
               unit: '%',
             },
             layerIds: ['National Grid'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019',
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.10',
           },
           {
             id: 'Generator', // matches .csv column name
@@ -114,7 +114,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Generator'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019',
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.10',
           },
           {
             id: 'Solar System', // matches .csv column name
@@ -127,7 +127,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Solar System'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019',
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.10',
           },
           {
             id: 'Rechargeable Battery', // matches .csv column name
@@ -140,7 +140,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Rechargeable Battery'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019',
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.10',
           },
           {
             id: 'Average Hours National Grid Works per Day', // matches .csv column name
@@ -153,7 +153,7 @@ export default [
               unit: ' hr',
             },
             layerIds: ['Average Hours National Grid Works per Day'],
-            info: 'Measured in hours per 24 hour day; Source: Nigeria Living Standards Survey 2018-2019',
+            info: 'Measured in hours per 24 hour day; Source: Nigeria Living Standards Survey 2018-2019, Table 7.12',
           },
           {
             id: 'Average Hours Electricity from Generator per Day', // matches .csv column name
@@ -166,7 +166,7 @@ export default [
               unit: ' hr',
             },
             layerIds: ['Average Hours Electricity from Generator per Day'],
-            info: 'Measured in hours per 24 hour day; Source: Nigeria Living Standards Survey 2018-2019',
+            info: 'Measured in hours per 24 hour day; Source: Nigeria Living Standards Survey 2018-2019, Table 7.12',
           },
         ],
       },
@@ -175,6 +175,71 @@ export default [
         label: 'Cooking Fuels',
         info: '',
         subcontrols: [
+          {
+            id: 'Wood', // matches .csv column name
+            label: 'Wood',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 99},
+              domain: [0, 99],
+              unit: '%',
+            },
+            layerIds: ['Wood'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.8',
+          },
+          {
+            id: 'Biomass', // matches .csv column name
+            label: 'Biomass',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 48},
+              domain: [0, 48],
+              unit: '%',
+            },
+            layerIds: ['Biomass'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.8',
+          },
+          {
+            id: 'LPG/Natural Gas', // matches .csv column name
+            label: 'LPG/Natural Gas',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 58},
+              domain: [0, 58],
+              unit: '%',
+            },
+            layerIds: ['LPG/Natural Gas'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.8',
+          },
+          {
+            id: 'Kerosene', // matches .csv column name
+            label: 'Kerosene',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 54},
+              domain: [0, 54],
+              unit: '%',
+            },
+            layerIds: ['LPG/Natural Gas'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.8',
+          },
+          {
+            id: 'Electricity', // matches .csv column name
+            label: 'Electricity',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 5},
+              domain: [0, 5],
+              unit: '%',
+            },
+            layerIds: ['Electricity'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.8',
+          },
         ],
       },
       {
@@ -384,7 +449,71 @@ export default [
         label: 'Age Ranges',
         info: 'Breakdown of the regions by the age of their population.',
         subcontrols: [
-          // Add layers here
+          {
+            id: 'Percent Population Age 0-5', // matches .csv column name
+            label: 'Age 0-5',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 12, max: 24},
+              domain: [12, 24],
+              unit: '%',
+            },
+            layerIds: ['Percent Population Age 0-5'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 1.2',
+          },
+          {
+            id: 'Percent Population Age 6-9', // matches .csv column name
+            label: 'Age 6-9',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 9, max: 17},
+              domain: [9, 17],
+              unit: '%',
+            },
+            layerIds: ['Percent Population Age 6-9'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 1.2',
+          },
+          {
+            id: 'Percent Population Age 10-14', // matches .csv column name
+            label: 'Age 10-14',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 10, max: 16},
+              domain: [10, 16],
+              unit: '%',
+            },
+            layerIds: ['Percent Population Age 10-14'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 1.2',
+          },
+          {
+            id: 'Percent Population Age 15-64', // matches .csv column name
+            label: 'Age 15-64',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 44, max: 63},
+              domain: [44, 63],
+              unit: '%',
+            },
+            layerIds: ['Percent Population Age 15-64'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 1.2',
+          },
+          {
+            id: 'Percent Population Age 65+', // matches .csv column name
+            label: 'Age 64+',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 1, max: 11},
+              domain: [1, 11],
+              unit: '%',
+            },
+            layerIds: ['Percent Population Age 65+'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 1.2',
+          },
         ],
       },
       {
@@ -393,6 +522,19 @@ export default [
         info:
           'Descriptive statistics of the households located in each region.',
         subcontrols: [
+          {
+            id: 'Average Household Size', // matches .csv column name
+            label: 'Average Household Size',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 3, max: 9},
+              domain: [3, 9],
+              unit: '%',
+            },
+            layerIds: ['Average Household Size'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, page 10',
+          },
         ],
       },
       // {
