@@ -765,9 +765,22 @@ export default [
       {
         id: 'unemployment',
         label: 'Unemployment',
-        info: 'Source: 2019 Kenya Population and Housing Census',
+        info: 'Source: Nigeria Living Standards Survey 2018-2019',
         subcontrols: [
           //insert unemployment layers here
+          {
+            id: 'Households Receiving Remittances', // matches .csv column name
+            label: 'Households Receiving Remittances',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 5, max: 82},
+              domain: [5, 82],
+              unit: '%',
+            },
+            layerIds: ['Households Receiving Remittances'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, page 61',
+          },
         ],
       },
       {
@@ -807,6 +820,32 @@ export default [
         label: 'Industry Participation',
         info: 'Source: 2019 Kenya Population and Housing Census',
         subcontrols: [
+          {
+            id: 'Participation in Wage Labor', // matches .csv column name
+            label: 'Participation in Wage Labor',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 24},
+              domain: [0, 24],
+              unit: '%',
+            },
+            layerIds: ['Participation in Wage Labor'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 4.2',
+          },
+          {
+            id: 'Households with Any Nonfarm Enterprise', // matches .csv column name
+            label: 'Households with Any Nonfarm Enterprise',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 29, max: 88},
+              domain: [29, 88],
+              unit: '%',
+            },
+            layerIds: ['Households with Any Nonfarm Enterprise'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, page 61',
+          },
         ],
       },
       {
