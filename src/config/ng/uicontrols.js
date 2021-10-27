@@ -101,7 +101,7 @@ export default [
               unit: '%',
             },
             layerIds: ['National Grid'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.10',
+            info: 'Percent of people who, if they have electricity, receive their electricity from the national grid. Source: Nigeria Living Standards Survey 2018-2019, Table 7.10.',
           },
           {
             id: 'Generator', // matches .csv column name
@@ -114,7 +114,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Generator'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.10',
+            info: 'Percent of people who, if they have electricity, receive their electricity from a generator. Source: Nigeria Living Standards Survey 2018-2019, Table 7.10.',
           },
           {
             id: 'Solar System', // matches .csv column name
@@ -127,7 +127,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Solar System'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.10',
+            info: 'Percent of people who, if they have electricity, receive their electricity from a solar system. Source: Nigeria Living Standards Survey 2018-2019, Table 7.10.',
           },
           {
             id: 'Rechargeable Battery', // matches .csv column name
@@ -140,7 +140,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Rechargeable Battery'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.10',
+            info: 'Percent of people who, if they have electricity, receive their electricity from a rechargable battery. Source: Nigeria Living Standards Survey 2018-2019, Table 7.10.',
           },
           {
             id: 'Average Hours National Grid Works per Day', // matches .csv column name
