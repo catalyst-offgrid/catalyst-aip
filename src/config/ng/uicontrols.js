@@ -781,29 +781,235 @@ export default [
             layerIds: ['Households Receiving Remittances'],
             info: 'Source: Nigeria Living Standards Survey 2018-2019, page 61',
           },
+          {
+            id: 'Electricity is Constraint to Starting Non-Farm Enterprise', // matches .csv column name
+            label: 'Electricity is Constraint to Starting Business',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 3, max: 49},
+              domain: [3, 49],
+              unit: '%',
+            },
+            layerIds: ['Electricity is Constraint to Starting Non-Farm Enterprise'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 6.6',
+          },
+          {
+            id: 'Electricity is Constraint to Operate/Grow Non-Farm Enterprise', // matches .csv column name
+            label: 'Electricity is Constraint to Operate/Grow Business',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 3, max: 51},
+              domain: [3, 51],
+              unit: '%',
+            },
+            layerIds: ['Electricity is Constraint to Operate/Grow Non-Farm Enterprise'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 6.6',
+          },
         ],
       },
       {
         id: 'roof',
         label: 'Roof Material',
-        info: 'Source: 2019 Kenya Population and Housing Census',
+        info: '',
         subcontrols: [
+          {
+            id: 'Thatch Roof', // matches .csv column name
+            label: 'Thatch',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 38},
+              domain: [0, 38],
+              unit: '%',
+            },
+            layerIds: ['Thatch Roof'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.5',
+          },
+          {
+            id: 'Corrugated Iron Sheet Roof', // matches .csv column name
+            label: 'Corrugated Iron Sheet',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 16, max: 97},
+              domain: [16, 97],
+              unit: '%',
+            },
+            layerIds: ['Corrugated Iron Sheet Roof'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.5',
+          },
+          {
+            id: 'Asbestos Sheet Roof', // matches .csv column name
+            label: 'Asbestos Sheet',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 42},
+              domain: [0, 42],
+              unit: '%',
+            },
+            layerIds: ['Asbestos Sheet Roof'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.5',
+          },
+          {
+            id: 'Zinc Sheet Roof', // matches .csv column name
+            label: 'Zinc Sheet',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 74},
+              domain: [0, 74],
+              unit: '%',
+            },
+            layerIds: ['Zinc Sheet Roof'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.5',
+          },
+          {
+            id: 'Mud Roof', // matches .csv column name
+            label: 'Mud',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 23},
+              domain: [0, 23],
+              unit: '%',
+            },
+            layerIds: ['Mud Roof'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.5',
+          },
+          {
+            id: 'Long/Short Span Sheet Roof', // matches .csv column name
+            label: 'Long/Short Span Sheet',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 19},
+              domain: [0, 19],
+              unit: '%',
+            },
+            layerIds: ['Long/Short Span Sheet Roof'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.5',
+          },
         ],
       },
       {
         id: 'wall_material',
         label: 'Wall Material',
-        info: 'Source: 2019 Kenya Population and Housing Census',
+        info: '',
         subcontrols: [
-          // Add layers here
+          {
+            id: 'Mud Walls', // matches .csv column name
+            label: 'Mud',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 1, max: 82},
+              domain: [1, 82],
+              unit: '%',
+            },
+            layerIds: ['Mud Walls'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.4',
+          },
+          {
+            id: 'Brick Walls', // matches .csv column name
+            label: 'Brick',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 33},
+              domain: [0, 33],
+              unit: '%',
+            },
+            layerIds: ['Brick Walls'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.4',
+          },
+          {
+            id: 'Concrete Walls', // matches .csv column name
+            label: 'Concrete',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 11, max: 97},
+              domain: [11, 97],
+              unit: '%',
+            },
+            layerIds: ['Concrete Walls'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.4',
+          },
+          {
+            id: 'Wood/Bamboo Walls', // matches .csv column name
+            label: 'Wood/Bamboo',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 16},
+              domain: [0, 16],
+              unit: '%',
+            },
+            layerIds: ['Wood/Bamboo'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.4',
+          },
         ],
       },
       {
         id: 'floor_material',
         label: 'Floor Material',
-        info: 'Source: 2019 Kenya Population and Housing Census',
+        info: '',
         subcontrols: [
-          // Add layers here
+          {
+            id: 'Sand/Dirt/Straw Floor', // matches .csv column name
+            label: 'Sand/Dirt/Straw',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 36},
+              domain: [0, 36],
+              unit: '%',
+            },
+            layerIds: ['Sand/Dirt/Straw Floor'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.6',
+          },
+          {
+            id: 'Smoothed Mud Floor', // matches .csv column name
+            label: 'Smoothed Mud',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 53},
+              domain: [0, 53],
+              unit: '%',
+            },
+            layerIds: ['Smoothed Mud Floor'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.6',
+          },
+          {
+            id: 'Smooth Concrete Floor', // matches .csv column name
+            label: 'Concrete',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 29, max: 85},
+              domain: [29, 85],
+              unit: '%',
+            },
+            layerIds: ['Smoothed Concrete Floor'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.6',
+          },
+          {
+            id: 'Tile Floor', // matches .csv column name
+            label: 'Tile',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 27},
+              domain: [0, 27],
+              unit: '%',
+            },
+            layerIds: ['Tile Floor'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.6',
+          },
         ],
       },
     ],
@@ -821,21 +1027,60 @@ export default [
         info: 'Source: 2019 Kenya Population and Housing Census',
         subcontrols: [
           {
-            id: 'Participation in Wage Labor', // matches .csv column name
-            label: 'Participation in Wage Labor',
+            id: 'Participation in Farm Labor', // matches .csv column name
+            label: 'Participation in Farm Labor',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 0, max: 24},
-              domain: [0, 24],
+              defaultRange: { min: 0, max: 63},
+              domain: [0, 63],
               unit: '%',
             },
-            layerIds: ['Participation in Wage Labor'],
+            layerIds: ['Participation in Farm Labor'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 4.2',
+          },
+          {
+            id: 'Participation in Wage/Non-Farm Labor', // matches .csv column name
+            label: 'Participation in Wage/Non-Farm Labor',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 7, max: 60},
+              domain: [7, 60],
+              unit: '%',
+            },
+            layerIds: ['Participation in Wage/Non-Farm Labor'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 4.2',
+          },
+          {
+            id: 'Participation in Mix of Farm/Wage/Non-Farm Labor', // matches .csv column name
+            label: 'Participation in Mix of Farm/Wage/Non-Farm Labor',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 34},
+              domain: [0, 34],
+              unit: '%',
+            },
+            layerIds: ['Participation in Mix of Farm/Wage/Non-Farm Labor'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 4.2',
+          },
+          {
+            id: 'No Participation in Labor Force', // matches .csv column name
+            label: 'No Participation in Labor Force',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 14, max: 58},
+              domain: [14, 58],
+              unit: '%',
+            },
+            layerIds: ['No Participation in Labor Force'],
             info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 4.2',
           },
           {
             id: 'Households with Any Nonfarm Enterprise', // matches .csv column name
-            label: 'Households with Any Nonfarm Enterprise',
+            label: 'Households with Any Non-Farm Enterprise',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
