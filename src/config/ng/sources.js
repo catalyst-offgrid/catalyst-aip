@@ -199,16 +199,16 @@ export default {
       layer: 'nga_maternity_homes-cdte3r',
       tilesetid: 'iandmuir.brkd6bud',
     },
+    /*
+    *
+    * Schools subsetted differently than from nigeria-secondary
+    * 
     {
       id: 'nigeria-junior-secondary-schools',
       layer: 'nga_ed_level_junior_secondary-5xgljq',
       tilesetid: 'iandmuir.52pe94ck',
     },
-    {
-      id: 'nigeria-senior-secondary-schools',
-      layer: 'nga_ed_level_junior_secondary-5xgljq',
-      tilesetid: 'iandmuir.52pe94ck',
-    },
+    */
   ],
   /**
    * GeoJSON Datasets

@@ -298,14 +298,4 @@ export default [
       'circle-radius': 3
     },
   },
-  {
-    id: 'nigeria-junior-secondary-schools',
-    source: 'nigeria-junior-secondary-schools',
-    'source-layer': 'nga_ed_level_junior_secondary-5xgljq',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent1,
-      'circle-radius': 3
-    },
-  },
 ]

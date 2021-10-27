@@ -19,7 +19,7 @@ export default [
     label: 'Administrative Boundaries',
     icon: AdminBoundaries,
     description: '',
-    info: 'Administrative boundaries from the Government of Kenya.',
+    info: '',
     controls: [
       {
         id: 'counties',
@@ -28,7 +28,7 @@ export default [
         legend: 'none',
         layerIds: ['counties', 'admin-1-boundary', 'admin-1-boundary-bg'],
         // Is this correct for Nigeria? (comment by Kurt Oct 11, 2021)
-        info: 'Source: Kenya Independent Electoral and Boundaries Commission (IEBC)',
+        info: '',
       },
       {
         id: 'nigeria-lgas',
@@ -295,7 +295,7 @@ export default [
         id: 'healthFacs',
         label: 'Health Facilities',
         info:
-          'Displays the locations of the health facilities in Kenya by the facility type.',
+          'Displays the locations of the health facilities in Nigeria by the facility type.',
         subcontrols: [
           {
             id: 'nigeria-health-centers',
@@ -351,7 +351,7 @@ export default [
         id: 'education',
         label: 'Education Facilities',
         info:
-          'Displays the locations of the education facilities in Kenya by the facility type.',
+          'Displays the locations of the education facilities in Nigeria by the facility type.',
         subcontrols: [
           {
             id: 'nigeria-preprimary',
@@ -392,14 +392,6 @@ export default [
             legend: 'none',
             layerIds: ['nigeria-tertiary'],
             info: '',
-          },
-          {
-            id: 'nigeria-junior-secondary-schools',
-            label: 'Junior Secondary Schools',
-            defaultVisibility: false,
-            legend: 'none',
-            layerIds: ['nigeria-junior-secondary-schools'],
-            info: 'Includes schools that have highest level of junior secondary. For example, schools with only junior secondary levels OR primary and junior secondary levels are both displayed.',
           },
         ],
       },
@@ -668,14 +660,14 @@ export default [
       {
         id: 'wasteDisposal',
         label: 'Mode of Human Waste Disposal',
-        info: 'Source: 2019 Kenya Population and Housing Census',
+        info: '',
         subcontrols: [
         ],
       },
       {
         id: 'drinkingWater',
         label: 'Source of Drinking Water',
-        info: 'Source: 2019 Kenya Population and Housing Census',
+        info: '',
         subcontrols: [
           // Add layers here
           {
@@ -691,7 +683,7 @@ export default [
       {
         id: 'births',
         label: 'Births',
-        info: 'Source: 2019 Kenya Population and Housing Census',
+        info: '',
         subcontrols: [
           // Add layers here
         ],
@@ -699,7 +691,7 @@ export default [
       {
         id: 'Disability',
         label: 'Disability',
-        info: 'Source: 2019 Kenya Population and Housing Census',
+        info: '',
         subcontrols: [
           // Add layers here
         ],
@@ -712,12 +704,12 @@ export default [
     icon: HHAsset,
     description: '',
     info:
-      'Description: Assets and ownership. Source: 2019 Kenya Population and Housing Census',
+      'Description: Assets and ownership. ',
     controls: [
       {
         id: 'electronic_appliance',
         label: 'Electronics and Appliances',
-        info: 'Source: 2019 Kenya Population and Housing Census',
+        info: '',
         subcontrols: [
           // {
           // id: 'arc',
@@ -740,7 +732,7 @@ export default [
       {
         id: 'vehicles',
         label: 'Vehicles',
-        info: 'Source: 2019 Kenya Population and Housing Census',
+        info: '',
         subcontrols: [
           {
             id: 'nigeria-filling-stations',
@@ -765,7 +757,7 @@ export default [
       {
         id: 'unemployment',
         label: 'Unemployment',
-        info: 'Source: Nigeria Living Standards Survey 2018-2019',
+        info: '',
         subcontrols: [
           //insert unemployment layers here
           {
@@ -1024,7 +1016,7 @@ export default [
       {
         id: 'industry_participation',
         label: 'Industry Participation',
-        info: 'Source: 2019 Kenya Population and Housing Census',
+        info: '',
         subcontrols: [
           {
             id: 'Participation in Farm Labor', // matches .csv column name
@@ -1096,7 +1088,7 @@ export default [
       {
         id: 'livestock_fish',
         label: 'Livestock & Fish',
-        info: 'Source: 2019 Kenya Population and Housing Census',
+        info: '',
         subcontrols: [
           // Add layers here
         ],
@@ -1104,7 +1096,7 @@ export default [
       {
         id: 'permanent_crops',
         label: 'Permanent Crop Growth',
-        info: 'Source: 2019 Kenya Population and Housing Census',
+        info: '',
         subcontrols: [
         ],
       },
