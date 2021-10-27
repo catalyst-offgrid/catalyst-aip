@@ -22,12 +22,11 @@ export default [
     info: '',
     controls: [
       {
-        id: 'counties',
-        label: 'Counties',
+        id: 'nigeria-states',
+        label: 'States',
         defaultVisibility: false,
         legend: 'none',
-        layerIds: ['counties', 'admin-1-boundary', 'admin-1-boundary-bg'],
-        // Is this correct for Nigeria? (comment by Kurt Oct 11, 2021)
+        layerIds: ['nigeria-states'],
         info: '',
       },
       {
@@ -38,14 +37,18 @@ export default [
         layerIds: ['nigeria-lgas'],
         info: '',
       },
+      // Website breaks if you remove layers with "id: 'counties'" so code below is work-around. 
+      // Bug has been recorded. Fix pending.
       {
-        id: 'nigeria-states',
-        label: 'States',
+        id: 'counties',
+        label: 'Wards',
         defaultVisibility: false,
         legend: 'none',
-        layerIds: ['nigeria-states'],
+        layerIds: ['nigeria-wards', 'admin-1-boundary', 'admin-1-boundary-bg'],
         info: '',
       },
+      /* Due to 'counties' bug, this layer has been merged with the 'counties' layer. When bug fixed, implement 
+      this layer for wards. 
       {
         id: 'nigeria-wards',
         label: 'Wards',
@@ -54,6 +57,7 @@ export default [
         layerIds: ['nigeria-wards'],
         info: '',
       },
+      */
     ],
   },
   {
