@@ -666,14 +666,80 @@ export default [
         label: 'Mode of Human Waste Disposal',
         info: '',
         subcontrols: [
+          {
+            id: 'No Latrine', // matches .csv column name
+            label: 'No Latrine',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 61},
+              domain: [0, 61],
+              unit: '%',
+            },
+            layerIds: ['No Latrine'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.17',
+          },
+          {
+            id: 'Flush Toilet to Sewage/Septic System', // matches .csv column name
+            label: 'Flush Toilet to Sewage/Septic System',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 65},
+              domain: [0, 65],
+              unit: '%',
+            },
+            layerIds: ['Flush Toilet to Sewage/Septic System'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.17',
+          },
+          {
+            id: 'Flush to Pit Latrine', // matches .csv column name
+            label: 'Flush to Pit Latrine',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 33},
+              domain: [0, 33],
+              unit: '%',
+            },
+            layerIds: ['Flush to Pit Latrine'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.17',
+          },
+          {
+            id: 'Pit Latrine with Slab', // matches .csv column name
+            label: 'Pit Latrine with Slab',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 69},
+              domain: [0, 69],
+              unit: '%',
+            },
+            layerIds: ['Flush to Pit Latrine'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.17',
+          },
+          {
+            id: 'Open Pit Latrine', // matches .csv column name
+            label: 'Open Pit Latrine',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 53},
+              domain: [0, 53],
+              unit: '%',
+            },
+            layerIds: ['Flush to Pit Latrine'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.17',
+          },
         ],
       },
       {
-        id: 'drinkingWater',
-        label: 'Source of Drinking Water',
+        id: 'drinkingWaterRainySeason',
+        label: 'Source of Drinking Water (Rainy Season)',
         info: '',
         subcontrols: [
           // Add layers here
+          /*
           {
             id: 'nigeria-water-points',
             label: 'Water Points',
@@ -681,6 +747,230 @@ export default [
             legend: 'none',
             layerIds: ['nigeria-water-points'],
             info: '',
+          },
+          */
+          {
+            id: 'Piped Water (Rainy)', // matches .csv column name
+            label: 'Piped Water',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 13},
+              domain: [0, 13],
+              unit: '%',
+            },
+            layerIds: ['Piped Water (Rainy)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.13',
+          },
+          {
+            id: 'Public Tap/Standpipe (Rainy)', // matches .csv column name
+            label: 'Public Tap/Standpipe',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 24},
+              domain: [0, 24],
+              unit: '%',
+            },
+            layerIds: ['Public Tap/Standpipe (Rainy)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.13',
+          },
+          {
+            id: 'Tube Well/Borehole (Rainy)', // matches .csv column name
+            label: 'Tube Well/Borehole',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 8, max: 79},
+              domain: [8, 79],
+              unit: '%',
+            },
+            layerIds: ['Tube Well/Borehole (Rainy)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.13',
+          },
+          {
+            id: 'Protected Dug Well/Spring (Rainy)', // matches .csv column name
+            label: 'Protected Dug Well/Spring',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 37},
+              domain: [0, 37],
+              unit: '%',
+            },
+            layerIds: ['Protected Dug Well/Spring (Rainy)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.13',
+          },
+          {
+            id: 'Unprotected Dug Well/Spring (Rainy)', // matches .csv column name
+            label: 'Unprotected Dug Well/Spring',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 66},
+              domain: [0, 66],
+              unit: '%',
+            },
+            layerIds: ['Unprotected Dug Well/Spring (Rainy)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.13',
+          },
+          {
+            id: 'Rainwater Collection (Rainy)', // matches .csv column name
+            label: 'Rainwater Collection',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 79},
+              domain: [0, 79],
+              unit: '%',
+            },
+            layerIds: ['Rainwater Collection (Rainy)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.13',
+          },
+          {
+            id: 'Surface Water (Rainy)', // matches .csv column name
+            label: 'Surface Water',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 24},
+              domain: [0, 24],
+              unit: '%',
+            },
+            layerIds: ['Surface Water (Rainy)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.13',
+          },
+          {
+            id: 'Bottled/Sachet Water (Rainy)', // matches .csv column name
+            label: 'Bottled/Sachet Water',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 72},
+              domain: [0, 72],
+              unit: '%',
+            },
+            layerIds: ['Bottled/Sachet Water (Rainy)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.13',
+          },
+        ],
+      },
+      {
+        id: 'drinkingWaterDrySeason',
+        label: 'Source of Drinking Water (Dry Season)',
+        info: '',
+        subcontrols: [
+          {
+            id: 'nigeria-water-points',
+            label: 'Water Points',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-water-points'],
+            info: '',
+          },
+          {
+            id: 'Piped Water (Dry)', // matches .csv column name
+            label: 'Piped Water',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 13},
+              domain: [0, 13],
+              unit: '%',
+            },
+            layerIds: ['Piped Water (Dry)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.14',
+          },
+          {
+            id: 'Public Tap/Standpipe (Dry)', // matches .csv column name
+            label: 'Public Tap/Standpipe',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 24},
+              domain: [0, 24],
+              unit: '%',
+            },
+            layerIds: ['Public Tap/Standpipe (Dry)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.14',
+          },
+          {
+            id: 'Tube Well/Borehole (Dry)', // matches .csv column name
+            label: 'Tube Well/Borehole',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 15, max: 81},
+              domain: [15, 81],
+              unit: '%',
+            },
+            layerIds: ['Tube Well/Borehole (Dry)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.14',
+          },
+          {
+            id: 'Protected Dug Well/Spring (Dry)', // matches .csv column name
+            label: 'Protected Dug Well/Spring',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 41},
+              domain: [0, 41],
+              unit: '%',
+            },
+            layerIds: ['Protected Dug Well/Spring (Dry)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.14',
+          },
+          {
+            id: 'Unprotected Dug Well/Spring (Dry)', // matches .csv column name
+            label: 'Unprotected Dug Well/Spring',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 64},
+              domain: [0, 64],
+              unit: '%',
+            },
+            layerIds: ['Unprotected Dug Well/Spring (Dry)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.14',
+          },
+          {
+            id: 'Rainwater Collection (Dry)', // matches .csv column name
+            label: 'Rainwater Collection',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 5},
+              domain: [0, 5],
+              unit: '%',
+            },
+            layerIds: ['Rainwater Collection (Dry)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.14',
+          },
+          {
+            id: 'Surface Water (Dry)', // matches .csv column name
+            label: 'Surface Water',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 39},
+              domain: [0, 39],
+              unit: '%',
+            },
+            layerIds: ['Surface Water (Dry)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.14',
+          },
+          {
+            id: 'Bottled/Sachet Water (Dry)', // matches .csv column name
+            label: 'Bottled/Sachet Water',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 73},
+              domain: [0, 73],
+              unit: '%',
+            },
+            layerIds: ['Bottled/Sachet Water (Dry)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.14',
           },
         ],
       },
