@@ -987,7 +987,19 @@ export default [
         label: 'Disability',
         info: '',
         subcontrols: [
-          // Add layers here
+          {
+            id: 'Disability', // matches .csv column name
+            label: 'Disability',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 6},
+              domain: [0, 6],
+              unit: '%',
+            },
+            layerIds: ['Disability'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, page 41',
+          },
         ],
       },
     ],
