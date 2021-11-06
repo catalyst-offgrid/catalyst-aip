@@ -1017,6 +1017,175 @@ export default [
         label: 'Electronics and Appliances',
         info: '',
         subcontrols: [
+          {
+            id: 'Sewing Machine', // matches .csv column name
+            label: 'Sewing Machine',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 2, max: 15},
+              domain: [2, 15],
+              unit: '%',
+            },
+            layerIds: ['Sewing Machine'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.18',
+          },
+          {
+            id: 'Stove/Cooker', // matches .csv column name
+            label: 'Stove/Cooker',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 2, max: 97},
+              domain: [2, 97],
+              unit: '%',
+            },
+            layerIds: ['Stove/Cooker'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.18',
+          },
+          {
+            id: 'Fridge', // matches .csv column name
+            label: 'Fridge',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 2, max: 53},
+              domain: [2, 53],
+              unit: '%',
+            },
+            layerIds: ['Fridge'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.18',
+          },
+          {
+            id: 'Freezer', // matches .csv column name
+            label: 'Freezer',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 20},
+              domain: [0, 20],
+              unit: '%',
+            },
+            layerIds: ['Freezer'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.18',
+          },
+          {
+            id: 'Generator', // matches .csv column name
+            label: 'Generator',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 52},
+              domain: [0, 52],
+              unit: '%',
+            },
+            layerIds: ['Generator'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.18',
+          },
+          {
+            id: 'Fan', // matches .csv column name
+            label: 'Fan',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 8, max: 97},
+              domain: [8, 97],
+              unit: '%',
+            },
+            layerIds: ['Fan'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.18',
+          },
+          {
+            id: 'Radio', // matches .csv column name
+            label: 'Radio',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 26, max: 80},
+              domain: [26, 80],
+              unit: '%',
+            },
+            layerIds: ['Radio'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.18',
+          },
+          {
+            id: 'Iron', // matches .csv column name
+            label: 'Iron',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 11, max: 85},
+              domain: [11, 85],
+              unit: '%',
+            },
+            layerIds: ['Iron'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.18',
+          },
+          {
+            id: 'TV Set', // matches .csv column name
+            label: 'TV Set',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 10, max: 90},
+              domain: [10, 90],
+              unit: '%',
+            },
+            layerIds: ['TV Set'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.18',
+          },
+          {
+            id: 'DVD Player', // matches .csv column name
+            label: 'DVD Player',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 3, max: 69},
+              domain: [3, 69],
+              unit: '%',
+            },
+            layerIds: ['DVD Player'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.18',
+          },
+          {
+            id: 'Satellite Dish', // matches .csv column name
+            label: 'Satellite Dish',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 1, max: 41},
+              domain: [1, 41],
+              unit: '%',
+            },
+            layerIds: ['Satellite Dish'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.18',
+          },
+          {
+            id: 'Smartphone', // matches .csv column name
+            label: 'Smartphone',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 4, max: 63},
+              domain: [4, 63],
+              unit: '%',
+            },
+            layerIds: ['Smartphone'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.18',
+          },
+          {
+            id: 'Regular Mobile Phone', // matches .csv column name
+            label: 'Regular Mobile Phone',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 44, max: 91},
+              domain: [44, 91],
+              unit: '%',
+            },
+            layerIds: ['Regular Mobile Phone'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.18',
+          },
           // {
           // id: 'arc',
           // label: 'Population Density (Heatmap)',
@@ -1040,6 +1209,45 @@ export default [
         label: 'Vehicles',
         info: '',
         subcontrols: [
+          {
+            id: 'Bicycle', // matches .csv column name
+            label: 'Bicycle',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 30},
+              domain: [0, 30],
+              unit: '%',
+            },
+            layerIds: ['Bicycle'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.18',
+          },
+          {
+            id: 'Motorbike', // matches .csv column name
+            label: 'Motorbike',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 2, max: 53},
+              domain: [2, 53],
+              unit: '%',
+            },
+            layerIds: ['Motorbike'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.18',
+          },
+          {
+            id: 'Cars and Other Vehicles', // matches .csv column name
+            label: 'Cars and Other Vehicles',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 1, max: 15},
+              domain: [1, 15],
+              unit: '%',
+            },
+            layerIds: ['Cars and Other Vehicles'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.18',
+          },
           {
             id: 'nigeria-filling-stations',
             label: 'Filling Stations',
