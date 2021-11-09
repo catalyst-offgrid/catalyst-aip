@@ -92,7 +92,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Access to Electricity'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.10',
+            info: 'Percent of people with access to electricity via any means. Source: Nigeria Living Standards Survey 2018-2019, Table 7.10',
           },
           {
             id: 'National Grid', // matches .csv column name
@@ -105,7 +105,7 @@ export default [
               unit: '%',
             },
             layerIds: ['National Grid'],
-            info: 'Percent of people who, if they have electricity, receive their electricity from the national grid. Source: Nigeria Living Standards Survey 2018-2019, Table 7.10.',
+            info: 'Percent of people who, if they have electricity, use the national grid as their primary source of electricity. Source: Nigeria Living Standards Survey 2018-2019, Table 7.10.',
           },
           {
             id: 'Generator', // matches .csv column name
@@ -118,7 +118,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Generator'],
-            info: 'Percent of people who, if they have electricity, receive their electricity from a generator. Source: Nigeria Living Standards Survey 2018-2019, Table 7.10.',
+            info: 'Percent of people who, if they have electricity, use a generator as their primary source of electricity. Source: Nigeria Living Standards Survey 2018-2019, Table 7.10.',
           },
           {
             id: 'Solar System', // matches .csv column name
@@ -131,7 +131,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Solar System'],
-            info: 'Percent of people who, if they have electricity, receive their electricity from a solar system. Source: Nigeria Living Standards Survey 2018-2019, Table 7.10.',
+            info: 'Percent of people who, if they have electricity, use a solar system as their primary source of electricity. Source: Nigeria Living Standards Survey 2018-2019, Table 7.10.',
           },
           {
             id: 'Rechargeable Battery', // matches .csv column name
@@ -144,7 +144,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Rechargeable Battery'],
-            info: 'Percent of people who, if they have electricity, receive their electricity from a rechargable battery. Source: Nigeria Living Standards Survey 2018-2019, Table 7.10.',
+            info: 'Percent of people who, if they have electricity, use a rechargeable battery as their primary source of electricity. Source: Nigeria Living Standards Survey 2018-2019, Table 7.10.',
           },
           {
             id: 'Average Hours National Grid Works per Day', // matches .csv column name
@@ -157,7 +157,7 @@ export default [
               unit: ' hr',
             },
             layerIds: ['Average Hours National Grid Works per Day'],
-            info: 'Measured in hours per 24 hour day; Source: Nigeria Living Standards Survey 2018-2019, Table 7.12',
+            info: 'Measured in hours per 24 hour day. Source: Nigeria Living Standards Survey 2018-2019, Table 7.12',
           },
           {
             id: 'Average Hours Electricity from Generator per Day', // matches .csv column name
@@ -170,7 +170,7 @@ export default [
               unit: ' hr',
             },
             layerIds: ['Average Hours Electricity from Generator per Day'],
-            info: 'Measured in hours per 24 hour day; Source: Nigeria Living Standards Survey 2018-2019, Table 7.12',
+            info: 'Measured in hours per 24 hour day. Source: Nigeria Living Standards Survey 2018-2019, Table 7.12',
           },
         ],
       },
@@ -414,6 +414,32 @@ export default [
         info:
           '',
         subcontrols: [
+          {
+            id: 'Percent Male', // matches .csv column name
+            label: 'Percent Male',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 45, max: 54},
+              domain: [45, 54],
+              unit: '%',
+            },
+            layerIds: ['Percent Male'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 1.2',
+          },
+          {
+            id: 'Percent Female', // matches .csv column name
+            label: 'Percent Female',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 46, max: 54},
+              domain: [46, 54],
+              unit: '%',
+            },
+            layerIds: ['Percent Female'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 1.2',
+          },
           {
             id: 'nigeria-pop-density',
             label: 'Population Density',
@@ -971,6 +997,34 @@ export default [
             },
             layerIds: ['Bottled/Sachet Water (Dry)'],
             info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.14',
+          },
+        ],
+      },
+      {
+        id: 'waterPointsTreatement',
+        label: 'Water Points and Water Treatment',
+        info: '',
+        subcontrols: [
+          {
+            id: 'nigeria-water-points',
+            label: 'Water Points',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-water-points'],
+            info: '',
+          },
+          {
+            id: 'Treat Water', // matches .csv column name
+            label: 'Treat Water',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 20},
+              domain: [0, 20],
+              unit: '%',
+            },
+            layerIds: ['Treat Water'],
+            info: 'Percent of households that treat their water. Source: Nigeria Living Standards Survey 2018-2019, Table 7.16',
           },
         ],
       },
@@ -1533,6 +1587,19 @@ export default [
         info: '',
         subcontrols: [
           {
+            id: 'Participation in Wage Labor', // matches .csv column name
+            label: 'Participation in Wage Labor',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 24},
+              domain: [0, 24],
+              unit: '%',
+            },
+            layerIds: ['Participation in Wage Labor'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 4.2',
+          },
+          {
             id: 'Participation in Farm Labor', // matches .csv column name
             label: 'Participation in Farm Labor',
             defaultVisibility: false,
@@ -1546,21 +1613,34 @@ export default [
             info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 4.2',
           },
           {
-            id: 'Participation in Wage/Non-Farm Labor', // matches .csv column name
-            label: 'Participation in Wage/Non-Farm Labor',
+            id: 'Participation in Non-Farm Labor', // matches .csv column name
+            label: 'Participation in Non-Farm Labor',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 7, max: 60},
-              domain: [7, 60],
+              defaultRange: { min: 4, max: 37},
+              domain: [4, 37],
               unit: '%',
             },
-            layerIds: ['Participation in Wage/Non-Farm Labor'],
+            layerIds: ['Participation in Non-Farm Labor'],
             info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 4.2',
           },
           {
-            id: 'Participation in Mix of Farm/Wage/Non-Farm Labor', // matches .csv column name
-            label: 'Participation in Mix of Farm/Wage/Non-Farm Labor',
+            id: 'Participation in Apprenticeship', // matches .csv column name
+            label: 'Participation in Apprenticeship',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 10},
+              domain: [0, 10],
+              unit: '%',
+            },
+            layerIds: ['Participation in Apprenticeship'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 4.2',
+          },
+          {
+            id: 'Participation in Mixed Labor', // matches .csv column name
+            label: 'Participation in Mixed Labor',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -1568,7 +1648,7 @@ export default [
               domain: [0, 34],
               unit: '%',
             },
-            layerIds: ['Participation in Mix of Farm/Wage/Non-Farm Labor'],
+            layerIds: ['Participation in Mixed Labor'],
             info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 4.2',
           },
           {
@@ -1577,8 +1657,8 @@ export default [
             defaultVisibility: false,
             legend: {
               type: 'gradient',
-              defaultRange: { min: 14, max: 58},
-              domain: [14, 58],
+              defaultRange: { min: 14, max: 56},
+              domain: [14, 56],
               unit: '%',
             },
             layerIds: ['No Participation in Labor Force'],
