@@ -1597,7 +1597,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Participation in Wage Labor'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 4.2',
+            info: 'See Wage Employment by Industry for breakdown of wage labor by industry. Source: Nigeria Living Standards Survey 2018-2019, Table 4.2',
           },
           {
             id: 'Participation in Farm Labor', // matches .csv column name
@@ -1676,6 +1676,117 @@ export default [
             },
             layerIds: ['Households with Any Nonfarm Enterprise'],
             info: 'Source: Nigeria Living Standards Survey 2018-2019, page 61',
+          },
+        ],
+      },
+      {
+        id: 'industry_wage_employment',
+        label: 'Wage Employment by Industry',
+        info: 'The percent of individuals who earn a wage from working in a particular sector among all individuals who have wage employment.',
+        subcontrols: [
+          {
+            id: 'Wage Labor Agriculture', // matches .csv column name
+            label: 'Wage Employment in Agriculture',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 31},
+              domain: [0, 31],
+              unit: '%',
+            },
+            layerIds: ['Wage Employment in Agriculture'],
+            info: 'Percent of people who, if they earn a wage, earn a wage in agriculture. Source: Nigeria Living Standards Survey 2018-2019, Table 4.5',
+          },
+          {
+            id: 'Wage Labor Mining/Construction', // matches .csv column name
+            label: 'Wage Employment in Mining/Construction',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 18},
+              domain: [0, 18],
+              unit: '%',
+            },
+            layerIds: ['Wage Labor Mining/Construction'],
+            info: 'Percent of people who, if they earn a wage, earn a wage in mining or construction. Source: Nigeria Living Standards Survey 2018-2019, Table 4.5',
+          },
+          {
+            id: 'Wage Labor Manufacturing', // matches .csv column name
+            label: 'Wage Employment in Manufacturing',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 13},
+              domain: [0, 13],
+              unit: '%',
+            },
+            layerIds: ['Wage Labor Manufacturing'],
+            info: 'Percent of people who, if they earn a wage, earn a wage in manufacturing. Source: Nigeria Living Standards Survey 2018-2019, Table 4.5',
+          },
+          {
+            id: 'Wage Labor Transportation', // matches .csv column name
+            label: 'Wage Employment in Transportation',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 11},
+              domain: [0, 11],
+              unit: '%',
+            },
+            layerIds: ['Wage Labor Transportation'],
+            info: 'Percent of people who, if they earn a wage, earn a wage in transportation. Source: Nigeria Living Standards Survey 2018-2019, Table 4.5',
+          },
+          {
+            id: 'Wage Labor Personal Services', // matches .csv column name
+            label: 'Wage Employment in Personal Services',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 53},
+              domain: [0, 53],
+              unit: '%',
+            },
+            layerIds: ['Wage Labor Personal Services'],
+            info: 'Percent of people who, if they earn a wage, earn a wage in personal services. Source: Nigeria Living Standards Survey 2018-2019, Table 4.5',
+          },
+          {
+            id: 'Wage Labor Education', // matches .csv column name
+            label: 'Wage Employment in Education',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 10, max: 50},
+              domain: [10, 50],
+              unit: '%',
+            },
+            layerIds: ['Wage Labor Education'],
+            info: 'Percent of people who, if they earn a wage, earn a wage in education. Source: Nigeria Living Standards Survey 2018-2019, Table 4.5',
+          },
+          {
+            id: 'Wage Labor Health', // matches .csv column name
+            label: 'Wage Employment in Health',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 1, max: 51},
+              domain: [1, 51],
+              unit: '%',
+            },
+            layerIds: ['Wage Labor Health'],
+            info: 'Percent of people who, if they earn a wage, earn a wage in health. Source: Nigeria Living Standards Survey 2018-2019, Table 4.5',
+          },
+          {
+            id: 'Wage Labor Public Administration', // matches .csv column name
+            label: 'Wage Employment in Public Administration',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 4, max: 29},
+              domain: [4, 29],
+              unit: '%',
+            },
+            layerIds: ['Wage Labor Public Administration'],
+            info: 'Percent of people who, if they earn a wage, earn a wage in public administration. Source: Nigeria Living Standards Survey 2018-2019, Table 4.5',
           },
         ],
       },
