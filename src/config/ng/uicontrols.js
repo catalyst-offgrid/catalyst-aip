@@ -1313,6 +1313,65 @@ export default [
           // Add layers here
         ],
       },
+      {
+        id: 'cookstoves',
+        label: 'Cookstoves',
+        info: '',
+        subcontrols: [
+          {
+            id: '3-Stone/Open Fire Cookstove', // matches .csv column name
+            label: '3-Stone/Open Fire Cookstove',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 99},
+              domain: [0, 99],
+              unit: '%',
+            },
+            layerIds: ['3-Stone/Open Fire Cookstove'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.8',
+          },
+          {
+            id: 'Biomass Cookstove (Self-Built or Manufactured)', // matches .csv column name
+            label: 'Biomass Cookstove (Self-Built or Manufactured)',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 48},
+              domain: [0, 48],
+              unit: '%',
+            },
+            layerIds: ['Biomass Cookstove (Self-Built or Manufactured)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.8',
+          },
+          {
+            id: 'LPG/Natural Gas Cookstove', // matches .csv column name
+            label: 'LPG/Natural Gas Cookstove',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 58},
+              domain: [0, 58],
+              unit: '%',
+            },
+            layerIds: ['LPG/Natural Gas Cookstove'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.8',
+          },
+          {
+            id: 'Kerosene Cookstove', // matches .csv column name
+            label: 'Kerosene Cookstove',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 54},
+              domain: [0, 54],
+              unit: '%',
+            },
+            layerIds: ['Kerosene Cookstove'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.8',
+          },
+        ],
+      },
     ],
   },
   {
