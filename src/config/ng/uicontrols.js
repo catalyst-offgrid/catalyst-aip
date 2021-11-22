@@ -1030,10 +1030,23 @@ export default [
       },
       {
         id: 'births',
-        label: 'Births',
+        label: 'Fertility',
         info: '',
         subcontrols: [
-          // Add layers here
+          {
+            id: 'Fertility Rate', // matches .csv column name
+            label: 'Fertility Rate',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 3, max: 8},
+              domain: [3, 8],
+              unit: '%',
+            },
+            layerIds: ['Fertility Rate'],
+            info: 'Demographic and Health Survey Nigeria 2019, Table 5.2',
+          },
+
         ],
       },
       {
