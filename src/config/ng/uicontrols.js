@@ -1044,7 +1044,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Fertility Rate'],
-            info: 'Demographic and Health Survey Nigeria 2019, Table 5.2',
+            info: 'Demographic and Health Survey Nigeria 2018, Table 5.2',
           },
 
         ],
