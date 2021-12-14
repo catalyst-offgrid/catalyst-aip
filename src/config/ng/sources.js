@@ -199,6 +199,11 @@ export default {
       layer: 'nga_maternity_homes-cdte3r',
       tilesetid: 'iandmuir.brkd6bud',
     },
+    {
+      id: 'nigeria-natural-gas-power-plants',
+      layer: 'nigera_natural_gas_power_plan-406mv4',
+      tilesetid: 'iandmuir.0p165ojd',
+    },
     /*
     *
     * Schools subsetted differently than from nigeria-secondary

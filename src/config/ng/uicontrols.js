@@ -172,6 +172,130 @@ export default [
             layerIds: ['Average Hours Electricity from Generator per Day'],
             info: 'Measured in hours per 24 hour day. Source: Nigeria Living Standards Survey 2018-2019, Table 7.12',
           },
+          {
+            id: 'Electricity is Constraint to Starting Non-Farm Enterprise', // matches .csv column name
+            label: 'Electricity is Constraint to Starting Business',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 3, max: 49},
+              domain: [3, 49],
+              unit: '%',
+            },
+            layerIds: ['Electricity is Constraint to Starting Non-Farm Enterprise'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 6.6',
+          },
+          {
+            id: 'Electricity is Constraint to Operate/Grow Non-Farm Enterprise', // matches .csv column name
+            label: 'Electricity is Constraint to Operate/Grow Business',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 3, max: 51},
+              domain: [3, 51],
+              unit: '%',
+            },
+            layerIds: ['Electricity is Constraint to Operate/Grow Non-Farm Enterprise'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 6.6',
+          },
+        ],
+      },
+      {
+        id: 'grid',
+        label: 'Grid Electricity',
+        info: '',
+        subcontrols: [
+          {
+            id: 'nigeria-natural-gas-power-plants',
+            label: 'Natural Gas Power Plants',
+            defaultVisibility: false,
+            legend: { type: 'circle', color: colors.accent3 },
+            layerIds: ['nigeria-natural-gas-power-plants'],
+            info: 'Source: Global Energy Monitor Global Gas Plant Tracker',
+          },
+          {
+            id: 'nigeria-substations',
+            label: 'Substations',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-substations'],
+            info: '',
+          },
+          {
+            id: 'nigeria-gridfinder',
+            label: 'Gridfinder MV/HV Lines',
+            defaultVisibility: false,
+            legend: { type: 'line', color: colors.accent9 },
+            layerIds: ['nigeria-gridfinder'],
+            info: 'Source: GridFinder predictive algorithm based on night lights imagery, estimating the location of high- and medium-voltage transmission lines, 2020',
+          },
+        ],
+      },
+      {
+        id: 'mini-grid',
+        label: 'Mini Grid Electricity',
+        info: '',
+        subcontrols: [
+
+        ],
+      },
+      {
+        id: 'cookstoves',
+        label: 'Cookstoves',
+        info: '',
+        subcontrols: [
+          {
+            id: '3-Stone/Open Fire Cookstove', // matches .csv column name
+            label: '3-Stone/Open Fire Cookstove',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 99},
+              domain: [0, 99],
+              unit: '%',
+            },
+            layerIds: ['3-Stone/Open Fire Cookstove'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.8',
+          },
+          {
+            id: 'Biomass Cookstove (Self-Built or Manufactured)', // matches .csv column name
+            label: 'Biomass Cookstove (Self-Built or Manufactured)',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 48},
+              domain: [0, 48],
+              unit: '%',
+            },
+            layerIds: ['Biomass Cookstove (Self-Built or Manufactured)'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.8',
+          },
+          {
+            id: 'LPG/Natural Gas Cookstove', // matches .csv column name
+            label: 'LPG/Natural Gas Cookstove',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 58},
+              domain: [0, 58],
+              unit: '%',
+            },
+            layerIds: ['LPG/Natural Gas Cookstove'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.8',
+          },
+          {
+            id: 'Kerosene Cookstove', // matches .csv column name
+            label: 'Kerosene Cookstove',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 54},
+              domain: [0, 54],
+              unit: '%',
+            },
+            layerIds: ['Kerosene Cookstove'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.8',
+          },
         ],
       },
       {
@@ -246,38 +370,7 @@ export default [
           },
         ],
       },
-      {
-        id: 'grid',
-        label: 'Grid Electricity',
-        info: '',
-        subcontrols: [
-
-          {
-            id: 'nigeria-substations',
-            label: 'Substations',
-            defaultVisibility: false,
-            legend: 'none',
-            layerIds: ['nigeria-substations'],
-            info: '',
-          },
-          {
-            id: 'nigeria-gridfinder',
-            label: 'Gridfinder MV/HV Lines',
-            defaultVisibility: false,
-            legend: { type: 'line', color: colors.accent9 },
-            layerIds: ['nigeria-gridfinder'],
-            info: 'Source: GridFinder predictive algorithm based on night lights imagery, estimating the location of high- and medium-voltage transmission lines, 2020',
-          },
-        ],
-      },
-      {
-        id: 'mini-grid',
-        label: 'Mini Grid Electricity',
-        info: '',
-        subcontrols: [
-
-        ],
-      },
+      
     ],
   },
   {
@@ -1326,65 +1419,7 @@ export default [
           // Add layers here
         ],
       },
-      {
-        id: 'cookstoves',
-        label: 'Cookstoves',
-        info: '',
-        subcontrols: [
-          {
-            id: '3-Stone/Open Fire Cookstove', // matches .csv column name
-            label: '3-Stone/Open Fire Cookstove',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 99},
-              domain: [0, 99],
-              unit: '%',
-            },
-            layerIds: ['3-Stone/Open Fire Cookstove'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.8',
-          },
-          {
-            id: 'Biomass Cookstove (Self-Built or Manufactured)', // matches .csv column name
-            label: 'Biomass Cookstove (Self-Built or Manufactured)',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 48},
-              domain: [0, 48],
-              unit: '%',
-            },
-            layerIds: ['Biomass Cookstove (Self-Built or Manufactured)'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.8',
-          },
-          {
-            id: 'LPG/Natural Gas Cookstove', // matches .csv column name
-            label: 'LPG/Natural Gas Cookstove',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 58},
-              domain: [0, 58],
-              unit: '%',
-            },
-            layerIds: ['LPG/Natural Gas Cookstove'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.8',
-          },
-          {
-            id: 'Kerosene Cookstove', // matches .csv column name
-            label: 'Kerosene Cookstove',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 54},
-              domain: [0, 54],
-              unit: '%',
-            },
-            layerIds: ['Kerosene Cookstove'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.8',
-          },
-        ],
-      },
+
     ],
   },
   {
@@ -1396,10 +1431,34 @@ export default [
     controls: [
       {
         id: 'unemployment',
-        label: 'Unemployment',
+        label: 'Unemployment & Remittances',
         info: '',
         subcontrols: [
           //insert unemployment layers here
+          {
+            id: 'Unemployment', // matches .csv column name
+            label: 'Unemployment Rate',
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 11, max: 57},
+              domain: [11, 57],
+              unit: '%',
+            },
+            layerIds: ['Unemployment'],
+            info: 'National Bureau of Statistics, Labor Force Statistics: Unempoyment and Underemployment Report (Q4 2020)',
+          },
+          {
+            id: 'Underemployment', // matches .csv column name
+            label: 'Underemployment Rate',
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 4, max: 44},
+              domain: [4, 44],
+              unit: '%',
+            },
+            layerIds: ['Unemployment'],
+            info: 'National Bureau of Statistics, Labor Force Statistics: Unempoyment and Underemployment Report (Q4 2020)',
+          },
           {
             id: 'Households Receiving Remittances', // matches .csv column name
             label: 'Households Receiving Remittances',
@@ -1412,32 +1471,6 @@ export default [
             },
             layerIds: ['Households Receiving Remittances'],
             info: 'Source: Nigeria Living Standards Survey 2018-2019, page 61',
-          },
-          {
-            id: 'Electricity is Constraint to Starting Non-Farm Enterprise', // matches .csv column name
-            label: 'Electricity is Constraint to Starting Business',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 3, max: 49},
-              domain: [3, 49],
-              unit: '%',
-            },
-            layerIds: ['Electricity is Constraint to Starting Non-Farm Enterprise'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 6.6',
-          },
-          {
-            id: 'Electricity is Constraint to Operate/Grow Non-Farm Enterprise', // matches .csv column name
-            label: 'Electricity is Constraint to Operate/Grow Business',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 3, max: 51},
-              domain: [3, 51],
-              unit: '%',
-            },
-            layerIds: ['Electricity is Constraint to Operate/Grow Non-Farm Enterprise'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 6.6',
           },
         ],
       },

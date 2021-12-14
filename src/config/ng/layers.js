@@ -298,4 +298,14 @@ export default [
       'circle-radius': 3
     },
   },
+  {
+    id: 'nigeria-natural-gas-power-plants',
+    source: 'nigeria-natural-gas-power-plants',
+    'source-layer': 'nigera_natural_gas_power_plan-406mv4',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent6,
+      'circle-radius': 3
+    },
+  },
 ]
