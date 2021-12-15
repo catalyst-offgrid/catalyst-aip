@@ -732,6 +732,167 @@ export default [
     description: '',
     info: 'Mobile Coverage Data © Collins Bartholomew and GSMA 2020',
     controls: [
+      {
+        id: 'MTN',
+        label: 'MTN',
+        info: 'Coverage on MTN',
+        subcontrols: [
+          {
+            id: 'NG-MTN-2G',
+            label: 'MTN 2G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent1 },
+            layerIds: ['NG-MTN-2G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+          {
+            id: 'NG-MTN-3G',
+            label: 'MTN 3G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent4 },
+            layerIds: ['NG-MTN-3G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+          {
+            id: 'NG-MTN-4G',
+            label: 'MTN 4G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent3 },
+            layerIds: ['NG-MTN-4G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+        ],
+      },
+      {
+        id: 'glo_mobile',
+        label: 'Glo Mobile (Globacom)',
+        info: 'Coverage on the Glo Mobile Network',
+        subcontrols: [
+          {
+            id: 'NG-Glo-Mobile-Globacom-2G',
+            label: 'Glo Mobile (Globacom) 2G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent1 },
+            layerIds: ['NG-Glo-Mobile-Globacom-2G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+          {
+            id: 'NG-Glo-Mobile-Globacom-3G',
+            label: 'Glo Mobile (Globacom) 3G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent4 },
+            layerIds: ['NG-Glo-Mobile-Globacom-3G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+          {
+            id: 'NG-Glo-Mobile-Globacom-4G',
+            label: 'Glo Mobile (Globacom) 4G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent3 },
+            layerIds: ['NG-Glo-Mobile-Globacom-4G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+        ],
+      },
+      /* Need to change layer data to actually be Airtel
+      {
+        id: 'MTN',
+        label: 'Airtel',
+        info: 'Coverage on MTN',
+        subcontrols: [
+          {
+            id: 'NG-MTN-2G',
+            label: 'MTN 2G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent1 },
+            layerIds: ['NG-MTN-2G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+          {
+            id: 'NG-MTN-3G',
+            label: 'MTN 3G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent4 },
+            layerIds: ['NG-MTN-3G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+          {
+            id: 'NG-MTN-4G',
+            label: 'MTN 4G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent3 },
+            layerIds: ['NG-MTN-4G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+        ],
+      },
+      */
+     /* Need to change layer data to actually be 9mobile
+      {
+        id: 'MTN',
+        label: '9mobile',
+        info: 'Coverage on MTN',
+        subcontrols: [
+          {
+            id: 'NG-MTN-2G',
+            label: 'MTN 2G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent1 },
+            layerIds: ['NG-MTN-2G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+          {
+            id: 'NG-MTN-3G',
+            label: 'MTN 3G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent4 },
+            layerIds: ['NG-MTN-3G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+          {
+            id: 'NG-MTN-4G',
+            label: 'MTN 4G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent3 },
+            layerIds: ['NG-MTN-4G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+        ],
+      },
+      */
+     /* Need to change layer data to actually be ntel
+      {
+        id: 'MTN',
+        label: 'ntel (NatCom)',
+        info: 'Coverage on MTN',
+        subcontrols: [
+          {
+            id: 'NG-MTN-2G',
+            label: 'MTN 2G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent1 },
+            layerIds: ['NG-MTN-2G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+          {
+            id: 'NG-MTN-3G',
+            label: 'MTN 3G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent4 },
+            layerIds: ['NG-MTN-3G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+          {
+            id: 'NG-MTN-4G',
+            label: 'MTN 4G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent3 },
+            layerIds: ['NG-MTN-4G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+        ],
+      },
+      */
     ],
   },
   {

@@ -204,6 +204,36 @@ export default {
       layer: 'nigera_natural_gas_power_plan-406mv4',
       tilesetid: 'iandmuir.0p165ojd',
     },
+    {
+      id: 'NG-Glo-Mobile-Globacom-2G',
+      layer: 'NG_Glo_Mobile_Globacom_2G-1z7jdb',
+      tilesetid: 'iandmuir.a4741ca5',
+    },
+    {
+      id: 'NG-Glo-Mobile-Globacom-3G',
+      layer: 'NG_Glo_Mobile_Globacom_3G-admtdj',
+      tilesetid: 'iandmuir.c8qojjcr',
+    },
+    {
+      id: 'NG-Glo-Mobile-Globacom-4G',
+      layer: 'NG_Glo_Mobile_Globacom_4G-9wniv5',
+      tilesetid: 'iandmuir.2b8jti0s',
+    },
+    {
+      id: 'NG-MTN-2G',
+      layer: 'NG_MTN_2G-1274x4',
+      tilesetid: 'iandmuir.d4dkbgzl',
+    },
+    {
+      id: 'NG-MTN-3G',
+      layer: 'NG_MTN_3G-6c1jpv',
+      tilesetid: 'iandmuir.8l20goff',
+    },
+    {
+      id: 'NG-MTN-4G',
+      layer: 'NG_MTN_4G-4s32sy',
+      tilesetid: 'iandmuir.738a03ib',
+    },
     /*
     *
     * Schools subsetted differently than from nigeria-secondary

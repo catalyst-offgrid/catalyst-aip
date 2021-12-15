@@ -308,4 +308,64 @@ export default [
       'circle-radius': 3
     },
   },
+  {
+    id: 'NG-Glo-Mobile-Globacom-2G',
+    source: 'NG-Glo-Mobile-Globacom-2G',
+    'source-layer': 'NG_Glo_Mobile_Globacom_2G-1z7jdb',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent1,
+      'fill-opacity': mobileOpacity,
+    },
+  },
+  {
+    id: 'NG-Glo-Mobile-Globacom-3G',
+    source: 'NG-Glo-Mobile-Globacom-3G',
+    'source-layer': 'NG_Glo_Mobile_Globacom_3G-admtdj',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent4,
+      'fill-opacity': mobileOpacity,
+    },
+  },
+  {
+    id: 'NG-Glo-Mobile-Globacom-4G',
+    source: 'NG-Glo-Mobile-Globacom-4G',
+    'source-layer': 'NG_Glo_Mobile_Globacom_4G-9wniv5',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent3,
+      'fill-opacity': mobileOpacity,
+    },
+  },
+  {
+    id: 'NG-MTN-2G',
+    source: 'NG-MTN-2G',
+    'source-layer': 'NG_MTN_2G-1274x4',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent1,
+      'fill-opacity': mobileOpacity,
+    },
+  },
+  {
+    id: 'NG-MTN-3G',
+    source: 'NG-MTN-3G',
+    'source-layer': 'NG_MTN_3G-6c1jpv',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent4,
+      'fill-opacity': mobileOpacity,
+    },
+  },
+  {
+    id: 'NG-MTN-4G',
+    source: 'NG-MTN-4G',
+    'source-layer': 'NG_MTN_4G-4s32sy',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent3,
+      'fill-opacity': mobileOpacity,
+    },
+  },
 ]
