@@ -368,4 +368,94 @@ export default [
       'fill-opacity': mobileOpacity,
     },
   },
+  {
+    id: 'NG-Airtel-2G',
+    source: 'NG-Airtel-2G',
+    'source-layer': 'NG_Airtel_2G-0w43e4',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent1,
+      'fill-opacity': mobileOpacity,
+    },
+  },
+  {
+    id: 'NG-Airtel-3G',
+    source: 'NG-Airtel-3G',
+    'source-layer': 'NG_Airtel_3G-a7i6in',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent4,
+      'fill-opacity': mobileOpacity,
+    },
+  },
+  {
+    id: 'NG-Airtel-4G',
+    source: 'NG-Airtel-4G',
+    'source-layer': 'NG_Airtel_4G-4mydmd',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent3,
+      'fill-opacity': mobileOpacity,
+    },
+  },
+  {
+    id: 'NG-9mobile-2G',
+    source: 'NG-9mobile-2G',
+    'source-layer': 'NG_9mobile_2G-bqg9yy',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent1,
+      'fill-opacity': mobileOpacity,
+    },
+  },
+  {
+    id: 'NG-9mobile-3G',
+    source: 'NG-9mobile-3G',
+    'source-layer': 'NG_9mobile_3G-dtnaz9',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent4,
+      'fill-opacity': mobileOpacity,
+    },
+  },
+  {
+    id: 'NG-9mobile-4G',
+    source: 'NG-9mobile-4G',
+    'source-layer': 'NG_9mobile_4G-4hlzpq',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent3,
+      'fill-opacity': mobileOpacity,
+    },
+  },
+  {
+    id: 'NG-ntel-2G',
+    source: 'NG-ntel-2G',
+    'source-layer': 'NG_ntel_NatCom_2G-df7fdt',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent1,
+      'fill-opacity': mobileOpacity,
+    },
+  },
+  {
+    id: 'NG-ntel-3G',
+    source: 'NG-ntel-3G',
+    'source-layer': 'NG_ntel_NatCom_3G-3hzxfi',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent4,
+      'fill-opacity': mobileOpacity,
+    },
+  },
+  {
+    id: 'NG-ntel-4G',
+    source: 'NG-ntel-4G',
+    'source-layer': 'NG_ntel_NatCom_4G-12eb3o',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent3,
+      'fill-opacity': mobileOpacity,
+    },
+  },
 ]

@@ -234,6 +234,51 @@ export default {
       layer: 'NG_MTN_4G-4s32sy',
       tilesetid: 'iandmuir.738a03ib',
     },
+    {
+      id: 'NG-Airtel-2G',
+      layer: 'NG_Airtel_2G-0w43e4',
+      tilesetid: 'iandmuir.989f2bcv',
+    },
+    {
+      id: 'NG-Airtel-3G',
+      layer: 'NG_Airtel_3G-a7i6in',
+      tilesetid: 'iandmuir.dixb3c1r',
+    },
+    {
+      id: 'NG-Airtel-4G',
+      layer: 'NG_Airtel_4G-4mydmd',
+      tilesetid: 'iandmuir.4k5nwtvg',
+    },
+    {
+      id: 'NG-9mobile-2G',
+      layer: 'NG_9mobile_2G-bqg9yy',
+      tilesetid: 'iandmuir.btogpc3k',
+    },
+    {
+      id: 'NG-9mobile-3G',
+      layer: 'NG_9mobile_3G-dtnaz9',
+      tilesetid: 'iandmuir.2eps194k',
+    },
+    {
+      id: 'NG-9mobile-4G',
+      layer: 'NG_9mobile_4G-4hlzpq',
+      tilesetid: 'iandmuir.8dm7ombq',
+    },
+    {
+      id: 'NG-ntel-2G',
+      layer: 'NG_ntel_NatCom_2G-df7fdt',
+      tilesetid: 'iandmuir.6dgda28n',
+    },
+    {
+      id: 'NG-ntel-3G',
+      layer: 'NG_ntel_NatCom_3G-3hzxfi',
+      tilesetid: 'iandmuir.afvfonmc',
+    },
+    {
+      id: 'NG-ntel-4G',
+      layer: 'NG_ntel_NatCom_4G-12eb3o',
+      tilesetid: 'iandmuir.0et6vfpj',
+    },
     /*
     *
     * Schools subsetted differently than from nigeria-secondary

@@ -766,7 +766,7 @@ export default [
       {
         id: 'glo_mobile',
         label: 'Glo Mobile (Globacom)',
-        info: 'Coverage on the Glo Mobile Network',
+        info: 'Coverage on the Glo Mobile network',
         subcontrols: [
           {
             id: 'NG-Glo-Mobile-Globacom-2G',
@@ -794,72 +794,101 @@ export default [
           },
         ],
       },
-      /* Need to change layer data to actually be Airtel
+
       {
-        id: 'MTN',
-        label: 'Airtel',
-        info: 'Coverage on MTN',
+        id: 'Airtel',
+        label: 'Airtel (Bharti Airtel)',
+        info: 'Coverage on Airtel mobile network',
         subcontrols: [
           {
-            id: 'NG-MTN-2G',
-            label: 'MTN 2G',
+            id: 'NG-Airtel-2G',
+            label: 'Airtel (Bharti Airtel) 2G',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
-            layerIds: ['NG-MTN-2G'],
+            layerIds: ['NG-Airtel-2G'],
             info: 'Source: Collins Batholomew and GSMA 2020',
           },
           {
-            id: 'NG-MTN-3G',
-            label: 'MTN 3G',
+            id: 'NG-Airtel-3G',
+            label: 'Airtel (Bharti Airtel) 3G',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
-            layerIds: ['NG-MTN-3G'],
+            layerIds: ['NG-Airtel-3G'],
             info: 'Source: Collins Batholomew and GSMA 2020',
           },
           {
-            id: 'NG-MTN-4G',
-            label: 'MTN 4G',
+            id: 'NG-Airtel-4G',
+            label: 'Airtel (Bharti Airtel) 4G',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
-            layerIds: ['NG-MTN-4G'],
+            layerIds: ['NG-Airtel-4G'],
             info: 'Source: Collins Batholomew and GSMA 2020',
           },
         ],
       },
-      */
-     /* Need to change layer data to actually be 9mobile
+
       {
-        id: 'MTN',
-        label: '9mobile',
-        info: 'Coverage on MTN',
+        id: '9mobile',
+        label: '9mobile (EMTS)',
+        info: 'Coverage on 9mobile network',
         subcontrols: [
           {
-            id: 'NG-MTN-2G',
-            label: 'MTN 2G',
+            id: 'NG-9mobile-2G',
+            label: '9mobile (EMTS) 2G',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent1 },
-            layerIds: ['NG-MTN-2G'],
+            layerIds: ['NG-9mobile-2G'],
             info: 'Source: Collins Batholomew and GSMA 2020',
           },
           {
-            id: 'NG-MTN-3G',
-            label: 'MTN 3G',
+            id: 'NG-9mobile-3G',
+            label: '9mobile (EMTS) 3G',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
-            layerIds: ['NG-MTN-3G'],
+            layerIds: ['NG-9mobile-3G'],
             info: 'Source: Collins Batholomew and GSMA 2020',
           },
           {
-            id: 'NG-MTN-4G',
-            label: 'MTN 4G',
+            id: 'NG-9mobile-4G',
+            label: '9mobile (EMTS) 4G',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
-            layerIds: ['NG-MTN-4G'],
+            layerIds: ['NG-9mobile-4G'],
             info: 'Source: Collins Batholomew and GSMA 2020',
           },
         ],
       },
-      */
+      {
+        id: 'ntel',
+        label: 'ntel (NatCom)',
+        info: 'Coverage on ntel (NatCom) network',
+        subcontrols: [
+          {
+            id: 'NG-ntel-2G',
+            label: 'ntel (NatCom) 2G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent1 },
+            layerIds: ['NG-ntel-2G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+          {
+            id: 'NG-ntel-3G',
+            label: 'ntel (NatCom) 3G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent4 },
+            layerIds: ['NG-ntel-3G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+          {
+            id: 'NG-ntel-4G',
+            label: 'ntel (NatCom) 4G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent3 },
+            layerIds: ['NG-ntel-4G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+        ],
+      },
      /* Need to change layer data to actually be ntel
       {
         id: 'MTN',
