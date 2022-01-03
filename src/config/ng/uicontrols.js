@@ -733,6 +733,39 @@ export default [
     info: 'Mobile Coverage Data © Collins Bartholomew and GSMA 2020',
     controls: [
       {
+        id: 'All',
+        label: 'All Networks',
+        info: 'Coverage area for all networks',
+        subcontrols: [
+          {
+            id: 'NG-all-2G',
+            label: 'All 2G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent1 },
+            layerIds: ['NG-all-2G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+          /*
+          {
+            id: 'NG-MTN-3G',
+            label: 'MTN 3G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent4 },
+            layerIds: ['NG-MTN-3G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+          {
+            id: 'NG-MTN-4G',
+            label: 'MTN 4G',
+            defaultVisibility: false,
+            legend: { type: 'dot', color: colors.accent3 },
+            layerIds: ['NG-MTN-4G'],
+            info: 'Source: Collins Batholomew and GSMA 2020',
+          },
+          */
+        ],
+      },
+      {
         id: 'MTN',
         label: 'MTN',
         info: 'Coverage on MTN',

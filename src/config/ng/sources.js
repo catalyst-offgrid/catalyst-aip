@@ -279,6 +279,11 @@ export default {
       layer: 'NG_ntel_NatCom_4G-12eb3o',
       tilesetid: 'iandmuir.0et6vfpj',
     },
+    {
+      id: 'NG-all-2G',
+      layer: 'NG_All_Networks_2G-06tx02',
+      tilesetid: 'iandmuir.8jml4d1g',
+    },
     /*
     *
     * Schools subsetted differently than from nigeria-secondary

@@ -458,4 +458,14 @@ export default [
       'fill-opacity': mobileOpacity,
     },
   },
+  {
+    id: 'NG-all-2G',
+    source: 'NG-all-2G',
+    'source-layer': 'NG_All_Networks_2G-06tx02',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent1,
+      'fill-opacity': mobileOpacity,
+    },
+  },
 ]
