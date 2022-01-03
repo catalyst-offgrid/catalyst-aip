@@ -468,4 +468,24 @@ export default [
       'fill-opacity': mobileOpacity,
     },
   },
+  {
+    id: 'NG-all-3G',
+    source: 'NG-all-3G',
+    'source-layer': 'NG_All_Networks_3G-9pvmdn',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent4,
+      'fill-opacity': mobileOpacity,
+    },
+  },
+  {
+    id: 'NG-all-4G',
+    source: 'NG-all-4G',
+    'source-layer': 'NG_All_Networks_4G-af2tt4',
+    type: 'fill',
+    paint: {
+      'fill-color': colors.accent3,
+      'fill-opacity': mobileOpacity,
+    },
+  },
 ]

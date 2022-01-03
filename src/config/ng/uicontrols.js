@@ -735,7 +735,7 @@ export default [
       {
         id: 'All',
         label: 'All Networks',
-        info: 'Coverage area for all networks',
+        info: 'Coverage area for all networks. Source: Collins Batholomew and GSMA 2020',
         subcontrols: [
           {
             id: 'NG-all-2G',
@@ -745,30 +745,30 @@ export default [
             layerIds: ['NG-all-2G'],
             info: 'Source: Collins Batholomew and GSMA 2020',
           },
-          /*
+
           {
-            id: 'NG-MTN-3G',
-            label: 'MTN 3G',
+            id: 'NG-all-3G',
+            label: 'All 3G',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent4 },
-            layerIds: ['NG-MTN-3G'],
+            layerIds: ['NG-all-3G'],
             info: 'Source: Collins Batholomew and GSMA 2020',
           },
           {
             id: 'NG-MTN-4G',
-            label: 'MTN 4G',
+            label: 'All 4G',
             defaultVisibility: false,
             legend: { type: 'dot', color: colors.accent3 },
-            layerIds: ['NG-MTN-4G'],
+            layerIds: ['NG-all-4G'],
             info: 'Source: Collins Batholomew and GSMA 2020',
           },
-          */
+
         ],
       },
       {
         id: 'MTN',
         label: 'MTN',
-        info: 'Coverage on MTN',
+        info: 'Coverage on MTN. Source: Collins Batholomew and GSMA 2020',
         subcontrols: [
           {
             id: 'NG-MTN-2G',
@@ -799,7 +799,7 @@ export default [
       {
         id: 'glo_mobile',
         label: 'Glo Mobile (Globacom)',
-        info: 'Coverage on the Glo Mobile network',
+        info: 'Coverage on the Glo Mobile network. Source: Collins Batholomew and GSMA 2020',
         subcontrols: [
           {
             id: 'NG-Glo-Mobile-Globacom-2G',
@@ -831,7 +831,7 @@ export default [
       {
         id: 'Airtel',
         label: 'Airtel (Bharti Airtel)',
-        info: 'Coverage on Airtel mobile network',
+        info: 'Coverage on Airtel mobile network. Source: Collins Batholomew and GSMA 2020',
         subcontrols: [
           {
             id: 'NG-Airtel-2G',
@@ -863,7 +863,7 @@ export default [
       {
         id: '9mobile',
         label: '9mobile (EMTS)',
-        info: 'Coverage on 9mobile network',
+        info: 'Coverage on 9mobile network. Source: Collins Batholomew and GSMA 2020',
         subcontrols: [
           {
             id: 'NG-9mobile-2G',
@@ -894,7 +894,7 @@ export default [
       {
         id: 'ntel',
         label: 'ntel (NatCom)',
-        info: 'Coverage on ntel (NatCom) network',
+        info: 'Coverage on ntel (NatCom) network. Source: Collins Batholomew and GSMA 2020',
         subcontrols: [
           {
             id: 'NG-ntel-2G',
@@ -922,39 +922,7 @@ export default [
           },
         ],
       },
-     /* Need to change layer data to actually be ntel
-      {
-        id: 'MTN',
-        label: 'ntel (NatCom)',
-        info: 'Coverage on MTN',
-        subcontrols: [
-          {
-            id: 'NG-MTN-2G',
-            label: 'MTN 2G',
-            defaultVisibility: false,
-            legend: { type: 'dot', color: colors.accent1 },
-            layerIds: ['NG-MTN-2G'],
-            info: 'Source: Collins Batholomew and GSMA 2020',
-          },
-          {
-            id: 'NG-MTN-3G',
-            label: 'MTN 3G',
-            defaultVisibility: false,
-            legend: { type: 'dot', color: colors.accent4 },
-            layerIds: ['NG-MTN-3G'],
-            info: 'Source: Collins Batholomew and GSMA 2020',
-          },
-          {
-            id: 'NG-MTN-4G',
-            label: 'MTN 4G',
-            defaultVisibility: false,
-            legend: { type: 'dot', color: colors.accent3 },
-            layerIds: ['NG-MTN-4G'],
-            info: 'Source: Collins Batholomew and GSMA 2020',
-          },
-        ],
-      },
-      */
+
     ],
   },
   {
