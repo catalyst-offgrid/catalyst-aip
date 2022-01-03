@@ -148,7 +148,7 @@ export default [
           },
           {
             id: 'Average Hours National Grid Works per Day', // matches .csv column name
-            label: 'Average Hours National Grid Works',
+            label: 'Average National Grid Uptime',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -161,7 +161,7 @@ export default [
           },
           {
             id: 'Average Hours Electricity from Generator per Day', // matches .csv column name
-            label: 'Average Hours Electricity from Generator',
+            label: 'Average Generator Use',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -174,7 +174,7 @@ export default [
           },
           {
             id: 'Electricity is Constraint to Starting Non-Farm Enterprise', // matches .csv column name
-            label: 'Electricity is Constraint to Starting Business',
+            label: 'Electricity Constrains Business Startup',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -183,11 +183,11 @@ export default [
               unit: '%',
             },
             layerIds: ['Electricity is Constraint to Starting Non-Farm Enterprise'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 6.6',
+            info: 'Percent of respondents who reported that lack of electricity constains their ability to start a business. Source: Nigeria Living Standards Survey 2018-2019, Table 6.6',
           },
           {
             id: 'Electricity is Constraint to Operate/Grow Non-Farm Enterprise', // matches .csv column name
-            label: 'Electricity is Constraint to Operate/Grow Business',
+            label: 'Electricity Constrains Business Growth',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -196,7 +196,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Electricity is Constraint to Operate/Grow Non-Farm Enterprise'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 6.6',
+            info: 'Percent of respondents who reported that lack of electricity constains their ability to operate or grow a business. Source: Nigeria Living Standards Survey 2018-2019, Table 6.6',
           },
         ],
       },
@@ -735,7 +735,7 @@ export default [
       {
         id: 'All',
         label: 'All Networks',
-        info: 'Coverage area for all networks. Source: Collins Batholomew and GSMA 2020',
+        info: 'Coverage area for all networks. Stronger color suggests multiple networks. Source: Collins Batholomew and GSMA 2020',
         subcontrols: [
           {
             id: 'NG-all-2G',
