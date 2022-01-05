@@ -1671,6 +1671,19 @@ export default [
         info: '',
         subcontrols: [
           {
+            id: 'Mud Roof', // matches .csv column name
+            label: 'Mud',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 23},
+              domain: [0, 23],
+              unit: '%',
+            },
+            layerIds: ['Mud Roof'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.5',
+          },
+          {
             id: 'Thatch Roof', // matches .csv column name
             label: 'Thatch',
             defaultVisibility: false,
@@ -1681,19 +1694,6 @@ export default [
               unit: '%',
             },
             layerIds: ['Thatch Roof'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.5',
-          },
-          {
-            id: 'Corrugated Iron Sheet Roof', // matches .csv column name
-            label: 'Corrugated Iron Sheet',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 16, max: 97},
-              domain: [16, 97],
-              unit: '%',
-            },
-            layerIds: ['Corrugated Iron Sheet Roof'],
             info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.5',
           },
           {
@@ -1710,6 +1710,19 @@ export default [
             info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.5',
           },
           {
+            id: 'Corrugated Iron Sheet Roof', // matches .csv column name
+            label: 'Corrugated Iron Sheet',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 16, max: 97},
+              domain: [16, 97],
+              unit: '%',
+            },
+            layerIds: ['Corrugated Iron Sheet Roof'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.5',
+          },
+          {
             id: 'Zinc Sheet Roof', // matches .csv column name
             label: 'Zinc Sheet',
             defaultVisibility: false,
@@ -1720,19 +1733,6 @@ export default [
               unit: '%',
             },
             layerIds: ['Zinc Sheet Roof'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.5',
-          },
-          {
-            id: 'Mud Roof', // matches .csv column name
-            label: 'Mud',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 23},
-              domain: [0, 23],
-              unit: '%',
-            },
-            layerIds: ['Mud Roof'],
             info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.5',
           },
           {
@@ -1769,6 +1769,19 @@ export default [
             info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.4',
           },
           {
+            id: 'Wood/Bamboo Walls', // matches .csv column name
+            label: 'Wood/Bamboo',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 0, max: 16},
+              domain: [0, 16],
+              unit: '%',
+            },
+            layerIds: ['Wood/Bamboo'],
+            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.4',
+          },
+          {
             id: 'Brick Walls', // matches .csv column name
             label: 'Brick',
             defaultVisibility: false,
@@ -1794,19 +1807,7 @@ export default [
             layerIds: ['Concrete Walls'],
             info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.4',
           },
-          {
-            id: 'Wood/Bamboo Walls', // matches .csv column name
-            label: 'Wood/Bamboo',
-            defaultVisibility: false,
-            legend: {
-              type: 'gradient',
-              defaultRange: { min: 0, max: 16},
-              domain: [0, 16],
-              unit: '%',
-            },
-            layerIds: ['Wood/Bamboo'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, Table 7.4',
-          },
+
         ],
       },
       {
