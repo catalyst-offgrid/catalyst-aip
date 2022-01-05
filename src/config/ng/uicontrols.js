@@ -1963,7 +1963,7 @@ export default [
           },
           {
             id: 'Households with Any Nonfarm Enterprise', // matches .csv column name
-            label: 'Households with Any Non-Farm Enterprise',
+            label: 'Households with Non-Farm Enterprise',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -1972,7 +1972,7 @@ export default [
               unit: '%',
             },
             layerIds: ['Households with Any Nonfarm Enterprise'],
-            info: 'Source: Nigeria Living Standards Survey 2018-2019, page 61',
+            info: 'Households with any non-farm enterprise. Source: Nigeria Living Standards Survey 2018-2019, page 61',
           },
         ],
       },
@@ -1983,7 +1983,7 @@ export default [
         subcontrols: [
           {
             id: 'Wage Labor Agriculture', // matches .csv column name
-            label: 'Wage Employment in Agriculture',
+            label: 'Agriculture',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -1996,7 +1996,7 @@ export default [
           },
           {
             id: 'Wage Labor Mining/Construction', // matches .csv column name
-            label: 'Wage Employment in Mining/Construction',
+            label: 'Mining/Construction',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -2009,7 +2009,7 @@ export default [
           },
           {
             id: 'Wage Labor Manufacturing', // matches .csv column name
-            label: 'Wage Employment in Manufacturing',
+            label: 'Manufacturing',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -2022,7 +2022,7 @@ export default [
           },
           {
             id: 'Wage Labor Transportation', // matches .csv column name
-            label: 'Wage Employment in Transportation',
+            label: 'Transportation',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -2035,7 +2035,7 @@ export default [
           },
           {
             id: 'Wage Labor Personal Services', // matches .csv column name
-            label: 'Wage Employment in Personal Services',
+            label: 'Personal Services',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -2048,7 +2048,7 @@ export default [
           },
           {
             id: 'Wage Labor Education', // matches .csv column name
-            label: 'Wage Employment in Education',
+            label: 'Education',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -2061,7 +2061,7 @@ export default [
           },
           {
             id: 'Wage Labor Health', // matches .csv column name
-            label: 'Wage Employment in Health',
+            label: 'Health',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -2074,7 +2074,7 @@ export default [
           },
           {
             id: 'Wage Labor Public Administration', // matches .csv column name
-            label: 'Wage Employment in Public Administration',
+            label: 'Public Administration',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
