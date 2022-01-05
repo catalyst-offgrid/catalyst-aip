@@ -652,7 +652,7 @@ export default [
           },
           {
             id: 'Average Share Female Headed Households', // matches .csv column name
-            label: 'Average Share Female Headed Households',
+            label: 'Avg Share Female Headed Households',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
