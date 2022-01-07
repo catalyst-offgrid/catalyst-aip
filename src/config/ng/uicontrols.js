@@ -370,7 +370,26 @@ export default [
           },
         ],
       },
-      
+      {
+        id: 'solar-penetration',
+        label: 'Solar Market Penetration',
+        info: 'Includes data for 10 states only: Abia, Bauchi, Cross River, Ebonyi, Edo, Ekiti, Kano, Kogi, Oyo, and Plateau. Source: Stand-Alone Off-Grid Solar Market Research Nigeria, page 7',
+        subcontrols: [
+          {
+            id: 'SAS Penetration', // matches .csv column name
+            label: 'Stand Alone Solar (SAS) Penetration',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 4, max: 33 },
+              domain: [4, 33],
+              unit: '%',
+            },
+            layerIds: ['SAS Penetration'],
+            info: 'Percent of trade outlets that stock any solar product. Source: Stand-Alone Off-Grid Solar Market Research Nigeria, page 7',
+          },
+        ],
+      },  
     ],
   },
   {
