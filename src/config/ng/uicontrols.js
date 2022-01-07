@@ -372,7 +372,7 @@ export default [
       },
       {
         id: 'solar-penetration',
-        label: 'Solar Market Penetration',
+        label: 'Stand Alone Solar (SAS) Market Penetration',
         info: 'Includes data for 10 states only: Abia, Bauchi, Cross River, Ebonyi, Edo, Ekiti, Kano, Kogi, Oyo, and Plateau. Source: Stand-Alone Off-Grid Solar Market Research Nigeria, page 7',
         subcontrols: [
           {
@@ -387,6 +387,45 @@ export default [
             },
             layerIds: ['SAS Penetration'],
             info: 'Percent of trade outlets that stock any solar product. Source: Stand-Alone Off-Grid Solar Market Research Nigeria, page 7',
+          },
+          {
+            id: 'Solar Lantern Share SAS Penetration', // matches .csv column name
+            label: 'Solar Lantern Share of SAS Penetration',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 37, max: 84 },
+              domain: [37, 84],
+              unit: '%',
+            },
+            layerIds: ['SAS Penetration'],
+            info: 'Percent of stand alone solar (SAS) products that are solar laterns at trade outlets that stock any solar product. Source: Stand-Alone Off-Grid Solar Market Research Nigeria, page 7',
+          },
+          {
+            id: 'SHS Share SAS Penetration', // matches .csv column name
+            label: 'SHS Share of SAS Penetration',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 4, max: 29 },
+              domain: [4, 29],
+              unit: '%',
+            },
+            layerIds: ['SHS Share of SAS Penetration'],
+            info: 'Percent of stand alone solar (SAS) products that are solar home systems (SHS) at trade outlets that stock any solar product. Source: Stand-Alone Off-Grid Solar Market Research Nigeria, page 7',
+          },
+          {
+            id: 'Solar Panel Share SAS Penetration', // matches .csv column name
+            label: 'Solar Panel Share of SAS Penetration',
+            defaultVisibility: false,
+            legend: {
+              type: 'gradient',
+              defaultRange: { min: 3, max: 52 },
+              domain: [3, 52],
+              unit: '%',
+            },
+            layerIds: ['Solar Panel Share SAS Penetration'],
+            info: 'Percent of stand alone solar (SAS) products that are solar panels at trade outlets that stock any solar product. Source: Stand-Alone Off-Grid Solar Market Research Nigeria, page 7',
           },
         ],
       },  
