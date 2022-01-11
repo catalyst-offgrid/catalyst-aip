@@ -60,6 +60,7 @@ export default [
       */
     ],
   },
+  /*
   {
     id: 'planning',
     label: 'Planning & Programs',
@@ -69,6 +70,7 @@ export default [
     controls: [
     ]
   },
+  */
   {
     id: 'energy',
     label: 'Energy',
@@ -79,7 +81,7 @@ export default [
       {
         id: 'electricity-access',
         label: 'Electricity Access',
-        info: '',
+        info: 'Source: Nigeria Living Standards Survey 2018-2019',
         subcontrols: [
           {
             id: 'Access to Electricity', // matches .csv column name
@@ -203,7 +205,7 @@ export default [
       {
         id: 'grid',
         label: 'Grid Electricity',
-        info: '',
+        info: 'Source: Global Energy Monitor, GridFinder',
         subcontrols: [
           {
             id: 'nigeria-natural-gas-power-plants',
@@ -231,6 +233,7 @@ export default [
           },
         ],
       },
+      /*
       {
         id: 'mini-grid',
         label: 'Mini Grid Electricity',
@@ -239,14 +242,15 @@ export default [
 
         ],
       },
+      */
       {
         id: 'cookstoves',
         label: 'Cookstoves',
-        info: '',
+        info: 'Source: Nigeria Living Standards Survey 2018-2019',
         subcontrols: [
           {
             id: '3-Stone/Open Fire Cookstove', // matches .csv column name
-            label: '3-Stone/Open Fire Cookstove',
+            label: '3-Stone/Open Fire',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -259,7 +263,7 @@ export default [
           },
           {
             id: 'Biomass Cookstove (Self-Built or Manufactured)', // matches .csv column name
-            label: 'Biomass Cookstove (Self-Built or Manufactured)',
+            label: 'Biomass (Self-Built or Manufactured)',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -272,7 +276,7 @@ export default [
           },
           {
             id: 'LPG/Natural Gas Cookstove', // matches .csv column name
-            label: 'LPG/Natural Gas Cookstove',
+            label: 'LPG/Natural Gas',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -285,7 +289,7 @@ export default [
           },
           {
             id: 'Kerosene Cookstove', // matches .csv column name
-            label: 'Kerosene Cookstove',
+            label: 'Kerosene',
             defaultVisibility: false,
             legend: {
               type: 'gradient',
@@ -301,7 +305,7 @@ export default [
       {
         id: 'cooking',
         label: 'Cooking Fuels',
-        info: '',
+        info: 'Source: Nigeria Living Standards Survey 2018-2019',
         subcontrols: [
           {
             id: 'Wood', // matches .csv column name
@@ -372,7 +376,7 @@ export default [
       },
       {
         id: 'solar-penetration',
-        label: 'Stand Alone Solar (SAS) Market Penetration',
+        label: 'Stand Alone Solar Market Penetration',
         info: 'Includes data for 10 states only: Abia, Bauchi, Cross River, Ebonyi, Edo, Ekiti, Kano, Kogi, Oyo, and Plateau. Source: Stand-Alone Off-Grid Solar Market Research Nigeria, page 7',
         subcontrols: [
           {
@@ -439,6 +443,7 @@ export default [
     info:
       'Locations of Financial Services, Schools, Doctors, Hospitals and other Health Institutions.',
     controls: [
+      /*
       {
         id: 'finance',
         label: 'Financial Services',
@@ -446,6 +451,7 @@ export default [
         subcontrols: [
         ],
       },
+      */
       {
         id: 'healthFacs',
         label: 'Health Facilities',
@@ -563,7 +569,7 @@ export default [
         id: 'popAndMovement',
         label: 'Population and Movement',
         info:
-          '',
+          'Source: Nigeria Living Standards Survey 2018-2019',
         subcontrols: [
           {
             id: 'Percent Male', // matches .csv column name
@@ -1032,7 +1038,7 @@ export default [
       {
         id: 'wasteDisposal',
         label: 'Mode of Human Waste Disposal',
-        info: '',
+        info: 'Source: Nigeria Living Standards Survey 2018-19',
         subcontrols: [
           {
             id: 'No Latrine', // matches .csv column name
@@ -1104,7 +1110,7 @@ export default [
       {
         id: 'drinkingWaterRainySeason',
         label: 'Source of Drinking Water (Rainy Season)',
-        info: '',
+        info: 'Source: Nigeria Living Standards Survey 2018-19',
         subcontrols: [
           // Add layers here
           /*
@@ -1226,7 +1232,7 @@ export default [
       {
         id: 'drinkingWaterDrySeason',
         label: 'Source of Drinking Water (Dry Season)',
-        info: '',
+        info: 'Source: Nigeria Living Standards Survey 2018-19',
         subcontrols: [
           {
             id: 'nigeria-water-points',
@@ -1345,7 +1351,7 @@ export default [
       {
         id: 'waterPointsTreatement',
         label: 'Water Points and Water Treatment',
-        info: '',
+        info: 'Source: Nigeria Living Standards Survey 2018-19',
         subcontrols: [
           {
             id: 'nigeria-water-points',
@@ -1373,7 +1379,7 @@ export default [
       {
         id: 'births',
         label: 'Fertility',
-        info: '',
+        info: 'Source: Nigeria Living Standards Survey 2018-19',
         subcontrols: [
           {
             id: 'Fertility Rate', // matches .csv column name
@@ -1394,7 +1400,7 @@ export default [
       {
         id: 'Disability',
         label: 'Disability',
-        info: '',
+        info: 'Source: Nigeria Living Standards Survey 2018-19',
         subcontrols: [
           {
             id: 'Disability', // matches .csv column name
@@ -1424,7 +1430,7 @@ export default [
       {
         id: 'electronic_appliance',
         label: 'Electronics and Appliances',
-        info: '',
+        info: 'Source: Nigeria Living Standards Survey 2018-19',
         subcontrols: [
           {
             id: 'Sewing Machine', // matches .csv column name
@@ -1616,7 +1622,7 @@ export default [
       {
         id: 'vehicles',
         label: 'Vehicles',
-        info: '',
+        info: 'Source: Nigeria Living Standards Survey 2018-19',
         subcontrols: [
           {
             id: 'Bicycle', // matches .csv column name
@@ -1681,7 +1687,7 @@ export default [
       {
         id: 'unemployment',
         label: 'Unemployment & Remittances',
-        info: '',
+        info: 'Source: National Bureau of Statistics, Labor Force Statistics: Unempoyment and Underemployment Report (Q4 2020) and Nigeria Living Standards Survey 2018-19',
         subcontrols: [
           //insert unemployment layers here
           {
@@ -1726,7 +1732,7 @@ export default [
       {
         id: 'roof',
         label: 'Roof Material',
-        info: '',
+        info: 'Source: Nigeria Living Standards Survey 2018-2019',
         subcontrols: [
           {
             id: 'Mud Roof', // matches .csv column name
@@ -1811,7 +1817,7 @@ export default [
       {
         id: 'wall_material',
         label: 'Wall Material',
-        info: '',
+        info: 'Source: Nigeria Living Standards Survey 2018-2019',
         subcontrols: [
           {
             id: 'Mud Walls', // matches .csv column name
@@ -1871,7 +1877,7 @@ export default [
       {
         id: 'floor_material',
         label: 'Floor Material',
-        info: '',
+        info: 'Source: Nigeria Living Standards Survey 2018-2019',
         subcontrols: [
           {
             id: 'Sand/Dirt/Straw Floor', // matches .csv column name
@@ -1939,7 +1945,7 @@ export default [
       {
         id: 'industry_participation',
         label: 'Industry Participation',
-        info: '',
+        info: 'Source: Nigeria Living Standards Survey 2018-2019',
         subcontrols: [
           {
             id: 'Participation in Wage Labor', // matches .csv column name
@@ -2037,7 +2043,7 @@ export default [
       {
         id: 'industry_wage_employment',
         label: 'Wage Employment by Industry',
-        info: 'The percent of individuals who earn a wage from working in a particular sector among all individuals who have wage employment.',
+        info: 'The percent of individuals who earn a wage from working in a particular sector among all individuals who have wage employment. Source: Nigeria Living Standards Survey 2018-2019',
         subcontrols: [
           {
             id: 'Wage Labor Agriculture', // matches .csv column name
