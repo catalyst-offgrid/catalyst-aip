@@ -221,15 +221,7 @@ export default [
       'circle-color': colors.accent4,
     },
   },
-  {
-    id: 'nigeria-substations',
-    source: 'nigeria-substations',
-    'source-layer': 'Nigeria_Substations-4t41q1',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent5,
-    },
-  },
+
   {
     id: 'nigeria-gridfinder',
     source: 'nigeria-gridfinder',

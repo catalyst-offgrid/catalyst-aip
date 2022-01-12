@@ -19,7 +19,7 @@ export default [
     label: 'Administrative Boundaries',
     icon: AdminBoundaries,
     description: '',
-    info: '',
+    info: 'Source: UN OCHA',
     controls: [
       {
         id: 'nigeria-states',
@@ -27,7 +27,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['nigeria-states'],
-        info: '',
+        info: 'Source: UN OCHA',
       },
       {
         id: 'nigeria-lgas',
@@ -35,7 +35,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['nigeria-lgas'],
-        info: '',
+        info: 'Source: UN OCHA',
       },
       // Website breaks if you remove layers with "id: 'counties'" so code below is work-around. 
       // Bug has been recorded. Fix pending.
@@ -45,7 +45,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['nigeria-wards', 'admin-1-boundary', 'admin-1-boundary-bg'],
-        info: '',
+        info: 'Source: UN OCHA',
       },
       /* Due to 'counties' bug, this layer has been merged with the 'counties' layer. When bug fixed, implement 
       this layer for wards. 
@@ -215,14 +215,7 @@ export default [
             layerIds: ['nigeria-natural-gas-power-plants'],
             info: 'Source: Global Energy Monitor Global Gas Plant Tracker',
           },
-          {
-            id: 'nigeria-substations',
-            label: 'Substations',
-            defaultVisibility: false,
-            legend: 'none',
-            layerIds: ['nigeria-substations'],
-            info: '',
-          },
+
           {
             id: 'nigeria-gridfinder',
             label: 'Gridfinder MV/HV Lines',
@@ -456,7 +449,7 @@ export default [
         id: 'healthFacs',
         label: 'Health Facilities',
         info:
-          'Displays the locations of the health facilities in Nigeria by the facility type.',
+          'Displays the locations of the health facilities in Nigeria by the facility type. Source: eHealth Africa',
         subcontrols: [
           {
             id: 'nigeria-health-centers',
@@ -464,7 +457,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-health-centers'],
-            info: '',
+            info: 'Source: eHealth Africa',
           },
           {
             id: 'nigeria-compHC-cottage-hospitals',
@@ -472,7 +465,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-compHC-cottage-hospitals'],
-            info: '',
+            info: 'Source: eHealth Africa',
           },
           {
             id: 'nigeria-hospitals',
@@ -480,7 +473,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-hospitals'],
-            info: '',
+            info: 'Source: eHealth Africa',
           },
           {
             id: 'nigeria-dispensaries',
@@ -488,7 +481,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-dispensaries'],
-            info: '',
+            info: 'Source: eHealth Africa',
           },
           {
             id: 'nigeria-fed-health-facilities',
@@ -496,7 +489,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-fed-health-facilities'],
-            info: '',
+            info: 'Source: eHealth Africa',
           },
           {
             id: 'nigeria-maternity-homes',
@@ -504,7 +497,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-maternity-homes'],
-            info: '',
+            info: 'Source: eHealth Africa',
           },
         ],
       },
@@ -512,7 +505,7 @@ export default [
         id: 'education',
         label: 'Education Facilities',
         info:
-          'Displays the locations of the education facilities in Nigeria by the facility type.',
+          'Displays the locations of the education facilities in Nigeria by the facility type. Source: Nigeria NMIS facility database',
         subcontrols: [
           {
             id: 'nigeria-preprimary',
@@ -520,7 +513,7 @@ export default [
             defaultVisibility: false,
             legend: { type: 'circle', color: colors.accent3 },
             layerIds: ['nigeria-preprimary'],
-            info: '',
+            info: 'Source: Nigeria NMIS facility database',
           },
           {
             id: 'nigeria-reg-primary',
@@ -528,7 +521,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-reg-primary'],
-            info: '',
+            info: 'Source: Nigeria NMIS facility database',
           },
           {
             id: 'nigeria-standard-primary',
@@ -536,7 +529,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-standard-primary'],
-            info: '',
+            info: 'Source: Nigeria NMIS facility database',
           },
           {
             id: 'nigeria-secondary',
@@ -544,7 +537,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-secondary'],
-            info: '',
+            info: 'Source: Nigeria NMIS facility database',
           },
           {
             id: 'nigeria-tertiary',
@@ -552,7 +545,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-tertiary'],
-            info: '',
+            info: 'Source: Nigeria NMIS facility database',
           },
         ],
       },
@@ -569,7 +562,7 @@ export default [
         id: 'popAndMovement',
         label: 'Population and Movement',
         info:
-          'Source: Nigeria Living Standards Survey 2018-2019',
+          'Sources: Facebook Data for Good, GRID3, Nigeria Living Standards Survey 2018-2019',
         subcontrols: [
           {
             id: 'Percent Male', // matches .csv column name
@@ -603,7 +596,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-pop-density'],
-            info: '',
+            info: 'Source: Facebook Data for Good',
           },
           {
             id: 'nigeria-built-extent',
@@ -611,7 +604,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-built-extent'],
-            info: '',
+            info: 'Source: GRID3',
           },
           {
             id: 'nigeria-comm-risk',
@@ -619,14 +612,14 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-comm-risk'],
-            info: '',
+            info: 'Source: GRID3',
           },
         ],
       },
       {
         id: 'ageRanges',
         label: 'Age Ranges',
-        info: 'Breakdown of the regions by the age of their population.',
+        info: 'Breakdown of states by the age of their population. Source: Nigeria Living Standards Survey 2018-2019.',
         subcontrols: [
           {
             id: 'Percent Population Age 0-5', // matches .csv column name
@@ -699,7 +692,7 @@ export default [
         id: 'householdChar',
         label: 'Household Characteristics',
         info:
-          'Descriptive statistics of the households located in each region.',
+          'Descriptive statistics of the households located in each state. Source: Nigeria Living Standards Survey 2018-2019',
         subcontrols: [
           {
             id: 'Average Household Size', // matches .csv column name
@@ -744,7 +737,7 @@ export default [
     label: 'Infrastructure',
     icon: Public,
     description: '',
-    info: '',
+    info: 'Sources: GRID3, eHealth Africa',
     controls: [
       {
         id: 'nigeria-farms',
@@ -752,7 +745,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['nigeria-farms'],
-        info: '',
+        info: 'Source: eHealth Africa',
       },
       {
         id: 'nigeria-gov-buildings',
@@ -760,7 +753,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['nigeria-gov-buildings'],
-        info: '',
+        info: 'Source: eHealth Africa',
       },
       {
         id: 'nigeria-post-office',
@@ -768,7 +761,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['nigeria-post-office'],
-        info: '',
+        info: 'Source: eHealth Africa',
       },
       {
         id: 'nigeria-markets',
@@ -776,7 +769,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['nigeria-markets'],
-        info: '',
+        info: 'Source: eHealth Africa',
       },
       {
         id: 'nigeria-industrial-sites',
@@ -784,7 +777,7 @@ export default [
         defaultVisibility: false,
         legend: 'none',
         layerIds: ['nigeria-industrial-sites'],
-        info: '',
+        info: 'Source: GRID3',
       },
 
     ],
@@ -999,7 +992,7 @@ export default [
       {
         id: 'emergencyServices',
         label: 'Emergency Services',
-        info: '',
+        info: 'Source: GRID3',
         subcontrols: [
           {
             id: 'nigeria-fire-stations',
@@ -1007,7 +1000,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-fire-stations'],
-            info: '',
+            info: 'Source: GRID3',
           },
           {
             id: 'nigeria-police-stations',
@@ -1015,7 +1008,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-police-stations'],
-            info: '',
+            info: 'Source: GRID3',
           },
           {
             id: 'nigeria-prisons',
@@ -1023,7 +1016,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-prisons'],
-            info: '',
+            info: 'Source: GRID3',
           },
           {
             id: 'nigeria-idp-sites',
@@ -1031,7 +1024,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-idp-sites'],
-            info: '',
+            info: 'Source: GRID3',
           },
         ],
       },
@@ -1234,14 +1227,7 @@ export default [
         label: 'Source of Drinking Water (Dry Season)',
         info: 'Source: Nigeria Living Standards Survey 2018-19',
         subcontrols: [
-          {
-            id: 'nigeria-water-points',
-            label: 'Water Points',
-            defaultVisibility: false,
-            legend: 'none',
-            layerIds: ['nigeria-water-points'],
-            info: '',
-          },
+
           {
             id: 'Piped Water (Dry)', // matches .csv column name
             label: 'Piped Water',
@@ -1351,7 +1337,7 @@ export default [
       {
         id: 'waterPointsTreatement',
         label: 'Water Points and Water Treatment',
-        info: 'Source: Nigeria Living Standards Survey 2018-19',
+        info: 'Sources: Nigeria Living Standards Survey 2018-19, GRID3',
         subcontrols: [
           {
             id: 'nigeria-water-points',
@@ -1359,7 +1345,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-water-points'],
-            info: '',
+            info: 'Source: GRID3',
           },
           {
             id: 'Treat Water', // matches .csv column name

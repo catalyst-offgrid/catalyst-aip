@@ -158,11 +158,7 @@ export default {
       tilesetid: 'iandmuir.4vg0egnx',
     },
     // Power and Electricity
-    {
-      id: 'nigeria-substations',
-      layer: 'Nigeria_Substations-4t41q1',
-      tilesetid: 'iandmuir.9w22z0c4',
-    },
+
     {
       id: 'nigeria-gridfinder',
       layer: 'Nigeria_Gridfinder-2t65vi',
