@@ -29,7 +29,9 @@ if (!process.env.MAPBOX_ACCESS_TOKEN) {
 }
 
 export default {
-  mapboxAccessToken: process.env.MAPBOX_ACCESS_TOKEN,
+  mapboxAccessToken:
+    process.env.MAPBOX_ACCESS_TOKEN ||
+    'pk.eyJ1IjoiaWFuZG11aXIiLCJhIjoiY2sxcXQxZXZkMDBqZDNtb3M3ajA1ejU0cyJ9.frB-CuuWvPshMP8nHkP4gA',
   siteName: 'Access Insights Platform',
   siteAcronym: 'AIP',
   imageUrl:

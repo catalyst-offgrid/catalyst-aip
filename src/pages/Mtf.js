@@ -319,7 +319,7 @@ const mtfUiControls = [
               'https://raw.githubusercontent.com/JosephSemrai/mtf-graph-test/main/Amount_Spent_on_Fuel_for_Stoves.js',
           },
           {
-            id: 'Amount_Paid_for_Cookstoves',
+            id: 'Amount_Paid_For_Cookstoves',
             label: 'Amount Paid for Cookstoves',
             defaultVisibility: false,
             legend: 'none',
@@ -653,7 +653,7 @@ const VegaContainer = styled.section`
 export default function Mtf({ siteAcronym, siteName, config, theme }) {
   const { sources, layers, csv } = config
   const [state, dispatch] = useReducer(reducer, mtfUiControls, init)
-  const [selectedGraph, setSelectedGraph] = useState("")
+  const [selectedGraph, setSelectedGraph] = useState('')
   const [selectedGraphData, setSelectedGraphData] = useState()
 
   const toggleLayer = (controlId) => {
@@ -674,19 +674,17 @@ export default function Mtf({ siteAcronym, siteName, config, theme }) {
   useEffect(() => {
     console.log('Fetching new graph')
 
-    if (selectedGraph === "") return;
+    if (selectedGraph === '') return
 
     fetch(
       `https://raw.githubusercontent.com/JosephSemrai/mtf-graph-test/main/${selectedGraph}.json`
     )
       .then((res) => res.json())
       .then((data) => {
-        
-        console.log("Async MTF graph retrieval: ", data) 
+        console.log('Async MTF graph retrieval: ', data)
         setSelectedGraphData(data)
-        })
-      .catch(e => alert("Failed to load: ", e))
-        
+      })
+      .catch((e) => alert('Failed to load: ', JSON.stringify(e)))
   }, [selectedGraph])
 
   return (
