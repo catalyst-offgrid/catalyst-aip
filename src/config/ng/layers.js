@@ -480,4 +480,84 @@ export default [
       'fill-opacity': mobileOpacity,
     },
   },
+  {
+    id: 'nga_rwi_-2_to_-1pt5',
+    source: 'nga_rwi_-2_to_-1pt5',
+    'source-layer': 'nga_rwi_-2_to_-1pt5-7e76sy',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent1,
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'nga_rwi_-1pt5_to_-1',
+    source: 'nga_rwi_-1pt5_to_-1',
+    'source-layer': 'nga_rwi_-1pt5_to_-1-71xfrr',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent2,
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'nga_rwi_-1_to_-0pt5',
+    source: 'nga_rwi_-1_to_-0pt5',
+    'source-layer': 'nga_rwi_-1_to_-0pt5-8ptq7j',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent3,
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'nga_rwi_-0pt5_to_0',
+    source: 'nga_rwi_-0pt5_to_0',
+    'source-layer': 'nga_rwi_-0pt5_to_0-74af6z',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent4,
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'nga_rwi_0_to_0pt5',
+    source: 'nga_rwi_0_to_0pt5',
+    'source-layer': 'nga_rwi_0_to_0pt5-6qcjzt',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent5,
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'nga_rwi_0pt5_to_1',
+    source: 'nga_rwi_0pt5_to_1',
+    'source-layer': 'nga_rwi_0pt5_to_1-8sq6hd',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent6,
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'nga_rwi_1_to_1pt5',
+    source: 'nga_rwi_1_to_1pt5',
+    'source-layer': 'nga_rwi_1_to_1pt5-6a37mg',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent7,
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'nga_rwi_1pt5_to_2',
+    source: 'nga_rwi_1pt5_to_2',
+    'source-layer': 'nga_rwi_1pt5_to_2-53re3l',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent8,
+      'circle-radius': 2
+    },
+  },
 ]

@@ -290,6 +290,46 @@ export default {
       layer: 'NG_All_Networks_4G-af2tt4',
       tilesetid: 'iandmuir.dpi5045h',
     },
+    {
+      id: 'nga_rwi_-2_to_-1pt5',
+      layer: 'nga_rwi_-2_to_-1pt5-7e76sy',
+      tilesetid: 'iandmuir.8f7v4i68',
+    },
+    {
+      id: 'nga_rwi_-1pt5_to_-1',
+      layer: 'nga_rwi_-1pt5_to_-1-71xfrr',
+      tilesetid: 'iandmuir.2w66wfl2',
+    },
+    {
+      id: 'nga_rwi_-1_to_-0pt5',
+      layer: 'nga_rwi_-1_to_-0pt5-8ptq7j',
+      tilesetid: 'iandmuir.c8wvj523',
+    },
+    {
+      id: 'nga_rwi_-0pt5_to_0',
+      layer: 'nga_rwi_-0pt5_to_0-74af6z',
+      tilesetid: 'iandmuir.5fivr4ws',
+    },
+    {
+      id: 'nga_rwi_0_to_0pt5',
+      layer: 'nga_rwi_0_to_0pt5-6qcjzt',
+      tilesetid: 'iandmuir.97phn5r6',
+    },
+    {
+      id: 'nga_rwi_0pt5_to_1',
+      layer: 'nga_rwi_0pt5_to_1-8sq6hd',
+      tilesetid: 'iandmuir.13reujdb',
+    },
+    {
+      id: 'nga_rwi_1_to_1pt5',
+      layer: 'nga_rwi_1_to_1pt5-6a37mg',
+      tilesetid: 'iandmuir.dpl095yc',
+    },
+    {
+      id: 'nga_rwi_1pt5_to_2',
+      layer: 'nga_rwi_1pt5_to_2-53re3l',
+      tilesetid: 'iandmuir.7g3fp3gj',
+    },
     /*
     *
     * Schools subsetted differently than from nigeria-secondary
