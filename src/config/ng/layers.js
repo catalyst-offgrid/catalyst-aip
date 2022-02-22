@@ -486,7 +486,7 @@ export default [
     'source-layer': 'nga_rwi_-2_to_-1pt5-7e76sy',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent1,
+      'circle-color': colors.rwi_accent1,
       'circle-radius': 2
     },
   },
@@ -496,7 +496,7 @@ export default [
     'source-layer': 'nga_rwi_-1pt5_to_-1-71xfrr',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent2,
+      'circle-color': colors.rwi_accent2,
       'circle-radius': 2
     },
   },
@@ -506,7 +506,7 @@ export default [
     'source-layer': 'nga_rwi_-1_to_-0pt5-8ptq7j',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent3,
+      'circle-color': colors.rwi_accent3,
       'circle-radius': 2
     },
   },
@@ -516,7 +516,7 @@ export default [
     'source-layer': 'nga_rwi_-0pt5_to_0-74af6z',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent4,
+      'circle-color': colors.rwi_accent4,
       'circle-radius': 2
     },
   },
@@ -526,7 +526,7 @@ export default [
     'source-layer': 'nga_rwi_0_to_0pt5-6qcjzt',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent5,
+      'circle-color': colors.rwi_accent5,
       'circle-radius': 2
     },
   },
@@ -536,7 +536,7 @@ export default [
     'source-layer': 'nga_rwi_0pt5_to_1-8sq6hd',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent6,
+      'circle-color': colors.rwi_accent6,
       'circle-radius': 2
     },
   },
@@ -546,7 +546,7 @@ export default [
     'source-layer': 'nga_rwi_1_to_1pt5-6a37mg',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent7,
+      'circle-color': colors.rwi_accent7,
       'circle-radius': 2
     },
   },
@@ -556,7 +556,7 @@ export default [
     'source-layer': 'nga_rwi_1pt5_to_2-53re3l',
     type: 'circle',
     paint: {
-      'circle-color': colors.accent8,
+      'circle-color': colors.rwi_accent8,
       'circle-radius': 2
     },
   },

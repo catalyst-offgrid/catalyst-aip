@@ -30,6 +30,16 @@ export default {
     accent9: '#fb6a4a',
     accent10: '#de2d26',
     accent11: '#a50f15',
+
+    // Facebook/Meta Data For Good Relative Wealth Index colors (based on accent3)
+    rwi_accent1: '#fee5cd',
+    rwi_accent2: '#fdca9b',
+    rwi_accent3: '#fcb069',
+    rwi_accent4: '#fb9637',
+    rwi_accent5: '#fa7b05',
+    rwi_accent6: '#c86304',
+    rwi_accent7: '#964a03',
+    rwi_accent8: '#643102',
   },
   fonts: {
     body: 'Open Sans, sans-serif',
