@@ -10,6 +10,8 @@ import Info from './pages/Info'
 
 import config from './config'
 import Mtf from './pages/Mtf'
+import { kenyaMtfUiControls } from './config/ke/mtfUiControls'
+import { nigeriaMtfUiControls } from './config/ng/mtfUiControls'
 
 export default function App() {
   return (
@@ -70,12 +72,23 @@ export default function App() {
             theme={config.theme}
           />
         </Route>
-        <Route path='/mtf'>
+        <Route path='/mtf/ng'>
+          <Mtf
+            siteAcronym={config.siteAcronym}
+            siteName={config.siteName}
+            config={config.ng}
+            theme={config.theme}
+            mtfUiControls={nigeriaMtfUiControls}
+          />
+        </Route>
+
+        <Route path='/mtf/ke'>
           <Mtf
             siteAcronym={config.siteAcronym}
             siteName={config.siteName}
             config={config.ke}
             theme={config.theme}
+            mtfUiControls={kenyaMtfUiControls}
           />
         </Route>
         <Route path='/info'>

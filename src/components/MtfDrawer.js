@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import styled, { ThemeContext } from 'styled-components'
-import { ArrowLoop, Download } from '../icons'
+import { Download } from '../icons'
 
 import MtfHeader from './MtfHeader'
 //import Credits from './Credits'

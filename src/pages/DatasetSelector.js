@@ -81,7 +81,11 @@ export default function DatasetSelector({ siteAcronym, imageUrl, theme }) {
           >
             Geospatial
           </PrimaryButton>
-          <PrimaryButton to='/mtf' aria-label='mtf' data-cy='explore-button'>
+          <PrimaryButton
+            to='/mtf/ke'
+            aria-label='kenya-mtf'
+            data-cy='mtf-kenya-button'
+          >
             MTF
           </PrimaryButton>
         </Actions>
@@ -111,6 +115,20 @@ export default function DatasetSelector({ siteAcronym, imageUrl, theme }) {
             data-cy='explore-button'
           >
             Geospatial
+          </PrimaryButton>
+        </Actions>
+
+        <SecondaryTagline>
+          <br />
+          Nigeria (Beta)
+        </SecondaryTagline>
+        <Actions>
+          <PrimaryButton
+            to='/mtf/ng'
+            aria-label='nigeria-mtf'
+            data-cy='mtf-nigeria'
+          >
+            MTF
           </PrimaryButton>
         </Actions>
       </Introduction>
