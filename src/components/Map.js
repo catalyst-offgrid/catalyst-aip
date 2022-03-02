@@ -15,9 +15,8 @@ export default function Map({ center, zoom, children }) {
   useLayoutEffect(() => {
     const m = new mapbox.Map({
       container: ref.current,
-      //style: 'mapbox://styles/iandmuir/ckhom8rti07cy19pclrmewimq', // use this for high contrast roads
+      //style: 'mapbox://styles/iandmuir/ckhom8rti07cy19pclrmewimq', // try to use this map for skinnier roads
       style: 'mapbox://styles/mapbox/light-v10',
-      //style: 'mapbox://styles/iandmuir/ckz75nxgs001316odpq9h7nyn', // Monochrome Skinny Roads
       center,
       zoom,
       customAttribution:
