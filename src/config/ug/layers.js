@@ -420,4 +420,74 @@ export default [
       'circle-color': colors.accent4,
     },
   },
+  {
+    id: 'uga_rwi_-1pt5_to_-1',
+    source: 'uga_rwi_-1pt5_to_-1',
+    'source-layer': 'uga_rwi_-1pt5_to_-1-7g5wnt',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.rwi_accent2, // start with 2 because no RWI -2 to -1.5 for Uganda
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'uga_rwi_-1_to_-0pt5',
+    source: 'uga_rwi_-1_to_-0pt5',
+    'source-layer': 'uga_rwi_-1_to_-0pt5-dimaog',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.rwi_accent3, // start with 2 because no RWI -2 to -1.5 for Uganda
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'uga_rwi_-0pt5_to_0',
+    source: 'uga_rwi_-0pt5_to_0',
+    'source-layer': 'uga_rwi_-0pt5_to_0-du16a3',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.rwi_accent4,
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'uga_rwi_0_to_0pt5',
+    source: 'uga_rwi_0_to_0pt5',
+    'source-layer': 'uga_rwi_0_to_0pt5-ccxfh2',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.rwi_accent5,
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'uga_rwi_0pt5_to_1',
+    source: 'uga_rwi_0pt5_to_1',
+    'source-layer': 'uga_rwi_0pt5_to_1-4pfpaa',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.rwi_accent6,
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'uga_rwi_1_to_1pt5',
+    source: 'uga_rwi_1_to_1pt5',
+    'source-layer': 'uga_rwi_1_to_1pt5-8cvfb6',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.rwi_accent7,
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'uga_rwi_1pt_to_2',
+    source: 'uga_rwi_1pt_to_2',
+    'source-layer': 'uga_rwi_1pt5_to_2-29robb',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.rwi_accent8,
+      'circle-radius': 2
+    },
+  },
 ]

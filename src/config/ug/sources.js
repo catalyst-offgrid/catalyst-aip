@@ -246,6 +246,41 @@ export default {
       layer: 'Uganda_BuiltAreaExtent-bqh9nl',
       tilesetid: 'iandmuir.ateg8f5q',
     },
+    {
+      id: 'uga_rwi_-1pt5_to_-1',
+      layer: 'uga_rwi_-1pt5_to_-1-7g5wnt',
+      tilesetid: 'iandmuir.3iojnqvj',
+    },
+    {
+      id: 'uga_rwi_-1_to_-0pt5',
+      layer: 'uga_rwi_-1_to_-0pt5-dimaog',
+      tilesetid: 'iandmuir.1qr3w6cv',
+    },
+    {
+      id: 'uga_rwi_-0pt5_to_0',
+      layer: 'uga_rwi_-0pt5_to_0-du16a3',
+      tilesetid: 'iandmuir.bokwy91b',
+    },
+    {
+      id: 'uga_rwi_0_to_0pt5',
+      layer: 'uga_rwi_0_to_0pt5-ccxfh2',
+      tilesetid: 'iandmuir.4o4psheq',
+    },
+    {
+      id: 'uga_rwi_0pt5_to_1',
+      layer: 'uga_rwi_0pt5_to_1-4pfpaa',
+      tilesetid: 'iandmuir.6z12s2ax',
+    },
+    {
+      id: 'uga_rwi_1_to_1pt5',
+      layer: 'uga_rwi_1_to_1pt5-8cvfb6',
+      tilesetid: 'iandmuir.bijaidtx',
+    },
+    {
+      id: 'uga_rwi_1pt_to_2',
+      layer: 'uga_rwi_1pt5_to_2-29robb',
+      tilesetid: 'iandmuir.71i6ehgs',
+    },
   ],
   /**
    * GeoJSON Datasets

@@ -1720,7 +1720,7 @@ export default [
         label: 'Relative Wealth Index',
         info: 'The Relative Wealth Index predicts the relative standard of living within countries. Each point represents the centroid of a relative wealth prediction for an area covering 2.4 sq km. Index values range from -10 for least relative wealth to 10 for most relative wealth. Source: Meta Data For Good',
         subcontrols: [
-          //insert unemployment layers here
+          
           {
             id: 'nga_rwi_-2_to_-1pt5',
             label: 'RWI -2 to -1.5',
