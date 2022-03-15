@@ -1727,7 +1727,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nga_rwi_-2_to_-1pt5'],
-            info: 'RWI range inclusive of -2 to -1.501, Source: Meta Data for Good',
+            info: 'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
           },
           {
             id: 'nga_rwi_-1pt5_to_-1',
@@ -1735,7 +1735,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nga_rwi_-1pt5_to_-1'],
-            info: 'RWI range inclusive of -1.5 to -1.001, Source: Meta Data for Good',
+            info: 'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
           },
           {
             id: 'nga_rwi_-1_to_-0pt5',
@@ -1743,7 +1743,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nga_rwi_-1_to_-0pt5'],
-            info: 'RWI range inclusive of -1 to -0.501, Source: Meta Data for Good',
+            info: 'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
           },
           {
             id: 'nga_rwi_-0pt5_to_0',
@@ -1751,7 +1751,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nga_rwi_-0pt5_to_0'],
-            info: 'RWI range inclusive of -0.5 to -0.001, Source: Meta Data for Good',
+            info: 'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
           },
           {
             id: 'nga_rwi_0_to_0pt5',
@@ -1759,7 +1759,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nga_rwi_0_to_0pt5'],
-            info: 'RWI range inclusive of 0 to 0.499, Source: Meta Data for Good',
+            info: 'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
           },
           {
             id: 'nga_rwi_0pt5_to_1',
@@ -1767,7 +1767,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nga_rwi_0pt5_to_1'],
-            info: 'RWI range inclusive of 0.5 to 0.999, Source: Meta Data for Good',
+            info: 'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
           },
           {
             id: 'nga_rwi_1_to_1pt5',
@@ -1775,7 +1775,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nga_rwi_1_to_1pt5'],
-            info: 'RWI range inclusive of 1 to 1.499, Source: Meta Data for Good',
+            info: 'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
           },
           {
             id: 'nga_rwi_1pt5_to_2',
@@ -1783,7 +1783,7 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nga_rwi_1pt5_to_2'],
-            info: 'RWI range inclusive of 1.5 to 2, Source: Meta Data for Good',
+            info: 'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
           },
           /*
           {
