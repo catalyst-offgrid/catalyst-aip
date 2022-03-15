@@ -424,6 +424,76 @@ export default [
       'line-width': 1,
     },
   },
+  {
+    id: 'ken_rwi_-1pt5_to_-1',
+    source: 'ken_rwi_-1pt5_to_-1',
+    'source-layer': 'ken_rwi_-1pt5_to_-1-8ahsbv',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.rwi_accent2, // start with 2 because only 2 RWI points in -2 to -1.5 for Kenya
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'ken_rwi_-1_to_-0pt5',
+    source: 'ken_rwi_-1_to_-0pt5',
+    'source-layer': 'ken_rwi_-1_to_-0pt5-2qcyib',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.rwi_accent3, 
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'ken_rwi_-0pt5_to_0',
+    source: 'ken_rwi_-0pt5_to_0',
+    'source-layer': 'ken_rwi_-0pt5_to_0-dexk19',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.rwi_accent4, 
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'ken_rwi_0_to_0pt5',
+    source: 'ken_rwi_0_to_0pt5',
+    'source-layer': 'ken_rwi_0_to_0pt5-5q1e7e',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.rwi_accent5, 
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'ken_rwi_0pt5_to_1',
+    source: 'ken_rwi_0pt5_to_1',
+    'source-layer': 'ken_rwi_0pt5_to_1-d1ttka',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.rwi_accent6, 
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'ken_rwi_1_to_1pt5',
+    source: 'ken_rwi_1_to_1pt5',
+    'source-layer': 'ken_rwi_1_to_1pt5-2plcwt',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.rwi_accent7, 
+      'circle-radius': 2
+    },
+  },
+  {
+    id: 'ken_rwi_1pt5_to_2',
+    source: 'ken_rwi_1pt5_to_2',
+    'source-layer': 'ken_rwi_1pt5_to_2-aw8i4j',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.rwi_accent8, 
+      'circle-radius': 2
+    },
+  },
   // {
   //   id: 'ke_built_areas',
   //   source: 'ke_built_areas',

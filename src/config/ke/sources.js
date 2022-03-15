@@ -263,6 +263,41 @@ export default {
       layer: 'Kenya_Roads-4sztzy',
       tilesetid: 'iandmuir.co7fwwip',
     },
+    {
+      id: 'ken_rwi_-1pt5_to_-1',
+      layer: 'ken_rwi_-1pt5_to_-1-8ahsbv',
+      tilesetid: 'iandmuir.6r4yoygg',
+    },
+    {
+      id: 'ken_rwi_-1_to_-0pt5',
+      layer: 'ken_rwi_-1_to_-0pt5-2qcyib',
+      tilesetid: 'iandmuir.atrxincv',
+    },
+    {
+      id: 'ken_rwi_-0pt5_to_0',
+      layer: 'ken_rwi_-0pt5_to_0-dexk19',
+      tilesetid: 'iandmuir.9snje2xf',
+    },
+    {
+      id: 'ken_rwi_0_to_0pt5',
+      layer: 'ken_rwi_0_to_0pt5-5q1e7e',
+      tilesetid: 'iandmuir.cphl8uoq',
+    },
+    {
+      id: 'ken_rwi_0pt5_to_1',
+      layer: 'ken_rwi_0pt5_to_1-d1ttka',
+      tilesetid: 'iandmuir.bc9f2wd3',
+    },
+    {
+      id: 'ken_rwi_1_to_1pt5',
+      layer: 'ken_rwi_1_to_1pt5-2plcwt',
+      tilesetid: 'iandmuir.0arga4x8',
+    },
+    {
+      id: 'ken_rwi_1pt5_to_2',
+      layer: 'ken_rwi_1pt5_to_2-aw8i4j',
+      tilesetid: 'iandmuir.cctqgmn1',
+    },
     // {
     //   id: 'ke_built_areas',
     //   layer: 'Kenya_BuiltAreaExtent-d16qwo',

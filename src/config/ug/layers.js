@@ -436,7 +436,7 @@ export default [
     'source-layer': 'uga_rwi_-1_to_-0pt5-dimaog',
     type: 'circle',
     paint: {
-      'circle-color': colors.rwi_accent3, // start with 2 because no RWI -2 to -1.5 for Uganda
+      'circle-color': colors.rwi_accent3, 
       'circle-radius': 2
     },
   },
