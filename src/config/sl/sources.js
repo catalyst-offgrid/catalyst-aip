@@ -196,6 +196,42 @@ export default {
       layer: 'Sierra_Leone_Minigrid-4mg3od',
       tilesetid: 'iandmuir.db2sk9ub',
     },
+    // Relative Wealth Index
+    {
+      id: 'sle_rwi_-1pt5_to_-1',
+      layer: 'sle_rwi_-1pt5_to_-1-ado8ck',
+      tilesetid: 'iandmuir.cj288zfk',
+    },
+    {
+      id: 'sle_rwi_-1_to_-0pt5',
+      layer: 'sle_rwi_-1_to_-0pt5-7rm63x',
+      tilesetid: 'iandmuir.4j6afjhn',
+    },
+    {
+      id: 'sle_rwi_-0pt5_to_0',
+      layer: 'sle_rwi_-0pt5_to_0-c77zjm',
+      tilesetid: 'iandmuir.bqu0cwlc',
+    },
+    {
+      id: 'sle_rwi_0_to_0pt5',
+      layer: 'sle_rwi_0_to_0pt5-3xrmnd',
+      tilesetid: 'iandmuir.3aqkvq5b',
+    },
+    {
+      id: 'sle_rwi_0pt5_to_1',
+      layer: 'sle_rwi_0pt5_to_1-6nfz7d',
+      tilesetid: 'iandmuir.0c8x0vwu',
+    },
+    {
+      id: 'sle_rwi_1_to_1pt5',
+      layer: 'sle_rwi_1_to_1pt5-3aocyb',
+      tilesetid: 'iandmuir.87yrq0oe',
+    },
+    {
+      id: 'sle_rwi_1pt5_to_2',
+      layer: 'sle_rwi_1pt5_to_2-28qkvr',
+      tilesetid: 'iandmuir.cr6pa259',
+    },
   ],
   /**
    * GeoJSON Datasets
