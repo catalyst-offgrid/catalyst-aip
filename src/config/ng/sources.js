@@ -164,6 +164,21 @@ export default {
       layer: 'Nigeria_Gridfinder-2t65vi',
       tilesetid: 'iandmuir.1rps7048',
     },
+    {
+      id: 'nigeria-natural-gas-power-plants',
+      layer: 'nga_operating_gas_power_plant-9nr02j',
+      tilesetid: 'iandmuir.4eko2eh0',
+    },
+    {
+      id: 'nga-proposed-natural-gas-power-plants',
+      layer: 'nga_proposed_gas_power_plants-a1tcep',
+      tilesetid: 'iandmuir.4q3ukz7e',
+    },
+    {
+      id: 'nga-minigrids',
+      layer: 'nga_minigrids-c862gb',
+      tilesetid: 'iandmuir.7qu2qig7',
+    },
     // Institutions and Services
     {
       id: 'nigeria-health-centers',
@@ -195,11 +210,7 @@ export default {
       layer: 'nga_maternity_homes-cdte3r',
       tilesetid: 'iandmuir.brkd6bud',
     },
-    {
-      id: 'nigeria-natural-gas-power-plants',
-      layer: 'nigera_natural_gas_power_plan-406mv4',
-      tilesetid: 'iandmuir.0p165ojd',
-    },
+    
     {
       id: 'NG-Glo-Mobile-Globacom-2G',
       layer: 'NG_Glo_Mobile_Globacom_2G-1z7jdb',

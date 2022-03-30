@@ -215,7 +215,14 @@ export default [
             layerIds: ['nigeria-natural-gas-power-plants'],
             info: 'Source: Global Energy Monitor Global Gas Plant Tracker',
           },
-
+          {
+            id: 'nga-proposed-natural-gas-power-plants',
+            label: 'Proposed Natural Gas Power Plants',
+            defaultVisibility: false,
+            legend: { type: 'circle', color: colors.accent4 },
+            layerIds: ['nga-proposed-natural-gas-power-plants'],
+            info: 'Source: Global Energy Monitor Global Gas Plant Tracker',
+          },
           {
             id: 'nigeria-gridfinder',
             label: 'Gridfinder MV/HV Lines',
@@ -223,6 +230,14 @@ export default [
             legend: { type: 'line', color: colors.accent9 },
             layerIds: ['nigeria-gridfinder'],
             info: 'Source: GridFinder predictive algorithm based on night lights imagery, estimating the location of high- and medium-voltage transmission lines, 2020',
+          },
+          {
+            id: 'nga-minigrids',
+            label: 'Mini-Grids',
+            defaultVisibility: false,
+            legend: { type: 'circle', color: colors.accent5 },
+            layerIds: ['nga-minigrids'],
+            info: 'Source: Nigeria Department of Climate Change, Rocky Mountain Institute (RMI), Green Village Electricity (GVE), Nigeria Rural Electrification Agency (REA)',
           },
         ],
       },

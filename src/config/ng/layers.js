@@ -293,11 +293,31 @@ export default [
   {
     id: 'nigeria-natural-gas-power-plants',
     source: 'nigeria-natural-gas-power-plants',
-    'source-layer': 'nigera_natural_gas_power_plan-406mv4',
+    'source-layer': 'nga_operating_gas_power_plant-9nr02j',
     type: 'circle',
     paint: {
       'circle-color': colors.accent6,
-      'circle-radius': 3
+      'circle-radius': 5
+    },
+  },
+  {
+    id: 'nga-proposed-natural-gas-power-plants',
+    source: 'nga-proposed-natural-gas-power-plants',
+    'source-layer': 'nga_proposed_gas_power_plants-a1tcep',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent7,
+      'circle-radius': 5
+    },
+  },
+  {
+    id: 'nga-minigrids',
+    source: 'nga-minigrids',
+    'source-layer': 'nga_minigrids-c862gb',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent8,
+      'circle-radius': 4
     },
   },
   {
