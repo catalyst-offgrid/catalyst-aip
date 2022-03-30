@@ -321,6 +321,16 @@ export default [
     },
   },
   {
+    id: 'nga-coal-plants',
+    source: 'nga-coal-plants',
+    'source-layer': 'nga_coal_plants-78k8u5',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent9,
+      'circle-radius': 5
+    },
+  },
+  {
     id: 'NG-Glo-Mobile-Globacom-2G',
     source: 'NG-Glo-Mobile-Globacom-2G',
     'source-layer': 'NG_Glo_Mobile_Globacom_2G-1z7jdb',

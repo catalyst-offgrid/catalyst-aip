@@ -224,6 +224,14 @@ export default [
             info: 'Source: Global Energy Monitor Global Gas Plant Tracker',
           },
           {
+            id: 'nga-coal-plants',
+            label: 'Coal Power Plants',
+            defaultVisibility: false,
+            legend: { type: 'circle', color: colors.accent5 },
+            layerIds: ['nga-coal-plants'],
+            info: 'Source: Global Energy Monitor Global Coal Plant Tracker',
+          },
+          {
             id: 'nigeria-gridfinder',
             label: 'Gridfinder MV/HV Lines',
             defaultVisibility: false,
@@ -239,6 +247,7 @@ export default [
             layerIds: ['nga-minigrids'],
             info: 'Source: Nigeria Department of Climate Change, Rocky Mountain Institute (RMI), Green Village Electricity (GVE), Nigeria Rural Electrification Agency (REA)',
           },
+          
         ],
       },
       /*

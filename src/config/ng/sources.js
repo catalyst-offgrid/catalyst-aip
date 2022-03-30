@@ -179,6 +179,11 @@ export default {
       layer: 'nga_minigrids-c862gb',
       tilesetid: 'iandmuir.7qu2qig7',
     },
+    {
+      id: 'nga-coal-plants',
+      layer: 'nga_coal_plants-78k8u5',
+      tilesetid: 'iandmuir.25074y0v',
+    },
     // Institutions and Services
     {
       id: 'nigeria-health-centers',
