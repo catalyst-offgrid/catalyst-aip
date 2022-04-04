@@ -176,8 +176,8 @@ export default {
     },
     {
       id: 'nga-minigrids',
-      layer: 'nga_minigrids-c862gb',
-      tilesetid: 'iandmuir.7qu2qig7',
+      layer: 'nga_minigrids-4qpf28',
+      tilesetid: 'iandmuir.cu4tm0sb',
     },
     {
       id: 'nga-coal-plants',

@@ -313,7 +313,7 @@ export default [
   {
     id: 'nga-minigrids',
     source: 'nga-minigrids',
-    'source-layer': 'nga_minigrids-c862gb',
+    'source-layer': 'nga_minigrids-4qpf28',
     type: 'circle',
     paint: {
       'circle-color': colors.accent8,
