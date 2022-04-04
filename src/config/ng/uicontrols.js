@@ -223,14 +223,7 @@ export default [
             layerIds: ['nga-proposed-natural-gas-power-plants'],
             info: 'Source: Global Energy Monitor Global Gas Plant Tracker',
           },
-          {
-            id: 'nga-coal-plants',
-            label: 'Coal Power Plants',
-            defaultVisibility: false,
-            legend: { type: 'circle', color: colors.accent5 },
-            layerIds: ['nga-coal-plants'],
-            info: 'Source: Global Energy Monitor Global Coal Plant Tracker',
-          },
+
           {
             id: 'nigeria-gridfinder',
             label: 'Gridfinder MV/HV Lines',
@@ -238,6 +231,21 @@ export default [
             legend: { type: 'line', color: colors.accent9 },
             layerIds: ['nigeria-gridfinder'],
             info: 'Source: GridFinder predictive algorithm based on night lights imagery, estimating the location of high- and medium-voltage transmission lines, 2020',
+          },
+        ],
+      },
+      {
+        id: 'isolated-power',
+        label: 'Isolated Power Systems',
+        info: 'Source: Global Energy Monitor, Nigeria Department of Climate Change',
+        subcontrols: [
+          {
+            id: 'nga-coal-plants',
+            label: 'Coal Power Plants',
+            defaultVisibility: false,
+            legend: { type: 'circle', color: colors.accent5 },
+            layerIds: ['nga-coal-plants'],
+            info: 'All coal power plants are captive plants serving onsite concrete manufacturing and electricity is not distributed to the national grid. Source: Global Energy Monitor Global Coal Plant Tracker',
           },
           {
             id: 'nga-minigrids',
@@ -247,19 +255,8 @@ export default [
             layerIds: ['nga-minigrids'],
             info: 'Source: Nigeria Department of Climate Change, Rocky Mountain Institute (RMI), Green Village Electricity (GVE), Nigeria Rural Electrification Agency (REA)',
           },
-          
         ],
       },
-      /*
-      {
-        id: 'mini-grid',
-        label: 'Mini Grid Electricity',
-        info: '',
-        subcontrols: [
-
-        ],
-      },
-      */
       {
         id: 'cookstoves',
         label: 'Cookstoves',
@@ -2241,21 +2238,6 @@ export default [
             layerIds: ['Wage Labor Public Administration'],
             info: 'Percent of people who, if they earn a wage, earn a wage in public administration. Source: Nigeria Living Standards Survey 2018-2019, Table 4.5',
           },
-        ],
-      },
-      {
-        id: 'livestock_fish',
-        label: 'Livestock & Fish',
-        info: '',
-        subcontrols: [
-          // Add layers here
-        ],
-      },
-      {
-        id: 'permanent_crops',
-        label: 'Permanent Crop Growth',
-        info: '',
-        subcontrols: [
         ],
       },
     ],
