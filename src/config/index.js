@@ -75,7 +75,7 @@ export default {
   ng: {
     country: 'Nigeria',
     countryCode: 'ng',
-    center: [9.072264, 7.491302],
+    center: [7.965012619574999, 9.019268362542883], // 7.491302, 9.072264],
     zoom: 6,
     layers: nglayers,
     sources: ngsources,
