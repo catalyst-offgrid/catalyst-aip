@@ -215,7 +215,7 @@ export default {
       layer: 'nga_maternity_homes-cdte3r',
       tilesetid: 'iandmuir.brkd6bud',
     },
-    
+
     {
       id: 'NG-Glo-Mobile-Globacom-2G',
       layer: 'NG_Glo_Mobile_Globacom_2G-1z7jdb',
@@ -346,6 +346,14 @@ export default {
       layer: 'nga_rwi_1pt5_to_2-53re3l',
       tilesetid: 'iandmuir.7g3fp3gj',
     },
+
+    // Nigeria Popup Fields
+    {
+      id: 'nga_synthetic_minigrids_1349-2a9ktv',
+      layer: 'nga_synthetic_minigrids_1349-2a9ktv',
+      tilesetid: 'iandmuir.84wnzjsq',
+    },
+
     /*
     *
     * Schools subsetted differently than from nigeria-secondary

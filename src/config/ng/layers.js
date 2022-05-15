@@ -193,7 +193,7 @@ export default [
       'circle-color': colors.accent8,
     },
   },
-  
+
   {
     id: 'nigeria-markets',
     source: 'nigeria-markets',
@@ -240,7 +240,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.accent1,
-      'circle-radius': 2
+      'circle-radius': 2,
     },
   },
   {
@@ -268,7 +268,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.accent4,
-      'circle-radius': 2
+      'circle-radius': 2,
     },
   },
   {
@@ -287,7 +287,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.accent6,
-      'circle-radius': 3
+      'circle-radius': 3,
     },
   },
   {
@@ -297,7 +297,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.accent6,
-      'circle-radius': 5
+      'circle-radius': 5,
     },
   },
   {
@@ -307,7 +307,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.accent7,
-      'circle-radius': 5
+      'circle-radius': 5,
     },
   },
   {
@@ -317,7 +317,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.accent8,
-      'circle-radius': 4
+      'circle-radius': 4,
     },
   },
   {
@@ -327,7 +327,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.accent9,
-      'circle-radius': 5
+      'circle-radius': 5,
     },
   },
   {
@@ -517,7 +517,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.rwi_accent1,
-      'circle-radius': 2
+      'circle-radius': 2,
     },
   },
   {
@@ -527,7 +527,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.rwi_accent2,
-      'circle-radius': 2
+      'circle-radius': 2,
     },
   },
   {
@@ -537,7 +537,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.rwi_accent3,
-      'circle-radius': 2
+      'circle-radius': 2,
     },
   },
   {
@@ -547,7 +547,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.rwi_accent4,
-      'circle-radius': 2
+      'circle-radius': 2,
     },
   },
   {
@@ -557,7 +557,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.rwi_accent5,
-      'circle-radius': 2
+      'circle-radius': 2,
     },
   },
   {
@@ -567,7 +567,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.rwi_accent6,
-      'circle-radius': 2
+      'circle-radius': 2,
     },
   },
   {
@@ -577,7 +577,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.rwi_accent7,
-      'circle-radius': 2
+      'circle-radius': 2,
     },
   },
   {
@@ -587,7 +587,19 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.rwi_accent8,
-      'circle-radius': 2
+      'circle-radius': 2,
+    },
+  },
+
+  // Nigeria Popup Fields
+  {
+    id: 'nga_synthetic_minigrids_1349-2a9ktv',
+    source: 'nga_synthetic_minigrids_1349-2a9ktv',
+    'source-layer': 'nga_synthetic_minigrids_1349-2a9ktv',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.rwi_accent8,
+      'circle-radius': 5,
     },
   },
 ]
