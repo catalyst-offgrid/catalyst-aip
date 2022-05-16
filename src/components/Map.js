@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useState, useRef } from 'react'
 import PropTypes from 'prop-types'
 import mapbox from 'mapbox-gl'
 import styled from 'styled-components'
+import { attachHandlersToMap } from '../config/interactivity'
 
 const MapContainer = styled.section`
   /* grid-column: 2 / span 9; */
@@ -33,33 +34,7 @@ export default function Map({ center, zoom, children }) {
         window.map = m
       }
 
-      // Handler for Synthetic Minigrid - todo: refactor for multiple layers
-      m.on('click', 'nga_synthetic_minigrids_1349-2a9ktv', (e) => {
-        // Copy coordinates array.
-        const coordinates = e.features[0].geometry.coordinates.slice()
-
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360
-        }
-
-        new mapbox.Popup()
-          .setLngLat(coordinates)
-          .setHTML(JSON.stringify(e.features[0].properties))
-          .addTo(m)
-      })
-
-      // Change the cursor to a pointer when the mouse is over the places layer.
-      m.on('mouseenter', 'nga_synthetic_minigrids_1349-2a9ktv', () => {
-        m.getCanvas().style.cursor = 'pointer'
-      })
-
-      // Change it back to a pointer when it leaves.
-      m.on('mouseleave', 'nga_synthetic_minigrids_1349-2a9ktv', () => {
-        m.getCanvas().style.cursor = ''
-      })
+      attachHandlersToMap(m)
     })
 
     return () => {
