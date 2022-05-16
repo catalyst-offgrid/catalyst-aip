@@ -74,3 +74,6 @@ yarn-error.log
 cypress/integration/examples/
 */cypress/videos
 */cypress/screenshots
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
