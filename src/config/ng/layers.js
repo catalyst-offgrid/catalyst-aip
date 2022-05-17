@@ -310,16 +310,7 @@ export default [
       'circle-radius': 5,
     },
   },
-  {
-    id: 'nga-minigrids',
-    source: 'nga-minigrids',
-    'source-layer': 'nga_minigrids-4qpf28',
-    type: 'circle',
-    paint: {
-      'circle-color': colors.accent8,
-      'circle-radius': 4,
-    },
-  },
+
   {
     id: 'nga-coal-plants',
     source: 'nga-coal-plants',
@@ -599,6 +590,16 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.rwi_accent8,
+      'circle-radius': 5,
+    },
+  },
+  {
+    id: 'nga_mini_grids-7r061j',
+    source: 'nga_mini_grids-7r061j',
+    'source-layer': 'nga_mini_grids-7r061j',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent10,
       'circle-radius': 5,
     },
   },

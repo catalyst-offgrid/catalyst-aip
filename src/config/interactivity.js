@@ -5,7 +5,7 @@ export const interactivityLayers = [
     id: 'nga_synthetic_minigrids_1349-2a9ktv',
     dataFields: [
       {
-        displayName: 'Size',
+        displayName: 'Size (kWp)',
         fieldName: 'Size',
       },
       {
@@ -47,6 +47,63 @@ export const interactivityLayers = [
       {
         displayName: 'State',
         fieldName: 'ADM1_EN',
+      },
+    ],
+  },
+  {
+    id: 'nga_mini_grids-7r061j',
+    dataFields: [
+      {
+        displayName: 'Project Name',
+        fieldName: 'Name',
+      },
+      {
+        displayName: 'Size (kWp)',
+        fieldName: 'Size (kWp)',
+      },
+      {
+        displayName: 'Organization',
+        fieldName: 'Organization',
+      },
+      {
+        displayName: 'Year Built',
+        fieldName: 'Year Built',
+      },
+      {
+        displayName: 'Status',
+        fieldName: 'Status',
+      },
+      {
+        displayName: 'Latitude',
+        fieldName: 'Latitude',
+      },
+      {
+        displayName: 'Longitude',
+        fieldName: 'Longitude',
+      },
+      {
+        displayName: 'Location Accuracy',
+        fieldName: 'Location Accuracy',
+      },
+      {
+        displayName: 'Community',
+        fieldName: 'Community',
+      },
+      {
+        displayName: 'LGA',
+        fieldName: 'LGA',
+      },
+      {
+        displayName: 'State',
+        fieldName: 'State',
+      },
+      {
+        displayName: 'Source',
+        fieldName: 'Source',
+      },
+      {
+        displayName: 'Notes',
+        fieldName: 'Note',
       },
     ],
   },

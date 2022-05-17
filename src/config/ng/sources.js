@@ -174,11 +174,7 @@ export default {
       layer: 'nga_proposed_gas_power_plants-a1tcep',
       tilesetid: 'iandmuir.4q3ukz7e',
     },
-    {
-      id: 'nga-minigrids',
-      layer: 'nga_minigrids-4qpf28',
-      tilesetid: 'iandmuir.cu4tm0sb',
-    },
+
     {
       id: 'nga-coal-plants',
       layer: 'nga_coal_plants-78k8u5',
@@ -352,6 +348,11 @@ export default {
       id: 'nga_synthetic_minigrids_1349-2a9ktv',
       layer: 'nga_synthetic_minigrids_1349-2a9ktv',
       tilesetid: 'iandmuir.84wnzjsq',
+    },
+    {
+      id: 'nga_mini_grids-7r061j',
+      layer: 'nga_mini_grids-7r061j',
+      tilesetid: 'iandmuir.amjuysyc',
     },
 
     /*

@@ -247,15 +247,7 @@ export default [
               'Source: GridFinder predictive algorithm based on night lights imagery, estimating the location of high- and medium-voltage transmission lines, 2020',
           },
 
-          // Popup Layer
-          {
-            id: 'nga_synthetic_minigrids_1349-2a9ktv',
-            label: 'Synthetic Minigrids',
-            defaultVisibility: false,
-            legend: { type: 'circle', color: colors.accent4 },
-            layerIds: ['nga_synthetic_minigrids_1349-2a9ktv'],
-            info: 'TODO',
-          },
+          
         ],
       },
       {
@@ -273,14 +265,22 @@ export default [
             info:
               'All coal power plants are captive plants serving onsite concrete manufacturing and electricity is not distributed to the national grid. Source: Global Energy Monitor Global Coal Plant Tracker',
           },
+          // Popup Layers
           {
-            id: 'nga-minigrids',
-            label: 'Mini-Grids',
+            id: 'nga_mini_grids-7r061j',
+            label: 'Mini-grids',
             defaultVisibility: false,
-            legend: { type: 'circle', color: colors.accent5 },
-            layerIds: ['nga-minigrids'],
-            info:
-              'Source: Nigeria Department of Climate Change, Rocky Mountain Institute (RMI), Green Village Electricity (GVE), Nigeria Rural Electrification Agency (REA)',
+            legend: { type: 'circle' },
+            layerIds: ['nga_mini_grids-7r061j'],
+            info: 'Source: Nigeria Department of Climate Change, Rocky Mountain Institute (RMI), Green Village Electricity (GVE), Nigeria Rural Electrification Agency (REA)',
+          },
+          {
+            id: 'nga_synthetic_minigrids_1349-2a9ktv',
+            label: 'Dummy Mini-grids',
+            defaultVisibility: false,
+            legend: { type: 'circle' },
+            layerIds: ['nga_synthetic_minigrids_1349-2a9ktv'],
+            info: 'Map layer created using dummy data.',
           },
         ],
       },
