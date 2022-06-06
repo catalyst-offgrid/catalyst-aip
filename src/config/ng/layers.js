@@ -583,6 +583,7 @@ export default [
   },
 
   // Nigeria Popup Fields
+  /*
   {
     id: 'nga_synthetic_minigrids_1349-2a9ktv',
     source: 'nga_synthetic_minigrids_1349-2a9ktv',
@@ -592,7 +593,7 @@ export default [
       'circle-color': colors.rwi_accent8,
       'circle-radius': 5,
     },
-  },
+  },*/
   {
     id: 'nga_mini_grids-7r061j',
     source: 'nga_mini_grids-7r061j',

@@ -120,15 +120,22 @@ export default function DatasetSelector({ siteAcronym, imageUrl, theme }) {
 
         <SecondaryTagline>
           <br />
-          Nigeria (Beta)
+          Nigeria
         </SecondaryTagline>
         <Actions>
           <PrimaryButton
+            to='/explore/ng'
+            aria-label='explore nigeria'
+            data-cy='explore-button'
+          >
+            Geospatial
+          </PrimaryButton>
+          <PrimaryButton
             to='/mtf/ng'
             aria-label='nigeria-mtf'
-            data-cy='mtf-nigeria'
+            data-cy='mtf-nigeria-button'
           >
-            MTF
+            MTF (Beta)
           </PrimaryButton>
         </Actions>
       </Introduction>

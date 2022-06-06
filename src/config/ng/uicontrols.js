@@ -274,6 +274,7 @@ export default [
             layerIds: ['nga_mini_grids-7r061j'],
             info: 'Source: Nigeria Department of Climate Change, Rocky Mountain Institute (RMI), Green Village Electricity (GVE), Nigeria Rural Electrification Agency (REA)',
           },
+          /*
           {
             id: 'nga_synthetic_minigrids_1349-2a9ktv',
             label: 'Dummy Mini-grids',
@@ -282,6 +283,7 @@ export default [
             layerIds: ['nga_synthetic_minigrids_1349-2a9ktv'],
             info: 'Map layer created using dummy data.',
           },
+          */
         ],
       },
       {

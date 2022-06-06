@@ -344,11 +344,11 @@ export default {
     },
 
     // Nigeria Popup Fields
-    {
+    /*{
       id: 'nga_synthetic_minigrids_1349-2a9ktv',
       layer: 'nga_synthetic_minigrids_1349-2a9ktv',
       tilesetid: 'iandmuir.84wnzjsq',
-    },
+    },*/
     {
       id: 'nga_mini_grids-7r061j',
       layer: 'nga_mini_grids-7r061j',
