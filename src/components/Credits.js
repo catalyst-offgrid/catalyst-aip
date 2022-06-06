@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 import UKAID_LOGO from '../../img/UKAID_LOGO.png'
 import A2EI_LOGO from '../../img/A2EI_LOGO.png'
-import CDC_LOGO from '../../img/CDC_LOGO.svg'
+//import CDC_LOGO from '../../img/CDC_LOGO.png'
+import BII_LOGO from '../../img/BII_LOGO.svg'
 import ESMAP_LOGO from '../../img/ESMAP_LOGO.png'
 
 const Container = styled.div`
@@ -27,7 +28,7 @@ export default function Credits() {
         src={A2EI_LOGO}
         height={60}
       />
-      <img alt='CDC Group plc' src={CDC_LOGO} height={60} />
+      <img alt='British International Investment plc' src={BII_LOGO} height={45} />
       <img alt='ESMAP plc' src={ESMAP_LOGO} height={50} />
     </Container>
   )
