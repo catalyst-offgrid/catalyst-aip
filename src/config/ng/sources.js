@@ -181,10 +181,19 @@ export default {
       tilesetid: 'iandmuir.25074y0v',
     },
     // Institutions and Services
+    /* Health Center Layer w/ only lat/long
     {
       id: 'nigeria-health-centers',
       layer: 'nga_health_centers-8st5dw',
       tilesetid: 'iandmuir.d9bheraa',
+    },
+    */
+
+    // Health center layer w/ extra fields
+    {
+      id: 'nigeria-health-centers-data',
+      layer: 'nga_health_centers_data-bz4o7z',
+      tilesetid: 'iandmuir.8hv36j8u',
     },
     {
       id: 'nigeria-compHC-cottage-hospitals',
@@ -212,6 +221,7 @@ export default {
       tilesetid: 'iandmuir.brkd6bud',
     },
 
+    // Mobile Coverage
     {
       id: 'NG-Glo-Mobile-Globacom-2G',
       layer: 'NG_Glo_Mobile_Globacom_2G-1z7jdb',

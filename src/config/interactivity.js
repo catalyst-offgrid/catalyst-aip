@@ -107,6 +107,39 @@ export const interactivityLayers = [
       },
     ],
   },
+  {
+    id: 'nigeria-health-centers-data',
+    dataFields: [
+      {
+        displayName: 'Facility Name',
+        fieldName: 'Facility Name',
+      },
+      {
+        displayName: 'Phone & Electricity Connection',
+        fieldName: 'Phone & Electricity Connection',
+      },
+      {
+        displayName: 'Refridgerated Vaccines',
+        fieldName: 'Refridgerated Vaccines',
+      },
+      {
+        displayName: 'Number Fulltime Nurses',
+        fieldName: 'Number Fulltime Nurses',
+      },
+      {
+        displayName: 'Survey Date',
+        fieldName: 'Survey Date',
+      },
+      {
+        displayName: 'Latitude',
+        fieldName: 'Latitude',
+      },
+      {
+        displayName: 'Longitude',
+        fieldName: 'Longitude',
+      },
+    ],
+  },
 ]
 
 export const attachHandlersToMap = (m) => {

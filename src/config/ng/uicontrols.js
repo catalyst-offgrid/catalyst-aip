@@ -515,12 +515,22 @@ export default [
         info:
           'Displays the locations of the health facilities in Nigeria by the facility type. Source: eHealth Africa',
         subcontrols: [
+          /*
           {
             id: 'nigeria-health-centers',
             label: 'Health Centers',
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['nigeria-health-centers'],
+            info: 'Source: eHealth Africa',
+          },
+          */
+          {
+            id: 'nigeria-health-centers-data',
+            label: 'Health Centers',
+            defaultVisibility: false,
+            legend: 'none',
+            layerIds: ['nigeria-health-centers-data'],
             info: 'Source: eHealth Africa',
           },
           {

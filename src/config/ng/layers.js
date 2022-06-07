@@ -233,10 +233,22 @@ export default [
       'line-width': 1,
     },
   },
+  /*
   {
     id: 'nigeria-health-centers',
     source: 'nigeria-health-centers',
     'source-layer': 'nga_health_centers-8st5dw',
+    type: 'circle',
+    paint: {
+      'circle-color': colors.accent1,
+      'circle-radius': 2,
+    },
+  },
+  */
+  {
+    id: 'nigeria-health-centers-data',
+    source: 'nigeria-health-centers-data',
+    'source-layer': 'nga_health_centers_data-bz4o7z',
     type: 'circle',
     paint: {
       'circle-color': colors.accent1,
