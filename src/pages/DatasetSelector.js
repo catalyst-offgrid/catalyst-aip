@@ -128,7 +128,7 @@ export default function DatasetSelector({ siteAcronym, imageUrl, theme }) {
             aria-label='explore nigeria'
             data-cy='explore-button'
           >
-            Geospatial
+            Geospatial (Beta)
           </PrimaryButton>
           <PrimaryButton
             to='/mtf/ng'
