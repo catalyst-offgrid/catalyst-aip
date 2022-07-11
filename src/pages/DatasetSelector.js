@@ -92,7 +92,7 @@ export default function DatasetSelector({ siteAcronym, imageUrl, theme }) {
 
         <SecondaryTagline>
           <br />
-          Uganda (Beta)
+          Uganda
         </SecondaryTagline>
         <Actions>
           <PrimaryButton
@@ -106,7 +106,7 @@ export default function DatasetSelector({ siteAcronym, imageUrl, theme }) {
 
         <SecondaryTagline>
           <br />
-          Sierra Leone (Beta)
+          Sierra Leone
         </SecondaryTagline>
         <Actions>
           <PrimaryButton
@@ -128,14 +128,14 @@ export default function DatasetSelector({ siteAcronym, imageUrl, theme }) {
             aria-label='explore nigeria'
             data-cy='explore-button'
           >
-            Geospatial (Beta)
+            Geospatial
           </PrimaryButton>
           <PrimaryButton
             to='/mtf/ng'
             aria-label='nigeria-mtf'
             data-cy='mtf-nigeria-button'
           >
-            MTF (Beta)
+            MTF
           </PrimaryButton>
         </Actions>
       </Introduction>
