@@ -3,8 +3,17 @@
 * Most new styles should be introduced via styled-components, not this file.
 */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -15,4 +24,32 @@ body {
 
 #app {
   height: 100%;
+}
+
+::selection {
+  background: #dbdeef;
+}
+
+/* Visible keyboard focus everywhere, without flashing on mouse clicks */
+:focus-visible {
+  outline: 3px solid #f98e08;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Slim, unobtrusive scrollbars for panels */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c4c9d4 transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #c4c9d4;
+  border-radius: 999px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
 }

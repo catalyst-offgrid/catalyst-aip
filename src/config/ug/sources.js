@@ -41,9 +41,9 @@ export default {
   vector: [
     // Administrative Boundaries
     //{
-      //id: 'uganda-borders',
-      //layer: 'Uganda_Borders-bcqe2h',
-      //tilesetid: 'iandmuir.72xmwm7z',
+    //id: 'uganda-borders',
+    //layer: 'Uganda_Borders-bcqe2h',
+    //tilesetid: 'iandmuir.72xmwm7z',
     //},
     {
       id: 'uganda-regions',
@@ -166,7 +166,7 @@ export default {
     {
       id: 'uganda-healthsites',
       layer: 'Uganda_Healthsites-54ktyh',
-      tilesetid: 'iandmuir.ccgwvn9i'
+      tilesetid: 'iandmuir.ccgwvn9i',
     },
     // Financial Facilities
     {
@@ -291,6 +291,5 @@ export default {
    *  data: 'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_10m_ports.geojson'
    * });
    */
-  geojson: [
-  ],
+  geojson: [],
 }

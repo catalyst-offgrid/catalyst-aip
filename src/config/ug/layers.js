@@ -427,7 +427,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.rwi_accent2, // start with 2 because no RWI -2 to -1.5 for Uganda
-      'circle-radius': 2
+      'circle-radius': 2,
     },
   },
   {
@@ -436,8 +436,8 @@ export default [
     'source-layer': 'uga_rwi_-1_to_-0pt5-dimaog',
     type: 'circle',
     paint: {
-      'circle-color': colors.rwi_accent3, 
-      'circle-radius': 2
+      'circle-color': colors.rwi_accent3,
+      'circle-radius': 2,
     },
   },
   {
@@ -447,7 +447,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.rwi_accent4,
-      'circle-radius': 2
+      'circle-radius': 2,
     },
   },
   {
@@ -457,7 +457,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.rwi_accent5,
-      'circle-radius': 2
+      'circle-radius': 2,
     },
   },
   {
@@ -467,7 +467,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.rwi_accent6,
-      'circle-radius': 2
+      'circle-radius': 2,
     },
   },
   {
@@ -477,7 +477,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.rwi_accent7,
-      'circle-radius': 2
+      'circle-radius': 2,
     },
   },
   {
@@ -487,7 +487,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.rwi_accent8,
-      'circle-radius': 2
+      'circle-radius': 2,
     },
   },
 ]

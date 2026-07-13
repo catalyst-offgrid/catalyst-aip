@@ -2,60 +2,18 @@ import PropTypes from 'prop-types'
 import React, { useReducer, useEffect, useState } from 'react'
 
 import PageLayout from '../components/PageLayout'
-import Drawer from '../components/Drawer'
-import Map from '../components/Map'
-import Source from '../components/Source'
-import Layer from '../components/Layer'
-import CsvLayers from '../components/CsvLayers'
-import BasemapLayers from '../components/BasemapLayers'
 
 import { Vega } from 'react-vega'
 
 import GraphControl from '../components/GraphControl'
 
-import LayerControl from '../components/LayerControl'
 import MtfDrawer from '../components/MtfDrawer'
-import VisualizationSelector from '../components/VisualizationSelector'
 import styled from 'styled-components'
-
-// import vegaData from '../assets/mtf-graphs'
-
-/**
- * Searches for the given layer id in the controls and subcontrols.
- * Returns the first control id that contains the layer id.
- * @param {String} layerId the id of a layer that should be controlled
- */
-function getControlIdForLayer(layerId, uicontrols) {
-  let id
-  uicontrols.map((group) => {
-    group.controls.map((control) => {
-      if (control.subcontrols) {
-        control.subcontrols.find((subcontrol) => {
-          if (subcontrol.layerIds.includes(layerId)) {
-            id = subcontrol.id
-            return true
-          }
-          return false
-        })
-      }
-
-      if (control.layerIds && control.layerIds.includes(layerId)) {
-        id = control.id
-        return true
-      }
-      return false
-    })
-  })
-
-  if (!id)
-    console.warn(`Layer "${layerId}" is not assigned to any control group.`)
-  return id
-}
 
 const HelpMessage = styled.h3`
   color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.fonts.heading};
-  font-size: ${({ theme }) => theme.fontSizes[2]}pt;
+  font-size: ${({ theme }) => theme.fontSizes[2]}px;
   font-weight: ${({ theme }) => theme.fontWeights.heading};
   margin: 30px;
   padding: 30px;
@@ -121,6 +79,8 @@ function reducer(state, action) {
 
 const VegaContainer = styled.section`
   grid-area: content;
+  min-width: 0;
+  overflow: auto;
 `
 export default function Mtf({
   siteAcronym,
@@ -129,7 +89,6 @@ export default function Mtf({
   theme,
   mtfUiControls,
 }) {
-  const { sources, layers, csv } = config
   const [state, dispatch] = useReducer(reducer, mtfUiControls, init)
   const [selectedGraph, setSelectedGraph] = useState('')
   const [selectedGraphData, setSelectedGraphData] = useState()
@@ -141,13 +100,6 @@ export default function Mtf({
   const changeSlider = (payload) => {
     dispatch({ type: 'setSlider', payload })
   }
-  const clearAll = () => {
-    dispatch({ type: 'reset', payload: mtfUiControls })
-  }
-
-  const hasSelectedLayers = Object.values(state).some(
-    (control) => control.visibility
-  )
 
   useEffect(() => {
     console.log('Fetching new graph')
@@ -171,8 +123,6 @@ export default function Mtf({
         siteName={siteName}
         country={config.country}
         cc={config.countryCode}
-        clearAll={clearAll}
-        hasSelectedLayers={hasSelectedLayers}
       >
         <GraphControl
           uiState={state}
@@ -192,7 +142,11 @@ export default function Mtf({
         ) : (
           <Vega
             height={250}
-            style={{ height: '100%', width: '100%', padding: '50px' }}
+            style={{
+              height: '100%',
+              width: '100%',
+              padding: 'clamp(16px, 4vw, 48px)',
+            }}
             spec={selectedGraphData}
           />
         )}
@@ -215,4 +169,5 @@ Mtf.propTypes = {
     csv: PropTypes.string.isRequired,
   }),
   theme: PropTypes.object.isRequired,
+  mtfUiControls: PropTypes.array.isRequired,
 }

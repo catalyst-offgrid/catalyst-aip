@@ -65,31 +65,31 @@ export default {
       tilesetid: 'iandmuir.0yw0gux0',
     },
     // Health Facilities
-   // {
+    // {
     //  id: 'sierra-leone-pharmacy',
     // layer: 'Sierra_Leone_Pharmacies-cz5yed',
-     // tilesetid: 'iandmuir.5me2tui9',
-   // },
+    // tilesetid: 'iandmuir.5me2tui9',
+    // },
     //{
-      // id: 'sierra-leone-clinics',
-      // layer: 'Sierra_Leone_Clinics-c1m1du',
-      // tilesetid: 'iandmuir.3lchkrw3',
-   // },
-   // {
+    // id: 'sierra-leone-clinics',
+    // layer: 'Sierra_Leone_Clinics-c1m1du',
+    // tilesetid: 'iandmuir.3lchkrw3',
+    // },
+    // {
     //  id: 'sierra-leone-dentists',
     //  layer: 'Sierra_Leone_Dentists-9md7qv',
     //  tilesetid: 'iandmuir.cwa6dkci',
-   // },
+    // },
     // {
     //  id: 'sierra-leone-doctors',
     //  layer: 'Sierra_Leone_Doctors-br6e0v',
     //  tilesetid: 'iandmuir.dcv47eyc',
-   // },
+    // },
     //{
     //  id: 'sierra-leone-hospital',
-     // layer: 'Sierra_Leone_Hospitals-193kwh',
+    // layer: 'Sierra_Leone_Hospitals-193kwh',
     //  tilesetid: 'iandmuir.7pdvami3',
-   // },
+    // },
     {
       id: 'sierra-leone-hospitals',
       layer: 'sierra_leone_hospitals-drxwsx',

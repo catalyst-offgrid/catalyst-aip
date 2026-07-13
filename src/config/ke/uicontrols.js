@@ -1496,7 +1496,8 @@ export default [
       {
         id: 'relative_wealth_index',
         label: 'Relative Wealth Index',
-        info: 'The Relative Wealth Index predicts the relative standard of living within countries. Each point represents the centroid of a relative wealth prediction for an area covering 2.4 sq km. Index values range from -10 for least relative wealth to 10 for most relative wealth. Source: Meta Data For Good',
+        info:
+          'The Relative Wealth Index predicts the relative standard of living within countries. Each point represents the centroid of a relative wealth prediction for an area covering 2.4 sq km. Index values range from -10 for least relative wealth to 10 for most relative wealth. Source: Meta Data For Good',
         subcontrols: [
           {
             id: 'ken_rwi_-1pt5_to_-1',
@@ -1504,7 +1505,8 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['ken_rwi_-1pt5_to_-1'],
-            info: 'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
+            info:
+              'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
           },
           {
             id: 'ken_rwi_-1_to_-0pt5',
@@ -1512,7 +1514,8 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['ken_rwi_-1_to_-0pt5'],
-            info: 'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
+            info:
+              'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
           },
           {
             id: 'ken_rwi_-0pt5_to_0',
@@ -1520,7 +1523,8 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['ken_rwi_-0pt5_to_0'],
-            info: 'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
+            info:
+              'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
           },
           {
             id: 'ken_rwi_0_to_0pt5',
@@ -1528,7 +1532,8 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['ken_rwi_0_to_0pt5'],
-            info: 'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
+            info:
+              'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
           },
           {
             id: 'ken_rwi_0pt5_to_1',
@@ -1536,7 +1541,8 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['ken_rwi_0pt5_to_1'],
-            info: 'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
+            info:
+              'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
           },
           {
             id: 'ken_rwi_1_to_1pt5',
@@ -1544,7 +1550,8 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['ken_rwi_1_to_1pt5'],
-            info: 'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
+            info:
+              'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
           },
           {
             id: 'ken_rwi_1pt5_to_2',
@@ -1552,7 +1559,8 @@ export default [
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['ken_rwi_1pt5_to_2'],
-            info: 'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
+            info:
+              'RWI range inclusive of lower limit but not upper limit, Source: Meta Data for Good',
           },
         ],
       },

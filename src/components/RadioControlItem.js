@@ -11,7 +11,7 @@ import InfoButton from './InfoButton'
 const ControlItemContainer = styled.label`
   color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.fonts.body};
-  font-size: ${({ theme }) => theme.fontSizes[1]}pt;
+  font-size: ${({ theme }) => theme.fontSizes[1]}px;
   font-weight: ${({ theme }) => theme.fontWeights.body};
 
   background-color: ${({ theme }) => theme.colors.muted};

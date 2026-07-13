@@ -110,7 +110,7 @@ const FirstLevelHeading = styled.div`
     margin: 0;
     color: ${({ theme }) => theme.colors.primary};
     font-family: ${({ theme }) => theme.fonts.heading};
-    font-size: ${({ theme }) => theme.fontSizes[2]}pt;
+    font-size: ${({ theme }) => theme.fontSizes[2]}px;
     font-weight: ${({ theme }) => theme.fontWeights.heading};
     text-align: start;
   }
@@ -119,7 +119,7 @@ const FirstLevelHeading = styled.div`
     margin: 0;
     color: ${({ theme }) => theme.colors.text};
     font-family: ${({ theme }) => theme.fonts.body};
-    font-size: ${({ theme }) => theme.fontSizes[0]}pt;
+    font-size: ${({ theme }) => theme.fontSizes[0]}px;
     font-weight: ${({ theme }) => theme.fontWeights.body};
     text-align: start;
   }
@@ -261,7 +261,7 @@ const SecondLevelHeading = styled.h3`
   text-align: left;
   color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.fonts.heading};
-  font-size: ${({ theme }) => theme.fontSizes[0]}pt;
+  font-size: ${({ theme }) => theme.fontSizes[0]}px;
   font-weight: ${({ theme }) => theme.fontWeights.heading};
   #text-transform: uppercase;
   margin: 0;

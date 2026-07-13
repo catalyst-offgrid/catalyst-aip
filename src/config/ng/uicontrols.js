@@ -246,8 +246,6 @@ export default [
             info:
               'Source: GridFinder predictive algorithm based on night lights imagery, estimating the location of high- and medium-voltage transmission lines, 2020',
           },
-
-          
         ],
       },
       {
@@ -272,7 +270,8 @@ export default [
             defaultVisibility: false,
             legend: { type: 'circle' },
             layerIds: ['nga_mini_grids-7r061j'],
-            info: 'Source: Nigeria Department of Climate Change, Rocky Mountain Institute (RMI), Green Village Electricity (GVE), Nigeria Rural Electrification Agency (REA)',
+            info:
+              'Source: Nigeria Department of Climate Change, Rocky Mountain Institute (RMI), Green Village Electricity (GVE), Nigeria Rural Electrification Agency (REA)',
           },
           /*
           {

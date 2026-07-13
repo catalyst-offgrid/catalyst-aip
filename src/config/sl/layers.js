@@ -259,7 +259,7 @@ export default [
     type: 'circle',
     paint: {
       'circle-color': colors.rwi_accent2, // start with 2 because only 2 RWI points in -2 to -1.5 for Kenya
-      'circle-radius': 2
+      'circle-radius': 2,
     },
   },
   {
@@ -268,8 +268,8 @@ export default [
     'source-layer': 'sle_rwi_-1_to_-0pt5-7rm63x',
     type: 'circle',
     paint: {
-      'circle-color': colors.rwi_accent3, 
-      'circle-radius': 2
+      'circle-color': colors.rwi_accent3,
+      'circle-radius': 2,
     },
   },
   {
@@ -278,8 +278,8 @@ export default [
     'source-layer': 'sle_rwi_-0pt5_to_0-c77zjm',
     type: 'circle',
     paint: {
-      'circle-color': colors.rwi_accent4, 
-      'circle-radius': 2
+      'circle-color': colors.rwi_accent4,
+      'circle-radius': 2,
     },
   },
   {
@@ -288,8 +288,8 @@ export default [
     'source-layer': 'sle_rwi_0_to_0pt5-3xrmnd',
     type: 'circle',
     paint: {
-      'circle-color': colors.rwi_accent5, 
-      'circle-radius': 2
+      'circle-color': colors.rwi_accent5,
+      'circle-radius': 2,
     },
   },
   {
@@ -298,8 +298,8 @@ export default [
     'source-layer': 'sle_rwi_0pt5_to_1-6nfz7d',
     type: 'circle',
     paint: {
-      'circle-color': colors.rwi_accent6, 
-      'circle-radius': 2
+      'circle-color': colors.rwi_accent6,
+      'circle-radius': 2,
     },
   },
   {
@@ -308,8 +308,8 @@ export default [
     'source-layer': 'sle_rwi_1_to_1pt5-3aocyb',
     type: 'circle',
     paint: {
-      'circle-color': colors.rwi_accent7, 
-      'circle-radius': 2
+      'circle-color': colors.rwi_accent7,
+      'circle-radius': 2,
     },
   },
   {
@@ -318,9 +318,8 @@ export default [
     'source-layer': 'sle_rwi_1pt5_to_2-28qkvr',
     type: 'circle',
     paint: {
-      'circle-color': colors.rwi_accent8, 
-      'circle-radius': 2
+      'circle-color': colors.rwi_accent8,
+      'circle-radius': 2,
     },
   },
 ]
-
