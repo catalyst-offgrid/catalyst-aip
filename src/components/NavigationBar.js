@@ -50,7 +50,7 @@ export default function NavigationBar({ siteAcronym, theme }) {
   return (
     <Container>
       <Logo>
-        <img alt='CATALYST Off Grid Advisors' src={CATALYST_LOGO} width={40} />
+        <img alt='Catalyst Energy Advisors' src={CATALYST_LOGO} width={40} />
       </Logo>
       <Name>{siteAcronym}</Name>
       <NavList>

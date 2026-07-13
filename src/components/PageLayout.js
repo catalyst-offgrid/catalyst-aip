@@ -3,7 +3,7 @@ import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import NavigationBar from './NavigationBar'
-import CATALYST_BLUE from '../../img/CATALYST_BLUE.png'
+import CATALYST_ENERGY from '../../img/CATALYST_ENERGY_ADVISORS.png'
 import AIP_LOGO from '../../img/AIP_logo.png'
 import CATALYST_BLUE_wTag from '../../img/CATALYST_BLUE_wTag_11.23.jpg'
 
@@ -199,7 +199,11 @@ export const Logo = ({ withTagline }) => (
 export const CatalystLogo = ({ withTagline }) => (
   <>
     {withTagline && <Caption>An Innovation Of</Caption>}
-    <CatalystLogoImg alt='Catalyst Logo' src={CATALYST_BLUE} maxWidth={150} />
+    <CatalystLogoImg
+      alt='Catalyst Energy Advisors Logo'
+      src={CATALYST_ENERGY}
+      maxWidth={150}
+    />
   </>
 )
 

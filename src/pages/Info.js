@@ -145,7 +145,7 @@ export default function Info({ siteAcronym, theme }) {
           For any inquiries and potential collaboration, including dataset
           contributions, please contact the development team at{' '}
           <a href='mailto:aip@catalystoffgrid.com'>
-            Catalyst Off-Grid Advisors
+            Catalyst Energy Advisors
           </a>
         </Paragraph>
       </InfoBlock>
