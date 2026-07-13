@@ -4,6 +4,8 @@ import mapbox from 'mapbox-gl'
 import App from './app'
 import config from './config'
 
+import './base-styles.css'
+
 mapbox.accessToken = config.mapboxAccessToken
 
 

@@ -5,9 +5,12 @@
   "main": "src/index.js",
   "scripts": {
     "clean": "rm -rf dist .cache",
-    "develop": "parcel -p 8000 src/index.html --open",
-    "build": " parcel build src/index.html",
-    "serve": "npx http-server -p 8000 dist",
+    "dev": "vite",
+    "develop": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview --port 8000",
+    "preview": "vite preview --port 8000",
     "deploy": "surge ./dist",
     "lint": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\"",
     "lint:fix": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\" --fix",
@@ -30,6 +33,7 @@
   "devDependencies": {
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.1",
+    "@vitejs/plugin-react": "^4.7.0",
     "axe-core": "^4.0.2",
     "babel-eslint": "^10.1.0",
     "cypress": "^5.5.0",
@@ -47,8 +51,8 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.2",
     "jest-styled-components": "^7.0.3",
-    "parcel-bundler": "^1.12.4",
-    "prettier": "^2.1.2"
+    "prettier": "^2.1.2",
+    "vite": "^5.4.21"
   },
   "dependencies": {
     "@reach/accordion": "^0.11.2",
