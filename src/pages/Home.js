@@ -109,7 +109,7 @@ export default function Home({ siteAcronym, siteName, imageUrl, theme }) {
         <img
           alt='An innovation of Catalyst Energy Advisors'
           src={INNOVATION_LOGO}
-          width={600}
+          width={510}
         />
       </CatalystLogo>
     </HomePageLayout>
