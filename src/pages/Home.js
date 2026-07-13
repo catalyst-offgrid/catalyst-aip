@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Credits from '../components/Credits'
 
-import INNOVATION_LOGO from '../../img/INNOVATION_LOGO.png'
+import INNOVATION_LOGO from '../../img/INNOVATION_CATALYST_ENERGY_white.png'
 
 import {
   HomePageLayout,
@@ -106,7 +106,11 @@ export default function Home({ siteAcronym, siteName, imageUrl, theme }) {
         </Paragraph>
       </Introduction>
       <CatalystLogo>
-        <img src={INNOVATION_LOGO} />
+        <img
+          alt='An innovation of Catalyst Energy Advisors'
+          src={INNOVATION_LOGO}
+          width={510}
+        />
       </CatalystLogo>
     </HomePageLayout>
   )
