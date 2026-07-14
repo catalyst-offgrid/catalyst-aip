@@ -33,6 +33,8 @@ const MainContent = styled.main`
         `
       : css`
           display: block;
+          max-width: 920px;
+          margin: 0 auto;
           padding: clamp(${theme.space[3]}px, 4vw, ${theme.space[5]}px);
         `}
 `
@@ -152,7 +154,7 @@ export const HeroLogo = styled.img`
 `
 
 export const InfoBlock = styled.div`
-  max-width: 72ch;
+  max-width: 100%;
 `
 
 export const Tagline = styled.span`
@@ -202,7 +204,6 @@ export const Paragraph = styled.p`
   font-size: ${({ theme }) => theme.fontSizes[1]}px;
   font-weight: ${({ theme }) => theme.fontWeights.body};
   line-height: 1.65;
-  max-width: 52ch;
 
   margin-top: ${({ theme }) => theme.space[3]}px;
   margin-bottom: ${({ theme }) => theme.space[4]}px;

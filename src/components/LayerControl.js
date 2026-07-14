@@ -255,7 +255,7 @@ const SecondLevelHeader = styled(FirstLevelHeader)`
 const SecondLevelHeading = styled.h3`
   color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.fonts.heading};
-  font-size: ${({ theme }) => theme.fontSizes[0]}px;
+  font-size: ${({ theme }) => theme.fontSizes[1]}px;
   font-weight: ${({ theme }) => theme.fontWeights.heading};
   #text-transform: uppercase;
   margin: 0;
