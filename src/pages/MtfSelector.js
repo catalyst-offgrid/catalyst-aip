@@ -29,8 +29,8 @@ export default function MtfSelector({ siteAcronym, imageUrl, theme }) {
           <Paragraph>
             The Multi-Tier Framework (MTF) survey datasets cover household
             access to electricity and clean cooking, treating access as a
-            spectrum of service levels rather than a simple yes/no. MTF data
-            is currently available for Kenya and Nigeria.
+            spectrum of service levels rather than a simple yes/no. MTF data is
+            currently available for Kenya and Nigeria.
           </Paragraph>
           <Actions>
             <PrimaryButton
