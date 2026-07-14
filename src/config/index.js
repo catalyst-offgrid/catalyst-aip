@@ -19,6 +19,7 @@ import ngsources from './ng/sources'
 import nguicontrols from './ng/uicontrols'
 
 import theme from './theme'
+import heroImage from '../../img/hero-sunset.webp'
 import kecsv from '../../data/Energy/Census/KenyaLighting_Cooking.csv'
 import ugcsv from '../../data/Energy/Census/UgandaDataSubregion.csv'
 import slcsv from '../../data/Energy/Census/SierraLeoneFinal.csv'
@@ -29,13 +30,10 @@ if (!process.env.MAPBOX_ACCESS_TOKEN) {
 }
 
 export default {
-  mapboxAccessToken:
-    process.env.MAPBOX_ACCESS_TOKEN ||
-    'pk.eyJ1IjoiaWFuZG11aXIiLCJhIjoiY2sxcXQxZXZkMDBqZDNtb3M3ajA1ejU0cyJ9.frB-CuuWvPshMP8nHkP4gA',
+  mapboxAccessToken: process.env.MAPBOX_ACCESS_TOKEN,
   siteName: 'Access Insights Platform',
   siteAcronym: 'AIP',
-  imageUrl:
-    'https://images.squarespace-cdn.com/content/5a0f434de45a7cf4ec600930/1619190575278-E9NAPWZLG5OQK4W02G92/Sunset+VB.jpg',
+  imageUrl: heroImage,
   ke: {
     country: 'Kenya',
     countryCode: 'ke',

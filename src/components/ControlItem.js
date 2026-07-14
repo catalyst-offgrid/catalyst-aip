@@ -11,7 +11,9 @@ import InfoButton from './InfoButton'
 const ControlItemContainer = styled.label`
   color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.fonts.body};
-  font-size: ${({ theme }) => theme.fontSizes[1]}pt;
+  /* one step below SecondLevelHeading (16px) for a clear hierarchy:
+     category 18px > subcategory 16px > item 14px */
+  font-size: 14px;
   font-weight: ${({ theme }) => theme.fontWeights.body};
 
   background-color: ${({ theme }) => theme.colors.muted};

@@ -17,7 +17,7 @@ const TooltipPopup = styled(ReachTooltipPopup)`
   justify-self: center;
 
   font-family: ${({ theme }) => theme.fonts.body};
-  font-size: ${({ theme }) => theme.fontSizes[0]}pt;
+  font-size: ${({ theme }) => theme.fontSizes[0]}px;
   font-weight: ${({ theme }) => theme.fontWeights.body};
 `
 

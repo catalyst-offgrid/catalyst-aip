@@ -10,6 +10,7 @@ import Info from './pages/Info'
 
 import config from './config'
 import Mtf from './pages/Mtf'
+import MtfSelector from './pages/MtfSelector'
 import { kenyaMtfUiControls } from './config/ke/mtfUiControls'
 import { nigeriaMtfUiControls } from './config/ng/mtfUiControls'
 
@@ -27,6 +28,13 @@ export default function App() {
         </Route>
         <Route path='/select' exact>
           <DatasetSelector
+            siteAcronym={config.siteAcronym}
+            imageUrl={config.imageUrl}
+            theme={config.theme}
+          />
+        </Route>
+        <Route path='/mtf' exact>
+          <MtfSelector
             siteAcronym={config.siteAcronym}
             imageUrl={config.imageUrl}
             theme={config.theme}

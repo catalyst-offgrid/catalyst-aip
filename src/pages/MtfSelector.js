@@ -7,6 +7,7 @@ import SelectionPageLayout, {
   Hero,
   Tagline,
   PageTitle,
+  Paragraph,
   PrimaryButton,
 } from '../components/SelectionPageLayout'
 
@@ -17,35 +18,34 @@ const Actions = styled.div`
   margin-top: ${({ theme }) => theme.space[3]}px;
 `
 
-export default function ExploreSelector({ siteAcronym, imageUrl, theme }) {
+export default function MtfSelector({ siteAcronym, imageUrl, theme }) {
   return (
     <SelectionPageLayout siteAcronym={siteAcronym} theme={theme}>
       <Hero url={imageUrl} />
       <Introduction>
         <div>
           <Tagline>Select a country</Tagline>
-          <PageTitle>Dataset Selection</PageTitle>
+          <PageTitle>Multi-Tier Framework</PageTitle>
+          <Paragraph>
+            The Multi-Tier Framework (MTF) survey datasets cover household
+            access to electricity and clean cooking, treating access as a
+            spectrum of service levels rather than a simple yes/no. MTF data is
+            currently available for Kenya and Nigeria.
+          </Paragraph>
           <Actions>
             <PrimaryButton
-              to='/explore/ke'
-              aria-label='Kenya'
-              data-cy='explore-button'
+              to='/mtf/ke'
+              aria-label='Kenya MTF'
+              data-cy='mtf-kenya-button'
             >
               Kenya
             </PrimaryButton>
             <PrimaryButton
-              to='/explore/ug'
-              aria-label='Uganda'
-              data-cy='explore-button'
+              to='/mtf/ng'
+              aria-label='Nigeria MTF'
+              data-cy='mtf-nigeria-button'
             >
-              Uganda
-            </PrimaryButton>
-            <PrimaryButton
-              to='/explore/sl'
-              aria-label='Sierra Leone'
-              data-cy='info-button'
-            >
-              Sierra Leone
+              Nigeria
             </PrimaryButton>
           </Actions>
         </div>
@@ -54,7 +54,7 @@ export default function ExploreSelector({ siteAcronym, imageUrl, theme }) {
   )
 }
 
-ExploreSelector.propTypes = {
+MtfSelector.propTypes = {
   siteAcronym: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
   theme: PropTypes.object.isRequired,

@@ -11,7 +11,7 @@ const HeaderContainer = styled.header`
 const Heading = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.fonts.heading};
-  font-size: ${({ theme }) => theme.fontSizes[4]}pt;
+  font-size: ${({ theme }) => theme.fontSizes[4]}px;
   font-weight: ${({ theme }) => theme.fontWeights.heading};
   margin: 0;
 
@@ -23,13 +23,13 @@ const Heading = styled.h1`
 const Tagline = styled.label`
   color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.fonts.body};
-  font-size: ${({ theme }) => theme.fontSizes[0]}pt;
+  font-size: ${({ theme }) => theme.fontSizes[0]}px;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   text-transform: uppercase;
 `
 
 const Flag = styled.span`
-  font-size: ${({ theme }) => theme.fontSizes[3]}pt;
+  font-size: ${({ theme }) => theme.fontSizes[3]}px;
 `
 
 export default function MtfHeader({ siteName, country, cc }) {

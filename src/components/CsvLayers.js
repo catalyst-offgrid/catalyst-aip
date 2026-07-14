@@ -29,7 +29,6 @@ export default function CsvLayers({ csv, uiState, theme, map, country }) {
     base_id = 'iandmuir.3et11jhs'
   }
 
-
   useEffect(() => {
     d3.csv(csv).then((data) => {
       setData(data)

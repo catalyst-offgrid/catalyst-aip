@@ -8,5 +8,4 @@ import './base-styles.css'
 
 mapbox.accessToken = config.mapboxAccessToken
 
-
 render(<App />, document.querySelector('#app'))

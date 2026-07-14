@@ -12,36 +12,56 @@ const Container = styled.nav`
   width: ${({ theme }) => `${theme.space[5]}px`};
   height: 100%;
   background-color: ${({ theme }) => theme.colors.primary};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 const Logo = styled.figure`
-  margin: ${({ theme }) => `${theme.space[3]}px`};
-  margin-bottom: ${({ theme }) => `${theme.space[2]}px`};
+  margin: ${({ theme }) => `${theme.space[3]}px 0 ${theme.space[2]}px`};
 `
 
 const Name = styled.div`
   color: ${({ theme }) => theme.colors.background};
   font-family: ${({ theme }) => theme.fonts.heading};
-  font-size: ${({ theme }) => theme.fontSizes[3]}pt;
+  font-size: ${({ theme }) => theme.fontSizes[2]}px;
   font-weight: ${({ theme }) => theme.fontWeights.heading};
   text-transform: uppercase;
+  letter-spacing: 0.08em;
   text-align: center;
 `
 
 const NavList = styled.ul`
   list-style-type: none;
-  margin: 48px 0;
+  margin: ${({ theme }) => `${theme.space[4] + theme.space[3]}px 0`};
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: ${({ theme }) => `${theme.space[2]}px`};
 `
 
 const NavItem = styled.li`
-  text-align: center;
   background-color: ${({ isMatch, theme }) =>
-    isMatch ? `${theme.colors.highlight}` : `${theme.colors.primary}`};
-  border-radius: 4px;
+    isMatch ? theme.colors.highlight : 'transparent'};
+  border-radius: ${({ theme }) => theme.radii[2]}px;
   width: 48px;
   height: 48px;
-  margin: 0 auto;
+
+  transition: background-color ${({ theme }) => theme.transitions.fast};
+
+  &:hover {
+    background-color: ${({ isMatch, theme }) =>
+      isMatch ? theme.colors.highlight : 'rgba(255, 255, 255, 0.16)'};
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: ${({ theme }) => theme.radii[2]}px;
+  }
 `
 
 export default function NavigationBar({ siteAcronym, theme }) {

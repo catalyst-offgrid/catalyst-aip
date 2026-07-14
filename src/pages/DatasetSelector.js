@@ -1,143 +1,117 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import Credits from '../components/Credits'
 
 import SelectionPageLayout, {
   Introduction,
+  Hero,
   Tagline,
   PageTitle,
-  Paragraph,
-  SecondaryTagline,
-  Logo,
+  PrimaryButton,
+  SecondaryButton,
 } from '../components/SelectionPageLayout'
 
-const Actions = styled.div`
-  display: inline-flex;
-  margin-top: 10px;
+const CountryGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: ${({ theme }) => theme.space[3]}px;
+  margin-top: ${({ theme }) => theme.space[3]}px;
+  max-width: 560px;
 `
 
-const PartnersBlock = styled.div`
-  grid-column: 1 / span 4;
+const CountryCard = styled.section`
+  background: ${({ theme }) => theme.colors.background};
+  border: 1px solid ${({ theme }) => theme.colors.accent};
+  border-radius: ${({ theme }) => theme.radii[3]}px;
+  box-shadow: ${({ theme }) => theme.shadows.sm};
+  padding: ${({ theme }) => theme.space[3]}px;
+
+  transition: box-shadow ${({ theme }) => theme.transitions.fast},
+    transform ${({ theme }) => theme.transitions.fast};
+
+  &:hover {
+    box-shadow: ${({ theme }) => theme.shadows.md};
+    transform: translateY(-2px);
+  }
 `
 
-const PrimaryButton = styled(Link)`
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  min-width: 200px;
-  padding: ${({ theme }) => `${theme.space[3]}px ${theme.space[4]}px`};
-  border: ${({ theme }) => `4px solid ${theme.colors.primary}`};
-  border-radius: 4px;
-
-  background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.background};
-  font-family: ${({ theme }) => theme.fonts.body};
-  font-size: ${({ theme }) => theme.fontSizes[1]}pt;
-  font-weight: ${({ theme }) => theme.fontWeights.bold};
-`
-
-const SecondaryButton = styled(PrimaryButton)`
-  background-color: ${({ theme }) => theme.colors.background};
+const CountryName = styled.h2`
   color: ${({ theme }) => theme.colors.primary};
+  font-family: ${({ theme }) => theme.fonts.heading};
+  font-size: ${({ theme }) => theme.fontSizes[3]}px;
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
+  margin: 0 0 ${({ theme }) => theme.space[3]}px;
+
+  display: flex;
+  align-items: center;
+  gap: ${({ theme }) => theme.space[2]}px;
 `
 
-const Image = styled.figure`
-  grid-area: 1 / 6 / 3 / span 7;
-  margin: -140px -70px -140px 0;
-  height: 115vh;
+const CardActions = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: ${({ theme }) => theme.space[2]}px;
 
-  background-image: ${({ url }) => `url(${url})`};
-  background-size: auto 100%;
-  background-position: center;
-
-  clip-path: polygon(35% 0%, 115% 0%, 100% 100%, 35% 100%, 15% 60%);
-  z-index: -1;
+  a {
+    min-width: 0;
+    flex: 1;
+    padding: 10px 16px;
+  }
 `
+
+function flagFor(cc) {
+  const ASCII_OFFSET = 127397
+  return String.fromCodePoint(
+    ...[...cc.toUpperCase()].map((c) => c.charCodeAt() + ASCII_OFFSET)
+  )
+}
+
+const COUNTRIES = [
+  { name: 'Kenya', cc: 'ke', mtf: true },
+  { name: 'Nigeria', cc: 'ng', mtf: true },
+  { name: 'Uganda', cc: 'ug', mtf: false },
+  { name: 'Sierra Leone', cc: 'sl', mtf: false },
+]
 
 export default function DatasetSelector({ siteAcronym, imageUrl, theme }) {
   return (
     <SelectionPageLayout siteAcronym={siteAcronym} theme={theme}>
-      <Image url={imageUrl} />
+      <Hero url={imageUrl} />
       <Introduction>
-        <PageTitle>Dataset Selection</PageTitle>
-
-        <Tagline>
-          <br />
-          Select a dataset
-        </Tagline>
-        <SecondaryTagline>
-          <br />
-          Kenya
-        </SecondaryTagline>
-        <Actions>
-          <PrimaryButton
-            to='/explore/ke'
-            aria-label='explore kenya'
-            data-cy='explore-button'
-          >
-            Geospatial
-          </PrimaryButton>
-          <PrimaryButton
-            to='/mtf/ke'
-            aria-label='kenya-mtf'
-            data-cy='mtf-kenya-button'
-          >
-            MTF
-          </PrimaryButton>
-        </Actions>
-
-        <SecondaryTagline>
-          <br />
-          Uganda
-        </SecondaryTagline>
-        <Actions>
-          <PrimaryButton
-            to='/explore/ug'
-            aria-label='explore kenya'
-            data-cy='explore-button'
-          >
-            Geospatial
-          </PrimaryButton>
-        </Actions>
-
-        <SecondaryTagline>
-          <br />
-          Sierra Leone
-        </SecondaryTagline>
-        <Actions>
-          <PrimaryButton
-            to='/explore/sl'
-            aria-label='explore kenya'
-            data-cy='explore-button'
-          >
-            Geospatial
-          </PrimaryButton>
-        </Actions>
-
-        <SecondaryTagline>
-          <br />
-          Nigeria
-        </SecondaryTagline>
-        <Actions>
-          <PrimaryButton
-            to='/explore/ng'
-            aria-label='explore nigeria'
-            data-cy='explore-button'
-          >
-            Geospatial
-          </PrimaryButton>
-          <PrimaryButton
-            to='/mtf/ng'
-            aria-label='nigeria-mtf'
-            data-cy='mtf-nigeria-button'
-          >
-            MTF
-          </PrimaryButton>
-        </Actions>
+        <div>
+          <Tagline>Select a dataset</Tagline>
+          <PageTitle>Dataset Selection</PageTitle>
+          <CountryGrid>
+            {COUNTRIES.map(({ name, cc, mtf }) => (
+              <CountryCard key={cc}>
+                <CountryName>
+                  <span role='img' aria-label={`flag-${cc}`}>
+                    {flagFor(cc)}
+                  </span>
+                  {name}
+                </CountryName>
+                <CardActions>
+                  <PrimaryButton
+                    to={`/explore/${cc}`}
+                    aria-label={`explore ${name}`}
+                    data-cy='explore-button'
+                  >
+                    Geospatial
+                  </PrimaryButton>
+                  {mtf && (
+                    <SecondaryButton
+                      to={`/mtf/${cc}`}
+                      aria-label={`${name} MTF`}
+                      data-cy={`mtf-${name.toLowerCase()}-button`}
+                    >
+                      MTF
+                    </SecondaryButton>
+                  )}
+                </CardActions>
+              </CountryCard>
+            ))}
+          </CountryGrid>
+        </div>
       </Introduction>
     </SelectionPageLayout>
   )
