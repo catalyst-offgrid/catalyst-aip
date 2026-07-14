@@ -30,7 +30,7 @@ export default [
   {
     id: 'uganda-density',
     source: 'uganda-density',
-    'source-layer': 'Uganda_Population_Densoty-7ec47s',
+    'source-layer': 'uga_pd_2020_1km_rgba',
     type: 'raster',
     paint: {
       'raster-opacity': 0.5,

@@ -34,8 +34,8 @@ export default {
   raster: [
     {
       id: 'uganda-density',
-      layer: 'Uganda_Population_Density-7ec47s',
-      tilesetid: 'iandmuir.8xf9gnn2',
+      layer: 'uga_pd_2020_1km_rgba',
+      tilesetid: 'iandmuir.4wukzz',
     },
   ],
   vector: [
