@@ -591,7 +591,7 @@ export default [
           // },
           {
             id: 'fb-population',
-            label: 'Population Density (30M Resolution)',
+            label: 'Population Density (30m)',
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['fb-population-density'],

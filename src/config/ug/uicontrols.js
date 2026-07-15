@@ -558,7 +558,7 @@ export default [
         subcontrols: [
           {
             id: 'uganda-density',
-            label: 'Population Density',
+            label: 'Population Density (30m)',
             defaultVisibility: false,
             legend: 'none',
             layerIds: ['uganda-density'],
