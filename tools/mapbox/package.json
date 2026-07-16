@@ -1,0 +1,13 @@
+{
+  "name": "aip-mapbox-tools",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone tooling for uploading tilesets to Mapbox (kept separate from the app's dependency tree).",
+  "bin": {
+    "mapbox-upload": "./upload.mjs"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.658.0"
+  }
+}
