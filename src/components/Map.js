@@ -37,10 +37,10 @@ export default function Map({ center, zoom, children }) {
       attachHandlersToMap(m)
     })
 
+    // `m`, not the `map` state: this cleanup runs with the closure it was
+    // created in, where `map` is still the initial null.
     return () => {
-      if (map) {
-        map.remove()
-      }
+      m.remove()
     }
   }, [])
 

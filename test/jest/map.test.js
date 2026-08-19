@@ -63,6 +63,45 @@ describe('Map', () => {
   })
 })
 
+describe('Map cleanup', () => {
+  const renderMap = () => {
+    let wrapper
+    renderer.act(() => {
+      wrapper = renderer.create(
+        <Map zoom={config.zoom} center={config.center} />,
+        {
+          createNodeMock: (element) => element,
+        }
+      )
+    })
+    return [wrapper, mapbox.Map.mock.results[0].value]
+  }
+
+  it('removes the map when it unmounts', () => {
+    const [wrapper, map] = renderMap()
+    const [, onLoad] = map.on.mock.calls.find(([event]) => event === 'load')
+
+    renderer.act(() => {
+      onLoad()
+    })
+    renderer.act(() => {
+      wrapper.unmount()
+    })
+
+    expect(map.remove).toHaveBeenCalled()
+  })
+
+  it('removes the map when it unmounts before the load event', () => {
+    const [wrapper, map] = renderMap()
+
+    renderer.act(() => {
+      wrapper.unmount()
+    })
+
+    expect(map.remove).toHaveBeenCalled()
+  })
+})
+
 describe('Source', () => {
   it('adds a map source', () => {
     renderer.act(() => {
